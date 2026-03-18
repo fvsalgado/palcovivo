@@ -2,44 +2,49 @@
 """
 Palco Vivo — Scraper: Culturgest
 
-Estratégia: a página de listagem (/por-evento/) é JavaScript puro e não
-renderiza nada com BeautifulSoup. Em vez disso, usamos um evento conhecido
-como ponto de entrada e extraímos os links da secção "Próximos Eventos"
-que aparece no rodapé de cada página individual — essa secção É estática.
-As páginas individuais dos eventos são também HTML estático e ricas em dados.
+O site carrega a listagem por JavaScript — o HTML da listagem está vazio.
+Estratégia: partir de seeds conhecidos (eventos actuais hardcoded) e fazer
+crawl progressivo via a secção "Próximos Eventos" que aparece em cada
+página de evento (essa secção É HTML estático).
+
+As seeds são actualizadas automaticamente: basta que um evento esteja
+acessível para descobrir todos os seguintes via "Próximos Eventos".
 """
 import re
 import time
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from datetime import datetime
 
-from scrapers.utils import make_id, parse_date_range, parse_date, log
+from scrapers.utils import make_id, parse_date, log
 
 BASE    = "https://www.culturgest.pt"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 
-# Ponto de entrada: página de listagem de teatro (mesmo sendo JS,
-# serve para arrancar; se falhar usamos a seed abaixo)
-AGENDA_URL  = "https://www.culturgest.pt/pt/programacao/por-evento/?typology=1"
-# Seed estática: uma página de evento que sempre tem "Próximos Eventos"
-SEED_URL    = "https://www.culturgest.pt/pt/programacao/por-evento/"
-
 THEATER_NAME = "Culturgest"
 SOURCE_SLUG  = "culturgest"
 
-# Meses em português abreviados usados no site
-_PT_MONTHS = {
-    "jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
-    "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12,
+# Seeds: páginas de eventos individuais com "Próximos Eventos" estático.
+# Basta um estar válido para descobrir os restantes por crawl.
+SEEDS = [
+    "https://www.culturgest.pt/pt/programacao/catarina-rolo-salgueiro-e-isabel-costa-os-possessos-burn-burn-burn-2026/",
+    "https://www.culturgest.pt/pt/programacao/alex-cassal-ma-criacao-hotel-paradoxo/",
+    "https://www.culturgest.pt/pt/programacao/mala-voadora-polo-norte/",
+]
+
+_PT_MONTHS_ABBR = {
+    "jan":1,"fev":2,"mar":3,"abr":4,"mai":5,"jun":6,
+    "jul":7,"ago":8,"set":9,"out":10,"nov":11,"dez":12,
 }
 
 
 def scrape():
     event_urls = _discover_urls()
+    log(f"[{THEATER_NAME}] {len(event_urls)} URLs descobertos")
 
-    events    = []
-    seen_ids  = set()
+    events   = []
+    seen_ids = set()
 
     for url in sorted(event_urls):
         ev = _scrape_event(url)
@@ -54,107 +59,77 @@ def scrape():
     return events
 
 
-# ── DESCOBERTA DE URLs ────────────────────────────────────────────────────────
+# ── DESCOBERTA ────────────────────────────────────────────────────────────────
 
 def _discover_urls():
-    """
-    Recolhe URLs de eventos de duas formas complementares:
-    1. Tenta a listagem /por-evento/?typology=1 (mesmo sendo JS, às vezes
-       tem links no HTML base ou no sitemap).
-    2. Vai buscar a secção "Próximos Eventos" a partir de uma página semente.
-    Faz crawl progressivo: cada novo evento encontrado pode revelar mais URLs
-    via a sua própria secção "Próximos Eventos".
-    """
-    found  = set()
-    queue  = set()
-
-    # Tentativa 1: listagem (pode não devolver nada)
-    queue.update(_links_from_listing(AGENDA_URL))
-
-    # Tentativa 2: seed via página de arquivo / listagem geral
-    queue.update(_links_from_listing(SEED_URL))
-
-    # Se ainda vazio, arrancamos com um URL de evento recente conhecido
-    # (será actualizado automaticamente via "Próximos Eventos")
-    if not queue:
-        # URL genérico de arquivo — contém eventos recentes em HTML estático
-        queue.update(_links_from_listing(
-            "https://www.culturgest.pt/pt/programacao/archive/"
-        ))
-
-    # Crawl: cada evento tem secção "Próximos Eventos" → novos links
+    """Crawl progressivo a partir das seeds via secção 'Próximos Eventos'."""
+    found   = set()
+    queue   = set(SEEDS)
     visited = set()
-    for url in list(queue):
+
+    while queue:
+        url = queue.pop()
         if url in visited:
             continue
         visited.add(url)
-        found.add(url)
-        new_links = _next_events_from_page(url)
-        for lnk in new_links:
-            if lnk not in visited:
-                queue.add(lnk)
-        time.sleep(0.25)
+
+        links = _next_event_links(url)
+        if links:
+            found.add(url)            # este URL é um evento válido
+            for lnk in links:
+                if lnk not in visited:
+                    queue.add(lnk)
+        time.sleep(0.2)
+
+    # Incluir as seeds originais mesmo que não tenham "Próximos Eventos"
+    for s in SEEDS:
+        found.add(s)
 
     return found
 
 
-def _links_from_listing(url):
-    """Tenta extrair links /pt/programacao/ de uma página de listagem."""
-    urls = set()
+def _next_event_links(url):
+    """Extrai links /pt/programacao/<slug>/ da secção 'Próximos Eventos'."""
     try:
         r = requests.get(url, headers=HEADERS, timeout=20)
         r.raise_for_status()
     except Exception as e:
-        log(f"[{THEATER_NAME}] Listagem inacessível ({url}): {e}")
-        return urls
+        log(f"[{THEATER_NAME}] Inacessível {url}: {e}")
+        return set()
 
-    soup = BeautifulSoup(r.text, "lxml")
+    soup  = BeautifulSoup(r.text, "lxml")
+    links = set()
+
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        full = urljoin(BASE, href)
+        full = href if href.startswith("http") else urljoin(BASE, href)
         if _is_event_url(full):
-            urls.add(full)
-    return urls
+            links.add(full.rstrip("/") + "/")
 
-
-def _next_events_from_page(url):
-    """Extrai os links da secção 'Próximos Eventos' de uma página de evento."""
-    urls = set()
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=20)
-        r.raise_for_status()
-    except Exception:
-        return urls
-
-    soup = BeautifulSoup(r.text, "lxml")
-    for a in soup.find_all("a", href=True):
-        full = urljoin(BASE, a["href"])
-        if _is_event_url(full):
-            urls.add(full)
-    return urls
+    return links
 
 
 def _is_event_url(url):
-    """Heurística: URL de evento individual (não listagem, não arquivo genérico)."""
+    """True se for página individual de evento (não listagem nem arquivo)."""
     if not url.startswith(BASE):
         return False
-    path = url.replace(BASE, "")
-    if not path.startswith("/pt/programacao/"):
+    path = url.replace(BASE, "").strip("/")
+    if not path.startswith("pt/programacao/"):
         return False
-    # Excluir páginas de listagem/arquivo
-    skip = [
-        "/por-evento", "/agenda-pdf", "/archive", "/schedule",
-        "/programacao-de-participacao", "/convite", "/open-call",
-    ]
-    for s in skip:
-        if s in path:
-            return False
-    # Deve ter pelo menos um segmento depois de /programacao/
     parts = [p for p in path.split("/") if p]
-    return len(parts) >= 3
+    if len(parts) < 3:
+        return False
+    slug = parts[2]
+    # Excluir páginas de listagem conhecidas
+    SKIP = {
+        "por-evento", "agenda-pdf", "archive", "schedule",
+        "por-tipo", "participacao", "convite", "open-call",
+        "temporada-2025-26", "concluido",
+    }
+    return slug not in SKIP
 
 
-# ── SCRAPING DE EVENTO INDIVIDUAL ────────────────────────────────────────────
+# ── SCRAPING DE EVENTO ────────────────────────────────────────────────────────
 
 def _scrape_event(url):
     try:
@@ -166,7 +141,7 @@ def _scrape_event(url):
 
     soup = BeautifulSoup(r.text, "lxml")
 
-    # Título: h1 principal (o site repete o h1 — pegar o primeiro)
+    # Título: primeiro h1
     title_el = soup.find("h1")
     if not title_el:
         return None
@@ -174,7 +149,16 @@ def _scrape_event(url):
     if not title or len(title) < 3:
         return None
 
-    # Imagem: og:image ou primeira img de conteúdo
+    # Subtítulo (ex: "Burn Burn Burn") — segundo h1 ou h2 imediato
+    subtitle_el = soup.find_all("h1")
+    subtitle = ""
+    if len(subtitle_el) > 1:
+        sub = subtitle_el[1].get_text(strip=True)
+        if sub and sub != title:
+            subtitle = sub
+            title = f"{title} — {subtitle}"
+
+    # Imagem
     image = ""
     og = soup.find("meta", property="og:image")
     if og and og.get("content", "").startswith("http"):
@@ -184,62 +168,74 @@ def _scrape_event(url):
         if img:
             image = urljoin(BASE, img["src"])
 
-    # Texto completo para extracção
-    text = soup.get_text(" ")
+    # Texto completo
+    full_text = soup.get_text(" ")
 
-    # Datas — formato do site: "03 NOV 2025", "23–25 Abr 2026",
-    # "11 Abr – 21 Jun 2026", "28 NOV 2024 – 3 MAR 2025"
-    dates_label, date_start, date_end = _parse_dates_cg(soup, text)
+    # Datas
+    dates_label, date_start, date_end = _parse_dates(soup, full_text)
 
-    # Descrição: parágrafos longos do conteúdo principal
-    description   = ""
+    # Categoria (tags no topo da página)
+    category = "Teatro"
+    for a in soup.select("ul li a[href*='typology']"):
+        txt = a.get_text(strip=True)
+        if txt:
+            category = txt
+            break
+
+    # Descrição: parágrafos > 80 chars do conteúdo principal
+    description    = ""
     synopsis_short = ""
-    main = soup.find("main") or soup.find("article") or soup
-    paragraphs = [p.get_text(strip=True) for p in main.find_all("p")]
-    long_ps = [p for p in paragraphs if len(p) > 80]
-    if long_ps:
-        description    = " ".join(long_ps)[:2000]
-        synopsis_short = long_ps[0][:240]
+    main_el = soup.find("main") or soup.find("article") or soup
+    paras = [p.get_text(" ", strip=True) for p in main_el.find_all("p")]
+    long_paras = [p for p in paras if len(p) > 80]
+    if long_paras:
+        description    = " ".join(long_paras)[:2000]
+        synopsis_short = long_paras[0][:240]
 
-    # Preço
+    # Preço — "15€", "Entrada gratuita"
     price = ""
-    m_price = re.search(r"(\d+\s?€(?:\s?[–\-]\s?\d+\s?€)?|Entrada gratuita|gratuito)", text, re.IGNORECASE)
-    if m_price:
-        price = m_price.group(1)
+    m_p = re.search(r"(\d+\s?€(?:\s?[–\-]\s?\d+\s?€)?|[Ee]ntrada gratuita|gratuito)", full_text)
+    if m_p:
+        price = m_p.group(1)
+
+    # Duração — "1h50", "90 min"
+    duration = ""
+    m_d = re.search(r"\bDura[çc][aã]o\s+([\w\s]+?)(?:\n|$|[A-Z])", full_text)
+    if not m_d:
+        m_d = re.search(r"(\d+h\d*|\d+\s?min(?:utos)?)", full_text, re.IGNORECASE)
+    if m_d:
+        duration = m_d.group(1).strip()
 
     # Classificação etária
     age_rating = ""
-    m_age = re.search(r"M/\d+|maiores de \d+", text, re.IGNORECASE)
-    if m_age:
-        age_rating = m_age.group(0)
+    m_a = re.search(r"M/\d+|Maiores de \d+", full_text, re.IGNORECASE)
+    if m_a:
+        age_rating = m_a.group(0)
 
-    # Horário
+    # Horário — primeiro "21:00" ou "21h00"
     schedule = ""
-    m_sched = re.search(r"\b(\d{1,2}[h:]\d{0,2})\b", text)
-    if m_sched:
-        schedule = m_sched.group(1)
+    m_s = re.search(r"\b(\d{1,2}[h:]\d{2})\b", full_text)
+    if m_s:
+        schedule = m_s.group(1)
 
-    # Duração
-    duration = ""
-    m_dur = re.search(r"(\d+h\d+|\d+\s?min(?:utos)?)", text, re.IGNORECASE)
-    if m_dur:
-        duration = m_dur.group(1)
+    # Acessibilidade
+    accessibility = ""
+    m_ac = re.search(
+        r"(Audiodes[ck]ri[çc][aã]o|LGP|Língua Gestual|legendas em inglês)",
+        full_text, re.IGNORECASE
+    )
+    if m_ac:
+        accessibility = m_ac.group(1)
 
     # Bilhetes
     ticket_url = ""
     for a in soup.find_all("a", href=True):
         href = a["href"]
         text_a = a.get_text(strip=True).lower()
-        if any(x in href.lower() for x in ["bilhete", "ticket", "ticketline", "bol.pt", "comprar"]) \
-           or any(x in text_a for x in ["comprar bilhete", "bilheteira", "tickets"]):
-            ticket_url = urljoin(BASE, href)
+        if any(x in href.lower() for x in ["ticketline", "bol.pt", "bilhete", "comprar"]) \
+           or "comprar bilhete" in text_a:
+            ticket_url = href if href.startswith("http") else urljoin(BASE, href)
             break
-
-    # Categoria a partir das tags no topo
-    category = "Teatro"
-    cat_links = soup.select("ul li a[href*='typology']")
-    if cat_links:
-        category = cat_links[0].get_text(strip=True)
 
     return {
         "id":              make_id(SOURCE_SLUG, title),
@@ -258,84 +254,83 @@ def _scrape_event(url):
         "price":           price,
         "duration":        duration,
         "age_rating":      age_rating,
-        "accessibility":   "",
+        "accessibility":   accessibility,
         "technical_sheet": {},
     }
 
 
 # ── PARSE DE DATAS ────────────────────────────────────────────────────────────
+# Formatos reais no site:
+#   "23 ABR 2026"        (data única)
+#   "23–25 ABR 2026"     (intervalo mesmo mês, formato compacto)
+#   "23 ABR – 25 ABR 2026"
+#   "26 JUN – 4 JUL 2026"
+#   "11 Abr – 21 Jun 2026"
 
-def _parse_dates_cg(soup, text):
-    """
-    Formatos encontrados no site Culturgest:
-      "03 NOV 2025"
-      "23–25 Abr 2026"
-      "11 Abr – 21 Jun 2026"
-      "28 NOV 2024 – 3 MAR 2025"
-      "13–22 FEV 2025"
-    """
+def _parse_dates(soup, text):
     dates_label = ""
     date_start  = ""
     date_end    = ""
 
-    # Tentar extrair do elemento de data no HTML (mais fiável)
-    # O site usa padrões como "03 NOV 2025" num bloco de texto próprio
-    date_block = ""
-    for el in soup.select("time, .date, .dates, [class*='date'], [class*='Date']"):
-        t = el.get_text(strip=True)
-        if re.search(r"\d{4}", t):
-            date_block = t
-            break
+    # Tentar no bloco de datas dedicado do HTML (mais fiável, menos ruído)
+    # O site usa padrões como "23 ABR 2026 QUI 21:00" em blocos separados
+    date_blocks = []
+    for el in soup.find_all(string=re.compile(
+        r"\b\d{1,2}\s+[A-Za-z]{3,4}\s+\d{4}\b"
+    )):
+        date_blocks.append(el.strip())
+    # Usar o primeiro bloco como fonte primária para as datas
+    sources = date_blocks + [text] if date_blocks else [text]
 
-    # Combinar: tentar no bloco de data primeiro, depois no texto completo
-    for src in ([date_block, text] if date_block else [text]):
-        # Padrão: DD? MÊS YYYY – DD? MÊS YYYY  (intervalo com meses diferentes)
+    for src in sources:
+        # 1) "DD MMM YYYY – DD MMM YYYY"  (dois meses distintos, ex: "26 JUN – 4 JUL 2026")
+        # Nota: o separador pode ter o ano só no fim ("26 JUN – 4 JUL 2026")
+        # ou em ambos ("26 JUN 2026 – 4 JUL 2026")
         m = re.search(
-            r"(\d{1,2}\s+[A-Za-zçãáéíóúÇÃÁÉÍÓÚ]{3,}\.?\s+\d{4})"
-            r"\s*[–—\-]\s*"
-            r"(\d{1,2}\s+[A-Za-zçãáéíóúÇÃÁÉÍÓÚ]{3,}\.?\s+\d{4})",
+            r"(\d{1,2})\s+([A-Za-z]{3,})(?:\s+(\d{4}))?"
+            r"\s*[–—\-]+\s*"
+            r"(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{4})",
             src
         )
         if m:
-            dates_label = f"{m.group(1).strip()} – {m.group(2).strip()}"
-            date_start, date_end = parse_date_range(dates_label)
-            if date_start:
+            d1, mo1, y1_opt, d2, mo2, y2 = m.groups()
+            n1 = _mon(mo1); n2 = _mon(mo2)
+            if n1 and n2 and mo1.lower()[:3] != mo2.lower()[:3]:
+                y1 = y1_opt or y2
+                dates_label = f"{d1} {mo1} – {d2} {mo2} {y2}"
+                date_start  = f"{y1}-{n1:02d}-{int(d1):02d}"
+                date_end    = f"{y2}-{n2:02d}-{int(d2):02d}"
                 return dates_label, date_start, date_end
 
-        # Padrão: DD–DD MÊS YYYY  (mesmo mês)
+        # 2) "DD–DD MMM YYYY"  (mesmo mês, intervalo compacto, ex: "23–25 ABR 2026")
         m = re.search(
-            r"(\d{1,2})\s*[–—\-]\s*(\d{1,2})\s+([A-Za-zçãáéíóúÇÃÁÉÍÓÚ]{3,}\.?)\s+(\d{4})",
+            r"(\d{1,2})\s*[–—\-]\s*(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{4})",
             src
         )
         if m:
-            d1, d2, mon_str, year = m.group(1), m.group(2), m.group(3), m.group(4)
-            mon_key = mon_str.lower().rstrip(".").strip()[:3]
-            mon = _PT_MONTHS.get(mon_key)
-            if mon:
-                dates_label = f"{d1} {mon_str} {year} – {d2} {mon_str} {year}"
-                date_start  = f"{year}-{mon:02d}-{int(d1):02d}"
-                date_end    = f"{year}-{mon:02d}-{int(d2):02d}"
+            d1, d2, mo, y = m.groups()
+            n = _mon(mo)
+            if n:
+                dates_label = f"{d1}–{d2} {mo} {y}"
+                date_start  = f"{y}-{n:02d}-{int(d1):02d}"
+                date_end    = f"{y}-{n:02d}-{int(d2):02d}"
                 return dates_label, date_start, date_end
 
-        # Padrão: DD? MÊS YYYY  (data única)
-        m = re.search(
-            r"(\d{1,2})\s+([A-Za-zçãáéíóúÇÃÁÉÍÓÚ]{3,}\.?)\s+(\d{4})",
-            src
-        )
+        # 3) "DD MMM YYYY"  (data única, ex: "23 ABR 2026")
+        m = re.search(r"(\d{1,2})\s+([A-Za-z]{3,})\s+(\d{4})", src)
         if m:
-            d, mon_str, year = m.group(1), m.group(2), m.group(3)
-            mon_key = mon_str.lower().rstrip(".").strip()[:3]
-            mon = _PT_MONTHS.get(mon_key)
-            if mon:
-                dates_label = f"{d} {mon_str} {year}"
-                date_start  = f"{year}-{mon:02d}-{int(d):02d}"
+            d, mo, y = m.groups()
+            n = _mon(mo)
+            if n:
+                dates_label = f"{d} {mo} {y}"
+                date_start  = f"{y}-{n:02d}-{int(d):02d}"
                 date_end    = date_start
                 return dates_label, date_start, date_end
 
-    # Fallback: parse_date padrão
-    m2 = re.search(r"(\d{2}[./]\d{2}[./]\d{4})", text)
-    if m2:
-        dates_label = m2.group(1)
-        date_start = date_end = parse_date(dates_label)
-
     return dates_label, date_start, date_end
+
+
+def _mon(s):
+    """Converte abreviatura de mês (PT ou EN, maiúscula ou minúscula) para int."""
+    k = s.lower()[:3]
+    return _PT_MONTHS_ABBR.get(k)
