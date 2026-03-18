@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Palco Vivo — Agenda de Teatro em Portugal</title>
+<meta name="description" content="O portal nacional de teatro e artes performativas. Agenda, teatros e vídeos num só lugar."/>
+<meta name="theme-color" content="#B91C1C"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --red:#B91C1C; --red-dark:#7F1D1D; --red-light:#FEE2E2;
+  --gold:#C9963A; --gold-light:#FBF0D9;
+  --cream:#FAF7F2; --cream2:#F3EDE4;
+  --ink:#1A1209; --ink2:#3D2B1F; --ink3:#6B4F3A;
+  --dark:#0D0A07; --dark2:#1A1410; --dark-text:#F0E8DC; --dark-text2:#A89880;
+  --dark-border:rgba(201,150,58,.2);
+  --ff-d:'Playfair Display',Georgia,serif;
+  --ff-b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius:6px;
+}
+html { scroll-behavior:smooth; }
+body { font-family:var(--ff-b); background:var(--cream); color:var(--ink); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;background:var(--red);color:#fff;padding:10px 18px;border-radius:var(--radius);font-size:14px;font-weight:600;z-index:9999;text-decoration:none}
 
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,247,242,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,28,28,.1)}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-brand-mark{width:34px;height:34px;background:var(--red);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--ff-d);font-size:18px;font-weight:900;color:#fff;flex-shrink:0}
+.nav-brand-text{font-family:var(--ff-d);font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.nav-brand-text em{font-style:italic;color:var(--red)}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{display:block;padding:7px 14px;font-size:13px;font-weight:500;color:var(--ink2);text-decoration:none;border-radius:var(--radius);transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--red);background:var(--red-light)}
+.nav-links a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:22px;padding:8px;color:var(--ink2);border-radius:var(--radius)}
+.nav-toggle:focus-visible{outline:2px solid var(--red)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 48px 60px;position:relative;overflow:hidden;background:var(--cream)}
+.hero-curtain{position:absolute;top:0;right:0;bottom:0;width:44%;background:linear-gradient(155deg,#7F1D1D 0%,var(--red) 55%,#8B1515 100%);clip-path:polygon(14% 0,100% 0,100% 100%,0% 100%);z-index:0}
+.hero-curtain::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(172deg,rgba(255,255,255,.025) 0px,rgba(255,255,255,.025) 1px,transparent 1px,transparent 36px)}
+.hero-curtain::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 35% 40%,rgba(201,150,58,.3) 0%,transparent 55%)}
+.hero-inner{position:relative;z-index:1;max-width:1200px;margin:0 auto;width:100%}
+.hero-kicker{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:28px;opacity:0;animation:fadeUp .6s .1s ease forwards}
+.hero-kicker::before{content:'';width:28px;height:2px;background:var(--red);display:block}
+.hero-title{font-family:var(--ff-d);font-size:clamp(72px,11vw,136px);font-weight:900;line-height:.88;letter-spacing:-.04em;color:var(--ink);opacity:0;animation:fadeUp .6s .2s ease forwards}
+.hero-title-line2{font-family:var(--ff-d);font-size:clamp(60px,9.5vw,120px);font-weight:700;font-style:italic;line-height:.9;letter-spacing:-.03em;color:var(--red);display:block;opacity:0;animation:fadeUp .6s .32s ease forwards}
+.hero-sub{margin-top:36px;font-size:clamp(15px,1.6vw,18px);font-weight:300;line-height:1.8;color:var(--ink3);max-width:440px;opacity:0;animation:fadeUp .6s .46s ease forwards}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:44px;opacity:0;animation:fadeUp .6s .6s ease forwards}
+.btn-red{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:var(--red);color:#fff;font-family:var(--ff-b);font-size:14px;font-weight:600;letter-spacing:.02em;text-decoration:none;border-radius:var(--radius);border:2px solid var(--red);transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(185,28,28,.35)}
+.btn-red:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 30px rgba(185,28,28,.45)}
+.btn-red:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;background:transparent;color:var(--ink);font-family:var(--ff-b);font-size:14px;font-weight:600;text-decoration:none;border-radius:var(--radius);border:2px solid rgba(26,18,9,.2);transition:border-color .2s,color .2s,transform .2s}
+.btn-outline:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-outline:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.hero-stats{display:flex;align-items:center;gap:48px;flex-wrap:wrap;margin-top:64px;padding-top:36px;border-top:1px solid rgba(185,28,28,.15);opacity:0;animation:fadeUp .6s .76s ease forwards}
+.stat-num{font-family:var(--ff-d);font-size:44px;font-weight:900;color:var(--red);line-height:1;display:block;letter-spacing:-.03em}
+.stat-label{font-size:11px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--ink3);display:block;margin-top:5px}
+
+/* CARDS SECTION */
+.section-dark{background:var(--dark);color:var(--dark-text);padding:88px 48px}
+.section-header{max-width:1200px;margin:0 auto 52px}
+.section-h2{font-family:var(--ff-d);font-size:clamp(30px,4vw,52px);font-weight:400;color:var(--dark-text);margin-bottom:10px}
+.section-h2 em{font-style:italic;color:var(--gold)}
+.section-p{font-size:14px;color:var(--dark-text2);line-height:1.7}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:1200px;margin:0 auto}
+.nav-card{display:flex;flex-direction:column;padding:32px;background:rgba(255,255,255,.04);border:1px solid var(--dark-border);border-radius:10px;text-decoration:none;color:var(--dark-text);position:relative;overflow:hidden;transition:border-color .25s,transform .2s,background .2s}
+.nav-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--c,var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.nav-card:hover,.nav-card:focus-visible{border-color:rgba(201,150,58,.5);background:rgba(255,255,255,.07);transform:translateY(-4px)}
+.nav-card:hover::after,.nav-card:focus-visible::after{transform:scaleX(1)}
+.nav-card:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.card-icon{font-size:32px;margin-bottom:18px;display:block;line-height:1}
+.card-tag{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.card-title{font-family:var(--ff-d);font-size:26px;font-weight:700;color:var(--dark-text);margin-bottom:10px;line-height:1.1}
+.card-title em{font-style:italic;color:var(--gold)}
+.card-desc{font-size:13px;color:var(--dark-text2);line-height:1.65;flex:1}
+.card-cta{display:inline-flex;align-items:center;gap:6px;margin-top:24px;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);opacity:0;transform:translateX(-8px);transition:opacity .2s,transform .2s}
+.nav-card:hover .card-cta,.nav-card:focus-visible .card-cta{opacity:1;transform:translateX(0)}
+
+/* FOOTER */
+footer{background:var(--dark);color:var(--dark-text2);border-top:1px solid var(--dark-border);padding:32px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-brand{font-family:var(--ff-d);font-size:20px;font-weight:700;color:var(--dark-text)}
+.footer-brand em{font-style:italic;color:var(--red)}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{font-size:13px;color:var(--dark-text2);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-links a:focus-visible{outline:2px solid var(--gold);border-radius:2px}
+.footer-legal{width:100%;font-size:11px;opacity:.45;letter-spacing:.04em}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:900px){.hero-curtain{width:28%}}
+@media(max-width:768px){
+  nav,.section-dark,footer{padding-left:20px;padding-right:20px}
+  .hero{padding:80px 20px 60px}
+  .hero-curtain{display:none}
+  .hero-stats{gap:28px}
+  .nav-toggle{display:flex}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;padding:12px;background:var(--dark);border-bottom:1px solid var(--dark-border);gap:2px}
+  .nav-links.open a{color:var(--dark-text);padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
+  .nav-links.open a:hover{color:var(--gold);background:rgba(201,150,58,.08)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo principal</a>
+
+<nav role="navigation" aria-label="Navegação principal">
+  <a class="nav-brand" href="index.html" aria-label="Palco Vivo — página inicial">
+    <div class="nav-brand-mark" aria-hidden="true">P</div>
+    <span class="nav-brand-text">Palco <em>Vivo</em></span>
+  </a>
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu(this)">☰</button>
+  <ul class="nav-links" id="nav-menu" role="list">
+    <li><a href="calendario.html">Agenda</a></li>
+    <li><a href="palco-viivo.html">Palco Viivo</a></li>
+    <li><a href="teatros.html">Teatros</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="hero-curtain" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-kicker" aria-hidden="true">Portugal · Teatro · Artes Performativas</p>
+      <h1 id="hero-h1">
+        <span class="hero-title">Palco</span>
+        <span class="hero-title-line2">Vivo.</span>
+      </h1>
+      <p class="hero-sub">O portal nacional de teatro e artes performativas. Agenda completa, diretório de teatros e espetáculos em vídeo.</p>
+      <div class="hero-actions">
+        <a class="btn-red" href="calendario.html">Ver Agenda →</a>
+        <a class="btn-outline" href="teatros.html">Descobrir Teatros</a>
+      </div>
+      <div class="hero-stats" aria-label="Estatísticas do portal">
+        <div class="stat"><span class="stat-num" id="stat-shows">—</span><span class="stat-label">Espetáculos</span></div>
+        <div class="stat"><span class="stat-num" id="stat-th">4</span><span class="stat-label">Teatros</span></div>
+        <div class="stat"><span class="stat-num" id="stat-upd">—</span><span class="stat-label">Atualizado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark" aria-labelledby="explore-h2">
+    <div class="section-header">
+      <h2 class="section-h2" id="explore-h2">O que queres <em>explorar?</em></h2>
+      <p class="section-p">Escolhe uma secção para entrar no portal.</p>
+    </div>
+    <div class="cards-grid" role="list">
+      <a class="nav-card" href="calendario.html" style="--c:var(--red)" role="listitem">
+        <span class="card-icon" aria-hidden="true">📅</span>
+        <span class="card-tag">Agenda</span>
+        <span class="card-title">Calendário</span>
+        <p class="card-desc">Toda a programação nacional num calendário interativo, atualizado automaticamente a partir dos teatros.</p>
+        <span class="card-cta" aria-hidden="true">Abrir Agenda →</span>
+      </a>
+      <a class="nav-card" href="palco-viivo.html" style="--c:#F59E0B" role="listitem">
+        <span class="card-icon" aria-hidden="true">▶</span>
+        <span class="card-tag">Vídeo</span>
+        <span class="card-title">Palco <em>Viivo</em></span>
+        <p class="card-desc">Espetáculos em vídeo selecionados, do YouTube, Vimeo e RTP Play.</p>
+        <span class="card-cta" aria-hidden="true">Ver Vídeos →</span>
+      </a>
+      <a class="nav-card" href="teatros.html" style="--c:var(--gold)" role="listitem">
+        <span class="card-icon" aria-hidden="true">🏛</span>
+        <span class="card-tag">Diretório</span>
+        <span class="card-title">Teatros</span>
+        <p class="card-desc">Descobre os espaços, a sua programação completa, morada e contactos.</p>
+        <span class="card-cta" aria-hidden="true">Ver Teatros →</span>
+      </a>
+      <a class="nav-card" href="sobre.html" style="--c:#6B7280" role="listitem">
+        <span class="card-icon" aria-hidden="true">✉</span>
+        <span class="card-tag">Projeto</span>
+        <span class="card-title">Sobre</span>
+        <p class="card-desc">O que é o Palco Vivo, como funciona e como entrar em contacto connosco.</p>
+        <span class="card-cta" aria-hidden="true">Saber Mais →</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-brand">Palco <em>Vivo</em></div>
+  <ul class="footer-links" role="list">
+    <li><a href="calendario.html">Agenda</a></li>
+    <li><a href="palco-viivo.html">Palco Viivo</a></li>
+    <li><a href="teatros.html">Teatros</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+  <p class="footer-legal">© <span id="year"></span> Palco Vivo · Conteúdos agregados a partir dos sites oficiais dos teatros · Portugal</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+function toggleMenu(btn){const m=document.getElementById("nav-menu");const o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰"}
+document.querySelectorAll("#nav-menu a").forEach(a=>a.addEventListener("click",()=>{const m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));
+async function loadStats(){try{const r=await fetch("events.json?t="+Date.now());if(!r.ok)return;const d=await r.json();const t=d.total||(d.events||[]).length;if(t)document.getElementById("stat-shows").textContent=t;const th=Object.keys(d.by_theater||{}).length;if(th)document.getElementById("stat-th").textContent=th;if(d.updated_at){const dt=new Date(d.updated_at);document.getElementById("stat-upd").textContent=dt.toLocaleDateString("pt",{day:"numeric",month:"short"})}}catch(e){}}
+loadStats();
+</script>
+</body>
+</html>

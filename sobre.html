@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Sobre — Palco Vivo</title>
+<meta name="description" content="O que é o Palco Vivo, como funciona e como entrar em contacto."/>
+<meta name="theme-color" content="#0D0A07"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#B91C1C;--gold:#C9963A;
+  --cream:#FAF7F2;--ink:#1A1209;--ink2:#3D2B1F;--ink3:#6B4F3A;
+  --dark:#0D0A07;--dark2:#1A1410;
+  --dark-text:#F0E8DC;--dark-text2:#A89880;
+  --dark-border:rgba(201,150,58,.2);
+  --ff-d:'Playfair Display',Georgia,serif;
+  --ff-b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --radius:6px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-b);background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;background:var(--red);color:#fff;padding:10px 18px;border-radius:var(--radius);font-size:14px;font-weight:600;z-index:9999;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:60px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,247,242,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,28,28,.1)}
+.nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-brand-mark{width:34px;height:34px;background:var(--red);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--ff-d);font-size:18px;font-weight:900;color:#fff}
+.nav-brand-text{font-family:var(--ff-d);font-size:20px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.nav-brand-text em{font-style:italic;color:var(--red)}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{display:block;padding:7px 14px;font-size:13px;font-weight:500;color:var(--ink2);text-decoration:none;border-radius:var(--radius);transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--red);background:#FEE2E2}
+.nav-links a.active{color:var(--red);font-weight:600}
+.nav-links a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:22px;padding:8px;color:var(--ink2)}
+
+.page{padding:96px 48px 80px;max-width:760px;margin:0 auto}
+.page-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:20px}
+.page-eyebrow::before{content:'';width:24px;height:2px;background:var(--red);display:block}
+.page-title{font-family:var(--ff-d);font-size:clamp(40px,6vw,80px);font-weight:900;line-height:.9;letter-spacing:-.04em;color:var(--ink);margin-bottom:52px}
+.page-title em{font-style:italic;color:var(--red)}
+
+.prose h2{font-family:var(--ff-d);font-size:28px;font-weight:700;color:var(--ink);margin:52px 0 16px;letter-spacing:-.02em}
+.prose h2:first-of-type{margin-top:0}
+.prose p{font-size:15px;color:var(--ink3);line-height:1.85;margin-bottom:16px}
+.prose a{color:var(--red);text-decoration:none;font-weight:500}
+.prose a:hover{text-decoration:underline}
+.prose strong{color:var(--ink);font-weight:600}
+
+.divider{width:100%;height:1px;background:linear-gradient(90deg,rgba(185,28,28,.3),transparent);margin:52px 0}
+
+.contact-card{background:var(--dark);border-radius:10px;padding:28px 32px;display:flex;flex-direction:column;gap:16px}
+.contact-row{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--dark-text2)}
+.contact-row a{color:var(--gold);text-decoration:none;font-weight:500;transition:color .2s}
+.contact-row a:hover{color:#fff}
+.contact-row a:focus-visible{outline:2px solid var(--gold);border-radius:2px}
+
+.legal-box{background:rgba(185,28,28,.04);border:1px solid rgba(185,28,28,.12);border-left:3px solid var(--red);border-radius:0 8px 8px 0;padding:24px 28px}
+.legal-box h3{font-family:var(--ff-d);font-size:20px;font-weight:700;color:var(--ink);margin-bottom:12px}
+.legal-box p{font-size:13px;color:var(--ink3);line-height:1.75;margin-bottom:10px}
+.legal-box p:last-child{margin-bottom:0}
+
+footer{background:var(--dark);color:var(--dark-text2);border-top:1px solid var(--dark-border);padding:32px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-brand{font-family:var(--ff-d);font-size:20px;font-weight:700;color:var(--dark-text)}
+.footer-brand em{font-style:italic;color:var(--red)}
+.footer-links{display:flex;gap:20px;list-style:none}
+.footer-links a{font-size:13px;color:var(--dark-text2);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-links a:focus-visible{outline:2px solid var(--gold);border-radius:2px}
+.footer-legal{width:100%;font-size:11px;opacity:.45;letter-spacing:.04em}
+
+@media(max-width:768px){
+  nav,footer{padding-left:20px;padding-right:20px}
+  .page{padding:88px 20px 60px}
+  .nav-toggle{display:flex}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;padding:12px;background:var(--dark);border-bottom:1px solid var(--dark-border);gap:2px}
+  .nav-links.open a{color:var(--dark-text);padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
+  .nav-links.open a:hover{color:var(--gold)}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo principal</a>
+<nav role="navigation" aria-label="Navegação principal">
+  <a class="nav-brand" href="index.html" aria-label="Palco Vivo — página inicial">
+    <div class="nav-brand-mark" aria-hidden="true">P</div>
+    <span class="nav-brand-text">Palco <em>Vivo</em></span>
+  </a>
+  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu(this)">☰</button>
+  <ul class="nav-links" id="nav-menu" role="list">
+    <li><a href="calendario.html">Agenda</a></li>
+    <li><a href="palco-viivo.html">Palco Viivo</a></li>
+    <li><a href="teatros.html">Teatros</a></li>
+    <li><a href="sobre.html" class="active" aria-current="page">Sobre</a></li>
+  </ul>
+</nav>
+
+<main id="main-content">
+  <div class="page">
+    <p class="page-eyebrow">Projeto</p>
+    <h1 class="page-title">Sobre o<br/>Palco <em>Vivo</em></h1>
+
+    <div class="prose">
+      <h2>O que é</h2>
+      <p>O <strong>Palco Vivo</strong> é um portal público e independente dedicado à divulgação de espetáculos de teatro e artes performativas em Portugal.</p>
+      <p>Agrega automaticamente a programação de teatros nacionais através de scrapers, apresentando tudo num calendário interativo atualizado regularmente.</p>
+
+      <h2>Como funciona</h2>
+      <p>Os dados são recolhidos diretamente dos sites oficiais dos teatros através de scripts automatizados que correm periodicamente via GitHub Actions. Os eventos são normalizados e publicados no calendário central em formato JSON.</p>
+      <p>Todos os conteúdos — títulos, datas, descrições, imagens — são propriedade dos respetivos teatros. O Palco Vivo funciona exclusivamente como agregador.</p>
+
+      <h2>Teatros incluídos</h2>
+      <p>Atualmente o portal agrega a programação de <a href="teatros.html">4 teatros</a> em Lisboa: CCB, São Luiz, Teatro Maria Matos e Variedades & Capitólio. O objetivo é expandir progressivamente para os principais espaços nacionais.</p>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <h2>Contacto</h2>
+      <div class="contact-card">
+        <div class="contact-row"><span aria-hidden="true">✉</span><span>Email: <a href="mailto:info@palcovivo.pt">info@palcovivo.pt</a></span></div>
+        <div class="contact-row"><span aria-hidden="true">🌐</span><span>Site: <a href="https://palcovivo.pt" target="_blank" rel="noopener">palcovivo.pt</a></span></div>
+      </div>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="legal-box">
+        <h3>Aviso legal</h3>
+        <p>Os conteúdos apresentados são recolhidos automaticamente dos sites oficiais dos teatros e destinam-se exclusivamente à divulgação cultural. Caso seja titular de direitos sobre algum conteúdo e pretenda a sua remoção, <a href="mailto:info@palcovivo.pt">contacte-nos</a>.</p>
+        <p>O Palco Vivo não vende bilhetes nem é responsável pela gestão de espetáculos. Para adquirir bilhetes, consulte sempre o site oficial do teatro.</p>
+        <p>© <span id="year-l"></span> Palco Vivo. Desenvolvido em Portugal.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-brand">Palco <em>Vivo</em></div>
+  <ul class="footer-links" role="list">
+    <li><a href="calendario.html">Agenda</a></li>
+    <li><a href="palco-viivo.html">Palco Viivo</a></li>
+    <li><a href="teatros.html">Teatros</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+  </ul>
+  <p class="footer-legal">© <span id="year"></span> Palco Vivo · Todos os direitos reservados · Portugal</p>
+</footer>
+<script>
+const y=new Date().getFullYear();
+document.getElementById("year").textContent=y;
+document.getElementById("year-l").textContent=y;
+function toggleMenu(btn){const m=document.getElementById("nav-menu");const o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰"}
+</script>
+</body>
+</html>
