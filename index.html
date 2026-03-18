@@ -118,6 +118,7 @@ footer{background:var(--dark);color:var(--dark-text2);border-top:1px solid var(-
   </a>
   <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu(this)">☰</button>
   <ul class="nav-links" id="nav-menu" role="list">
+    <li><a href="programacao.html">Programação</a></li>
     <li><a href="calendario.html">Agenda</a></li>
     <li><a href="palco-viivo.html">Palco Viivo</a></li>
     <li><a href="teatros.html">Teatros</a></li>
@@ -136,7 +137,7 @@ footer{background:var(--dark);color:var(--dark-text2);border-top:1px solid var(-
       </h1>
       <p class="hero-sub">O portal nacional de teatro e artes performativas. Agenda completa, diretório de teatros e espetáculos em vídeo.</p>
       <div class="hero-actions">
-        <a class="btn-red" href="calendario.html">Ver Agenda →</a>
+        <a class="btn-red" href="programacao.html">Ver Programação →</a>
         <a class="btn-outline" href="teatros.html">Descobrir Teatros</a>
       </div>
       <div class="hero-stats" aria-label="Estatísticas do portal">
@@ -153,7 +154,14 @@ footer{background:var(--dark);color:var(--dark-text2);border-top:1px solid var(-
       <p class="section-p">Escolhe uma secção para entrar no portal.</p>
     </div>
     <div class="cards-grid" role="list">
-      <a class="nav-card" href="calendario.html" style="--c:var(--red)" role="listitem">
+      <a class="nav-card" href="programacao.html" style="--c:var(--red)" role="listitem">
+        <span class="card-icon" aria-hidden="true">🎭</span>
+        <span class="card-tag">Programação</span>
+        <span class="card-title">Em <em>Cena</em></span>
+        <p class="card-desc">Todos os espectáculos em cartaz, com imagens, datas e bilhetes numa vista editorial.</p>
+        <span class="card-cta" aria-hidden="true">Ver Programação →</span>
+      </a>
+      <a class="nav-card" href="calendario.html" style="--c:var(--gold)" role="listitem">
         <span class="card-icon" aria-hidden="true">📅</span>
         <span class="card-tag">Agenda</span>
         <span class="card-title">Calendário</span>
