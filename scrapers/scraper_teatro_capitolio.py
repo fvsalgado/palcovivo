@@ -164,14 +164,16 @@ def _parse_dates(text):
     date_start = ""
     date_end = ""
 
-    m = re.search(r"(\\d{2}\\.\\d{2}(?:\\.\\d{4})?)\\s*[–—\\-]\\s*(\\d{2}\\.\\d{2}\\.\\d{4})", text)
+    # Intervalo: DD.MM[.YYYY] – DD.MM.YYYY
+    m = re.search(r"(\d{2}\.\d{2}(?:\.\d{4})?)\s*[–—\-]\s*(\d{2}\.\d{2}\.\d{4})", text)
     if m:
         dates_label = f"{m.group(1)} – {m.group(2)}"
         date_start, date_end = parse_date_range(dates_label)
         if date_start:
             return dates_label, date_start, date_end
 
-    m2 = re.search(r"(\\d{2}\\.\\d{2}\\.\\d{4})", text)
+    # Data isolada: DD.MM.YYYY
+    m2 = re.search(r"(\d{2}\.\d{2}\.\d{4})", text)
     if m2:
         dates_label = m2.group(1)
         date_start = date_end = parse_date(dates_label)
