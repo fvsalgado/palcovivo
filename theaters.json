@@ -47,18 +47,33 @@
     },
     {
       "id": "variedades",
-      "name": "Teatro Variedades & Capitólio",
+      "name": "Teatro Variedades",
       "short": "Variedades",
       "color": "#d93025",
-      "description": "O Teatro Variedades e o Capitólio são dois espaços históricos do Parque Mayer em Lisboa, com uma programação eclética de teatro, música e espetáculos de entretenimento.",
+      "description": "O Teatro Variedades é um dos espaços históricos do Parque Mayer em Lisboa, com uma programação eclética de teatro, música e espetáculos de entretenimento.",
       "address": "Parque Mayer, Avenida da Liberdade, Lisboa",
       "city": "Lisboa",
       "site": "https://teatrovariedades-capitolio.pt",
-      "programacao": "https://teatrovariedades-capitolio.pt/agenda/",
+      "programacao": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/",
       "lat": 38.7192,
       "lng": -9.1483,
-      "salas": ["Teatro Variedades", "Capitólio"],
-      "theater_key": "Teatro Variedades & Capitólio"
+      "salas": ["Teatro Variedades"],
+      "theater_key": "Teatro Variedades"
+    },
+    {
+      "id": "capitolio",
+      "name": "Capitólio",
+      "short": "Capitólio",
+      "color": "#e53935",
+      "description": "O Capitólio é um espaço histórico do Parque Mayer em Lisboa, com uma programação diversa de teatro, música e espetáculos de entretenimento.",
+      "address": "Parque Mayer, Avenida da Liberdade, Lisboa",
+      "city": "Lisboa",
+      "site": "https://teatrovariedades-capitolio.pt",
+      "programacao": "https://teatrovariedades-capitolio.pt/agenda/capitolio/",
+      "lat": 38.7195,
+      "lng": -9.1480,
+      "salas": ["Capitólio"],
+      "theater_key": "Capitólio"
     }
   ]
 }

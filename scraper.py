@@ -25,7 +25,7 @@ from scrapers.utils import log
 # Scrapers activos: (nome_display, função)
 SCRAPERS = [
     ("Teatro Variedades",               scraper_teatro_variedades.scrape),
-    ("Teatro Capitólio",                scraper_teatro_capitolio.scrape),
+    ("Capitólio",                       scraper_teatro_capitolio.scrape),
     ("São Luiz Teatro Municipal",       saoluiz.scrape),
     ("Teatro Maria Matos",              mariamatos.scrape),
     ("CCB — Centro Cultural de Belém",  ccb.scrape),

@@ -228,7 +228,8 @@ html,body{overflow:visible!important}
 
 <script>
 const THEATER_COLORS={
-  "Teatro Variedades & Capitólio":"#d93025",
+  "Teatro Variedades":"#d93025",
+  "Capitólio":"#e53935",
   "São Luiz Teatro Municipal":"#1a73e8",
   "Teatro Nacional São João":"#188038",
   "Teatro Nacional D. Maria II":"#f9ab00",
@@ -237,7 +238,8 @@ const THEATER_COLORS={
   "CCB — Centro Cultural de Belém":"#00695c",
 };
 const THEATER_SHORT={
-  "Teatro Variedades & Capitólio":"Variedades",
+  "Teatro Variedades":"Variedades",
+  "Capitólio":"Capitólio",
   "São Luiz Teatro Municipal":"São Luiz",
   "Teatro Nacional São João":"TNSJ",
   "Teatro Nacional D. Maria II":"D. Maria II",
@@ -245,8 +247,8 @@ const THEATER_SHORT={
   "Teatro Maria Matos":"Maria Matos",
   "CCB — Centro Cultural de Belém":"CCB",
 };
-function tColor(t){for(const[k,v]of Object.entries(THEATER_COLORS))if(t&&t.startsWith(k))return v;return"#757575";}
-function tShort(t){for(const[k,v]of Object.entries(THEATER_SHORT))if(t&&t.startsWith(k))return v;return t||"";}
+function tColor(t){if(!t)return"#757575";for(const[k,v]of Object.entries(THEATER_COLORS))if(t===k||t.startsWith(k))return v;return"#757575";}
+function tShort(t){if(!t)return"";for(const[k,v]of Object.entries(THEATER_SHORT))if(t===k||t.startsWith(k))return v;return t;}
 
 const PTD=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
 const PTDs=["D","S","T","Q","Q","S","S"];
