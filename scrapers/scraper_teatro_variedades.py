@@ -11,7 +11,7 @@ from scrapers.utils import make_id, parse_date_range, parse_date, log
 BASE = "https://teatrovariedades-capitolio.pt"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 
-AGENDA_URL = f"{BASE}/agenda/teatro-variedades/?categoria=teatro&layout=grid"
+AGENDA_URL = f"{BASE}/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades"
 THEATER_NAME = "Teatro Variedades"
 SOURCE_SLUG = "teatro-variedades"
 
