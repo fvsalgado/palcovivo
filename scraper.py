@@ -16,6 +16,7 @@ from scrapers import (
     saoluiz,
     mariamatos,
     ccb,
+    scraper_culturgest,
 )
 
 from scrapers.validator import validate
@@ -28,6 +29,7 @@ SCRAPERS = [
     ("Capitólio",                       scraper_teatro_capitolio.scrape),
     ("São Luiz Teatro Municipal",       saoluiz.scrape),
     ("Teatro Maria Matos",              mariamatos.scrape),
+    ("Culturgest",                          scraper_culturgest.scrape),
     ("CCB — Centro Cultural de Belém",  ccb.scrape),
 ]
 

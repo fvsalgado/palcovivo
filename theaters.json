@@ -46,6 +46,21 @@
       "theater_key": "Teatro Maria Matos"
     },
     {
+      "id": "culturgest",
+      "name": "Culturgest",
+      "short": "Culturgest",
+      "color": "#6d4c97",
+      "description": "A Culturgest — Fundação Caixa Geral de Depósitos dedica-se à criação contemporânea, com programação regular de teatro, dança, música, artes visuais e cinema em Lisboa e Porto.",
+      "address": "Rua Arco do Cego, 50, 1000-020 Lisboa",
+      "city": "Lisboa",
+      "site": "https://www.culturgest.pt",
+      "programacao": "https://www.culturgest.pt/pt/programacao/por-evento/?typology=1",
+      "lat": 38.7318,
+      "lng": -9.1397,
+      "salas": ["Auditório Emílio Rui Vilar", "Pequeno Auditório", "Galeria 1", "Galeria 2"],
+      "theater_key": "Culturgest"
+    },
+    {
       "id": "variedades",
       "name": "Teatro Variedades",
       "short": "Variedades",

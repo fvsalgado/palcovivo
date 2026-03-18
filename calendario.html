@@ -279,8 +279,8 @@ html,body{height:100%;font-family:var(--ff-b);font-size:13px;color:var(--text);b
 
 <script>
 /* THEATER META */
-const TCOLORS={"Teatro Variedades":"#c0392b","Capitólio":"#e53935","São Luiz Teatro Municipal":"#1a73e8","Teatro Nacional São João":"#188038","Teatro Nacional D. Maria II":"#e6a800","Teatro Tivoli BBVA":"#7b1fa2","Teatro Maria Matos":"#e65100","CCB — Centro Cultural de Belém":"#00897b"};
-const TSHORT={"Teatro Variedades":"Variedades","Capitólio":"Capitólio","São Luiz Teatro Municipal":"São Luiz","Teatro Nacional São João":"TNSJ","Teatro Nacional D. Maria II":"D. Maria II","Teatro Tivoli BBVA":"Tivoli","Teatro Maria Matos":"Maria Matos","CCB — Centro Cultural de Belém":"CCB"};
+const TCOLORS={"Teatro Variedades":"#c0392b","Capitólio":"#e53935","São Luiz Teatro Municipal":"#1a73e8","Teatro Nacional São João":"#188038","Teatro Nacional D. Maria II":"#e6a800","Teatro Tivoli BBVA":"#7b1fa2","Teatro Maria Matos":"#e65100","CCB — Centro Cultural de Belém":"#00897b","Culturgest":"#6d4c97"};
+const TSHORT={"Teatro Variedades":"Variedades","Capitólio":"Capitólio","São Luiz Teatro Municipal":"São Luiz","Teatro Nacional São João":"TNSJ","Teatro Nacional D. Maria II":"D. Maria II","Teatro Tivoli BBVA":"Tivoli","Teatro Maria Matos":"Maria Matos","CCB — Centro Cultural de Belém":"CCB","Culturgest":"Culturgest"};
 function tColor(t){if(!t)return"#888";for(const[k,v]of Object.entries(TCOLORS))if(t===k||t.startsWith(k))return v;return"#888";}
 function tShort(t){if(!t)return"";for(const[k,v]of Object.entries(TSHORT))if(t===k||t.startsWith(k))return v;return t;}
 
