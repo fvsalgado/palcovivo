@@ -33,6 +33,36 @@ from scrapers.utils import (
     parse_date, MONTHS,
 )
 
+_BASE = "https://theatrocirco.com"
+
+
+def _fetch_logo() -> str:
+    """
+    O logo do Theatro Circo é um SVG inline na homepage.
+    Extrai-o e devolve como data URI (image/svg+xml; base64)
+    para poder ser usado em <img src="..."> no portal.
+    Devolve string vazia em caso de erro.
+    """
+    import base64
+    try:
+        r = requests.get(_BASE + "/", headers=HEADERS, timeout=15)
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "lxml")
+        logo_a = soup.find(
+            "a",
+            attrs={"aria-label": re.compile(r"página inicial", re.IGNORECASE)},
+        )
+        if logo_a:
+            svg = logo_a.find("svg")
+            if svg:
+                svg_str = str(svg)
+                encoded = base64.b64encode(svg_str.encode("utf-8")).decode("ascii")
+                return f"data:image/svg+xml;base64,{encoded}"
+    except Exception as e:
+        log(f"[Theatro Circo] Não foi possível extrair logo: {e}")
+    return ""
+
+
 # ─────────────────────────────────────────────────────────────
 # Metadados do teatro — lidos pelo sync_scrapers.py
 # ─────────────────────────────────────────────────────────────
@@ -44,7 +74,8 @@ THEATER = {
     "city":        "Braga",
     "address":     "Av. da Liberdade, 697, 4710-251 Braga",
     "site":        "https://theatrocirco.com",
-    "programacao": "https://theatrocirco.com/programa/",
+    "programacao": "https://theatrocirco.com/programa/?agenda_category=teatro-pt",
+    "logo":        _fetch_logo(),   # SVG inline extraído da homepage
     "lat":         41.5454,
     "lng":         -8.4265,
     "salas":       ["Sala Principal", "Pequeno Auditório"],
@@ -64,7 +95,7 @@ THEATER = {
 THEATER_NAME = THEATER["name"]
 SOURCE_SLUG  = THEATER["id"]
 BASE         = "https://theatrocirco.com"
-AGENDA       = f"{BASE}/programa/"
+AGENDA       = f"{BASE}/programa/?agenda_category=teatro-pt"
 
 # Categorias que resultam em Teatro no schema do Palco Vivo
 _ACCEPT_CATEGORIES = {"teatro"}
@@ -123,8 +154,17 @@ def scrape() -> list[dict]:
 def _collect_candidates() -> list[dict]:
     """
     Percorre a listagem e devolve apenas eventos de Teatro.
-    A listagem tem três secções na mesma página (programação geral,
-    CTB e Mais programação) — todas tratadas da mesma forma.
+
+    Estrutura HTML da listagem:
+      Cada evento é um div.highlight-card com:
+        p.highlight-meta  → "DD mês (dia) → Categoria[, Categoria]"
+        div.highlight-image > a[href=/event/...]  → URL (contém só <img>, sem texto)
+        p > em            → título (em itálico)
+        p                 → subtítulo / companhia
+
+    Bug anterior: o scraper iterava as tags <a href=/event/> e chamava
+    a.get_text() — mas essas tags contêm apenas <img>, pelo que o texto
+    era sempre vazio e _extract_category_from_block nunca encontrava "→".
     """
     try:
         r = requests.get(AGENDA, headers=HEADERS, timeout=20)
@@ -137,40 +177,42 @@ def _collect_candidates() -> list[dict]:
     candidates = []
     seen_urls  = set()
 
-    for a in soup.find_all("a", href=re.compile(r"/event/")):
-        href = a.get("href", "")
+    for card in soup.select("div.highlight-card"):
+        # URL — está no <a> dentro de div.highlight-image
+        a_tag = card.select_one("div.highlight-image a[href]")
+        if not a_tag:
+            continue
+        href = a_tag["href"]
         url  = href if href.startswith("http") else urljoin(BASE, href)
-
-        # Normalizar URL (remover trailing slash duplo, etc.)
-        url = url.rstrip("/") + "/"
+        url  = url.rstrip("/") + "/"
         if url in seen_urls:
             continue
 
-        # Texto do bloco do evento
-        block_text = a.get_text(" ", strip=True)
+        # Categoria — p.highlight-meta: "DD mês → Categoria"
+        # Usar a versão desktop (evitar duplicado mobile)
+        meta_el = card.select_one("p.highlight-meta.desktop, p.highlight-meta")
+        if not meta_el:
+            continue
+        meta_text = meta_el.get_text(" ", strip=True)
 
-        # Extrair categoria — formato "→ Teatro" ou "→ Música, Teatro"
-        category_raw = _extract_category_from_block(block_text)
+        category_raw = _extract_category_from_block(meta_text)
         if not category_raw:
             continue
 
-        # Verificar se alguma das categorias é Teatro
         categories = [c.strip().lower() for c in category_raw.split(",")]
-        has_teatro = any(c in _ACCEPT_CATEGORIES for c in categories)
+        has_teatro  = any(c in _ACCEPT_CATEGORIES for c in categories)
         all_rejected = all(c in _REJECT_CATEGORIES for c in categories)
 
         if not has_teatro:
             if all_rejected:
                 continue
-            # Categoria desconhecida ou ambígua — ignorar por defeito
-            continue
+            continue  # categoria desconhecida — ignorar por defeito
 
-        # Verificar tag infantojuvenil
-        is_infantil = "infantojuvenil" in block_text.lower()
+        is_infantil = "infantojuvenil" in meta_text.lower()
 
         seen_urls.add(url)
         candidates.append({
-            "url":        url,
+            "url":         url,
             "is_infantil": is_infantil,
         })
 
