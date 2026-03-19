@@ -137,43 +137,48 @@ def scrape() -> list[dict]:
 
 def _collect_event_slugs_from_nav(soup) -> list[str]:
     """
-    Percorre a barra de navegação à procura do item "Programação"
-    e recolhe todos os links âncora (#slug) que estejam sob ele.
+    Percorre a barra de navegação à procura do dropdown "Programação"
+    e recolhe os slugs de âncora de cada evento listado.
 
-    O site usa um menu com sub-items do tipo:
-        <li class="...">Programação
-            <ul>
-                <li><a href="#espetaculo-1">Espectáculo 1</a></li>
-                <li><a href="#espetaculo-2">Espectáculo 2</a></li>
+    O site usa Bootstrap dropdown:
+        <li class="dropdown">
+            <a>Programação</a>
+            <ul class="dropdown-menu">
+                <li><a href="https://teatrodobairro.org/#slug">Título</a></li>
             </ul>
         </li>
 
-    Devolve lista de slugs (sem o '#'), pela ordem em que aparecem.
+    Nota: os hrefs podem ter URL completa (https://.../#slug) ou apenas #slug.
+    O scraper extrai sempre o fragmento após o último '#'.
     """
-    slugs = []
+    slugs: list[str] = []
 
-    nav = soup.find("nav")
-    if not nav:
-        # Algumas SPAs não usam <nav> — tentar o <header>
-        nav = soup.find("header")
-    if not nav:
-        nav = soup  # último recurso: pesquisar em toda a página
+    nav = soup.find("nav") or soup.find("header") or soup
 
-    # Procurar o item de menu que contém o texto "Programação"
-    for item in nav.find_all(["li", "div", "ul"]):
-        text = item.get_text(separator=" ", strip=True)
-        # O item de nível superior deve conter "Programação" mas não ser
-        # apenas um link âncora (para não confundir com os sub-items)
-        if re.search(r"\bprograma[çc][aã]o\b", text, re.IGNORECASE):
-            # Recolher todos os links âncora dentro deste item
-            for a in item.find_all("a", href=re.compile(r"^#")):
-                slug = a["href"].lstrip("#").strip()
+    # Procurar o <li> cujo link/texto directo seja "Programação"
+    for li in nav.find_all("li"):
+        first_a = li.find("a", recursive=False)
+        label   = first_a.get_text(strip=True) if first_a else ""
+        if not re.search(r"\bprograma[çc][aã]o\b", label, re.IGNORECASE):
+            continue
+
+        # Encontrámos o li de Programação — recolher links do sub-menu
+        submenu = li.find("ul")
+        if not submenu:
+            continue
+
+        for a in submenu.find_all("a", href=True):
+            href = a["href"]
+            # Apanha "#slug" e "https://.../#slug"
+            if "#" in href:
+                slug = href.split("#")[-1].strip()
                 if slug and slug not in slugs:
                     slugs.append(slug)
-            if slugs:
-                break  # já encontrámos o bloco certo
+
+        break  # dropdown de Programação encontrado
 
     return slugs
+
 
 
 # ─────────────────────────────────────────────────────────────
