@@ -496,7 +496,7 @@ function cardHTML(ev,idx){
   const imgCredit=imgObj&&imgObj.credit?imgObj.credit+" · ":"";
   const imgSrc=imgObj?imgObj.source:(ev.source_url||ev.url||"#");
   const theater=imgObj?imgObj.theater:(ev.theater||"");
-  const synopsis=ev.synopsis||ev.synopsis_short||ev.description||"";
+  const synopsis=ev.synopsis||ev.description||"";
   const sourceUrl=ev.source_url||ev.url||"";
 
   const imgHtml=imgUrl
@@ -539,7 +539,7 @@ function openLB(idx){
   document.getElementById("lb-dates").innerHTML=`<svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="3" width="12" height="11" rx="1.5"/><path d="M5 1v3M11 1v3M2 7h12"/></svg>${esc(ev.dates_label||(ev.date_start||""))}`;
 
   const desc=document.getElementById("lb-desc");
-  const syn=ev.synopsis||ev.synopsis_short||ev.description||"";
+  const syn=ev.synopsis||ev.description||"";
   if(syn){desc.textContent=syn;desc.style.display="block";}else desc.style.display="none";
 
   const sl=document.getElementById("lb-source-link");
@@ -548,7 +548,7 @@ function openLB(idx){
   const pills=[];
   if(ev.schedule)pills.push(`⏰ ${ev.schedule}`);
   if(ev.duration)pills.push(`⏱ ${ev.duration}`);
-  if(ev.price)pills.push(`🎟 ${ev.price}`);
+  if(ev.price_info)pills.push(`🎟 ${ev.price_info}`);
   if(ev.age_rating)pills.push(`👤 ${ev.age_rating}`);
   document.getElementById("lb-pills").innerHTML=pills.map(p=>`<span class="lb-pill">${esc(p)}</span>`).join("");
 

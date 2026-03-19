@@ -158,7 +158,7 @@ async function load(){
   const grid=document.getElementById("theater-grid");
   if(!theaters.length){grid.innerHTML=`<div class="loading-state"><span>Sem teatros disponíveis.</span></div>`;return;}
   grid.innerHTML=theaters.map(t=>{
-    const n=counts[t.theater_key]||0;
+    const n=counts[t.name]||0;
     return`<a class="theater-btn" href="teatro.html?id=${t.id}" style="--tc:${t.color}" aria-label="${t.name}${n?` — ${n} espetáculos`:''}">
       <div class="tb-bg" aria-hidden="true"></div>
       <div class="tb-glow" aria-hidden="true"></div>
