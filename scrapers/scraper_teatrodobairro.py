@@ -5,6 +5,9 @@ Cidade: Lisboa
 
 Estrutura do site (SPA — Single Page Application):
   - Toda a programação está numa única página (homepage).
+  - A barra de navegação, sob "Programação", lista links âncora para cada evento:
+      <a href="#slug-do-evento">Título</a>
+  - Estes links são a fonte autoritativa da lista de eventos actuais.
   - Cada espetáculo é uma secção âncora: <section id="slug">.
   - Não há páginas individuais de evento — todos os dados estão na homepage.
   - Estrutura de cada evento:
@@ -64,8 +67,7 @@ SOURCE_SLUG  = THEATER["id"]
 BASE         = "https://teatrodobairro.org"
 AGENDA       = BASE + "/"
 
-# Categorias a aceitar — o site usa "Teatro", "Teatro - Acolhimento", etc.
-# Rejeitar Cinema e Dança
+# Categorias a rejeitar — o site usa "Teatro", "Teatro - Acolhimento", etc.
 _REJECT_KEYWORDS = {"cinema", "dança", "danca", "música", "musica"}
 
 
@@ -89,29 +91,96 @@ def scrape() -> list[dict]:
     events = []
     seen_ids: set[str] = set()
 
-    # Cada espetáculo é uma <section> com id único
-    # A estrutura é: secção com imagem, bloco de info e texto
-    for section in soup.find_all("section"):
-        try:
-            ev = _parse_section(section, soup)
-            if ev:
-                eid = ev["id"]
-                if eid not in seen_ids:
-                    seen_ids.add(eid)
+    # ── Estratégia principal: extrair slugs da nav de Programação ──────────
+    # A barra de navegação lista links âncora (#slug) para cada evento actual.
+    # Isto é mais fiável do que iterar todas as <section> da página.
+    event_slugs = _collect_event_slugs_from_nav(soup)
+
+    if event_slugs:
+        log(f"[{THEATER_NAME}] {len(event_slugs)} eventos encontrados na nav: {event_slugs}")
+        for slug in event_slugs:
+            section = soup.find("section", id=slug)
+            if not section:
+                # Tentar sem case sensitivity (algumas páginas têm ids em maiúsculas)
+                section = soup.find("section", id=re.compile(f"^{re.escape(slug)}$", re.IGNORECASE))
+            if not section:
+                log(f"[{THEATER_NAME}] Secção não encontrada para slug '{slug}'")
+                continue
+            try:
+                ev = _parse_section(section, slug, soup)
+                if ev and ev["id"] not in seen_ids:
+                    seen_ids.add(ev["id"])
                     events.append(ev)
-        except Exception as e:
-            sid = section.get("id", "?")
-            log(f"[{THEATER_NAME}] Erro na secção '{sid}': {e}")
+            except Exception as e:
+                log(f"[{THEATER_NAME}] Erro na secção '{slug}': {e}")
+    else:
+        # ── Fallback: percorrer todas as <section> com id ──────────────────
+        # Usado se a nav não tiver links de âncora (mudança de estrutura futura).
+        log(f"[{THEATER_NAME}] Nav sem links de evento — a usar fallback por <section>")
+        for section in soup.find_all("section", id=True):
+            slug = section.get("id", "")
+            try:
+                ev = _parse_section(section, slug, soup)
+                if ev and ev["id"] not in seen_ids:
+                    seen_ids.add(ev["id"])
+                    events.append(ev)
+            except Exception as e:
+                log(f"[{THEATER_NAME}] Erro na secção '{slug}': {e}")
 
     log(f"[{THEATER_NAME}] {len(events)} eventos de teatro")
     return events
 
 
 # ─────────────────────────────────────────────────────────────
+# Recolha de slugs a partir da navegação
+# ─────────────────────────────────────────────────────────────
+
+def _collect_event_slugs_from_nav(soup) -> list[str]:
+    """
+    Percorre a barra de navegação à procura do item "Programação"
+    e recolhe todos os links âncora (#slug) que estejam sob ele.
+
+    O site usa um menu com sub-items do tipo:
+        <li class="...">Programação
+            <ul>
+                <li><a href="#espetaculo-1">Espectáculo 1</a></li>
+                <li><a href="#espetaculo-2">Espectáculo 2</a></li>
+            </ul>
+        </li>
+
+    Devolve lista de slugs (sem o '#'), pela ordem em que aparecem.
+    """
+    slugs = []
+
+    nav = soup.find("nav")
+    if not nav:
+        # Algumas SPAs não usam <nav> — tentar o <header>
+        nav = soup.find("header")
+    if not nav:
+        nav = soup  # último recurso: pesquisar em toda a página
+
+    # Procurar o item de menu que contém o texto "Programação"
+    for item in nav.find_all(["li", "div", "ul"]):
+        text = item.get_text(separator=" ", strip=True)
+        # O item de nível superior deve conter "Programação" mas não ser
+        # apenas um link âncora (para não confundir com os sub-items)
+        if re.search(r"\bprograma[çc][aã]o\b", text, re.IGNORECASE):
+            # Recolher todos os links âncora dentro deste item
+            for a in item.find_all("a", href=re.compile(r"^#")):
+                slug = a["href"].lstrip("#").strip()
+                if slug and slug not in slugs:
+                    slugs.append(slug)
+            if slugs:
+                break  # já encontrámos o bloco certo
+
+    return slugs
+
+
+# ─────────────────────────────────────────────────────────────
 # Parsing de secção de evento
 # ─────────────────────────────────────────────────────────────
 
-def _parse_section(section, full_soup) -> dict | None:
+def _parse_section(section, section_id: str, full_soup) -> dict | None:
     """
     Extrai evento de uma <section> da homepage.
     Devolve None se não for um espetáculo de teatro válido.
@@ -160,7 +229,6 @@ def _parse_section(section, full_soup) -> dict | None:
         return None
 
     # URL canónica — âncora da secção
-    section_id = section.get("id", "")
     source_url = f"{BASE}/#{section_id}" if section_id else BASE + "/"
 
     # Imagem — src com assets/imagens/programa
