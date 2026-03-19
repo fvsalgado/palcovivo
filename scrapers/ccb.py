@@ -23,15 +23,17 @@ import time
 import json
 import requests
 from bs4 import BeautifulSoup
-from scrapers.utils import make_id, log
+from scrapers.utils import make_id, log, HEADERS, can_scrape, truncate_synopsis, build_image_object
 
 BASE    = "https://www.ccb.pt"
 AGENDA  = f"{BASE}/eventos/category/teatro/"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 THEATER = "CCB — Centro Cultural de Belém"
 
 
 def scrape():
+    if not can_scrape(BASE):
+        log(f"robots.txt: scraping bloqueado para {BASE}")
+        return []
     urls = _collect_urls()
     events = []
     for url in sorted(urls):
@@ -251,9 +253,10 @@ def _scrape_event(url):
         "date_start":      date_start,
         "date_end":        date_end,
         "schedule":        schedule,
-        "description":     synopsis,
-        "image":           image,
+        "description":     truncate_synopsis(synopsis),
+        "image":           build_image_object(image, None, "CCB — Centro Cultural de Belém", url),
         "url":             url,
+            "source_url":      url,
         "ticket_url":      ticket_url,
         "price":           price,
         "age_rating":      age_rating,

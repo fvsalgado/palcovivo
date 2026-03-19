@@ -17,10 +17,9 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from datetime import datetime
 
-from scrapers.utils import make_id, parse_date, log
+from scrapers.utils import make_id, parse_date, log, HEADERS, can_scrape, truncate_synopsis, build_image_object
 
 BASE    = "https://www.culturgest.pt"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 
 THEATER_NAME = "Culturgest"
 SOURCE_SLUG  = "culturgest"
@@ -40,6 +39,9 @@ _PT_MONTHS_ABBR = {
 
 
 def scrape():
+    if not can_scrape(BASE):
+        log(f"robots.txt: scraping bloqueado para {BASE}")
+        return []
     event_urls = _discover_urls()
     log(f"[{THEATER_NAME}] {len(event_urls)} URLs descobertos")
 
@@ -246,10 +248,11 @@ def _scrape_event(url):
         "date_start":      date_start,
         "date_end":        date_end,
         "schedule":        schedule,
-        "description":     description,
-        "synopsis_short":  synopsis_short,
-        "image":           image,
+        "description":     truncate_synopsis(description),
+        "synopsis_short":  truncate_synopsis(synopsis_short),
+        "image":           build_image_object(image, None, "Culturgest", url),
         "url":             url,
+            "source_url":      url,
         "ticket_url":      ticket_url,
         "price":           price,
         "duration":        duration,

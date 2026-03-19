@@ -23,16 +23,18 @@ import re
 import time
 import requests
 from bs4 import BeautifulSoup
-from scrapers.utils import make_id, parse_date_range, parse_date, log
+from scrapers.utils import make_id, parse_date_range, parse_date, log, HEADERS, can_scrape, truncate_synopsis, build_image_object
 
 BASE    = "https://www.teatrosaoluiz.pt"
 AGENDA  = f"{BASE}/programacao/"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 THEATER = "São Luiz Teatro Municipal"
 IMG_DOMAIN = "www.teatrosaoluiz.pt"
 
 
 def scrape():
+    if not can_scrape(BASE):
+        log(f"robots.txt: scraping bloqueado para {BASE}")
+        return []
     try:
         r = requests.get(AGENDA, headers=HEADERS, timeout=20)
         r.raise_for_status()
@@ -164,9 +166,10 @@ def _scrape_event(url):
         "date_start":      date_start,
         "date_end":        date_end,
         "schedule":        schedule,
-        "description":     description,
-        "image":           image,
+        "description":     truncate_synopsis(description),
+        "image":           build_image_object(image, None, "São Luiz Teatro Municipal", url),
         "url":             url,
+            "source_url":      url,
         "ticket_url":      ticket_url,
         "price":           price,
         "duration":        duration,

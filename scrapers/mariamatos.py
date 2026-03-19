@@ -21,11 +21,10 @@ import time
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
-from scrapers.utils import make_id, parse_date, log
+from scrapers.utils import make_id, parse_date, log, HEADERS, can_scrape, truncate_synopsis, build_image_object
 
 BASE    = "https://teatromariamatos.pt"
 AGENDA  = f"{BASE}/tipo/teatro/"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 THEATER = "Teatro Maria Matos"
 
 # Dias da semana em português (para detectar sessões avulsas)
@@ -64,6 +63,9 @@ FICHA_RE = re.compile(
 
 
 def scrape():
+    if not can_scrape(BASE):
+        log(f"robots.txt: scraping bloqueado para {BASE}")
+        return []
     try:
         r = requests.get(AGENDA, headers=HEADERS, timeout=20)
         r.raise_for_status()
@@ -201,10 +203,11 @@ def _scrape_event(url):
         "date_start":     date_start,
         "date_end":       date_end,
         "schedule":       schedule,
-        "description":    description,
-        "synopsis_short": synopsis_short,
-        "image":          image,
+        "description":     truncate_synopsis(description),
+        "synopsis_short":  truncate_synopsis(synopsis_short),
+        "image":           build_image_object(image, None, "Teatro Maria Matos", url),
         "url":            url,
+            "source_url":      url,
         "ticket_url":     ticket_url,
         "price":          price,
         "duration":       duration,
@@ -267,7 +270,7 @@ def _parse_dates_and_schedule(text, soup):
         now = datetime.now()
         year_counts: Counter = Counter()
         for d_num, mon_s, yr_s, _ in raw_sessions:
-            from scrapers.utils import MONTHS as _M
+            from scrapers.utils import MONTHS as _M, HEADERS, can_scrape
             mon = _M.get(mon_s.lower()) or _M.get(mon_s.lower()[:3])
             if not mon:
                 continue

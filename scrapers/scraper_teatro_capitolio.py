@@ -6,10 +6,9 @@ import re
 import time
 import requests
 from bs4 import BeautifulSoup
-from scrapers.utils import make_id, parse_date_range, parse_date, log
+from scrapers.utils import make_id, parse_date_range, parse_date, log, HEADERS, can_scrape, truncate_synopsis, build_image_object
 
 BASE = "https://teatrovariedades-capitolio.pt"
-HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; EmCenaBot/1.0)"}
 
 AGENDA_URL = f"{BASE}/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio"
 THEATER_NAME = "Capitólio"
@@ -17,6 +16,9 @@ SOURCE_SLUG = "teatro-capitolio"
 
 
 def scrape():
+    if not can_scrape(BASE):
+        log(f"robots.txt: scraping bloqueado para {BASE}")
+        return []
     urls, cards = _collect(AGENDA_URL)
 
     events = []
@@ -148,8 +150,9 @@ def _scrape_event(url):
         "schedule": "",
         "description": "",
         "synopsis_short": "",
-        "image": image,
+        "image":           build_image_object(image, None, "Capitólio", url),
         "url": url,
+            "source_url":      url,
         "ticket_url": ticket_url,
         "price": "",
         "duration": "",

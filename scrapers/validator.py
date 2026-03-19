@@ -1,5 +1,5 @@
 """
-Validador de eventos EmCena.
+Validador de eventos Palco Vivo.
 Corre após scraping e antes de escrever o events.json.
 Produz um validation_report.json com estatísticas e erros.
 """

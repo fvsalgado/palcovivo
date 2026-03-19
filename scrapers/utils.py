@@ -113,3 +113,106 @@ def parse_date_range(s):
         return date_start, date_end
     d = parse_date(s)
     return d, d
+
+# ─────────────────────────────────────────────────────────────
+# CONFORMIDADE — adicionado para conformidade legal e ética
+# ─────────────────────────────────────────────────────────────
+import urllib.robotparser
+
+# User-Agent e headers padrão para todos os scrapers
+HEADERS = {
+    "User-Agent": "PalcoVivo-Scraper/1.0 (+https://www.palcovivo.pt; fabio@palcovivo.pt)",
+    "Accept-Language": "pt-PT,pt;q=0.9",
+}
+
+
+def truncate_synopsis(text: str, max_chars: int = 300) -> str:
+    """
+    Devolve excerto máximo de max_chars caracteres.
+    Corta na última frase completa (., !, ?) antes do limite.
+    Só corta em frase se resultado tiver mais de 150 chars.
+    Adiciona '…' no final se truncado.
+    """
+    if not text:
+        return ""
+    text = text.strip()
+    if len(text) <= max_chars:
+        return text
+    # Tentar cortar na última frase completa
+    truncated = text[:max_chars]
+    last_sentence = max(
+        truncated.rfind("."),
+        truncated.rfind("!"),
+        truncated.rfind("?"),
+    )
+    if last_sentence > 150:
+        return truncated[:last_sentence + 1] + "…"
+    return truncated + "…"
+
+
+def build_image_object(url: str, page_soup, theater_name: str, source_url: str):
+    """
+    Tenta extrair crédito fotográfico da página BeautifulSoup.
+    Devolve dict {url, credit, source, theater} ou None se url vazio.
+    """
+    if not url:
+        return None
+    credit = None
+    if page_soup:
+        try:
+            # 1. <figcaption> associado
+            for fig in (page_soup.find_all("figure") or []):
+                img_tag = fig.find("img")
+                if img_tag and img_tag.get("src", "") == url:
+                    cap = fig.find("figcaption")
+                    if cap and cap.get_text(strip=True):
+                        credit = cap.get_text(strip=True)[:120]
+                        break
+            # 2. atributo alt (ignorar se < 10 chars)
+            if not credit:
+                for img_tag in (page_soup.find_all("img") or []):
+                    if img_tag.get("src", "") == url:
+                        alt = (img_tag.get("alt") or "").strip()
+                        if len(alt) >= 10:
+                            credit = alt[:120]
+                        break
+            # 3. Regex no texto da página
+            if not credit:
+                page_text = page_soup.get_text(" ", strip=True)
+                m = re.search(
+                    r"(?:Foto:|Fotografia:|©\s*|Crédito:)\s*(.{5,80})",
+                    page_text,
+                    re.IGNORECASE,
+                )
+                if m:
+                    credit = m.group(1).strip()[:80]
+        except Exception:
+            pass
+    return {
+        "url": url,
+        "credit": credit,
+        "source": source_url,
+        "theater": theater_name,
+    }
+
+
+def can_scrape(base_url: str, path: str = "/") -> bool:
+    """
+    Verifica robots.txt para o user-agent PalcoVivo-Scraper.
+    Se inacessível, assume True e faz log.
+    """
+    rp = urllib.robotparser.RobotFileParser()
+    try:
+        robots_url = base_url.rstrip("/") + "/robots.txt"
+        rp.set_url(robots_url)
+        import socket
+        old_timeout = socket.getdefaulttimeout()
+        socket.setdefaulttimeout(5)
+        try:
+            rp.read()
+        finally:
+            socket.setdefaulttimeout(old_timeout)
+        return rp.can_fetch("PalcoVivo-Scraper", base_url.rstrip("/") + path)
+    except Exception as e:
+        log(f"can_scrape: não foi possível verificar robots.txt de {base_url} ({e}). A assumir permitido.")
+        return True
