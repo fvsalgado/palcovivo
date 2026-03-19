@@ -34,6 +34,15 @@ from scrapers.utils import (
 
 BASE = "https://teatrovariedades-capitolio.pt"
 
+# Categorias aceites — filtro na listagem, antes de qualquer pedido HTTP
+THEATRE_CATEGORIES = {"teatro", "circo", "performance", "dança"}
+
+# CSS vars usadas como background nas tags de espaço (p.copy-xs-bold)
+THEATER_STYLE_MAP = {
+    "var(--color-teatro-variedades)": "Teatro Variedades",
+    "var(--color-capitolio)":         "Capitólio",
+}
+
 
 def scrape_theater(
     theater_name: str,
@@ -85,8 +94,21 @@ def _collect(
 ) -> tuple[set[str], dict[str, dict]]:
     """
     Percorre a listagem e separa:
-    - urls: eventos com página própria (/evento/slug/)
-    - stubs: eventos sem página própria (dados da listagem apenas)
+    - urls: eventos com página própria (/evento/slug/) que passam o filtro
+    - stubs: eventos sem página própria que passam o filtro
+
+    Estrutura HTML da listagem:
+      Cada evento está num container  div.flex-col.gap-y-5.justify-center.items-center
+      com dois tipos de p.copy-xs-bold:
+        1. Tag de espaço  — background CSS var identifica o teatro
+           ex: style="background:var(--color-teatro-variedades)"  → "Teatro Variedades"
+               style="background:var(--color-capitolio)"          → "Capitólio"
+        2. Tag de categoria — background:var(--color-gray)
+           ex: "Teatro", "Música", "Performance", ...
+
+      O filtro duplo (teatro + categoria) é feito aqui, antes de qualquer pedido HTTP.
+      Eventos partilhados pelos dois espaços (dois tags de teatro) só são aceites
+      se o theater_name do scraper constar na lista de teatros do evento.
     """
     try:
         r = requests.get(agenda_url, headers=HEADERS, timeout=20)
@@ -99,62 +121,71 @@ def _collect(
     urls  = set()
     stubs = {}
 
-    for article in soup.find_all("article"):
-        title_el = article.find(["h2", "h3", "h4"])
-        if not title_el:
+    for container in soup.select(
+        "div.flex.flex-col.gap-y-5.justify-center.items-center"
+    ):
+        tags = container.select("p.copy-xs-bold")
+        if not tags:
             continue
-        title = title_el.get_text(strip=True)
+
+        # Separar tags de teatro das tags de categoria
+        theaters: list[str] = []
+        category: str = ""
+        for tag in tags:
+            style  = tag.get("style", "")
+            text   = tag.get_text(strip=True)
+            mapped = next(
+                (v for k, v in THEATER_STYLE_MAP.items() if k in style), None
+            )
+            if mapped:
+                theaters.append(mapped)
+            else:
+                category = text  # última tag sem cor de teatro = categoria
+
+        # Filtro 1: este evento pertence ao teatro deste scraper?
+        if theaters and theater_name not in theaters:
+            continue
+
+        # Filtro 2: categoria aceite?
+        if category and category.lower() not in THEATRE_CATEGORIES:
+            log(f"[{theater_name}] Ignorado (categoria '{category}'): "
+                + container.select_one("a[href]", href=True)["href"] if container.select_one("a[href]") else "")
+            continue
+
+        # Link para página própria do evento
+        ev_a = container.select_one("a[href*='/evento/']")
+        if ev_a:
+            href = ev_a["href"]
+            full = href if href.startswith("http") else BASE + href
+            urls.add(full)
+            continue
+
+        # Sem página própria — stub a partir da listagem
+        title_a = container.select_one("a")
+        if not title_a:
+            continue
+        title = title_a.get_text(strip=True)
         if not title:
             continue
 
-        # Tentar encontrar link para página própria do evento
-        ev_link = None
-        for a in article.find_all("a", href=True):
-            if "/evento/" in a["href"]:
-                ev_link = (
-                    a["href"] if a["href"].startswith("http")
-                    else BASE + a["href"]
-                )
-                break
-
-        if ev_link:
-            urls.add(ev_link)
-            continue
-
-        # Sem página própria — construir stub a partir dos dados da listagem
-        card_text = article.get_text(" ")
+        card_text = container.get_text(" ")
         dates_label, date_start, date_end = _parse_dates(card_text)
         if not date_start:
             continue
-
-        ticket_url = ""
-        for a in article.find_all("a", href=True):
-            href = a["href"]
-            if any(x in href for x in ["bol.pt", "ticketline", "eventbrite"]):
-                ticket_url = href
-                break
-
-        # Imagem do card (se disponível)
-        image = None
-        img_el = article.find("img")
-        if img_el:
-            src = img_el.get("src") or img_el.get("data-src") or ""
-            if src and src.startswith("http"):
-                image = build_image_object(src, article, theater_name, agenda_url)
 
         stubs[title] = {
             "id":              make_id(source_slug, title),
             "title":           title,
             "theater":         theater_name,
-            "category":        "Teatro",
+            "category":        category or "Teatro",
             "dates_label":     dates_label,
             "date_start":      date_start,
             "date_end":        date_end,
             "schedule":        "",
             "synopsis":        "",
-            "image":           image,
+            "image":           None,
             "source_url":      agenda_url,
-            "ticket_url":      ticket_url,
+            "ticket_url":      "",
             "price_info":      "",
             "duration":        "",
             "age_rating":      "",
