@@ -49,6 +49,11 @@ _SKIP_SLUGS = {
     "temporada-2025-26", "temporada-2024-25", "concluido",
 }
 
+# Tipologias aceites — li.type[data-property="typology"] data-id na página do evento
+# 1=Teatro · 2=Dança · 4=Artes Visuais · 5=Cinema · 8=Música
+_THEATRE_TYPOLOGY_IDS   = {"1"}                                    # Teatro
+_THEATRE_TYPOLOGY_NAMES = {"teatro", "dança", "performance", "circo"}  # fallback por nome
+
 
 def scrape() -> list[dict]:
     if not can_scrape(BASE):
@@ -208,13 +213,36 @@ def _scrape_event(url: str) -> dict | None:
     # Datas
     dates_label, date_start, date_end = _parse_dates(soup, full_text)
 
-    # Categoria
-    category = "Teatro"
-    for a in soup.select("ul li a[href*='typology']"):
-        txt = a.get_text(strip=True)
-        if txt:
-            category = txt
-            break
+    # Categoria + filtro de tipologia
+    # li.type[data-property="typology"] tem data-id e texto da categoria.
+    # Rejeitar imediatamente se a tipologia não for teatro —
+    # evita importar eventos descobertos via crawl noutras categorias.
+    category    = "Teatro"
+    typology_id = None
+    typ_el = soup.select_one('li.type[data-property="typology"]')
+    if typ_el:
+        typology_id = typ_el.get("data-id", "")
+        category    = typ_el.get_text(strip=True) or "Teatro"
+
+    # Fallback: ler do link de filtro na página (presente em eventos descobertos via crawl)
+    if not typology_id:
+        for a in soup.select("ul li a[href*='typology']"):
+            txt = a.get_text(strip=True)
+            if txt:
+                category = txt
+                m = re.search(r"typology=(\d+)", a.get("href", ""))
+                if m:
+                    typology_id = m.group(1)
+                break
+
+    # Filtro: rejeitar se não for tipologia de teatro/performance
+    is_theatre = (
+        typology_id in _THEATRE_TYPOLOGY_IDS
+        or category.lower() in _THEATRE_TYPOLOGY_NAMES
+    )
+    if typology_id and not is_theatre:
+        log(f"[{THEATER_NAME}] Ignorado (tipologia '{category}'): {url}")
+        return None
 
     # Sinopse
     synopsis   = ""
