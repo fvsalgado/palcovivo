@@ -239,6 +239,29 @@
       ],
       "description": "O Teatro da Trindade INATEL, inaugurado em 1867, é um dos mais emblemáticos teatros de Lisboa. A sua Sala Carmen Dolores é um dos mais bem preservados exemplares de teatro à italiana do país, com capacidade para 485 espectadores.",
       "_overrides": []
+    },
+    {
+      "id": "teatrodasfiguras",
+      "name": "Teatro das Figuras",
+      "short": "T. das Figuras",
+      "color": "#c8102e",
+      "city": "Faro",
+      "address": "Rua Pedro Franque, 8000-281 Faro",
+      "site": "https://teatrodasfiguras.pt",
+      "programacao": "https://teatrodasfiguras.pt/agenda?categories=3,15",
+      "lat": 37.0179,
+      "lng": -7.9307,
+      "salas": [
+        "Grande Auditório",
+        "Pequeno Auditório"
+      ],
+      "aliases": [
+        "teatro das figuras",
+        "tdf",
+        "teatro municipal de faro"
+      ],
+      "description": "O Teatro das Figuras é o principal equipamento cultural da cidade de Faro, com programação de teatro, dança, música e cinema.",
+      "_overrides": []
     }
   ]
 }
