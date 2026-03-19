@@ -17,6 +17,9 @@ AGENDA     = f"{BASE}/programacao/"
 THEATER    = "São Luiz Teatro Municipal"
 IMG_DOMAIN = "www.teatrosaoluiz.pt"
 
+# Categorias aceites — <span class="category"> nos cards da listagem
+THEATRE_CATEGORIES = {"teatro", "circo", "performance", "dança"}
+
 
 def scrape() -> list[dict]:
     if not can_scrape(BASE):
@@ -33,6 +36,11 @@ def scrape() -> list[dict]:
     seen, events = set(), []
 
     for a in soup.find_all("a", href=re.compile(r"/espetaculo/")):
+        cat = _card_category(a)
+        if cat and cat not in THEATRE_CATEGORIES:
+            log(f"[São Luiz] Ignorado (categoria '{cat}'): {a['href']}")
+            continue
+
         href = a["href"]
         full = href if href.startswith("http") else BASE + href
         if full in seen:
@@ -45,6 +53,40 @@ def scrape() -> list[dict]:
 
     log(f"[São Luiz] {len(events)} eventos")
     return events
+
+
+def _card_category(a_tag) -> str:
+    """
+    Lê a categoria de um link /espetaculo/ na listagem.
+    Há duas zonas na página com estruturas distintas:
+
+      1. Cards  (div.card.event-item):
+         <a href="...">
+           <span class="category">teatro</span>  ← dentro do <a>
+           <span class="title">...</span>
+         </a>
+
+      2. Calendário inline (div.calendar-day):
+         <span class="category to-lower">Teatro</span>  ← FORA do <a>, irmão
+         <span class="title"><a href="...">...</a></span>
+
+    Devolve a categoria em minúsculas, ou "" se não encontrada.
+    """
+    # Caso 1 — span.category dentro do próprio <a>
+    inner = a_tag.select_one("span.category")
+    if inner:
+        return inner.get_text(strip=True).lower()
+
+    # Caso 2 — span.category irmão (estrutura do calendário)
+    parent = a_tag.parent  # <span class="title">
+    if parent:
+        container = parent.parent  # <div class="col-12"> ou similar
+        if container:
+            sibling = container.select_one("span.category")
+            if sibling:
+                return sibling.get_text(strip=True).lower()
+
+    return ""
 
 
 def _scrape_event(url: str) -> dict | None:
