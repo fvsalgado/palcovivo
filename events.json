@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-03-19T14:05:10.579106+00:00",
-  "total": 86,
+  "updated_at": "2026-03-19T14:24:38.105876+00:00",
+  "total": 73,
   "by_theater": {
-    "Teatro Variedades": 9,
-    "Capitólio": 9,
+    "Teatro Variedades": 3,
+    "Capitólio": 3,
     "São Luiz Teatro Municipal": 14,
     "Teatro Maria Matos": 6,
-    "Culturgest": 37,
+    "Culturgest": 36,
     "CCB — Centro Cultural de Belém": 6,
     "Teatro Viriato": 0,
     "Theatro Circo": 0,
@@ -44,7 +44,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-open-call-isto-n-o-um-cubo",
@@ -69,7 +69,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-tr-s-tempos-com-capicua-e-lu-s-montenegro",
@@ -94,7 +94,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-open-call",
@@ -119,7 +119,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-capicua-e-lu-s-montenegro",
@@ -144,7 +144,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-coletivo-de-p-blico-residente-sess-es-abertas",
@@ -169,7 +169,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-tr-s-tempos-com-xullaji-e-beatriz-pessoa",
@@ -194,7 +194,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-osso",
@@ -219,7 +219,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-teatro-do-frio",
@@ -244,7 +244,7 @@
       "age_rating": "M/3",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-casa-das-novidades",
@@ -269,7 +269,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "trindade-a-gaivota",
@@ -302,7 +302,7 @@
         "figurinos": "Filipe Faísca Desenho de luz Nuno Meira",
         "música": "original Artur Guimarães Sonoplastia Rui Santos Vídeo João Alves Assistência de"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "trindade-brokeback-mountain",
@@ -335,7 +335,7 @@
         "cenografia": "FPSolutions Fotografia de cartaz Pedro Macedo – Framed Photos Fotografia de cena Alípio Padilha",
         "produção": "executiva Teatro do Vão"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-primeira-vista",
@@ -371,7 +371,7 @@
         "autor": "Suzie Miller é uma dramaturga e argumentista contemporânea, vencedora de diversos prémios internacionais. Gosta de histórias humanas complexas que frequentemente versam a injustiça. Trabalha em Londres, no Reino Unido, e em Sydney, na Austrália, mas a sua obra tem sido apresentada em todo o mundo. T",
         "dramaturgia": "no National Institute of Dramatic Art , na Austrália. Play Avenida Frei Miguel Contreiras, 52, 1700-213, Lisboa Horário da Bilheteira Segunda – Sábado 17h30 às 21h30 Domingo — 15h30 às 18h30 *Horários em vigor em dias de espectáculo. Horário sujeito a alterações. Reservas e informações de bilheteira"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-ch-tisana-e-kombucha-humor-e-diferen-as-culturais",
@@ -396,32 +396,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "culturgest-formiga-at-mica",
-      "title": "Formiga Atómica",
-      "theater": "Culturgest",
-      "category": "Teatro",
-      "dates_label": "17 MAR 2026",
-      "date_start": "2026-03-17",
-      "date_end": "2026-03-17",
-      "schedule": "19:00",
-      "synopsis": "No Melhor Chá Cai a Mosca é um ciclo de conferências sobre o humor, tema central do espetáculo Uma Mosca no Nosso Chá , da Formiga Atómica, que estreia em outubro de 2026 na Culturgest.…",
-      "image": {
-        "url": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/8a/f8/8af81ffc-6d23-4391-8831-75528dd66ab3/01_manuel_loureiro_moscanocha_horizontal.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
-        "credit": "Manuel Loureiro. 17 MAR 2026 TER 19:00 25 MAR 2026 QUA 19:00 01 ABR 2026 QUA 19:",
-        "source": "https://www.culturgest.pt/pt/programacao/formiga-atomica-no-melhor-cha-cai-mosca/",
-        "theater": "Culturgest"
-      },
-      "source_url": "https://www.culturgest.pt/pt/programacao/formiga-atomica-no-melhor-cha-cai-mosca/",
-      "ticket_url": "https://www.culturgest.pt/pt/bilheteira/",
-      "price_info": "Entrada gratuita",
-      "duration": "15 min",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-todos-p-ssaros",
@@ -460,7 +435,7 @@
         "interpretação": "Cucha Carvalheiro, David Esteves, Fernando Luís, Madalena Almeida, Manuela Couto, Virgílio Castelo e Duarte Romão e Laura Garnel (alunos finalistas da ESTC)",
         "coprodução": "Culturproject, Teatro Municipal Joaquim Benite e São Luiz Teatro Municipal Projeto apoiado por República Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-uma-ideia-genial",
@@ -495,7 +470,7 @@
         "interpretação": "Ana Guiomar, Cristóvão Campos, Ruben Madureira e Sandra Faleiro",
         "elenco": "Ana Guiomar, Cristóvão Campos, Ruben Madureira e Sandra Faleiro, “Uma Ideia Genial” conta a história hilariante de uma personagem que se multiplica em três, cada uma com as suas características e perplexidades. Atrações, ciúmes, suspeitas e destinos cruzados criam uma sucessão de mal-entendidos e um"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-as-quatro-mortes-de-napole-o",
@@ -532,7 +507,7 @@
         "produção": "Fátima Santos Filipe Difusão João Vaz Silva",
         "coprodução": "O Fim do Teatro, Casa Varela, Teatro-Cine de Pombal e São Luiz Teatro Municipal Parceria RTP Palco Apoio Largo Residências Media partner Radar 97.8 FM AGRADECIMENTOS Chão de Oliva, Elsa Lago Matos e Luiz Quaresma"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "teatro-variedades-in-the-heights",
@@ -543,46 +518,146 @@
       "date_start": "2026-03-25",
       "date_end": "2026-05-03",
       "schedule": "",
-      "synopsis": "",
+      "synopsis": "Do criador deHamilton, Lin-Manuel Miranda,In the Heightsé um dos mais aclamados e premiados musicais da Broadway da atualidade, vencedor de 4 Tonys, incluindo de Melhor Musical, e de um Grammy.",
       "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/In_The_Heights_1920x1080_v1-300x169.jpg",
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/In_The_Heights_1920x1080_v1.jpg",
         "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
+        "source": "https://teatrovariedades-capitolio.pt/evento/in-the-heights/",
         "theater": "Teatro Variedades"
       },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/in-the-heights/",
       "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
-      "price_info": "",
-      "duration": "",
+      "price_info": "20€",
+      "duration": "21h",
+      "age_rating": "M/12",
+      "accessibility": "",
+      "technical_sheet": {},
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
+    },
+    {
+      "id": "teatro-variedades-o-tamanho-das-coisas",
+      "title": "O Tamanho das Coisas",
+      "theater": "Teatro Variedades",
+      "category": "Teatro",
+      "dates_label": "25.03 – 03.05.2026",
+      "date_start": "2026-03-25",
+      "date_end": "2026-05-03",
+      "schedule": "",
+      "synopsis": "A determinado momento numa geografia desconhecida e sem qualquer razão aparente, um homem interrompe o seu caminho parando em pleno oceano. Da comparação entre o seu corpo e a escala avassaladora do que o rodeia levanta a questão: será que devo continuar?…",
+      "image": {
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/tam-das-coisas_113_maximo窮ilipe-Ferreira.jpg",
+        "credit": null,
+        "source": "https://teatrovariedades-capitolio.pt/evento/o-tamanho-das-coisas/",
+        "theater": "Teatro Variedades"
+      },
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/o-tamanho-das-coisas/",
+      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
+      "price_info": "12€",
+      "duration": "20h",
+      "age_rating": "M/14",
+      "accessibility": "",
+      "technical_sheet": {},
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
+    },
+    {
+      "id": "teatro-variedades-radojka",
+      "title": "Radojka",
+      "theater": "Teatro Variedades",
+      "category": "Teatro",
+      "dates_label": "25.03 – 03.05.2026",
+      "date_start": "2026-03-25",
+      "date_end": "2026-05-03",
+      "schedule": "",
+      "synopsis": "RADOJKAé uma comédia escrita por Fernando Schmidt e Christian Ibarzabal.",
+      "image": {
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/02/IMG_0455-576x1024.png",
+        "credit": null,
+        "source": "https://teatrovariedades-capitolio.pt/evento/radojka/",
+        "theater": "Teatro Variedades"
+      },
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/radojka/",
+      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
+      "price_info": "14€",
+      "duration": "21h30",
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
-      "id": "teatro-capitolio-in-the-heights",
-      "title": "In the Heights",
+      "id": "teatro-capitolio-come-from-away",
+      "title": "Come From Away",
       "theater": "Capitólio",
       "category": "Teatro",
       "dates_label": "25.03 – 03.05.2026",
       "date_start": "2026-03-25",
       "date_end": "2026-05-03",
       "schedule": "",
-      "synopsis": "",
+      "synopsis": "Come From Awayé um musical criado por Irene Sankoff e David Hein. A obra baseia-se nos acontecimentos ocorridos na cidade de Gander, em Terra Nova (Canadá), na semana seguinte aos atentados de 11 de setembro de 2001.…",
       "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/In_The_Heights_1920x1080_v1-300x169.jpg",
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/1920x1080.jpg",
         "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
+        "source": "https://teatrovariedades-capitolio.pt/evento/come-from-away/",
         "theater": "Capitólio"
       },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/come-from-away/",
       "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
-      "price_info": "",
-      "duration": "",
+      "price_info": "25€",
+      "duration": "21h",
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
+    },
+    {
+      "id": "teatro-capitolio-evita",
+      "title": "Evita",
+      "theater": "Capitólio",
+      "category": "Teatro",
+      "dates_label": "25.03 – 03.05.2026",
+      "date_start": "2026-03-25",
+      "date_end": "2026-05-03",
+      "schedule": "",
+      "synopsis": "O musical Evita, é uma das obras mais célebres de Andrew Lloyd Webber (música) e Tim Rice (letra).",
+      "image": {
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/2-scaled-e1762549074993.jpg",
+        "credit": null,
+        "source": "https://teatrovariedades-capitolio.pt/evento/evita/",
+        "theater": "Capitólio"
+      },
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/evita/",
+      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
+      "price_info": "25€",
+      "duration": "21h",
+      "age_rating": "M/12",
+      "accessibility": "",
+      "technical_sheet": {},
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
+    },
+    {
+      "id": "teatro-capitolio-macbeth",
+      "title": "MACBETH",
+      "theater": "Capitólio",
+      "category": "Teatro",
+      "dates_label": "25.03 – 03.05.2026",
+      "date_start": "2026-03-25",
+      "date_end": "2026-05-03",
+      "schedule": "",
+      "synopsis": "MACBETHtransporta para a contemporaneidade os temas intemporais da ambição desmedida, da corrupção do poder e da erosão moral, recriando-os num universo onde a intimidade é constantemente exposta, julgada e consumida.…",
+      "image": {
+        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/nosso-site-4.jpg",
+        "credit": null,
+        "source": "https://teatrovariedades-capitolio.pt/evento/macbeth/",
+        "theater": "Capitólio"
+      },
+      "source_url": "https://teatrovariedades-capitolio.pt/evento/macbeth/",
+      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/168149-in_the_heights-teatro_variedades/",
+      "price_info": "10€",
+      "duration": "21h",
+      "age_rating": "",
+      "accessibility": "",
+      "technical_sheet": {},
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-falta-de-ch-humor-tabus-e-censura",
@@ -607,7 +682,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-diana-niepce",
@@ -632,7 +707,7 @@
       "age_rating": "M/16",
       "accessibility": "Audiodescrição",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-a-valentina-e-a-valeria-n-o-est-o-mortas",
@@ -666,57 +741,7 @@
         "produção": "Executiva Marisa Coelho Gestão Financeira Nuno Pratas",
         "coprodução": "Associação Bo Dixam Bai, Associação Palavrão, Centro Cultural de Belém, Cineteatro Louletano e Culturproject"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-evita",
-      "title": "Evita",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "27.03 – 28.06.2026",
-      "date_start": "2026-03-27",
-      "date_end": "2026-06-28",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/2-scaled-e1762549074993-194x300.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://capitolio.bol.pt/Comprar/Bilhetes/166815-evita-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-evita",
-      "title": "Evita",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "27.03 – 28.06.2026",
-      "date_start": "2026-03-27",
-      "date_end": "2026-06-28",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2025/11/2-scaled-e1762549074993-194x300.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://capitolio.bol.pt/Comprar/Bilhetes/166815-evita-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-dia-mundial-do-teatro",
@@ -743,7 +768,7 @@
       "accessibility": "",
       "sala": "Vários espaços do Teatro",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-do-ch-ao-iced-tea-humor-passado-e-presente",
@@ -768,7 +793,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-hedera-4tet-x-vera-mantero",
@@ -793,7 +818,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "teatrodobairro-rei-lear",
@@ -824,7 +849,7 @@
         "luz": "Rui Seabra; Desenho de som: Paulo Abelho; Costureira: RosÃ¡rio Balbi; ConstruÃ§Ã£o de cenÃ¡rio: FÃ¡bio Paulo; OperaÃ§Ã£o de luz: AntÃ³nio SerrÃ£o e JoÃ£o Madeira; OperaÃ§Ã£o de som: Vasco Maciel; Chef",
         "dramaturgia": "LuÃ­sa Costa Gomes 2015 | QUATRO SANTOS EM TRÃS ACTOS libreto de Gertrude Stein e muÌsica de Virgil Thomson TraducÌ§aÌo e"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-o-amor-fodid",
@@ -857,7 +882,7 @@
         "produção": "Janice Mayamona Apoio Técnico: Léo Emílio Contabilidade: Irene Gaspar Comunicação e Design Gráfico: Natacha Ventura Comunicação Digital: Miguel Durão Hilário Registo em vídeo: Bruno Canas Costureira: Teresa Matos Assessoria de imprensa: Canal Aberto – Márcia Marques, Daniele Valério e Carina Bordalo",
         "autor": "diz-nos que há algo de sinistro numa mulher que só usa roupa uma vez. Como haverá, dizemos nós, algo de identicamente sinistro em vestir sempre a mesma roupa. É igual com o amor. Há algo pecaminoso em vestir-nos de amor uma vez e de novamente repetir a dose. Ao entrar para dentro do círculo amoroso,"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-os-contratos-do-comerciante",
@@ -888,7 +913,7 @@
         "produção": "Frederico Barata",
         "coprodução": "auéééu e São Luiz Teatro Municipal"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-kabe-a-or",
@@ -922,7 +947,7 @@
         "produção": "Vanessa Amaral Produção Associação Orí – Negritudes em Convergência Espiralar",
         "coprodução": "Bolsa de Criação O Espaço do Tempo com apoio do Banco BPI e Fundação “la Caixa” /// Projeto financiado por República Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes Apoios Biblioteca de Alcântara, Câmara Municipal de Almada, Câmara Municipal da Moita, RDP África, Buala"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-oneohtrix-point-never",
@@ -947,7 +972,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-tr-s-tempos",
@@ -972,7 +997,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-tortoise",
@@ -997,7 +1022,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-pedro-cardoso-o-rec-m-nascido",
@@ -1027,7 +1052,7 @@
         "figurinos": "Giovanna Moretto",
         "produção": "e"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-d-juan",
@@ -1061,7 +1086,7 @@
         "produção": "Loup Solitaire",
         "coprodução": "Teatro Virgínia, Casa das Artes de Vila Nova de Famalicão, Teatro Diogo Bernardes, Teatro Gil Vicente e São Luiz Teatro Municipal /// A Loup Solitaire é uma estrutura financiada pela República Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-afetos-nacionais",
@@ -1086,7 +1111,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-catarina-r-lo-salgueiro-e-isabel-costa-os-possesso",
@@ -1111,7 +1136,7 @@
       "age_rating": "M/12",
       "accessibility": "Audiodescrição",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "trindade-verdadeiro-oeste",
@@ -1143,7 +1168,7 @@
         "produção": "Martim Pedroso",
         "música": "Dan Gillespie Sells"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "trindade-clube-dos-poetas-mortos",
@@ -1175,7 +1200,7 @@
         "produção": "– Tenda Produções Ana Delgado",
         "música": "Dan Gillespie Sells"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-p-e-d-r-a",
@@ -1200,7 +1225,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-joga-o-jogo-fugida",
@@ -1225,57 +1250,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-o-tamanho-das-coisas",
-      "title": "O Tamanho das Coisas",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "07.05 – 17.05.2026",
-      "date_start": "2026-05-07",
-      "date_end": "2026-05-17",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/tam-das-coisas_113_maximo窮ilipe-Ferreira.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/170962-o_tamanho_das_coisas-teatro_variedades/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-o-tamanho-das-coisas",
-      "title": "O Tamanho das Coisas",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "07.05 – 17.05.2026",
-      "date_start": "2026-05-07",
-      "date_end": "2026-05-17",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/tam-das-coisas_113_maximo窮ilipe-Ferreira.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/170962-o_tamanho_das_coisas-teatro_variedades/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-fimfa-lx26",
@@ -1305,7 +1280,7 @@
         "direção": "Luís Vieira e Rute Ribeiro",
         "coprodução": "LU.CA – Teatro Luís de Camões, Teatro Nacional D. Maria II, Centro Cultural de Belém e São Luiz Teatro Municipal /// A Tarumba é uma estrutura financiada por República Portuguesa – Cultura / Direção-Geral das Artes"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-23-festival-internacional-de-cinema",
@@ -1330,7 +1305,7 @@
       "age_rating": "M/16",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-sin-doque-ivo-canelas-e-jo-o-vasco",
@@ -1359,7 +1334,7 @@
         "elenco": "João Vasco. Actualmente em itinerância, Sinédoque estreou em 2023 e foi apresentado em Portugal, Tunísia, Cabo Verde, Brasil, França e Angola. Avenida Frei Miguel Contreiras, 52, 1700-213, Lisboa Horário da Bilheteira Segunda – Sábado 17h30 às 21h30 Domingo — 15h30 às 18h30 *Horários em vigor em dia",
         "produção": "+351 213 621 648 info@fproducao.pt Horário de Atendimento Dias úteis 10h – 18h Page load link Go to Top"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-meg-stuart",
@@ -1384,7 +1359,7 @@
       "age_rating": "M/12",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-lucy-railton-com-charlie-hope-rebecca-salvadori",
@@ -1409,7 +1384,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-restaurar-o-futuro",
@@ -1434,7 +1409,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-alex-cassal-m-cria-o",
@@ -1459,7 +1434,7 @@
       "age_rating": "M/14",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-constitui-o-8211-estreia",
@@ -1494,7 +1469,7 @@
         "luz": "Ângela Bismarck",
         "coprodução": "CCB/Fábrica das Artes Apoio Fundo Cultural da Sociedade Portuguesa de Autores Apoio à investigação Tribunal Constitucional Projeto criado no âmbito da parceria Centro Cultural de Belém/Fábrica das Artes e Assembleia da República. Imagem ©Assembleia da República Ilustração de Mantr"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-rui-agostinho-alex-cassal",
@@ -1519,57 +1494,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-around-classic",
-      "title": "Around Classic",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "29.05 – 31.05.2026",
-      "date_start": "2026-05-29",
-      "date_end": "2026-05-31",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/Wolfgang-amadeus-mozart_1-scaled-e1769531533747-274x300.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://festivalaroundclassic.bol.pt/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-around-classic",
-      "title": "Around Classic",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "29.05 – 31.05.2026",
-      "date_start": "2026-05-29",
-      "date_end": "2026-05-31",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/Wolfgang-amadeus-mozart_1-scaled-e1769531533747-274x300.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://festivalaroundclassic.bol.pt/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-hip-lito",
@@ -1599,7 +1524,7 @@
         "luz": "Pedro Guimarães",
         "produção": "Xana Lagusi"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-a-winged-victory-for-the-sullen",
@@ -1624,7 +1549,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-projeto-educativo-em-dan-a-de-repert-rio-para-adol",
@@ -1649,7 +1574,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-lia-rodrigues",
@@ -1674,57 +1599,7 @@
       "age_rating": "M/12",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-radojka",
-      "title": "Radojka",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "03.06 – 28.06.2026",
-      "date_start": "2026-06-03",
-      "date_end": "2026-06-28",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/02/IMG_0455-169x300.png",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/173696-radojka_marina_mota-teatro_variedades/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-radojka",
-      "title": "Radojka",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "03.06 – 28.06.2026",
-      "date_start": "2026-06-03",
-      "date_end": "2026-06-28",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/02/IMG_0455-169x300.png",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://teatrovariedades.bol.pt/Comprar/Bilhetes/173696-radojka_marina_mota-teatro_variedades/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-da-boca-pra-fora",
@@ -1759,7 +1634,7 @@
         "produção": "André Camilo",
         "coprodução": "Camarote Produções e São Luiz Teatro Municipal"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-o-direito-do-mais-fraco-liberdade",
@@ -1792,7 +1667,7 @@
         "produção": "Inês Pinto",
         "coprodução": "A Oficina/Centro Cultural Vila Flor , RTP – Rádio e Televisão de Portugal , Teatro Diogo Bernardes e Teatro das Figuras"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "trindade-andr-de-freitas",
@@ -1821,7 +1696,7 @@
         "encenação": "Diogo Infante 19 Fev - 05 Abr 2026 BROKEBACK MOUNTAIN",
         "música": "Dan Gillespie Sells"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-exerc-cio-de-montagem",
@@ -1854,7 +1729,7 @@
         "luz": "Leocádia Silva",
         "produção": "Alaíde Costa Assistente de"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-a-cavalo",
@@ -1888,7 +1763,7 @@
         "direção_produção": "Maria João Garcia",
         "coprodução": "Fundação de Serralves/Serralves em Festa, Citemor, Festival End, Festival Paragem e São Luiz Teatro Municipal"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-festival-art-explora",
@@ -1913,7 +1788,7 @@
       "age_rating": "M/6",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-mater",
@@ -1938,7 +1813,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-deixar-o-karate",
@@ -1972,7 +1847,7 @@
         "produção": "Razões Pessoais Residência artística Casa de Gigante",
         "coprodução": "Teatro das Figuras e São Luiz Teatro Municipal"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-es-tr3s-irms",
@@ -2004,7 +1879,7 @@
         "produção": "Trypas-Corassão Associação Cultural",
         "coprodução": "Es Tr3s Irms é o projeto vencedor da 5ª edição da Bolsa Amélia Rey Colaço, uma iniciativa promovida pelo Teatro Nacional D. Maria II (Lisboa), A Oficina / Centro Cultural Vila Flor (Guimarães), O Espaço do Tempo (Montemor-o-Novo), e o Teatro Viriato (Viseu)."
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-mala-voadora",
@@ -2029,7 +1904,7 @@
       "age_rating": "M/16",
       "accessibility": "Audiodescrição",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-um-silab-rio-por-reconstruir-iv",
@@ -2054,7 +1929,7 @@
       "age_rating": "",
       "accessibility": "",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-um-julgamento",
@@ -2088,57 +1963,7 @@
         "produção": "Henrique Mariano",
         "coprodução": "Centro Cultural de Belém (Lisboa-Portugal), Holland Festival (Amsterdão), Festival d’Avignon (França), Edinburgh International Festival (Escócia) e DeSingel (Bélgica) Apoio UCLA’s Center for the Art of Performance e Instituto Guimarães Rosa — IGR — Ministério das Relações Exteriores do Brasi"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-emel-mathlouthi",
-      "title": "Emel Mathlouthi",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "05.07.2026",
-      "date_start": "2026-07-05",
-      "date_end": "2026-07-05",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/02/EMEL-2026-Janine-Kuehn-Horizontal-300x221.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://www.eventbrite.pt/e/emel-mathlouthi-live-in-lisbon-tickets-1982792451598?fbclid=IwY2xjawQJWa9leHRuA2FlbQIxMABzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEemMmpkxopF2EarXKG-KuhKbQ75aQHFvbI7eTY4PdN8t8gZSUJSblQOu5mfP8_aem_jDDALwb925P8xUkmcKm4Zw",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-emel-mathlouthi",
-      "title": "Emel Mathlouthi",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "05.07.2026",
-      "date_start": "2026-07-05",
-      "date_end": "2026-07-05",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/02/EMEL-2026-Janine-Kuehn-Horizontal-300x221.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://www.eventbrite.pt/e/emel-mathlouthi-live-in-lisbon-tickets-1982792451598?fbclid=IwY2xjawQJWa9leHRuA2FlbQIxMABzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEemMmpkxopF2EarXKG-KuhKbQ75aQHFvbI7eTY4PdN8t8gZSUJSblQOu5mfP8_aem_jDDALwb925P8xUkmcKm4Zw",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "mariamatos-swimming-pool-party",
@@ -2173,7 +1998,7 @@
         "produção": "e Cena TdE Sílvia Moura",
         "texto": "de Ricardo Neves-Neves, o enredo é muito mais dramático, as causas mais profundas, as personagens uns canalhas desprezíveis, e o final trará o espanto. Querem ser cúmplices deste crime? Avenida Frei Miguel Contreiras, 52, 1700-213, Lisboa Horário da Bilheteira Segunda – Sábado 17h30 às 21h30 Domingo"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "ccb-quem-tem-medo-de-virginia-woolf-de-edward-albee",
@@ -2208,7 +2033,7 @@
         "interpretação": "João Reis, Margarida Carvalho, Daniel Silva, Joana Africano",
         "coprodução": "Centro Cultural de Belém, Casa das Artes de Vila Nova de Famalicão, Teatro Nacional São João"
       },
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "culturgest-jo-o-penalva",
@@ -2233,57 +2058,7 @@
       "age_rating": "",
       "accessibility": "Língua Gestual",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-gongada-drag",
-      "title": "Gongada Drag",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "15.07 – 16.07.2026",
-      "date_start": "2026-07-15",
-      "date_end": "2026-07-16",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/03/3840x2160_IMG-300x169.png",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://eventos_9vhhj7h0.bol.pt/Comprar/Bilhetes/174347-gongada_drag-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-gongada-drag",
-      "title": "Gongada Drag",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "15.07 – 16.07.2026",
-      "date_start": "2026-07-15",
-      "date_end": "2026-07-16",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/03/3840x2160_IMG-300x169.png",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://eventos_9vhhj7h0.bol.pt/Comprar/Bilhetes/174347-gongada_drag-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     },
     {
       "id": "saoluiz-escola-superior-de-teatro-e-cinema",
@@ -2310,107 +2085,7 @@
       "accessibility": "",
       "sala": "Sala Mário Viegas",
       "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-macbeth",
-      "title": "MACBETH",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "21.07 – 25.07.2026",
-      "date_start": "2026-07-21",
-      "date_end": "2026-07-25",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/nosso-site-4.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://www.bol.pt/Comprar/Bilhetes/172544-macbeth-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-macbeth",
-      "title": "MACBETH",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "21.07 – 25.07.2026",
-      "date_start": "2026-07-21",
-      "date_end": "2026-07-25",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/nosso-site-4.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://www.bol.pt/Comprar/Bilhetes/172544-macbeth-capitolio/",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-variedades-come-from-away",
-      "title": "Come From Away",
-      "theater": "Teatro Variedades",
-      "category": "Teatro",
-      "dates_label": "10.09 – 04.10.2026",
-      "date_start": "2026-09-10",
-      "date_end": "2026-10-04",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/1920x1080-300x169.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-        "theater": "Teatro Variedades"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/?categoria=teatro&layout=grid&espaco=variedades",
-      "ticket_url": "https://capitolio.bol.pt/Comprar/Bilhetes/170123-come_from_away-capitolio/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
-    },
-    {
-      "id": "teatro-capitolio-come-from-away",
-      "title": "Come From Away",
-      "theater": "Capitólio",
-      "category": "Teatro",
-      "dates_label": "10.09 – 04.10.2026",
-      "date_start": "2026-09-10",
-      "date_end": "2026-10-04",
-      "schedule": "",
-      "synopsis": "",
-      "image": {
-        "url": "https://teatrovariedades-capitolio.pt/wp-content/uploads/2026/01/1920x1080-300x169.jpg",
-        "credit": null,
-        "source": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-        "theater": "Capitólio"
-      },
-      "source_url": "https://teatrovariedades-capitolio.pt/agenda/capitolio/?categoria=teatro&layout=grid&espaco=capitolio",
-      "ticket_url": "https://capitolio.bol.pt/Comprar/Bilhetes/170123-come_from_away-capitolio/Sessoes",
-      "price_info": "",
-      "duration": "",
-      "age_rating": "",
-      "accessibility": "",
-      "technical_sheet": {},
-      "scraped_at": "2026-03-19T14:05:10.574951+00:00"
+      "scraped_at": "2026-03-19T14:24:38.102210+00:00"
     }
   ]
 }

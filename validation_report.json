@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-19T14:05:10.578929Z",
-  "total_raw": 87,
-  "total_accepted": 86,
+  "generated_at": "2026-03-19T14:24:38.105741Z",
+  "total_raw": 74,
+  "total_accepted": 73,
   "total_rejected": 1,
-  "total_warnings": 12,
+  "total_warnings": 11,
   "rejected": [
     {
       "id": "saoluiz-um-homem-e-o-seu-criado",
@@ -33,13 +33,6 @@
       "title": "Coletivo de Público Residente: Sessões Abertas",
       "warnings": [
         "evento já terminou (2025-09-20)"
-      ]
-    },
-    {
-      "id": "culturgest-formiga-at-mica",
-      "title": "Formiga Atómica",
-      "warnings": [
-        "evento já terminou (2026-03-17)"
       ]
     },
     {
