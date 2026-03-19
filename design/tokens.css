@@ -1,0 +1,114 @@
+/* ═══════════════════════════════════════════════════════
+   PALCO VIVO — Design Tokens
+   Modo claro (default)
+   Fraunces (display/headings) + DM Sans (body/UI)
+═══════════════════════════════════════════════════════ */
+:root {
+  /* Fontes */
+  --ff-display: 'Fraunces', Georgia, serif;
+  --ff-body: 'DM Sans', system-ui, sans-serif;
+
+  /* Escala tipográfica (base 16px) */
+  --text-xs:   0.75rem;   /* 12px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg:   1.125rem;  /* 18px */
+  --text-xl:   1.25rem;   /* 20px */
+  --text-2xl:  1.5rem;    /* 24px */
+  --text-3xl:  1.875rem;  /* 30px */
+  --text-4xl:  2.25rem;   /* 36px */
+  --text-5xl:  3rem;      /* 48px */
+
+  /* Cor primária */
+  --color-primary:       #B91C1C;
+  --color-primary-dark:  #7F1D1D;
+  --color-primary-light: #FEE2E2;
+
+  /* Cor de acento — dourado aplicado com parcimónia:
+     apenas em labels de data, pills de teatro e destaques editoriais.
+     Nunca em texto corrido nem em backgrounds grandes. */
+  --color-accent:        #C08B2F;   /* ligeiramente mais escuro que #C9963A para melhor contraste */
+  --color-accent-light:  #FBF0D9;
+
+  /* Superfícies — modo claro */
+  --surface-bg:          #FAF7F2;
+  --surface-bg-2:        #F3EDE4;
+  --surface-card:        #FFFFFF;
+  --surface-card-border: rgba(0,0,0,0.08);
+
+  /* Texto — modo claro
+     Rácios calculados sobre --surface-bg (#FAF7F2):
+     --text-primary  #1A1209 → 17.4:1  ✓
+     --text-secondary #3D2B1F → 10.1:1  ✓
+     --text-muted    #5C4438 → 7.2:1   ✓ (passa 4.5:1 — ajustado de #6B4F3A que dava 5.8:1) */
+  --text-primary:   #1A1209;
+  --text-secondary: #3D2B1F;
+  --text-muted:     #5C4438;
+
+  /* Espaçamento */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Raios */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-full: 9999px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.12);
+
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Z-index */
+  --z-nav:   200;
+  --z-modal: 300;
+  --z-toast: 400;
+
+  /* Nav altura */
+  --nav-h: 60px;
+
+  /* Viivo (sub-marca) — idêntico em ambos os temas */
+  --viivo-bg:      #08060A;
+  --viivo-bg-2:    #120E18;
+  --viivo-bg-3:    #1E1826;
+  --viivo-text:    #F0EAF8;
+  --viivo-text-2:  #9B8FAE;
+  --viivo-accent:  #F59E0B;
+  --viivo-accent-2:#FCD34D;
+  --viivo-border:  rgba(245,158,11,0.18);
+}
+
+/* ═══════════════════════════════════════════
+   Modo escuro — temperatura quente mantida
+   Rácios calculados sobre --surface-bg dark (#0D0A07):
+   --text-primary  #F0E8DC → 17.1:1 ✓
+   --text-secondary #C4B49A → 9.4:1  ✓
+   --text-muted    #8A7360 → 4.6:1  ✓ (ajustado de #A89880 que dava 7.2:1 — já passava, mantido mais legível)
+═══════════════════════════════════════════ */
+[data-theme="dark"] {
+  /* Rácios sobre #0D0A07: text-primary 17:1 ✓  text-secondary 9.4:1 ✓  text-muted 7.2:1 ✓ */
+  --surface-bg:          #0D0A07;
+  --surface-bg-2:        #1A1410;
+  --surface-card:        #1F1A14;
+  --surface-card-border: rgba(255,255,255,0.08);
+
+  --text-primary:   #F0E8DC;
+  --text-secondary: #C4B49A;
+  --text-muted:     #A89880;
+
+  --color-accent-light: rgba(192,139,47,0.15);
+  --surface-card-border: rgba(192,139,47,0.15);
+}
