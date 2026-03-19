@@ -125,6 +125,27 @@
         "parque mayer capitólio",
         "parque mayer capitolio"
       ]
+    },
+    {
+      "id": "viriato",
+      "name": "Teatro Viriato",
+      "short": "Viriato",
+      "color": "#1565c0",
+      "description": "O Teatro Viriato — Centro de Artes do Espectáculo de Viseu é uma das mais relevantes estruturas culturais do interior de Portugal, com uma programação eclética de teatro, dança, música e artes performativas.",
+      "address": "Largo Mouzinho de Albuquerque, 3500-160 Viseu",
+      "city": "Viseu",
+      "site": "https://www.teatroviriato.com",
+      "programacao": "https://www.teatroviriato.com/pt/programacao",
+      "lat": 40.6566,
+      "lng": -7.9122,
+      "salas": ["Sala de Espetáculos", "Sala Estúdio"],
+      "aliases": [
+        "teatro viriato",
+        "viriato",
+        "centro de artes do espectáculo de viseu",
+        "centro de artes do espetaculo de viseu",
+        "caev"
+      ]
     }
   ]
 }
