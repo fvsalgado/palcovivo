@@ -192,6 +192,53 @@
       ],
       "description": "O Theatro Circo é um dos mais emblemáticos teatros do norte de Portugal, inaugurado em 1915 em Braga. Com uma programação diversa de teatro, música, dança e cinema, é referência cultural da cidade e da região.",
       "_overrides": []
+    },
+    {
+      "id": "teatrodobairro",
+      "name": "Teatro do Bairro",
+      "short": "T. do Bairro",
+      "color": "#212121",
+      "city": "Lisboa",
+      "address": "Rua Luz Soriano, 63, 1200-246 Lisboa",
+      "site": "https://teatrodobairro.org",
+      "programacao": "https://teatrodobairro.org/",
+      "lat": 38.7131,
+      "lng": -9.1432,
+      "salas": [
+        "Teatro do Bairro"
+      ],
+      "aliases": [
+        "teatro do bairro",
+        "tdb",
+        "companhia do teatro do bairro",
+        "ar de filmes"
+      ],
+      "description": "O Teatro do Bairro é um espaço cultural no coração do Bairro Alto, em Lisboa, inaugurado pela Ar de Filmes em 2011. Combina produção própria de teatro com acolhimento de criadores convidados, num programa que inclui também cinema.",
+      "_overrides": []
+    },
+    {
+      "id": "trindade",
+      "name": "Teatro da Trindade INATEL",
+      "short": "Trindade",
+      "color": "#8b0000",
+      "city": "Lisboa",
+      "address": "Rua Nova da Trindade, 9, 1200-301 Lisboa",
+      "site": "https://teatrotrindade.inatel.pt",
+      "programacao": "https://teatrotrindade.inatel.pt/programacao/",
+      "lat": 38.7107,
+      "lng": -9.1414,
+      "salas": [
+        "Sala Carmen Dolores",
+        "Sala Estúdio"
+      ],
+      "aliases": [
+        "teatro da trindade",
+        "teatro da trindade inatel",
+        "trindade",
+        "trindade inatel"
+      ],
+      "description": "O Teatro da Trindade INATEL, inaugurado em 1867, é um dos mais emblemáticos teatros de Lisboa. A sua Sala Carmen Dolores é um dos mais bem preservados exemplares de teatro à italiana do país, com capacidade para 485 espectadores.",
+      "_overrides": []
     }
   ]
 }
