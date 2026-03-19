@@ -1,22 +1,22 @@
 {
+  "_readme": "Palco Play — lista de vídeos. Editar este ficheiro para adicionar ou remover vídeos. Campos: url (obrigatório), title, theater, description, featured (bool), embed_id (para RTP), thumbnail (URL de imagem, opcional — YouTube gera automaticamente).",
+  "_rtp_nota": "Para vídeos RTP: incluir sempre embed_id com o número do episódio. Encontrar no URL de partilha da página RTP (contém /eXXXXXX/). Sem embed_id o vídeo abre numa janela externa em vez de incorporado.",
   "videos": [
     {
-      "url": "https://www.rtp.pt/play/palco/p4320/e675550/julia",
-      "title": "Júlia",
-      "theater": "RTP Palco",
-      "description": "Espetáculo disponível na plataforma RTP Play — Palco."
+      "url":         "https://www.youtube.com/watch?v=2neq1EjsY5g",
+      "title":       "Mephisto",
+      "theater":     "Teatro Nacional D. Maria II",
+      "description": "A partir do romance de Klaus Mann. Uma meditação sobre a cumplicidade com o poder e a traição aos ideais. Encenação de Tiago Rodrigues.",
+      "featured":    true
     },
     {
-      "url": "https://www.youtube.com/watch?v=QM5y2VWNQoQ",
-      "title": "Espetáculo",
-      "theater": "",
-      "description": ""
-    },
-    {
-      "url": "https://vimeo.com/513609413",
-      "title": "Espetáculo",
-      "theater": "",
-      "description": ""
+      "url":         "https://www.rtp.pt/play/palco/p4320/e675550/julia",
+      "title":       "Júlia",
+      "theater":     "RTP Palco",
+      "embed_id":    "675550",
+      "thumbnail":   "https://cdn-images.rtp.pt/EPG/imagens/35333_77488_35719.jpg?v=3&w=860",
+      "description": "A partir do texto de August Strindberg. Uma reflexão sobre o ser humano na sua promiscuidade, intimidade e totalidade.",
+      "featured":    false
     }
   ]
 }

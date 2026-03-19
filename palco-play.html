@@ -368,13 +368,23 @@ function getThumbnail(v){
   if(v.thumbnail)return v.thumbnail;
   return"";
 }
-function getEmbedUrl(url){
-  var ytId=getYtId(url);
-  if(ytId)return"https://www.youtube-nocookie.com/embed/"+ytId+"?autoplay=1&rel=0";
-  var vmId=getVimeoId(url);
-  if(vmId)return"https://player.vimeo.com/video/"+vmId+"?autoplay=1";
-  var epM=(url||"").match(/\/e(\d+)\//);
-  if(epM)return"https://www.rtp.pt/play/embed/"+epM[1];
+function getRtpEmbedId(v){
+  // 1. Campo embed_id explícito no objeto — forma mais fiável
+  if(v && v.embed_id) return String(v.embed_id);
+  var url = (v && v.url) ? v.url : (typeof v==="string" ? v : "");
+  // 2. URL com episódio: /e675550/ ou /e675550 no final
+  var epM = url.match(/\/e(\d{5,})[\/]?/);
+  if(epM) return epM[1];
+  return null;
+}
+function getEmbedUrl(url, v){
+  var ytId = getYtId(url);
+  if(ytId) return "https://www.youtube-nocookie.com/embed/"+ytId+"?autoplay=1&rel=0";
+  var vmId = getVimeoId(url);
+  if(vmId) return "https://player.vimeo.com/video/"+vmId+"?autoplay=1";
+  // RTP: precisa do ID numérico do episódio
+  var rtpId = getRtpEmbedId(v || {url:url});
+  if(rtpId) return "https://www.rtp.pt/play/embed/"+rtpId;
   return null;
 }
 
@@ -385,35 +395,39 @@ var CUR_CAT="";
 var CUR_VIEW="grid";
 var HERO_IDX=0;
 
-/* ── DADOS ── */
+/* ── DADOS ─────────────────────────────────────────────────────────
+   Fallback usado apenas quando videos.json não está disponível.
+   Em produção, editar videos.json no repositório.
+
+   Campos RTP: incluir embed_id (número do episódio) porque o URL
+   canónico do RTP nem sempre inclui /eXXXXXX/ no caminho.
+   Ex: https://www.rtp.pt/play/palco/p4320/julia → embed_id: "675550"
+   Encontrar o embed_id: na página do episódio, ver o URL de partilha
+   que inclui /eXXXXXX/, ou inspecionar o HTML (data-share-url).
+──────────────────────────────────────────────────────────────── */
 var FALLBACK_VIDEOS=[
   {
-    url:"https://www.youtube.com/watch?v=2neq1EjsY5g",
-    title:"Mephisto",
-    theater:"Teatro Nacional D. Maria II",
-    description:"Espetáculo de abertura da temporada. Uma adaptação do romance de Klaus Mann sobre a cumplicidade com o poder.",
-    featured:true
+    url:      "https://www.youtube.com/watch?v=2neq1EjsY5g",
+    title:    "Mephisto",
+    theater:  "Teatro Nacional D. Maria II",
+    description: "A partir do romance de Klaus Mann, uma meditação sobre a cumplicidade com o poder e a traição aos ideais. Encenação de Tiago Rodrigues.",
+    featured: true
   },
   {
-    url:"https://www.rtp.pt/play/palco/p4320/e675550/julia",
-    title:"Júlia",
-    theater:"RTP Palco",
-    description:"Espetáculo premiado disponível no arquivo RTP Palco.",
-    featured:false
+    url:      "https://www.rtp.pt/play/palco/p4320/e675550/julia",
+    title:    "Júlia",
+    theater:  "RTP Palco",
+    embed_id: "675550",
+    thumbnail:"https://cdn-images.rtp.pt/EPG/imagens/35333_77488_35719.jpg?v=3&w=860",
+    description: "Espetáculo a partir do texto de August Strindberg. Interessa refletir sobre o ser humano na sua promiscuidade, intimidade e totalidade.",
+    featured: false
   },
   {
-    url:"https://www.youtube.com/watch?v=QM5y2VWNQoQ",
-    title:"Espetáculo",
-    theater:"Teatro Nacional",
-    description:"",
-    featured:false
-  },
-  {
-    url:"https://vimeo.com/513609413",
-    title:"Performance",
-    theater:"",
-    description:"",
-    featured:false
+    url:      "https://vimeo.com/513609413",
+    title:    "Espetáculo em arquivo",
+    theater:  "",
+    description: "",
+    featured: false
   }
 ];
 
@@ -595,7 +609,7 @@ function openModal(v){
   var desc=document.getElementById("modal-desc");
   if(v.description){desc.textContent=v.description;desc.style.display="";}
   else{desc.style.display="none";}
-  var embedUrl=getEmbedUrl(v.url);
+  var embedUrl=getEmbedUrl(v.url, v);
   var body=document.getElementById("modal-body");
   if(embedUrl){
     body.innerHTML=`<div class="modal-player"><iframe src="${esc(embedUrl)}" title="${esc(v.title||"Vídeo")}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe></div>`;
