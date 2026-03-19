@@ -1,19 +1,22 @@
 """
 Scraper: Teatro da Trindade INATEL
-Fonte: https://teatrotrindade.inatel.pt/programacao/
+Fonte: https://teatrotrindade.inatel.pt/programacao/teatro
 Cidade: Lisboa
 
 Estrutura do site (WordPress, HTML estático):
-  - Listagem: página de programação com cards de espetáculos.
-    Cada card tem imagem, datas, título, autores e link para página individual.
-    A listagem tem filtro por tipo (Teatro=94, Música=97, Dança=2, Ópera=3).
-    URL de teatro: /programacao/?type=94
+  - Listagem: /programacao/teatro — filtra por Teatro no servidor.
+    Cada card é um <a href="/espetaculo/slug/"> com:
+      - Imagem (<img>)
+      - Texto de data como nó de texto directo antes do <h3>
+        (ex: "29 Jan - 05 Abr 2026")
+      - <h3> com título
+    IMPORTANTE: o filtro ?type=94 é aplicado por JS no cliente, não usar.
+    A URL /programacao/teatro filtra correctamente no servidor.
   - Página de evento: /espetaculo/<slug>/
-    Contém título, datas, sinopse, ficha técnica e link ticketline.
-  - Nota técnica: o servidor bloqueia requests simples às páginas de evento
-    (timeout ou 403). É necessário usar Session com headers completos de browser
-    e timeout generoso. A listagem responde normalmente.
-  - Categorias: Teatro, Música, Dança, Ópera. Só Teatro entra no portal.
+    O servidor bloqueia requests simples. Usar Session com headers de browser.
+  - Filtragem secundária: verificar título/subtítulo na página de evento
+    para garantir que não entram concertos ou outras categorias que possam
+    aparecer na listagem.
 """
 
 import re
@@ -25,7 +28,6 @@ from urllib.parse import urljoin
 from scrapers.utils import (
     make_id, log, HEADERS, can_scrape,
     truncate_synopsis, build_image_object,
-    parse_date_range,
 )
 
 # ─────────────────────────────────────────────────────────────
@@ -39,7 +41,7 @@ THEATER = {
     "city":        "Lisboa",
     "address":     "Rua Nova da Trindade, 9, 1200-301 Lisboa",
     "site":        "https://teatrotrindade.inatel.pt",
-    "programacao": "https://teatrotrindade.inatel.pt/programacao/",
+    "programacao": "https://teatrotrindade.inatel.pt/programacao/teatro",
     "lat":         38.7107,
     "lng":         -9.1414,
     "salas":       ["Sala Carmen Dolores", "Sala Estúdio"],
@@ -59,24 +61,29 @@ THEATER = {
 THEATER_NAME = THEATER["name"]
 SOURCE_SLUG  = THEATER["id"]
 BASE         = "https://teatrotrindade.inatel.pt"
+AGENDA       = f"{BASE}/programacao/teatro"
 
-# URL da listagem filtrada por Teatro (type=94)
-AGENDA_TEATRO = f"{BASE}/programacao/?type=94"
-
-# Headers completos de browser — necessários para as páginas de evento
-# que bloqueiam user-agents simples
+# Headers de browser completos para contornar bloqueio do servidor
 _BROWSER_HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
+    "Accept":                    "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language":           "pt-PT,pt;q=0.9,en;q=0.8",
+    "Accept-Encoding":           "gzip, deflate, br",
+    "Connection":                "keep-alive",
     "Upgrade-Insecure-Requests": "1",
+    "Referer":                   BASE + "/",
 }
+
+# Padrões no título/subtítulo que indicam que NÃO é teatro
+_REJECT_RE = re.compile(
+    r"\bconcerto\b|\bciclo de concertos\b|\bfrequência 440\b|\bfrequencia 440\b"
+    r"|\brecital\b|\bópera\b|\bopera\b",
+    re.IGNORECASE,
+)
 
 _PT_MONTHS = {
     "jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
@@ -96,19 +103,17 @@ def scrape() -> list[dict]:
         log(f"robots.txt: scraping bloqueado para {BASE}")
         return []
 
-    # Usar Session para manter cookies entre requests
-    # (o servidor pode exigir cookie de sessão para páginas de evento)
     session = requests.Session()
     session.headers.update(_BROWSER_HEADERS)
 
-    # Visitar homepage primeiro para obter cookies
+    # Visitar homepage para obter cookies de sessão
     try:
         session.get(BASE, timeout=15)
     except Exception:
-        pass  # Continuar mesmo sem homepage
+        pass
 
     candidates = _collect_candidates(session)
-    log(f"[{THEATER_NAME}] {len(candidates)} espetáculos de teatro na listagem")
+    log(f"[{THEATER_NAME}] {len(candidates)} candidatos na listagem")
 
     events:   list[dict] = []
     seen_ids: set[str]   = set()
@@ -135,11 +140,14 @@ def scrape() -> list[dict]:
 
 def _collect_candidates(session: requests.Session) -> list[dict]:
     """
-    Lê a listagem de Teatro e devolve lista de candidatos com URL e stub.
-    A listagem já está filtrada por Teatro (?type=94).
+    Lê /programacao/teatro e extrai URLs e stubs dos cards.
+
+    A data está como nó de texto directo dentro do <a>, antes do <h3>.
+    Usar children directos — get_text() do bloco inteiro apanha título
+    e texto do rodapé da página, contaminando as datas.
     """
     try:
-        r = session.get(AGENDA_TEATRO, timeout=20)
+        r = session.get(AGENDA, timeout=20)
         r.raise_for_status()
     except Exception as e:
         log(f"[{THEATER_NAME}] Erro na listagem: {e}")
@@ -149,7 +157,6 @@ def _collect_candidates(session: requests.Session) -> list[dict]:
     candidates = []
     seen_urls  = set()
 
-    # Cada espetáculo é um <article> ou bloco com link /espetaculo/
     for a in soup.find_all("a", href=re.compile(r"/espetaculo/")):
         href = a.get("href", "")
         url  = href if href.startswith("http") else urljoin(BASE, href)
@@ -158,55 +165,59 @@ def _collect_candidates(session: requests.Session) -> list[dict]:
             continue
         seen_urls.add(url)
 
-        # Extrair dados do card da listagem como stub
         stub = _extract_card_stub(a, url)
+        if not stub.get("title"):
+            continue
+
+        # Rejeitar imediatamente pela listagem se o título indica não-teatro
+        if _REJECT_RE.search(stub["title"]):
+            log(f"[{THEATER_NAME}] Rejeitado na listagem: '{stub['title']}'")
+            continue
+
         candidates.append({"url": url, "stub": stub})
 
     return candidates
 
 
 def _extract_card_stub(a_tag, url: str) -> dict:
-    """Extrai dados disponíveis no card da listagem."""
-    # Subir até ao container do card para ter acesso a todos os elementos
-    container = a_tag
-    for _ in range(4):
-        parent = container.find_parent()
-        if parent and parent.name in ("article", "div", "li"):
-            container = parent
-            break
+    """
+    Extrai dados do card com parsing estruturado.
 
-    # Título — h3 ou h2 dentro do container
-    title = ""
-    for tag in ("h3", "h2", "h4"):
-        el = container.find(tag)
-        if el:
-            title = el.get_text(strip=True)
-            break
-
-    # Datas — texto com padrão de data
+    Data: nó de texto directo do <a> com padrão DD Mês - DD Mês YYYY.
+    Título: texto do <h3> filho do <a>.
+    Imagem: primeiro <img> filho do <a> que não seja ícone de bilhete.
+    """
+    title     = ""
     dates_raw = ""
-    text = container.get_text(" ", strip=True)
-    m = re.search(
-        r"\d{1,2}\s+(?:[A-Za-záéíóúçã]{3,})(?:\s*[-–]\s*\d{1,2}\s+[A-Za-záéíóúçã]{3,})?(?:\s+\d{4})?",
-        text,
-    )
-    if m:
-        dates_raw = m.group(0).strip()
+    img_url   = ""
 
-    # Imagem
-    img_url = ""
-    img_tag = container.find("img")
-    if img_tag:
-        src = img_tag.get("src") or img_tag.get("data-src") or ""
-        if src and "ticket.svg" not in src:  # ignorar ícone de bilhete
+    # Título — h3 directo
+    h3 = a_tag.find("h3")
+    if h3:
+        title = h3.get_text(strip=True)
+
+    # Imagem — ignorar ticket.svg e logos
+    img = a_tag.find("img")
+    if img:
+        src = img.get("src", "")
+        if src and "ticket.svg" not in src and "logo" not in src.lower():
             img_url = src if src.startswith("http") else urljoin(BASE, src)
 
-    return {
-        "title":     title,
-        "dates_raw": dates_raw,
-        "img_url":   img_url,
-        "url":       url,
-    }
+    # Data — percorrer APENAS filhos directos, ignorar elementos HTML
+    # Os nós de texto directos são NavigableString
+    for child in a_tag.children:
+        if hasattr(child, "name"):
+            # É um elemento HTML — ignorar (inclui <img>, <h3>, <strong>)
+            continue
+        text = str(child).strip()
+        if not text:
+            continue
+        # Verificar se tem padrão de data: número + mês abreviado
+        if re.search(r"\d{1,2}\s+[A-Za-z]{3}", text):
+            dates_raw = text
+            break
+
+    return {"title": title, "dates_raw": dates_raw, "img_url": img_url, "url": url}
 
 
 # ─────────────────────────────────────────────────────────────
@@ -218,11 +229,6 @@ def _scrape_event(
     url: str,
     stub: dict,
 ) -> dict | None:
-    """
-    Scrape da página individual do espetáculo.
-    Usa Session com headers de browser para contornar bloqueio do servidor.
-    Em caso de falha, usa dados do stub da listagem.
-    """
     soup      = None
     full_text = ""
 
@@ -232,7 +238,16 @@ def _scrape_event(
             soup      = BeautifulSoup(r.text, "lxml")
             full_text = soup.get_text(" ", strip=True)
     except Exception as e:
-        log(f"[{THEATER_NAME}] Timeout/erro em {url}: {e} — usando stub")
+        log(f"[{THEATER_NAME}] Timeout em {url}: {e} — usando stub")
+
+    # ── Verificação secundária de categoria na página ─────────
+    if soup:
+        h1_text = (soup.find("h1") or soup).get_text(strip=True)
+        h2_el   = soup.find("h2")
+        h2_text = h2_el.get_text(strip=True) if h2_el else ""
+        if _REJECT_RE.search(h1_text + " " + h2_text):
+            log(f"[{THEATER_NAME}] Rejeitado na página: '{stub.get('title')}'")
+            return None
 
     # ── Título ────────────────────────────────────────────────
     title = ""
@@ -245,35 +260,31 @@ def _scrape_event(
     if not title or len(title) < 3:
         return None
 
-    # ── Categoria ─────────────────────────────────────────────
-    # A listagem já filtra por Teatro — todos os eventos aqui são Teatro
-    category = "Teatro"
-
-    # ── Datas ────────────────────────────────────────────────
-    dates_label = date_start = date_end = ""
-    if soup:
-        dates_label, date_start, date_end = _parse_dates(soup, full_text)
+    # ── Datas — fonte primária: stub da listagem ──────────────
+    # O stub tem a data limpa directamente do nó de texto do card.
+    # A página de evento é usada apenas como fallback.
+    dates_label, date_start, date_end = _parse_date_text(stub.get("dates_raw", ""))
+    if not date_start and soup:
+        dates_label, date_start, date_end = _parse_dates_from_page(soup)
     if not date_start:
-        # Fallback para stub da listagem
-        dates_label, date_start, date_end = _parse_date_text(stub.get("dates_raw", ""))
-    if not date_start:
+        log(f"[{THEATER_NAME}] Sem data para '{title}' — descartado")
         return None
 
-    # ── Imagem ────────────────────────────────────────────────
+    # ── Imagem — preferir og:image da página (maior resolução) ─
     image   = None
     raw_img = ""
     if soup:
         og = soup.find("meta", property="og:image")
-        if og:
-            raw_img = og.get("content", "")
-        if not raw_img:
-            for img in soup.find_all("img", src=re.compile(r"/wp-content/uploads/")):
-                src = img.get("src", "")
-                if src and len(src) > 40:
-                    raw_img = src if src.startswith("http") else urljoin(BASE, src)
-                    break
+        if og and og.get("content", "").startswith("http"):
+            raw_img = og["content"]
     if not raw_img:
         raw_img = stub.get("img_url", "")
+    if not raw_img and soup:
+        for img in soup.find_all("img", src=re.compile(r"/wp-content/uploads/")):
+            src = img.get("src", "")
+            if src and "ticket" not in src and len(src) > 40:
+                raw_img = src if src.startswith("http") else urljoin(BASE, src)
+                break
     if raw_img:
         image = build_image_object(raw_img, soup, THEATER_NAME, url)
 
@@ -281,17 +292,15 @@ def _scrape_event(
     ticket_url = ""
     if soup:
         for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if "ticketline" in href or "ticketmaster" in href:
-                ticket_url = href if href.startswith("http") else urljoin(BASE, href)
+            if "ticketline" in a["href"]:
+                ticket_url = a["href"]
                 break
 
     # ── Preço ─────────────────────────────────────────────────
     price_info = ""
     if full_text:
         pm = re.search(
-            r"(Entrada\s+(?:livre|gratuita)"
-            r"|gratuito"
+            r"(Entrada\s+(?:livre|gratuita)|gratuito"
             r"|\d+(?:[,\.]\d+)?\s*€(?:\s*[-–]\s*\d+(?:[,\.]\d+)?\s*€)?)",
             full_text, re.IGNORECASE,
         )
@@ -316,7 +325,7 @@ def _scrape_event(
     sala = ""
     if full_text:
         sm = re.search(
-            r"(Sala\s+Carmen\s+Dolores|Sala\s+Est[úu]dio|Black\s+Box)",
+            r"(Sala\s+Carmen\s+Dolores|Sala\s+Est[úu]dio|Sala\s+B)",
             full_text, re.IGNORECASE,
         )
         if sm:
@@ -332,7 +341,7 @@ def _scrape_event(
         "id":              make_id(SOURCE_SLUG, title),
         "title":           title,
         "theater":         THEATER_NAME,
-        "category":        category,
+        "category":        "Teatro",
         "dates_label":     dates_label,
         "date_start":      date_start,
         "date_end":        date_end,
@@ -353,30 +362,32 @@ def _scrape_event(
 # Parsing de datas
 # ─────────────────────────────────────────────────────────────
 
-def _parse_dates(soup, text: str) -> tuple[str, str, str]:
-    """
-    Formatos no Teatro da Trindade:
-      "29 Jan - 05 Abr 2026"   (listagem — meses distintos)
-      "23 Abr - 07 Jun 2026"
-      "26 Mai 2026"             (data única)
-    """
-    # Tentar no elemento de data dedicado (geralmente span ou div com classe)
-    for el in soup.find_all(["span", "div", "p"], class_=re.compile(r"dat|period|time", re.I)):
-        t = el.get_text(strip=True)
-        result = _parse_date_text(t)
+def _parse_dates_from_page(soup) -> tuple[str, str, str]:
+    """Fallback: extrai datas da página do evento."""
+    for el in soup.find_all(
+        ["span", "div", "p", "time"],
+        class_=re.compile(r"dat|period|time|when", re.I),
+    ):
+        result = _parse_date_text(el.get_text(strip=True))
         if result[1]:
             return result
-
-    # Fallback: procurar no texto completo
+    # Procurar padrão no início do texto da página
+    text = soup.get_text(" ", strip=True)[:600]
     return _parse_date_text(text)
 
 
 def _parse_date_text(text: str) -> tuple[str, str, str]:
+    """
+    Formatos do Trindade na listagem:
+      "29 Jan - 05 Abr 2026"   (meses distintos, separador " - ")
+      "23 Abr - 07 Jun 2026"
+      "26 Mai 2026"             (data única)
+    """
     if not text:
         return "", "", ""
     text = text.strip()
 
-    # "DD Mês - DD Mês YYYY" ou "DD Mês YYYY - DD Mês YYYY"
+    # "DD Mês - DD Mês YYYY" (com ou sem ano no início)
     m = re.search(
         r"(\d{1,2})\s+([A-Za-záéíóúçã]{3,})(?:\s+(\d{4}))?"
         r"\s*[-–]\s*"
@@ -404,8 +415,8 @@ def _parse_date_text(text: str) -> tuple[str, str, str]:
         d, mon_s, yr = m.groups()
         n = _mon(mon_s)
         if n:
-            y   = int(yr)
-            ds  = f"{y}-{n:02d}-{int(d):02d}"
+            y  = int(yr)
+            ds = f"{y}-{n:02d}-{int(d):02d}"
             return f"{d} {mon_s} {yr}", ds, ds
 
     return "", "", ""
@@ -420,28 +431,23 @@ def _mon(s: str) -> int | None:
 # ─────────────────────────────────────────────────────────────
 
 def _extract_synopsis(soup) -> str:
-    """Sinopse: parágrafos substantivos da página do evento."""
-    synopsis = ""
-
-    # og:description como fonte rápida
     og = soup.find("meta", property="og:description")
     og_text = og.get("content", "").strip() if og else ""
-
-    # Parágrafos do conteúdo principal
+    synopsis = ""
     main = soup.find("main") or soup.find("article") or soup
     for p in main.find_all("p"):
         t = p.get_text(strip=True)
         if len(t) < 60:
             continue
         if re.match(
-            r"^(O PREÇ[AÁ]RIO|Consulte|CONVERSA|©|Saltar|Mapa do|Ajuda)",
+            r"^(O PREÇ[AÁ]RIO|Consulte|CONVERSA|©|Saltar|Mapa do|Ajuda|"
+            r"Teatro da Trindade|Fundação INATEL|Rua Nova)",
             t, re.IGNORECASE,
         ):
             continue
         synopsis += (" " if synopsis else "") + t
         if len(synopsis) > 800:
             break
-
     return synopsis.strip() or og_text
 
 
@@ -450,11 +456,6 @@ def _extract_synopsis(soup) -> str:
 # ─────────────────────────────────────────────────────────────
 
 def _parse_ficha(text: str) -> dict:
-    """
-    Ficha técnica do Trindade em texto corrido com padrão:
-      "De Anton Tchékhov\nVersão e encenação Diogo Infante"
-    ou com negrito/bold nas chaves.
-    """
     ficha      = {}
     known_keys = [
         ("texto",         r"[Tt]exto\s+(?:e\s+[Ee]ncena[çc][aã]o\s+)?(?:de\s+)?"),
@@ -464,27 +465,24 @@ def _parse_ficha(text: str) -> dict:
         ("direção",       r"[Dd]ire[çc][aã]o\s+(?:de\s+)?"),
         ("tradução",      r"[Tt]radu[çc][aã]o\s+(?:de\s+)?"),
         ("adaptação",     r"[Aa]dapta[çc][aã]o\s+(?:de\s+)?"),
-        ("música",        r"[Mm][úu]sica\s+(?:de\s+)?|[Mm][úu]sica\s+(?:original\s+)?(?:de\s+)?"),
+        ("música",        r"[Mm][úu]sica\s+(?:de\s+)?"),
         ("cenografia",    r"[Cc]enografia\s+(?:de\s+)?"),
         ("figurinos",     r"[Ff]igurinos?\s+(?:de\s+)?"),
         ("interpretação", r"[Ii]nterpreta[çc][aã]o\s+(?:de\s+)?|[Ee]lenco\s+"),
         ("produção",      r"[Pp]rodu[çc][aã]o\s+(?:de\s+)?"),
         ("coprodução",    r"[Cc]o-?[Pp]rodu[çc][aã]o\s+(?:de\s+)?"),
     ]
-
     positions = []
     for key, pattern in known_keys:
         for match in re.finditer(pattern, text):
             positions.append((match.start(), match.end(), key))
     positions.sort()
-
     for i, (start, end, key) in enumerate(positions):
         next_start = positions[i + 1][0] if i + 1 < len(positions) else end + 250
         value      = re.sub(r"\s+", " ", text[end:next_start].strip())
-        value      = re.split(r"\n|(?:\s{2,})", value)[0]  # parar na próxima linha
+        value      = re.split(r"\n|(?:\s{2,})", value)[0]
         value      = re.split(r"\s+(?:Apoio|©|CONVERSA)", value, flags=re.IGNORECASE)[0]
         value      = value[:200].strip()
         if value and len(value) > 2 and key not in ficha:
             ficha[key] = value
-
     return ficha
