@@ -74,6 +74,13 @@ def run():
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total":      len(valid_events),
         "by_theater": scraper_stats,
+        "meta": {
+            "description": "Agregação pública de programação cultural. Conteúdos © respetivos teatros.",
+            "license_note": "Títulos, sinopses (excerto) e imagens são propriedade dos teatros indicados.",
+            "contact": "fabio@palcovivo.pt",
+            "takedown_url": "mailto:fabio@palcovivo.pt",
+            "takedown_sla": "Remoção em 48h mediante pedido.",
+        },
         "events":     valid_events,
     }
     Path("events.json").write_text(

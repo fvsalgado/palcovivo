@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt" data-theme="dark">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Agenda — Palco Vivo</title>
 <meta name="description" content="Calendário completo de teatro em Portugal — Palco Vivo."/>
 <meta name="theme-color" content="#B91C1C"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.palcovivo.pt/calendario.html"/>
+<meta property="og:title" content="Agenda — Palco Vivo"/>
+<meta property="og:description" content="Calendário completo de teatro em Portugal."/>
+<meta property="og:image" content="https://www.palcovivo.pt/og-image.jpg"/>
+<meta property="og:url" content="https://www.palcovivo.pt/calendario.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_PT"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube.com https://player.vimeo.com https://www.rtp.pt; connect-src 'self';">
+<script>(function(){var s=localStorage.getItem('pv-theme');var sys=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',s||sys);})();</script>
+<link rel="stylesheet" href="fonts/fonts.css"/>
+<link rel="stylesheet" href="design/tokens.css"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root{
   --red:#B91C1C;--red-dark:#7F1D1D;--red-light:#FEE2E2;
   --gold:#C9963A;
-  --ff-d:'Playfair Display',Georgia,serif;
-  --ff-b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --ff-d:var(--ff-display);
+  --ff-b:var(--ff-body);
   --radius:6px;
   --nav-h:60px;
   --bar-h:56px;
@@ -190,11 +200,12 @@ html,body{height:100%;font-family:var(--ff-b);font-size:13px;color:var(--text);b
 @keyframes spin{to{transform:rotate(360deg)}}
 
 @media(max-width:768px){.sidebar{display:none!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
 
-<a style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden" href="#cal-main">Saltar para o conteúdo</a>
+<a class="skip-link" href="#cal-main" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden">Saltar para o conteúdo principal</a>
 
 <!-- SITE NAV -->
 <nav class="site-nav" role="navigation" aria-label="Navegação principal">
@@ -306,18 +317,23 @@ function toggleTheme(){
 }
 
 /* MOBILE NAV */
+function trapFocusCal(c,t){var f=c.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])');var fi=f[0],la=f[f.length-1];function h(e){if(e.key==="Tab"){if(e.shiftKey){if(document.activeElement===fi){e.preventDefault();la.focus();}}else{if(document.activeElement===la){e.preventDefault();fi.focus();}}}if(e.key==="Escape")snClose(t);}c._th=h;document.addEventListener("keydown",h);if(fi)fi.focus();}
+function releaseFocusCal(c){if(c._th){document.removeEventListener("keydown",c._th);delete c._th;}}
+function snClose(btn){var m=document.getElementById("sn-menu");m.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-label","Abrir menu");btn.textContent="☰";releaseFocusCal(m);btn.focus();}
 function snToggle(btn){
   const m=document.getElementById("sn-menu");
   const o=m.classList.toggle("open");
   btn.setAttribute("aria-expanded",o);
   btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");
   btn.textContent=o?"✕":"☰";
+  if(o)trapFocusCal(m,btn);else releaseFocusCal(m);
 }
+document.addEventListener("click",function(e){var m=document.getElementById("sn-menu"),b=document.querySelector(".sn-toggle");if(m&&m.classList.contains("open")&&!m.contains(e.target)&&b&&!b.contains(e.target))snClose(b);});
 
 /* LOAD DATA */
 async function init(){
   try{
-    const r=await fetch("events.json?t="+Date.now());
+    const r=await fetch("events.json?v="+Math.floor(Date.now()/3600000));
     if(!r.ok)throw new Error();
     const data=await r.json();
     ALL=(data.events||[]).map(e=>({...e,
@@ -485,8 +501,8 @@ function openPopup(idx,evt){
   const desc=document.getElementById("p-desc");
   if(e.description){desc.textContent=e.description;desc.style.display="block";}else desc.style.display="none";
   const ac=document.getElementById("p-actions");ac.innerHTML="";
-  if(e.ticket_url)ac.innerHTML+=`<a class="btn-p" href="${e.ticket_url}" target="_blank" rel="noopener">Comprar bilhetes</a>`;
-  if(e.url&&e.url!==e.ticket_url)ac.innerHTML+=`<a class="btn-s" href="${e.url}" target="_blank" rel="noopener">Mais info</a>`;
+  if(e.ticket_url)ac.innerHTML+=`<a class="btn-p" href="${e.ticket_url}" target="_blank" rel="noopener noreferrer">Comprar bilhetes</a>`;
+  if(e.url&&e.url!==e.ticket_url)ac.innerHTML+=`<a class="btn-s" href="${e.url}" target="_blank" rel="noopener noreferrer">Mais info</a>`;
   const popup=document.getElementById("popup");popup.style.display="block";document.getElementById("pb").style.display="block";
   const x=Math.min(evt.clientX+12,window.innerWidth-380);
   const y=Math.min(evt.clientY-20,window.innerHeight-520);
@@ -498,5 +514,21 @@ function esc(s){return(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace
 
 init();
 </script>
+
+<footer role="contentinfo" style="background:var(--bg2,#161210);color:var(--text2,#A89880);border-top:1px solid var(--border,rgba(201,150,58,.18));padding:28px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;font-family:var(--ff-b,system-ui,sans-serif)">
+  <div style="font-family:var(--ff-d,Georgia,serif);font-size:18px;font-weight:700;color:var(--text,#F0E8DC)">Palco <em style="font-style:italic;color:#B91C1C">Vivo</em></div>
+  <ul style="display:flex;gap:4px;list-style:none;flex-wrap:wrap;margin:0;padding:0">
+    <li><a href="programacao.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px;transition:color .2s">Programação</a></li>
+    <li><a href="calendario.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Agenda</a></li>
+    <li><a href="palco-viivo.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Palco Viivo</a></li>
+    <li><a href="teatros.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Teatros</a></li>
+    <li><a href="sobre.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Sobre</a></li>
+    <li><a href="privacidade.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Privacidade</a></li>
+    <li><a href="aviso-legal.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Aviso Legal</a></li>
+    <li><a href="acessibilidade.html" style="font-size:13px;color:var(--text2,#A89880);text-decoration:none;padding:4px 8px;border-radius:4px">Acessibilidade</a></li>
+  </ul>
+  <p style="width:100%;font-size:11px;opacity:.45;letter-spacing:.04em;margin:0">© <span id="footer-year"></span> Palco Vivo · Conteúdos agregados a partir dos sites oficiais dos teatros · Portugal</p>
+</footer>
+<script>document.getElementById("footer-year").textContent=new Date().getFullYear();</script>
 </body>
 </html>

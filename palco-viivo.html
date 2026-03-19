@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Palco Viivo — Espetáculos em Vídeo</title>
 <meta name="description" content="Espetáculos em vídeo, selecionados do YouTube, Vimeo e RTP Play."/>
 <meta name="theme-color" content="#0A0500"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.palcovivo.pt/palco-viivo.html"/>
+<meta property="og:title" content="Palco Viivo — Espetáculos em Vídeo"/>
+<meta property="og:description" content="Espetáculos em vídeo selecionados do YouTube, Vimeo e RTP Play."/>
+<meta property="og:image" content="https://www.palcovivo.pt/og-image.jpg"/>
+<meta property="og:url" content="https://www.palcovivo.pt/palco-viivo.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_PT"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://www.rtp.pt; connect-src 'self';">
+<script>(function(){var s=localStorage.getItem('pv-theme');var sys=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',s||sys);})();</script>
+<link rel="stylesheet" href="fonts/fonts.css"/>
+<link rel="stylesheet" href="design/tokens.css"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -19,8 +29,8 @@
   --viivo-text:#F0EAF8;--viivo-text2:#9B8FAE;
   --viivo-accent:#F59E0B;--viivo-accent2:#FCD34D;
   --viivo-border:rgba(245,158,11,.18);
-  --ff-d:'Playfair Display',Georgia,serif;
-  --ff-b:'Plus Jakarta Sans',system-ui,sans-serif;
+  --ff-d:var(--ff-display, 'Fraunces', Georgia, serif);
+  --ff-b:var(--ff-body, 'DM Sans', system-ui, sans-serif);
   --radius:6px;
 }
 html{scroll-behavior:smooth}
@@ -185,6 +195,31 @@ footer{background:var(--cinema);color:var(--viivo-text2);border-top:1px solid va
   .nav-links.open a{padding:13px 16px;border-bottom:1px solid rgba(255,255,255,.05)}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Viivo theme button */
+.vb-moon{display:block}.vb-sun{display:none!important}
+[data-theme="light"] .vb-moon{display:none!important}
+[data-theme="light"] .vb-sun{display:block!important}
+@media(max-width:768px){.nav-toggle{display:flex!important}}
+
+/* Viivo layout: sidebar + video area */
+.viivo-layout{display:flex;gap:0;max-width:1400px;margin:0 auto;padding:0 0 80px}
+.viivo-sidebar{width:240px;min-width:240px;flex-shrink:0;position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;border-right:1px solid var(--viivo-border);background:var(--cinema2)}
+.viivo-sidebar-inner{padding:24px 0}
+.vs-sidebar-title{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--viivo-text2);padding:0 20px 12px}
+.company-btn{display:block;width:100%;text-align:left;padding:11px 20px;background:none;border:none;font-family:var(--ff-b);font-size:13px;font-weight:500;color:var(--viivo-text2);cursor:pointer;transition:background .15s,color .15s;border-left:3px solid transparent}
+.company-btn:hover{background:rgba(245,158,11,.08);color:var(--viivo-text)}
+.company-btn[aria-selected="true"]{background:rgba(245,158,11,.12);color:var(--viivo-accent);border-left-color:var(--viivo-accent);font-weight:600}
+.company-btn:focus-visible{outline:2px solid var(--viivo-accent);outline-offset:-2px}
+.viivo-main{flex:1;min-width:0;padding:40px 48px 0}
+/* Mobile: sidebar → select */
+.viivo-mobile-select{display:none;width:100%;padding:10px 16px;background:var(--cinema2);border:1px solid var(--viivo-border);border-radius:6px;color:var(--viivo-text);font-family:var(--ff-b);font-size:13px;margin-bottom:24px}
+@media(max-width:900px){
+  .viivo-layout{flex-direction:column}
+  .viivo-sidebar{display:none}
+  .viivo-mobile-select{display:block}
+  .viivo-main{padding:24px 20px 0}
+}
 </style>
 </head>
 <body>
@@ -192,18 +227,28 @@ footer{background:var(--cinema);color:var(--viivo-text2);border-top:1px solid va
 
 <nav role="navigation" aria-label="Navegação principal">
   <a class="nav-brand" href="index.html" aria-label="Palco Vivo — página inicial">
-    <div class="nav-brand-mark" aria-hidden="true">▶</div>
-    <span class="nav-brand-text">Palco V<span class="viivo-ii">ii</span>vo</span>
+    <span style="display:inline-flex;align-items:center;background:#B91C1C;border-radius:4px;padding:4px 9px;line-height:1;font-family:Georgia,serif;font-size:15px;font-weight:900;color:#fff;letter-spacing:-.02em" aria-hidden="true">Palco</span>
+    <span style="font-family:Georgia,serif;font-size:20px;font-weight:700;font-style:italic;color:#F59E0B;letter-spacing:-.01em;margin-left:6px">V<span class="viivo-ii">ii</span>vo</span>
   </a>
-  <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu(this)">☰</button>
-  <ul class="nav-links" id="nav-menu" role="list">
+  <div style="display:flex;align-items:center;gap:6px">
+    <ul class="nav-links" id="nav-menu" role="list">
     <li><a href="index.html">Início</a></li>
     <li><a href="programacao.html">Programação</a></li>
     <li><a href="calendario.html">Agenda</a></li>
     <li><a href="palco-viivo.html" class="active" aria-current="page">Palco Viivo</a></li>
     <li><a href="teatros.html">Teatros</a></li>
     <li><a href="sobre.html">Sobre</a></li>
-  </ul>
+    <li><a href="privacidade.html">Privacidade</a></li>
+    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+    <li><a href="acessibilidade.html">Acessibilidade</a></li>
+    </ul>
+    <button id="viivo-theme-btn" aria-label="Ativar modo claro" aria-pressed="true"
+      style="width:36px;height:36px;min-width:44px;min-height:44px;border:1px solid var(--viivo-border);background:rgba(255,255,255,.06);border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;color:var(--viivo-text2)">
+      <span class="vb-moon" aria-hidden="true">🌙</span>
+      <span class="vb-sun" aria-hidden="true" style="display:none">☀️</span>
+    </button>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="viivoToggleMenu(this)" style="min-width:44px;min-height:44px;display:none;align-items:center;justify-content:center">☰</button>
+  </div>
 </nav>
 
 <main id="main-content">
@@ -225,22 +270,33 @@ footer{background:var(--cinema);color:var(--viivo-text2);border-top:1px solid va
     </div>
   </header>
 
-  <section class="video-section" aria-label="Lista de vídeos">
-    <div class="vs-header">
-      <h2 class="vs-title">Vídeos em destaque</h2>
-      <span class="vs-count" id="vs-count"></span>
-    </div>
-    <div class="video-list" id="video-list">
-      <div class="loading-state"><div class="spinner" aria-hidden="true"></div><span>A carregar vídeos…</span></div>
-    </div>
-  </section>
+  <div class="viivo-layout">
+    <aside class="viivo-sidebar" aria-label="Companhias">
+      <div class="viivo-sidebar-inner">
+        <div class="vs-sidebar-title">Companhias</div>
+        <div id="company-list"></div>
+      </div>
+    </aside>
+    <section class="viivo-main" aria-label="Vídeos">
+      <select class="viivo-mobile-select" id="company-select" aria-label="Selecionar companhia" onchange="selectCompany(this.value)">
+        <option value="">Todas as companhias</option>
+      </select>
+      <div class="vs-header">
+        <h2 class="vs-title" id="vs-title">Vídeos em destaque</h2>
+        <span class="vs-count" id="vs-count"></span>
+      </div>
+      <div class="video-list" id="video-list">
+        <div class="loading-state"><div class="spinner" aria-hidden="true"></div><span>A carregar vídeos…</span></div>
+      </div>
+    </section>
+  </div>
 </main>
 
 <!-- MODAL -->
 <div class="modal-backdrop hidden" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
   <div class="modal">
     <div class="modal-top">
-      <span class="modal-title-text" id="modal-title"></span>
+      <span class="modal-title-text" id="modal-title" tabindex="-1"></span>
       <button class="modal-close" onclick="closeModal()" aria-label="Fechar vídeo">✕</button>
     </div>
     <div id="modal-body"></div>
@@ -254,6 +310,9 @@ footer{background:var(--cinema);color:var(--viivo-text2);border-top:1px solid va
     <li><a href="calendario.html">Agenda</a></li>
     <li><a href="teatros.html">Teatros</a></li>
     <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="privacidade.html">Privacidade</a></li>
+    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+    <li><a href="acessibilidade.html">Acessibilidade</a></li>
   </ul>
   <p class="footer-legal">© <span id="year"></span> Palco Vivo · Os vídeos são propriedade dos respetivos autores e plataformas.</p>
 </footer>
@@ -261,8 +320,29 @@ footer{background:var(--cinema);color:var(--viivo-text2);border-top:1px solid va
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 
-function toggleMenu(btn){const m=document.getElementById("nav-menu");const o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰"}
-document.querySelectorAll("#nav-menu a").forEach(a=>a.addEventListener("click",()=>{const m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰"}));
+/* ── TEMA ── */
+(function(){
+  var btn=document.getElementById("viivo-theme-btn");
+  function ap(t){
+    document.documentElement.setAttribute("data-theme",t);
+    var dark=t==="dark";
+    btn.setAttribute("aria-label",dark?"Ativar modo claro":"Ativar modo escuro");
+    btn.setAttribute("aria-pressed",String(dark));
+  }
+  ap(document.documentElement.getAttribute("data-theme")||"dark");
+  btn.addEventListener("click",function(){
+    var n=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
+    localStorage.setItem("pv-theme",n);ap(n);
+  });
+})();
+
+/* ── FOCUS TRAP ── */
+function trapFocus(cont,trig){var f=cont.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])');var fi=f[0],la=f[f.length-1];function h(e){if(e.key==="Tab"){if(e.shiftKey){if(document.activeElement===fi){e.preventDefault();la.focus();}}else{if(document.activeElement===la){e.preventDefault();fi.focus();}}}if(e.key==="Escape")viivoCloseMenu(trig);}cont._th=h;document.addEventListener("keydown",h);if(fi)fi.focus();}
+function releaseFocus(cont){if(cont._th){document.removeEventListener("keydown",cont._th);delete cont._th;}}
+function viivoCloseMenu(btn){var m=document.getElementById("nav-menu");m.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-label","Abrir menu");btn.textContent="☰";releaseFocus(m);btn.focus();}
+function viivoToggleMenu(btn){var m=document.getElementById("nav-menu");var o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰";if(o)trapFocus(m,btn);else releaseFocus(m);}
+document.addEventListener("click",function(e){var m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");if(m&&m.classList.contains("open")&&!m.contains(e.target)&&b&&!b.contains(e.target))viivoCloseMenu(b);});
+document.querySelectorAll("#nav-menu a").forEach(a=>a.addEventListener("click",()=>{var m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");if(m.classList.contains("open")){m.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";releaseFocus(m);}}));
 
 // Thumbnail APIs
 function getYtId(url){const m=url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);return m?m[1]:null}
@@ -295,6 +375,108 @@ function getEmbedUrl(url){
 }
 
 let VIDEOS=[];
+let ALL_VIDEOS=[];
+let activeCompany=null;
+
+/* Companhias */
+function getCompanies(videos){
+  const seen=new Set();
+  const out=[];
+  videos.forEach(v=>{
+    const name=(v.theater||"").trim();
+    if(name&&!seen.has(name)){seen.add(name);out.push(name);}
+  });
+  out.sort();
+  // Adicionar "Sem companhia" se existirem vídeos sem theater
+  if(videos.some(v=>!v.theater||!v.theater.trim()))out.push("");
+  return out;
+}
+
+function selectCompany(name){
+  activeCompany=name===""?null:name;
+  // sidebar
+  document.querySelectorAll(".company-btn").forEach(b=>{
+    const sel=(name===""&&b.dataset.company==="")||(b.dataset.company===name);
+    b.setAttribute("aria-selected",String(sel));
+  });
+  // select mobile
+  const sel=document.getElementById("company-select");
+  if(sel)sel.value=name;
+  // pushState
+  const url=new URL(location.href);
+  if(name){url.searchParams.set("companhia",name);}else{url.searchParams.delete("companhia");}
+  history.pushState({},"",url);
+  // título
+  const titleEl=document.getElementById("vs-title");
+  if(titleEl)titleEl.textContent=name?`${name}`:"Vídeos em destaque";
+  // filtrar
+  const filtered=name?ALL_VIDEOS.filter(v=>(v.theater||"")==name):ALL_VIDEOS;
+  VIDEOS=filtered;
+  _renderList(filtered);
+}
+
+function buildSidebar(companies){
+  const list=document.getElementById("company-list");
+  const sel=document.getElementById("company-select");
+  if(!list)return;
+  list.innerHTML="";
+  // botão "Todas"
+  const allBtn=document.createElement("button");
+  allBtn.className="company-btn";
+  allBtn.textContent="Todos os vídeos";
+  allBtn.dataset.company="";
+  allBtn.setAttribute("aria-selected","true");
+  allBtn.onclick=()=>selectCompany("");
+  list.appendChild(allBtn);
+  if(sel){sel.innerHTML='<option value="">Todas as companhias</option>';}
+  companies.filter(n=>n).forEach(name=>{
+    const btn=document.createElement("button");
+    btn.className="company-btn";
+    btn.textContent=name;
+    btn.dataset.company=name;
+    btn.setAttribute("aria-selected","false");
+    btn.onclick=()=>{selectCompany(name);};
+    list.appendChild(btn);
+    if(sel){
+      const opt=document.createElement("option");
+      opt.value=name;opt.textContent=name;
+      sel.appendChild(opt);
+    }
+  });
+}
+
+function _renderList(videos){
+  const list=document.getElementById("video-list");
+  const count=document.getElementById("vs-count");
+  if(!videos||!videos.length){
+    list.innerHTML=`<div class="loading-state"><span style="font-size:36px">🎭</span><span>Sem vídeos disponíveis.</span></div>`;
+    if(count)count.textContent="";
+    return;
+  }
+  if(count)count.textContent=`${videos.length} vídeo${videos.length!==1?"s":""}`;
+  list.innerHTML=videos.map((v,i)=>{
+    const realIdx=ALL_VIDEOS.indexOf(v);
+    const thumb=getThumbnail(v);
+    const src=getSource(v.url);
+    const posterHTML=thumb.type==="img"
+      ?`<img class="vr-poster-img" src="${thumb.url}" alt="Thumbnail de ${(v.title||"vídeo").replace(/"/g,"&quot;")}" loading="lazy" aria-hidden="true" onerror="this.parentElement.innerHTML='<div class=\'vr-poster-placeholder\'><span>🎭</span></div>'">`
+      :`<div class="vr-poster-placeholder" aria-hidden="true"><span>🎭</span></div>`;
+    return`<div class="video-row" role="button" tabindex="0" aria-label="Ver: ${(v.title||"Vídeo").replace(/"/g,"&quot;")}"
+        onclick="openModal(${realIdx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${realIdx})}">
+      <div class="vr-poster">
+        ${posterHTML}
+        <div class="vr-play-overlay" aria-hidden="true"><div class="vr-play-btn">▶</div></div>
+        <span class="vr-source-badge">${src}</span>
+      </div>
+      <div class="vr-info">
+        ${v.theater?`<div class="vr-theater">${v.theater}</div>`:""}
+        <div class="vr-title">${v.title||"Espetáculo"}</div>
+        ${v.description?`<div class="vr-desc">${v.description}</div>`:""}
+        <div class="vr-cta">▶ Ver vídeo</div>
+      </div>
+    </div>`;
+  }).join("");
+}
 
 function openModal(idx){
   const v=VIDEOS[idx];if(!v)return;
@@ -304,10 +486,11 @@ function openModal(idx){
   if(embedUrl){
     body.innerHTML=`<div class="modal-player"><iframe src="${embedUrl}" title="${(v.title||"").replace(/"/g,"&quot;")}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe></div>`;
   } else {
-    body.innerHTML=`<div class="modal-noframe"><p>Este vídeo não pode ser incorporado diretamente.</p><a class="modal-ext-btn" href="${v.url}" target="_blank" rel="noopener">▶ Abrir no ${getSource(v.url)}</a></div>`;
+    body.innerHTML=`<div class="modal-noframe"><p>Este vídeo não pode ser incorporado diretamente.</p><a class="modal-ext-btn" href="${v.url}" target="_blank" rel="noopener noreferrer">▶ Abrir no ${getSource(v.url)}</a></div>`;
   }
   document.getElementById("modal-backdrop").classList.remove("hidden");
   document.body.style.overflow="hidden";
+  setTimeout(()=>{const t=document.getElementById("modal-title");if(t)t.focus();},50);
 }
 
 function closeModal(){
@@ -354,7 +537,7 @@ function renderVideos(videos){
 
 async function load(){
   try{
-    const r=await fetch("videos.json?t="+Date.now());
+    const r=await fetch("videos.json?v="+Math.floor(Date.now()/3600000));
     if(!r.ok)throw new Error();
     const d=await r.json();
     renderVideos(d.videos||d);
