@@ -33,6 +33,8 @@ logger = logging.getLogger("palcovivo")
 
 # ─────────────────────────────────────────────────────────────
 # Scrapers activos
+# Gerido automaticamente pelo script scripts/sync_scrapers.py
+# Não editar manualmente — adicionar scrapers via scraper_*.py
 # ─────────────────────────────────────────────────────────────
 from scrapers import (
     ccb,
@@ -62,63 +64,50 @@ SCRAPERS: list[tuple[str, callable]] = [
 # ─────────────────────────────────────────────────────────────
 
 def _fingerprint(ev: dict) -> str:
-    """
-    Fingerprint semântico: título + teatro + data_início + hora (se disponível).
-    Normalizado para comparação case-insensitive e sem espaços extra.
-    """
     title   = ev.get("title", "").lower().strip()
     theater = ev.get("theater", "").lower().strip()
-    date    = ev.get("date_start", "")[:16]  # "YYYY-MM-DDTHH:MM" ou "YYYY-MM-DD"
+    date    = ev.get("date_start", "")[:16]
     return f"{title}|{theater}|{date}"
 
 
 def deduplicate(events: list[dict]) -> tuple[list[dict], list[dict]]:
-    """
-    Deduplicação em duas camadas:
-        1. Por 'id' exacto (rápida)
-        2. Por fingerprint semântico (título + teatro + data)
-
-    Devolve (eventos_únicos, duplicados_removidos).
-    Eventos sem 'id' são aceites — o ID será gerado pelo harmonizer.
-    """
-    seen_ids: dict[str, str]           = {}  # id → título (para log)
-    seen_fingerprints: dict[str, str]  = {}  # fingerprint → id original
-    unique: list[dict]                 = []
-    removed: list[dict]                = []
+    seen_ids: dict[str, str]          = {}
+    seen_fingerprints: dict[str, str] = {}
+    unique: list[dict]                = []
+    removed: list[dict]               = []
 
     for ev in events:
         eid = ev.get("id", "").strip()
         fp  = _fingerprint(ev)
 
-        # Camada 1: id exacto
         if eid and eid in seen_ids:
             removed.append({
-                "id":     eid,
-                "title":  ev.get("title", "?"),
-                "reason": "duplicate_id",
+                "id":             eid,
+                "title":          ev.get("title", "?"),
+                "reason":         "duplicate_id",
                 "original_title": seen_ids[eid],
             })
             continue
 
-        # Camada 2: fingerprint semântico
         if fp in seen_fingerprints:
             removed.append({
-                "id":     eid or "(sem id)",
-                "title":  ev.get("title", "?"),
-                "reason": "duplicate_fingerprint",
+                "id":          eid or "(sem id)",
+                "title":       ev.get("title", "?"),
+                "reason":      "duplicate_fingerprint",
                 "fingerprint": fp,
             })
             continue
 
-        # Evento único — registar e aceitar
         if eid:
             seen_ids[eid] = ev.get("title", "?")
         seen_fingerprints[fp] = eid or fp
         unique.append(ev)
 
     if removed:
-        logger.info(f"deduplicação: {len(removed)} duplicados removidos "
-                    f"({len(unique)} únicos de {len(events)} raw)")
+        logger.info(
+            f"deduplicação: {len(removed)} duplicados removidos "
+            f"({len(unique)} únicos de {len(events)} raw)"
+        )
     return unique, removed
 
 
@@ -133,7 +122,7 @@ def run() -> None:
     logger.info("=" * 55)
 
     # ── 1. Recolha ────────────────────────────────────────────
-    raw_events: list[dict] = []
+    raw_events: list[dict]     = []
     scraper_stats: dict[str, int] = {}
 
     for name, fn in SCRAPERS:
@@ -158,8 +147,6 @@ def run() -> None:
 
     # ── 4. Validação ──────────────────────────────────────────
     valid_events, report = validate(harmonized)
-
-    # Incluir duplicados removidos no relatório
     report["total_duplicates_removed"] = len(duplicates)
     report["duplicates_removed"]       = duplicates
 
