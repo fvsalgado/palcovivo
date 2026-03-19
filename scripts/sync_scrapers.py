@@ -21,13 +21,22 @@ Uso local:
     python scripts/sync_scrapers.py --dry-run
 """
 
-import ast
 import importlib.util
 import json
 import os
 import re
 import sys
 from pathlib import Path
+
+ROOT          = Path(__file__).parent.parent
+SCRAPERS_DIR  = ROOT / "scrapers"
+SCRAPER_PY    = ROOT / "scraper.py"
+THEATERS_JSON = ROOT / "theaters.json"
+
+# Adicionar raiz do repositório ao sys.path ANTES de qualquer import
+# dinâmico de scrapers, para que "from scrapers.utils import ..." funcione
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 # ─────────────────────────────────────────────────────────────
 # Módulos da pasta scrapers/ que NÃO são scrapers de teatro
@@ -41,11 +50,6 @@ _NON_SCRAPER_MODULES = {
     "validator",
     "__init__",
 }
-
-ROOT          = Path(__file__).parent.parent
-SCRAPERS_DIR  = ROOT / "scrapers"
-SCRAPER_PY    = ROOT / "scraper.py"
-THEATERS_JSON = ROOT / "theaters.json"
 
 
 # ─────────────────────────────────────────────────────────────
@@ -118,14 +122,29 @@ def read_registered_scrapers() -> set[str]:
     """
     if not SCRAPER_PY.exists():
         return set()
-    source    = SCRAPER_PY.read_text(encoding="utf-8")
-    # Encontrar imports: "from scrapers import X, Y, Z" ou "from scrapers import (\n    X,\n..."
-    imports   = re.findall(r"from\s+scrapers\s+import\s+([\w,\s\n\\()\]+)", source)
+    source     = SCRAPER_PY.read_text(encoding="utf-8")
     registered = set()
-    for block in imports:
+
+    # Encontrar bloco "from scrapers import (...)" — pode ser multi-linha
+    m = re.search(
+        r"from\s+scrapers\s+import\s+\((.*?)\)",
+        source,
+        re.DOTALL,
+    )
+    if m:
+        block = m.group(1)
         for name in re.findall(r"\b(\w+)\b", block):
             if name not in _NON_SCRAPER_MODULES and name != "scrapers":
                 registered.add(name)
+
+    # Também apanhar imports simples: "from scrapers import X"
+    for line in source.splitlines():
+        lm = re.match(r"from\s+scrapers\s+import\s+(\w+)", line.strip())
+        if lm:
+            name = lm.group(1)
+            if name not in _NON_SCRAPER_MODULES and name != "scrapers":
+                registered.add(name)
+
     return registered
 
 
