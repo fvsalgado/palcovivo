@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Palco Play — Espetáculos em Vídeo</title>
+<meta name="description" content="Espetáculos de teatro em vídeo, selecionados do YouTube, Vimeo e RTP Play."/>
+<meta name="theme-color" content="#0A0500"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://www.palcovivo.pt/palco-play.html"/>
+<meta property="og:title" content="Palco Play — Espetáculos em Vídeo"/>
+<meta property="og:description" content="Espetáculos de teatro em vídeo selecionados do YouTube, Vimeo e RTP Play."/>
+<meta property="og:image" content="https://www.palcovivo.pt/og-image.jpg"/>
+<meta property="og:url" content="https://www.palcovivo.pt/palco-play.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_PT"/>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://www.rtp.pt; connect-src 'self';">
+<script>(function(){document.documentElement.setAttribute('data-theme','dark');})();</script>
+<link rel="stylesheet" href="fonts/fonts.css"/>
+<link rel="stylesheet" href="design/tokens.css"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#B91C1C;
+  --cinema:#09070C;
+  --cinema2:#110E18;
+  --cinema3:#1A1526;
+  --cinema4:#221D30;
+  --text:#F2EDF9;
+  --text2:#9B90AE;
+  --text3:#5C5470;
+  --accent:#B91C1C;
+  --accent2:#E53E3E;
+  --gold:#C9963A;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.12);
+  --radius:6px;
+  --radius-md:10px;
+  --radius-lg:14px;
+  --nav-h:60px;
+  --ff-d:var(--ff-display,'Fraunces',Georgia,serif);
+  --ff-b:var(--ff-body,'DM Sans',system-ui,sans-serif);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-b);background:var(--cinema);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;background:var(--accent);color:#fff;padding:10px 18px;border-radius:var(--radius);font-size:14px;font-weight:600;z-index:9999}
+
+/* ── LOGO ── */
+.pp-logo{display:inline-flex;align-items:center;gap:0;text-decoration:none;line-height:1}
+.pp-logo-box{display:inline-flex;align-items:center;background:var(--red);border-radius:5px;padding:4px 9px;font-family:var(--ff-d);font-size:15px;font-weight:900;color:#fff;letter-spacing:-.02em}
+.pp-logo-play{font-family:var(--ff-d);font-size:20px;font-weight:700;font-style:italic;color:#fff;letter-spacing:-.01em;margin-left:5px}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);padding:0 40px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to bottom,rgba(9,7,12,.98),rgba(9,7,12,.75));backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.nav-right{display:flex;align-items:center;gap:4px}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{display:block;padding:6px 13px;font-size:13px;font-weight:500;color:var(--text2);border-radius:var(--radius);transition:color .15s,background .15s}
+.nav-links a:hover,.nav-links a[aria-current="page"]{color:#fff;background:rgba(255,255,255,.08)}
+.nav-links a[aria-current="page"]{color:var(--red)}
+.nav-links a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:22px;padding:8px;color:var(--text2);border-radius:var(--radius);min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.nav-toggle:focus-visible{outline:2px solid var(--red)}
+
+/* ── HERO DESTAQUE ── */
+.pp-hero{position:relative;min-height:85vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--cinema)}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 8s ease}
+.hero-bg::after{content:'';position:absolute;inset:0;background:
+  linear-gradient(to top,rgba(9,7,12,1) 0%,rgba(9,7,12,.7) 35%,rgba(9,7,12,.2) 70%,rgba(9,7,12,.05) 100%),
+  linear-gradient(to right,rgba(9,7,12,.9) 0%,rgba(9,7,12,.4) 50%,transparent 100%)}
+.hero-content{position:relative;z-index:2;padding:0 60px 72px;max-width:760px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(185,28,28,.25);border:1px solid rgba(185,28,28,.4);padding:5px 12px;border-radius:var(--radius);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#f87171;margin-bottom:20px}
+.hero-eyebrow-dot{width:6px;height:6px;border-radius:50%;background:#f87171;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+.hero-title{font-family:var(--ff-d);font-size:clamp(36px,5.5vw,72px);font-weight:900;line-height:.92;letter-spacing:-.03em;color:#fff;margin-bottom:16px}
+.hero-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.hero-theater{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.hero-sep{width:3px;height:3px;border-radius:50%;background:var(--text3)}
+.hero-desc{font-size:15px;color:rgba(242,237,249,.75);line-height:1.65;max-width:520px;margin-bottom:28px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-play{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;background:var(--red);color:#fff;border-radius:var(--radius-md);font-size:14px;font-weight:700;letter-spacing:.01em;cursor:pointer;border:none;transition:background .15s,transform .1s}
+.btn-play:hover{background:var(--accent2);transform:translateY(-1px)}
+.btn-play:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.btn-info{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:rgba(255,255,255,.1);color:#fff;border-radius:var(--radius-md);font-size:14px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.15);transition:background .15s}
+.btn-info:hover{background:rgba(255,255,255,.18)}
+.btn-info:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+/* Miniaturas hero — fila de previews à direita */
+.hero-previews{position:absolute;right:60px;bottom:72px;display:flex;flex-direction:column;gap:10px;z-index:3}
+.hero-preview{width:180px;border-radius:var(--radius);overflow:hidden;border:2px solid rgba(255,255,255,.1);cursor:pointer;transition:border-color .2s,transform .2s;flex-shrink:0}
+.hero-preview:hover,.hero-preview.active{border-color:var(--red);transform:scale(1.03)}
+.hero-preview img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;filter:brightness(.7);transition:filter .2s}
+.hero-preview:hover img,.hero-preview.active img{filter:brightness(1)}
+.hero-preview-label{background:rgba(9,7,12,.85);padding:6px 10px;font-size:11px;color:var(--text2);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ── CONTEÚDO PRINCIPAL ── */
+.pp-content{background:var(--cinema)}
+
+/* Filtros de categoria (sticky) */
+.cat-nav{position:sticky;top:var(--nav-h);z-index:100;background:rgba(9,7,12,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 40px}
+.cat-nav-inner{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none;padding:12px 0}
+.cat-nav-inner::-webkit-scrollbar{display:none}
+.cat-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:var(--radius-full,9999px);background:none;border:1px solid var(--border);color:var(--text2);font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;transition:all .15s;font-family:var(--ff-b)}
+.cat-btn:hover{border-color:var(--border2);color:#fff;background:rgba(255,255,255,.06)}
+.cat-btn.active{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
+.cat-btn:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.cat-btn-count{font-size:11px;opacity:.6;font-weight:400}
+
+/* ── SECÇÕES DE VÍDEOS ── */
+.pp-section{padding:48px 40px 0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px}
+.section-title{font-family:var(--ff-d);font-size:20px;font-weight:700;color:#fff;display:flex;align-items:center;gap:10px}
+.section-title-line{width:3px;height:18px;background:var(--red);border-radius:2px;flex-shrink:0}
+.section-count{font-size:12px;color:var(--text3)}
+
+/* Grid de cards — 4 colunas */
+.video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+/* Card de vídeo */
+.vcard{background:var(--cinema2);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s;position:relative}
+.vcard:hover,.vcard:focus-visible{border-color:rgba(185,28,28,.5);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.6)}
+.vcard:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* Thumbnail */
+.vcard-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--cinema3)}
+.vcard-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s,filter .3s;filter:brightness(.85)}
+.vcard:hover .vcard-thumb img{transform:scale(1.06);filter:brightness(1)}
+.vcard-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--cinema3),var(--cinema4));font-size:32px;color:var(--text3)}
+
+/* Play overlay */
+.vcard-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;background:rgba(0,0,0,.2)}
+.vcard:hover .vcard-play,.vcard:focus-visible .vcard-play{opacity:1}
+.vcard-play-btn{width:48px;height:48px;border-radius:50%;background:rgba(185,28,28,.9);display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;box-shadow:0 4px 20px rgba(185,28,28,.5);transform:scale(.8);transition:transform .2s}
+.vcard:hover .vcard-play-btn{transform:scale(1)}
+
+/* Badges */
+.vcard-source{position:absolute;top:8px;left:8px;padding:3px 8px;border-radius:4px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,0,0,.75);color:var(--gold);border:1px solid rgba(201,150,58,.3);backdrop-filter:blur(4px)}
+.vcard-dur{position:absolute;bottom:8px;right:8px;padding:2px 7px;border-radius:3px;font-size:11px;font-weight:600;background:rgba(0,0,0,.8);color:#fff}
+
+/* Info */
+.vcard-body{padding:14px}
+.vcard-theater{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:5px}
+.vcard-title{font-family:var(--ff-d);font-size:15px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vcard-desc{font-size:12px;color:var(--text2);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:0}
+
+/* Card em destaque — ocupa 2 colunas */
+.vcard.featured{grid-column:span 2}
+.vcard.featured .vcard-thumb{aspect-ratio:16/8}
+.vcard.featured .vcard-title{font-size:19px;-webkit-line-clamp:3}
+.vcard.featured .vcard-desc{-webkit-line-clamp:3}
+
+/* Lista (modo alternativo) */
+.video-list-mode{display:flex;flex-direction:column;gap:4px}
+.vrow{display:grid;grid-template-columns:280px 1fr;background:var(--cinema2);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;cursor:pointer;transition:border-color .2s,background .2s}
+.vrow:hover,.vrow:focus-visible{border-color:rgba(185,28,28,.45);background:var(--cinema3)}
+.vrow:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.vrow-poster{position:relative;overflow:hidden;aspect-ratio:16/9;background:var(--cinema3)}
+.vrow-poster img{width:100%;height:100%;object-fit:cover;transition:transform .35s,filter .2s;filter:brightness(.85)}
+.vrow:hover .vrow-poster img{transform:scale(1.04);filter:brightness(1)}
+.vrow-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;background:rgba(0,0,0,.25)}
+.vrow:hover .vrow-play{opacity:1}
+.vrow-play-btn{width:44px;height:44px;border-radius:50%;background:rgba(185,28,28,.9);display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;box-shadow:0 4px 20px rgba(185,28,28,.4)}
+.vrow-source{position:absolute;top:8px;left:8px;padding:2px 7px;border-radius:3px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(0,0,0,.75);color:var(--gold);border:1px solid rgba(201,150,58,.25)}
+.vrow-info{padding:20px 24px;display:flex;flex-direction:column;justify-content:center}
+.vrow-theater{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.vrow-title{font-family:var(--ff-d);font-size:20px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:8px}
+.vrow-desc{font-size:13px;color:var(--text2);line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Toggle de vista */
+.view-toggle{display:flex;gap:4px}
+.vt-btn{width:34px;height:34px;border:1px solid var(--border);background:none;border-radius:var(--radius);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text3);transition:all .15s;font-family:var(--ff-b)}
+.vt-btn:hover{border-color:var(--border2);color:var(--text)}
+.vt-btn.active{background:rgba(185,28,28,.15);border-color:rgba(185,28,28,.4);color:var(--red)}
+.vt-btn:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* Empty / loading */
+.loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:250px;gap:14px;color:var(--text2)}
+.spinner{width:28px;height:28px;border:2px solid var(--border);border-top-color:var(--red);border-radius:50%}
+@media(prefers-reduced-motion:no-preference){.spinner{animation:spin .7s linear infinite}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty-state{padding:60px 24px;text-align:center;color:var(--text2);border:1px dashed var(--border);border-radius:var(--radius-md)}
+.empty-icon{font-size:48px;display:block;margin-bottom:12px;opacity:.4}
+
+/* ── MODAL ── */
+.modal-backdrop{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.92);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeIn .18s ease}
+.modal-backdrop.hidden{display:none}
+.modal{width:100%;max-width:980px;background:var(--cinema2);border:1px solid rgba(185,28,28,.2);border-radius:var(--radius-lg);overflow:hidden;animation:slideUp .22s ease;box-shadow:0 32px 80px rgba(0,0,0,.8)}
+.modal-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid var(--border)}
+.modal-title-wrap{min-width:0}
+.modal-theater{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.modal-title-text{font-family:var(--ff-d);font-size:18px;font-weight:700;color:#fff;line-height:1.2}
+.modal-close{width:34px;height:34px;flex-shrink:0;background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text2);border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.modal-close:hover{background:rgba(185,28,28,.2);border-color:rgba(185,28,28,.4);color:#fff}
+.modal-close:focus-visible{outline:2px solid var(--red)}
+.modal-player{position:relative;padding-bottom:56.25%;background:#000}
+.modal-player iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
+.modal-noframe{padding:40px 24px;text-align:center}
+.modal-noframe p{color:var(--text2);margin-bottom:20px;font-size:14px}
+.modal-ext-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:var(--red);color:#fff;font-weight:700;font-size:14px;border-radius:var(--radius-md)}
+.modal-ext-btn:hover{background:var(--accent2)}
+.modal-desc{padding:16px 20px;border-top:1px solid var(--border);font-size:13px;color:var(--text2);line-height:1.65}
+
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── FOOTER ── */
+footer{margin-top:80px;background:var(--cinema2);color:var(--text2);border-top:1px solid var(--border);padding:32px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-links{display:flex;gap:4px;list-style:none;flex-wrap:wrap}
+.footer-links a{font-size:13px;color:var(--text2);padding:4px 8px;border-radius:var(--radius);transition:color .15s}
+.footer-links a:hover{color:var(--gold)}
+.footer-links a:focus-visible{outline:2px solid var(--red);border-radius:var(--radius)}
+.footer-legal{width:100%;font-size:11px;opacity:.4;letter-spacing:.04em}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1200px){.video-grid{grid-template-columns:repeat(3,1fr)}.vcard.featured{grid-column:span 2}}
+@media(max-width:900px){.video-grid{grid-template-columns:repeat(2,1fr)}.vcard.featured{grid-column:span 2}.hero-previews{display:none}.hero-content{padding:0 32px 56px}.pp-section{padding:40px 24px 0}.cat-nav{padding:0 24px}}
+@media(max-width:640px){.video-grid{grid-template-columns:1fr}.vcard.featured{grid-column:span 1}.vrow{grid-template-columns:1fr}.pp-hero{min-height:70vh}.nav-toggle{display:flex!important}.nav-links{display:none}.nav-links.open{display:flex;flex-direction:column;position:fixed;top:var(--nav-h);left:0;right:0;padding:12px;background:var(--cinema);border-bottom:1px solid var(--border);gap:2px;z-index:200}.nav-links.open a{padding:13px 16px;border-bottom:1px solid var(--border)}}
+@media(max-width:768px){nav,footer{padding-left:20px;padding-right:20px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar para o conteúdo principal</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Navegação principal">
+  <a class="pp-logo" href="index.html" aria-label="Palco Play — página inicial">
+    <span class="pp-logo-box" aria-hidden="true">Palco</span>
+    <span class="pp-logo-play">Play</span>
+  </a>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="programacao.html">Programação</a></li>
+      <li><a href="calendario.html">Agenda</a></li>
+      <li><a href="palco-play.html" aria-current="page">Palco Play</a></li>
+      <li><a href="teatros.html">Teatros</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu(this)" style="display:none">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main id="main-content">
+  <section class="pp-hero" id="pp-hero" aria-label="Vídeo em destaque">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-content" id="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-dot" aria-hidden="true"></span>
+        Em destaque
+      </div>
+      <h1 class="hero-title" id="hero-title">A carregar…</h1>
+      <div class="hero-meta" id="hero-meta"></div>
+      <p class="hero-desc" id="hero-desc"></p>
+      <div class="hero-btns">
+        <button class="btn-play" id="hero-play-btn" onclick="heroPlay()" aria-label="Reproduzir vídeo em destaque">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 3l10 5-10 5V3z"/></svg>
+          Reproduzir
+        </button>
+        <button class="btn-info" id="hero-info-btn" onclick="heroInfo()" aria-label="Mais informação sobre este vídeo">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M8 7v4M8 5.5v.5"/></svg>
+          Mais info
+        </button>
+      </div>
+    </div>
+    <div class="hero-previews" id="hero-previews" aria-label="Outros destaques"></div>
+  </section>
+
+  <!-- FILTROS -->
+  <nav class="cat-nav" aria-label="Filtrar por categoria">
+    <div class="cat-nav-inner" id="cat-nav-inner">
+      <button class="cat-btn active" data-cat="" onclick="filterCat(this,'')">
+        Tudo <span class="cat-btn-count" id="cnt-all"></span>
+      </button>
+      <button class="cat-btn" data-cat="YouTube" onclick="filterCat(this,'YouTube')">
+        YouTube <span class="cat-btn-count" id="cnt-yt"></span>
+      </button>
+      <button class="cat-btn" data-cat="Vimeo" onclick="filterCat(this,'Vimeo')">
+        Vimeo <span class="cat-btn-count" id="cnt-vm"></span>
+      </button>
+      <button class="cat-btn" data-cat="RTP Play" onclick="filterCat(this,'RTP Play')">
+        RTP Play <span class="cat-btn-count" id="cnt-rtp"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- GRID DE VÍDEOS -->
+  <section class="pp-section" id="videos-section" aria-label="Todos os vídeos">
+    <div class="section-head">
+      <h2 class="section-title">
+        <span class="section-title-line" aria-hidden="true"></span>
+        <span id="section-title-text">Todos os espetáculos</span>
+      </h2>
+      <div style="display:flex;align-items:center;gap:12px">
+        <span class="section-count" id="section-count"></span>
+        <div class="view-toggle" role="group" aria-label="Modo de visualização">
+          <button class="vt-btn active" id="vt-grid" onclick="setView('grid')" aria-label="Vista em grelha" title="Grelha">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/><rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/></svg>
+          </button>
+          <button class="vt-btn" id="vt-list" onclick="setView('list')" aria-label="Vista em lista" title="Lista">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><rect x="0" y="1" width="14" height="2.5" rx="1"/><rect x="0" y="5.75" width="14" height="2.5" rx="1"/><rect x="0" y="10.5" width="14" height="2.5" rx="1"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="video-area">
+      <div class="loading-state"><div class="spinner" aria-hidden="true"></div><span>A carregar vídeos…</span></div>
+    </div>
+  </section>
+</main>
+
+<!-- MODAL -->
+<div class="modal-backdrop hidden" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal" role="document">
+    <div class="modal-top">
+      <div class="modal-title-wrap">
+        <div class="modal-theater" id="modal-theater"></div>
+        <div class="modal-title-text" id="modal-title" tabindex="-1"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Fechar vídeo">✕</button>
+    </div>
+    <div id="modal-body"></div>
+    <div class="modal-desc" id="modal-desc" style="display:none"></div>
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <a class="pp-logo" href="index.html">
+    <span class="pp-logo-box" aria-hidden="true">Palco</span>
+    <span class="pp-logo-play">Play</span>
+  </a>
+  <ul class="footer-links" role="list">
+    <li><a href="programacao.html">Programação</a></li>
+    <li><a href="calendario.html">Agenda</a></li>
+    <li><a href="teatros.html">Teatros</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="privacidade.html">Privacidade</a></li>
+    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+  </ul>
+  <p class="footer-legal">© <span id="year"></span> Palco Vivo · Os vídeos são propriedade dos respetivos autores e plataformas.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+
+/* ── MENU ── */
+function trapFocus(c,t){var f=c.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])');var fi=f[0],la=f[f.length-1];function h(e){if(e.key==="Tab"){if(e.shiftKey){if(document.activeElement===fi){e.preventDefault();la.focus();}}else{if(document.activeElement===la){e.preventDefault();fi.focus();}}}if(e.key==="Escape")closeMenu(t);}c._th=h;document.addEventListener("keydown",h);if(fi)fi.focus();}
+function releaseFocus(c){if(c._th){document.removeEventListener("keydown",c._th);delete c._th;}}
+function closeMenu(btn){var m=document.getElementById("nav-menu");m.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-label","Abrir menu");btn.textContent="☰";releaseFocus(m);btn.focus();}
+function toggleMenu(btn){var m=document.getElementById("nav-menu");var o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰";if(o)trapFocus(m,btn);else releaseFocus(m);}
+document.addEventListener("click",function(e){var m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");if(m&&m.classList.contains("open")&&!m.contains(e.target)&&b&&!b.contains(e.target))closeMenu(b);});
+
+/* ── UTILS ── */
+function esc(s){return(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function getYtId(url){var m=(url||"").match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&?/]+)/);return m?m[1]:null;}
+function getVimeoId(url){var m=(url||"").match(/vimeo\.com\/(\d+)/);return m?m[1]:null;}
+function getSource(url){
+  if((url||"").includes("youtube")||(url||"").includes("youtu.be"))return"YouTube";
+  if((url||"").includes("vimeo"))return"Vimeo";
+  if((url||"").includes("rtp.pt"))return"RTP Play";
+  return"Vídeo";
+}
+function getThumbnail(v){
+  var ytId=getYtId(v.url);
+  if(ytId)return"https://img.youtube.com/vi/"+ytId+"/hqdefault.jpg";
+  if(v.thumbnail)return v.thumbnail;
+  return"";
+}
+function getEmbedUrl(url){
+  var ytId=getYtId(url);
+  if(ytId)return"https://www.youtube-nocookie.com/embed/"+ytId+"?autoplay=1&rel=0";
+  var vmId=getVimeoId(url);
+  if(vmId)return"https://player.vimeo.com/video/"+vmId+"?autoplay=1";
+  var epM=(url||"").match(/\/e(\d+)\//);
+  if(epM)return"https://www.rtp.pt/play/embed/"+epM[1];
+  return null;
+}
+
+/* ── ESTADO ── */
+var ALL_VIDEOS=[];
+var CUR_VIDEOS=[];
+var CUR_CAT="";
+var CUR_VIEW="grid";
+var HERO_IDX=0;
+
+/* ── DADOS ── */
+var FALLBACK_VIDEOS=[
+  {
+    url:"https://www.youtube.com/watch?v=2neq1EjsY5g",
+    title:"Mephisto",
+    theater:"Teatro Nacional D. Maria II",
+    description:"Espetáculo de abertura da temporada. Uma adaptação do romance de Klaus Mann sobre a cumplicidade com o poder.",
+    featured:true
+  },
+  {
+    url:"https://www.rtp.pt/play/palco/p4320/e675550/julia",
+    title:"Júlia",
+    theater:"RTP Palco",
+    description:"Espetáculo premiado disponível no arquivo RTP Palco.",
+    featured:false
+  },
+  {
+    url:"https://www.youtube.com/watch?v=QM5y2VWNQoQ",
+    title:"Espetáculo",
+    theater:"Teatro Nacional",
+    description:"",
+    featured:false
+  },
+  {
+    url:"https://vimeo.com/513609413",
+    title:"Performance",
+    theater:"",
+    description:"",
+    featured:false
+  }
+];
+
+/* ── HERO ── */
+var HERO_CANDIDATES=[];
+var HERO_TIMER=null;
+
+function buildHero(videos){
+  // Usar vídeos com featured:true, ou os primeiros 4 YouTube (têm thumbnail fácil)
+  HERO_CANDIDATES=videos.filter(function(v){
+    return v.featured||getYtId(v.url);
+  }).slice(0,5);
+  if(!HERO_CANDIDATES.length)HERO_CANDIDATES=videos.slice(0,5);
+  if(!HERO_CANDIDATES.length)return;
+
+  setHeroSlide(0);
+  buildHeroPreviews();
+
+  // Auto-rotate a cada 8s
+  clearInterval(HERO_TIMER);
+  HERO_TIMER=setInterval(function(){
+    var next=(HERO_IDX+1)%HERO_CANDIDATES.length;
+    setHeroSlide(next);
+  },8000);
+}
+
+function setHeroSlide(idx){
+  HERO_IDX=idx;
+  var v=HERO_CANDIDATES[idx];
+  if(!v)return;
+
+  var thumb=getThumbnail(v);
+  var bg=document.getElementById("hero-bg");
+  if(thumb){
+    bg.style.backgroundImage="url('"+esc(thumb)+"')";
+    bg.style.backgroundSize="cover";
+    bg.style.backgroundPosition="center";
+  }else{
+    bg.style.backgroundImage="linear-gradient(135deg,#1A1526,#09070C)";
+  }
+
+  document.getElementById("hero-title").textContent=v.title||"Espetáculo";
+  document.getElementById("hero-desc").textContent=v.description||"";
+
+  var meta=document.getElementById("hero-meta");
+  var src=getSource(v.url);
+  meta.innerHTML=
+    (v.theater?`<span class="hero-theater">${esc(v.theater)}</span><span class="hero-sep" aria-hidden="true"></span>`:"")
+    +`<span style="font-size:12px;color:var(--text2)">${esc(src)}</span>`;
+
+  // Actualizar previews
+  document.querySelectorAll(".hero-preview").forEach(function(el,i){
+    el.classList.toggle("active",i===idx);
+  });
+}
+
+function buildHeroPreviews(){
+  var wrap=document.getElementById("hero-previews");
+  wrap.innerHTML=HERO_CANDIDATES.map(function(v,i){
+    var thumb=getThumbnail(v);
+    return`<div class="hero-preview${i===0?" active":""}" role="button" tabindex="0"
+      aria-label="Ver: ${esc(v.title||'Vídeo')}"
+      onclick="setHeroSlide(${i});clearInterval(HERO_TIMER)"
+      onkeydown="if(event.key==='Enter'){setHeroSlide(${i});clearInterval(HERO_TIMER)}">
+      ${thumb?`<img src="${esc(thumb)}" alt="${esc(v.title||'')}" loading="lazy"/>`:`<div style="background:var(--cinema3);aspect-ratio:16/9"></div>`}
+      <div class="hero-preview-label">${esc(v.title||"Espetáculo")}</div>
+    </div>`;
+  }).join("");
+}
+
+function heroPlay(){
+  var v=HERO_CANDIDATES[HERO_IDX];
+  if(v)openModal(v);
+}
+function heroInfo(){
+  var v=HERO_CANDIDATES[HERO_IDX];
+  if(!v)return;
+  // Scroll suave até ao card correspondente
+  var cards=document.querySelectorAll("[data-vtitle]");
+  for(var i=0;i<cards.length;i++){
+    if(cards[i].dataset.vtitle===(v.title||"")){
+      cards[i].scrollIntoView({behavior:"smooth",block:"center"});
+      cards[i].focus();
+      return;
+    }
+  }
+}
+
+/* ── FILTRO ── */
+function filterCat(btn,cat){
+  document.querySelectorAll(".cat-btn").forEach(function(b){b.classList.remove("active");});
+  btn.classList.add("active");
+  CUR_CAT=cat;
+  var filtered=cat?ALL_VIDEOS.filter(function(v){return getSource(v.url)===cat;}):ALL_VIDEOS;
+  CUR_VIDEOS=filtered;
+  var titleEl=document.getElementById("section-title-text");
+  if(titleEl)titleEl.textContent=cat?("Plataforma: "+cat):"Todos os espetáculos";
+  renderArea(filtered);
+}
+
+/* ── VISTA ── */
+function setView(mode){
+  CUR_VIEW=mode;
+  document.getElementById("vt-grid").classList.toggle("active",mode==="grid");
+  document.getElementById("vt-list").classList.toggle("active",mode==="list");
+  renderArea(CUR_VIDEOS);
+}
+
+/* ── RENDER ── */
+function renderArea(videos){
+  var area=document.getElementById("video-area");
+  var count=document.getElementById("section-count");
+  if(count)count.textContent=videos.length+" vídeo"+(videos.length!==1?"s":"");
+
+  if(!videos.length){
+    area.innerHTML=`<div class="empty-state"><span class="empty-icon" aria-hidden="true">🎭</span><p>Sem vídeos nesta categoria.</p></div>`;
+    return;
+  }
+
+  if(CUR_VIEW==="list"){
+    area.innerHTML=`<div class="video-list-mode">`+videos.map(function(v,i){
+      var thumb=getThumbnail(v);
+      var src=getSource(v.url);
+      return`<div class="vrow" role="button" tabindex="0" data-vtitle="${esc(v.title||"")}"
+        aria-label="Reproduzir: ${esc(v.title||"Vídeo")}"
+        onclick="openModal(v)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(ALL_VIDEOS[${ALL_VIDEOS.indexOf(v)}]);}">
+        <div class="vrow-poster">
+          ${thumb?`<img src="${esc(thumb)}" alt="${esc(v.title||"")}" loading="lazy"/>`:`<div style="background:var(--cinema3);width:100%;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--text3)">🎭</div>`}
+          <div class="vrow-play" aria-hidden="true"><div class="vrow-play-btn">▶</div></div>
+          <span class="vrow-source">${esc(src)}</span>
+        </div>
+        <div class="vrow-info">
+          ${v.theater?`<div class="vrow-theater">${esc(v.theater)}</div>`:""}
+          <div class="vrow-title">${esc(v.title||"Espetáculo")}</div>
+          ${v.description?`<div class="vrow-desc">${esc(v.description)}</div>`:""}
+        </div>
+      </div>`;
+    }).join("")+`</div>`;
+  } else {
+    area.innerHTML=`<div class="video-grid">`+videos.map(function(v,i){
+      var thumb=getThumbnail(v);
+      var src=getSource(v.url);
+      var featured=v.featured&&i<2?" featured":"";
+      return`<div class="vcard${featured}" role="button" tabindex="0" data-vtitle="${esc(v.title||"")}"
+        aria-label="Reproduzir: ${esc(v.title||"Vídeo")}"
+        onclick="openModal(ALL_VIDEOS[${ALL_VIDEOS.indexOf(v)}])"
+        onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(ALL_VIDEOS[${ALL_VIDEOS.indexOf(v)}]);}">
+        <div class="vcard-thumb">
+          ${thumb?`<img src="${esc(thumb)}" alt="${esc(v.title||"")}" loading="lazy"/>`:`<div class="vcard-placeholder">🎭</div>`}
+          <div class="vcard-play" aria-hidden="true"><div class="vcard-play-btn">▶</div></div>
+          <span class="vcard-source">${esc(src)}</span>
+        </div>
+        <div class="vcard-body">
+          ${v.theater?`<div class="vcard-theater">${esc(v.theater)}</div>`:""}
+          <div class="vcard-title">${esc(v.title||"Espetáculo")}</div>
+          ${v.description?`<div class="vcard-desc">${esc(v.description)}</div>`:""}
+        </div>
+      </div>`;
+    }).join("")+`</div>`;
+  }
+
+  // Reattach onclick para modo lista (closures com variável v)
+  if(CUR_VIEW==="list"){
+    var rows=area.querySelectorAll(".vrow");
+    videos.forEach(function(v,i){
+      if(rows[i]){
+        rows[i].onclick=function(){openModal(v);};
+        rows[i].onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openModal(v);}};
+      }
+    });
+  }
+}
+
+/* ── MODAL ── */
+function openModal(v){
+  if(!v)return;
+  document.getElementById("modal-theater").textContent=v.theater||"";
+  document.getElementById("modal-title").textContent=v.title||"";
+  var desc=document.getElementById("modal-desc");
+  if(v.description){desc.textContent=v.description;desc.style.display="";}
+  else{desc.style.display="none";}
+  var embedUrl=getEmbedUrl(v.url);
+  var body=document.getElementById("modal-body");
+  if(embedUrl){
+    body.innerHTML=`<div class="modal-player"><iframe src="${esc(embedUrl)}" title="${esc(v.title||"Vídeo")}" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;fullscreen" allowfullscreen></iframe></div>`;
+  }else{
+    var src=getSource(v.url);
+    body.innerHTML=`<div class="modal-noframe"><p>Este vídeo não pode ser incorporado diretamente.</p><a class="modal-ext-btn" href="${esc(v.url)}" target="_blank" rel="noopener noreferrer">▶ Abrir no ${esc(src)}</a></div>`;
+  }
+  document.getElementById("modal-backdrop").classList.remove("hidden");
+  document.body.style.overflow="hidden";
+  setTimeout(function(){var t=document.getElementById("modal-title");if(t)t.focus();},60);
+}
+function closeModal(){
+  document.getElementById("modal-backdrop").classList.add("hidden");
+  document.getElementById("modal-body").innerHTML="";
+  document.body.style.overflow="";
+}
+document.getElementById("modal-backdrop").addEventListener("click",function(e){if(e.target===e.currentTarget)closeModal();});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeModal();});
+
+/* ── CONTADORES DE CATEGORIA ── */
+function updateCounts(videos){
+  var yt=videos.filter(function(v){return getSource(v.url)==="YouTube";}).length;
+  var vm=videos.filter(function(v){return getSource(v.url)==="Vimeo";}).length;
+  var rtp=videos.filter(function(v){return getSource(v.url)==="RTP Play";}).length;
+  var cntAll=document.getElementById("cnt-all");
+  var cntYt=document.getElementById("cnt-yt");
+  var cntVm=document.getElementById("cnt-vm");
+  var cntRtp=document.getElementById("cnt-rtp");
+  if(cntAll)cntAll.textContent=videos.length;
+  if(cntYt)cntYt.textContent=yt||"";
+  if(cntVm)cntVm.textContent=vm||"";
+  if(cntRtp)cntRtp.textContent=rtp||"";
+  // Esconder botões sem vídeos
+  if(!yt)document.querySelector('[data-cat="YouTube"]').style.display="none";
+  if(!vm)document.querySelector('[data-cat="Vimeo"]').style.display="none";
+  if(!rtp)document.querySelector('[data-cat="RTP Play"]').style.display="none";
+}
+
+/* ── LOAD ── */
+async function load(){
+  var videos=FALLBACK_VIDEOS;
+  try{
+    var r=await fetch("videos.json?v="+Math.floor(Date.now()/3600000));
+    if(r.ok){
+      var d=await r.json();
+      var loaded=d.videos||d;
+      if(loaded&&loaded.length)videos=loaded;
+    }
+  }catch(e){}
+
+  ALL_VIDEOS=videos;
+  CUR_VIDEOS=videos;
+  updateCounts(videos);
+  buildHero(videos);
+  renderArea(videos);
+}
+load();
+</script>
+</body>
+</html>
