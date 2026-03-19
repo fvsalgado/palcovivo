@@ -13,7 +13,14 @@
       "lat": 38.6974,
       "lng": -9.2059,
       "salas": ["Grande Auditório", "Pequeno Auditório", "Black Box"],
-      "theater_key": "CCB — Centro Cultural de Belém"
+      "aliases": [
+        "ccb",
+        "centro cultural de belém",
+        "centro cultural belem",
+        "c.c.b.",
+        "ccb belém",
+        "ccb belem"
+      ]
     },
     {
       "id": "saoluiz",
@@ -28,7 +35,15 @@
       "lat": 38.7098,
       "lng": -9.1421,
       "salas": ["Grande Sala", "Sala Estúdio"],
-      "theater_key": "São Luiz Teatro Municipal"
+      "aliases": [
+        "são luiz",
+        "sao luiz",
+        "teatro são luiz",
+        "teatro municipal são luiz",
+        "teatro municipal sao luiz",
+        "sl teatro",
+        "saoluiz"
+      ]
     },
     {
       "id": "mariamatos",
@@ -43,7 +58,11 @@
       "lat": 38.7466,
       "lng": -9.1365,
       "salas": ["Grande Sala", "Sala Estúdio"],
-      "theater_key": "Teatro Maria Matos"
+      "aliases": [
+        "maria matos",
+        "tmm",
+        "teatro maria matos"
+      ]
     },
     {
       "id": "culturgest",
@@ -58,7 +77,13 @@
       "lat": 38.7318,
       "lng": -9.1397,
       "salas": ["Auditório Emílio Rui Vilar", "Pequeno Auditório", "Galeria 1", "Galeria 2"],
-      "theater_key": "Culturgest"
+      "aliases": [
+        "culturgest",
+        "culturgest lisboa",
+        "fundação caixa geral de depósitos",
+        "fundacao caixa geral de depositos",
+        "fcgd"
+      ]
     },
     {
       "id": "variedades",
@@ -73,7 +98,12 @@
       "lat": 38.7192,
       "lng": -9.1483,
       "salas": ["Teatro Variedades"],
-      "theater_key": "Teatro Variedades"
+      "aliases": [
+        "variedades",
+        "teatro variedades",
+        "parque mayer variedades",
+        "tv"
+      ]
     },
     {
       "id": "capitolio",
@@ -88,7 +118,13 @@
       "lat": 38.7195,
       "lng": -9.1480,
       "salas": ["Capitólio"],
-      "theater_key": "Capitólio"
+      "aliases": [
+        "capitolio",
+        "teatro capitólio",
+        "teatro capitolio",
+        "parque mayer capitólio",
+        "parque mayer capitolio"
+      ]
     }
   ]
 }

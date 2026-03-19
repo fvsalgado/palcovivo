@@ -1,33 +1,47 @@
 """Utilitários partilhados pelos scrapers."""
 import re
 import logging
+import urllib.robotparser
 from datetime import datetime, date
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s  %(message)s",
-    datefmt="%H:%M:%S",
-)
+# ─────────────────────────────────────────────────────────────
+# NOTA: logging.basicConfig() foi removido deste módulo.
+# A configuração do logging (handlers, formato, ficheiro de log)
+# é agora responsabilidade exclusiva do orquestrador (scraper.py).
+# Desta forma evita-se conflito de configuração quando o módulo
+# é importado antes do orquestrador ter configurado os seus handlers.
+# ─────────────────────────────────────────────────────────────
 
-def log(msg):
-    logging.info(msg)
+logger = logging.getLogger(__name__)
 
-def make_id(prefix, title):
+
+def log(msg: str) -> None:
+    """
+    Compatibilidade com scrapers que ainda usam log().
+    Encaminha para o logger do módulo.
+    Mantido para não partir os scrapers individuais antes de serem actualizados.
+    """
+    logger.info(msg)
+
+
+def make_id(prefix: str, title: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", title.lower().strip()).strip("-")[:50]
     return f"{prefix}-{slug}"
 
+
 MONTHS = {
-    "jan":1, "fev":2, "mar":3, "abr":4, "mai":5, "jun":6,
-    "jul":7, "ago":8, "set":9, "out":10, "nov":11, "dez":12,
-    "janeiro":1, "fevereiro":2, "março":3, "marco":3, "abril":4,
-    "maio":5, "junho":6, "julho":7, "agosto":8,
-    "setembro":9, "outubro":10, "novembro":11, "dezembro":12,
-    "january":1, "february":2, "march":3, "april":4, "may":5, "june":6,
-    "july":7, "august":8, "september":9, "october":10, "november":11, "december":12,
-    "feb":2, "apr":4, "aug":8, "sep":9, "oct":10, "dec":12,
+    "jan": 1, "fev": 2, "mar": 3, "abr": 4, "mai": 5, "jun": 6,
+    "jul": 7, "ago": 8, "set": 9, "out": 10, "nov": 11, "dez": 12,
+    "janeiro": 1, "fevereiro": 2, "março": 3, "marco": 3, "abril": 4,
+    "maio": 5, "junho": 6, "julho": 7, "agosto": 8,
+    "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12,
+    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+    "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+    "feb": 2, "apr": 4, "aug": 8, "sep": 9, "oct": 10, "dec": 12,
 }
 
-def parse_date(s, force_year=None):
+
+def parse_date(s: str, force_year: int | None = None) -> str:
     """
     Converte string de data para 'YYYY-MM-DD'.
     force_year: se fornecido, usa esse ano em vez de inferir.
@@ -59,7 +73,6 @@ def parse_date(s, force_year=None):
         elif force_year:
             y = force_year
         else:
-            # sem ano: inferir — se o mês já passou, usar próximo ano
             now = datetime.now()
             y = now.year
             if mon < now.month or (mon == now.month and d < now.day):
@@ -71,32 +84,23 @@ def parse_date(s, force_year=None):
             return ""
     return ""
 
-def parse_date_range(s):
+
+def parse_date_range(s: str) -> tuple[str, str]:
     """Converte intervalo para (date_start, date_end). Aceita variados formatos."""
     if not s:
         return "", ""
     s = s.strip()
-    # separadores: –, —, -, " a "
     parts = re.split(r"\s*[–—]\s*|\s+[aA]\s+", s, maxsplit=1)
     if len(parts) == 2:
         start_s, end_s = parts[0].strip(), parts[1].strip()
-
-        # Calcular date_end primeiro para obter o ano
         date_end = parse_date(end_s)
-
-        # Extrair ano do fim para usar no início se necessário
         year_end = re.search(r"\d{4}", end_s)
         year_end_val = int(year_end.group()) if year_end else None
-
-        # Se não há ano no fim, inferir do parse_date e extrair
         if not year_end_val and date_end:
             year_end_val = int(date_end[:4])
-
-        # formato DD.MM sem ano: propagar como DD.MM.YYYY
         if re.match(r"^\d{2}\.\d{2}$", start_s) and year_end_val:
             start_s += f".{year_end_val}"
             date_start = parse_date(start_s)
-        # início só com dígito(s): propagar mês do fim
         elif re.match(r"^\d{1,2}$", start_s):
             month_m = re.search(r"[A-Za-zçãáéíóúÇÃÁÉÍÓÚ]{3,}", end_s)
             if month_m:
@@ -104,20 +108,18 @@ def parse_date_range(s):
                 if year_end_val:
                     start_s += f" {year_end_val}"
             date_start = parse_date(start_s, force_year=year_end_val)
-        # início sem ano explícito: usar o mesmo ano que o fim
         elif not re.search(r"\d{4}", start_s) and year_end_val:
             date_start = parse_date(start_s, force_year=year_end_val)
         else:
             date_start = parse_date(start_s)
-
         return date_start, date_end
     d = parse_date(s)
     return d, d
 
+
 # ─────────────────────────────────────────────────────────────
-# CONFORMIDADE — adicionado para conformidade legal e ética
+# CONFORMIDADE — funções de scraping ético
 # ─────────────────────────────────────────────────────────────
-import urllib.robotparser
 
 # User-Agent e headers padrão para todos os scrapers
 HEADERS = {
@@ -138,7 +140,6 @@ def truncate_synopsis(text: str, max_chars: int = 300) -> str:
     text = text.strip()
     if len(text) <= max_chars:
         return text
-    # Tentar cortar na última frase completa
     truncated = text[:max_chars]
     last_sentence = max(
         truncated.rfind("."),
@@ -150,7 +151,12 @@ def truncate_synopsis(text: str, max_chars: int = 300) -> str:
     return truncated + "…"
 
 
-def build_image_object(url: str, page_soup, theater_name: str, source_url: str):
+def build_image_object(
+    url: str,
+    page_soup,
+    theater_name: str,
+    source_url: str,
+) -> dict | None:
     """
     Tenta extrair crédito fotográfico da página BeautifulSoup.
     Devolve dict {url, credit, source, theater} ou None se url vazio.
@@ -160,7 +166,6 @@ def build_image_object(url: str, page_soup, theater_name: str, source_url: str):
     credit = None
     if page_soup:
         try:
-            # 1. <figcaption> associado
             for fig in (page_soup.find_all("figure") or []):
                 img_tag = fig.find("img")
                 if img_tag and img_tag.get("src", "") == url:
@@ -168,7 +173,6 @@ def build_image_object(url: str, page_soup, theater_name: str, source_url: str):
                     if cap and cap.get_text(strip=True):
                         credit = cap.get_text(strip=True)[:120]
                         break
-            # 2. atributo alt (ignorar se < 10 chars)
             if not credit:
                 for img_tag in (page_soup.find_all("img") or []):
                     if img_tag.get("src", "") == url:
@@ -176,7 +180,6 @@ def build_image_object(url: str, page_soup, theater_name: str, source_url: str):
                         if len(alt) >= 10:
                             credit = alt[:120]
                         break
-            # 3. Regex no texto da página
             if not credit:
                 page_text = page_soup.get_text(" ", strip=True)
                 m = re.search(
@@ -214,5 +217,8 @@ def can_scrape(base_url: str, path: str = "/") -> bool:
             socket.setdefaulttimeout(old_timeout)
         return rp.can_fetch("PalcoVivo-Scraper", base_url.rstrip("/") + path)
     except Exception as e:
-        log(f"can_scrape: não foi possível verificar robots.txt de {base_url} ({e}). A assumir permitido.")
+        logger.warning(
+            f"can_scrape: não foi possível verificar robots.txt "
+            f"de {base_url} ({e}). A assumir permitido."
+        )
         return True
