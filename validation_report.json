@@ -1,41 +1,13 @@
 {
-  "generated_at": "2026-03-19T13:30:38.138605Z",
-  "total_raw": 108,
-  "total_accepted": 103,
-  "total_rejected": 5,
+  "generated_at": "2026-03-19T14:05:10.578929Z",
+  "total_raw": 87,
+  "total_accepted": 86,
+  "total_rejected": 1,
   "total_warnings": 12,
   "rejected": [
     {
       "id": "saoluiz-um-homem-e-o-seu-criado",
       "title": "Um Homem e o seu Criado",
-      "errors": [
-        "'date_start' ausente ou vazio"
-      ]
-    },
-    {
-      "id": "saoluiz-disquiet-international-literary-program-2026",
-      "title": "DISQUIET – INTERNATIONAL LITERARY PROGRAM 2026",
-      "errors": [
-        "'date_start' ausente ou vazio"
-      ]
-    },
-    {
-      "id": "saoluiz-integral-das-sinfonias-de-schumann",
-      "title": "INTEGRAL DAS SINFONIAS DE SCHUMANN",
-      "errors": [
-        "'date_start' ausente ou vazio"
-      ]
-    },
-    {
-      "id": "saoluiz-a-laugh-to-cry",
-      "title": "A LAUGH TO CRY",
-      "errors": [
-        "'date_start' ausente ou vazio"
-      ]
-    },
-    {
-      "id": "saoluiz-pons-varolii",
-      "title": "PONS VAROLII",
       "errors": [
         "'date_start' ausente ou vazio"
       ]
