@@ -14,21 +14,26 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: pip-${{ hashFiles('requirements.txt') }}
+
       - name: Instalar dependências
         run: pip install -r requirements.txt
+
       - name: Correr scrapers
         run: python scraper.py
-      - name: Commit events.json
+
+      - name: Commit resultados
         run: |
-          git config user.name  "EmCena Bot"
-          git config user.email "bot@emcena.pt"
-          git add events.json
-          git diff --staged --quiet || git commit -m "chore: update events.json $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git config user.name  "Palco Vivo Bot"
+          git config user.email "bot@palcovivo.pt"
+          git add events.json validation_report.json
+          git diff --staged --quiet || git commit -m "chore: update events $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
