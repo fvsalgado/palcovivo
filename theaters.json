@@ -12,7 +12,11 @@
       "programacao": "https://www.ccb.pt/eventos/category/teatro/",
       "lat": 38.6974,
       "lng": -9.2059,
-      "salas": ["Grande Auditório", "Pequeno Auditório", "Black Box"],
+      "salas": [
+        "Grande Auditório",
+        "Pequeno Auditório",
+        "Black Box"
+      ],
       "aliases": [
         "ccb",
         "centro cultural de belém",
@@ -34,7 +38,10 @@
       "programacao": "https://www.teatrosaoluiz.pt/programacao/",
       "lat": 38.7098,
       "lng": -9.1421,
-      "salas": ["Grande Sala", "Sala Estúdio"],
+      "salas": [
+        "Grande Sala",
+        "Sala Estúdio"
+      ],
       "aliases": [
         "são luiz",
         "sao luiz",
@@ -57,7 +64,10 @@
       "programacao": "https://teatromariamatos.pt/tipo/teatro/",
       "lat": 38.7466,
       "lng": -9.1365,
-      "salas": ["Grande Sala", "Sala Estúdio"],
+      "salas": [
+        "Grande Sala",
+        "Sala Estúdio"
+      ],
       "aliases": [
         "maria matos",
         "tmm",
@@ -76,7 +86,12 @@
       "programacao": "https://www.culturgest.pt/pt/programacao/por-evento/?typology=1",
       "lat": 38.7318,
       "lng": -9.1397,
-      "salas": ["Auditório Emílio Rui Vilar", "Pequeno Auditório", "Galeria 1", "Galeria 2"],
+      "salas": [
+        "Auditório Emílio Rui Vilar",
+        "Pequeno Auditório",
+        "Galeria 1",
+        "Galeria 2"
+      ],
       "aliases": [
         "culturgest",
         "culturgest lisboa",
@@ -97,7 +112,9 @@
       "programacao": "https://teatrovariedades-capitolio.pt/agenda/teatro-variedades/",
       "lat": 38.7192,
       "lng": -9.1483,
-      "salas": ["Teatro Variedades"],
+      "salas": [
+        "Teatro Variedades"
+      ],
       "aliases": [
         "variedades",
         "teatro variedades",
@@ -116,8 +133,10 @@
       "site": "https://teatrovariedades-capitolio.pt",
       "programacao": "https://teatrovariedades-capitolio.pt/agenda/capitolio/",
       "lat": 38.7195,
-      "lng": -9.1480,
-      "salas": ["Capitólio"],
+      "lng": -9.148,
+      "salas": [
+        "Capitólio"
+      ],
       "aliases": [
         "capitolio",
         "teatro capitólio",
@@ -138,7 +157,10 @@
       "programacao": "https://www.teatroviriato.com/pt/programacao",
       "lat": 40.6566,
       "lng": -7.9122,
-      "salas": ["Sala de Espetáculos", "Sala Estúdio"],
+      "salas": [
+        "Sala de Espetáculos",
+        "Sala Estúdio"
+      ],
       "aliases": [
         "teatro viriato",
         "viriato",
@@ -146,6 +168,30 @@
         "centro de artes do espetaculo de viseu",
         "caev"
       ]
+    },
+    {
+      "id": "theatrocirco",
+      "name": "Theatro Circo",
+      "short": "Theatro Circo",
+      "color": "#b71c1c",
+      "city": "Braga",
+      "address": "Av. da Liberdade, 697, 4710-251 Braga",
+      "site": "https://theatrocirco.com",
+      "programacao": "https://theatrocirco.com/programa/",
+      "lat": 41.5454,
+      "lng": -8.4265,
+      "salas": [
+        "Sala Principal",
+        "Pequeno Auditório"
+      ],
+      "aliases": [
+        "theatro circo",
+        "theatro circo braga",
+        "teatro circo",
+        "teatro circo braga"
+      ],
+      "description": "O Theatro Circo é um dos mais emblemáticos teatros do norte de Portugal, inaugurado em 1915 em Braga. Com uma programação diversa de teatro, música, dança e cinema, é referência cultural da cidade e da região.",
+      "_overrides": []
     }
   ]
 }
