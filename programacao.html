@@ -354,11 +354,12 @@ function closeMenu(btn){var m=document.getElementById("nav-menu");m.classList.re
 function toggleMenu(btn){var m=document.getElementById("nav-menu");var o=m.classList.toggle("open");btn.setAttribute("aria-expanded",o);btn.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");btn.textContent=o?"✕":"☰";if(o)trapFocus(m,btn);else releaseFocus(m);}
 document.addEventListener("click",function(e){var m=document.getElementById("nav-menu"),b=document.querySelector(".nav-toggle");if(m&&m.classList.contains("open")&&!m.contains(e.target)&&b&&!b.contains(e.target))closeMenu(b);});
 
-/* ── CORES ── */
-const TCOLORS={"Teatro Variedades":"#c0392b","Capitólio":"#e53935","São Luiz Teatro Municipal":"#1a73e8","Teatro Nacional São João":"#188038","Teatro Nacional D. Maria II":"#e6a800","Teatro Tivoli BBVA":"#7b1fa2","Teatro Maria Matos":"#e65100","CCB — Centro Cultural de Belém":"#00897b","Culturgest":"#6d4c97"};
-const TSHORT={"Teatro Variedades":"Variedades","Capitólio":"Capitólio","São Luiz Teatro Municipal":"São Luiz","Teatro Nacional São João":"TNSJ","Teatro Nacional D. Maria II":"D. Maria II","Teatro Tivoli BBVA":"Tivoli","Teatro Maria Matos":"Maria Matos","CCB — Centro Cultural de Belém":"CCB","Culturgest":"Culturgest"};
-function tColor(t){if(!t)return"#888";for(const[k,v]of Object.entries(TCOLORS))if(t===k||t.startsWith(k))return v;return"#888";}
-function tShort(t){if(!t)return"";for(const[k,v]of Object.entries(TSHORT))if(t===k||t.startsWith(k))return v;return t;}
+/* ── CORES E ABREVIATURAS — construídas dinamicamente a partir de theaters.json ── */
+// Povoadas no init() — adicionar um teatro novo só requer atualizar theaters.json
+const TCOLORS={};
+const TSHORT={};
+function tColor(t){if(!t)return"#888";const v=TCOLORS[t];if(v)return v;for(const[k,c]of Object.entries(TCOLORS))if(t.startsWith(k))return c;return"#888";}
+function tShort(t){if(!t)return"";const v=TSHORT[t];if(v)return v;for(const[k,s]of Object.entries(TSHORT))if(t.startsWith(k))return s;return t;}
 function esc(s){return(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 
 /* ── STATE ── */
@@ -386,9 +387,27 @@ async function init(){
 
   try{
     const ck=Math.floor(Date.now()/3_600_000);
-    const r=await fetch("events.json?v="+ck);
-    if(!r.ok)throw new Error();
-    const data=await r.json();
+
+    // Carregar theaters.json e events.json em paralelo
+    const [tRes,eRes]=await Promise.all([
+      fetch("theaters.json?v="+ck),
+      fetch("events.json?v="+ck),
+    ]);
+    if(!eRes.ok)throw new Error();
+
+    // Povoar TCOLORS e TSHORT a partir de theaters.json
+    // Qualquer teatro novo em theaters.json aparece automaticamente aqui
+    if(tRes.ok){
+      const tData=await tRes.json();
+      (tData.theaters||[]).forEach(t=>{
+        if(t.name){
+          TCOLORS[t.name]=t.color||"#888";
+          TSHORT[t.name]=t.short||t.name;
+        }
+      });
+    }
+
+    const data=await eRes.json();
     ALL=(data.events||[]).map(e=>({...e,
       _s:e.date_start?new Date(e.date_start+"T00:00:00"):null,
       _e:e.date_end?new Date(e.date_end+"T00:00:00"):null,
