@@ -1,13 +1,41 @@
 {
-  "generated_at": "2026-03-21T07:59:32.728949Z",
-  "total_raw": 79,
-  "total_accepted": 78,
-  "total_rejected": 1,
+  "generated_at": "2026-03-22T08:05:14.958499Z",
+  "total_raw": 87,
+  "total_accepted": 82,
+  "total_rejected": 5,
   "total_warnings": 12,
   "rejected": [
     {
       "id": "saoluiz-um-homem-e-o-seu-criado",
       "title": "Um Homem e o seu Criado",
+      "errors": [
+        "'date_start' ausente ou vazio"
+      ]
+    },
+    {
+      "id": "saoluiz-a-sensitive-case",
+      "title": "A Sensitive Case",
+      "errors": [
+        "'date_start' ausente ou vazio"
+      ]
+    },
+    {
+      "id": "saoluiz-transport-tipping-point",
+      "title": "Transport: Tipping Point",
+      "errors": [
+        "'date_start' ausente ou vazio"
+      ]
+    },
+    {
+      "id": "saoluiz-dark-circus",
+      "title": "Dark Circus",
+      "errors": [
+        "'date_start' ausente ou vazio"
+      ]
+    },
+    {
+      "id": "saoluiz-transport-departure",
+      "title": "Transport: Departure",
       "errors": [
         "'date_start' ausente ou vazio"
       ]
