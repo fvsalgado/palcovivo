@@ -335,19 +335,20 @@ def run(force_refresh: bool = False) -> dict:
         json.dump(master, f, ensure_ascii=False, indent=2)
     logger.info(f"Master JSON gerado: {master_path}")
 
-    # 5. Relatório
+    # 5. Relatório — escrito sempre, mesmo com erros parciais
     duration = (datetime.now(timezone.utc) - start_time).total_seconds()
     report = generate_report(venue_reports, all_events, duration)
 
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
     log_filename = f"run-{start_time.strftime('%Y%m%d-%H%M%S')}.json"
     log_path = LOGS_DIR / log_filename
-    with open(log_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
-    # Guardar também como latest para referência rápida
     latest_path = LOGS_DIR / "latest.json"
-    with open(latest_path, "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
+    for out_path in [log_path, latest_path]:
+        try:
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(report, f, ensure_ascii=False, indent=2)
+        except IOError as e:
+            logger.error(f"Erro ao escrever relatório {out_path}: {e}")
 
     logger.info("\n" + "=" * 60)
     logger.info(f"Pipeline concluído em {duration:.1f}s")
