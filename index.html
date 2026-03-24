@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primeira Plateia — A Cultura no Lugar Certo</title>
+<meta name="description" content="Agenda cultural portuguesa. Sem publicidade. Sem custos. Descobre concertos, teatro, exposições e mais, todos os dias.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://primeiraplateia.pt/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Primeira Plateia — A Cultura no Lugar Certo">
+<meta property="og:description" content="Agenda cultural portuguesa. Sem publicidade. Sem custos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://primeiraplateia.pt/">
+<meta property="og:locale" content="pt_PT">
+
+<!-- Schema.org -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Primeira Plateia","url":"https://primeiraplateia.pt","description":"Agenda cultural portuguesa. Sem publicidade. Sem custos.","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://primeiraplateia.pt/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+
+<style>
+/* ============================================================
+   PRIMEIRA PLATEIA — Homepage
+   Design: Editorial refinado, tipografia expressiva
+   Dark-first, sem ruído visual
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0a0a0b;
+  --surface: #111114;
+  --surface2: #18181c;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(255,255,255,0.12);
+  --text: #e8e8ec;
+  --muted: #888891;
+  --dim: #555560;
+  --white: #ffffff;
+  
+  --musica: #8B5CF6;
+  --palco: #EF4444;
+  --visuais: #06B6D4;
+  --pensamento: #10B981;
+  --cinema: #F59E0B;
+  --formacao: #EC4899;
+  --outros: #6B7280;
+  
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --radius: 6px;
+  --radius-lg: 12px;
+  --transition: 0.2s ease;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---- TYPOGRAPHY ---- */
+.serif { font-family: var(--serif); }
+h1, h2, h3 { line-height: 1.2; letter-spacing: -0.02em; }
+
+/* ---- LAYOUT ---- */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.container-wide { max-width: 1440px; margin: 0 auto; padding: 0 24px; }
+
+/* ---- NAV ---- */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(10,10,11,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  display: flex; align-items: center; gap: 32px;
+  height: 60px;
+  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 18px; font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+}
+.nav-logo span { color: var(--muted); font-weight: 400; font-style: italic; }
+.nav-links {
+  display: flex; gap: 6px; flex: 1;
+}
+.nav-links a {
+  font-size: 13px; color: var(--muted);
+  text-decoration: none; padding: 6px 10px;
+  border-radius: var(--radius);
+  transition: color var(--transition), background var(--transition);
+}
+.nav-links a:hover { color: var(--text); background: var(--surface2); }
+.nav-links a.active { color: var(--white); }
+.nav-search {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 0 12px; height: 36px;
+  min-width: 220px;
+}
+.nav-search input {
+  background: none; border: none; color: var(--text);
+  font-family: var(--sans); font-size: 13px; width: 100%; outline: none;
+}
+.nav-search input::placeholder { color: var(--dim); }
+.nav-search svg { color: var(--dim); flex-shrink: 0; }
+.nav-count {
+  font-size: 12px; color: var(--muted);
+  background: var(--surface2); border: 1px solid var(--border);
+  padding: 4px 10px; border-radius: 20px;
+}
+
+/* ---- HERO ---- */
+.hero {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--border);
+}
+.hero-inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 64px; align-items: end;
+  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+}
+.hero-left h1 {
+  font-family: var(--serif);
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 700; color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+.hero-left h1 em {
+  font-style: italic; color: var(--muted);
+}
+.hero-left p {
+  font-size: 17px; color: var(--muted);
+  max-width: 400px; line-height: 1.7;
+  margin-bottom: 32px;
+}
+.hero-stats {
+  display: flex; gap: 32px;
+}
+.hero-stat-value {
+  font-family: var(--serif);
+  font-size: 36px; font-weight: 700;
+  color: var(--white); line-height: 1;
+}
+.hero-stat-label {
+  font-size: 12px; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+.hero-right {
+  display: flex; flex-direction: column; gap: 1px;
+}
+.hero-domain-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.hero-domain-row:hover { background: var(--surface2); }
+.hero-domain-name {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 15px; color: var(--text);
+}
+.domain-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  flex-shrink: 0;
+}
+.hero-domain-count {
+  font-family: var(--serif);
+  font-size: 22px; font-weight: 500;
+  color: var(--muted);
+}
+
+/* ---- HOJE / VISTAS RÁPIDAS ---- */
+.quick-views {
+  padding: 0; border-bottom: 1px solid var(--border);
+}
+.quick-tabs {
+  display: flex; gap: 0;
+  border-bottom: 1px solid var(--border);
+  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+}
+.quick-tab {
+  padding: 16px 20px; font-size: 13px;
+  color: var(--muted); cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition);
+  white-space: nowrap;
+  background: none; border-top: none; border-left: none; border-right: none;
+  font-family: var(--sans);
+  display: flex; align-items: center; gap: 6px;
+}
+.quick-tab:hover { color: var(--text); }
+.quick-tab.active {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+.quick-tab .tab-count {
+  font-size: 11px; background: var(--surface2);
+  padding: 2px 6px; border-radius: 10px;
+  color: var(--dim);
+}
+.quick-content { display: none; }
+.quick-content.active { display: block; }
+
+/* ---- FEATURED STRIP ---- */
+.featured-strip {
+  display: flex; gap: 1px;
+  overflow-x: auto; scrollbar-width: none;
+  padding: 24px;
+  max-width: 1280px; margin: 0 auto;
+}
+.featured-strip::-webkit-scrollbar { display: none; }
+.featured-card {
+  flex-shrink: 0; width: 260px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer; position: relative;
+  transition: transform var(--transition), border-color var(--transition);
+  text-decoration: none; color: inherit;
+  display: block;
+}
+.featured-card:hover { transform: translateY(-3px); border-color: var(--border2); }
+.featured-img {
+  width: 100%; height: 150px; object-fit: cover;
+  display: block; background: var(--surface2);
+}
+.featured-img-placeholder {
+  width: 100%; height: 150px; background: var(--surface2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 32px; color: var(--dim);
+}
+.featured-body { padding: 14px; }
+.featured-domain {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 8px; color: var(--muted);
+}
+.featured-title {
+  font-family: var(--serif); font-size: 16px; font-weight: 500;
+  color: var(--white); line-height: 1.3; margin-bottom: 8px;
+}
+.featured-meta {
+  font-size: 12px; color: var(--muted);
+}
+.featured-badge {
+  position: absolute; top: 10px; left: 10px;
+  font-size: 10px; font-weight: 500;
+  padding: 3px 8px; border-radius: 3px;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+
+/* ---- AGENDA PRINCIPAL ---- */
+.section-header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-family: var(--serif); font-size: 22px; font-weight: 700;
+  color: var(--white);
+}
+.section-sub {
+  font-size: 13px; color: var(--muted);
+}
+.section-link {
+  font-size: 13px; color: var(--muted); text-decoration: none;
+}
+.section-link:hover { color: var(--text); }
+
+.agenda-wrap {
+  padding: 48px 0;
+}
+
+/* ---- FILTROS ---- */
+.filters {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.filter-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 14px; border-radius: 20px;
+  font-size: 13px; cursor: pointer;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--muted);
+  font-family: var(--sans);
+  transition: all var(--transition);
+}
+.filter-btn:hover { border-color: var(--border2); color: var(--text); }
+.filter-btn.active {
+  background: var(--white); color: #0a0a0b;
+  border-color: var(--white);
+}
+.filter-sep {
+  width: 1px; background: var(--border); margin: 4px 0; flex-shrink: 0;
+}
+
+/* ---- EVENT LIST ---- */
+.event-list { display: flex; flex-direction: column; gap: 1px; }
+
+.event-row {
+  display: grid;
+  grid-template-columns: 100px 64px 1fr auto;
+  gap: 20px; align-items: center;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer; text-decoration: none; color: inherit;
+  transition: background var(--transition), border-color var(--transition);
+}
+.event-row:hover { background: var(--surface); border-color: var(--border); }
+
+.event-date {
+  font-size: 12px; color: var(--muted);
+  text-align: right;
+}
+.event-date .day {
+  font-family: var(--serif); font-size: 28px; font-weight: 700;
+  color: var(--white); line-height: 1; display: block;
+}
+.event-date .month-year { color: var(--dim); font-size: 11px; }
+.event-date .time { color: var(--muted); margin-top: 2px; }
+
+.event-thumb {
+  width: 64px; height: 64px; border-radius: 6px;
+  object-fit: cover; background: var(--surface2);
+  flex-shrink: 0;
+}
+.event-thumb-placeholder {
+  width: 64px; height: 64px; border-radius: 6px;
+  background: var(--surface2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; color: var(--dim); flex-shrink: 0;
+}
+
+.event-info { min-width: 0; }
+.event-domain-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+  margin-bottom: 4px; color: var(--muted);
+}
+.event-title {
+  font-size: 15px; font-weight: 500; color: var(--white);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  margin-bottom: 4px;
+}
+.event-meta { font-size: 12px; color: var(--muted); }
+.event-badges { display: flex; gap: 4px; margin-top: 4px; }
+.badge {
+  font-size: 10px; padding: 2px 6px; border-radius: 3px;
+  font-weight: 500; letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.badge-estreia { background: rgba(139,92,246,0.15); color: #A78BFA; }
+.badge-esgotado { background: rgba(239,68,68,0.15); color: #F87171; }
+.badge-gratuito { background: rgba(16,185,129,0.15); color: #34D399; }
+.badge-familia { background: rgba(245,158,11,0.15); color: #FCD34D; }
+.badge-a11y { background: rgba(6,182,212,0.15); color: #67E8F9; }
+
+.event-action {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 4px;
+  flex-shrink: 0;
+}
+.event-sessions {
+  font-size: 11px; color: var(--dim); text-align: right;
+}
+.event-arrow {
+  color: var(--dim); opacity: 0;
+  transition: opacity var(--transition);
+}
+.event-row:hover .event-arrow { opacity: 1; }
+
+/* ---- MONTH SEPARATOR ---- */
+.month-sep {
+  display: flex; align-items: center; gap: 16px;
+  padding: 24px 20px 12px;
+  font-family: var(--serif); font-size: 18px;
+  color: var(--muted); font-style: italic;
+}
+.month-sep::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+/* ---- EMPTY STATE ---- */
+.empty-state {
+  padding: 64px 20px; text-align: center;
+  color: var(--dim); font-size: 14px;
+}
+.empty-icon { font-size: 40px; margin-bottom: 12px; }
+
+/* ---- STATS BAR ---- */
+.stats-bar {
+  background: var(--surface); border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0; max-width: 1280px; margin: 0 auto; padding: 0 24px;
+}
+.stat-item {
+  text-align: center; padding: 0 20px;
+  border-right: 1px solid var(--border);
+}
+.stat-item:last-child { border-right: none; }
+.stat-value {
+  font-family: var(--serif); font-size: 28px; font-weight: 700;
+  color: var(--white); line-height: 1;
+}
+.stat-label { font-size: 12px; color: var(--muted); margin-top: 4px; }
+
+/* ---- DOMAIN GRID ---- */
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 24px 0;
+}
+.domain-card {
+  padding: 20px; border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  transition: transform var(--transition), border-color var(--transition);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.domain-card:hover { transform: translateY(-2px); border-color: var(--border2); }
+.domain-card-dot {
+  width: 32px; height: 32px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.domain-card-name { font-size: 14px; font-weight: 500; color: var(--white); }
+.domain-card-count { font-size: 22px; font-weight: 700; font-family: var(--serif); }
+
+/* ---- TIMELINE CALENDAR ---- */
+.month-nav {
+  display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.month-nav::-webkit-scrollbar { display: none; }
+.month-btn {
+  flex-shrink: 0; padding: 8px 16px; border-radius: 20px;
+  font-size: 13px; cursor: pointer;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--muted);
+  font-family: var(--sans);
+  transition: all var(--transition);
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.month-btn:hover { border-color: var(--border2); color: var(--text); }
+.month-btn.active { background: var(--white); color: #0a0a0b; border-color: var(--white); }
+.month-btn .m-count { font-size: 10px; opacity: 0.6; }
+
+/* ---- FOOTER ---- */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+  color: var(--dim); font-size: 13px;
+}
+.footer-inner {
+  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px;
+}
+.footer-logo {
+  font-family: var(--serif); font-size: 16px;
+  color: var(--muted); font-weight: 500;
+}
+.footer-links { display: flex; gap: 16px; }
+.footer-links a { color: var(--dim); text-decoration: none; }
+.footer-links a:hover { color: var(--muted); }
+.footer-credit { color: var(--dim); }
+.footer-update { color: var(--dim); font-size: 11px; }
+
+/* ---- SEARCH RESULTS HIGHLIGHT ---- */
+.search-highlight { color: var(--white); background: rgba(139,92,246,0.2); border-radius: 2px; padding: 0 2px; }
+
+/* ---- SHOW MORE ---- */
+.show-more-wrap { text-align: center; padding: 32px 0; }
+.show-more-btn {
+  padding: 10px 24px; border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent; color: var(--muted);
+  font-family: var(--sans); font-size: 14px;
+  cursor: pointer; transition: all var(--transition);
+}
+.show-more-btn:hover { border-color: var(--border2); color: var(--text); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .hero-right { display: none; }
+  .event-row { grid-template-columns: 80px 56px 1fr; }
+  .event-action { display: none; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+  .nav-count { display: none; }
+  .hero-left h1 { font-size: 40px; }
+  .featured-strip { padding: 16px; }
+  .event-row { grid-template-columns: 72px 1fr; }
+  .event-thumb, .event-thumb-placeholder { display: none; }
+}
+
+/* ---- ACCESSIBILITY ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+:focus-visible {
+  outline: 2px solid #8B5CF6; outline-offset: 2px;
+}
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border-width: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- SKIP LINK -->
+<a href="#main-content" class="sr-only">Saltar para o conteúdo</a>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Navegação principal">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Primeira Plateia — Página inicial">
+      Primeira<span> Plateia</span>
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#agenda" class="active" role="listitem">Agenda</a>
+      <a href="#hoje" role="listitem">Hoje</a>
+      <a href="#venues" role="listitem">Venues</a>
+    </div>
+    <div class="nav-search" role="search">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="search" id="search-input" placeholder="Pesquisar eventos, artistas…" 
+             aria-label="Pesquisar eventos" autocomplete="off">
+    </div>
+    <div class="nav-count" id="nav-count" aria-live="polite"></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" aria-label="Apresentação">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1 class="serif">
+        A cultura<br><em>no lugar certo.</em>
+      </h1>
+      <p>Agenda cultural portuguesa. Sem publicidade. Sem custos. Curada por scrapers honestos, para pessoas que vão mesmo aos espectáculos.</p>
+      <div class="hero-stats" role="list">
+        <div role="listitem">
+          <div class="hero-stat-value" id="stat-total">—</div>
+          <div class="hero-stat-label">Eventos</div>
+        </div>
+        <div role="listitem">
+          <div class="hero-stat-value" id="stat-venues">—</div>
+          <div class="hero-stat-label">Venues</div>
+        </div>
+        <div role="listitem">
+          <div class="hero-stat-value" id="stat-months">—</div>
+          <div class="hero-stat-label">Meses</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right" aria-label="Distribuição por domínio">
+      <div id="domain-breakdown"></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOJE / QUICK VIEWS -->
+<section class="quick-views" id="hoje" aria-label="Vistas rápidas">
+  <div class="quick-tabs" role="tablist" aria-label="Filtros de tempo">
+    <button class="quick-tab active" role="tab" aria-selected="true" data-tab="hoje">
+      Hoje <span class="tab-count" id="count-hoje">0</span>
+    </button>
+    <button class="quick-tab" role="tab" aria-selected="false" data-tab="semana">
+      Esta semana <span class="tab-count" id="count-semana">0</span>
+    </button>
+    <button class="quick-tab" role="tab" aria-selected="false" data-tab="familia">
+      Família <span class="tab-count" id="count-familia">0</span>
+    </button>
+    <button class="quick-tab" role="tab" aria-selected="false" data-tab="gratuito">
+      Gratuito <span class="tab-count" id="count-gratuito">0</span>
+    </button>
+    <button class="quick-tab" role="tab" aria-selected="false" data-tab="estreia">
+      Estreias <span class="tab-count" id="count-estreia">0</span>
+    </button>
+  </div>
+
+  <div class="quick-content active" id="tab-hoje" role="tabpanel" aria-label="Hoje">
+    <div class="featured-strip" id="strip-hoje"></div>
+  </div>
+  <div class="quick-content" id="tab-semana" role="tabpanel" aria-label="Esta semana">
+    <div class="featured-strip" id="strip-semana"></div>
+  </div>
+  <div class="quick-content" id="tab-familia" role="tabpanel" aria-label="Família">
+    <div class="featured-strip" id="strip-familia"></div>
+  </div>
+  <div class="quick-content" id="tab-gratuito" role="tabpanel" aria-label="Gratuito">
+    <div class="featured-strip" id="strip-gratuito"></div>
+  </div>
+  <div class="quick-content" id="tab-estreia" role="tabpanel" aria-label="Estreias">
+    <div class="featured-strip" id="strip-estreia"></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar" aria-label="Estatísticas">
+  <div class="stats-grid" id="stats-grid"></div>
+</div>
+
+<!-- AGENDA PRINCIPAL -->
+<main id="main-content">
+  <div class="agenda-wrap container">
+    <div class="section-header">
+      <div>
+        <div class="section-title serif">Agenda</div>
+        <div class="section-sub" id="agenda-sub"></div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div class="month-nav" id="month-nav" role="list" aria-label="Navegar por mês"></div>
+      </div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="filters" role="group" aria-label="Filtrar por domínio">
+      <button class="filter-btn active" data-domain="all">Todos</button>
+      <div class="filter-sep" role="separator"></div>
+      <button class="filter-btn" data-domain="musica">
+        <span class="domain-dot" style="background:var(--musica)"></span>Música
+      </button>
+      <button class="filter-btn" data-domain="artes-palco">
+        <span class="domain-dot" style="background:var(--palco)"></span>Artes de Palco
+      </button>
+      <button class="filter-btn" data-domain="artes-visuais">
+        <span class="domain-dot" style="background:var(--visuais)"></span>Artes Visuais
+      </button>
+      <button class="filter-btn" data-domain="pensamento">
+        <span class="domain-dot" style="background:var(--pensamento)"></span>Pensamento
+      </button>
+      <button class="filter-btn" data-domain="formacao">
+        <span class="domain-dot" style="background:var(--formacao)"></span>Formação
+      </button>
+      <button class="filter-btn" data-domain="outros">
+        <span class="domain-dot" style="background:var(--outros)"></span>Outros
+      </button>
+    </div>
+
+    <!-- EVENT LIST -->
+    <div class="event-list" id="event-list" role="list" aria-label="Lista de eventos"></div>
+
+    <!-- SHOW MORE -->
+    <div class="show-more-wrap" id="show-more-wrap">
+      <button class="show-more-btn" id="show-more-btn">
+        Ver mais eventos →
+      </button>
+    </div>
+
+    <!-- EMPTY STATE -->
+    <div class="empty-state" id="empty-state" style="display:none;" aria-live="polite">
+      <div class="empty-icon" aria-hidden="true">🔍</div>
+      <div>Nenhum evento encontrado para esta pesquisa.</div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">Primeira Plateia</div>
+      <div class="footer-credit" style="margin-top:6px;">
+        Um projecto de <a href="mailto:fabio@primeiraplateia.pt" style="color:var(--muted);text-decoration:none;">Fábio Salgado</a>.
+        Sem publicidade. Sem custos.
+      </div>
+    </div>
+    <div style="text-align:right;">
+      <div class="footer-links">
+        <a href="/admin/">Admin</a>
+        <a href="/data/master.json">JSON API</a>
+        <a href="mailto:fabio@primeiraplateia.pt">Contacto</a>
+      </div>
+      <div class="footer-update" id="footer-update" style="margin-top:8px;"></div>
+    </div>
+  </div>
+</footer>
+
+<!-- DATA & LOGIC -->
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const EVENTS = [{"id":"ccb-2026-03-uma-deriva-atlantica","title":"Uma deriva atlântica","subtitle":null,"desc":"Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-24","date_last":"2026-03-31","time":"10:00","sessions":7,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg","url":"https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-24/","tags":["Exposições","Museu"],"a11y":false,"origin":null,"all_dates":["2026-03-24","2026-03-25","2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-31"]},{"id":"ccb-2026-03-may-i-help-you-posso-ajudar","title":"May I Help You? Posso Ajudar?","subtitle":null,"desc":"A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige ta","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-24","date_last":"2026-03-31","time":"10:00","sessions":7,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-03-24/","tags":["Exhibition","Exposições"],"a11y":false,"origin":null,"all_dates":["2026-03-24","2026-03-25","2026-03-26","2026-03-27","2026-03-28","2026-03-29","2026-03-31"]},{"id":"ccb-2026-03-ministerio-do-sensivel","title":"Ministério do Sensível","subtitle":null,"desc":"Talvez tenhamos que começar a pensar em proteger, organizar e a reivindicar o que faz de nós Humanos. Talvez possamos utilizar formas de organização da sociedade, colocando-as ao s","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-03-24","date_last":"2026-03-24","time":"10:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/Misterio-do-sensivel.jpeg","url":"https://www.ccb.pt/evento/ministerio-do-sensivel/2026-03-24/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-03-24"]},{"id":"ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas","title":"A Valentina e a Valeria não estão mortas","subtitle":null,"desc":"O ensaio de Esmeralda é sobressaltado por duas figuras, Valentina e Valeria. Quem são elas, exatamente? Parecem estar num espaço desértico, com qualquer coisa de Internet e de Além","domain":"artes-palco","cat":"teatro","venue_id":"ccb","date_first":"2026-03-26","date_last":"2026-03-29","time":"08:00","sessions":4,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_QueilaFernandes_Flavia.jpg","url":"https://www.ccb.pt/evento/a-valentina-e-a-valeria-nao-estao-mortas/2026-03-26/","tags":["Teatro"],"a11y":false,"origin":null,"all_dates":["2026-03-26","2026-03-27","2026-03-28","2026-03-29"]},{"id":"ccb-2026-03-programas-publicos","title":"Programas Públicos","subtitle":null,"desc":"","domain":"pensamento","cat":"conversas","venue_id":"ccb","date_first":"2026-03-26","date_last":"2026-03-28","time":"18:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/04/DiaMuseus3102┬®RitaCarmo.jpg","url":"https://www.ccb.pt/evento/programa-publico-mac-ccb/2026-03-26/","tags":["Conversa","Exposições","Museu"],"a11y":false,"origin":null,"all_dates":["2026-03-26","2026-03-28"]},{"id":"ccb-2026-03-notas-de-musica-8211-ciclo-de-conferenci","title":"Notas de Música – Ciclo de Conferências","subtitle":null,"desc":"O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em t","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-03-26","date_last":"2026-03-26","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940ciclonotasdemusicaI.jpg","url":"https://www.ccb.pt/evento/notas-de-musica-ciclo-de-conferencias/2026-03-26/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-03-26"]},{"id":"ccb-2026-03-sobre-a-verdade-da-mentira","title":"Sobre a verdade da mentira","subtitle":null,"desc":"Não querer ser enganado com mentiras e descobrir a verdade é a situação em que cada ser humano se encontra. Há uma pressão contínua — 24 horas por dia, 7 dias na semana — para esca","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-03-26","date_last":"2026-03-26","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AntoniodeCastroCaeiro_MatildeFieschi.jpg","url":"https://www.ccb.pt/evento/sobre-a-verdade-da-mentira/2026-03-26/","tags":["Conferências","Conversa","Podcast"],"a11y":false,"origin":null,"all_dates":["2026-03-26"]},{"id":"ccb-2026-03-lee-ritenour-038-friends","title":"Lee Ritenour & Friends","subtitle":null,"desc":"Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música ","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-03-26","date_last":"2026-03-26","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/LeeRitenour_1920x1080_NOINFO-1.jpg","url":"https://www.ccb.pt/evento/lee-ritenour-friends/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-03-26"]},{"id":"ccb-2026-03-museu-aberto","title":"Museu Aberto","subtitle":null,"desc":"O MAC/CCB acolhe um programa de festa com performance, livros, música e convívio. São propostas em jeito de finissage das exposições Avenida 211: Um espaço de artistas em Lisboa e ","domain":"artes-palco","cat":"performance","venue_id":"ccb","date_first":"2026-03-27","date_last":"2026-03-28","time":"15:00","sessions":2,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/MuseuAberto_TiagoFezasVital.jpg","url":"https://www.ccb.pt/evento/museu-aberto/2026-03-27/","tags":["Museu","Música","Performance"],"a11y":false,"origin":null,"all_dates":["2026-03-27","2026-03-28"]},{"id":"ccb-2026-03-alarve","title":"Alarve","subtitle":null,"desc":"O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o ba","domain":"artes-palco","cat":"performance","venue_id":"ccb","date_first":"2026-03-27","date_last":"2026-03-28","time":"18:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/Alarvemuseuaberto_DR.jpg","url":"https://www.ccb.pt/evento/performance-alarve/2026-03-27/","tags":["Performance"],"a11y":false,"origin":null,"all_dates":["2026-03-27","2026-03-28"]},{"id":"tndm-2026-03-filodemo","title":"Filodemo","subtitle":null,"desc":"Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por","domain":"outros","cat":"outros","venue_id":"tndm","date_first":"2026-03-27","date_last":"2026-03-27","time":"20:00","sessions":1,"ongoing":true,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.tndm.pt/fotos/programacao/eventos/filodemo_1920_5832374698c5fd60d32c.png","url":"https://www.tndm.pt/pt/programacao/espetaculos/filodemo/","tags":[],"a11y":true,"origin":null,"all_dates":["2026-03-27"]},{"id":"ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre","title":"Aprender a Brincar para a Brincar a Aprender","subtitle":null,"desc":"Acreditamos que o museu também é um lugar para brincar, descobrir e aprender de forma livre. A Sala Lúdica, instalada no piso -1 do museu, nasce deste desejo: o de oferecer outras ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-29","time":"10:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2888_ritacarmo-1-e1730983416520.jpg","url":"https://www.ccb.pt/evento/aprender-a-brincar-para-a-brincar-aprender-projeto-ludico-mac-ccb/2026-03-28/","tags":["Museu","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-03-28","2026-03-29"]},{"id":"ccb-2026-03-avenida-211","title":"Avenida 211","subtitle":null,"desc":"Será possível imaginar um edifício de uma das zonas mais valorizadas de Lisboa totalmente ocupado por artistas? Entre 2006 e 2014, esta singularidade teve lugar no n.º 211 da Aveni","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/11/ExpoAvenida211_13creditoAntonioJorgeSsilva_MACCCB-3.jpg","url":"https://www.ccb.pt/evento/avenida-211/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-lugar-de-estar","title":"Lugar de estar","subtitle":null,"desc":"Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas po","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/2BurleMarx_MACCCB_©Fabio-Cunha-1.jpg","url":"https://www.ccb.pt/evento/lugar-de-estar-o-legado-burle-marx/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-habitar-portugal","title":"Habitar Portugal","subtitle":null,"desc":"A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias.\n\nAssim se definiram três eixos que oferecem um novo olhar sobre ","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/Hotel-e-Casino-do-Funchal-de-1976-por-Oscar-Niemeyer-e-Alfredo-Viana-de-Lima-credito-Faculdade-de-Arquitectura-da-Universidade-do-Porto-CDUA.jpg","url":"https://www.ccb.pt/evento/exposicao-habitar-portugal/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-revisitar-experimentar-e-aprender","title":"Revisitar, experimentar e aprender","subtitle":null,"desc":"No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/12/Jacques-Villeglé_Libération-Thorez-22-août-1964-1964_Col.-Berardo.png","url":"https://www.ccb.pt/evento/curso-e-formacao-revisitar-experimentar-e-aprender/2026-03-28/","tags":["Curso","Formação","Museu"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-avenida-ludica","title":"Avenida Lúdica","subtitle":null,"desc":"Agora que nos despedimos de uma exposição marcante para a cidade, recebemos as crianças na Sala Lúdica com atividades inspiradas em Avenida 211: Um espaço de artistas em Lisboa. O ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"14:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2909_ritacarmo.jpg","url":"https://www.ccb.pt/evento/avenida-ludica/","tags":["Oficina"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es","title":"Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa","subtitle":null,"desc":"Lançamento do catálogo com Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismark (autores de ensaios), Sofia Gonçalves (design), Sara De Chiara e Giorgia Casara (investigação), Nu","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"15:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/Av211BXcreditoTiagoFezasVital.jpg","url":"https://www.ccb.pt/evento/lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-concertos-filho-unico","title":"Concertos Filho Único","subtitle":null,"desc":"Vasco Alves e as Rochas da Ajuda\n\nFormação moldada pela pressão, fricção e movimento do ar, desde o verão de 2024, trabalha a polifonia numa perspetiva materialista, através de gai","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"16:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/2023_Vaiapraia.3_PhotocreditoJame_St_Findlay.jpg","url":"https://www.ccb.pt/evento/concerto-filho-unico/","tags":["Performance"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-ana-sofia-varela","title":"Ana Sofia Varela","subtitle":null,"desc":"Ana Sofia Varela apresenta o álbum A Mulher e Outras Guitarras e celebra o seu aniversário no Grande Auditório do CCB. Entre os convidados estarão Camané, Pedro de Castro, Pedro Jó","domain":"musica","cat":"musica-popular-portuguesa","venue_id":"ccb","date_first":"2026-03-28","date_last":"2026-03-28","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AnaSofiaVarela_Alfredo-Matos.jpg","url":"https://www.ccb.pt/evento/ana-sofia-varela-2/","tags":["Fado","Música"],"a11y":false,"origin":null,"all_dates":["2026-03-28"]},{"id":"ccb-2026-03-visitas-as-exposicoes","title":"Visitas às Exposições","subtitle":null,"desc":"Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-03-29","date_last":"2026-03-29","time":"11:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ExpoDeriva_31MulheresPub8834_ritacarmo.jpg","url":"https://www.ccb.pt/evento/visitas-guiadas-a-exposicao-2-museu-mac-ccb/2026-03-29/","tags":["Museu","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-03-29"]},{"id":"ccb-2026-03-programa-ludico","title":"Programa Lúdico","subtitle":null,"desc":"O Serviço de Educação e Mediação do MAC/CCB desenvolveu um programa lúdico que promove, por um lado, a brincadeira livre e, por outro, uma relação mais aberta, criativa e sensível ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-30","date_last":"2026-03-30","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2892_ritacarmo.jpg","url":"https://www.ccb.pt/evento/programa-ludico-servico-educativo-museu-macccb/","tags":["Oficina"],"a11y":false,"origin":null,"all_dates":["2026-03-30"]},{"id":"ccb-2026-03-james-webb-theres-no-place-called-home-b","title":"James Webb There’s No Place Called Home (Belém, Lisbon)","subtitle":null,"desc":"tuuui trrrrrrrrrrrrrrrrrrr, de James Webb (1975, Kimberley, África do Sul), opera como dois capítulos da mesma história — There’s No Place Called Home (Belém, Lisboa) (2025) e Lear","domain":"artes-visuais","cat":"instalacao","venue_id":"ccb","date_first":"2026-03-30","date_last":"2026-03-30","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/06/instalacao-artistica-de-james-webb_edited.jpg","url":"https://www.ccb.pt/evento/instalacao-james-webb/","tags":["Instalação"],"a11y":false,"origin":null,"all_dates":["2026-03-30"]},{"id":"ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu","title":"Oficinas de Férias de Páscoa no Museu","subtitle":null,"desc":"📍 Entre formas e cores &#8211; A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-30","date_last":"2026-03-31","time":"09:30","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/12/19MACcreditoRC_MACCCB-scaled.jpg","url":"https://www.ccb.pt/evento/oficinas-de-ferias-de-pascoa-no-museu/2026-03-30/","tags":["Atividades de Férias","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-03-30","2026-03-31"]},{"id":"ccb-2026-03-programa-vincular-8211-servico-de-educac","title":"Programa Vincular – Serviço de Educação e Mediação","subtitle":null,"desc":"O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade.","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-30","date_last":"2026-03-30","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/museumacccb-1.jpg","url":"https://www.ccb.pt/evento/programa-de-educacao-e-mediacao-do-mac-ccb/2026-03-30/","tags":["Atividades de Férias","Museu","Música"],"a11y":false,"origin":null,"all_dates":["2026-03-30"]},{"id":"ccb-2026-03-visitas-guiadas","title":"Visitas Guiadas","subtitle":null,"desc":"Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/09/museumacccbcreditoEstelleValente-1.jpg","url":"https://www.ccb.pt/evento/visitas-guiadas-2/2026-03-31/","tags":["Exposições","Visita Guiada","Visita Temática"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-visitas-guiadas-ao-edificio-centro-cultu","title":"Visitas Guiadas ao Edifício Centro Cultural de Belém","subtitle":null,"desc":"O Centro Cultural de Belém foi idealizado para ser uma pequena cidade dentro de uma grande cidade, Lisboa. Onde este edifício se insere e qual a sua relação com o ambiente envolven","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2020/03/visitasguiadasCCB©ritacarmo-7-scaled-e1695222526987.jpg","url":"https://www.ccb.pt/evento/visitas-guiadas-ao-edificio-centro-cultural-de-belem/","tags":["Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-primeira-infancia","title":"Primeira Infância","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Con","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg","url":"https://www.ccb.pt/evento/primeira-infancia/2026-03-31/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-pre-escolar","title":"Pré-escolar","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg","url":"https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-03-31/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-terceiro-ciclo-e-secundario","title":"Terceiro Ciclo e Secundário","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg","url":"https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-03-31/","tags":["Oficina","Visita Temática","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-educacao-inclusiva","title":"Educação Inclusiva","subtitle":null,"desc":"A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusi","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg","url":"https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-03-31/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-universitario","title":"Universitário","subtitle":null,"desc":"Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensame","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg","url":"https://www.ccb.pt/evento/universitario/2026-03-31/","tags":["Oficina","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-visitas-orientadas-e-tematicas-oficinas","title":"Visitas Orientadas e Temáticas / Oficinas","subtitle":null,"desc":"Os museus têm um papel fundamental nas aprendizagens ao longo da vida e é esse um dos desígnios e a missão do Serviço de Educação e Mediação do MAC/CCB.\n\nCom esse objetivo criámos ","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/09/visitas-tematicas-1.jpg","url":"https://www.ccb.pt/evento/visitas-orientadas-e-tematicas-oficinas/","tags":["Oficina","Visita Guiada","Visita Temática"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-festas-de-aniversario-no-museu","title":"Festas de aniversário no Museu","subtitle":null,"desc":"Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de ","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"11:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/05/website_2000x940.jpg","url":"https://www.ccb.pt/evento/festas-de-aniversario-no-museu-mac-ccb/2026-03-31/","tags":["Museu","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-03-segundo-ciclo","title":"Segundo Ciclo","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-03-31","date_last":"2026-03-31","time":"13:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg","url":"https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-03-31/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-03-31"]},{"id":"ccb-2026-04-programa-missao-democracia","title":"Programa Missão Democracia","subtitle":null,"desc":"Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém – FÁBRICA DAS ART","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-01","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/Ilustracao-Missao-Democracia.png","url":"https://www.ccb.pt/evento/programa-missao-democracia/2026-04-01/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-01"]},{"id":"ccb-2026-04-primeira-infancia","title":"Primeira Infância","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Con","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"08:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg","url":"https://www.ccb.pt/evento/primeira-infancia/2026-04-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-oficinas-de-ferias-de-pascoa-no-museu","title":"Oficinas de Férias de Páscoa no Museu","subtitle":null,"desc":"📍 Entre formas e cores &#8211; A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-10","time":"09:30","sessions":10,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/12/19MACcreditoRC_MACCCB-scaled.jpg","url":"https://www.ccb.pt/evento/oficinas-de-ferias-de-pascoa-no-museu/2026-04-01/","tags":["Atividades de Férias","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-06","2026-04-07","2026-04-08","2026-04-09","2026-04-10"]},{"id":"ccb-2026-04-pre-escolar","title":"Pré-escolar","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg","url":"https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-04-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-terceiro-ciclo-e-secundario","title":"Terceiro Ciclo e Secundário","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg","url":"https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-04-01/","tags":["Oficina","Visita Temática","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-educacao-inclusiva","title":"Educação Inclusiva","subtitle":null,"desc":"A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusi","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":22,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg","url":"https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-04-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-15","2026-04-16"]},{"id":"ccb-2026-04-universitario","title":"Universitário","subtitle":null,"desc":"Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensame","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg","url":"https://www.ccb.pt/evento/universitario/2026-04-01/","tags":["Oficina","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-uma-deriva-atlantica","title":"Uma deriva atlântica","subtitle":null,"desc":"Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg","url":"https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-04-01/","tags":["Exposições","Museu"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-may-i-help-you-posso-ajudar","title":"May I Help You? Posso Ajudar?","subtitle":null,"desc":"A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige ta","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"10:00","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-04-01/","tags":["Exhibition","Exposições"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-visitas-as-exposicoes","title":"Visitas às Exposições","subtitle":null,"desc":"Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-01","time":"11:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ExpoDeriva_31MulheresPub8834_ritacarmo.jpg","url":"https://www.ccb.pt/evento/visitas-guiadas-a-exposicao-2-museu-mac-ccb/2026-04-01/","tags":["Museu","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-04-01"]},{"id":"ccb-2026-04-segundo-ciclo","title":"Segundo Ciclo","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-30","time":"13:30","sessions":26,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg","url":"https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-04-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02","2026-04-03","2026-04-04","2026-04-05","2026-04-07","2026-04-08","2026-04-09","2026-04-10","2026-04-11","2026-04-12","2026-04-14"]},{"id":"ccb-2026-04-concerto-de-pascoa-requiem-de-mozart","title":"Concerto de Páscoa – Requiem de Mozart","subtitle":null,"desc":"O Requiem de Mozart é um monumento à condição humana. Por um lado, tem na sua origem os ingredientes essenciais de um romance best-seller, tais como a entrega incondicional do géni","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-01","date_last":"2026-04-02","time":"20:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_requiem_mozart_orquestra_metropolitana_coro_sinfonico_ccb.jpg","url":"https://www.ccb.pt/evento/concerto-de-pascoa-requiem-de-mozart/2026-04-01/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-04-01","2026-04-02"]},{"id":"ccb-2026-04-festas-de-aniversario-no-museu","title":"Festas de aniversário no Museu","subtitle":null,"desc":"Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de ","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-07","date_last":"2026-04-28","time":"11:00","sessions":4,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/05/website_2000x940.jpg","url":"https://www.ccb.pt/evento/festas-de-aniversario-no-museu-mac-ccb/2026-04-07/","tags":["Museu","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-04-07","2026-04-14","2026-04-21","2026-04-28"]},{"id":"ccb-2026-04-conferencia-8211-a-sinfonia-em-finais-do","title":"Conferência – A sinfonia em finais do século XVIII: aspetos históricos e estilísticos","subtitle":null,"desc":"Ciclo de Conferências\n\nA sinfonia foi um dos géneros musicais que mais se destacou na cultura europeia setecentista. Estima-se, de facto, que só nesse período tenham sido compostas","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-04-10","date_last":"2026-04-10","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_LuisMSantos.jpg","url":"https://www.ccb.pt/evento/conferencia-a-sinfonia-em-finais-do-seculo-xviii-aspetos-historicos-e-estilisticos-com-luis-m-santos/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-04-10"]},{"id":"ccb-2026-04-sinfonia-n-41-8220jupiter8221-de-mozart","title":"Sinfonia N.º 41 “Júpiter”, de Mozart","subtitle":null,"desc":"London Mozart Players é a Orquestra de Câmara mais antiga do Reino Unido, fundada há mais de 75 anos por Harry Blech, com o intuito de apresentar obras de Mozart e Haydn.\n\nDurante ","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-10","date_last":"2026-04-10","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/London-Mozart-Players-e1753352781813.jpg","url":"https://www.ccb.pt/evento/sinfonia-n-o-41-jupiter-de-mozart/","tags":["Música","Recital","Sexta Maior"],"a11y":false,"origin":null,"all_dates":["2026-04-10"]},{"id":"ccb-2026-04-revisitar-experimentar-e-aprender","title":"Revisitar, experimentar e aprender","subtitle":null,"desc":"No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-11","date_last":"2026-04-25","time":"10:00","sessions":3,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/12/Jacques-Villeglé_Libération-Thorez-22-août-1964-1964_Col.-Berardo.png","url":"https://www.ccb.pt/evento/curso-e-formacao-revisitar-experimentar-e-aprender/2026-04-11/","tags":["Curso","Formação","Museu"],"a11y":false,"origin":null,"all_dates":["2026-04-11","2026-04-18","2026-04-25"]},{"id":"ccb-2026-04-museu-em-partilha","title":"Museu em Partilha","subtitle":null,"desc":"Ao fim de semana, o MAC/CCB abre as suas portas a pessoas com demência e às suas famílias para momentos de partilha e descoberta através da arte.\n\nEstes encontros procuram oferecer","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-11","date_last":"2026-04-11","time":"15:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/01/Museu-em-partilhamuseumacccb-2.jpg","url":"https://www.ccb.pt/evento/museu-em-partilha/2026-04-11/","tags":["Museu"],"a11y":false,"origin":null,"all_dates":["2026-04-11"]},{"id":"ccb-2026-04-tres-vozes-de-morton-feldman","title":"Três vozes, de Morton Feldman","subtitle":null,"desc":"Três Vozes (Three Voices) é uma obra composta, em 1982, por Morton Feldman, um dos compositores mais importantes do movimento experimental do séc. XX. Associado ao movimento da van","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-11","date_last":"2026-04-11","time":"16:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/Camila-Mandillo-scaled.jpg","url":"https://www.ccb.pt/evento/tres-vozes-de-morton-feldman/","tags":["Música","Música no Museu"],"a11y":false,"origin":null,"all_dates":["2026-04-11"]},{"id":"ccb-2026-04-musica-no-museu","title":"Música no Museu","subtitle":null,"desc":"Uma iniciativa entre o MAC/CCB &#8211; Museu de Arte Contemporânea e Centro de Arquitetura e as Artes Performativas do CCB.\n\n&nbsp;\n\nQue as artes dialogam não é novidade — a surpre","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-11","date_last":"2026-04-11","time":"16:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/12/24_MACcreditoAJC_MACCCB-1.jpg","url":"https://www.ccb.pt/evento/musica-no-museu/2026-04-11/","tags":["Exposições","Música"],"a11y":false,"origin":null,"all_dates":["2026-04-11"]},{"id":"ccb-2026-04-garfo","title":"GARFO","subtitle":null,"desc":"Formado por quatro músicos da nova geração do jazz nacional — Bernardo Tinoco, João Almeida, João Fragoso e João Sousa —, o grupo GARFO tem vindo a afirmar-se no panorama musical p","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-04-11","date_last":"2026-04-11","time":"19:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/GARFO-creditoJoAo-Hasselberg.jpg","url":"https://www.ccb.pt/evento/garfo/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-04-11"]},{"id":"ccb-2026-04-mercado-ccb","title":"Mercado CCB","subtitle":null,"desc":"O Mercado CCB — Mostrar, Ver e Fazer — acontece no primeiro domingo de cada mês. Da gastronomia à natureza, das ofertas para crianças ao artesanato contemporâneo, convidamos as mar","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-12","date_last":"2026-04-12","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2021/04/2000x940_Mercado263.jpg","url":"https://www.ccb.pt/evento/mercado-ccb/2026-04-12/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-12"]},{"id":"ccb-2026-04-atividades-para-familias","title":"Atividades para Famílias","subtitle":null,"desc":"","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-12","date_last":"2026-04-19","time":"11:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/atividadesparafamiliasmuseu.jpg","url":"https://www.ccb.pt/evento/atividades-para-familias-museu-mac-ccb/2026-04-12/","tags":["Museu","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-04-12","2026-04-19"]},{"id":"ccb-2026-04-tahiti-estreia","title":"Tahiti! – ESTREIA","subtitle":null,"desc":"Tahiti! é uma double bill da ópera Trouble in Tahiti (1952), de Leonard Bernstein, e de Pacific Pleasures (2016-17), de Alannah Marie Halay, com libreto de Jorge Balça.\n\nPacific Pl","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-17","date_last":"2026-04-17","time":"20:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_Tahiti_2.jpg","url":"https://www.ccb.pt/evento/tahiti-estreia/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-04-17"]},{"id":"ccb-2026-04-programas-publicos","title":"Programas Públicos","subtitle":null,"desc":"","domain":"pensamento","cat":"conversas","venue_id":"ccb","date_first":"2026-04-18","date_last":"2026-04-18","time":"16:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/04/DiaMuseus3102┬®RitaCarmo.jpg","url":"https://www.ccb.pt/evento/programa-publico-mac-ccb/2026-04-18/","tags":["Conversa","Exposições","Museu"],"a11y":false,"origin":null,"all_dates":["2026-04-18"]},{"id":"ccb-2026-04-a-historia-do-pequeno-alfaiate-de-tibor-","title":"A História do Pequeno Alfaiate, de Tibor Harsányi","subtitle":null,"desc":"O ars ad hoc diferencia-se pela qualidade das suas interpretações e pelo igual à vontade com que se move entre música de diferentes estilos e épocas. Na sua oitava temporada, o ars","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-19","date_last":"2026-04-19","time":"11:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_ArsAdHoc.jpg","url":"https://www.ccb.pt/evento/a-historia-do-pequeno-alfaiate-de-tibor-harsanyi/","tags":["Concerto Comentado","Música"],"a11y":false,"origin":null,"all_dates":["2026-04-19"]},{"id":"ccb-2026-04-o-coro-missao-democracia-8211-estreia","title":"O Coro – Missão: Democracia – Estreia","subtitle":null,"desc":"Concerto multidisciplinar &#8211; Estreia\n\nA música é democracia, palavra, conversa, liberdade. Beatriz Pessoa inspira-se na coleção de livros Missão: Democracia e nos seus temas p","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-23","date_last":"2026-04-23","time":"08:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/05/Missao-Democracia_O-Coro_creditoMadalena-Matoso.jpg","url":"https://www.ccb.pt/evento/o-coro-missao-democracia/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-23"]},{"id":"ccb-2026-04-um-territorio-comum-para-a-arte-cultura-","title":"Um Território Comum para a Arte, Cultura e Educação","subtitle":null,"desc":"Na programação da Fábrica das Artes, cada criação artística é um ponto de partida para múltiplos caminhos. Em vez de separar processo e objeto final, ou seguir apenas a lógica frag","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-23","date_last":"2026-04-23","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/2000x940_Um-Territorio-Comum-Para-a-Arte-Cultura-e-Educacao_MarisaNunes.jpg","url":"https://www.ccb.pt/evento/um-territorio-comum-para-a-arte-cultura-e-educacao/2026-04-23/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-23"]},{"id":"ccb-2026-04-tannhauser-de-wagner","title":"Tannhäuser de Wagner","subtitle":null,"desc":"Tannhäuser und der Sängerkrieg auf Wartburg – «Tannhäuser e o concurso de canto de Wartburg» – é uma ópera em três atos com libreto e música de Richard Wagner, composta entre 1843 ","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-23","date_last":"2026-04-25","time":"19:00","sessions":3,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_TannhauserWagnerBanner_Abril26.jpg","url":"https://www.ccb.pt/evento/tannhauser-de-wagner/2026-04-23/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-04-23","2026-04-24","2026-04-25"]},{"id":"ccb-2026-04-ministerio-do-sensivel","title":"Ministério do Sensível","subtitle":null,"desc":"Talvez tenhamos que começar a pensar em proteger, organizar e a reivindicar o que faz de nós Humanos. Talvez possamos utilizar formas de organização da sociedade, colocando-as ao s","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-24","date_last":"2026-04-24","time":"10:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/Misterio-do-sensivel.jpeg","url":"https://www.ccb.pt/evento/ministerio-do-sensivel/2026-04-24/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-24"]},{"id":"ccb-2026-04-cidade-cultural-participativa","title":"Cidade cultural participativa","subtitle":null,"desc":"Debates nos jardins\n\nConvidamos profissionais de cultura e profissionais da filosofia democrática para mediar conversas-debates informais sobre propostas para uma melhor democracia","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-04-25","date_last":"2026-04-25","time":"11:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/06/Missao-Democracia_Debates_CCP_credito-Madalena-Matoso.jpg","url":"https://www.ccb.pt/evento/cidade-cultural-participativa/","tags":["Debate"],"a11y":false,"origin":null,"all_dates":["2026-04-25"]},{"id":"ccb-2026-04-preparacao-do-coro-missao-democracia","title":"Preparação d’O Coro – Missão: Democracia","subtitle":null,"desc":"A oficina Preparação d’O Coro – Missão: Democracia é um momento prévio ao espetáculo O Coro – Missão: Democracia, no qual a compositora Beatriz Pessoa conta com as vozes do público","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-25","date_last":"2026-04-26","time":"18:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/05/Missao-Democracia_O-Coro_creditoMadalena-Matoso.jpg","url":"https://www.ccb.pt/evento/preparacao-do-coro-missao-democracia/2026-04-25/","tags":["Oficina"],"a11y":false,"origin":null,"all_dates":["2026-04-25","2026-04-26"]},{"id":"ccb-2026-04-notas-de-musica-8211-ciclo-de-conferenci","title":"Notas de Música – Ciclo de Conferências","subtitle":null,"desc":"O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em t","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-04-26","date_last":"2026-04-26","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940ciclonotasdemusicaI.jpg","url":"https://www.ccb.pt/evento/notas-de-musica-ciclo-de-conferencias/2026-04-26/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-04-26"]},{"id":"ccb-2026-04-as-quatro-estacoes-de-vivaldi","title":"As Quatro Estações de Vivaldi","subtitle":null,"desc":"Janine Jansen não vê qualquer problema em interpretar, repetidamente, obras tão populares como As Quatro Estações de Vivaldi — afinal, «cada interpretação é única», como a própria ","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-04-27","date_last":"2026-04-27","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_CamerataSalzburg_IGORSTUDIO.jpg","url":"https://www.ccb.pt/evento/as-quatro-estacoes-de-vivaldi/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-04-27"]},{"id":"ccb-2026-04-projetos-mediacao","title":"Projetos Mediação","subtitle":null,"desc":"","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-04-30","date_last":"2026-04-30","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_NovaTemporada2526.jpg","url":"https://www.ccb.pt/evento/projetos-mediacao/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-04-30"]},{"id":"ccb-2026-04-programa-vincular-8211-servico-de-educac","title":"Programa Vincular – Serviço de Educação e Mediação","subtitle":null,"desc":"O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade.","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-04-30","date_last":"2026-04-30","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/museumacccb-1.jpg","url":"https://www.ccb.pt/evento/programa-de-educacao-e-mediacao-do-mac-ccb/2026-04-30/","tags":["Atividades de Férias","Museu","Música"],"a11y":false,"origin":null,"all_dates":["2026-04-30"]},{"id":"ccb-2026-04-jose-pedro-croft","title":"José Pedro Croft","subtitle":null,"desc":"Gravuras, desenhos e relevos dialogam em torno de um conjunto de esculturas que ocupa o eixo longitudinal do espaço expositivo. São os reflexos, enclaves e desvios de José Pedro Cr","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-04-30","date_last":"2026-04-30","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/5_-JosePedroCroft2025creditoPatKilgore.jpg","url":"https://www.ccb.pt/evento/exposicao-jose-pedro-croft/2026-04-30/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-04-30"]},{"id":"ccb-2026-04-sobre-a-verdade-da-mentira","title":"Sobre a verdade da mentira","subtitle":null,"desc":"Não querer ser enganado com mentiras e descobrir a verdade é a situação em que cada ser humano se encontra. Há uma pressão contínua — 24 horas por dia, 7 dias na semana — para esca","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-04-30","date_last":"2026-04-30","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AntoniodeCastroCaeiro_MatildeFieschi.jpg","url":"https://www.ccb.pt/evento/sobre-a-verdade-da-mentira/2026-04-30/","tags":["Conferências","Conversa","Podcast"],"a11y":false,"origin":null,"all_dates":["2026-04-30"]},{"id":"ccb-2026-05-programa-missao-democracia","title":"Programa Missão Democracia","subtitle":null,"desc":"Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém – FÁBRICA DAS ART","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-01","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/Ilustracao-Missao-Democracia.png","url":"https://www.ccb.pt/evento/programa-missao-democracia/2026-05-01/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-01"]},{"id":"ccb-2026-05-primeira-infancia","title":"Primeira Infância","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Con","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"08:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg","url":"https://www.ccb.pt/evento/primeira-infancia/2026-05-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-pre-escolar","title":"Pré-escolar","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg","url":"https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-05-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-terceiro-ciclo-e-secundario","title":"Terceiro Ciclo e Secundário","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg","url":"https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-05-01/","tags":["Oficina","Visita Temática","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-educacao-inclusiva","title":"Educação Inclusiva","subtitle":null,"desc":"A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusi","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":23,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg","url":"https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-05-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-13","2026-05-14","2026-05-15","2026-05-16"]},{"id":"ccb-2026-05-universitario","title":"Universitário","subtitle":null,"desc":"Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensame","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg","url":"https://www.ccb.pt/evento/universitario/2026-05-01/","tags":["Oficina","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-uma-deriva-atlantica","title":"Uma deriva atlântica","subtitle":null,"desc":"Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg","url":"https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-05-01/","tags":["Exhibition","Exposições","Museu"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-jose-pedro-croft","title":"José Pedro Croft","subtitle":null,"desc":"Gravuras, desenhos e relevos dialogam em torno de um conjunto de esculturas que ocupa o eixo longitudinal do espaço expositivo. São os reflexos, enclaves e desvios de José Pedro Cr","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/5_-JosePedroCroft2025creditoPatKilgore.jpg","url":"https://www.ccb.pt/evento/exposicao-jose-pedro-croft/2026-05-01/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-may-i-help-you-posso-ajudar","title":"May I Help You? Posso Ajudar?","subtitle":null,"desc":"A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige ta","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"10:00","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-05-01/","tags":["Exhibition","Exposições"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-segundo-ciclo","title":"Segundo Ciclo","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-01","date_last":"2026-05-31","time":"13:30","sessions":27,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg","url":"https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-05-01/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-05-01","2026-05-02","2026-05-03","2026-05-05","2026-05-06","2026-05-07","2026-05-08","2026-05-09","2026-05-10","2026-05-12","2026-05-13","2026-05-14"]},{"id":"ccb-2026-05-jose-manuel-neto","title":"José Manuel Neto","subtitle":null,"desc":"José Manuel Neto prepara-se para lançar o seu novo disco, Madrepérolas. O concerto de apresentação reúne alguns dos músicos com quem partilha mais de trinta anos de cumplicidade ar","domain":"musica","cat":"musica-popular-portuguesa","venue_id":"ccb","date_first":"2026-05-02","date_last":"2026-05-02","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_2maio2026_ritacarmo.jpg","url":"https://www.ccb.pt/evento/jose-manuel-neto/","tags":["Fado","Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-05-02"]},{"id":"ccb-2026-05-mercado-ccb","title":"Mercado CCB","subtitle":null,"desc":"O Mercado CCB — Mostrar, Ver e Fazer — acontece no primeiro domingo de cada mês. Da gastronomia à natureza, das ofertas para crianças ao artesanato contemporâneo, convidamos as mar","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-03","date_last":"2026-05-03","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2021/04/2000x940_Mercado263.jpg","url":"https://www.ccb.pt/evento/mercado-ccb/2026-05-03/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-03"]},{"id":"ccb-2026-05-festas-de-aniversario-no-museu","title":"Festas de aniversário no Museu","subtitle":null,"desc":"Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de ","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-05","date_last":"2026-05-26","time":"11:00","sessions":4,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/05/website_2000x940.jpg","url":"https://www.ccb.pt/evento/festas-de-aniversario-no-museu-mac-ccb/2026-05-05/","tags":["Museu","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-05-05","2026-05-12","2026-05-19","2026-05-26"]},{"id":"ccb-2026-05-missao-literacia-democratica-e-literaria","title":"Missão: Literacia democrática e literária nas escolas","subtitle":null,"desc":"Oficina em continuidade\n\nO projeto editorial da coleção Missão: Democracia, da Assembleia da República, composto por 12 temas, põe à disposição dos cidadãos mais novos publicações ","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-09","date_last":"2026-05-23","time":"08:00","sessions":3,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/05/missao-literacia-democraticaMD_Oficina-SDcreditoMantraste.jpg","url":"https://www.ccb.pt/evento/missao-literacia-democratica-e-literaria-nas-escolas/2026-05-09/","tags":["Oficina"],"a11y":false,"origin":null,"all_dates":["2026-05-09","2026-05-16","2026-05-23"]},{"id":"ccb-2026-05-museu-em-partilha","title":"Museu em Partilha","subtitle":null,"desc":"Ao fim de semana, o MAC/CCB abre as suas portas a pessoas com demência e às suas famílias para momentos de partilha e descoberta através da arte.\n\nEstes encontros procuram oferecer","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-09","date_last":"2026-05-09","time":"15:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/01/Museu-em-partilhamuseumacccb-2.jpg","url":"https://www.ccb.pt/evento/museu-em-partilha/2026-05-09/","tags":["Museu"],"a11y":false,"origin":null,"all_dates":["2026-05-09"]},{"id":"ccb-2026-05-olhos-multiplos","title":"Olhos Múltiplos","subtitle":null,"desc":"Numa era em que os ecrãs moldam a nossa perceção da realidade e os algoritmos ditam as nossas preferências, os trabalhos destas artistas — fundindo o sensível, o simbólico, o ances","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-05-14","date_last":"2026-05-31","time":"10:00","sessions":16,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/9_PatriciaDominguez_creditoImagenSubliminal.jpg","url":"https://www.ccb.pt/evento/exposicao-olhos-multiplos/2026-05-14/","tags":["Exposições"],"a11y":true,"origin":null,"all_dates":["2026-05-14","2026-05-15","2026-05-16","2026-05-17","2026-05-19","2026-05-20","2026-05-21","2026-05-22","2026-05-23","2026-05-24","2026-05-26","2026-05-27"]},{"id":"ccb-2026-05-dia-internacional-dos-museus","title":"Dia Internacional dos Museus","subtitle":null,"desc":"MUSEUS QUE UNEM UM MUNDO DIVIDIDO\n\n&nbsp;\n\n◾ 10:00 às 18:00 | Reivindicar os direitos das crianças\n\nReivindicar os direitos das crianças através da cor é palavra de ordem. O progra","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-05-17","date_last":"2026-05-17","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/04/dia-interncaional-dos-museusEstelleValente-4305.jpg","url":"https://www.ccb.pt/evento/dia-internacional-dos-museus/","tags":["Oficina","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-05-17"]},{"id":"ccb-2026-05-candinho-uma-opera-para-todos-de-joao-gu","title":"Candinho – Uma Ópera para Todos, de João Guilherme Ripper","subtitle":null,"desc":"A ópera Candinho retrata a infância de Cândido Portinari. Estruturada num ato e dez cenas, a obra mistura realidade e ficção ao recriar o quotidiano da aldeia natal do pintor, as b","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-05-17","date_last":"2026-05-17","time":"11:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_Candinho.jpg","url":"https://www.ccb.pt/evento/candinho-uma-opera-para-todos-de-joao-guilherme-ripper/","tags":["Concerto Comentado","Música","Ópera"],"a11y":false,"origin":null,"all_dates":["2026-05-17"]},{"id":"ccb-2026-05-conferencia-8211-o-belo-em-som-viagem-at","title":"Conferência – O belo em som: viagem através dos séculos","subtitle":null,"desc":"Ciclo de Conferências\n\nA partir da Batalha de Amor no Sonho de Polifilo, Paul van Nevel concebeu um programa em que a beleza é o fio condutor entre obras dos séculos XIV e XVI e al","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-05-22","date_last":"2026-05-22","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_manuelpedroferreira.jpg","url":"https://www.ccb.pt/evento/conferencia-o-belo-em-som-viagem-atraves-dos-seculos-com-manuel-pedro-ferreira/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-05-22"]},{"id":"ccb-2026-05-sobre-a-beleza-da-musica-renascentista-a","title":"Sobre a beleza: da música renascentista à música dos nossos dias","subtitle":null,"desc":"À semelhança do que Franz Liszt fez com Après une lecture du Dante, Paul Van Nevel concebeu este programa após a leitura de Hypnerotomachia Poliphili (O Sonho de Poliphilo), de Fra","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-05-22","date_last":"2026-05-22","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_HuelgasEnsemble.jpg","url":"https://www.ccb.pt/evento/sobre-a-beleza-da-musica-renascentista-a-musica-dos-nossos-dias/","tags":["Música","Recital","Sexta Maior"],"a11y":false,"origin":null,"all_dates":["2026-05-22"]},{"id":"ccb-2026-05-um-territorio-comum-para-a-arte-cultura-","title":"Um Território Comum para a Arte, Cultura e Educação","subtitle":null,"desc":"Na programação da Fábrica das Artes, cada criação artística é um ponto de partida para múltiplos caminhos. Em vez de separar processo e objeto final, ou seguir apenas a lógica frag","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-23","date_last":"2026-05-23","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/2000x940_Um-Territorio-Comum-Para-a-Arte-Cultura-e-Educacao_MarisaNunes.jpg","url":"https://www.ccb.pt/evento/um-territorio-comum-para-a-arte-cultura-e-educacao/2026-05-23/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-23"]},{"id":"ccb-2026-05-dardust","title":"Dardust","subtitle":null,"desc":"Considerado um dos mais influentes e galardoados pianistas da sua geração, Dardust – o nome artístico de Dario Faini – conta já com cinco álbuns, onde redefiniu as fronteiras entre","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-05-23","date_last":"2026-05-23","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/01/dardust-album-1.jpeg","url":"https://www.ccb.pt/evento/dardust/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-05-23"]},{"id":"ccb-2026-05-ministerio-do-sensivel","title":"Ministério do Sensível","subtitle":null,"desc":"Talvez tenhamos que começar a pensar em proteger, organizar e a reivindicar o que faz de nós Humanos. Talvez possamos utilizar formas de organização da sociedade, colocando-as ao s","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-05-24","date_last":"2026-05-24","time":"10:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/Misterio-do-sensivel.jpeg","url":"https://www.ccb.pt/evento/ministerio-do-sensivel/2026-05-24/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-24"]},{"id":"ccb-2026-05-constituicao-8211-estreia","title":"Constituição – Estreia","subtitle":null,"desc":"Teatro + conversa\n\nDe que matéria somos feitos? Enquanto seres humanos e enquanto sociedade? De que maneira a forma como nos organizamos coletivamente inspira e desarruma as nossas","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-05-24","date_last":"2026-05-24","time":"11:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/05/Missao-Democracia_A-Constituicao_creditoMantraste-scaled-e1748960403470.jpeg","url":"https://www.ccb.pt/evento/a-constituicao/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-24"]},{"id":"ccb-2026-05-sinfonia-n-7-de-beethoven","title":"Sinfonia n.º 7 de Beethoven","subtitle":null,"desc":"A Sétima de Beethoven é uma sinfonia que alterna tipologias de danças populares com arquétipos militares. Mas tem um momento de grande contraste, na afetação expressiva de um dos m","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-05-24","date_last":"2026-05-24","time":"17:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/OML-2024_Marcelo-Albuquerque-e1752245983377.jpg","url":"https://www.ccb.pt/evento/sinfonia-n-o-7-de-beethoven/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-05-24"]},{"id":"ccb-2026-05-notas-de-musica-8211-ciclo-de-conferenci","title":"Notas de Música – Ciclo de Conferências","subtitle":null,"desc":"O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em t","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-05-26","date_last":"2026-05-26","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940ciclonotasdemusicaI.jpg","url":"https://www.ccb.pt/evento/notas-de-musica-ciclo-de-conferencias/2026-05-26/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-05-26"]},{"id":"ccb-2026-05-sobre-a-verdade-da-mentira","title":"Sobre a verdade da mentira","subtitle":null,"desc":"Não querer ser enganado com mentiras e descobrir a verdade é a situação em que cada ser humano se encontra. Há uma pressão contínua — 24 horas por dia, 7 dias na semana — para esca","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-05-28","date_last":"2026-05-28","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AntoniodeCastroCaeiro_MatildeFieschi.jpg","url":"https://www.ccb.pt/evento/sobre-a-verdade-da-mentira/2026-05-28/","tags":["Conferências","Conversa","Podcast"],"a11y":false,"origin":null,"all_dates":["2026-05-28"]},{"id":"ccb-2026-05-programa-vincular-8211-servico-de-educac","title":"Programa Vincular – Serviço de Educação e Mediação","subtitle":null,"desc":"O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade.","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-05-30","date_last":"2026-05-30","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/museumacccb-1.jpg","url":"https://www.ccb.pt/evento/programa-de-educacao-e-mediacao-do-mac-ccb/2026-05-30/","tags":["Atividades de Férias","Museu","Música"],"a11y":false,"origin":null,"all_dates":["2026-05-30"]},{"id":"tndm-2026-05-terra-nullius","title":"Terra Nullius","subtitle":null,"desc":"Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como pr","domain":"outros","cat":"outros","venue_id":"tndm","date_first":"2026-05-30","date_last":"2026-05-30","time":"17:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.tndm.pt/fotos/programacao/eventos/lancamento_de_livros_terra_nullius_1920_195062890069316b3c28ede.png","url":"https://www.tndm.pt/pt/programacao/livros-e-pensamento/terra-nullius/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-05-30"]},{"id":"ccb-2026-05-visitas-guiadas","title":"Visitas Guiadas","subtitle":null,"desc":"Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-05-31","date_last":"2026-05-31","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/09/museumacccbcreditoEstelleValente-1.jpg","url":"https://www.ccb.pt/evento/visitas-guiadas-2/2026-05-31/","tags":["Exposições","Visita Guiada","Visita Temática"],"a11y":false,"origin":null,"all_dates":["2026-05-31"]},{"id":"ccb-2026-05-dia-mundial-da-crianca","title":"Dia Mundial da Criança","subtitle":null,"desc":"Porquê esperar por 1 de junho? O MAC/CCB antecipa a celebração do Dia Mundial da Criança com uma véspera cheia de descobertas. Famílias com petizes de todas as idades são convidada","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-05-31","date_last":"2026-05-31","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2024/05/diadacrianca2026.jpg","url":"https://www.ccb.pt/evento/dia-mundial-da-crianca-macccb/","tags":["Oficina"],"a11y":false,"origin":null,"all_dates":["2026-05-31"]},{"id":"ccb-2026-05-laurie-anderson-com-sexmob","title":"Laurie Anderson com Sexmob","subtitle":null,"desc":"«Na primavera passada fui convidada a integrar um festival em Viena. Era um festival de teatro, dança, música e literatura, e o tema era a ascensão do fascismo na Europa. Pediram-m","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-05-31","date_last":"2026-05-31","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/2000x940_LaurieAnderson_StephanieDiani_Times.jpg","url":"https://www.ccb.pt/evento/laurie-anderson-com-sexmob/","tags":["Outras músicas"],"a11y":false,"origin":null,"all_dates":["2026-05-31"]},{"id":"ccb-2026-06-programa-missao-democracia","title":"Programa Missão Democracia","subtitle":null,"desc":"Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém – FÁBRICA DAS ART","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-06-01","date_last":"2026-06-01","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/Ilustracao-Missao-Democracia.png","url":"https://www.ccb.pt/evento/programa-missao-democracia/2026-06-01/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-06-01"]},{"id":"ccb-2026-06-primeira-infancia","title":"Primeira Infância","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Con","domain":"formacao","cat":"oficinas","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"08:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg","url":"https://www.ccb.pt/evento/primeira-infancia/2026-06-02/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-pre-escolar","title":"Pré-escolar","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg","url":"https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-06-02/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-terceiro-ciclo-e-secundario","title":"Terceiro Ciclo e Secundário","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg","url":"https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-06-02/","tags":["Oficina","Visita Temática","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-universitario","title":"Universitário","subtitle":null,"desc":"Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensame","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg","url":"https://www.ccb.pt/evento/universitario/2026-06-02/","tags":["Oficina","Visita Guiada"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-olhos-multiplos","title":"Olhos Múltiplos","subtitle":null,"desc":"Numa era em que os ecrãs moldam a nossa perceção da realidade e os algoritmos ditam as nossas preferências, os trabalhos destas artistas — fundindo o sensível, o simbólico, o ances","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/9_PatriciaDominguez_creditoImagenSubliminal.jpg","url":"https://www.ccb.pt/evento/exposicao-olhos-multiplos/2026-06-02/","tags":["Exposições"],"a11y":true,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-jose-pedro-croft","title":"José Pedro Croft","subtitle":null,"desc":"Gravuras, desenhos e relevos dialogam em torno de um conjunto de esculturas que ocupa o eixo longitudinal do espaço expositivo. São os reflexos, enclaves e desvios de José Pedro Cr","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/5_-JosePedroCroft2025creditoPatKilgore.jpg","url":"https://www.ccb.pt/evento/exposicao-jose-pedro-croft/2026-06-02/","tags":["Exhibition","Exposições"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-may-i-help-you-posso-ajudar","title":"May I Help You? Posso Ajudar?","subtitle":null,"desc":"A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige ta","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"10:00","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-06-02/","tags":["Exhibition","Exposições"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-segundo-ciclo","title":"Segundo Ciclo","subtitle":null,"desc":"Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte ","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-06-02","date_last":"2026-06-23","time":"13:30","sessions":19,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg","url":"https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-06-02/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-06-02","2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14"]},{"id":"ccb-2026-06-educacao-inclusiva","title":"Educação Inclusiva","subtitle":null,"desc":"A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusi","domain":"formacao","cat":"atividades-educativas","venue_id":"ccb","date_first":"2026-06-03","date_last":"2026-06-21","time":"10:00","sessions":15,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg","url":"https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-06-03/","tags":["Oficina","Visita-jogo"],"a11y":false,"origin":null,"all_dates":["2026-06-03","2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14","2026-06-17","2026-06-18"]},{"id":"ccb-2026-06-frida-orupabo","title":"Frida Orupabo","subtitle":null,"desc":"Na sua primeira exposição individual em Portugal, Frida Orupabo revisita o vasto arquivo de imagens que tem vindo a reunir na sua conta de Instagram, material composto por tensões ","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-06-04","date_last":"2026-06-23","time":"10:00","sessions":17,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/11_FridaOrupabocreditoBonniersKonsthall.jpg","url":"https://www.ccb.pt/evento/exposicao-frida-orupabo/2026-06-04/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-06-04","2026-06-05","2026-06-06","2026-06-07","2026-06-09","2026-06-10","2026-06-11","2026-06-12","2026-06-13","2026-06-14","2026-06-16","2026-06-17"]},{"id":"ccb-2026-06-o-direito-do-mais-fraco-a-liberdade","title":"O Direito do Mais Fraco à Liberdade","subtitle":null,"desc":"Estamos em 1974 e Rainer Werner Fassbinder prepara-se para realizar mais um dos seus filmes. Provocador e enigmático como sempre, misturando e confundindo todas as funções dentr","domain":"artes-palco","cat":"teatro","venue_id":"ccb","date_first":"2026-06-06","date_last":"2026-06-07","time":"19:00","sessions":2,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/2000x940_TempsDImages_Junho26_AP.jpg","url":"https://www.ccb.pt/evento/o-direito-do-mais-fraco-a-liberdade/2026-06-06/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-06-06","2026-06-07"]},{"id":"ccb-2026-06-mercado-ccb","title":"Mercado CCB","subtitle":null,"desc":"O Mercado CCB — Mostrar, Ver e Fazer — acontece no primeiro domingo de cada mês. Da gastronomia à natureza, das ofertas para crianças ao artesanato contemporâneo, convidamos as mar","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-06-07","date_last":"2026-06-07","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2021/04/2000x940_Mercado263.jpg","url":"https://www.ccb.pt/evento/mercado-ccb/2026-06-07/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-06-07"]},{"id":"ccb-2026-06-scheherazade-de-rimsky-korsakov","title":"Scheherazade, de Rimsky-Korsakov","subtitle":null,"desc":"Uma das mais empolgantes diretoras de orquestra da atualidade, a maestra mexicana Alondra de la Parra dirige a Orquestra Sinfónica Portuguesa num programa orquestral inteiramente d","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-06-07","date_last":"2026-06-07","time":"17:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/ADLP-BY-FELIX-BROEDE-10-1440x960_edited-e1757346806738.jpg","url":"https://www.ccb.pt/evento/scheherazade-de-rimsky-korsakov/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-06-07"]},{"id":"ccb-2026-06-terra-crua","title":"Terra Crua","subtitle":null,"desc":"Num momento de pressão sobre os limites do planeta, olhamos para a terra crua não como um retorno nostálgico, mas como uma proposta radical para a arquitetura contemporânea em Port","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-06-17","date_last":"2026-06-23","time":"10:00","sessions":6,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/10_TerraCruacreditoNunoVasconcelos-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-terra-crua/2026-06-17/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-06-17","2026-06-18","2026-06-19","2026-06-20","2026-06-21","2026-06-23"]},{"id":"ccb-2026-06-exercicio-de-montagem","title":"Exercício de Montagem","subtitle":null,"desc":"Pode um filme em progresso ser uma performance? Joana Craveiro parte de um conjunto de imagens que captou na Palestina para ensaiar uma resposta a esta pergunta.\n\nO registo de duas","domain":"artes-palco","cat":"teatro","venue_id":"ccb","date_first":"2026-06-18","date_last":"2026-06-18","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_TeatroDoVestido.jpg","url":"https://www.ccb.pt/evento/exercicio-de-montagem/","tags":["Teatro"],"a11y":false,"origin":null,"all_dates":["2026-06-18"]},{"id":"tndm-2026-06-prologo","title":"Prólogo","subtitle":null,"desc":"Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para","domain":"outros","cat":"outros","venue_id":"tndm","date_first":"2026-06-22","date_last":"2026-06-22","time":null,"sessions":1,"ongoing":true,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.tndm.pt/fotos/programacao/eventos/prologo_1920_93983766469306a833d46c.png","url":"https://www.tndm.pt/pt/programacao/espetaculos/prologo/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-06-22"]},{"id":"ccb-2026-06-um-territorio-comum-para-a-arte-cultura-","title":"Um Território Comum para a Arte, Cultura e Educação","subtitle":null,"desc":"Na programação da Fábrica das Artes, cada criação artística é um ponto de partida para múltiplos caminhos. Em vez de separar processo e objeto final, ou seguir apenas a lógica frag","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-06-23","date_last":"2026-06-23","time":"08:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/10/2000x940_Um-Territorio-Comum-Para-a-Arte-Cultura-e-Educacao_MarisaNunes.jpg","url":"https://www.ccb.pt/evento/um-territorio-comum-para-a-arte-cultura-e-educacao/2026-06-23/","tags":[],"a11y":false,"origin":null,"all_dates":["2026-06-23"]},{"id":"ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca","title":"Conferência – O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo","subtitle":null,"desc":"Ciclo de Conferências\n\nComo pensar o nada no excesso que associamos, habitualmente, ao barroco?\n\nRetomando uma operação comum nos séculos XVII e XVIII, proponho um desvio por torçã","domain":"pensamento","cat":"conferencias-debates","venue_id":"ccb","date_first":"2026-06-26","date_last":"2026-06-26","time":"18:30","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/07/Paulo-Pires-do-Vale-destaque.jpg","url":"https://www.ccb.pt/evento/conferencia-o-mesmo-nada-em-tudo-a-torcao-barroca-do-olhar-e-o-desengano-do-mundo/","tags":["Conferências","Música","Notas de Música"],"a11y":false,"origin":null,"all_dates":["2026-06-26"]},{"id":"ccb-2026-06-da-desordem-das-paixoes","title":"Da Desordem das Paixões","subtitle":null,"desc":"Música Renascentista\n\nOs Músicos do Tejo e Sofia Dias &amp; Vítor Roriz, unidos pelo seu amor ao barroco, ao século XVII e XVIII, à dança, à música de dança, aos pássaros, aos text","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-06-26","date_last":"2026-06-26","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940__SofiaDiasVtorRuizcomMusicosdoTejo_brunosimao-1.jpg","url":"https://www.ccb.pt/evento/da-desordem-das-paixoes/2026-06-26/","tags":["Música","Sexta Maior"],"a11y":false,"origin":null,"all_dates":["2026-06-26"]},{"id":"ccb-2026-07-raiz","title":"Raiz","subtitle":null,"desc":"André Rosinha apresenta-nos o novo álbum Raiz (2025), explorando uma fusão entre os mundos do jazz, da música tradicional portuguesa e do improviso. Tendo de uma forma orgânica já ","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-07-03","date_last":"2026-07-03","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_Trio_MariaBicker.jpg","url":"https://www.ccb.pt/evento/raiz-andre-rosinha-trio/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-07-03"]},{"id":"ccb-2026-07-um-julgamento","title":"UM JULGAMENTO","subtitle":null,"desc":"Thomas Stockman, médico de um balneário numa pequena cidade cuja economia depende do turismo termal, descobre uma grave contaminação nas águas do local. Decide tornar pública a sua","domain":"artes-palco","cat":"teatro","venue_id":"ccb","date_first":"2026-07-03","date_last":"2026-07-03","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/Foto-Caio-Lirio_creditocaiolirio-Todos-os-Direitos-Reservados-021A7653-3.jpg","url":"https://www.ccb.pt/evento/um-julgamento/2026-07-03/","tags":["Teatro"],"a11y":false,"origin":null,"all_dates":["2026-07-03"]},{"id":"ccb-2026-07-e-se-fossemos-a-votos","title":"E se fôssemos a votos?","subtitle":null,"desc":"A democracia é o melhor dos mundos. Sempre que vamos a votos, ganha a liberdade e a democracia. Pela mão da ilustradora Rachel Caiano, mergulhamos com o músico Nuno Cintrão, o ator","domain":"outros","cat":"outros","venue_id":"ccb","date_first":"2026-07-06","date_last":"2026-07-06","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":true,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/06/IMG-MD_ANFDV-Oficina_Eleicoes_creditoRachel-Caiano.jpg","url":"https://www.ccb.pt/evento/e-se-fossemos-a-votos/","tags":["Atividades de Férias","Oficina"],"a11y":false,"origin":null,"all_dates":["2026-07-06"]},{"id":"ccb-2026-07-quem-tem-medo-de-virginia-woolf-de-edwar","title":"Quem tem medo de Virginia Woolf?, de Edward Albee","subtitle":null,"desc":"Dois casais numa sala de estar durante uma longa madrugada: Martha e George são os anfitriões e têm cerca de 50 anos; Honey e Nick, bastante mais jovens, são os convidados. À medid","domain":"artes-palco","cat":"teatro","venue_id":"ccb","date_first":"2026-07-09","date_last":"2026-07-09","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940-Quem-tem-medo-de-Virginia-Woolf-e1757688878429.jpg","url":"https://www.ccb.pt/evento/quem-tem-medo-de-virginia-woolf-de-edward-albee/2026-07-09/","tags":["Teatro"],"a11y":false,"origin":null,"all_dates":["2026-07-09"]},{"id":"ccb-2026-07-jason-moran","title":"Jason Moran","subtitle":null,"desc":"Figura ímpar do Jazz e da sua divulgação a nível mundial, Jason Moran é pianista e compositor. Foi aluno da Manhattan School of Music, onde estudou com Jaki Byard, Andrew Hill e Mu","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-07-14","date_last":"2026-07-14","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/01/JasonMoran_2000x940-1-1.jpg","url":"https://www.ccb.pt/evento/jason-moran/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-07-14"]},{"id":"ccb-2026-07-sinfonia-n-9-8220novo-mundo8221-de-dvora","title":"Sinfonia n.º 9 “Novo Mundo”, de Dvořák","subtitle":null,"desc":"A Orquestra XXI é uma iniciativa cultural inovadora, que reúne músicos portugueses residentes no estrangeiro. Dirigida desde a sua criação pelo maestro Dinis Sousa, a Orquestra XXI","domain":"musica","cat":"musica-classica","venue_id":"ccb","date_first":"2026-07-18","date_last":"2026-07-18","time":"20:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/OrquestraXXI_2000x940.jpg","url":"https://www.ccb.pt/evento/sinfonia-n-9-novo-mundo-de-dvorak/","tags":["Música","Orquestra"],"a11y":false,"origin":null,"all_dates":["2026-07-18"]},{"id":"ccb-2026-10-angela-ferreira","title":"Ângela Ferreira","subtitle":null,"desc":"A prática de Ângela Ferreira, figura central na cena artística portuguesa, integra instalação, vídeo, fotografia e escultura. Nascida em Maputo (Moçambique) e formada em Escultura ","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-10-24","date_last":"2026-10-24","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/14_AngelaFerreira©LaurentLecat.jpg","url":"https://www.ccb.pt/evento/exposicao-angela-ferreira/2026-10-24/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-10-24"]},{"id":"ccb-2026-10-sul","title":"Sul","subtitle":null,"desc":"Depois de um aclamado disco de estreia (JACC Records, 2022) e de inúmeros concertos de norte a sul do país, o trio Sul prossegue a sua viagem no universo do Jazz e da música instru","domain":"musica","cat":"musica-popular-portuguesa","venue_id":"ccb","date_first":"2026-10-30","date_last":"2026-10-30","time":"19:00","sessions":1,"ongoing":false,"status":"estreia","premiere":true,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940_SUL-1.jpg","url":"https://www.ccb.pt/evento/sul/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-10-30"]},{"id":"ccb-2026-11-marco-rodrigues-canta-carlos-do-carmo","title":"Marco Rodrigues canta Carlos do Carmo","subtitle":null,"desc":"Marco Rodrigues apresenta-se em palco com um espetáculo que evoca a memória e o legado de Carlos do Carmo – sua referência e figura maior do Fado. Com a solidez de uma carreira fir","domain":"musica","cat":"musica-popular-portuguesa","venue_id":"ccb","date_first":"2026-11-07","date_last":"2026-11-07","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/09/2000x940-marco-Rodrigues.jpg","url":"https://www.ccb.pt/evento/marco-rodrigues-canta-carlos-do-carmo/","tags":["Fado","Música"],"a11y":false,"origin":null,"all_dates":["2026-11-07"]},{"id":"ccb-2026-11-neil-beloufa","title":"Neïl Beloufa","subtitle":null,"desc":"Em 2015, um inquérito dava conta que um terço dos norte-americanos apoiava o bombardeamento de Agrabah, a cidade imaginária de Aladino. Quinze por cento manifestaram incerteza. Uma","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-11-12","date_last":"2026-11-12","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/19_NeilBeloufacreditoAgostinoOsio.jpg","url":"https://www.ccb.pt/evento/exposicao-neil-beloufa/2026-11-12/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-11-12"]},{"id":"ccb-2026-11-francisca-carvalho","title":"Francisca Carvalho","subtitle":null,"desc":"A obra de Francisca Carvalho assenta na manipulação de símbolos e sinais oriundos de geografias diversas — experiências que a artista assimilou e transformou em colagens, desenhos,","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-11-12","date_last":"2026-11-12","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/16_FranciscaCarvalhodreditoAJS2025-copiar-scaled.jpg","url":"https://www.ccb.pt/evento/exposicao-francisca-carvalho/2026-11-12/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-11-12"]},{"id":"ccb-2026-11-al-di-meola","title":"Al Di Meola","subtitle":null,"desc":"Al Di Meola é um dos mais influentes guitarristas da história do jazz e da música contemporânea. Reconhecido pela sua técnica virtuosa e pelo lirismo das suas composições, construi","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-11-28","date_last":"2026-11-28","time":"21:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2026/03/AlDiMeola_banner_fnac_1920x1080.jpg","url":"https://www.ccb.pt/evento/al-di-meola-misty-fest/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-11-28"]},{"id":"ccb-2026-12-marisol","title":"Marisol","subtitle":null,"desc":"A primeira retrospetiva dedicada aos desenhos de Marisol Escobar (Paris, 1930 – Nova Iorque, 2016), reúne mais de 100 obras produzidas desde a década de 1950 até à sua morte. Apres","domain":"artes-visuais","cat":"exposicoes","venue_id":"ccb","date_first":"2026-12-03","date_last":"2026-12-03","time":"10:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/11/10_creditoMarisol-Escobar_Untitled-1974_colored-pencil-and-collage-on-paper.-Bequest-of-Marisol-2016.jpg","url":"https://www.ccb.pt/evento/exposicao-marisol/2026-12-03/","tags":["Exposições"],"a11y":false,"origin":null,"all_dates":["2026-12-03"]},{"id":"ccb-2026-12-glenn-miller-orchestra","title":"Glenn Miller Orchestra","subtitle":null,"desc":"Glenn Miller Orchestra regressa a Portugal para espetáculo especial de Natal.\n\nCaso de sucesso em Portugal, Glenn Miller Orchestra, conquistou o público, esgotando as salas onde se","domain":"musica","cat":"jazz-blues","venue_id":"ccb","date_first":"2026-12-12","date_last":"2026-12-12","time":"19:00","sessions":1,"ongoing":false,"status":"unica-sessao","premiere":false,"family":false,"free":false,"img":"https://www.ccb.pt/wp-content/uploads/2025/04/GMO_XMAS3_2000x940-2.jpg","url":"https://www.ccb.pt/evento/glenn-miller-orchestra-4/","tags":["Música"],"a11y":false,"origin":null,"all_dates":["2026-12-12"]}];
+
+const VENUES = {
+  'ccb':           { name: 'Centro Cultural de Belém', short: 'CCB', city: 'Lisboa' },
+  'tndm':          { name: 'Teatro Nacional D. Maria II', short: 'TNDM', city: 'Lisboa' },
+  'theatro-circo': { name: 'Theatro Circo', short: 'TC', city: 'Braga' }
+};
+
+const DOMAINS = {
+  'musica':       { label: 'Música',         emoji: '♪', color: '#8B5CF6', css: 'var(--musica)' },
+  'artes-palco':  { label: 'Artes de Palco', emoji: '🎭', color: '#EF4444', css: 'var(--palco)' },
+  'artes-visuais':{ label: 'Artes Visuais',  emoji: '🖼', color: '#06B6D4', css: 'var(--visuais)' },
+  'pensamento':   { label: 'Pensamento',     emoji: '💬', color: '#10B981', css: 'var(--pensamento)' },
+  'cinema':       { label: 'Cinema',          emoji: '🎬', color: '#F59E0B', css: 'var(--cinema)' },
+  'formacao':     { label: 'Formação',        emoji: '📚', color: '#EC4899', css: 'var(--formacao)' },
+  'outros':       { label: 'Outros',          emoji: '◆', color: '#6B7280', css: 'var(--outros)' }
+};
+
+const MONTHS_PT = ['','Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+
+// ============================================================
+// STATE
+// ============================================================
+let currentDomain = 'all';
+let currentMonth  = 'all';
+let currentSearch = '';
+let currentTab    = 'hoje';
+let showCount     = 30;
+
+// ============================================================
+// UTILS
+// ============================================================
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+function weekEnd() {
+  const d = new Date();
+  d.setDate(d.getDate() + 7);
+  return d.toISOString().slice(0, 10);
+}
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const [y, m, d] = dateStr.split('-');
+  return { day: d, month: MONTHS_PT[parseInt(m)].slice(0,3), year: y, monthFull: MONTHS_PT[parseInt(m)], monthNum: m };
+}
+function monthKey(dateStr) {
+  if (!dateStr) return '';
+  return dateStr.slice(0, 7);
+}
+function domainColor(domain) {
+  return DOMAINS[domain]?.css || 'var(--outros)';
+}
+function domainLabel(domain) {
+  return DOMAINS[domain]?.label || domain;
+}
+function venueShort(id) {
+  return VENUES[id]?.short || id.toUpperCase();
+}
+function venueName(id) {
+  return VENUES[id]?.name || id;
+}
+function esc(str) {
+  return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ============================================================
+// FILTER LOGIC
+// ============================================================
+function filterEvents() {
+  const t = today();
+  const w = weekEnd();
+  const q = currentSearch.toLowerCase().trim();
+
+  return EVENTS.filter(e => {
+    if (currentDomain !== 'all' && e.domain !== currentDomain) return false;
+    if (currentMonth !== 'all' && monthKey(e.date_first) !== currentMonth) return false;
+    if (q) {
+      const text = (e.title + ' ' + e.desc + ' ' + (e.tags||[]).join(' ')).toLowerCase();
+      if (!text.includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function filterQuick(tab) {
+  const t = today();
+  const w = weekEnd();
+  switch(tab) {
+    case 'hoje':    return EVENTS.filter(e => e.date_first === t || (e.ongoing && e.date_last >= t));
+    case 'semana':  return EVENTS.filter(e => e.date_first >= t && e.date_first <= w);
+    case 'familia': return EVENTS.filter(e => e.family);
+    case 'gratuito':return EVENTS.filter(e => e.free);
+    case 'estreia': return EVENTS.filter(e => e.premiere || e.status === 'estreia');
+    default:        return [];
+  }
+}
+
+// ============================================================
+// RENDER: FEATURED CARD
+// ============================================================
+function renderFeaturedCard(e) {
+  const d = formatDate(e.date_first);
+  const domain = DOMAINS[e.domain] || DOMAINS.outros;
+  const badges = [];
+  if (e.premiere) badges.push('<span class="featured-badge badge-estreia" style="background:rgba(139,92,246,0.9);color:#fff;">Estreia</span>');
+  if (e.free)     badges.push('<span class="featured-badge badge-gratuito" style="background:rgba(16,185,129,0.9);color:#fff;">Gratuito</span>');
+  
+  const imgHtml = e.img
+    ? `<img class="featured-img" src="${esc(e.img)}" alt="${esc(e.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`+
+      `<div class="featured-img-placeholder" style="display:none;">${domain.emoji}</div>`
+    : `<div class="featured-img-placeholder">${domain.emoji}</div>`;
+
+  return `<a class="featured-card" href="${esc(e.url)}" target="_blank" rel="noopener" aria-label="${esc(e.title)} — ${d.day} ${d.monthFull}">
+    <div style="position:relative;">
+      ${imgHtml}
+      ${badges.join('')}
+    </div>
+    <div class="featured-body">
+      <div class="featured-domain">
+        <span style="width:6px;height:6px;border-radius:50%;background:${domain.color};display:inline-block;"></span>
+        ${domain.label}
+      </div>
+      <div class="featured-title">${esc(e.title)}</div>
+      <div class="featured-meta">${d.day} ${d.monthFull} ${d.year} · ${venueShort(e.venue_id)}${e.time ? ' · ' + e.time : ''}</div>
+    </div>
+  </a>`;
+}
+
+// ============================================================
+// RENDER: EVENT ROW
+// ============================================================
+function renderEventRow(e, query) {
+  const d = formatDate(e.date_first);
+  const domain = DOMAINS[e.domain] || DOMAINS.outros;
+  const badges = [];
+  if (e.premiere)       badges.push('<span class="badge badge-estreia">Estreia</span>');
+  if (e.status === 'ultima-sessao') badges.push('<span class="badge badge-esgotado" style="background:rgba(239,68,68,0.15);color:#F87171;">Última sessão</span>');
+  if (e.free)           badges.push('<span class="badge badge-gratuito">Gratuito</span>');
+  if (e.family)         badges.push('<span class="badge badge-familia">Família</span>');
+  if (e.a11y)           badges.push('<span class="badge badge-a11y">Acessível</span>');
+  
+  let title = esc(e.title);
+  if (query) {
+    const re = new RegExp(query.replace(/[.*+?^${}()|[\]\]/g,'\$&'), 'gi');
+    title = title.replace(re, m => `<mark class="search-highlight">${m}</mark>`);
+  }
+
+  const sessions = e.sessions > 1
+    ? `<div class="event-sessions">${e.sessions} sessões</div>`
+    : e.date_last && e.date_last !== e.date_first
+      ? `<div class="event-sessions">Até ${formatDate(e.date_last).day} ${formatDate(e.date_last).month}</div>`
+      : '';
+
+  const imgHtml = e.img
+    ? `<img class="event-thumb" src="${esc(e.img)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=\'event-thumb-placeholder\'>${domain.emoji}</div>'">`
+    : `<div class="event-thumb-placeholder" aria-hidden="true">${domain.emoji}</div>`;
+
+  return `<a class="event-row" href="${esc(e.url)}" target="_blank" rel="noopener" role="listitem" aria-label="${esc(e.title)}, ${d.day} ${d.monthFull}">
+    <div class="event-date" aria-hidden="true">
+      <span class="day">${d.day}</span>
+      <span class="month-year">${d.month} ${d.year}</span>
+      ${e.time ? `<div class="time">${e.time}</div>` : ''}
+    </div>
+    ${imgHtml}
+    <div class="event-info">
+      <div class="event-domain-tag">
+        <span style="width:5px;height:5px;border-radius:50%;background:${domain.color};display:inline-block;"></span>
+        ${domain.label} · ${venueShort(e.venue_id)}
+      </div>
+      <div class="event-title">${title}</div>
+      ${e.desc ? `<div class="event-meta">${esc(e.desc.slice(0,80))}…</div>` : ''}
+      ${badges.length ? `<div class="event-badges">${badges.join('')}</div>` : ''}
+    </div>
+    <div class="event-action">
+      ${sessions}
+      <svg class="event-arrow" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 17L17 7M17 7H7M17 7v10"/>
+      </svg>
+    </div>
+  </a>`;
+}
+
+// ============================================================
+// RENDER: MAIN AGENDA
+// ============================================================
+function renderAgenda() {
+  const events = filterEvents();
+  const list = document.getElementById('event-list');
+  const empty = document.getElementById('empty-state');
+  const sub = document.getElementById('agenda-sub');
+  const showMoreWrap = document.getElementById('show-more-wrap');
+  
+  const q = currentSearch.trim();
+  
+  if (events.length === 0) {
+    list.innerHTML = '';
+    empty.style.display = 'block';
+    showMoreWrap.style.display = 'none';
+    return;
+  }
+  empty.style.display = 'none';
+  sub.textContent = q
+    ? `${events.length} resultado${events.length !== 1 ? 's' : ''} para "${q}"`
+    : `${events.length} evento${events.length !== 1 ? 's' : ''} ${currentMonth !== 'all' ? 'em ' + MONTHS_PT[parseInt(currentMonth.split('-')[1])] : 'programados'}`;
+
+  // Group by month
+  const byMonth = {};
+  events.slice(0, showCount).forEach(e => {
+    const m = monthKey(e.date_first) || 'sem-data';
+    if (!byMonth[m]) byMonth[m] = [];
+    byMonth[m].push(e);
+  });
+
+  let html = '';
+  Object.entries(byMonth).forEach(([m, evts]) => {
+    if (m !== 'sem-data') {
+      const [y, mo] = m.split('-');
+      html += `<div class="month-sep" role="heading" aria-level="3">${MONTHS_PT[parseInt(mo)]} ${y}</div>`;
+    }
+    html += evts.map(e => renderEventRow(e, q)).join('');
+  });
+
+  list.innerHTML = html;
+
+  if (events.length > showCount) {
+    showMoreWrap.style.display = 'block';
+    document.getElementById('show-more-btn').textContent = 
+      `Ver mais ${Math.min(20, events.length - showCount)} eventos →`;
+  } else {
+    showMoreWrap.style.display = 'none';
+  }
+}
+
+// ============================================================
+// RENDER: HERO DOMAIN BREAKDOWN
+// ============================================================
+function renderDomainBreakdown() {
+  const counts = {};
+  EVENTS.forEach(e => { counts[e.domain] = (counts[e.domain] || 0) + 1; });
+  
+  const sorted = Object.entries(counts).sort((a,b) => b[1]-a[1]);
+  const container = document.getElementById('domain-breakdown');
+  
+  container.innerHTML = sorted.map(([d, n]) => {
+    const dm = DOMAINS[d] || DOMAINS.outros;
+    return `<div class="hero-domain-row" onclick="filterByDomain('${d}')" tabindex="0" role="button" aria-label="Filtrar por ${dm.label}: ${n} eventos">
+      <div class="hero-domain-name">
+        <span class="domain-dot" style="background:${dm.color}"></span>
+        ${dm.label}
+      </div>
+      <div class="hero-domain-count">${n}</div>
+    </div>`;
+  }).join('');
+
+  // Stats
+  document.getElementById('stat-total').textContent = EVENTS.length;
+  const venues = new Set(EVENTS.map(e=>e.venue_id));
+  document.getElementById('stat-venues').textContent = venues.size;
+  const months = new Set(EVENTS.map(e=>monthKey(e.date_first)).filter(Boolean));
+  document.getElementById('stat-months').textContent = months.size;
+  document.getElementById('nav-count').textContent = EVENTS.length + ' eventos';
+}
+
+// ============================================================
+// RENDER: QUICK TABS
+// ============================================================
+function renderQuickTabs() {
+  const tabs = ['hoje','semana','familia','gratuito','estreia'];
+  tabs.forEach(tab => {
+    const events = filterQuick(tab);
+    const countEl = document.getElementById('count-' + tab);
+    if (countEl) countEl.textContent = events.length;
+
+    const strip = document.getElementById('strip-' + tab);
+    if (!strip) return;
+
+    if (events.length === 0) {
+      const label = { hoje:'hoje',semana:'esta semana',familia:'famílias',gratuito:'entrada gratuita',estreia:'estreias' }[tab];
+      strip.innerHTML = `<div style="padding:32px 0;color:var(--dim);font-size:14px;">Sem eventos ${label} no momento.</div>`;
+    } else {
+      strip.innerHTML = events.slice(0,8).map(renderFeaturedCard).join('');
+    }
+  });
+}
+
+// ============================================================
+// RENDER: MONTH NAV
+// ============================================================
+function renderMonthNav() {
+  const months = {};
+  EVENTS.forEach(e => {
+    const m = monthKey(e.date_first);
+    if (m) months[m] = (months[m] || 0) + 1;
+  });
+
+  const nav = document.getElementById('month-nav');
+  let html = `<button class="month-btn active" data-month="all">Todos <span class="m-count">${EVENTS.length}</span></button>`;
+  
+  Object.entries(months).sort().forEach(([m, n]) => {
+    const [y, mo] = m.split('-');
+    const label = MONTHS_PT[parseInt(mo)].slice(0,3) + ' ' + y.slice(2);
+    html += `<button class="month-btn" data-month="${m}">${label} <span class="m-count">${n}</span></button>`;
+  });
+
+  nav.innerHTML = html;
+  nav.querySelectorAll('.month-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentMonth = btn.dataset.month;
+      showCount = 30;
+      nav.querySelectorAll('.month-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderAgenda();
+    });
+  });
+}
+
+// ============================================================
+// RENDER: STATS BAR
+// ============================================================
+function renderStatsBar() {
+  const counts = {};
+  let familyCount = 0, freeCount = 0, premiereCount = 0;
+  EVENTS.forEach(e => {
+    counts[e.domain] = (counts[e.domain] || 0) + 1;
+    if (e.family) familyCount++;
+    if (e.free) freeCount++;
+    if (e.premiere) premiereCount++;
+  });
+
+  const sorted = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,4);
+  const items = [
+    ...sorted.map(([d,n]) => ({ label: domainLabel(d), value: n, color: DOMAINS[d]?.color })),
+    { label: 'Para famílias', value: familyCount, color: '#F59E0B' },
+    { label: 'Estreias', value: premiereCount, color: '#8B5CF6' },
+  ];
+
+  document.getElementById('stats-grid').innerHTML = items.map(({ label, value, color }) =>
+    `<div class="stat-item">
+      <div class="stat-value" style="color:${color || 'var(--white)'}">${value}</div>
+      <div class="stat-label">${label}</div>
+    </div>`
+  ).join('');
+}
+
+// ============================================================
+// RENDER: FOOTER
+// ============================================================
+function renderFooter() {
+  const lastUpdate = new Date().toLocaleDateString('pt-PT', {
+    day: '2-digit', month: 'long', year: 'numeric'
+  });
+  const el = document.getElementById('footer-update');
+  if (el) el.textContent = 'Actualizado em ' + lastUpdate;
+}
+
+// ============================================================
+// INTERACTIONS
+// ============================================================
+function filterByDomain(domain) {
+  currentDomain = domain;
+  currentMonth = 'all';
+  showCount = 30;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.domain === domain || (domain === 'all' && b.dataset.domain === 'all'));
+  });
+  document.querySelectorAll('.month-btn').forEach(b => b.classList.toggle('active', b.dataset.month === 'all'));
+  document.getElementById('agenda').scrollIntoView({ behavior: 'smooth' });
+  renderAgenda();
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterByDomain(btn.dataset.domain);
+  });
+});
+
+document.querySelectorAll('.quick-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.quick-tab').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.quick-content').forEach(c => c.classList.remove('active'));
+    document.getElementById('tab-' + tab)?.classList.add('active');
+  });
+});
+
+// Search
+let searchTimer;
+document.getElementById('search-input').addEventListener('input', function() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    currentSearch = this.value;
+    currentDomain = 'all';
+    currentMonth  = 'all';
+    showCount     = 30;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.domain === 'all'));
+    document.querySelectorAll('.month-btn').forEach(b => b.classList.toggle('active', b.dataset.month === 'all'));
+    renderAgenda();
+  }, 200);
+});
+
+// Show more
+document.getElementById('show-more-btn').addEventListener('click', () => {
+  showCount += 20;
+  renderAgenda();
+});
+
+// ============================================================
+// INIT
+// ============================================================
+document.addEventListener('DOMContentLoaded', () => {
+  renderDomainBreakdown();
+  renderQuickTabs();
+  renderMonthNav();
+  renderStatsBar();
+  renderAgenda();
+  renderFooter();
+  
+  // URL params
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('q');
+  if (q) {
+    document.getElementById('search-input').value = q;
+    currentSearch = q;
+    renderAgenda();
+  }
+});
+</script>
+
+</body>
+</html>
