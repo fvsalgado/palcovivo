@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+env/
+
+# Cache e logs locais (não versionar)
+data/cache/
+data/logs/
+!data/logs/.gitkeep
+!data/cache/.gitkeep
+
+# Node / Astro (frontend)
+node_modules/
+.astro/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Secrets
+.env
+.env.local
+secrets.json
