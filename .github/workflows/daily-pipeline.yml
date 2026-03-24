@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   pipeline:
-    name: Scrape → Harmonize → Validate → Dedup → Output
+    name: Scrape - Harmonize - Validate - Dedup - Output
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -32,27 +32,13 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependências
+      - name: Instalar dependencias
         run: |
           pip install -r requirements.txt
 
-      - name: Debug imports
+      - name: Debug pipeline
         run: |
-          python -c "
-import traceback
-from pipeline.core.cache import save_cache
-from pipeline.scrapers.ccb.scraper import run as ccb_run
-try:
-    events = ccb_run()
-    print(f'Scraped: {len(events)}')
-    save_cache('ccb', events[:2])
-    print('Cache OK')
-    from pipeline.core.harmonizer import harmonize_event
-    h = harmonize_event(events[0], 'ccb', 'ccb')
-    print('Harmonize OK:', h['id'])
-except Exception as e:
-    traceback.print_exc()
-"
+          python debug_pipeline.py
 
       - name: Correr pipeline
         env:
@@ -67,7 +53,7 @@ except Exception as e:
           fi
           python -m pipeline.run $FORCE
 
-      - name: Enviar notificações
+      - name: Enviar notificacoes
         if: always()
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -83,10 +69,10 @@ except Exception as e:
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/
-          git diff --staged --quiet || git commit -m "🤖 Pipeline: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
-      - name: Upload relatório como artefacto
+      - name: Upload relatorio
         if: always()
         uses: actions/upload-artifact@v4
         with:
