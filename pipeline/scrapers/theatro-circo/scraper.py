@@ -51,8 +51,15 @@ EVENT_URL_PATTERN = re.compile(r"/event/[^/]+/?$")
 # Método 3 — HTML directo
 PROGRAMME_URL = f"{WEBSITE}/programacao/"
 
-REQUEST_DELAY = 2.0
-TIMEOUT       = 45
+REQUEST_DELAY = 0.5   # reduzido: sitemap já é lento, não agravar
+TIMEOUT       = 30
+
+# Filtro de datas — só URLs modificadas nos últimos N dias
+# Evita processar 1000+ eventos de arquivo
+SITEMAP_MAX_AGE_DAYS = 365    # ignorar eventos sem actividade há mais de 12 meses
+# Data mínima de lastmod para considerar uma URL relevante
+from datetime import timedelta
+SITEMAP_MIN_LASTMOD  = (datetime.now(timezone.utc) - timedelta(days=SITEMAP_MAX_AGE_DAYS)).strftime("%Y-%m-%d")
 
 HEADERS = {
     "User-Agent": (
@@ -204,8 +211,52 @@ def _parse_api_event(event: dict) -> dict:
 def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
     """
     Tenta encontrar URLs de eventos no sitemap.
+    Filtra por lastmod (só eventos recentes) e limita o total de URLs.
     Suporta sitemap simples e sitemap index com sub-sitemaps.
     """
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+    def extract_urls_with_lastmod(xml_text: str) -> list[tuple[str, str]]:
+        """Extrai (url, lastmod) de um sitemap XML. lastmod pode ser ''."""
+        try:
+            root = ET.fromstring(xml_text)
+        except ET.ParseError:
+            return []
+        results = []
+        for url_el in (root.findall("sm:url", ns) or root.findall("url")):
+            loc = url_el.find("sm:loc", ns) or url_el.find("loc")
+            lmod = url_el.find("sm:lastmod", ns) or url_el.find("lastmod")
+            if loc is not None and loc.text:
+                url = loc.text.strip()
+                lastmod = lmod.text.strip()[:10] if lmod is not None and lmod.text else ""
+                if EVENT_URL_PATTERN.search(url):
+                    results.append((url, lastmod))
+        return results
+
+    def filter_and_sort(url_lastmod_pairs: list[tuple[str, str]]) -> list[str]:
+        """
+        Filtra URLs por lastmod >= SITEMAP_MIN_LASTMOD.
+        Ordena por lastmod decrescente (mais recentes primeiro).
+        Limita a SITEMAP_MAX_URLS.
+        """
+        # Separar com e sem lastmod
+        with_date = [(u, d) for u, d in url_lastmod_pairs if d >= SITEMAP_MIN_LASTMOD]
+        without_date = [u for u, d in url_lastmod_pairs if not d]
+
+        # Ordenar os datados por mais recente
+        with_date.sort(key=lambda x: x[1], reverse=True)
+        sorted_urls = [u for u, _ in with_date] + without_date
+
+        total_raw = len(url_lastmod_pairs)
+        total_filtered = len(sorted_urls)
+        if total_raw > total_filtered:
+            logger.info(
+                f"TC Sitemap: {total_raw} URLs totais → "
+                f"{total_filtered} recentes (>= {SITEMAP_MIN_LASTMOD})"
+            )
+
+        return sorted_urls
+
     for sitemap_url in SITEMAP_URLS:
         try:
             resp = session.get(sitemap_url, timeout=TIMEOUT)
@@ -213,38 +264,30 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
                 continue
             logger.info(f"TC Sitemap: encontrado em {sitemap_url}")
             root = ET.fromstring(resp.text)
-            ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
-            # Sitemap index → seguir sub-sitemaps
-            sub_sitemaps = root.findall("sm:sitemap/sm:loc", ns)
+            # Sitemap index → seguir sub-sitemaps de eventos
+            sub_sitemaps = root.findall("sm:sitemap/sm:loc", ns) or root.findall("sitemap/loc")
             if sub_sitemaps:
-                event_urls = []
-                for sub in sub_sitemaps:
-                    sub_url = sub.text.strip()
-                    # Procurar sub-sitemaps com "event" no nome
-                    if "event" in sub_url.lower():
-                        try:
-                            sub_resp = session.get(sub_url, timeout=TIMEOUT)
-                            sub_root = ET.fromstring(sub_resp.text)
-                            for loc in sub_root.findall("sm:url/sm:loc", ns):
-                                url = loc.text.strip()
-                                if EVENT_URL_PATTERN.search(url):
-                                    event_urls.append(url)
-                        except Exception as e:
-                            logger.warning(f"TC Sitemap: erro ao ler sub-sitemap {sub_url}: {e}")
-                if event_urls:
-                    logger.info(f"TC Sitemap: {len(event_urls)} URLs de eventos encontradas")
-                    return event_urls
+                all_pairs = []
+                for sub_el in sub_sitemaps:
+                    sub_url = sub_el.text.strip() if sub_el.text else ""
+                    if not sub_url or "event" not in sub_url.lower():
+                        continue
+                    try:
+                        sub_resp = session.get(sub_url, timeout=TIMEOUT)
+                        pairs = extract_urls_with_lastmod(sub_resp.text)
+                        all_pairs.extend(pairs)
+                        logger.info(f"TC Sitemap: {len(pairs)} URLs em {sub_url}")
+                    except Exception as e:
+                        logger.warning(f"TC Sitemap: erro sub-sitemap {sub_url}: {e}")
+                if all_pairs:
+                    return filter_and_sort(all_pairs)
 
-            # Sitemap simples → filtrar URLs de eventos
-            urls = []
-            for loc in root.findall("sm:url/sm:loc", ns):
-                url = loc.text.strip()
-                if EVENT_URL_PATTERN.search(url):
-                    urls.append(url)
-            if urls:
-                logger.info(f"TC Sitemap: {len(urls)} URLs de eventos encontradas")
-                return urls
+            # Sitemap simples
+            pairs = extract_urls_with_lastmod(resp.text)
+            if pairs:
+                logger.info(f"TC Sitemap: {len(pairs)} URLs de eventos no sitemap")
+                return filter_and_sort(pairs)
 
         except requests.exceptions.RequestException as e:
             logger.debug(f"TC Sitemap: {sitemap_url} inacessível: {e}")
