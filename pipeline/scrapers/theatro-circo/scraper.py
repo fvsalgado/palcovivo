@@ -45,9 +45,6 @@ SITEMAP_URLS = [
     f"{WEBSITE}/sitemap_index.xml",
     f"{WEBSITE}/wp-sitemap.xml",
     f"{WEBSITE}/event-sitemap.xml",
-    f"{WEBSITE}/event-sitemap2.xml",
-    f"{WEBSITE}/event-sitemap3.xml",
-    f"{WEBSITE}/event_category-sitemap.xml",
 ]
 EVENT_URL_PATTERN = re.compile(r"/event/[^/]+/?$")
 
@@ -220,44 +217,53 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
     def extract_urls_with_lastmod(xml_text: str) -> list[tuple[str, str]]:
-        """Extrai (url, lastmod) de um sitemap XML. lastmod pode ser ''."""
-        try:
-            root = ET.fromstring(xml_text)
-        except ET.ParseError:
-            return []
+        """
+        Extrai (url, lastmod) de um sitemap XML.
+        Usa regex directamente para evitar problemas de namespace.
+        """
+        import re as _re
         results = []
-        for url_el in (root.findall("sm:url", ns) or root.findall("url")):
-            loc = url_el.find("sm:loc", ns) or url_el.find("loc")
-            lmod = url_el.find("sm:lastmod", ns) or url_el.find("lastmod")
-            if loc is not None and loc.text:
-                url = loc.text.strip()
-                lastmod = lmod.text.strip()[:10] if lmod is not None and lmod.text else ""
-                if EVENT_URL_PATTERN.search(url):
+        seen = set()
+
+        loc_re  = _re.compile(r"<loc[^>]*>(https?://[^<]+)</loc>")
+        lmod_re = _re.compile(r"<lastmod[^>]*>([0-9]{4}-[0-9]{2}-[0-9]{2})[^<]*</lastmod>")
+        block_re = _re.compile(r"<url[^>]*>(.*?)</url>", _re.DOTALL)
+
+        # Tentar por blocos <url>
+        for block in block_re.findall(xml_text):
+            loc_m  = loc_re.search(block)
+            lmod_m = lmod_re.search(block)
+            if loc_m:
+                url     = loc_m.group(1).strip()
+                lastmod = lmod_m.group(1) if lmod_m else ""
+                if url not in seen and EVENT_URL_PATTERN.search(url):
                     results.append((url, lastmod))
+                    seen.add(url)
+
+        # Fallback: extrair <loc> directamente se não há blocos <url>
+        if not results:
+            for url in loc_re.findall(xml_text):
+                url = url.strip()
+                if url not in seen and EVENT_URL_PATTERN.search(url):
+                    results.append((url, ""))
+                    seen.add(url)
+
         return results
 
     def filter_and_sort(url_lastmod_pairs: list[tuple[str, str]]) -> list[str]:
         """
-        Filtra URLs por lastmod >= SITEMAP_MIN_LASTMOD.
-        Ordena por lastmod decrescente (mais recentes primeiro).
-        Limita a SITEMAP_MAX_URLS.
+        Ordena URLs por lastmod decrescente (mais recentes primeiro).
+        O Theatro Circo não actualiza lastmod — não filtra por data,
+        apenas ordena para processar os mais recentes primeiro.
+        URLs sem lastmod ficam no fim.
         """
-        # Separar com e sem lastmod
-        with_date = [(u, d) for u, d in url_lastmod_pairs if d >= SITEMAP_MIN_LASTMOD]
-        without_date = [u for u, d in url_lastmod_pairs if not d]
+        with_date    = [(u, d) for u, d in url_lastmod_pairs if d]
+        without_date = [u     for u, d in url_lastmod_pairs if not d]
 
-        # Ordenar os datados por mais recente
         with_date.sort(key=lambda x: x[1], reverse=True)
         sorted_urls = [u for u, _ in with_date] + without_date
 
-        total_raw = len(url_lastmod_pairs)
-        total_filtered = len(sorted_urls)
-        if total_raw > total_filtered:
-            logger.info(
-                f"TC Sitemap: {total_raw} URLs totais → "
-                f"{total_filtered} recentes (>= {SITEMAP_MIN_LASTMOD})"
-            )
-
+        logger.info(f"TC Sitemap: {len(sorted_urls)} URLs de eventos (ordenadas por lastmod)")
         return sorted_urls
 
     for sitemap_url in SITEMAP_URLS:
