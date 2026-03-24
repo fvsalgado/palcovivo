@@ -1,0 +1,373 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-03-filodemo",
+    "source_id": "filodemo",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/filodemo/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Filodemo",
+    "title_raw": "Filodemo",
+    "subtitle": null,
+    "description": "Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos...",
+    "description_short": "Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos"
+    ],
+    "dates": [
+      {
+        "date": "2026-03-27",
+        "time_start": "20:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "Até 2026-04-18"
+      }
+    ],
+    "date_first": "2026-03-27",
+    "date_last": "2026-03-27",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-03-27",
+    "date_close": "2026-04-18",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": "Sessão com Língua Gestual Portuguesa no dia 12 de abril.O espetáculo utiliza luz estroboscópica.",
+      "label_raw": "Sessão com Língua Gestual Portuguesa no dia 12 de abril.O espetáculo utiliza luz estroboscópica.",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": "Comprar Bilhete",
+      "price_raw": "Comprar Bilhete",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "de\nLuís de Camões\nencenação\nPedro Penim\ninterpretação\nAna Coimbra, Ana Tang, Bernardo de Lacerda, Guilherme Arabolaza, João Grosso, José Neves, June João, Mariana Magalhães, Stela, Vítor Silva Costa\nfigurinos\nAldina Jesus\ndesenho de luz\nDaniel Varela\ndesenho de som\nMargarida Pinto\nsonoplastia\nJoão Neves, Rui Dâmaso\nvídeo\nAndré Dinis Carrilho\nassistência de encenação\nJoana Brito Silva\nprodução\nTeatro Nacional D. Maria II\nM/12\nduração\n1h45\nNo âmbito das comemorações dos 500 anos de Luís de Camões\n*5 abr não se realiza o espetáculo"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/filodemo_1920_5832374698c5fd60d32c.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "filodemo|2026-03",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-24T15:44:42.534586+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:4cbb33cfec79cc77",
+      "harmonized_at": "2026-03-24T15:44:58.086405+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-06-prologo",
+    "source_id": "prologo",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/prologo/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Prólogo",
+    "title_raw": "Prólogo",
+    "subtitle": null,
+    "description": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
+    "description_short": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-22",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "Até 2026-07-25"
+      }
+    ],
+    "date_first": "2026-06-22",
+    "date_last": "2026-06-22",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-06-22",
+    "date_close": "2026-07-25",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": true,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": "Acessibilidade",
+      "label_raw": "Acessibilidade",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": ""
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/prologo_1920_93983766469306a833d46c.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "prologo|2026-06",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-24T15:44:48.518342+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:14f5d55b3022b930",
+      "harmonized_at": "2026-03-24T15:44:58.086921+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-terra-nullius",
+    "source_id": "terra-nullius",
+    "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/terra-nullius/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Terra Nullius",
+    "title_raw": "Terra Nullius",
+    "subtitle": null,
+    "description": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
+    "description_short": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Livros e Pensamento"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-30",
+        "time_start": "17:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-30",
+    "date_last": "2026-05-30",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-05-30",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": "Acessibilidade",
+      "label_raw": "Acessibilidade",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Entrada livre\nde\nPaula Diogo\nedição\nTNDM II / Bicho-do-Mato\ncoleção\n«Textos de Teatro»\ncom a presença de\nJoana Gorjão Henriques, Paula Diogo, Pedro Penim"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/lancamento_de_livros_terra_nullius_1920_195062890069316b3c28ede.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "terra-nullius|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-24T15:44:52.500933+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:58efa1ecd6c630c3",
+      "harmonized_at": "2026-03-24T15:44:58.087242+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  }
+]

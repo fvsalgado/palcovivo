@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "id": "tndm",
+  "name": "Tndm",
+  "short_name": null,
+  "legal_name": null,
+  "acronym": null,
+  "aliases": [],
+  "venue_type": "teatro",
+  "venue_subtypes": [],
+  "is_permanent": true,
+  "is_multi_space": false,
+  "address": {
+    "street": null,
+    "number": null,
+    "parish": null,
+    "municipality": "Portugal",
+    "district": "Portugal",
+    "region": null,
+    "country": "PT",
+    "postal_code": "0000-000",
+    "full_address": null,
+    "nuts2": null,
+    "nuts3": null
+  },
+  "geo": {
+    "lat": 0.0,
+    "lng": 0.0,
+    "google_place_id": null
+  },
+  "contact": {
+    "website": "https://www.tndm.pt",
+    "email": null,
+    "phone": null,
+    "box_office_phone": null,
+    "box_office_email": null,
+    "box_office_url": null
+  },
+  "social": {
+    "instagram": null,
+    "facebook": null,
+    "youtube": null,
+    "twitter_x": null,
+    "linkedin": null,
+    "spotify": null
+  },
+  "media": {
+    "logo_svg": null,
+    "logo_png": null,
+    "logo_dark": null,
+    "facade_photo": null,
+    "cover_photo": null,
+    "gallery": [],
+    "photo_credits": null
+  },
+  "spaces": [],
+  "accessibility": {
+    "wheelchair": false,
+    "hearing_loop": false,
+    "audio_description": false,
+    "sign_language_regular": false,
+    "sign_language_occasional": false,
+    "relaxed_performances": false,
+    "accessible_toilets": false,
+    "accessible_parking": false,
+    "braille_materials": false,
+    "notes": null
+  },
+  "transport": {
+    "metro": [],
+    "bus": [],
+    "tram": [],
+    "train": [],
+    "parking": false,
+    "bike_parking": false,
+    "notes": null
+  },
+  "amenities": {
+    "cafe": false,
+    "restaurant": false,
+    "shop": false,
+    "library": false,
+    "cloakroom": false,
+    "outdoor_space": false
+  },
+  "ticketing": {
+    "primary_system": null,
+    "ticketing_url": "https://www.tndm.pt",
+    "has_online_sales": false,
+    "has_box_office": false,
+    "accepts_lisboa_card": false,
+    "discount_programs": [],
+    "notes": null
+  },
+  "data_source": {
+    "scraper_id": "tndm",
+    "api_type": "rest",
+    "api_url": "",
+    "api_requires_auth": false,
+    "scraper_notes": "Ficheiro gerado automaticamente. Completar dados em falta.",
+    "update_frequency": "daily",
+    "last_scraped": "2026-03-24T15:44:58.085358+00:00Z",
+    "is_active": true
+  },
+  "meta": {
+    "created_at": "2026-03-24",
+    "updated_at": "2026-03-24",
+    "created_by": "pipeline-auto",
+    "verified": false,
+    "verified_at": null,
+    "notes": "Criado automaticamente pelo pipeline. Completar manualmente."
+  }
+}
