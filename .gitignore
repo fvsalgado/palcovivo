@@ -10,9 +10,13 @@ build/
 venv/
 env/
 
-# Cache e logs locais (não versionar)
+# Cache local — não versionar (dados raw temporários)
 data/cache/
 !data/cache/.gitkeep
+
+# Logs — versionar latest.json e logs datados para notificações funcionarem
+# data/logs/ — NÃO ignorar
+!data/logs/
 
 # Node / Astro (frontend)
 node_modules/
