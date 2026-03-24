@@ -36,7 +36,12 @@ jobs:
       - name: Instalar dependências
         run: |
           pip install -r requirements.txt
-
+          
+      - name: Debug imports
+        run: |
+          python -c "from pipeline.core.harmonizer import harmonize_event; print('harmonizer OK')"
+          python -c "from pipeline.core import harmonizer; import inspect, ast; src=inspect.getsource(harmonizer); print([l for l in src.split('\n') if 'datetime' in l][:3])"
+          
       - name: Correr pipeline
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
