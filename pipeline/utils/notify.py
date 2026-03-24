@@ -250,5 +250,7 @@ if __name__ == "__main__":
             report = json.load(f)
         notify(report)
     else:
-        print("Sem relatório latest.json para enviar", file=sys.stderr)
-        sys.exit(1)
+        # Sem relatório — pipeline pode ter falhado antes de o escrever
+        # Não falhar o job por isso (exit 0)
+        print("Aviso: sem relatório latest.json — pipeline pode não ter concluído")
+        sys.exit(0)
