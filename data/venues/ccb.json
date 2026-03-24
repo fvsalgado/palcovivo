@@ -5,9 +5,18 @@
   "short_name": "CCB",
   "legal_name": "Fundação Centro Cultural de Belém",
   "acronym": "CCB",
-  "aliases": ["Fundação CCB", "FCCB", "Centro Cultural de Belém"],
+  "aliases": [
+    "Fundação CCB",
+    "FCCB",
+    "Centro Cultural de Belém"
+  ],
   "venue_type": "centro-cultural",
-  "venue_subtypes": ["teatro", "museu", "sala-de-concertos", "espaco-exposicoes"],
+  "venue_subtypes": [
+    "teatro",
+    "museu",
+    "sala-de-concertos",
+    "espaco-exposicoes"
+  ],
   "is_permanent": true,
   "is_multi_space": true,
   "address": {
@@ -117,9 +126,17 @@
   },
   "transport": {
     "metro": [],
-    "bus": ["728", "714", "751"],
-    "tram": ["15E"],
-    "train": ["Linha de Cascais — Belém"],
+    "bus": [
+      "728",
+      "714",
+      "751"
+    ],
+    "tram": [
+      "15E"
+    ],
+    "train": [
+      "Linha de Cascais — Belém"
+    ],
     "parking": true,
     "bike_parking": true,
     "notes": "Estação de comboio de Belém a 5 min a pé. Estacionamento junto ao jardim."
@@ -138,7 +155,11 @@
     "has_online_sales": true,
     "has_box_office": true,
     "accepts_lisboa_card": true,
-    "discount_programs": ["Lisboa Card", "Cartão Jovem", "FNAC"],
+    "discount_programs": [
+      "Lisboa Card",
+      "Cartão Jovem",
+      "FNAC"
+    ],
     "notes": null
   },
   "data_source": {
@@ -148,7 +169,7 @@
     "api_requires_auth": false,
     "scraper_notes": "The Events Calendar REST API. Paginação via ?page=N&per_page=50&start_date=YYYY-MM-DD+HH:MM:SS. Campos principais: id, title, description, start_date, end_date, cost, url, image, categories, tags, venue.",
     "update_frequency": "daily",
-    "last_scraped": null,
+    "last_scraped": "2026-03-24T12:04:03.389050+00:00Z",
     "is_active": true
   },
   "meta": {
