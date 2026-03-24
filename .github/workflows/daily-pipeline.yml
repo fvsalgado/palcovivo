@@ -36,10 +36,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Debug pipeline
-        run: |
-          python debug_pipeline.py
-
       - name: Correr pipeline
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
