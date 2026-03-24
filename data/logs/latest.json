@@ -1,0 +1,22 @@
+{
+  "run_at": "2026-03-24T12:11:30.189830+00:00Z",
+  "duration_seconds": 204.7,
+  "summary": {
+    "venues_processed": 1,
+    "total_scraped": 789,
+    "total_valid": 789,
+    "total_invalid": 0,
+    "total_after_dedup": 134,
+    "total_errors": 0
+  },
+  "venues": [
+    {
+      "venue_id": "ccb",
+      "venue_name": "Centro Cultural de Belém",
+      "scraped": 789,
+      "valid": 789,
+      "invalid": 0,
+      "errors": []
+    }
+  ]
+}
