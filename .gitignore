@@ -12,8 +12,6 @@ env/
 
 # Cache e logs locais (não versionar)
 data/cache/
-data/logs/
-!data/logs/.gitkeep
 !data/cache/.gitkeep
 
 # Node / Astro (frontend)
