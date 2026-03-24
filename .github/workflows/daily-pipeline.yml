@@ -2,7 +2,6 @@ name: Pipeline Diário
 
 on:
   schedule:
-    # Corre às 06:00 UTC todos os dias (07:00 Lisboa inverno, 07:00 Lisboa verão)
     - cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
@@ -13,7 +12,7 @@ on:
         type: boolean
 
 permissions:
-  contents: write   # Necessário para fazer commit dos JSONs gerados
+  contents: write
 
 jobs:
   pipeline:
@@ -36,13 +35,11 @@ jobs:
       - name: Instalar dependências
         run: |
           pip install -r requirements.txt
-          
-     - name: Debug imports
+
+      - name: Debug imports
         run: |
           python -c "
 import traceback
-import logging
-logging.basicConfig(level=logging.DEBUG)
 from pipeline.core.cache import save_cache
 from pipeline.scrapers.ccb.scraper import run as ccb_run
 try:
@@ -71,7 +68,7 @@ except Exception as e:
           python -m pipeline.run $FORCE
 
       - name: Enviar notificações
-        if: always()  # Envia mesmo se o pipeline falhar parcialmente
+        if: always()
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -86,7 +83,6 @@ except Exception as e:
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/
-          # Só faz commit se houver alterações
           git diff --staged --quiet || git commit -m "🤖 Pipeline: $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
