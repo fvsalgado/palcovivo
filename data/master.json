@@ -1,8 +1,131 @@
 {
-  "generated_at": "2026-03-24T16:00:58.595513+00:00Z",
-  "total_events": 138,
+  "generated_at": "2026-03-24T17:54:57.922752+00:00Z",
+  "total_events": 141,
   "total_venues": 2,
   "events": [
+    {
+      "schema_version": "1.0",
+      "id": "tndm-2025-09-oficinas-de-teatro",
+      "source_id": "oficinas-de-teatro",
+      "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/oficinas-de-teatro/",
+      "venue_id": "tndm",
+      "space_id": null,
+      "title": "Oficinas de Teatro",
+      "title_raw": "Oficinas de Teatro",
+      "subtitle": null,
+      "description": "Como se cria um grupo de teatro na escola?Esse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.O foco é o teatro escolar. ...",
+      "description_short": "Como se cria um grupo de teatro na escola?Esse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.O foco é o teatro escolar. ...",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Oficinas e Formação"
+      ],
+      "dates": [
+        {
+          "date": "2025-09-01",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2025-09-01",
+      "date_last": "2025-09-01",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2025-09-01",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "ARRAIOLOS\nartista\nInês Leite (TEatroensaio)\nTORRÃO, ALCÁCER DO SAL\nartista\nMiguel Magalhães\nparceria com\nPlano Nacional das Artes\nparceiros locais\nCâmara Municipal de Alcácer do Sal e Convento da Terra; Câmara Municipal de Arraiolos\ndirigido a\nalunos dos 2.º e 3.º ciclos"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/oficinas_de_teatro_2026_1920_4122637269309b060312a.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "oficinas-de-teatro|2025-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "tndm"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-24T17:54:46.676227+00:00",
+        "scraper_id": "tndm",
+        "raw_data_hash": "sha256:bb2be0862157ed84",
+        "harmonized_at": "2026-03-24T17:54:57.914723+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
     {
       "schema_version": "1.0",
       "id": "ccb-2026-03-uma-deriva-atlantica",
@@ -174,10 +297,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205154+00:00",
+        "scraped_at": "2026-03-24T17:23:09.970379+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ae46974a827a7604",
-        "harmonized_at": "2026-03-24T16:00:17.275527+00:00Z",
+        "raw_data_hash": "sha256:70d7372bcbf26df1",
+        "harmonized_at": "2026-03-24T17:23:10.039605+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -358,10 +481,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205419+00:00",
+        "scraped_at": "2026-03-24T17:23:09.970662+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1e08f65235f63dee",
-        "harmonized_at": "2026-03-24T16:00:17.282375+00:00Z",
+        "raw_data_hash": "sha256:ef4a7aca8f55e13b",
+        "harmonized_at": "2026-03-24T17:23:10.053663+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -480,10 +603,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205512+00:00",
+        "scraped_at": "2026-03-24T17:23:09.970755+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f57033505bf172e4",
-        "harmonized_at": "2026-03-24T16:00:17.283904+00:00Z",
+        "raw_data_hash": "sha256:7a810386d76b1153",
+        "harmonized_at": "2026-03-24T17:23:10.055219+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -634,10 +757,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205681+00:00",
+        "scraped_at": "2026-03-24T17:23:09.970923+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:06c4f324918d0056",
-        "harmonized_at": "2026-03-24T16:00:17.287258+00:00Z",
+        "raw_data_hash": "sha256:1ba37d52b5ae95e6",
+        "harmonized_at": "2026-03-24T17:23:10.058548+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -776,10 +899,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205826+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971069+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fad1e4f431f28c84",
-        "harmonized_at": "2026-03-24T16:00:17.290187+00:00Z",
+        "raw_data_hash": "sha256:ce4ddd3be4001fc3",
+        "harmonized_at": "2026-03-24T17:23:10.061538+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -908,10 +1031,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205841+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971090+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c5704d13818a629f",
-        "harmonized_at": "2026-03-24T16:00:17.290306+00:00Z",
+        "raw_data_hash": "sha256:d7491b02a5cc5783",
+        "harmonized_at": "2026-03-24T17:23:10.061671+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1038,10 +1161,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205873+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971116+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cf35b75dfde9356d",
-        "harmonized_at": "2026-03-24T16:00:17.290637+00:00Z",
+        "raw_data_hash": "sha256:c03664d9f40b5210",
+        "harmonized_at": "2026-03-24T17:23:10.062010+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1165,10 +1288,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.205910+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971152+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9d790258f2404ce2",
-        "harmonized_at": "2026-03-24T16:00:17.291324+00:00Z",
+        "raw_data_hash": "sha256:6b5d50412754108a",
+        "harmonized_at": "2026-03-24T17:23:10.062712+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1306,10 +1429,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206089+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971318+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:51ffe3180a0b98a2",
-        "harmonized_at": "2026-03-24T16:00:17.294652+00:00Z",
+        "raw_data_hash": "sha256:8993d702a71857d5",
+        "harmonized_at": "2026-03-24T17:23:10.066106+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1443,10 +1566,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206141+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971366+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f53043fda6787e98",
-        "harmonized_at": "2026-03-24T16:00:17.295108+00:00Z",
+        "raw_data_hash": "sha256:2a415175923baec0",
+        "harmonized_at": "2026-03-24T17:23:10.066569+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1483,15 +1606,15 @@
           "duration_minutes": null,
           "is_cancelled": false,
           "is_sold_out": false,
-          "notes": "Até 2026-04-18"
+          "notes": null
         }
       ],
       "date_first": "2026-03-27",
       "date_last": "2026-03-27",
       "total_sessions": 1,
-      "is_ongoing": true,
+      "is_ongoing": false,
       "date_open": "2026-03-27",
-      "date_close": "2026-04-18",
+      "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
       "is_national_premiere": false,
@@ -1505,8 +1628,8 @@
       "series_name": null,
       "series_edition": null,
       "audience": {
-        "label": "Sessão com Língua Gestual Portuguesa no dia 12 de abril.O espetáculo utiliza luz estroboscópica.",
-        "label_raw": "Sessão com Língua Gestual Portuguesa no dia 12 de abril.O espetáculo utiliza luz estroboscópica.",
+        "label": null,
+        "label_raw": "",
         "age_min": null,
         "age_max": null,
         "is_family": false,
@@ -1515,11 +1638,11 @@
         "notes": null
       },
       "price": {
-        "is_free": false,
+        "is_free": true,
         "price_min": null,
         "price_max": null,
-        "price_display": "Comprar Bilhete",
-        "price_raw": "Comprar Bilhete",
+        "price_display": "Entrada livre",
+        "price_raw": "Entrada livre",
         "has_discounts": false,
         "discount_notes": null,
         "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
@@ -1568,10 +1691,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:43.486158+00:00",
+        "scraped_at": "2026-03-24T17:54:48.617261+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:9c966e7d94fb4a57",
-        "harmonized_at": "2026-03-24T16:00:58.587276+00:00Z",
+        "raw_data_hash": "sha256:7f1038f7b483fb20",
+        "harmonized_at": "2026-03-24T17:54:57.915001+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1707,10 +1830,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206197+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971423+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:09a3bdfc3037beb9",
-        "harmonized_at": "2026-03-24T16:00:17.296051+00:00Z",
+        "raw_data_hash": "sha256:2f2cfc4e07baa598",
+        "harmonized_at": "2026-03-24T17:23:10.067513+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1833,10 +1956,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206280+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971504+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f7dbd4f86e846c24",
-        "harmonized_at": "2026-03-24T16:00:17.297678+00:00Z",
+        "raw_data_hash": "sha256:f14bee5a160d9d84",
+        "harmonized_at": "2026-03-24T17:23:10.069171+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1959,10 +2082,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206349+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971586+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7195fa2cfe119845",
-        "harmonized_at": "2026-03-24T16:00:17.299283+00:00Z",
+        "raw_data_hash": "sha256:6464dff8b92dae3a",
+        "harmonized_at": "2026-03-24T17:23:10.070784+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2086,10 +2209,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206496+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971733+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c14ee930a0b44a82",
-        "harmonized_at": "2026-03-24T16:00:17.302555+00:00Z",
+        "raw_data_hash": "sha256:eae1b1fd3081f699",
+        "harmonized_at": "2026-03-24T17:23:10.074060+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2219,10 +2342,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206541+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971774+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ac813255500063c1",
-        "harmonized_at": "2026-03-24T16:00:17.303382+00:00Z",
+        "raw_data_hash": "sha256:d6e95305b96f7742",
+        "harmonized_at": "2026-03-24T17:23:10.074882+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2348,10 +2471,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206570+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971806+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8c350a65d2590180",
-        "harmonized_at": "2026-03-24T16:00:17.303906+00:00Z",
+        "raw_data_hash": "sha256:795e3e57a09eed2b",
+        "harmonized_at": "2026-03-24T17:23:10.075410+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2472,10 +2595,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206643+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971877+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1efbce56665ea989",
-        "harmonized_at": "2026-03-24T16:00:17.304683+00:00Z",
+        "raw_data_hash": "sha256:6ac35f17f340a37f",
+        "harmonized_at": "2026-03-24T17:23:10.076242+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2600,10 +2723,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206676+00:00",
+        "scraped_at": "2026-03-24T17:23:09.971909+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d794f7868378fb18",
-        "harmonized_at": "2026-03-24T16:00:17.305357+00:00Z",
+        "raw_data_hash": "sha256:3e7d8d640bb6b6f0",
+        "harmonized_at": "2026-03-24T17:23:10.076935+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2729,10 +2852,256 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206779+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972014+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:244d66a8be6e3e3b",
-        "harmonized_at": "2026-03-24T16:00:17.307143+00:00Z",
+        "raw_data_hash": "sha256:a17d4ea3a89d83a5",
+        "harmonized_at": "2026-03-24T17:23:10.078734+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "tndm-2026-03-cabe-mais-um",
+      "source_id": "cabe-mais-um",
+      "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/cabe-mais-um/",
+      "venue_id": "tndm",
+      "space_id": "sala-estudio",
+      "title": "Cabe mais um?",
+      "title_raw": "Cabe mais um?",
+      "subtitle": null,
+      "description": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um...",
+      "description_short": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um...",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Espetáculos"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "11:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-03-28",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+      },
+      "accessibility": {
+        "has_sign_language": true,
+        "has_audio_description": true,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "texto\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação\nBeatriz Jacinto, Mafalda Cardoso Pereira, Mariana Fonseca\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nLeonor Atalaia\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Coimbra, Ílhavo, Leiria, Lousã, Ponta Delgada, Santarém, Tomar, Tondela e Vale de Cambra.\n.\n.\nInscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/cabe_mais_um_1920_18501012016818a39a0211e.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "cabe-mais-um|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "tndm"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-24T17:54:50.558034+00:00",
+        "scraper_id": "tndm",
+        "raw_data_hash": "sha256:4bd21c76b671b57f",
+        "harmonized_at": "2026-03-24T17:54:57.915331+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "tndm-2026-03-nao-se-pode-nao-se-pode",
+      "source_id": "nao-se-pode-nao-se-pode",
+      "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/nao-se-pode-nao-se-pode/",
+      "venue_id": "tndm",
+      "space_id": "sala-estudio",
+      "title": "Não se pode! Não se pode!",
+      "title_raw": "Não se pode! Não se pode!",
+      "subtitle": null,
+      "description": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio jun...",
+      "description_short": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio jun...",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Espetáculos"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "11:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-03-28",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+      },
+      "accessibility": {
+        "has_sign_language": true,
+        "has_audio_description": true,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "textos\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação em  Aljezur, Lisboa (17-21 jun), Monchique, Ponta Delgada\nBerna Huidobro, Guilherme Félix, Inês Cardoso\ninterpretação em Águeda, Fafe, Lamego, Lisboa (3-7 jun), Paredes de Coura, Penafiel, Seia, Viana do Castelo e Vila Real\nMário Alberto Pereira, Marta Garcia Cruz, Sofia Pereira\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nNelda Magalhães, Rita Silva\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Águeda, Barcelos, Bragança, Évora, Fafe, Faro, Lagoa, Mafra, Paredes, Paredes de Coura, Penafiel, Ponta Delgada, Viana do Castelo e Vila Real.\n* Inscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/nao_se_pode_nao_se_pode_1920_345176296818a2c4c2384.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "nao-se-pode-nao-se-pode|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "tndm"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-24T17:54:52.529780+00:00",
+        "scraper_id": "tndm",
+        "raw_data_hash": "sha256:ce51a4ac7f011dcb",
+        "harmonized_at": "2026-03-24T17:54:57.915518+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2858,10 +3227,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.206986+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972210+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:886598c9404e8165",
-        "harmonized_at": "2026-03-24T16:00:17.311093+00:00Z",
+        "raw_data_hash": "sha256:847b1e952b64a888",
+        "harmonized_at": "2026-03-24T17:23:10.082678+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2986,10 +3355,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207012+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972234+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a78d66c99e2ca4f3",
-        "harmonized_at": "2026-03-24T16:00:17.311507+00:00Z",
+        "raw_data_hash": "sha256:c5497e79b485e3f0",
+        "harmonized_at": "2026-03-24T17:23:10.083138+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3113,10 +3482,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207042+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972266+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5ddfa8062f087914",
-        "harmonized_at": "2026-03-24T16:00:17.312022+00:00Z",
+        "raw_data_hash": "sha256:61f275d41bf4ad3a",
+        "harmonized_at": "2026-03-24T17:23:10.083659+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3251,10 +3620,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207150+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972370+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:93c3d4c24e7717df",
-        "harmonized_at": "2026-03-24T16:00:17.315062+00:00Z",
+        "raw_data_hash": "sha256:96aac63d72a15df6",
+        "harmonized_at": "2026-03-24T17:23:10.086647+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3386,10 +3755,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207221+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972440+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7f65257a7a7615b7",
-        "harmonized_at": "2026-03-24T16:00:17.316820+00:00Z",
+        "raw_data_hash": "sha256:af0339288fc885c3",
+        "harmonized_at": "2026-03-24T17:23:10.088536+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3516,10 +3885,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207244+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972464+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2d928a95fc2f6ff8",
-        "harmonized_at": "2026-03-24T16:00:17.317222+00:00Z",
+        "raw_data_hash": "sha256:4a8e417da6fcae47",
+        "harmonized_at": "2026-03-24T17:23:10.088952+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3643,10 +4012,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207261+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972481+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:89acd598f6b380fe",
-        "harmonized_at": "2026-03-24T16:00:17.317448+00:00Z",
+        "raw_data_hash": "sha256:99cda71289c2e512",
+        "harmonized_at": "2026-03-24T17:23:10.089178+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3771,10 +4140,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207284+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972503+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7c4308c763ccb980",
-        "harmonized_at": "2026-03-24T16:00:17.317793+00:00Z",
+        "raw_data_hash": "sha256:d9da13ae0b903f06",
+        "harmonized_at": "2026-03-24T17:23:10.089523+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3900,10 +4269,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207364+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972591+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:67df744e9f2aa644",
-        "harmonized_at": "2026-03-24T16:00:17.319658+00:00Z",
+        "raw_data_hash": "sha256:96b96594dcfe94ca",
+        "harmonized_at": "2026-03-24T17:23:10.091410+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4031,10 +4400,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207382+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972608+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:750f71bc45665f9d",
-        "harmonized_at": "2026-03-24T16:00:17.319822+00:00Z",
+        "raw_data_hash": "sha256:5450896a0ffb8d71",
+        "harmonized_at": "2026-03-24T17:23:10.091592+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4160,10 +4529,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207403+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972632+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ee8c57ac89c16195",
-        "harmonized_at": "2026-03-24T16:00:17.320153+00:00Z",
+        "raw_data_hash": "sha256:9a4c2d108b001e9d",
+        "harmonized_at": "2026-03-24T17:23:10.091908+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4289,10 +4658,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207423+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972654+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:672b4ec989ffba72",
-        "harmonized_at": "2026-03-24T16:00:17.320459+00:00Z",
+        "raw_data_hash": "sha256:054d4e9e7f73a4a8",
+        "harmonized_at": "2026-03-24T17:23:10.092215+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4420,10 +4789,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207454+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972683+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fff1e02b9d4b0d9a",
-        "harmonized_at": "2026-03-24T16:00:17.321004+00:00Z",
+        "raw_data_hash": "sha256:1c7b650ed08ba29e",
+        "harmonized_at": "2026-03-24T17:23:10.092765+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4549,10 +4918,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207611+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972839+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5f5f197f933ecd05",
-        "harmonized_at": "2026-03-24T16:00:17.324161+00:00Z",
+        "raw_data_hash": "sha256:e62248d0bec9360f",
+        "harmonized_at": "2026-03-24T17:23:10.095894+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4678,10 +5047,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207638+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972865+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3e4286213ab9ce45",
-        "harmonized_at": "2026-03-24T16:00:17.324408+00:00Z",
+        "raw_data_hash": "sha256:b93b788bf72df27b",
+        "harmonized_at": "2026-03-24T17:23:10.096141+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4802,10 +5171,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207659+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972886+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8af8cf909c2a5f9b",
-        "harmonized_at": "2026-03-24T16:00:17.324577+00:00Z",
+        "raw_data_hash": "sha256:2713b36f117933c2",
+        "harmonized_at": "2026-03-24T17:23:10.096312+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5155,10 +5524,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207679+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972907+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a0b30304f75ad43f",
-        "harmonized_at": "2026-03-24T16:00:17.324862+00:00Z",
+        "raw_data_hash": "sha256:35dc6722d921622c",
+        "harmonized_at": "2026-03-24T17:23:10.096614+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5365,10 +5734,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207696+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972921+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d65fc57824e3e8c6",
-        "harmonized_at": "2026-03-24T16:00:17.325046+00:00Z",
+        "raw_data_hash": "sha256:426d442dee0671c5",
+        "harmonized_at": "2026-03-24T17:23:10.096785+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5719,10 +6088,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207757+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972982+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:91de99359f3c2e50",
-        "harmonized_at": "2026-03-24T16:00:17.326720+00:00Z",
+        "raw_data_hash": "sha256:bca306480ecbb553",
+        "harmonized_at": "2026-03-24T17:23:10.098487+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6075,10 +6444,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207774+00:00",
+        "scraped_at": "2026-03-24T17:23:09.972999+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:78d7024c87b65d47",
-        "harmonized_at": "2026-03-24T16:00:17.326893+00:00Z",
+        "raw_data_hash": "sha256:eeb6e0336d22adda",
+        "harmonized_at": "2026-03-24T17:23:10.098671+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6393,10 +6762,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207795+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973019+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b7997c34adb58478",
-        "harmonized_at": "2026-03-24T16:00:17.327227+00:00Z",
+        "raw_data_hash": "sha256:dc049156b3458c83",
+        "harmonized_at": "2026-03-24T17:23:10.098988+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6747,10 +7116,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207816+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973040+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:61e2fe94a3b36de0",
-        "harmonized_at": "2026-03-24T16:00:17.327529+00:00Z",
+        "raw_data_hash": "sha256:2ec5520c4bd4eab5",
+        "harmonized_at": "2026-03-24T17:23:10.099294+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7100,10 +7469,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207846+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973070+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a75e78e752b1bd04",
-        "harmonized_at": "2026-03-24T16:00:17.328060+00:00Z",
+        "raw_data_hash": "sha256:288059965915cafe",
+        "harmonized_at": "2026-03-24T17:23:10.099843+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7455,10 +7824,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207897+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973122+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:07fd771df5f640a4",
-        "harmonized_at": "2026-03-24T16:00:17.329227+00:00Z",
+        "raw_data_hash": "sha256:1d8e92c995a49374",
+        "harmonized_at": "2026-03-24T17:23:10.101000+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7584,10 +7953,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.207984+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973193+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:02b3fa93ea2506e6",
-        "harmonized_at": "2026-03-24T16:00:17.330738+00:00Z",
+        "raw_data_hash": "sha256:6125cc6961fad287",
+        "harmonized_at": "2026-03-24T17:23:10.102526+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7938,10 +8307,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.208010+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973217+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a81d1e7590dcf2ba",
-        "harmonized_at": "2026-03-24T16:00:17.331174+00:00Z",
+        "raw_data_hash": "sha256:749fa98b229f19d8",
+        "harmonized_at": "2026-03-24T17:23:10.102971+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8076,10 +8445,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.208025+00:00",
+        "scraped_at": "2026-03-24T17:23:09.973233+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4f08714f03f32071",
-        "harmonized_at": "2026-03-24T16:00:17.331342+00:00Z",
+        "raw_data_hash": "sha256:621a5baf0c07a24e",
+        "harmonized_at": "2026-03-24T17:23:10.103142+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8232,10 +8601,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.209576+00:00",
+        "scraped_at": "2026-03-24T17:23:09.974798+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1838b18223edce5f",
-        "harmonized_at": "2026-03-24T16:00:17.363444+00:00Z",
+        "raw_data_hash": "sha256:ba8afd72b2fc7c5d",
+        "harmonized_at": "2026-03-24T17:23:10.135479+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8364,10 +8733,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210508+00:00",
+        "scraped_at": "2026-03-24T17:23:09.975728+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:929316df29dbcac5",
-        "harmonized_at": "2026-03-24T16:00:17.381768+00:00Z",
+        "raw_data_hash": "sha256:53680773f841e065",
+        "harmonized_at": "2026-03-24T17:23:10.154101+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8495,10 +8864,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210543+00:00",
+        "scraped_at": "2026-03-24T17:23:09.975764+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:de96737523ee3529",
-        "harmonized_at": "2026-03-24T16:00:17.382414+00:00Z",
+        "raw_data_hash": "sha256:5e62a45d13bd3b24",
+        "harmonized_at": "2026-03-24T17:23:10.154741+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8646,10 +9015,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210796+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976013+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:542dd0f9c09fa1dc",
-        "harmonized_at": "2026-03-24T16:00:17.387308+00:00Z",
+        "raw_data_hash": "sha256:ac7bc6d10851be46",
+        "harmonized_at": "2026-03-24T17:23:10.159655+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8773,10 +9142,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210847+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976065+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:33ad9fcd9e5c0377",
-        "harmonized_at": "2026-03-24T16:00:17.388025+00:00Z",
+        "raw_data_hash": "sha256:93175a88f3cd1e55",
+        "harmonized_at": "2026-03-24T17:23:10.160366+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8904,10 +9273,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210872+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976090+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2d1c9c1506effb9e",
-        "harmonized_at": "2026-03-24T16:00:17.388479+00:00Z",
+        "raw_data_hash": "sha256:041b4aaa8ff24c06",
+        "harmonized_at": "2026-03-24T17:23:10.160836+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9034,10 +9403,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210900+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976118+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e14a2558b026a407",
-        "harmonized_at": "2026-03-24T16:00:17.389009+00:00Z",
+        "raw_data_hash": "sha256:8ad6c9c84bad9fcf",
+        "harmonized_at": "2026-03-24T17:23:10.161349+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9161,10 +9530,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210958+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976167+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0fd2d40a95e4dd08",
-        "harmonized_at": "2026-03-24T16:00:17.389880+00:00Z",
+        "raw_data_hash": "sha256:f49cd12ffbf5d832",
+        "harmonized_at": "2026-03-24T17:23:10.162224+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9281,10 +9650,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.210997+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976204+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6e0cb7a5f26cc6c5",
-        "harmonized_at": "2026-03-24T16:00:17.390268+00:00Z",
+        "raw_data_hash": "sha256:56cea16eb1c1a012",
+        "harmonized_at": "2026-03-24T17:23:10.162612+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9419,10 +9788,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.211213+00:00",
+        "scraped_at": "2026-03-24T17:23:09.976420+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1f1e99014d25d886",
-        "harmonized_at": "2026-03-24T16:00:17.394514+00:00Z",
+        "raw_data_hash": "sha256:9093ffb10efca16a",
+        "harmonized_at": "2026-03-24T17:23:10.166803+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9547,10 +9916,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.212135+00:00",
+        "scraped_at": "2026-03-24T17:23:09.977336+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bc538a983d3f61c2",
-        "harmonized_at": "2026-03-24T16:00:17.412146+00:00Z",
+        "raw_data_hash": "sha256:c1f5b4c0ca4a0176",
+        "harmonized_at": "2026-03-24T17:23:10.192210+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9680,10 +10049,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.212388+00:00",
+        "scraped_at": "2026-03-24T17:23:09.977598+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:de82ed8d9497a3d2",
-        "harmonized_at": "2026-03-24T16:00:17.417308+00:00Z",
+        "raw_data_hash": "sha256:f7727d6bca459b52",
+        "harmonized_at": "2026-03-24T17:23:10.197345+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9810,10 +10179,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.212601+00:00",
+        "scraped_at": "2026-03-24T17:23:09.977809+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2fbb683de184fa66",
-        "harmonized_at": "2026-03-24T16:00:17.421693+00:00Z",
+        "raw_data_hash": "sha256:b9ed56dde3ef7bee",
+        "harmonized_at": "2026-03-24T17:23:10.201664+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9936,10 +10305,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213040+00:00",
+        "scraped_at": "2026-03-24T17:23:09.978237+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:567669294d8d1809",
-        "harmonized_at": "2026-03-24T16:00:17.430680+00:00Z",
+        "raw_data_hash": "sha256:ab8be6045321eb3a",
+        "harmonized_at": "2026-03-24T17:23:10.210541+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10061,10 +10430,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213066+00:00",
+        "scraped_at": "2026-03-24T17:23:09.978263+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9ac039b82f566cf6",
-        "harmonized_at": "2026-03-24T16:00:17.431654+00:00Z",
+        "raw_data_hash": "sha256:4d60ec6dd3adcd1f",
+        "harmonized_at": "2026-03-24T17:23:10.211698+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10209,10 +10578,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213346+00:00",
+        "scraped_at": "2026-03-24T17:23:09.978539+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2f45a7bdfb136305",
-        "harmonized_at": "2026-03-24T16:00:17.437278+00:00Z",
+        "raw_data_hash": "sha256:91a38be051d37c6e",
+        "harmonized_at": "2026-03-24T17:23:10.217254+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10331,10 +10700,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213563+00:00",
+        "scraped_at": "2026-03-24T17:23:09.978774+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6f26edfc021020d1",
-        "harmonized_at": "2026-03-24T16:00:17.441833+00:00Z",
+        "raw_data_hash": "sha256:f3a322c6c3487034",
+        "harmonized_at": "2026-03-24T17:23:10.221729+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10459,10 +10828,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213849+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979059+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:373bdd3f39065c9c",
-        "harmonized_at": "2026-03-24T16:00:17.447733+00:00Z",
+        "raw_data_hash": "sha256:c8ed09940f9a23f1",
+        "harmonized_at": "2026-03-24T17:23:10.227604+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10596,10 +10965,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.213908+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979118+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b3c099b341df7ca2",
-        "harmonized_at": "2026-03-24T16:00:17.448663+00:00Z",
+        "raw_data_hash": "sha256:779a85e863fa00d8",
+        "harmonized_at": "2026-03-24T17:23:10.228517+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10728,10 +11097,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214167+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979360+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:91592de61a11b2bd",
-        "harmonized_at": "2026-03-24T16:00:17.453732+00:00Z",
+        "raw_data_hash": "sha256:32d86d4f731700c4",
+        "harmonized_at": "2026-03-24T17:23:10.233487+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10857,10 +11226,133 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214185+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979380+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:acaf7e65c372e18d",
-        "harmonized_at": "2026-03-24T16:00:17.454081+00:00Z",
+        "raw_data_hash": "sha256:3f6012a2ee156110",
+        "harmonized_at": "2026-03-24T17:23:10.233837+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "tndm-2026-04-ciclo-de-formacao",
+      "source_id": "ciclo-de-formacao",
+      "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/ciclo-de-formacao/",
+      "venue_id": "tndm",
+      "space_id": null,
+      "title": "Ciclo de Formação",
+      "title_raw": "Ciclo de Formação",
+      "subtitle": null,
+      "description": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com difere...",
+      "description_short": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com difere...",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Oficinas e Formação"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-27",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-27",
+      "date_last": "2026-04-27",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-04-27",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "> inscrições abertas até 31 de mar\ndirigido a\nprofissionais das artes performativas, artes plásticas, profissionais nas áreas de costura, carpintaria e som\nformação de frequência gratuita mediante inscrição\nperíodo para inscrições\n16 fev a 31 mar\ncarga horária por módulo\n6 a 12 horas\nnúmero máximo de participantes por módulo\n15 pessoas\ncondições de inscrição\nenvio de nota biográfica abreviada e carta de motivação (máx 800 caracteres), em formato escrito, vídeo ou outro\n> Não é obrigatória a participação nos três módulos. No momento da inscrição deve ser indicado qual o módulo que se pretende frequentar, podendo a inscrição ser realizada para mais que um módulo.\nIniciativa do Teatro Nacional D. Maria II e da Fundação ”la Caixa”, em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/ciclo_de_formacao_2026_1920_206465145469309c792a213.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ciclo-de-formacao|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "tndm"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-24T17:54:54.406402+00:00",
+        "scraper_id": "tndm",
+        "raw_data_hash": "sha256:bd091a432ea38481",
+        "harmonized_at": "2026-03-24T17:54:57.915754+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10981,10 +11473,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214617+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979825+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1561819bec020719",
-        "harmonized_at": "2026-03-24T16:00:17.463266+00:00Z",
+        "raw_data_hash": "sha256:c5ca9ea270fc953e",
+        "harmonized_at": "2026-03-24T17:23:10.242942+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11116,10 +11608,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214637+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979845+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c5ff552b63d8c0fa",
-        "harmonized_at": "2026-03-24T16:00:17.463521+00:00Z",
+        "raw_data_hash": "sha256:f3901094eb6b73a2",
+        "harmonized_at": "2026-03-24T17:23:10.243191+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11242,10 +11734,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214780+00:00",
+        "scraped_at": "2026-03-24T17:23:09.979981+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:95ca236dc1bf1b0c",
-        "harmonized_at": "2026-03-24T16:00:17.466357+00:00Z",
+        "raw_data_hash": "sha256:299751f371131395",
+        "harmonized_at": "2026-03-24T17:23:10.246023+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11372,10 +11864,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214890+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980088+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3efeba1277e51f39",
-        "harmonized_at": "2026-03-24T16:00:17.468714+00:00Z",
+        "raw_data_hash": "sha256:f15191ec0dbc297d",
+        "harmonized_at": "2026-03-24T17:23:10.248365+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11496,10 +11988,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214922+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980119+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:56bf2f64e5376404",
-        "harmonized_at": "2026-03-24T16:00:17.469427+00:00Z",
+        "raw_data_hash": "sha256:7ccf719c749d87c3",
+        "harmonized_at": "2026-03-24T17:23:10.249055+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11858,10 +12350,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214949+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980141+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9a3ac1fcaeee3d3a",
-        "harmonized_at": "2026-03-24T16:00:17.469711+00:00Z",
+        "raw_data_hash": "sha256:5d2c400130010385",
+        "harmonized_at": "2026-03-24T17:23:10.249337+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12221,10 +12713,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214961+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980152+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3b4933308203e090",
-        "harmonized_at": "2026-03-24T16:00:17.469874+00:00Z",
+        "raw_data_hash": "sha256:ff18063d65a05c32",
+        "harmonized_at": "2026-03-24T17:23:10.249499+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12586,10 +13078,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214973+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980164+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:91abcf8e6bd53b00",
-        "harmonized_at": "2026-03-24T16:00:17.470046+00:00Z",
+        "raw_data_hash": "sha256:92d727b620ff066e",
+        "harmonized_at": "2026-03-24T17:23:10.249669+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12913,10 +13405,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.214992+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980182+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b5ccf59d45021f9e",
-        "harmonized_at": "2026-03-24T16:00:17.470351+00:00Z",
+        "raw_data_hash": "sha256:bda90ca9f3a74dfa",
+        "harmonized_at": "2026-03-24T17:23:10.249973+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13276,10 +13768,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215008+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980202+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1f28f417b34dc856",
-        "harmonized_at": "2026-03-24T16:00:17.470647+00:00Z",
+        "raw_data_hash": "sha256:f3cc7f1636d00cde",
+        "harmonized_at": "2026-03-24T17:23:10.250267+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13644,10 +14136,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215036+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980223+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:317be767f47eeb00",
-        "harmonized_at": "2026-03-24T16:00:17.471176+00:00Z",
+        "raw_data_hash": "sha256:1f7bb8fae752d981",
+        "harmonized_at": "2026-03-24T17:23:10.250796+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14004,10 +14496,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215081+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980267+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:40566a6978a7ec54",
-        "harmonized_at": "2026-03-24T16:00:17.472368+00:00Z",
+        "raw_data_hash": "sha256:1997d4d8863ab58a",
+        "harmonized_at": "2026-03-24T17:23:10.251993+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14368,10 +14860,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215114+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980302+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d951b856e1c9bb46",
-        "harmonized_at": "2026-03-24T16:00:17.473035+00:00Z",
+        "raw_data_hash": "sha256:6473110996cb55cf",
+        "harmonized_at": "2026-03-24T17:23:10.252648+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14731,10 +15223,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215177+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980364+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cbe387c17d48cad5",
-        "harmonized_at": "2026-03-24T16:00:17.474550+00:00Z",
+        "raw_data_hash": "sha256:ee45eed55ff7cab2",
+        "harmonized_at": "2026-03-24T17:23:10.254155+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14863,10 +15355,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215418+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980615+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b5816f14e5a38024",
-        "harmonized_at": "2026-03-24T16:00:17.479698+00:00Z",
+        "raw_data_hash": "sha256:d8f5debac27260f1",
+        "harmonized_at": "2026-03-24T17:23:10.259269+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14983,10 +15475,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215457+00:00",
+        "scraped_at": "2026-03-24T17:23:09.980653+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b98e818a2c0e4fd1",
-        "harmonized_at": "2026-03-24T16:00:17.480433+00:00Z",
+        "raw_data_hash": "sha256:c398ef7aeffc3f7f",
+        "harmonized_at": "2026-03-24T17:23:10.259995+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15139,10 +15631,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.215909+00:00",
+        "scraped_at": "2026-03-24T17:23:09.981089+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:822a89c0fa78232e",
-        "harmonized_at": "2026-03-24T16:00:17.489977+00:00Z",
+        "raw_data_hash": "sha256:93e3a69af4727d04",
+        "harmonized_at": "2026-03-24T17:23:10.269634+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15286,10 +15778,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.216666+00:00",
+        "scraped_at": "2026-03-24T17:23:09.981841+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:90ba6207590f8761",
-        "harmonized_at": "2026-03-24T16:00:17.505343+00:00Z",
+        "raw_data_hash": "sha256:4f446ef9fca18301",
+        "harmonized_at": "2026-03-24T17:23:10.285018+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15413,10 +15905,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.216918+00:00",
+        "scraped_at": "2026-03-24T17:23:09.982090+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b6e371b962d79d4a",
-        "harmonized_at": "2026-03-24T16:00:17.510764+00:00Z",
+        "raw_data_hash": "sha256:8439fd40343a3a4b",
+        "harmonized_at": "2026-03-24T17:23:10.290362+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15674,10 +16166,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.217756+00:00",
+        "scraped_at": "2026-03-24T17:23:09.982919+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:044f762f106c6cb0",
-        "harmonized_at": "2026-03-24T16:00:17.528803+00:00Z",
+        "raw_data_hash": "sha256:fd17a0cec4265a55",
+        "harmonized_at": "2026-03-24T17:23:10.308431+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15803,10 +16295,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.218559+00:00",
+        "scraped_at": "2026-03-24T17:23:09.983715+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:889edd32df7d132c",
-        "harmonized_at": "2026-03-24T16:00:17.545420+00:00Z",
+        "raw_data_hash": "sha256:08b38a1313ee46a4",
+        "harmonized_at": "2026-03-24T17:23:10.324882+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15935,10 +16427,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.218807+00:00",
+        "scraped_at": "2026-03-24T17:23:09.983955+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:11712899d5648ea6",
-        "harmonized_at": "2026-03-24T16:00:17.550576+00:00Z",
+        "raw_data_hash": "sha256:328921819e898444",
+        "harmonized_at": "2026-03-24T17:23:10.330090+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16067,10 +16559,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220001+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985138+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3fae20fc94b5b5ac",
-        "harmonized_at": "2026-03-24T16:00:17.574671+00:00Z",
+        "raw_data_hash": "sha256:c138920062110fda",
+        "harmonized_at": "2026-03-24T17:23:10.353742+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16198,10 +16690,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220029+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985165+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5b23a7d33a6b5836",
-        "harmonized_at": "2026-03-24T16:00:17.575131+00:00Z",
+        "raw_data_hash": "sha256:c687acf7ca26cd11",
+        "harmonized_at": "2026-03-24T17:23:10.354171+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16323,10 +16815,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220085+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985219+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:767854b964d3bca4",
-        "harmonized_at": "2026-03-24T16:00:17.576294+00:00Z",
+        "raw_data_hash": "sha256:caf158a36703bbbd",
+        "harmonized_at": "2026-03-24T17:23:10.355308+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16449,10 +16941,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220422+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985565+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9a31b51c4b2803ca",
-        "harmonized_at": "2026-03-24T16:00:17.583455+00:00Z",
+        "raw_data_hash": "sha256:79ac5a91fdd4aee3",
+        "harmonized_at": "2026-03-24T17:23:10.362352+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16571,10 +17063,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220721+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985857+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2143874c1ab9ab78",
-        "harmonized_at": "2026-03-24T16:00:17.589699+00:00Z",
+        "raw_data_hash": "sha256:da5f9a03df7ae53f",
+        "harmonized_at": "2026-03-24T17:23:10.368429+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16698,10 +17190,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220750+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985884+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e458ab08c0b5c890",
-        "harmonized_at": "2026-03-24T16:00:17.590368+00:00Z",
+        "raw_data_hash": "sha256:9ab20439c9cf4a0a",
+        "harmonized_at": "2026-03-24T17:23:10.369083+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16827,10 +17319,133 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.220783+00:00",
+        "scraped_at": "2026-03-24T17:23:09.985917+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e47d24022c835a34",
-        "harmonized_at": "2026-03-24T16:00:17.590759+00:00Z",
+        "raw_data_hash": "sha256:4474b0d1c002544c",
+        "harmonized_at": "2026-03-24T17:23:10.369457+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "tndm-2026-05-festival-panos",
+      "source_id": "festivalpanos2026",
+      "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/festivalpanos2026/",
+      "venue_id": "tndm",
+      "space_id": null,
+      "title": "Festival PANOS",
+      "title_raw": "Festival PANOS",
+      "subtitle": null,
+      "description": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.Ao longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal...",
+      "description_short": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.Ao longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal...",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Espetáculos"
+      ],
+      "dates": [
+        {
+          "date": "2026-05-24",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-05-24",
+      "date_last": "2026-05-24",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-05-24",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": true,
+      "festival_name": "Festival Panos O Panos",
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "textos de\nAna Markl\nInsegura — Uma Tragédia de Enganos\nJoaquim Arena\nO Meu Pai Carlitos\nMariana Jones\nOlívia\nM/12\nIniciativa do Teatro Nacional D. Maria II e da Fundação ”la Caixa”, em colaboração com o BPI e em parceria com o Município de Paredes — CCP."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/festival_panos_2026_1920_844157556930648c8e3bc.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "festival-panos|2026-05",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "tndm"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-24T17:54:56.411895+00:00",
+        "scraper_id": "tndm",
+        "raw_data_hash": "sha256:6831933f05b32ff6",
+        "harmonized_at": "2026-03-24T17:54:57.915943+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16959,10 +17574,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.221105+00:00",
+        "scraped_at": "2026-03-24T17:23:09.986226+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e7cd6a8da474297b",
-        "harmonized_at": "2026-03-24T16:00:17.597036+00:00Z",
+        "raw_data_hash": "sha256:6f0677f6a3d0fc5f",
+        "harmonized_at": "2026-03-24T17:23:10.375629+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17089,10 +17704,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.221678+00:00",
+        "scraped_at": "2026-03-24T17:23:09.986808+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:40a845b74d81ab11",
-        "harmonized_at": "2026-03-24T16:00:17.609140+00:00Z",
+        "raw_data_hash": "sha256:8dd905979ac01d13",
+        "harmonized_at": "2026-03-24T17:23:10.387332+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17224,133 +17839,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222010+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987160+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c6848f58ee70647e",
-        "harmonized_at": "2026-03-24T16:00:17.615836+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "tndm-2026-05-terra-nullius",
-      "source_id": "terra-nullius",
-      "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/terra-nullius/",
-      "venue_id": "tndm",
-      "space_id": null,
-      "title": "Terra Nullius",
-      "title_raw": "Terra Nullius",
-      "subtitle": null,
-      "description": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
-      "description_short": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Livros e Pensamento"
-      ],
-      "dates": [
-        {
-          "date": "2026-05-30",
-          "time_start": "17:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-05-30",
-      "date_last": "2026-05-30",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-05-30",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": "Acessibilidade",
-        "label_raw": "Acessibilidade",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Entrada livre\nde\nPaula Diogo\nedição\nTNDM II / Bicho-do-Mato\ncoleção\n«Textos de Teatro»\ncom a presença de\nJoana Gorjão Henriques, Paula Diogo, Pedro Penim"
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/lancamento_de_livros_terra_nullius_1920_195062890069316b3c28ede.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "terra-nullius|2026-05",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "tndm"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-24T16:00:53.210645+00:00",
-        "scraper_id": "tndm",
-        "raw_data_hash": "sha256:5729f5f0abc32a59",
-        "harmonized_at": "2026-03-24T16:00:58.588213+00:00Z",
+        "raw_data_hash": "sha256:48e387edaac74ca4",
+        "harmonized_at": "2026-03-24T17:23:10.393939+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17477,10 +17969,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222299+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987442+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f719b1355aba42a1",
-        "harmonized_at": "2026-03-24T16:00:17.621823+00:00Z",
+        "raw_data_hash": "sha256:456d8a55ea0a55f9",
+        "harmonized_at": "2026-03-24T17:23:10.399830+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17604,10 +18096,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222400+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987543+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:21fceaa1825bcdda",
-        "harmonized_at": "2026-03-24T16:00:17.623537+00:00Z",
+        "raw_data_hash": "sha256:6f148dc512438ff8",
+        "harmonized_at": "2026-03-24T17:23:10.401485+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17730,10 +18222,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222616+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987775+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bcb2e8444508e23d",
-        "harmonized_at": "2026-03-24T16:00:17.628274+00:00Z",
+        "raw_data_hash": "sha256:3ebd88620dddfb4b",
+        "harmonized_at": "2026-03-24T17:23:10.406225+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17854,10 +18346,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222637+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987796+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e16dfe6544e0c6d9",
-        "harmonized_at": "2026-03-24T16:00:17.628713+00:00Z",
+        "raw_data_hash": "sha256:8f669916bce02bd8",
+        "harmonized_at": "2026-03-24T17:23:10.406682+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18144,10 +18636,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222653+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987812+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2416b3ee42d4c874",
-        "harmonized_at": "2026-03-24T16:00:17.629006+00:00Z",
+        "raw_data_hash": "sha256:279dd5a8a1cfdaf9",
+        "harmonized_at": "2026-03-24T17:23:10.406961+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18435,10 +18927,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222665+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987824+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5fedf5c5a41e254f",
-        "harmonized_at": "2026-03-24T16:00:17.629175+00:00Z",
+        "raw_data_hash": "sha256:f3800943746f71af",
+        "harmonized_at": "2026-03-24T17:23:10.407121+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18728,10 +19220,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222679+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987838+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2d55bf6bcc5f6ef9",
-        "harmonized_at": "2026-03-24T16:00:17.629334+00:00Z",
+        "raw_data_hash": "sha256:f7de9cc6f9031937",
+        "harmonized_at": "2026-03-24T17:23:10.407274+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19019,10 +19511,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222695+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987857+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f7c6443c54d8da03",
-        "harmonized_at": "2026-03-24T16:00:17.629639+00:00Z",
+        "raw_data_hash": "sha256:2d7e7a17b579f41c",
+        "harmonized_at": "2026-03-24T17:23:10.407593+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19307,10 +19799,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222719+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987879+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:400dd1818a2f075f",
-        "harmonized_at": "2026-03-24T16:00:17.630183+00:00Z",
+        "raw_data_hash": "sha256:54d8db1ff54c6482",
+        "harmonized_at": "2026-03-24T17:23:10.408110+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19599,10 +20091,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222756+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987916+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a24db334d2a6c930",
-        "harmonized_at": "2026-03-24T16:00:17.630963+00:00Z",
+        "raw_data_hash": "sha256:e7904edae7d96843",
+        "harmonized_at": "2026-03-24T17:23:10.408878+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19891,10 +20383,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222816+00:00",
+        "scraped_at": "2026-03-24T17:23:09.987979+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0ea0f535105a95de",
-        "harmonized_at": "2026-03-24T16:00:17.631605+00:00Z",
+        "raw_data_hash": "sha256:156076aae54aac28",
+        "harmonized_at": "2026-03-24T17:23:10.409519+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20182,10 +20674,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222884+00:00",
+        "scraped_at": "2026-03-24T17:23:09.988044+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2b5172162e2f1886",
-        "harmonized_at": "2026-03-24T16:00:17.633149+00:00Z",
+        "raw_data_hash": "sha256:f33dd6f9a1a75c18",
+        "harmonized_at": "2026-03-24T17:23:10.411049+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20437,10 +20929,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.222946+00:00",
+        "scraped_at": "2026-03-24T17:23:09.988094+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:04f8b336ce181d00",
-        "harmonized_at": "2026-03-24T16:00:17.633965+00:00Z",
+        "raw_data_hash": "sha256:bd50f553e8d45561",
+        "harmonized_at": "2026-03-24T17:23:10.411858+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20707,10 +21199,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.223214+00:00",
+        "scraped_at": "2026-03-24T17:23:09.988360+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2774b2252b01442f",
-        "harmonized_at": "2026-03-24T16:00:17.639374+00:00Z",
+        "raw_data_hash": "sha256:d4cac8f95c1176d9",
+        "harmonized_at": "2026-03-24T17:23:10.417190+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20839,10 +21331,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.223901+00:00",
+        "scraped_at": "2026-03-24T17:23:09.989042+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2494a19ac6005fa5",
-        "harmonized_at": "2026-03-24T16:00:17.653198+00:00Z",
+        "raw_data_hash": "sha256:944a3107d3f79ea2",
+        "harmonized_at": "2026-03-24T17:23:10.431043+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20959,10 +21451,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.223940+00:00",
+        "scraped_at": "2026-03-24T17:23:09.989070+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:25627391e93cdf5b",
-        "harmonized_at": "2026-03-24T16:00:17.653691+00:00Z",
+        "raw_data_hash": "sha256:273f1f5792053c72",
+        "harmonized_at": "2026-03-24T17:23:10.431536+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21088,10 +21580,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.224193+00:00",
+        "scraped_at": "2026-03-24T17:23:09.989318+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:13ded3e098c2d43d",
-        "harmonized_at": "2026-03-24T16:00:17.658828+00:00Z",
+        "raw_data_hash": "sha256:081b39f2cd8818fe",
+        "harmonized_at": "2026-03-24T17:23:10.436706+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21260,10 +21752,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.226074+00:00",
+        "scraped_at": "2026-03-24T17:23:09.991192+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e845222dc373ca2b",
-        "harmonized_at": "2026-03-24T16:00:17.697229+00:00Z",
+        "raw_data_hash": "sha256:30fee43daebb0a41",
+        "harmonized_at": "2026-03-24T17:23:10.474481+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21388,133 +21880,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.226565+00:00",
+        "scraped_at": "2026-03-24T17:23:09.991676+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5198bf13af28d357",
-        "harmonized_at": "2026-03-24T16:00:17.707095+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "tndm-2026-06-prologo",
-      "source_id": "prologo",
-      "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/prologo/",
-      "venue_id": "tndm",
-      "space_id": null,
-      "title": "Prólogo",
-      "title_raw": "Prólogo",
-      "subtitle": null,
-      "description": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
-      "description_short": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Espetáculos"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-22",
-          "time_start": null,
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": "Até 2026-07-25"
-        }
-      ],
-      "date_first": "2026-06-22",
-      "date_last": "2026-06-22",
-      "total_sessions": 1,
-      "is_ongoing": true,
-      "date_open": "2026-06-22",
-      "date_close": "2026-07-25",
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": true,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": "Acessibilidade",
-        "label_raw": "Acessibilidade",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/prologo_1920_93983766469306a833d46c.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "prologo|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "tndm"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-24T16:00:49.337834+00:00",
-        "scraper_id": "tndm",
-        "raw_data_hash": "sha256:f412c410b62d2076",
-        "harmonized_at": "2026-03-24T16:00:58.587840+00:00Z",
+        "raw_data_hash": "sha256:0a72db9fd0c87ef2",
+        "harmonized_at": "2026-03-24T17:23:10.484309+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21636,10 +22005,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227432+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992524+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4ebe374fdca1c6bd",
-        "harmonized_at": "2026-03-24T16:00:17.724446+00:00Z",
+        "raw_data_hash": "sha256:0c8aefdd419adbca",
+        "harmonized_at": "2026-03-24T17:23:10.501709+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21767,10 +22136,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227745+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992849+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d2b4a73cb72d5ae8",
-        "harmonized_at": "2026-03-24T16:00:17.731122+00:00Z",
+        "raw_data_hash": "sha256:9dc257f82587116c",
+        "harmonized_at": "2026-03-24T17:23:10.508349+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21896,10 +22265,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227775+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992880+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:63069f1b0fe3923a",
-        "harmonized_at": "2026-03-24T16:00:17.731771+00:00Z",
+        "raw_data_hash": "sha256:bd5876a5dc5d90d5",
+        "harmonized_at": "2026-03-24T17:23:10.509047+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22024,10 +22393,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227809+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992914+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:73234143b11e0b85",
-        "harmonized_at": "2026-03-24T16:00:17.732547+00:00Z",
+        "raw_data_hash": "sha256:d0532f7eb018ead9",
+        "harmonized_at": "2026-03-24T17:23:10.509831+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22151,10 +22520,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227849+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992954+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bda03edcb3fc37cb",
-        "harmonized_at": "2026-03-24T16:00:17.733567+00:00Z",
+        "raw_data_hash": "sha256:b48f001617dfcbb6",
+        "harmonized_at": "2026-03-24T17:23:10.510825+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22280,10 +22649,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227873+00:00",
+        "scraped_at": "2026-03-24T17:23:09.992979+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e5fd3d9065967073",
-        "harmonized_at": "2026-03-24T16:00:17.734117+00:00Z",
+        "raw_data_hash": "sha256:b5dbb8e494646ded",
+        "harmonized_at": "2026-03-24T17:23:10.511366+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22407,10 +22776,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227895+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993003+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5c6d0283020e602c",
-        "harmonized_at": "2026-03-24T16:00:17.734462+00:00Z",
+        "raw_data_hash": "sha256:6bdd528c1f9f8767",
+        "harmonized_at": "2026-03-24T17:23:10.511728+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22534,10 +22903,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227921+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993027+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:58ba52d8ff191f32",
-        "harmonized_at": "2026-03-24T16:00:17.734906+00:00Z",
+        "raw_data_hash": "sha256:0925ba33392eaad0",
+        "harmonized_at": "2026-03-24T17:23:10.512171+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22663,10 +23032,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227960+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993054+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e0b5e1d63da39ff2",
-        "harmonized_at": "2026-03-24T16:00:17.735558+00:00Z",
+        "raw_data_hash": "sha256:7722db63b1ed04c1",
+        "harmonized_at": "2026-03-24T17:23:10.512808+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22789,10 +23158,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.227981+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993074+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:280877cd92b71eda",
-        "harmonized_at": "2026-03-24T16:00:17.736001+00:00Z",
+        "raw_data_hash": "sha256:de8bfa9cf9fae8f8",
+        "harmonized_at": "2026-03-24T17:23:10.513227+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22917,10 +23286,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228001+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993093+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ccbbd33f63654102",
-        "harmonized_at": "2026-03-24T16:00:17.736366+00:00Z",
+        "raw_data_hash": "sha256:7ba5b26acc10cfc2",
+        "harmonized_at": "2026-03-24T17:23:10.513602+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23046,10 +23415,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228021+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993113+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e42a0f54c10edb71",
-        "harmonized_at": "2026-03-24T16:00:17.736589+00:00Z",
+        "raw_data_hash": "sha256:a90a02907b4fe516",
+        "harmonized_at": "2026-03-24T17:23:10.513826+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23172,10 +23541,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228041+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993133+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7db6d12cdf2b2543",
-        "harmonized_at": "2026-03-24T16:00:17.737007+00:00Z",
+        "raw_data_hash": "sha256:b13cce7d7027df73",
+        "harmonized_at": "2026-03-24T17:23:10.514228+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23298,10 +23667,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228060+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993151+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:24a332a72a62aa89",
-        "harmonized_at": "2026-03-24T16:00:17.737359+00:00Z",
+        "raw_data_hash": "sha256:d410240b8c3d4e3d",
+        "harmonized_at": "2026-03-24T17:23:10.514583+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23425,10 +23794,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228080+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993170+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c4ded1f788d719f8",
-        "harmonized_at": "2026-03-24T16:00:17.737696+00:00Z",
+        "raw_data_hash": "sha256:312c7a46d9936486",
+        "harmonized_at": "2026-03-24T17:23:10.514926+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23551,10 +23920,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228099+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993191+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:faf307444a5f4b98",
-        "harmonized_at": "2026-03-24T16:00:17.738114+00:00Z",
+        "raw_data_hash": "sha256:2f185d1cc24353fc",
+        "harmonized_at": "2026-03-24T17:23:10.515332+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23678,10 +24047,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-24T16:00:17.228124+00:00",
+        "scraped_at": "2026-03-24T17:23:09.993215+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d3e72281ca359dbd",
-        "harmonized_at": "2026-03-24T16:00:17.738562+00:00Z",
+        "raw_data_hash": "sha256:ec68532021e42fba",
+        "harmonized_at": "2026-03-24T17:23:10.515803+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23692,6 +24061,38 @@
   ],
   "index": {
     "by_domain": {
+      "outros": [
+        "tndm-2025-09-oficinas-de-teatro",
+        "ccb-2026-03-ministerio-do-sensivel",
+        "tndm-2026-03-filodemo",
+        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
+        "tndm-2026-03-cabe-mais-um",
+        "tndm-2026-03-nao-se-pode-nao-se-pode",
+        "ccb-2026-03-visitas-as-exposicoes",
+        "ccb-2026-03-festas-de-aniversario-no-museu",
+        "ccb-2026-04-programa-missao-democracia",
+        "ccb-2026-04-visitas-as-exposicoes",
+        "ccb-2026-04-festas-de-aniversario-no-museu",
+        "ccb-2026-04-museu-em-partilha",
+        "ccb-2026-04-mercado-ccb",
+        "ccb-2026-04-atividades-para-familias",
+        "ccb-2026-04-um-territorio-comum-para-a-arte-cultura-",
+        "ccb-2026-04-ministerio-do-sensivel",
+        "tndm-2026-04-ciclo-de-formacao",
+        "ccb-2026-04-projetos-mediacao",
+        "ccb-2026-05-programa-missao-democracia",
+        "ccb-2026-05-mercado-ccb",
+        "ccb-2026-05-festas-de-aniversario-no-museu",
+        "ccb-2026-05-missao-literacia-democratica-e-literaria",
+        "ccb-2026-05-museu-em-partilha",
+        "ccb-2026-05-um-territorio-comum-para-a-arte-cultura-",
+        "ccb-2026-05-ministerio-do-sensivel",
+        "tndm-2026-05-festival-panos",
+        "ccb-2026-06-programa-missao-democracia",
+        "ccb-2026-06-mercado-ccb",
+        "ccb-2026-06-um-territorio-comum-para-a-arte-cultura-",
+        "ccb-2026-07-e-se-fossemos-a-votos"
+      ],
       "artes-visuais": [
         "ccb-2026-03-uma-deriva-atlantica",
         "ccb-2026-03-may-i-help-you-posso-ajudar",
@@ -23717,35 +24118,6 @@
         "ccb-2026-11-neil-beloufa",
         "ccb-2026-11-francisca-carvalho",
         "ccb-2026-12-marisol"
-      ],
-      "outros": [
-        "ccb-2026-03-ministerio-do-sensivel",
-        "tndm-2026-03-filodemo",
-        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
-        "ccb-2026-03-visitas-as-exposicoes",
-        "ccb-2026-03-festas-de-aniversario-no-museu",
-        "ccb-2026-04-programa-missao-democracia",
-        "ccb-2026-04-visitas-as-exposicoes",
-        "ccb-2026-04-festas-de-aniversario-no-museu",
-        "ccb-2026-04-museu-em-partilha",
-        "ccb-2026-04-mercado-ccb",
-        "ccb-2026-04-atividades-para-familias",
-        "ccb-2026-04-um-territorio-comum-para-a-arte-cultura-",
-        "ccb-2026-04-ministerio-do-sensivel",
-        "ccb-2026-04-projetos-mediacao",
-        "ccb-2026-05-programa-missao-democracia",
-        "ccb-2026-05-mercado-ccb",
-        "ccb-2026-05-festas-de-aniversario-no-museu",
-        "ccb-2026-05-missao-literacia-democratica-e-literaria",
-        "ccb-2026-05-museu-em-partilha",
-        "ccb-2026-05-um-territorio-comum-para-a-arte-cultura-",
-        "ccb-2026-05-ministerio-do-sensivel",
-        "tndm-2026-05-terra-nullius",
-        "ccb-2026-06-programa-missao-democracia",
-        "ccb-2026-06-mercado-ccb",
-        "tndm-2026-06-prologo",
-        "ccb-2026-06-um-territorio-comum-para-a-arte-cultura-",
-        "ccb-2026-07-e-se-fossemos-a-votos"
       ],
       "artes-palco": [
         "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas",
@@ -23844,6 +24216,14 @@
       ]
     },
     "by_venue": {
+      "tndm": [
+        "tndm-2025-09-oficinas-de-teatro",
+        "tndm-2026-03-filodemo",
+        "tndm-2026-03-cabe-mais-um",
+        "tndm-2026-03-nao-se-pode-nao-se-pode",
+        "tndm-2026-04-ciclo-de-formacao",
+        "tndm-2026-05-festival-panos"
+      ],
       "ccb": [
         "ccb-2026-03-uma-deriva-atlantica",
         "ccb-2026-03-may-i-help-you-posso-ajudar",
@@ -23980,14 +24360,12 @@
         "ccb-2026-11-al-di-meola",
         "ccb-2026-12-marisol",
         "ccb-2026-12-glenn-miller-orchestra"
-      ],
-      "tndm": [
-        "tndm-2026-03-filodemo",
-        "tndm-2026-05-terra-nullius",
-        "tndm-2026-06-prologo"
       ]
     },
     "by_month": {
+      "2025-09": [
+        "tndm-2025-09-oficinas-de-teatro"
+      ],
       "2026-03": [
         "ccb-2026-03-uma-deriva-atlantica",
         "ccb-2026-03-may-i-help-you-posso-ajudar",
@@ -24009,6 +24387,8 @@
         "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
         "ccb-2026-03-concertos-filho-unico",
         "ccb-2026-03-ana-sofia-varela",
+        "tndm-2026-03-cabe-mais-um",
+        "tndm-2026-03-nao-se-pode-nao-se-pode",
         "ccb-2026-03-visitas-as-exposicoes",
         "ccb-2026-03-programa-ludico",
         "ccb-2026-03-james-webb-theres-no-place-called-home-b",
@@ -24059,6 +24439,7 @@
         "ccb-2026-04-preparacao-do-coro-missao-democracia",
         "ccb-2026-04-notas-de-musica-8211-ciclo-de-conferenci",
         "ccb-2026-04-as-quatro-estacoes-de-vivaldi",
+        "tndm-2026-04-ciclo-de-formacao",
         "ccb-2026-04-projetos-mediacao",
         "ccb-2026-04-programa-vincular-8211-servico-de-educac",
         "ccb-2026-04-jose-pedro-croft",
@@ -24090,10 +24471,10 @@
         "ccb-2026-05-ministerio-do-sensivel",
         "ccb-2026-05-constituicao-8211-estreia",
         "ccb-2026-05-sinfonia-n-7-de-beethoven",
+        "tndm-2026-05-festival-panos",
         "ccb-2026-05-notas-de-musica-8211-ciclo-de-conferenci",
         "ccb-2026-05-sobre-a-verdade-da-mentira",
         "ccb-2026-05-programa-vincular-8211-servico-de-educac",
-        "tndm-2026-05-terra-nullius",
         "ccb-2026-05-visitas-guiadas",
         "ccb-2026-05-dia-mundial-da-crianca",
         "ccb-2026-05-laurie-anderson-com-sexmob"
@@ -24115,7 +24496,6 @@
         "ccb-2026-06-scheherazade-de-rimsky-korsakov",
         "ccb-2026-06-terra-crua",
         "ccb-2026-06-exercicio-de-montagem",
-        "tndm-2026-06-prologo",
         "ccb-2026-06-um-territorio-comum-para-a-arte-cultura-",
         "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca",
         "ccb-2026-06-da-desordem-das-paixoes"
@@ -24148,7 +24528,9 @@
       "ccb-2026-03-may-i-help-you-posso-ajudar",
       "ccb-2026-03-ministerio-do-sensivel"
     ],
-    "free": [],
+    "free": [
+      "tndm-2026-03-filodemo"
+    ],
     "family": [
       "ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu",
       "ccb-2026-04-programa-missao-democracia",
