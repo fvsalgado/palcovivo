@@ -7,7 +7,7 @@ import re
 import unicodedata
 import hashlib
 import json
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from typing import Optional
 from .taxonomy import ALIASES, AUDIENCE_MAP, SERIES_PREFIX_PATTERNS, CATEGORIES, DOMAINS
 
