@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://primeiraplateia.pt/schemas/event.json",
+  "title": "Event",
+  "description": "Evento cultural na Primeira Plateia",
+  "type": "object",
+  "required": ["id", "source_id", "source_url", "venue_id", "title", "domain", "category", "dates", "pipeline"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "id": { "type": "string" },
+    "source_id": { "type": "string" },
+    "source_url": { "type": "string", "format": "uri" },
+    "venue_id": { "type": "string" },
+    "space_id": { "type": ["string", "null"] },
+    "title": { "type": "string", "minLength": 1 },
+    "title_raw": { "type": "string" },
+    "subtitle": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "description_short": { "type": ["string", "null"], "maxLength": 300 },
+    "language_of_performance": { "type": ["string", "null"] },
+    "language_notes": { "type": ["string", "null"] },
+    "domain": {
+      "type": "string",
+      "enum": ["musica", "artes-palco", "artes-visuais", "pensamento", "cinema", "formacao", "outros"]
+    },
+    "category": { "type": "string" },
+    "subcategory": { "type": ["string", "null"] },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "categories_raw": { "type": "array", "items": { "type": "string" } },
+    "dates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["date"],
+        "properties": {
+          "date": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "time_start": { "type": ["string", "null"], "pattern": "^[0-9]{2}:[0-9]{2}$" },
+          "time_end": { "type": ["string", "null"] },
+          "duration_minutes": { "type": ["integer", "null"] },
+          "is_cancelled": { "type": "boolean" },
+          "is_sold_out": { "type": "boolean" },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "date_first": { "type": ["string", "null"] },
+    "date_last": { "type": ["string", "null"] },
+    "total_sessions": { "type": ["integer", "null"] },
+    "is_ongoing": { "type": "boolean" },
+    "date_open": { "type": ["string", "null"] },
+    "date_close": { "type": ["string", "null"] },
+    "event_status": {
+      "type": "string",
+      "enum": ["estreia", "reposicao", "ultima-sessao", "unica-sessao", "em-cartaz"]
+    },
+    "is_premiere": { "type": "boolean" },
+    "is_national_premiere": { "type": "boolean" },
+    "is_reprise": { "type": "boolean" },
+    "production_origin": {
+      "type": ["string", "null"],
+      "enum": ["nacional", "co-producao-nacional", "co-producao-internacional", "internacional", null]
+    },
+    "is_festival": { "type": "boolean" },
+    "festival_name": { "type": ["string", "null"] },
+    "festival_id": { "type": ["string", "null"] },
+    "is_multi_venue": { "type": "boolean" },
+    "multi_venue_ids": { "type": "array", "items": { "type": "string" } },
+    "series_name": { "type": ["string", "null"] },
+    "series_edition": { "type": ["string", "null"] },
+    "audience": {
+      "type": "object",
+      "properties": {
+        "label": { "type": ["string", "null"] },
+        "label_raw": { "type": ["string", "null"] },
+        "age_min": { "type": ["integer", "null"] },
+        "age_max": { "type": ["integer", "null"] },
+        "is_family": { "type": "boolean" },
+        "is_educational": { "type": "boolean" },
+        "school_level": {
+          "type": ["string", "null"],
+          "enum": ["pre-escolar", "primeiro-ciclo", "segundo-ciclo", "terceiro-ciclo", "secundario", "universitario", null]
+        },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "price": {
+      "type": "object",
+      "properties": {
+        "is_free": { "type": "boolean" },
+        "price_min": { "type": ["number", "null"] },
+        "price_max": { "type": ["number", "null"] },
+        "price_display": { "type": ["string", "null"] },
+        "price_raw": { "type": ["string", "null"] },
+        "has_discounts": { "type": "boolean" },
+        "discount_notes": { "type": ["string", "null"] },
+        "ticketing_url": { "type": ["string", "null"] }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "properties": {
+        "has_sign_language": { "type": "boolean" },
+        "has_audio_description": { "type": "boolean" },
+        "has_subtitles": { "type": "boolean" },
+        "subtitle_language": { "type": ["string", "null"] },
+        "is_relaxed_performance": { "type": "boolean" },
+        "wheelchair_accessible": { "type": "boolean" },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "credits": {
+      "type": "object",
+      "properties": {
+        "company": { "type": ["string", "null"] },
+        "director": { "type": ["string", "null"] },
+        "conductor": { "type": ["string", "null"] },
+        "choreographer": { "type": ["string", "null"] },
+        "cast": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          }
+        },
+        "creative_team": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": { "type": "string" },
+              "name": { "type": "string" }
+            }
+          }
+        },
+        "musicians": { "type": "array" },
+        "credits_raw": { "type": ["string", "null"] }
+      }
+    },
+    "work": {
+      "type": "object",
+      "properties": {
+        "original_title": { "type": ["string", "null"] },
+        "composer": { "type": ["string", "null"] },
+        "playwright": { "type": ["string", "null"] },
+        "choreographer": { "type": ["string", "null"] },
+        "year_created": { "type": ["integer", "null"] },
+        "country_of_origin": { "type": ["string", "null"] },
+        "genre_original": { "type": ["string", "null"] }
+      }
+    },
+    "media": {
+      "type": "object",
+      "properties": {
+        "cover_image": { "type": ["string", "null"] },
+        "cover_image_local": { "type": ["string", "null"] },
+        "thumbnail": { "type": ["string", "null"] },
+        "trailer_url": { "type": ["string", "null"] },
+        "gallery": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "dedup": {
+      "type": "object",
+      "properties": {
+        "fingerprint": { "type": "string" },
+        "duplicate_of": { "type": ["string", "null"] },
+        "is_canonical": { "type": "boolean" },
+        "seen_at_venues": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "pipeline": {
+      "type": "object",
+      "required": ["scraped_at", "scraper_id"],
+      "properties": {
+        "scraped_at": { "type": "string" },
+        "scraper_id": { "type": "string" },
+        "raw_data_hash": { "type": ["string", "null"] },
+        "harmonized_at": { "type": ["string", "null"] },
+        "validated": { "type": "boolean" },
+        "validation_errors": { "type": "array", "items": { "type": "string" } },
+        "manually_edited": { "type": "boolean" },
+        "manually_edited_at": { "type": ["string", "null"] },
+        "is_active": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+name: Pipeline Diário
+
+on:
+  schedule:
+    # Corre às 06:00 UTC todos os dias (07:00 Lisboa inverno, 07:00 Lisboa verão)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: 'Ignorar cache e re-scraping completo'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write   # Necessário para fazer commit dos JSONs gerados
+
+jobs:
+  pipeline:
+    name: Scrape → Harmonize → Validate → Dedup → Output
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
+
+      - name: Correr pipeline
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          NTFY_URL: ${{ secrets.NTFY_URL }}
+        run: |
+          FORCE=""
+          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
+            FORCE="--force"
+          fi
+          python -m pipeline.run $FORCE
+
+      - name: Enviar notificações
+        if: always()  # Envia mesmo se o pipeline falhar parcialmente
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          NTFY_URL: ${{ secrets.NTFY_URL }}
+        run: |
+          python -m pipeline.utils.notify
+
+      - name: Commit dos dados gerados
+        if: success()
+        run: |
+          git config --local user.email "pipeline@primeiraplateia.pt"
+          git config --local user.name "Primeira Plateia Pipeline"
+          git add data/
+          # Só faz commit se houver alterações
+          git diff --staged --quiet || git commit -m "🤖 Pipeline: $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Upload relatório como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-report-${{ github.run_id }}
+          path: data/logs/latest.json
+          retention-days: 30

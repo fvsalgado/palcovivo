@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "ccb",
+  "name": "Centro Cultural de Belém",
+  "short_name": "CCB",
+  "legal_name": "Fundação Centro Cultural de Belém",
+  "acronym": "CCB",
+  "aliases": ["Fundação CCB", "FCCB", "Centro Cultural de Belém"],
+  "venue_type": "centro-cultural",
+  "venue_subtypes": ["teatro", "museu", "sala-de-concertos", "espaco-exposicoes"],
+  "is_permanent": true,
+  "is_multi_space": true,
+  "address": {
+    "street": "Praça do Império",
+    "number": null,
+    "parish": "Belém",
+    "municipality": "Lisboa",
+    "district": "Lisboa",
+    "region": "Área Metropolitana de Lisboa",
+    "country": "PT",
+    "postal_code": "1449-003",
+    "full_address": "Praça do Império, 1449-003 Lisboa",
+    "nuts2": "PT17",
+    "nuts3": "PT170"
+  },
+  "geo": {
+    "lat": 38.6972,
+    "lng": -9.2063,
+    "google_place_id": null
+  },
+  "contact": {
+    "website": "https://www.ccb.pt",
+    "email": null,
+    "phone": "+351 213 612 400",
+    "box_office_phone": "+351 213 612 444",
+    "box_office_email": "bilheteira@ccb.pt",
+    "box_office_url": "https://www.ccb.pt/bilheteira"
+  },
+  "social": {
+    "instagram": "https://instagram.com/ccbelem",
+    "facebook": "https://facebook.com/centroculturaldebelem",
+    "youtube": null,
+    "twitter_x": null,
+    "linkedin": null,
+    "spotify": null
+  },
+  "media": {
+    "logo_svg": null,
+    "logo_png": null,
+    "logo_dark": null,
+    "facade_photo": null,
+    "cover_photo": null,
+    "gallery": [],
+    "photo_credits": null
+  },
+  "spaces": [
+    {
+      "id": "grande-auditorio",
+      "name": "Grande Auditório",
+      "capacity": 1425,
+      "type": "auditorio",
+      "has_accessibility": true,
+      "description": "Sala principal para concertos sinfónicos e ópera"
+    },
+    {
+      "id": "pequeno-auditorio",
+      "name": "Pequeno Auditório",
+      "capacity": 350,
+      "type": "auditorio",
+      "has_accessibility": true,
+      "description": null
+    },
+    {
+      "id": "mac-ccb",
+      "name": "MAC/CCB — Museu de Arte Contemporânea",
+      "capacity": null,
+      "type": "museu",
+      "has_accessibility": true,
+      "description": "Museu de Arte Contemporânea e Centro de Arquitetura. Coleção Berardo, Holma/Ellipse e Teixeira de Freitas."
+    },
+    {
+      "id": "garagem-sul",
+      "name": "Garagem Sul",
+      "capacity": null,
+      "type": "galeria",
+      "has_accessibility": true,
+      "description": "Espaço para exposições e eventos de arquitetura e design"
+    },
+    {
+      "id": "sala-exposicoes",
+      "name": "Centro de Exposições",
+      "capacity": null,
+      "type": "galeria",
+      "has_accessibility": true,
+      "description": null
+    },
+    {
+      "id": "jardins",
+      "name": "Jardins e Espaços Exteriores",
+      "capacity": null,
+      "type": "espaco-exterior",
+      "has_accessibility": true,
+      "description": "Jardins da Praça do Império e espaços exteriores"
+    }
+  ],
+  "accessibility": {
+    "wheelchair": true,
+    "hearing_loop": true,
+    "audio_description": true,
+    "sign_language_regular": false,
+    "sign_language_occasional": true,
+    "relaxed_performances": false,
+    "accessible_toilets": true,
+    "accessible_parking": true,
+    "braille_materials": false,
+    "notes": null
+  },
+  "transport": {
+    "metro": [],
+    "bus": ["728", "714", "751"],
+    "tram": ["15E"],
+    "train": ["Linha de Cascais — Belém"],
+    "parking": true,
+    "bike_parking": true,
+    "notes": "Estação de comboio de Belém a 5 min a pé. Estacionamento junto ao jardim."
+  },
+  "amenities": {
+    "cafe": true,
+    "restaurant": true,
+    "shop": true,
+    "library": true,
+    "cloakroom": true,
+    "outdoor_space": true
+  },
+  "ticketing": {
+    "primary_system": "BOL",
+    "ticketing_url": "https://bol.pt",
+    "has_online_sales": true,
+    "has_box_office": true,
+    "accepts_lisboa_card": true,
+    "discount_programs": ["Lisboa Card", "Cartão Jovem", "FNAC"],
+    "notes": null
+  },
+  "data_source": {
+    "scraper_id": "ccb",
+    "api_type": "rest",
+    "api_url": "https://www.ccb.pt/wp-json/tribe/events/v1/events",
+    "api_requires_auth": false,
+    "scraper_notes": "The Events Calendar REST API. Paginação via ?page=N&per_page=50&start_date=YYYY-MM-DD+HH:MM:SS. Campos principais: id, title, description, start_date, end_date, cost, url, image, categories, tags, venue.",
+    "update_frequency": "daily",
+    "last_scraped": null,
+    "is_active": true
+  },
+  "meta": {
+    "created_at": "2026-03-24",
+    "updated_at": "2026-03-24",
+    "created_by": "fabio@primeiraplateia.pt",
+    "verified": true,
+    "verified_at": "2026-03-24",
+    "notes": "Venue fundador. API The Events Calendar confirmada."
+  }
+}
