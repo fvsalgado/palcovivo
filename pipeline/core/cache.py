@@ -7,7 +7,7 @@ Evita re-processar eventos que não mudaram.
 import json
 import os
 import logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
