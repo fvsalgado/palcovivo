@@ -45,6 +45,9 @@ SITEMAP_URLS = [
     f"{WEBSITE}/sitemap_index.xml",
     f"{WEBSITE}/wp-sitemap.xml",
     f"{WEBSITE}/event-sitemap.xml",
+    f"{WEBSITE}/event-sitemap2.xml",
+    f"{WEBSITE}/event-sitemap3.xml",
+    f"{WEBSITE}/event_category-sitemap.xml",
 ]
 EVENT_URL_PATTERN = re.compile(r"/event/[^/]+/?$")
 
