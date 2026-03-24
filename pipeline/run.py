@@ -20,7 +20,7 @@ import json
 import logging
 import sys
 import traceback
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -114,7 +114,7 @@ def run_scraper(venue: dict, force_refresh: bool = False) -> list[dict]:
         if venue_path.exists():
             with open(venue_path, "r", encoding="utf-8") as f:
                 venue_data = json.load(f)
-            venue_data["data_source"]["last_scraped"] = datetime.utcnow().isoformat() + "Z"
+            venue_data["data_source"]["last_scraped"] = datetime.now(timezone.utc).isoformat() + "Z"
             with open(venue_path, "w", encoding="utf-8") as f:
                 json.dump(venue_data, f, ensure_ascii=False, indent=2)
 
@@ -241,7 +241,7 @@ def generate_master(all_events: list[dict]) -> dict:
             family_ids.append(eid)
 
     master = {
-        "generated_at": datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.now(timezone.utc).isoformat() + "Z",
         "total_events": len(all_events),
         "total_venues": len(by_venue),
         "events": all_events,
@@ -270,7 +270,7 @@ def generate_report(venue_reports: list[dict], all_events: list[dict], duration_
     total_errors = sum(len(r["errors"]) for r in venue_reports)
 
     return {
-        "run_at": datetime.utcnow().isoformat() + "Z",
+        "run_at": datetime.now(timezone.utc).isoformat() + "Z",
         "duration_seconds": round(duration_seconds, 1),
         "summary": {
             "venues_processed": len(venue_reports),
@@ -300,7 +300,7 @@ def generate_report(venue_reports: list[dict], all_events: list[dict], duration_
 
 def run(force_refresh: bool = False) -> dict:
     """Pipeline completo. Retorna relatório de execução."""
-    start_time = datetime.utcnow()
+    start_time = datetime.now(timezone.utc)
     logger.info("=" * 60)
     logger.info("Primeira Plateia — Pipeline iniciado")
     logger.info(f"Data: {start_time.strftime('%Y-%m-%d %H:%M:%S UTC')}")
@@ -336,7 +336,7 @@ def run(force_refresh: bool = False) -> dict:
     logger.info(f"Master JSON gerado: {master_path}")
 
     # 5. Relatório
-    duration = (datetime.utcnow() - start_time).total_seconds()
+    duration = (datetime.now(timezone.utc) - start_time).total_seconds()
     report = generate_report(venue_reports, all_events, duration)
 
     LOGS_DIR.mkdir(parents=True, exist_ok=True)

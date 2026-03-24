@@ -53,7 +53,7 @@ def save_cache(venue_id: str, events: list[dict], metadata: dict = None) -> None
 
     data = {
         "venue_id": venue_id,
-        "cached_at": datetime.utcnow().isoformat() + "Z",
+        "cached_at": datetime.now(timezone.utc).isoformat() + "Z",
         "event_count": len(events),
         "metadata": metadata or {},
         "events": events,

@@ -404,7 +404,7 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     Recebe evento raw (qualquer formato) e devolve evento no schema canónico.
     raw_event deve ter pelo menos: title, dates[], source_id, source_url
     """
-    now = datetime.utcnow().isoformat() + "Z"
+    now = datetime.now(timezone.utc).isoformat() + "Z"
 
     # Título
     title_raw = raw_event.get("title", "")

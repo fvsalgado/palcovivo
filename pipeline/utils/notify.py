@@ -10,7 +10,7 @@ import logging
 import requests
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 logger = logging.getLogger(__name__)
@@ -159,7 +159,7 @@ def send_email(report: dict) -> bool:
         f"{subject_prefix} Primeira Plateia — "
         f"{s.get('total_after_dedup', 0)} eventos · "
         f"{s.get('venues_processed', 0)} venues · "
-        f"{datetime.utcnow().strftime('%d/%m/%Y')}"
+        f"{datetime.now(timezone.utc).strftime('%d/%m/%Y')}"
     )
 
     msg = MIMEMultipart("alternative")
