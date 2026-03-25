@@ -10,6 +10,11 @@ on:
         required: false
         default: 'false'
         type: boolean
+      venues:
+        description: 'Venues a correr (separados por vírgula, ou "all" para todos)'
+        required: false
+        default: 'all'
+        type: string
 
 permissions:
   contents: write
@@ -26,14 +31,36 @@ jobs:
       venues: ${{ steps.list.outputs.venues }}
     steps:
       - uses: actions/checkout@v4
+
       - id: list
         run: |
-          VENUES=$(find pipeline/scrapers -name "scraper.py" \
+          # Todos os venues disponíveis no repo
+          ALL=$(find pipeline/scrapers -name "scraper.py" \
             | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
             | sort \
             | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))")
-          echo "venues=$VENUES" >> $GITHUB_OUTPUT
-          echo "Venues: $VENUES"
+
+          # Filtrar pelos venues seleccionados (só em workflow_dispatch)
+          SELECTED="${{ github.event.inputs.venues }}"
+
+          if [ -z "$SELECTED" ] || [ "$SELECTED" = "all" ]; then
+            echo "venues=$ALL" >> $GITHUB_OUTPUT
+            echo "A correr todos os venues: $ALL"
+          else
+            # Converter "ccb, tndm" em JSON array filtrado
+            FILTERED=$(echo "$SELECTED" | python3 -c "
+          import sys, json
+          selected = [s.strip() for s in sys.stdin.read().split(',') if s.strip()]
+          available = json.loads('$ALL')
+          result = [v for v in available if v in selected]
+          unknown = [v for v in selected if v not in available]
+          if unknown:
+              print(f'AVISO: venues desconhecidos ignorados: {unknown}', file=sys.stderr)
+          print(json.dumps(result))
+          ")
+            echo "venues=$FILTERED" >> $GITHUB_OUTPUT
+            echo "A correr venues seleccionados: $FILTERED"
+          fi
 
   # ─────────────────────────────────────────
   # JOB 2 — Scrape paralelo (um job por venue)
@@ -135,7 +162,7 @@ jobs:
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/ index.html
-          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
           git push
 
       - name: Upload relatorio
