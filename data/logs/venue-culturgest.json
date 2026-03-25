@@ -1,17 +1,10 @@
 {
   "venue_id": "culturgest",
-  "scraped": 1401,
-  "valid": 1350,
-  "invalid": 51,
+  "scraped": 0,
+  "valid": 0,
+  "invalid": 0,
   "errors": [],
   "cache_hit": false,
-  "merge_stats": {
-    "substituted": 1350,
-    "kept_existing": 0,
-    "new": 0,
-    "tombstoned": 0,
-    "gaps_filled": 0
-  },
-  "venue_name": "Culturgest",
-  "avg_credibility_score": 0.898
+  "merge_stats": {},
+  "venue_name": "Culturgest"
 }

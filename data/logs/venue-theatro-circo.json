@@ -6,9 +6,9 @@
   "errors": [],
   "cache_hit": false,
   "merge_stats": {
-    "substituted": 68,
+    "substituted": 69,
     "kept_existing": 0,
-    "new": 1,
+    "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0
   },
