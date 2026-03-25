@@ -1,16 +1,19 @@
 {
   "schema_version": "1.0",
   "id": "ccb",
-  "name": "Centro Cultural de Bel\u00e9m",
+  "name": "Centro Cultural de Belém",
   "venue_type": "centro-cultural",
   "is_permanent": true,
   "address": {
-    "street": "Pra\u00e7a do Im\u00e9rio",
+    "street": "Praça do Imério",
     "postcode": "1400-206",
     "municipality": "Lisboa",
     "region": "Lisboa",
     "country": "PT",
-    "coordinates": { "lat": 38.6975, "lon": -9.2055 }
+    "coordinates": {
+      "lat": 38.6975,
+      "lon": -9.2055
+    }
   },
   "contact": {
     "website": "https://ccb.pt",
@@ -21,9 +24,9 @@
     "scraper_id": "ccb",
     "api_url": "https://ccb.pt/wp-json/tribe/events/v1/events",
     "is_active": true,
-    "last_scraped": null,
+    "last_scraped": "2026-03-25T11:45:12.453817+00:00Z",
     "scrape_frequency_hours": 12,
-    "notes": "API REST The Events Calendar. ~800 eventos, 16 p\u00e1ginas."
+    "notes": "API REST The Events Calendar. ~800 eventos, 16 páginas."
   },
   "meta": {
     "created_at": "2026-03-25",

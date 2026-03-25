@@ -10,7 +10,10 @@
     "municipality": "Lisboa",
     "region": "Lisboa",
     "country": "PT",
-    "coordinates": { "lat": 38.7139, "lon": -9.1388 }
+    "coordinates": {
+      "lat": 38.7139,
+      "lon": -9.1388
+    }
   },
   "contact": {
     "website": "https://www.tndm.pt",
@@ -21,7 +24,7 @@
     "scraper_id": "tndm",
     "api_url": null,
     "is_active": true,
-    "last_scraped": null,
+    "last_scraped": "2026-03-25T11:42:48.271484+00:00Z",
     "scrape_frequency_hours": 48,
     "notes": "SSL inválido — verify=False. Fonte: /pt/programacao/toda-a-programacao/ com paginação."
   },

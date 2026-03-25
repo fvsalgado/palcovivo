@@ -4,5 +4,14 @@
   "valid": 798,
   "invalid": 0,
   "errors": [],
-  "venue_name": "Centro Cultural de Belém"
+  "cache_hit": false,
+  "merge_stats": {
+    "substituted": 798,
+    "kept_existing": 0,
+    "new": 0,
+    "tombstoned": 0,
+    "gaps_filled": 0
+  },
+  "venue_name": "Centro Cultural de Belém",
+  "avg_credibility_score": 0.84
 }

@@ -10,7 +10,10 @@
     "municipality": "Braga",
     "region": "Braga",
     "country": "PT",
-    "coordinates": { "lat": 41.5503, "lon": -8.4266 }
+    "coordinates": {
+      "lat": 41.5503,
+      "lon": -8.4266
+    }
   },
   "contact": {
     "website": "https://theatrocirco.com",
@@ -21,7 +24,7 @@
     "scraper_id": "theatro-circo",
     "api_url": null,
     "is_active": true,
-    "last_scraped": null,
+    "last_scraped": "2026-03-25T11:43:11.944573+00:00Z",
     "scrape_frequency_hours": 24,
     "notes": "Site custom WP sem The Events Calendar. Usar /programa/ como fonte principal."
   },
