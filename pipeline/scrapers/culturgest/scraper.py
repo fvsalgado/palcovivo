@@ -1,6 +1,7 @@
 """
-Culturgest Scraper — Versão 3 (2026) — HTML-only (API morreu)
+Culturgest Scraper — Versão 3.1 (corrigido - 25 Mar 2026)
 Venue: Culturgest | culturgest.pt
+Estratégia: HTML scraping + links individuais
 """
 
 import re
@@ -9,7 +10,7 @@ import json as _json
 import logging
 import warnings
 from datetime import datetime, timezone
-from typing import Optional, List, Dict
+from typing import Optional, List
 
 import requests
 import urllib3
@@ -26,8 +27,8 @@ logger = logging.getLogger(__name__)
 VENUE_ID = "culturgest"
 WEBSITE = "https://www.culturgest.pt"
 
-MAX_PAGES = 15              # número máximo de páginas/filtros a tentar
-REQUEST_DELAY = 1.3
+MAX_PAGES = 15
+REQUEST_DELAY = 1.4
 TIMEOUT = 25
 
 HEADERS = {
@@ -44,8 +45,7 @@ MONTH_PT = {
     "outubro": "10", "novembro": "11", "dezembro": "12",
 }
 
-# Filtros úteis (typology)
-TYPOLOGIES = [None, 1, 2, 3, 4, 5, 6, 8]   # None = todos, 1=Teatro, 2=Dança, 8=Música, etc.
+TYPOLOGIES = [None, 1, 2, 3, 4, 5, 6, 8]   # None = todos
 
 # ---------------------------------------------------------------------------
 # SESSION
@@ -62,7 +62,7 @@ def _get(session: requests.Session, url: str, params: dict = None) -> Optional[r
         resp.raise_for_status()
         return resp
     except Exception as e:
-        logger.warning(f"CULTURGEST: erro ao aceder {url} → {e}")
+        logger.warning(f"CULTURGEST: erro {url} → {e}")
         return None
 
 # ---------------------------------------------------------------------------
@@ -73,7 +73,6 @@ def _parse_date(text: str) -> Optional[str]:
         return None
     t = re.sub(r"\s+", " ", text.strip()).lower()
 
-    # "23–25 ABR 2026" ou "23 ABR 2026"
     m = re.match(r"(\d{1,2})(?:[–\-](\d{1,2}))?\s+([a-záéíóú]+)(?:\s+(\d{4}))?", t)
     if m:
         day = m.group(1).zfill(2)
@@ -82,7 +81,6 @@ def _parse_date(text: str) -> Optional[str]:
         if month:
             return f"{year}-{month}-{day}"
 
-    # "MAR 2026"
     m = re.match(r"([a-záéíóú]+)\s+(\d{4})", t)
     if m:
         month = MONTH_PT.get(m.group(1)[:3])
@@ -92,24 +90,28 @@ def _parse_date(text: str) -> Optional[str]:
     return None
 
 # ---------------------------------------------------------------------------
-# EXTRAI LINKS DE EVENTOS DA PÁGINA DE LISTAGEM
+# EXTRAI LINKS DE EVENTOS (melhorado)
 # ---------------------------------------------------------------------------
 def _extract_event_links(soup: BeautifulSoup) -> List[str]:
     links = set()
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
-        if not href or "/programacao/" not in href:
+        if not href:
             continue
         full_url = href if href.startswith("http") else f"{WEBSITE}{href}"
 
-        # Aceita URLs de eventos individuais (ex: /pt/programacao/teatro/nome-do-evento/)
-        if re.search(r"/pt/programacao/[^/]+/[^/?#]+/?$", full_url):
-            if full_url not in links and "/por-evento/" not in full_url:
-                links.add(full_url)
+        # Padrão mais flexível: qualquer link dentro de /programacao/ que não seja a página de listagem
+        if ("/programacao/" in full_url and 
+            "/por-evento/" not in full_url and 
+            "/agenda-pdf/" not in full_url and 
+            "/archive/" not in full_url and
+            len(full_url.rstrip("/").split("/")) >= 6):   # garante que tem slug no final
+            
+            links.add(full_url)
     return list(links)
 
 # ---------------------------------------------------------------------------
-# PARSE DE PÁGINA INDIVIDUAL DE EVENTO
+# PARSE DE PÁGINA INDIVIDUAL
 # ---------------------------------------------------------------------------
 def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     resp = _get(session, url)
@@ -143,7 +145,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
                 break
     date_open = _parse_date(date_str)
 
-    # Descrição longa
+    # Descrição
     desc = ""
     for sel in [".description", ".event-description", ".lead", ".text", "article", ".content"]:
         el = soup.select_one(sel)
@@ -171,4 +173,82 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     ticketing_url = None
     for a in soup.find_all("a", href=True):
         txt = a.get_text(strip=True).lower()
-        if any(word
+        if any(word in txt for word in ["bilhete", "comprar", "reservar", "ticket", "buy"]):
+            ticketing_url = a["href"]
+            if not ticketing_url.startswith("http"):
+                ticketing_url = f"{WEBSITE}{ticketing_url}"
+            break
+
+    if not price_raw and re.search(r"entrada\s+livre|gratuito|free", ft):
+        price_raw = "Entrada livre"
+
+    # Categoria aproximada
+    category = ""
+    url_lower = url.lower()
+    if "/teatro/" in url_lower: category = "Teatro"
+    elif any(x in url_lower for x in ["/danca/", "/dança/"]): category = "Dança"
+    elif "/musica/" in url_lower: category = "Música"
+    elif "/performance/" in url_lower: category = "Performance"
+
+    return {
+        "source_id": url.rstrip("/").split("/")[-1],
+        "source_url": url,
+        "title": title.strip(),
+        "description": desc.strip() if desc else None,
+        "categories": [category] if category else [],
+        "dates": [{"date": date_open, "time_start": None}] if date_open else [],
+        "date_open": date_open,
+        "price_raw": price_raw,
+        "ticketing_url": ticketing_url,
+        "cover_image": cover,
+        "location": "Culturgest",
+        "scraped_at": datetime.now(timezone.utc).isoformat(),
+        "_method": "culturgest-html-v3.1",
+    }
+
+# ---------------------------------------------------------------------------
+# MAIN
+# ---------------------------------------------------------------------------
+def run() -> List[dict]:
+    session = _make_session()
+    all_events = []
+    seen_urls = set()
+
+    logger.info("CULTURGEST: a raspar listagens + eventos individuais (HTML)")
+
+    for typ in TYPOLOGIES:
+        params = {"typology": typ} if typ is not None else {}
+        list_url = f"{WEBSITE}/pt/programacao/por-evento/"
+
+        time.sleep(REQUEST_DELAY)
+        resp = _get(session, list_url, params)
+        if not resp:
+            continue
+
+        soup = BeautifulSoup(resp.text, "lxml")
+        event_links = _extract_event_links(soup)
+
+        logger.info(f"Filtro typology={typ or 'todos'} → {len(event_links)} links encontrados")
+
+        for link in event_links:
+            if link in seen_urls:
+                continue
+            seen_urls.add(link)
+
+            ev = _parse_single_event(link, session)
+            if ev:
+                all_events.append(ev)
+
+            time.sleep(REQUEST_DELAY)
+
+    logger.info(f"Total recolhido: {len(all_events)} eventos")
+    return all_events
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+    events = run()
+
+    print(f"\n=== Total final: {len(events)} eventos ===\n")
+    if events:
+        print(_json.dumps(events[0], indent=2, ensure_ascii=False))
