@@ -1,18 +1,14 @@
 """
 Primeira Plateia — Scraper Teatro Nacional D. Maria II (Lisboa)
-Venue: TNDM | tndm.pt  —  v5
+Venue: TNDM | tndm.pt  —  v6
 
-Problema anterior: agenda-geral só tem 6 links únicos (um por espetáculo).
-A fonte correcta é /pt/programacao/toda-a-programacao/ com paginação:
-  ?tipo=1&cat=1&p=2, &p=3, etc.
-
-Cada página lista itens com: DATA • LOCAL • TÍTULO • "Saiba mais" (link)
-O scraper itera todas as páginas até não encontrar mais itens,
-recolhe todos os links únicos de espetáculos, depois visita cada um.
-
-Estratégia:
-  1. /pt/programacao/toda-a-programacao/ com paginação completa
-  2. Secções individuais (/espetaculos/, /participacao/, etc.) como fallback
+Melhorias face à v5:
+  - Extracção de TODAS as sessões da tabela .table_tickets (datas, horas, locais)
+  - Horários parseados por sessão
+  - Locais por sessão (não apenas space_id global)
+  - Tags/categorias via .tag-list-item.programacao
+  - Ficha técnica via .ficha_tecnica (selector corrigido)
+  - Classificação etária: regex M/(\d+) sem exigir "anos"
 """
 
 import re
@@ -39,11 +35,9 @@ VENUE_ID   = "tndm"
 SCRAPER_ID = "tndm"
 WEBSITE    = "https://www.tndm.pt"
 
-# Fonte principal — toda a programação com paginação
 TODA_BASE  = f"{WEBSITE}/pt/programacao/toda-a-programacao/"
-MAX_PAGES  = 20  # segurança — nunca mais de 20 páginas
+MAX_PAGES  = 20
 
-# Fallback por secção
 LISTING_URLS = [
     f"{WEBSITE}/pt/programacao/espetaculos/",
     f"{WEBSITE}/pt/programacao/participacao/",
@@ -51,7 +45,6 @@ LISTING_URLS = [
     f"{WEBSITE}/pt/programacao/oficinas-e-formacao/",
 ]
 
-# Padrões de URL de espetáculo válido
 EVENT_URL_PATTERNS = [
     re.compile(r"/pt/programacao/espetaculos/[^/?#]+/?$"),
     re.compile(r"/pt/programacao/participacao/[^/?#]+/?$"),
@@ -114,63 +107,48 @@ def _is_event_url(url: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
-# PARSING DE DATAS TNDM
-#
-# Formatos encontrados em toda-a-programacao:
-#   "22 MAR"                   → dia mês-abrev maiúsculas
-#   "27 mar - 18 abr 2026"     → período minúsculas com ano
-#   "9 - 10 MAI"               → período mesmo mês
-#   "20 - 24 ABR"              → período mesmo mês
-#   "4, 6, 7, 20 - 21 JUN"    → múltiplos dias → usar primeiro
-#   "SET 2025 - JUL 2026"      → só mês+ano
+# PARSING DE DATAS E HORÁRIOS
 # ---------------------------------------------------------------------------
 
-def _infer_year(month_num: str, month_end: str = None) -> str:
-    now = datetime.now()
-    ref = int(month_end) if month_end else int(month_num)
-    # Se o mês de referência já passou, ainda usar ano actual
-    # (eventos passados recentes são válidos para o histórico)
-    return str(now.year) if ref >= 1 else str(now.year + 1)
+def _parse_time(text: str) -> Optional[str]:
+    """
+    Extrai o primeiro horário de uma string como "11h30 e 16h" ou "11h . 15h30".
+    Devolve "HH:MM" ou None.
+    """
+    m = re.search(r"(\d{1,2})h(\d{0,2})", text)
+    if not m:
+        return None
+    h  = m.group(1).zfill(2)
+    mi = m.group(2).zfill(2) if m.group(2) else "00"
+    return f"{h}:{mi}"
 
 
-def _parse_date_fragment(fragment: str) -> Optional[str]:
-    f = fragment.strip().lower()
-    f = re.sub(r"\bde\b", " ", f)
-    f = re.sub(r"\s+", " ", f).strip()
-
-    # DD MMMM [YYYY]
-    m = re.match(r"^(\d{1,2})\s+([a-záéíóúâêôãõç]+)(?:\s+(\d{4}))?$", f)
-    if m:
-        month = MONTH_PT.get(m.group(2)[:3])
-        if month:
-            year = m.group(3) or str(datetime.now().year)
-            return f"{year}-{month}-{m.group(1).zfill(2)}"
-
-    # MMMM YYYY
-    m = re.match(r"^([a-záéíóúâêôãõç]+)\s+(\d{4})$", f)
-    if m:
-        month = MONTH_PT.get(m.group(1)[:3])
-        if month:
-            return f"{m.group(2)}-{month}-01"
-
-    return None
+def _parse_all_times(text: str) -> list[str]:
+    """
+    Extrai todos os horários de uma string. Ex: "11h30 e 16h" → ["11:30", "16:00"].
+    """
+    return [
+        f"{m.group(1).zfill(2)}:{(m.group(2) or '00').zfill(2)}"
+        for m in re.finditer(r"(\d{1,2})h(\d{0,2})", text)
+    ]
 
 
 def _parse_tndm_date(text: str) -> tuple[Optional[str], Optional[str]]:
     """
     Parseia texto de data TNDM. Retorna (date_first_iso, date_close_iso).
-    Formatos:
-      "22 MAR"             → data única sem ano
-      "27 mar - 18 abr 2026" → período com ano
-      "9 - 10 MAI"         → período mesmo mês
-      "4, 6, 7, 20 - 21 JUN" → múltiplos → usar primeiro e último
-      "SET 2025 - JUL 2026" → mês+ano
+    Formatos suportados:
+      "22 MAR"                    → data única sem ano
+      "27 mar - 18 abr 2026"      → período com dois meses
+      "9 - 10 MAI"                → período mesmo mês
+      "4, 6, 7, 20 - 21 JUN"     → múltiplos → usar primeiro e último
+      "SET 2025 - JUL 2026"       → só mês+ano
+      "3 mai 2025"                → data completa minúsculas
     """
     if not text:
         return None, None
 
-    t = text.strip()
-    t = re.sub(r"\s+", " ", t).strip()
+    t        = text.strip()
+    t        = re.sub(r"\s+", " ", t).strip()
     now_year = str(datetime.now().year)
 
     # Período com dois meses diferentes: "27 mar - 18 abr 2026" ou "SET 2025 - JUL 2026"
@@ -189,7 +167,6 @@ def _parse_tndm_date(text: str) -> tuple[Optional[str], Optional[str]]:
             return f"{y1}-{m1}-{day1}", f"{y2}-{m2}-{day2}"
 
     # Período mesmo mês: "9 - 10 MAI" ou "4, 6, 7, 20 - 21 JUN"
-    # Extrair todos os números antes do mês e o mês
     month_m = re.search(r"\b([a-záéíóúA-Z]{3,})\b", t)
     if month_m:
         month = MONTH_PT.get(month_m.group(1).lower()[:3])
@@ -204,7 +181,7 @@ def _parse_tndm_date(text: str) -> tuple[Optional[str], Optional[str]]:
                 d2 = f"{year}-{month}-{day_last}" if day_last and day_last != day_first else None
                 return d1, d2
 
-    # Data única com mês por extenso: "22 MAR 2026" ou "28 ABR"
+    # Data única: "22 MAR 2026" ou "28 ABR" ou "3 mai 2025"
     m = re.match(r"^(\d{1,2})\s+([a-záéíóúA-Z]+)(?:\s+(\d{4}))?$", t)
     if m:
         month = MONTH_PT.get(m.group(2).lower()[:3])
@@ -215,18 +192,137 @@ def _parse_tndm_date(text: str) -> tuple[Optional[str], Optional[str]]:
     return None, None
 
 
+def _expand_date_text(date_text: str, now_year: str) -> list[str]:
+    """
+    Expande "4, 6, 7, 20 - 21 JUN" em datas ISO individuais.
+    Retorna lista de ISO dates.
+    Suporta:
+      - listas com vírgulas: "3, 5, 17 - 19 JUN"
+      - intervalos: "17 - 19 JUN"
+      - misto: "4, 6, 7, 20 - 21 JUN"
+    """
+    t = date_text.strip()
+
+    # Encontrar mês e ano
+    month_m = re.search(r"\b([a-záéíóúA-Z]{3,})\b", t)
+    if not month_m:
+        return []
+    month = MONTH_PT.get(month_m.group(1).lower()[:3])
+    if not month:
+        return []
+    year_m = re.search(r"\d{4}", t)
+    year   = year_m.group() if year_m else now_year
+
+    # Extrair a parte numérica (antes do mês)
+    num_part = t[:month_m.start()].strip().rstrip(",").strip()
+
+    dates = []
+    # Splittar por vírgulas, processar cada segmento
+    for segment in re.split(r",", num_part):
+        seg = segment.strip()
+        # Intervalo: "17 - 19" ou "20 - 21"
+        range_m = re.match(r"^(\d+)\s*[-–]\s*(\d+)$", seg)
+        if range_m:
+            start, end = int(range_m.group(1)), int(range_m.group(2))
+            for d in range(start, end + 1):
+                dates.append(f"{year}-{month}-{str(d).zfill(2)}")
+        elif re.match(r"^\d+$", seg):
+            dates.append(f"{year}-{month}-{seg.zfill(2)}")
+
+    return dates
+
+
 # ---------------------------------------------------------------------------
-# MÉTODO 1 — TODA A PROGRAMAÇÃO COM PAGINAÇÃO
+# EXTRACÇÃO DE SESSÕES DA TABELA .table_tickets
+# ---------------------------------------------------------------------------
+
+def _parse_sessions_from_table(soup: BeautifulSoup, now_year: str) -> list[dict]:
+    """
+    Lê a(s) tabela(s) .table_tickets e extrai uma lista de sessões.
+    Cada sessão tem: date, time_start, time_end, venue_name, venue_url, notes.
+    Ignora a secção "Espetáculo já apresentado em" (datas passadas).
+    """
+    sessions = []
+
+    # Encontrar apenas blocos de datas futuras (excluir .datas_ultrapassadas)
+    for container in soup.select(".datas_detalhe"):
+        # Saltar datas ultrapassadas
+        if "datas_ultrapassadas" in container.get("class", []):
+            continue
+
+        table = container.select_one("table.table_tickets")
+        if not table:
+            continue
+
+        for row in table.select("tr"):
+            wrapper = row.select_one(".evento_datas_wapper")
+            if not wrapper:
+                continue
+
+            # Data e hora
+            data_el = wrapper.select_one(".evento_data_container")
+            if not data_el:
+                continue
+
+            divs = data_el.find_all("div", recursive=False)
+            date_raw  = divs[0].get_text(strip=True) if len(divs) > 0 else ""
+            time_raw  = divs[1].get_text(strip=True) if len(divs) > 1 else ""
+
+            if not date_raw:
+                continue
+
+            # Local
+            local_el  = wrapper.select_one(".evento_local_container")
+            venue_name = ""
+            venue_url  = None
+            if local_el:
+                link = local_el.find("a")
+                if link:
+                    venue_name = link.get_text(strip=True)
+                    href = link.get("href", "")
+                    if href and href.startswith("http"):
+                        venue_url = href
+                else:
+                    venue_name = local_el.get_text(strip=True)
+
+            # Expandir datas (pode ser "4, 6, 7, 20 - 21 JUN")
+            expanded_dates = _expand_date_text(date_raw, now_year)
+            if not expanded_dates:
+                # Fallback: tentar parse simples
+                d1, _ = _parse_tndm_date(date_raw)
+                if d1:
+                    expanded_dates = [d1]
+
+            if not expanded_dates:
+                continue
+
+            # Horários
+            times = _parse_all_times(time_raw)
+            time_start = times[0] if times else None
+            time_end   = times[1] if len(times) > 1 else None
+
+            for iso_date in expanded_dates:
+                sessions.append({
+                    "date":        iso_date,
+                    "time_start":  time_start,
+                    "time_end":    time_end,
+                    "venue_name":  venue_name or None,
+                    "venue_url":   venue_url,
+                    "is_cancelled": False,
+                    "is_sold_out":  False,
+                    "notes":       time_raw if time_raw and not times else None,
+                })
+
+    return sessions
+
+
+# ---------------------------------------------------------------------------
+# EXTRACTION DE LINKS (listagem)
 # ---------------------------------------------------------------------------
 
 def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
-    """
-    Extrai links de espetáculos e metadados de uma página de listagem.
-    Retorna dict {url: {title, date_text, categories}}.
-    """
     entries: dict[str, dict] = {}
 
-    # Estratégia: encontrar todos os links "Saiba mais" com href para espetáculo
     for a in soup.find_all("a", href=True):
         href     = a["href"]
         full_url = href if href.startswith("http") else f"{WEBSITE}{href}"
@@ -234,7 +330,6 @@ def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
         if not _is_event_url(full_url):
             continue
 
-        # Subir na DOM até encontrar o bloco com data e título
         title     = ""
         date_text = ""
         cats      = []
@@ -246,18 +341,15 @@ def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
                 break
             text = node.get_text(" ", strip=True)
 
-            # Procurar padrão de data TNDM no bloco
-            # Padrões: "22 MAR", "27 mar - 18 abr 2026", "SET 2025 - JUL 2026"
             date_m = re.search(
-                r"\b(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-Za-záéíóú]{3,}(?:\s+\d{4})?|"  # "9 - 10 MAI"
-                r"\d{1,2}\s+[A-Za-záéíóú]{3,}(?:\s*[-–]\s*\d{1,2}\s+[A-Za-záéíóú]{3,})?(?:\s+\d{4})?|"  # "27 mar - 18 abr 2026"
-                r"[A-Z]{3}\s+\d{4}\s*[-–]\s*[A-Z]{3}\s+\d{4})\b",  # "SET 2025 - JUL 2026"
+                r"\b(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-Za-záéíóú]{3,}(?:\s+\d{4})?|"
+                r"\d{1,2}\s+[A-Za-záéíóú]{3,}(?:\s*[-–]\s*\d{1,2}\s+[A-Za-záéíóú]{3,})?(?:\s+\d{4})?|"
+                r"[A-Z]{3}\s+\d{4}\s*[-–]\s*[A-Z]{3}\s+\d{4})\b",
                 text
             )
             if date_m and not date_text:
                 date_text = date_m.group(0).strip()
 
-            # Procurar título: elemento <h2>, <h3>, <h4> ou strong dentro do bloco
             if not title:
                 for tag in node.find_all(["h2", "h3", "h4", "strong"]):
                     t = tag.get_text(strip=True)
@@ -265,17 +357,14 @@ def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
                         title = t
                         break
 
-            # Categorias: Espetáculos, Participação, etc.
             for cat in ["Espetáculos", "Participação", "Livros e Pensamento", "Oficinas e Formação",
                         "Infância e Juventude", "Público em geral"]:
                 if cat.lower() in text.lower() and cat not in cats:
                     cats.append(cat)
 
-            # Se encontrámos tanto data como título, parar de subir
             if date_text and title:
                 break
 
-        # Fallback: inferir título do slug
         if not title:
             slug  = full_url.rstrip("/").split("/")[-1]
             title = slug.replace("-", " ").title()
@@ -291,7 +380,6 @@ def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
                 "categories": cats,
             }
         else:
-            # Actualizar com informação mais completa
             if len(title) > len(entries[full_url]["title"]):
                 entries[full_url]["title"] = title
             if date_text and not entries[full_url]["date_text"]:
@@ -300,26 +388,24 @@ def _extract_links_from_page(soup: BeautifulSoup) -> dict[str, dict]:
     return entries
 
 
+# ---------------------------------------------------------------------------
+# MÉTODO 1 — TODA A PROGRAMAÇÃO COM PAGINAÇÃO
+# ---------------------------------------------------------------------------
+
 def _scrape_toda_programacao(session: requests.Session) -> list[dict]:
-    """
-    Raspa toda-a-programacao com paginação completa.
-    Parâmetros de paginação: ?tipo=1&cat=1&p=N
-    """
     logger.info(f"TNDM: método 1 — Toda a Programação com paginação ({TODA_BASE})")
     all_entries: dict[str, dict] = {}
 
-    # Página 1 (sem parâmetros)
     resp = _get(session, TODA_BASE)
     if not resp:
         logger.warning("TNDM: toda-a-programacao inacessível")
         return []
 
-    soup    = BeautifulSoup(resp.text, "lxml")
+    soup         = BeautifulSoup(resp.text, "lxml")
     page_entries = _extract_links_from_page(soup)
     all_entries.update(page_entries)
     logger.info(f"TNDM: página 1 — {len(page_entries)} itens ({len(all_entries)} total)")
 
-    # Detectar número total de páginas a partir de links de paginação
     max_page = 1
     for a in soup.find_all("a", href=True):
         href = a["href"]
@@ -327,13 +413,11 @@ def _scrape_toda_programacao(session: requests.Session) -> list[dict]:
         if pm:
             max_page = max(max_page, int(pm.group(1)))
 
-    # Se não detectou paginação, tentar à bruta até página vazia
     if max_page == 1:
         max_page = MAX_PAGES
 
     logger.info(f"TNDM: máximo de páginas detectado: {max_page}")
 
-    # Iterar páginas 2..N
     for page in range(2, min(max_page + 1, MAX_PAGES + 1)):
         time.sleep(REQUEST_DELAY)
         resp = _get(session, TODA_BASE, params={"tipo": "1", "cat": "1", "p": str(page)})
@@ -352,7 +436,6 @@ def _scrape_toda_programacao(session: requests.Session) -> list[dict]:
         all_entries.update(page_entries)
         logger.info(f"TNDM: página {page} — {len(page_entries)} itens ({new_count} novos, {len(all_entries)} total)")
 
-        # Parar se não há itens novos (loop de paginação)
         if new_count == 0:
             logger.info(f"TNDM: sem itens novos na página {page} — a parar")
             break
@@ -362,9 +445,8 @@ def _scrape_toda_programacao(session: requests.Session) -> list[dict]:
     if not all_entries:
         return []
 
-    # Visitar cada página individual
-    events  = []
-    total   = len(all_entries)
+    events = []
+    total  = len(all_entries)
     for i, (url, meta) in enumerate(all_entries.items()):
         ev = _parse_event_page(
             url, session,
@@ -429,13 +511,15 @@ def _parse_event_page(
     if not resp:
         return None
 
-    soup = BeautifulSoup(resp.text, "lxml")
-    ft   = soup.get_text(" ", strip=True)
-    ftl  = ft.lower()
+    soup     = BeautifulSoup(resp.text, "lxml")
+    ft       = soup.get_text(" ", strip=True)
+    ftl      = ft.lower()
+    now_year = str(datetime.now().year)
 
-    # ── Título ──
+    # ── Título ──────────────────────────────────────────────────────────────
     title = ""
-    for sel in ["h1.show-title", "h1.espetaculo-title", ".page-header h1", "main h1", "h1"]:
+    for sel in ["h1.show-title", "h1.espetaculo-title", ".page-header h1", "main h1",
+                "#hero-titulo", "h1"]:
         el = soup.select_one(sel)
         if el:
             t = el.get_text(strip=True)
@@ -453,61 +537,68 @@ def _parse_event_page(
     title = re.sub(r"\s*[-–|]\s*Teatro Nacional.*$", "", title, flags=re.IGNORECASE).strip()
     title = re.sub(r"\s*[-–|]\s*TNDM.*$",           "", title, flags=re.IGNORECASE).strip()
 
-    # ── Datas ──
-    dates      = []
-    date_close = None
+    # ── Categorias/Tags ──────────────────────────────────────────────────────
+    # v6: ler directamente de .tag-list-item.programacao
+    cats = []
+    for tag_el in soup.select(".tag-list-item.programacao"):
+        t = tag_el.get_text(strip=True)
+        if t and t not in cats:
+            cats.append(t)
 
-    # 1. JSON-LD
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = _json.loads(script.string or "")
-            if isinstance(data, list):
-                data = next((d for d in data if isinstance(d, dict) and d.get("@type") == "Event"), {})
-            if isinstance(data, dict) and data.get("@type") == "Event":
-                start = data.get("startDate", "")
-                end   = data.get("endDate",   "")
-                if start and len(start) >= 10:
-                    dates      = [_mdate(start[:10], start[11:16] if len(start) > 10 else None)]
-                    date_close = end[:10] if end and len(end) >= 10 else None
-                    break
-        except Exception:
-            pass
+    # Fallback: hints da listagem ou inferência por URL
+    if not cats and cats_hint:
+        cats = cats_hint
+    if not cats:
+        ul = url.lower()
+        if "/espetaculos/"           in ul: cats = ["Espetáculos"]
+        elif "/participacao/"        in ul: cats = ["Participação"]
+        elif "/livros-e-pensamento/" in ul: cats = ["Livros e Pensamento"]
+        elif "/oficinas-e-formacao/" in ul: cats = ["Oficinas e Formação"]
 
-    # 2. Selectores HTML
-    if not dates:
-        for sel in [".show-date", ".event-date", "[class*='date']", "[class*='data']", "time[datetime]"]:
-            for el in soup.select(sel):
-                raw = el.get("datetime") or el.get_text(strip=True)
-                d1, d2 = _parse_tndm_date(raw)
-                if d1:
-                    dates = [_mdate(d1)]; date_close = d2; break
-            if dates:
-                break
+    # ── Sessões da tabela .table_tickets ─────────────────────────────────────
+    # v6: extracção completa de todas as sessões com data, hora e local
+    sessions = _parse_sessions_from_table(soup, now_year)
 
-    # 3. Regex no texto — padrões TNDM
-    if not dates:
-        for pat in [
-            r"(\d{1,2}\s+[a-záéíóúA-Z]{3,}\s*[-–]\s*\d{1,2}\s+[a-záéíóúA-Z]{3,}\s+\d{4})",
-            r"(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-ZÁÉÍÓÚ]{3,}(?:\s+\d{4})?)",
-            r"(\d{1,2}\s+[a-záéíóúA-Z]{3,}\s+\d{4})\b",
-            r"\b(\d{1,2}\s+[A-ZÁÉÍÓÚ]{3,4})\b",
-        ]:
-            m = re.search(pat, ft)
-            if m:
-                d1, d2 = _parse_tndm_date(m.group(1))
-                if d1:
-                    dates = [_mdate(d1)]; date_close = d2; break
+    # Fallback para datas quando não há tabela estruturada
+    if not sessions:
+        sessions = _parse_dates_fallback(soup, ft, date_hint, now_year)
 
-    # 4. Hint da listagem
-    if not dates and date_hint:
-        d1, d2 = _parse_tndm_date(date_hint)
-        if d1:
-            dates = [_mdate(d1)]; date_close = d2
+    # Construir dates[] compatível com schema
+    dates = []
+    for s in sessions:
+        dates.append({
+            "date":             s["date"],
+            "time_start":       s.get("time_start"),
+            "time_end":         s.get("time_end"),
+            "duration_minutes": None,
+            "is_cancelled":     s.get("is_cancelled", False),
+            "is_sold_out":      s.get("is_sold_out", False),
+            "notes":            s.get("notes"),
+        })
 
-    # ── Descrição ──
+    date_open  = dates[0]["date"]  if dates else None
+    date_close = dates[-1]["date"] if len(dates) > 1 else None
+
+    # ── Espaços/locais ───────────────────────────────────────────────────────
+    # v6: recolher todos os locais únicos das sessões
+    venue_names = []
+    for s in sessions:
+        vn = s.get("venue_name")
+        if vn and vn not in venue_names:
+            venue_names.append(vn)
+
+    # space_id canónico (para a Sala principal TNDM)
+    space_id = None
+    if "sala garrett"          in ftl: space_id = "sala-garrett"
+    elif "sala estúdio"        in ftl: space_id = "sala-estudio"
+    elif "teatro variedades"   in ftl: space_id = "teatro-variedades"
+    elif "jardins do bombarda" in ftl: space_id = "jardins-bombarda"
+
+    # ── Descrição ────────────────────────────────────────────────────────────
     desc = ""
     for sel in [".show-description", ".event-description", ".synopsis",
-                ".entry-content", ".description", "main p"]:
+                ".descricao_evento .htmleditor", ".entry-content",
+                ".description", "main p"]:
         el = soup.select_one(sel)
         if el:
             d = el.get_text(separator="\n", strip=True)
@@ -518,7 +609,7 @@ def _parse_event_page(
         if og:
             desc = og.get("content", "").strip()
 
-    # ── Imagem ──
+    # ── Imagem ───────────────────────────────────────────────────────────────
     cover = None
     og_img = soup.find("meta", property="og:image")
     if og_img:
@@ -531,16 +622,7 @@ def _parse_event_page(
                 cover = src if src.startswith("http") else f"{WEBSITE}{src}"
                 break
 
-    # ── Categorias ──
-    cats = cats_hint or []
-    if not cats:
-        ul = url.lower()
-        if "/espetaculos/"           in ul: cats = ["Espetáculos"]
-        elif "/participacao/"        in ul: cats = ["Participação"]
-        elif "/livros-e-pensamento/" in ul: cats = ["Livros e Pensamento"]
-        elif "/oficinas-e-formacao/" in ul: cats = ["Oficinas e Formação"]
-
-    # ── Preço ──
+    # ── Preço ────────────────────────────────────────────────────────────────
     price_raw = ""
     for sel in [".price", "[class*='preco']", "[class*='price']"]:
         el = soup.select_one(sel)
@@ -549,7 +631,7 @@ def _parse_event_page(
     if not price_raw and re.search(r"entrada\s+livre|gratuito|acesso\s+livre", ftl):
         price_raw = "Entrada livre"
 
-    # ── Bilheteira ──
+    # ── Bilheteira ───────────────────────────────────────────────────────────
     ticketing_url = None
     for a in soup.find_all("a", href=True):
         at = a.get_text(strip=True).lower()
@@ -558,14 +640,23 @@ def _parse_event_page(
             ticketing_url = h if h.startswith("http") else f"{WEBSITE}{h}"
             break
 
-    # ── Créditos ──
+    # ── Ficha técnica ────────────────────────────────────────────────────────
+    # v6: selector corrigido (.ficha_tecnica com underscore)
     credits_raw = ""
-    for sel in [".credits", ".ficha-tecnica", "[class*='ficha']", ".team"]:
+    for sel in [".ficha_tecnica .primeiro_bloco", ".ficha_tecnica", ".ficha-tecnica",
+                ".credits", "[class*='ficha']", ".team"]:
         el = soup.select_one(sel)
         if el:
             credits_raw = el.get_text(separator="\n", strip=True); break
 
-    # ── Acessibilidade ──
+    # ── Classificação etária ─────────────────────────────────────────────────
+    # v6: regex alargado — captura "M/3", "M/6 anos", "M/ 12 anos"
+    audience_raw = ""
+    age_m = re.search(r"M[/\s]\s*(\d+)(?:\s*anos?)?", resp.text, re.IGNORECASE)
+    if age_m:
+        audience_raw = f"M/{age_m.group(1)}"
+
+    # ── Acessibilidade ───────────────────────────────────────────────────────
     accessibility = {
         "has_sign_language":      "lgp" in ftl or "língua gestual" in ftl,
         "has_audio_description":  "audiodescri" in ftl or "audiodescrição" in ftl,
@@ -574,19 +665,6 @@ def _parse_event_page(
         "wheelchair_accessible":  True,
         "notes":                  None,
     }
-
-    # ── Espaço ──
-    space_id = None
-    if "sala garrett"          in ftl: space_id = "sala-garrett"
-    elif "sala estúdio"        in ftl: space_id = "sala-estudio"
-    elif "teatro variedades"   in ftl: space_id = "teatro-variedades"
-    elif "jardins do bombarda" in ftl: space_id = "jardins-bombarda"
-
-    # ── Público ──
-    audience_raw = ""
-    age_m = re.search(r"M[/\s]?(\d+)\s*anos?", resp.text, re.IGNORECASE)
-    if age_m:
-        audience_raw = f"M/{age_m.group(1)} anos"
 
     return {
         "source_id":     url.rstrip("/").split("/")[-1],
@@ -597,9 +675,10 @@ def _parse_event_page(
         "categories":    cats,
         "tags":          [],
         "dates":         dates,
-        "date_open":     dates[0]["date"] if dates else None,
+        "date_open":     date_open,
         "date_close":    date_close,
-        "is_ongoing":    bool(date_close and dates and date_close > dates[0]["date"]),
+        "is_ongoing":    bool(date_close and date_open and date_close > date_open),
+        "venue_names":   venue_names,      # v6: lista de locais das sessões
         "price_raw":     price_raw,
         "ticketing_url": ticketing_url,
         "audience":      audience_raw,
@@ -608,19 +687,90 @@ def _parse_event_page(
         "credits_raw":   credits_raw,
         "accessibility": accessibility,
         "scraped_at":    datetime.now(timezone.utc).isoformat(),
-        "_method":       "tndm-v5",
+        "_method":       "tndm-v6",
     }
 
 
-def _mdate(date: str, time_start: str = None) -> dict:
+# ---------------------------------------------------------------------------
+# FALLBACK DE DATAS (quando não há .table_tickets)
+# ---------------------------------------------------------------------------
+
+def _parse_dates_fallback(
+    soup: BeautifulSoup,
+    ft: str,
+    date_hint: str,
+    now_year: str,
+) -> list[dict]:
+    """
+    Tenta extrair datas por JSON-LD, selectores HTML ou regex.
+    Devolve lista de sessões mínimas [{date, time_start, ...}].
+    """
+    # 1. JSON-LD
+    for script in soup.find_all("script", type="application/ld+json"):
+        try:
+            data = _json.loads(script.string or "")
+            if isinstance(data, list):
+                data = next((d for d in data if isinstance(d, dict) and d.get("@type") == "Event"), {})
+            if isinstance(data, dict) and data.get("@type") == "Event":
+                start = data.get("startDate", "")
+                end   = data.get("endDate",   "")
+                if start and len(start) >= 10:
+                    sessions = [_msession(start[:10], start[11:16] if len(start) > 10 else None)]
+                    if end and len(end) >= 10 and end[:10] != start[:10]:
+                        sessions.append(_msession(end[:10]))
+                    return sessions
+        except Exception:
+            pass
+
+    # 2. Selectores HTML
+    for sel in [".show-date", ".event-date", "[class*='date']", "[class*='data']", "time[datetime]"]:
+        for el in soup.select(sel):
+            raw = el.get("datetime") or el.get_text(strip=True)
+            d1, d2 = _parse_tndm_date(raw)
+            if d1:
+                sessions = [_msession(d1)]
+                if d2:
+                    sessions.append(_msession(d2))
+                return sessions
+
+    # 3. Regex no texto
+    for pat in [
+        r"(\d{1,2}\s+[a-záéíóúA-Z]{3,}\s*[-–]\s*\d{1,2}\s+[a-záéíóúA-Z]{3,}\s+\d{4})",
+        r"(\d{1,2}\s*[-–]\s*\d{1,2}\s+[A-ZÁÉÍÓÚ]{3,}(?:\s+\d{4})?)",
+        r"(\d{1,2}\s+[a-záéíóúA-Z]{3,}\s+\d{4})\b",
+        r"\b(\d{1,2}\s+[A-ZÁÉÍÓÚ]{3,4})\b",
+    ]:
+        m = re.search(pat, ft)
+        if m:
+            d1, d2 = _parse_tndm_date(m.group(1))
+            if d1:
+                sessions = [_msession(d1)]
+                if d2:
+                    sessions.append(_msession(d2))
+                return sessions
+
+    # 4. Hint da listagem
+    if date_hint:
+        d1, d2 = _parse_tndm_date(date_hint)
+        if d1:
+            sessions = [_msession(d1)]
+            if d2:
+                sessions.append(_msession(d2))
+            return sessions
+
+    return []
+
+
+def _msession(date: str, time_start: str = None) -> dict:
     return {
-        "date":             date,
-        "time_start":       time_start,
-        "time_end":         None,
-        "duration_minutes": None,
-        "is_cancelled":     False,
-        "is_sold_out":      False,
-        "notes":            None,
+        "date":        date,
+        "time_start":  time_start,
+        "time_end":    None,
+        "venue_name":  None,
+        "venue_url":   None,
+        "is_cancelled": False,
+        "is_sold_out":  False,
+        "notes":       None,
     }
 
 
@@ -631,12 +781,10 @@ def _mdate(date: str, time_start: str = None) -> dict:
 def run(start_date: Optional[str] = None) -> list[dict]:
     session = _make_session()
 
-    # Método 1: toda-a-programacao com paginação
     events = _scrape_toda_programacao(session)
     if events:
         return events
 
-    # Método 2: secções individuais
     logger.warning("TNDM: toda-a-programacao sem resultados — a tentar secções")
     events = _scrape_via_listings(session)
     if events:
