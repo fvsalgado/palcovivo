@@ -49,16 +49,16 @@ SITEMAP_URLS = [
     f"{WEBSITE}/wp-sitemap.xml",
     f"{WEBSITE}/event-sitemap.xml",
 ]
-EVENT_URL_PATTERN = re.compile(r"/event/[^/]+/?$")
+EVENT_URL_PATTERN = re.compile(r"(?<!/en)/event/[^/]+/?$")  # exclui /en/event/
 
 # Filtro de lastmod — só processar URLs modificadas nos últimos N dias
 SITEMAP_MAX_AGE_DAYS = 365  # 12 meses
 
 # Método 3 — HTML directo
 PROGRAMME_URLS = [
+    f"{WEBSITE}/programa/",        # URL real confirmada
+    f"{WEBSITE}/programme/",       # versão EN (links podem dar 404)
     f"{WEBSITE}/programacao/",
-    f"{WEBSITE}/programme/",
-    f"{WEBSITE}/programacao-2/",
     f"{WEBSITE}/agenda/",
 ]
 
@@ -359,9 +359,10 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
     if not title:
         return None
 
-    # Filtrar eventos passados (> 30 dias)
+    # Filtrar apenas eventos muito antigos (> 7 dias passados)
+    # Usar margem pequena para não perder espectáculos em curso
     if dates and dates[0].get("date"):
-        cutoff_past = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
+        cutoff_past = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
         if dates[0]["date"] < cutoff_past:
             return None
 
