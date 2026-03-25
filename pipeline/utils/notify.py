@@ -49,19 +49,33 @@ def build_email_html(report: dict) -> str:
     status_label = "⚠️ Com erros" if has_errors else "✅ Sem erros"
 
     # Linhas de venues
+    venue_quality = report.get("venue_quality", {})
     venue_rows = ""
     for v in venues:
+        vid = v.get("venue_id", "")
         err_badge = ""
         if v.get("errors"):
-            err_badge = f'<span style="color:#E63946;font-size:11px;">⚠️ {len(v["errors"])} erro(s)</span>'
-        venue_rows += f"""
-        <tr>
-          <td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;font-weight:600;">{v['venue_name']}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{v['scraped']}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#2A9D8F;">{v['valid']}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#E63946;">{v['invalid']}</td>
-          <td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;">{err_badge}</td>
-        </tr>"""
+            n_err = len(v["errors"])
+            err_badge = f'<span style="color:#E63946;font-size:11px;">⚠️ {n_err} erro(s)</span>'
+        elif v.get("cache_hit"):
+            err_badge = '<span style="color:#888;font-size:11px;">📦 cache</span>'
+        vq = venue_quality.get(vid, {})
+        score = vq.get("avg_credibility", 0)
+        if score:
+            sc = "#2A9D8F" if score >= 0.7 else "#E9C46A" if score >= 0.5 else "#E63946"
+            score_cell = f'<span style="color:{sc};font-weight:600;">{int(score*100)}%</span>'
+        else:
+            score_cell = "—"
+        venue_rows += (
+            "<tr>"
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;font-weight:600;">{v["venue_name"]}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{v["scraped"]}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#2A9D8F;">{v["valid"]}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#E63946;">{v["invalid"]}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{score_cell}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;">{err_badge}</td>'
+            "</tr>"
+        )
 
     # Erros detalhados
     error_section = ""
@@ -108,9 +122,13 @@ def build_email_html(report: dict) -> str:
         <div style="font-size:32px;font-weight:700;color:#E63946;">{s.get('total_invalid', 0)}</div>
         <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:.5px;">Inválidos</div>
       </div>
-      <div style="flex:1;padding:20px 24px;text-align:center;">
+      <div style="flex:1;padding:20px 24px;text-align:center;border-right:1px solid #eee;">
         <div style="font-size:32px;font-weight:700;color:#457B9D;">{s.get('venues_processed', 0)}</div>
         <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:.5px;">Venues</div>
+      </div>
+      <div style="flex:1;padding:20px 24px;text-align:center;">
+        <div style="font-size:32px;font-weight:700;color:#6C63FF;">{int(s.get('avg_credibility', 0)*100)}%</div>
+        <div style="font-size:12px;color:#888;margin-top:4px;text-transform:uppercase;letter-spacing:.5px;">Credibilidade</div>
       </div>
     </div>
 
@@ -124,6 +142,7 @@ def build_email_html(report: dict) -> str:
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Scraped</th>
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Válidos</th>
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Inválidos</th>
+            <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Score</th>
             <th style="padding:8px 12px;text-align:left;color:#666;font-weight:600;border-bottom:2px solid #eee;">Estado</th>
           </tr>
         </thead>
@@ -243,7 +262,7 @@ def notify(report: dict) -> None:
 if __name__ == "__main__":
     import sys
     logging.basicConfig(level=logging.INFO)
-    logs_dir = Path(__file__).parent.parent / "data" / "logs"
+    logs_dir = Path(__file__).parent.parent.parent / "data" / "logs"
     latest = logs_dir / "latest.json"
     if latest.exists():
         with open(latest) as f:
