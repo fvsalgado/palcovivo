@@ -5,1208 +5,751 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Primeira Plateia — Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #0a0a0f;
-  --surface: #111118;
-  --surface2: #18181f;
-  --border: #222230;
-  --border2: #2a2a3a;
-  --text: #e8e8f2;
-  --muted: #666680;
-  --dim: #333345;
-  --musica: #457B9D;
-  --palco: #E63946;
-  --visuais: #F4A261;
-  --pensamento: #2A9D8F;
-  --cinema: #264653;
-  --formacao: #8338EC;
-  --outros: #6C757D;
-  --green: #2A9D8F;
-  --red: #E63946;
-  --yellow: #F4A261;
-  --mono: 'DM Mono', monospace;
-  --serif: 'Fraunces', serif;
+:root{
+  --bg:#0c0c10;--s1:#111116;--s2:#18181f;--s3:#1f1f28;
+  --border:#26262f;--border2:#30303c;
+  --text:#e2e2ea;--muted:#5c5c78;--dim:#2e2e3a;
+  --green:#2fbf8a;--yellow:#e8ac3c;--red:#e05555;--blue:#5588ee;
+  --mono:'DM Mono',monospace;--serif:'Fraunces',serif;
 }
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;line-height:1.5;min-height:100vh}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* loading */
+#loading{position:fixed;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999;gap:14px}
+.spin{width:36px;height:36px;border:2px solid var(--border2);border-top-color:var(--blue);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--mono);
-  font-size: 13px;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
+/* layout */
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(12,12,16,.96);backdrop-filter:blur(12px);z-index:100}
+.logo{font-family:var(--serif);font-size:18px;font-weight:300;letter-spacing:-.3px}
+.logo em{font-style:italic;color:var(--muted)}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.run-info{font-size:11px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:5px;background:var(--s2);border:1px solid var(--border);border-radius:4px;padding:5px 11px;font-family:var(--mono);font-size:11px;cursor:pointer;color:var(--text);transition:.15s}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--muted);flex-shrink:0}
+.dot.live{background:var(--green);box-shadow:0 0 6px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
-/* Grain overlay */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-  opacity: .4;
-}
+/* tabs */
+.tabs{display:flex;border-bottom:1px solid var(--border);background:var(--s1);padding:0 28px;overflow-x:auto}
+.tab{padding:13px 18px;font-size:11px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;text-transform:uppercase;letter-spacing:.7px;transition:.15s;background:none;border-top:none;border-left:none;border-right:none;font-family:var(--mono)}
+.tab:hover{color:var(--text)}
+.tab.on{color:var(--text);border-bottom-color:var(--blue)}
 
-/* HEADER */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 32px;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  background: rgba(10,10,15,.95);
-  backdrop-filter: blur(12px);
-  z-index: 100;
-}
-.logo {
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: 300;
-  color: var(--text);
-  letter-spacing: -0.5px;
-}
-.logo span { font-style: italic; color: var(--muted); }
-.header-right { display: flex; align-items: center; gap: 16px; }
-.run-at {
-  font-size: 11px;
-  color: var(--muted);
-  font-family: var(--mono);
-}
-.status-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 8px var(--green);
-  animation: pulse 2s infinite;
-}
-@keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .4; }
-}
-.btn-refresh {
-  background: var(--surface2);
-  border: 1px solid var(--border2);
-  color: var(--text);
-  padding: 6px 14px;
-  font-family: var(--mono);
-  font-size: 11px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: all .15s;
-}
-.btn-refresh:hover { border-color: var(--musica); color: var(--musica); }
+/* main */
+main{padding:28px;max-width:1440px;margin:0 auto}
+.sec{display:none}
+.sec.on{display:block}
 
-/* NAV TABS */
-.tabs {
-  display: flex;
-  gap: 0;
-  padding: 0 32px;
-  border-bottom: 1px solid var(--border);
-  background: var(--surface);
-  overflow-x: auto;
-}
-.tab {
-  padding: 14px 20px;
-  font-size: 11px;
-  font-family: var(--mono);
-  color: var(--muted);
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  white-space: nowrap;
-  transition: all .15s;
-  text-transform: uppercase;
-  letter-spacing: .8px;
-}
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--text); border-bottom-color: var(--musica); }
+/* kpi */
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+@media(max-width:800px){.kpi-row{grid-template-columns:repeat(2,1fr)}}
+.kpi{background:var(--s1);border:1px solid var(--border);border-radius:6px;padding:18px;text-align:center}
+.kval{font-family:var(--serif);font-size:40px;font-weight:600;line-height:1;margin-bottom:6px}
+.klabel{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.ksub{font-size:11px;color:var(--muted);margin-top:3px}
 
-/* MAIN */
-main { padding: 32px; max-width: 1400px; margin: 0 auto; }
+/* grid */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:900px){.g2{grid-template-columns:1fr}}
 
-.section { display: none; animation: fadeIn .3s ease; }
-.section.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+/* card */
+.card{background:var(--s1);border:1px solid var(--border);border-radius:6px;padding:18px}
+.ctitle{font-family:var(--serif);font-size:15px;font-weight:300;margin-bottom:14px}
+.ctitle em{color:var(--muted);font-style:italic;font-size:13px}
 
-/* GRID */
-.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
-.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
-@media (max-width: 900px) {
-  .grid-4 { grid-template-columns: repeat(2,1fr); }
-  .grid-3 { grid-template-columns: 1fr 1fr; }
-  .grid-2 { grid-template-columns: 1fr; }
-}
+/* bar */
+.brow{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.blabel{min-width:140px;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.btrack{flex:1;height:5px;background:var(--border2);border-radius:3px;overflow:hidden}
+.bfill{height:100%;border-radius:3px}
+.bcount{min-width:36px;text-align:right;font-size:11px;color:var(--muted)}
 
-/* CARDS */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
-}
-.card-sm { padding: 16px; }
+/* venue cards */
+.vcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-bottom:20px}
+.vcard{background:var(--s1);border:1px solid var(--border);border-radius:6px;padding:16px;cursor:pointer;transition:.15s}
+.vcard:hover,.vcard.on{border-color:var(--blue);background:var(--s2)}
+.vch{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}
+.vcname{font-family:var(--serif);font-size:16px;font-weight:300}
+.vcid{font-size:10px;color:var(--muted);margin-top:2px}
+.vcn{font-family:var(--serif);font-size:28px;font-weight:600;color:var(--blue)}
+.vcmini{display:flex;gap:10px;margin-top:8px;font-size:10px;color:var(--muted)}
 
-/* KPI */
-.kpi { text-align: center; padding: 24px 16px; }
-.kpi-val {
-  font-family: var(--serif);
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: 8px;
-}
-.kpi-label {
-  font-size: 10px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.kpi-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
+/* table */
+.twrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:8px 10px;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.7px;border-bottom:1px solid var(--border2);white-space:nowrap;cursor:pointer;user-select:none;background:none;font-family:var(--mono)}
+th:hover{color:var(--text)}
+th.sorted{color:var(--blue)}
+td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.03);vertical-align:middle}
+td.tlong{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+tr:hover td{background:rgba(255,255,255,.025)}
+tr:last-child td{border-bottom:none}
 
-/* SECTION HEADER */
-.section-title {
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  color: var(--text);
-}
-.section-title em { font-style: italic; color: var(--muted); }
+/* badges */
+.ok{color:var(--green)}
+.miss{color:var(--red)}
+.warn{color:var(--yellow)}
+.badge{display:inline-block;padding:2px 7px;border-radius:3px;font-size:10px}
+.bdim{background:rgba(255,255,255,.06);color:var(--muted)}
+.bok{background:rgba(47,191,138,.12);color:var(--green)}
+.bmiss{background:rgba(224,85,85,.12);color:var(--red)}
 
-/* TABLE */
-.table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-th {
-  text-align: left;
-  padding: 8px 12px;
-  color: var(--muted);
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: .8px;
-  border-bottom: 1px solid var(--border2);
-  white-space: nowrap;
-}
-td {
-  padding: 10px 12px;
-  border-bottom: 1px solid rgba(255,255,255,.03);
-  vertical-align: middle;
-}
-tr:hover td { background: rgba(255,255,255,.02); }
-tr:last-child td { border-bottom: none; }
+/* venue selector */
+.vselector{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.vbtn{background:var(--s2);border:1px solid var(--border);border-radius:4px;padding:5px 12px;font-family:var(--mono);font-size:12px;color:var(--muted);cursor:pointer;transition:.15s}
+.vbtn:hover{color:var(--text);border-color:var(--border2)}
+.vbtn.on{background:rgba(85,136,238,.12);border-color:var(--blue);color:var(--blue)}
 
-/* BADGE */
-.badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 3px;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: .3px;
-}
-.badge-green { background: rgba(42,157,143,.15); color: var(--green); }
-.badge-red   { background: rgba(230,57,70,.15);  color: var(--red); }
-.badge-yellow{ background: rgba(244,162,97,.15); color: var(--yellow); }
-.badge-dim   { background: rgba(255,255,255,.06); color: var(--muted); }
+/* search & filter bar */
+.sbar{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.sinput{background:var(--s2);border:1px solid var(--border);border-radius:4px;padding:7px 12px;font-family:var(--mono);font-size:12px;color:var(--text);outline:none;width:280px;transition:.15s}
+.sinput:focus{border-color:var(--blue)}
+.sinput::placeholder{color:var(--muted)}
+.fbtn{background:var(--s2);border:1px solid var(--border);border-radius:3px;padding:4px 9px;font-family:var(--mono);font-size:11px;color:var(--muted);cursor:pointer;transition:.12s}
+.fbtn:hover{color:var(--text)}
+.fbtn.on{background:rgba(224,85,85,.12);border-color:var(--red);color:var(--red)}
+.scount{font-size:11px;color:var(--muted)}
 
-/* DOMAIN PILL */
-.domain-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 10px;
-  font-weight: 500;
-}
+/* detail panel */
+.dpanel{background:var(--s1);border:1px solid var(--border);border-radius:6px;padding:18px;margin-top:12px;display:none}
+.dpanel.on{display:block}
+.dheader{display:flex;align-items:flex-start;gap:14px;margin-bottom:14px}
+.dimg{width:80px;height:60px;object-fit:cover;border-radius:4px;flex-shrink:0}
+.dph{width:80px;height:60px;background:var(--s3);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.dtitle{font-family:var(--serif);font-size:17px;font-weight:300;margin-bottom:4px}
+.dmeta{font-size:11px;color:var(--muted)}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:8px;margin-top:14px}
+.dfield{background:var(--s2);border-radius:4px;padding:10px}
+.dflabel{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+.dfval{font-size:12px;word-break:break-word}
+.dfull{grid-column:1/-1}
+.dclose{margin-left:auto;background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px;padding:0 4px;line-height:1}
+.dclose:hover{color:var(--red)}
 
-/* BAR CHART */
-.bar-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-.bar-label { min-width: 160px; font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bar-track { flex: 1; height: 6px; background: var(--border2); border-radius: 3px; overflow: hidden; }
-.bar-fill { height: 100%; border-radius: 3px; transition: width .6s ease; }
-.bar-count { min-width: 40px; text-align: right; font-size: 11px; color: var(--muted); }
+/* quality field rows */
+.qrow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.qrow:last-child{border-bottom:none}
+.qname{min-width:140px;font-size:12px;color:var(--muted)}
+.qbar{flex:1;height:4px;background:var(--border2);border-radius:2px;overflow:hidden}
+.qfill{height:100%;border-radius:2px}
+.qpct{min-width:40px;text-align:right;font-size:11px}
+.qdots{display:flex;gap:4px;min-width:100px;justify-content:flex-end}
+.qdot{font-size:10px;padding:1px 5px;border-radius:2px}
 
-/* QUALITY METER */
-.quality-ring {
-  width: 80px; height: 80px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--serif);
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
+/* stat row */
+.srow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:12px}
+.srow:last-child{border-bottom:none}
+.sk{color:var(--muted)}
 
-/* TIMELINE */
-.timeline-month {
-  margin-bottom: 20px;
-}
-.timeline-month-label {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--muted);
-  margin-bottom: 8px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--border);
-}
-.timeline-events {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-.timeline-dot {
-  width: 8px; height: 8px;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: transform .1s;
-  position: relative;
-}
-.timeline-dot:hover { transform: scale(1.5); }
-
-/* LOG */
-.log-entry {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 12px;
-}
-.log-entry:last-child { border-bottom: none; }
-.log-time { color: var(--muted); min-width: 140px; font-size: 11px; }
-.log-icon { width: 18px; text-align: center; }
-.log-text { flex: 1; }
-
-/* STAT ROW */
-.stat-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,.04);
-  font-size: 12px;
-}
-.stat-row:last-child { border-bottom: none; }
-.stat-key { color: var(--muted); }
-.stat-val { color: var(--text); font-weight: 500; }
-
-/* LOADING */
-#loading {
-  position: fixed; inset: 0;
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  gap: 16px;
-}
-.loader {
-  width: 40px; height: 40px;
-  border: 2px solid var(--border2);
-  border-top-color: var(--musica);
-  border-radius: 50%;
-  animation: spin .8s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-.loader-text { font-size: 12px; color: var(--muted); }
-
-/* ERROR */
-#error-banner {
-  display: none;
-  background: rgba(230,57,70,.1);
-  border: 1px solid rgba(230,57,70,.3);
-  color: var(--red);
-  padding: 12px 20px;
-  margin: 16px 32px;
-  border-radius: 6px;
-  font-size: 12px;
-}
-
-/* MINI SPARKLINE */
-.sparkline { display: flex; align-items: flex-end; gap: 2px; height: 24px; }
-.spark-bar { width: 4px; background: var(--musica); border-radius: 1px; min-height: 2px; }
-
-/* VENUE CARD */
-.venue-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 12px;
-}
-.venue-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 16px;
-}
-.venue-name { font-family: var(--serif); font-size: 18px; font-weight: 300; }
-.venue-id { font-size: 10px; color: var(--muted); margin-top: 2px; }
-.venue-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
-.venue-stat { text-align: center; }
-.venue-stat-val { font-family: var(--serif); font-size: 24px; font-weight: 600; }
-.venue-stat-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
-
-/* ACCESSIBILITY GRID */
-.acc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
-.acc-item {
-  background: var(--surface2);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.acc-icon { font-size: 20px; }
-.acc-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
-.acc-count { font-family: var(--serif); font-size: 22px; font-weight: 600; }
-
-/* QUALITY FIELD */
-.quality-field {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,.04);
-}
-.quality-field:last-child { border-bottom: none; }
-.quality-field-name { font-size: 12px; color: var(--muted); }
-.quality-field-bar {
-  flex: 1;
-  height: 4px;
-  background: var(--border2);
-  border-radius: 2px;
-  margin: 0 12px;
-  overflow: hidden;
-}
-.quality-field-fill { height: 100%; border-radius: 2px; }
-.quality-field-pct { font-size: 11px; min-width: 36px; text-align: right; }
-
-/* CONFIG BANNER */
-.config-banner {
-  background: rgba(244,162,97,.08);
-  border: 1px solid rgba(244,162,97,.2);
-  border-radius: 6px;
-  padding: 12px 16px;
-  font-size: 12px;
-  color: var(--yellow);
-  margin-bottom: 20px;
-  display: none;
-}
+/* empty */
+.empty{text-align:center;padding:40px;color:var(--muted)}
 </style>
 </head>
 <body>
 
-<div id="loading">
-  <div class="loader"></div>
-  <div class="loader-text">A carregar dados…</div>
-</div>
-
-<div id="error-banner"></div>
+<div id="loading"><div class="spin"></div><div style="font-size:12px;color:var(--muted)">A carregar…</div></div>
 
 <header>
-  <div class="logo">Primeira Plateia <span>/ dashboard</span></div>
-  <div class="header-right">
-    <div class="status-dot" id="status-dot" style="background:var(--muted);box-shadow:none"></div>
-    <span class="run-at" id="run-at">—</span>
-    <button class="btn-refresh" onclick="loadData(true)">↻ Actualizar</button>
+  <div class="logo">Primeira Plateia <em>/ dashboard</em></div>
+  <div class="hdr-right">
+    <div class="dot" id="sdot"></div>
+    <span class="run-info" id="rinfo"></span>
+    <button class="btn" onclick="loadData()">↻ Actualizar</button>
+    <a class="btn" href="../index.html">← Site</a>
   </div>
 </header>
 
 <div class="tabs">
-  <div class="tab active" onclick="switchTab('resumo')">Resumo</div>
-  <div class="tab" onclick="switchTab('venues')">Venues</div>
-  <div class="tab" onclick="switchTab('dominios')">Domínios</div>
-  <div class="tab" onclick="switchTab('timeline')">Timeline</div>
-  <div class="tab" onclick="switchTab('qualidade')">Qualidade</div>
-  <div class="tab" onclick="switchTab('acessibilidade')">Acessibilidade</div>
-  <div class="tab" onclick="switchTab('pipeline')">Pipeline</div>
+  <button class="tab on" onclick="switchTab('resumo',this)">Resumo</button>
+  <button class="tab" onclick="switchTab('eventos',this)">Eventos por Venue</button>
+  <button class="tab" onclick="switchTab('qualidade',this)">Qualidade</button>
+  <button class="tab" onclick="switchTab('pipeline',this)">Pipeline</button>
 </div>
 
 <main>
 
-<!-- CONFIG BANNER -->
-<div class="config-banner" id="config-banner">
-  ⚠ A carregar dados do GitHub raw. Configure <code>GITHUB_RAW_BASE</code> no topo do script para o teu repositório.
+<!-- RESUMO -->
+<div class="sec on" id="sec-resumo">
+  <div class="kpi-row">
+    <div class="kpi"><div class="kval" id="k-total">—</div><div class="klabel">Eventos</div><div class="ksub" id="k-meses">—</div></div>
+    <div class="kpi"><div class="kval" id="k-venues" style="color:var(--blue)">—</div><div class="klabel">Venues</div><div class="ksub" id="k-vsub">—</div></div>
+    <div class="kpi"><div class="kval" id="k-hoje" style="color:var(--green)">—</div><div class="klabel">Hoje</div><div class="ksub">sessões programadas</div></div>
+    <div class="kpi"><div class="kval" id="k-q" style="color:var(--yellow)">—</div><div class="klabel">Qualidade média</div><div class="ksub">completude de campos</div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ctitle">Por domínio</div><div id="dom-bars"></div></div>
+    <div class="card"><div class="ctitle">Por venue</div><div id="ven-bars"></div></div>
+  </div>
+  <div class="vcards" id="vcards"></div>
 </div>
 
-<!-- ═══════════════════ RESUMO ═══════════════════ -->
-<div class="section active" id="section-resumo">
-  <div class="grid-4" id="kpi-grid">
-    <div class="card kpi">
-      <div class="kpi-val" id="kpi-eventos">—</div>
-      <div class="kpi-label">Eventos únicos</div>
-      <div class="kpi-sub" id="kpi-eventos-sub">—</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="kpi-venues" style="color:var(--musica)">—</div>
-      <div class="kpi-label">Venues activos</div>
-      <div class="kpi-sub" id="kpi-venues-sub">—</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="kpi-hoje" style="color:var(--green)">—</div>
-      <div class="kpi-label">Hoje</div>
-      <div class="kpi-sub">eventos a acontecer hoje</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="kpi-gratuitos" style="color:var(--yellow)">—</div>
-      <div class="kpi-label">Entrada livre</div>
-      <div class="kpi-sub" id="kpi-gratuitos-sub">—</div>
-    </div>
+<!-- EVENTOS POR VENUE -->
+<div class="sec" id="sec-eventos">
+  <div class="vselector" id="vselector"></div>
+  <div class="sbar">
+    <input class="sinput" id="esearch" placeholder="Pesquisar título, descrição, categoria…" oninput="renderTable()">
+    <button class="fbtn" data-f="img"   onclick="toggleF(this)">✗ sem imagem</button>
+    <button class="fbtn" data-f="price" onclick="toggleF(this)">✗ sem preço</button>
+    <button class="fbtn" data-f="desc"  onclick="toggleF(this)">✗ sem descrição</button>
+    <button class="fbtn" data-f="cat"   onclick="toggleF(this)">✗ sem categoria</button>
+    <span class="scount" id="ecount"></span>
   </div>
-
-  <div class="grid-2">
-    <div class="card">
-      <div class="section-title" style="font-size:16px;margin-bottom:16px;">Distribuição por domínio</div>
-      <div id="domain-bars"></div>
-    </div>
-    <div class="card">
-      <div class="section-title" style="font-size:16px;margin-bottom:16px;">Por venue</div>
-      <div id="venue-bars"></div>
-    </div>
+  <div class="twrap">
+    <table>
+      <thead><tr>
+        <th onclick="doSort('title')">Título</th>
+        <th onclick="doSort('venue_id')">Venue</th>
+        <th onclick="doSort('domain')">Domínio</th>
+        <th onclick="doSort('date_first')">Data</th>
+        <th style="text-align:center">Img</th>
+        <th style="text-align:center">Preço</th>
+        <th style="text-align:center">Desc</th>
+        <th style="text-align:center">Cat</th>
+        <th onclick="doSort('score')">Score</th>
+        <th></th>
+      </tr></thead>
+      <tbody id="etbody"></tbody>
+    </table>
   </div>
-
-  <div class="grid-3">
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:12px;">Próximos eventos</div>
-      <div id="proximos-list"></div>
+  <div class="dpanel" id="dpanel">
+    <div class="dheader">
+      <div id="dimg"></div>
+      <div style="flex:1">
+        <div class="dtitle" id="dtitle">—</div>
+        <div class="dmeta" id="dmeta">—</div>
+      </div>
+      <button class="dclose" onclick="closeD()">✕</button>
     </div>
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:12px;">Última execução</div>
-      <div id="ultima-exec"></div>
-    </div>
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:12px;">Famílias &amp; Escola</div>
-      <div id="familias-stats"></div>
-    </div>
+    <div class="dgrid" id="dgrid"></div>
   </div>
 </div>
 
-<!-- ═══════════════════ VENUES ═══════════════════ -->
-<div class="section" id="section-venues">
-  <div class="section-title">Venues <em>— detalhe por espaço</em></div>
-  <div id="venues-detail"></div>
-</div>
-
-<!-- ═══════════════════ DOMÍNIOS ═══════════════════ -->
-<div class="section" id="section-dominios">
-  <div class="section-title">Domínios &amp; Categorias <em>— distribuição</em></div>
-  <div class="grid-2" id="domains-grid"></div>
-</div>
-
-<!-- ═══════════════════ TIMELINE ═══════════════════ -->
-<div class="section" id="section-timeline">
-  <div class="section-title">Timeline <em>— eventos por mês</em></div>
-  <div class="grid-4" style="margin-bottom:24px;">
-    <div class="card kpi">
-      <div class="kpi-val" id="tl-meses" style="color:var(--musica)">—</div>
-      <div class="kpi-label">Meses cobertos</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="tl-proximo" style="color:var(--green)">—</div>
-      <div class="kpi-label">Mês com mais eventos</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="tl-media">—</div>
-      <div class="kpi-label">Média por mês</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="tl-familias" style="color:var(--yellow)">—</div>
-      <div class="kpi-label">Famílias no total</div>
-    </div>
+<!-- QUALIDADE -->
+<div class="sec" id="sec-qualidade">
+  <div class="kpi-row">
+    <div class="kpi"><div class="kval" id="q-img"  style="color:var(--green)">—</div><div class="klabel">Com imagem</div></div>
+    <div class="kpi"><div class="kval" id="q-price" style="color:var(--yellow)">—</div><div class="klabel">Com preço</div></div>
+    <div class="kpi"><div class="kval" id="q-desc"  style="color:var(--blue)">—</div><div class="klabel">Com descrição</div></div>
+    <div class="kpi"><div class="kval" id="q-cat"   style="color:var(--muted)">—</div><div class="klabel">Com categoria</div></div>
   </div>
-  <div class="card" style="margin-bottom:16px;">
-    <div id="timeline-bars"></div>
+  <div class="g2">
+    <div class="card"><div class="ctitle">Completude por campo</div><div id="qfields"></div></div>
+    <div class="card"><div class="ctitle">Score médio por venue</div><div id="qvenues"></div></div>
   </div>
   <div class="card">
-    <div class="section-title" style="font-size:15px;margin-bottom:16px;">Mapa de calor — eventos por dia</div>
-    <div id="heatmap"></div>
-  </div>
-</div>
-
-<!-- ═══════════════════ QUALIDADE ═══════════════════ -->
-<div class="section" id="section-qualidade">
-  <div class="section-title">Qualidade dos dados <em>— completude e validação</em></div>
-  <div class="grid-4" style="margin-bottom:24px;">
-    <div class="card kpi">
-      <div class="kpi-val" id="q-completos" style="color:var(--green)">—</div>
-      <div class="kpi-label">Com imagem</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="q-preco" style="color:var(--yellow)">—</div>
-      <div class="kpi-label">Com preço</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="q-desc" style="color:var(--musica)">—</div>
-      <div class="kpi-label">Com descrição</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="q-categoria" style="color:var(--pensamento)">—</div>
-      <div class="kpi-label">Categoria definida</div>
-    </div>
-  </div>
-  <div class="grid-2">
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Completude por campo</div>
-      <div id="quality-fields"></div>
-    </div>
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Status dos eventos</div>
-      <div id="status-dist"></div>
-    </div>
-  </div>
-  <div class="card" style="margin-top:16px;">
-    <div class="section-title" style="font-size:15px;margin-bottom:16px;">Eventos com dados em falta</div>
-    <div class="table-wrap">
+    <div class="ctitle">Eventos com dados em falta <em>— ordenados por score crescente</em></div>
+    <div class="twrap">
       <table>
-        <thead><tr>
-          <th>Evento</th><th>Venue</th><th>Data</th>
-          <th>Imagem</th><th>Preço</th><th>Categoria</th><th>Descrição</th>
-        </tr></thead>
-        <tbody id="missing-table"></tbody>
+        <thead><tr><th>Título</th><th>Venue</th><th>Data</th><th style="text-align:center">Img</th><th style="text-align:center">Preço</th><th style="text-align:center">Desc</th><th style="text-align:center">Cat</th><th>Score</th></tr></thead>
+        <tbody id="missbody"></tbody>
       </table>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════════ ACESSIBILIDADE ═══════════════════ -->
-<div class="section" id="section-acessibilidade">
-  <div class="section-title">Acessibilidade <em>— LGP, audiodescrição, famílias</em></div>
-  <div class="acc-grid" id="acc-grid" style="margin-bottom:24px;"></div>
-  <div class="grid-2">
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Eventos com LGP</div>
-      <div id="lgp-list"></div>
-    </div>
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Público por faixa etária</div>
-      <div id="age-dist"></div>
-    </div>
+<!-- PIPELINE -->
+<div class="sec" id="sec-pipeline">
+  <div class="kpi-row">
+    <div class="kpi"><div class="kval" id="pl-sc" style="color:var(--blue)">—</div><div class="klabel">Scraped raw</div></div>
+    <div class="kpi"><div class="kval" id="pl-vl" style="color:var(--green)">—</div><div class="klabel">Válidos</div></div>
+    <div class="kpi"><div class="kval" id="pl-in" style="color:var(--red)">—</div><div class="klabel">Inválidos</div></div>
+    <div class="kpi"><div class="kval" id="pl-du" style="color:var(--yellow)">—</div><div class="klabel">Duração</div></div>
   </div>
-</div>
-
-<!-- ═══════════════════ PIPELINE ═══════════════════ -->
-<div class="section" id="section-pipeline">
-  <div class="section-title">Pipeline <em>— última execução</em></div>
-  <div class="grid-4" style="margin-bottom:24px;">
-    <div class="card kpi">
-      <div class="kpi-val" id="pl-scraped" style="color:var(--musica)">—</div>
-      <div class="kpi-label">Scraped raw</div>
+  <div class="g2">
+    <div class="card">
+      <div class="ctitle">Por venue</div>
+      <div class="twrap"><table>
+        <thead><tr><th>Venue</th><th>Scraped</th><th>Válidos</th><th>Inválidos</th><th>Status</th></tr></thead>
+        <tbody id="plvbody"></tbody>
+      </table></div>
     </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="pl-valid" style="color:var(--green)">—</div>
-      <div class="kpi-label">Válidos</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="pl-invalid" style="color:var(--red)">—</div>
-      <div class="kpi-label">Inválidos</div>
-    </div>
-    <div class="card kpi">
-      <div class="kpi-val" id="pl-duration" style="color:var(--yellow)">—</div>
-      <div class="kpi-label">Duração</div>
-    </div>
+    <div class="card"><div class="ctitle">Detalhe</div><div id="pldetail"></div></div>
   </div>
-  <div class="grid-2">
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Resultados por venue</div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr>
-            <th>Venue</th><th>Scraped</th><th>Válidos</th><th>Inválidos</th><th>Erros</th>
-          </tr></thead>
-          <tbody id="pipeline-venues"></tbody>
-        </table>
-      </div>
-    </div>
-    <div class="card">
-      <div class="section-title" style="font-size:15px;margin-bottom:16px;">Detalhes da execução</div>
-      <div id="pipeline-details"></div>
-    </div>
+  <div class="card" style="margin-top:14px">
+    <div class="ctitle">Histórico</div>
+    <div class="twrap"><table>
+      <thead><tr><th>Data/Hora</th><th>Duração</th><th>Scraped</th><th>Válidos</th><th>Dedup</th><th>Erros</th></tr></thead>
+      <tbody id="plhist"></tbody>
+    </table></div>
   </div>
 </div>
 
 </main>
 
 <script>
-// ─────────────────────────────────────────────
-// CONFIG — ajusta para o teu repositório GitHub
-// ─────────────────────────────────────────────
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/fvsalgado/palcovivo/main";
-const LOCAL_MASTER    = "../data/master.json";
-const LOCAL_LOG       = "../data/logs/latest.json";
+var MASTER = null;
+var LOG = null;
+var LOGS = [];
+var curVenue = 'all';
+var sortKey = 'date_first';
+var sortAsc = true;
+var activeF = {};
 
-// ─────────────────────────────────────────────
-// ESTADO GLOBAL
-// ─────────────────────────────────────────────
-let MASTER = null;
-let LOG    = null;
+var GITHUB_RAW = 'https://raw.githubusercontent.com/fvsalgado/palcovivo/main';
 
-const DOMAIN_COLORS = {
-  "musica":       "#457B9D",
-  "artes-palco":  "#E63946",
-  "artes-visuais":"#F4A261",
-  "pensamento":   "#2A9D8F",
-  "cinema":       "#264653",
-  "formacao":     "#8338EC",
-  "outros":       "#6C757D",
+var DLABELS = {
+  'musica':'Musica','artes-palco':'Artes de Palco','artes-visuais':'Artes Visuais',
+  'pensamento':'Pensamento','cinema':'Cinema','formacao':'Formacao','outros':'Outros'
 };
-const DOMAIN_LABELS = {
-  "musica":       "Música",
-  "artes-palco":  "Artes de Palco",
-  "artes-visuais":"Artes Visuais",
-  "pensamento":   "Pensamento & Palavra",
-  "cinema":       "Cinema",
-  "formacao":     "Formação",
-  "outros":       "Outros",
+var DCOLORS = {
+  'musica':'#8B5CF6','artes-palco':'#EF4444','artes-visuais':'#06B6D4',
+  'pensamento':'#10B981','cinema':'#F59E0B','formacao':'#EC4899','outros':'#6B7280'
 };
 
-// ─────────────────────────────────────────────
-// FETCH — local com fallback GitHub raw
-// ─────────────────────────────────────────────
-async function fetchJSON(localPath, remotePath) {
-  try {
-    const r = await fetch(localPath);
-    if (r.ok) return await r.json();
-  } catch(e) {}
-  try {
-    document.getElementById("config-banner").style.display = "block";
-    const r = await fetch(GITHUB_RAW_BASE + remotePath);
-    if (r.ok) return await r.json();
-  } catch(e) {}
+var QFIELDS = [
+  {key:'title',  label:'Titulo',     check:function(e){ return !!e.title && e.title.length > 1; }},
+  {key:'desc',   label:'Descricao',  check:function(e){ return !!(e.description && e.description.length > 20); }},
+  {key:'img',    label:'Imagem',     check:function(e){ return !!(e.media && e.media.cover_image); }},
+  {key:'date',   label:'Data',       check:function(e){ return !!e.date_first; }},
+  {key:'price',  label:'Preco',      check:function(e){ return !!(e.price && (e.price.price_display || e.price.is_free)); }},
+  {key:'cat',    label:'Categoria',  check:function(e){ return !!(e.category && e.category !== 'outros'); }},
+  {key:'url',    label:'URL fonte',  check:function(e){ return !!e.source_url; }},
+  {key:'tags',   label:'Tags',       check:function(e){ return !!(e.tags && e.tags.length); }},
+];
+
+function score(e) {
+  var n = 0;
+  for (var i = 0; i < QFIELDS.length; i++) {
+    if (QFIELDS[i].check(e)) n++;
+  }
+  return Math.round(n / QFIELDS.length * 100);
+}
+
+function pct(n, t) { return t ? Math.round(n / t * 100) : 0; }
+function esc(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function fmtDate(iso) {
+  if (!iso) return '—';
+  var parts = iso.split('-');
+  return parts[2] + '/' + parts[1] + '/' + parts[0].slice(2);
+}
+function fmtDt(iso) {
+  if (!iso) return '—';
+  var d = new Date(iso);
+  return d.toLocaleDateString('pt-PT') + ' ' + d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
+}
+function set(id, v) {
+  var el = document.getElementById(id);
+  if (el) el.innerHTML = String(v);
+}
+function scoreColor(s) {
+  return s >= 75 ? 'var(--green)' : s >= 50 ? 'var(--yellow)' : 'var(--red)';
+}
+
+async function fetchJ(local, remote) {
+  try { var r = await fetch(local); if (r.ok) return r.json(); } catch(e) {}
+  try { var r2 = await fetch(GITHUB_RAW + remote); if (r2.ok) return r2.json(); } catch(e) {}
   return null;
 }
 
-// ─────────────────────────────────────────────
-// LOAD
-// ─────────────────────────────────────────────
-async function loadData(force = false) {
-  document.getElementById("loading").style.display = "flex";
-  document.getElementById("error-banner").style.display = "none";
-
-  const [master, log] = await Promise.all([
-    fetchJSON(LOCAL_MASTER, "/data/master.json"),
-    fetchJSON(LOCAL_LOG,    "/data/logs/latest.json"),
+async function loadData() {
+  document.getElementById('loading').style.display = 'flex';
+  var results = await Promise.all([
+    fetchJ('../data/master.json', '/data/master.json'),
+    fetchJ('../data/logs/latest.json', '/data/logs/latest.json')
   ]);
-
-  document.getElementById("loading").style.display = "none";
-
-  if (!master) {
-    const b = document.getElementById("error-banner");
-    b.style.display = "block";
-    b.textContent = "Não foi possível carregar data/master.json. Verifica o GITHUB_RAW_BASE no script ou abre o dashboard junto à pasta data/.";
-    return;
-  }
-
-  MASTER = master;
-  LOG    = log;
-
+  MASTER = results[0];
+  LOG = results[1];
+  LOGS = [];
+  if (LOG) LOGS.push(LOG);
+  document.getElementById('loading').style.display = 'none';
+  if (!MASTER) { alert('Nao foi possivel carregar master.json.'); return; }
   renderAll();
 }
 
-// ─────────────────────────────────────────────
-// RENDER ALL
-// ─────────────────────────────────────────────
 function renderAll() {
-  const events = MASTER.events || [];
-  const index  = MASTER.index  || {};
-
-  // Header
+  var evs = MASTER.events || [];
+  var dot = document.getElementById('sdot');
+  if (evs.length > 0) dot.classList.add('live');
   if (MASTER.generated_at) {
-    const d = new Date(MASTER.generated_at);
-    document.getElementById("run-at").textContent =
-      "Gerado " + d.toLocaleDateString("pt-PT") + " às " + d.toLocaleTimeString("pt-PT", {hour:"2-digit",minute:"2-digit"});
+    var d = new Date(MASTER.generated_at);
+    document.getElementById('rinfo').textContent = 'Gerado ' + d.toLocaleDateString('pt-PT') + ' ' + d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
   }
-  const dot = document.getElementById("status-dot");
-  dot.style.background = events.length > 0 ? "var(--green)" : "var(--red)";
-  dot.style.boxShadow  = events.length > 0 ? "0 0 8px var(--green)" : "0 0 8px var(--red)";
-
-  renderResumo(events, index);
-  renderVenues(events);
-  renderDominios(events);
-  renderTimeline(events, index);
-  renderQualidade(events);
-  renderAcessibilidade(events);
+  renderResumo(evs);
+  renderVenueSelector(evs);
+  renderTable();
+  renderQualidade(evs);
   renderPipeline();
 }
 
-// ─────────────────────────────────────────────
-// RESUMO
-// ─────────────────────────────────────────────
-function renderResumo(events, index) {
-  const total   = events.length;
-  const nVenues = Object.keys(index.by_venue || {}).length;
-  const nHoje   = (index.today || []).length;
-  const nFree   = (index.free  || []).length;
-  const pctFree = total ? Math.round(nFree/total*100) : 0;
+function renderResumo(evs) {
+  var idx = (MASTER && MASTER.index) || {};
+  var total = evs.length;
+  var nV = Object.keys(idx.by_venue || {}).length;
+  var today = new Date().toISOString().slice(0,10);
+  var nHoje = 0;
+  for (var i = 0; i < evs.length; i++) {
+    if (evs[i].date_first === today) { nHoje++; continue; }
+    var dates = evs[i].dates || [];
+    for (var j = 0; j < dates.length; j++) {
+      if (dates[j].date === today) { nHoje++; break; }
+    }
+  }
+  var totalScore = 0;
+  for (var i = 0; i < evs.length; i++) totalScore += score(evs[i]);
+  var avgQ = total ? Math.round(totalScore / total) : 0;
 
-  set("kpi-eventos", total);
-  set("kpi-eventos-sub", Object.keys(index.by_month||{}).length + " meses de programação");
-  set("kpi-venues",  nVenues);
-  set("kpi-venues-sub", Object.values(index.by_venue||{}).map(v=>v.length).join(" + ") + " eventos");
-  set("kpi-hoje",    nHoje);
-  set("kpi-gratuitos", nFree);
-  set("kpi-gratuitos-sub", pctFree + "% do total");
+  set('k-total', total);
+  set('k-meses', Object.keys(idx.by_month || {}).length + ' meses');
+  set('k-venues', nV);
+  var vsub = [];
+  var byV = idx.by_venue || {};
+  Object.keys(byV).forEach(function(v){ vsub.push(v + ':' + byV[v].length); });
+  set('k-vsub', vsub.join(' · '));
+  set('k-hoje', nHoje);
+  set('k-q', avgQ + '%');
 
-  // Domain bars
-  const byDomain = index.by_domain || {};
-  const domBars = document.getElementById("domain-bars");
-  domBars.innerHTML = "";
-  const domSorted = Object.entries(byDomain).sort((a,b)=>b[1].length-a[1].length);
-  domSorted.forEach(([dom, ids]) => {
-    const pct = total ? Math.round(ids.length/total*100) : 0;
-    const color = DOMAIN_COLORS[dom] || "#666";
-    domBars.innerHTML += `
-      <div class="bar-row">
-        <div class="bar-label">${DOMAIN_LABELS[dom]||dom}</div>
-        <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${color}"></div></div>
-        <div class="bar-count">${ids.length}</div>
-      </div>`;
+  // domain bars
+  var byDom = idx.by_domain || {};
+  var domEntries = Object.keys(byDom).map(function(d){ return [d, byDom[d].length]; });
+  domEntries.sort(function(a,b){ return b[1]-a[1]; });
+  set('dom-bars', domEntries.map(function(pair) {
+    var d = pair[0]; var n = pair[1];
+    var p = pct(n, total);
+    var c = DCOLORS[d] || '#666';
+    return '<div class="brow"><div class="blabel">' + (DLABELS[d]||d) + '</div>' +
+      '<div class="btrack"><div class="bfill" style="width:'+p+'%;background:'+c+'"></div></div>' +
+      '<div class="bcount">'+n+'</div></div>';
+  }).join(''));
+
+  // venue bars
+  var venEntries = Object.keys(byV).map(function(v){ return [v, byV[v].length]; });
+  venEntries.sort(function(a,b){ return b[1]-a[1]; });
+  set('ven-bars', venEntries.map(function(pair) {
+    var v = pair[0]; var n = pair[1];
+    var p = pct(n, total);
+    return '<div class="brow"><div class="blabel">'+v+'</div>' +
+      '<div class="btrack"><div class="bfill" style="width:'+p+'%;background:var(--blue)"></div></div>' +
+      '<div class="bcount">'+n+'</div></div>';
+  }).join(''));
+
+  // venue cards
+  var venueMap = {};
+  for (var i = 0; i < evs.length; i++) {
+    var v = evs[i].venue_id;
+    if (!venueMap[v]) venueMap[v] = [];
+    venueMap[v].push(evs[i]);
+  }
+  var vids = Object.keys(venueMap).sort(function(a,b){ return venueMap[b].length - venueMap[a].length; });
+  set('vcards', vids.map(function(vid) {
+    var ve = venueMap[vid];
+    var avgS = Math.round(ve.reduce(function(s,e){ return s + score(e); }, 0) / ve.length);
+    var sc = scoreColor(avgS);
+    var nImg = ve.filter(function(e){ return e.media && e.media.cover_image; }).length;
+    var nDesc = ve.filter(function(e){ return e.description && e.description.length > 20; }).length;
+    var nFree = ve.filter(function(e){ return e.price && e.price.is_free; }).length;
+    return '<div class="vcard" onclick="goVenue(\'' + vid + '\')">' +
+      '<div class="vch"><div><div class="vcname">' + vid.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();}) + '</div>' +
+      '<div class="vcid">' + vid + '</div></div><div class="vcn">' + ve.length + '</div></div>' +
+      '<div class="brow" style="margin:0"><div class="blabel" style="min-width:80px;font-size:11px">Score medio</div>' +
+      '<div class="btrack"><div class="bfill" style="width:'+avgS+'%;background:'+sc+'"></div></div>' +
+      '<div class="bcount" style="color:'+sc+'">'+avgS+'%</div></div>' +
+      '<div class="vcmini">' +
+      '<span>img: ' + pct(nImg,ve.length) + '%</span>' +
+      '<span>desc: ' + pct(nDesc,ve.length) + '%</span>' +
+      '<span>gratis: ' + nFree + '</span>' +
+      '</div></div>';
+  }).join(''));
+}
+
+function goVenue(vid) {
+  curVenue = vid;
+  switchTab('eventos', document.querySelectorAll('.tab')[1]);
+  document.querySelectorAll('.vbtn').forEach(function(b){ b.classList.toggle('on', b.dataset.v === vid); });
+  renderTable();
+}
+
+function renderVenueSelector(evs) {
+  var vids = [];
+  evs.forEach(function(e){ if (vids.indexOf(e.venue_id) === -1) vids.push(e.venue_id); });
+  vids.sort();
+  var html = '<button class="vbtn on" data-v="all" onclick="setVenue(\'all\',this)">Todos (' + evs.length + ')</button>';
+  vids.forEach(function(v) {
+    var n = evs.filter(function(e){ return e.venue_id === v; }).length;
+    html += '<button class="vbtn" data-v="'+v+'" onclick="setVenue(\''+v+'\',this)">'+v+' ('+n+')</button>';
+  });
+  set('vselector', html);
+}
+
+function setVenue(vid, el) {
+  curVenue = vid;
+  document.querySelectorAll('.vbtn').forEach(function(b){ b.classList.remove('on'); });
+  el.classList.add('on');
+  closeD();
+  renderTable();
+}
+
+function toggleF(btn) {
+  var f = btn.dataset.f;
+  if (activeF[f]) { delete activeF[f]; btn.classList.remove('on'); }
+  else { activeF[f] = true; btn.classList.add('on'); }
+  renderTable();
+}
+
+function doSort(key) {
+  if (sortKey === key) { sortAsc = !sortAsc; }
+  else { sortKey = key; sortAsc = true; }
+  document.querySelectorAll('th').forEach(function(th){ th.classList.remove('sorted'); });
+  renderTable();
+}
+
+function renderTable() {
+  var evs = (MASTER && MASTER.events) || [];
+  var q = document.getElementById('esearch').value.toLowerCase();
+
+  var filtered = evs.filter(function(e) {
+    if (curVenue !== 'all' && e.venue_id !== curVenue) return false;
+    if (q) {
+      var hay = ((e.title||'') + ' ' + (e.description||'') + ' ' + (e.category||'') + ' ' + (e.domain||'')).toLowerCase();
+      if (hay.indexOf(q) === -1) return false;
+    }
+    if (activeF.img   && e.media && e.media.cover_image) return false;
+    if (activeF.price && e.price && (e.price.price_display || e.price.is_free)) return false;
+    if (activeF.desc  && e.description && e.description.length > 20) return false;
+    if (activeF.cat   && e.category && e.category !== 'outros') return false;
+    return true;
   });
 
-  // Venue bars
-  const byVenue = index.by_venue || {};
-  const venBars = document.getElementById("venue-bars");
-  venBars.innerHTML = "";
-  Object.entries(byVenue).sort((a,b)=>b[1].length-a[1].length).forEach(([vid,ids]) => {
-    const pct = total ? Math.round(ids.length/total*100) : 0;
-    venBars.innerHTML += `
-      <div class="bar-row">
-        <div class="bar-label">${vid}</div>
-        <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:var(--musica)"></div></div>
-        <div class="bar-count">${ids.length}</div>
-      </div>`;
+  filtered.sort(function(a, b) {
+    var va = sortKey === 'score' ? score(a) : (a[sortKey] || '');
+    var vb = sortKey === 'score' ? score(b) : (b[sortKey] || '');
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ? 1 : -1;
+    return 0;
   });
 
-  // Próximos (5)
-  const today = new Date().toISOString().slice(0,10);
-  const proximos = events
-    .filter(e => e.date_first >= today)
-    .sort((a,b) => a.date_first.localeCompare(b.date_first))
-    .slice(0, 5);
-  const proxDiv = document.getElementById("proximos-list");
-  proxDiv.innerHTML = proximos.map(e => `
-    <div class="stat-row">
-      <span class="stat-key">${fmtDate(e.date_first)}</span>
-      <span class="stat-val" style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.title}</span>
-    </div>`).join("") || '<div style="color:var(--muted);font-size:12px">Sem eventos futuros</div>';
+  set('ecount', filtered.length + ' evento' + (filtered.length !== 1 ? 's' : ''));
 
-  // Última execução
-  const execDiv = document.getElementById("ultima-exec");
-  if (LOG) {
-    const s = LOG.summary || {};
-    execDiv.innerHTML = `
-      <div class="stat-row"><span class="stat-key">Data</span><span class="stat-val">${fmtDatetime(LOG.run_at)}</span></div>
-      <div class="stat-row"><span class="stat-key">Duração</span><span class="stat-val">${LOG.duration_seconds}s</span></div>
-      <div class="stat-row"><span class="stat-key">Scraped</span><span class="stat-val">${s.total_scraped||0}</span></div>
-      <div class="stat-row"><span class="stat-key">Válidos</span><span class="stat-val" style="color:var(--green)">${s.total_valid||0}</span></div>
-      <div class="stat-row"><span class="stat-key">Inválidos</span><span class="stat-val" style="color:var(--red)">${s.total_invalid||0}</span></div>
-      <div class="stat-row"><span class="stat-key">Erros</span><span class="stat-val" style="color:${(s.total_errors||0)>0?'var(--red)':'var(--muted)'}">${s.total_errors||0}</span></div>`;
-  } else {
-    execDiv.innerHTML = '<div style="color:var(--muted);font-size:12px">Sem dados de execução disponíveis</div>';
+  var rows = filtered.slice(0, 300).map(function(e) {
+    var s = score(e);
+    var sc = scoreColor(s);
+    var hasImg   = !!(e.media && e.media.cover_image);
+    var hasPrice = !!(e.price && (e.price.price_display || e.price.is_free));
+    var hasDesc  = !!(e.description && e.description.length > 20);
+    var hasCat   = !!(e.category && e.category !== 'outros');
+    var dcolor   = DCOLORS[e.domain] || '#666';
+    return '<tr>' +
+      '<td class="tlong" title="'+esc(e.title)+'">'+esc(e.title)+'</td>' +
+      '<td><span class="badge bdim">'+esc(e.venue_id)+'</span></td>' +
+      '<td><span style="color:'+dcolor+';font-size:10px">'+(DLABELS[e.domain]||e.domain)+'</span></td>' +
+      '<td>'+fmtDate(e.date_first)+'</td>' +
+      '<td style="text-align:center">'+(hasImg?'<span class="ok">✓</span>':'<span class="miss">✗</span>')+'</td>' +
+      '<td style="text-align:center">'+(hasPrice?'<span class="ok">✓</span>':'<span class="miss">✗</span>')+'</td>' +
+      '<td style="text-align:center">'+(hasDesc?'<span class="ok">✓</span>':'<span class="miss">✗</span>')+'</td>' +
+      '<td style="text-align:center">'+(hasCat?'<span class="ok">✓</span>':'<span class="miss">✗</span>')+'</td>' +
+      '<td><span style="color:'+sc+';font-weight:500">'+s+'%</span></td>' +
+      '<td><button class="btn" style="padding:3px 8px;font-size:10px" onclick="showD(\''+esc(e.id)+'\')">Ver</button></td>' +
+      '</tr>';
+  });
+  set('etbody', rows.join('') || '<tr><td colspan="10" class="empty">Nenhum evento.</td></tr>');
+}
+
+function showD(id) {
+  var evs = (MASTER && MASTER.events) || [];
+  var e = null;
+  for (var i = 0; i < evs.length; i++) { if (evs[i].id === id) { e = evs[i]; break; } }
+  if (!e) return;
+
+  var panel = document.getElementById('dpanel');
+  panel.classList.add('on');
+
+  set('dimg', e.media && e.media.cover_image
+    ? '<img class="dimg" src="'+esc(e.media.cover_image)+'" onerror="this.style.display=\'none\'" loading="lazy">'
+    : '<div class="dph">&#127917;</div>');
+  set('dtitle', esc(e.title));
+  set('dmeta', esc(e.venue_id) + ' · ' + fmtDate(e.date_first) + ' · ' + (DLABELS[e.domain]||e.domain) + ' · Score: ' + score(e) + '%');
+
+  var preco = (e.price && (e.price.price_display || (e.price.is_free ? 'Gratuito' : null))) || '—';
+  var publico = (e.audience && (e.audience.label || (e.audience.is_family ? 'Familias' : null))) || '—';
+  var lgp = (e.accessibility && e.accessibility.has_sign_language) ? '✓' : '—';
+  var audiodesc = (e.accessibility && e.accessibility.has_audio_description) ? '✓' : '—';
+  var relaxed = (e.accessibility && e.accessibility.is_relaxed_performance) ? '✓' : '—';
+  var erros = (e.pipeline && e.pipeline.validation_errors && e.pipeline.validation_errors.length) || 0;
+  var scraped = (e.pipeline && e.pipeline.scraped_at) ? fmtDt(e.pipeline.scraped_at) : '—';
+  var urlLink = e.source_url ? '<a href="'+esc(e.source_url)+'" target="_blank">abrir →</a>' : '—';
+  var tktLink = (e.price && e.price.ticketing_url) ? '<a href="'+esc(e.price.ticketing_url)+'" target="_blank">bilhetes →</a>' : '—';
+  var tags = (e.tags && e.tags.length) ? esc(e.tags.join(', ')) : '—';
+
+  var fields = [
+    ['ID', esc(e.id)],
+    ['Venue', esc(e.venue_id)],
+    ['Dominio', DLABELS[e.domain]||e.domain],
+    ['Categoria', esc(e.category||'—')],
+    ['Data inicio', fmtDate(e.date_first)],
+    ['Data fim', fmtDate(e.date_last)],
+    ['Sessoes', String(e.total_sessions || (e.dates && e.dates.length) || '—')],
+    ['Status', esc(e.event_status||'—')],
+    ['Estreia', e.is_premiere ? '✓' : '—'],
+    ['Imagem', (e.media && e.media.cover_image) ? '<span class="ok">✓ Sim</span>' : '<span class="miss">✗ Nao</span>'],
+    ['Preco', esc(preco)],
+    ['Bilheteira', tktLink],
+    ['Publico', esc(publico)],
+    ['LGP', lgp],
+    ['Audiodescricao', audiodesc],
+    ['Sessao relaxada', relaxed],
+    ['Tags', tags],
+    ['URL fonte', urlLink],
+    ['Scraped em', scraped],
+    ['Erros validacao', String(erros)],
+  ];
+
+  var html = fields.map(function(pair) {
+    return '<div class="dfield"><div class="dflabel">'+pair[0]+'</div><div class="dfval">'+pair[1]+'</div></div>';
+  }).join('');
+
+  if (e.description) {
+    html += '<div class="dfield dfull"><div class="dflabel">Descricao</div>' +
+      '<div class="dfval" style="white-space:pre-wrap;max-height:120px;overflow:auto;font-size:11px">'+esc(e.description)+'</div></div>';
   }
 
-  // Famílias
-  const nFam   = (index.family||[]).length;
-  const nSchool = events.filter(e=>e.audience?.is_educational).length;
-  const nLGP    = events.filter(e=>e.accessibility?.has_sign_language).length;
-  const famDiv  = document.getElementById("familias-stats");
-  famDiv.innerHTML = `
-    <div class="stat-row"><span class="stat-key">Para famílias</span><span class="stat-val" style="color:var(--yellow)">${nFam}</span></div>
-    <div class="stat-row"><span class="stat-key">Contexto escolar</span><span class="stat-val">${nSchool}</span></div>
-    <div class="stat-row"><span class="stat-key">Com LGP</span><span class="stat-val" style="color:var(--green)">${nLGP}</span></div>
-    <div class="stat-row"><span class="stat-key">Audiodescrição</span><span class="stat-val">${events.filter(e=>e.accessibility?.has_audio_description).length}</span></div>
-    <div class="stat-row"><span class="stat-key">Sessão relaxada</span><span class="stat-val">${events.filter(e=>e.accessibility?.is_relaxed_performance).length}</span></div>`;
+  set('dgrid', html);
+  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 
-// ─────────────────────────────────────────────
-// VENUES
-// ─────────────────────────────────────────────
-function renderVenues(events) {
-  const byVenue = {};
-  events.forEach(e => {
-    const v = e.venue_id||"?";
-    if (!byVenue[v]) byVenue[v] = [];
-    byVenue[v].push(e);
-  });
-
-  const div = document.getElementById("venues-detail");
-  div.innerHTML = Object.entries(byVenue).map(([vid, evs]) => {
-    const byDom = {};
-    evs.forEach(e => { byDom[e.domain||"outros"] = (byDom[e.domain||"outros"]||0)+1; });
-    const domPills = Object.entries(byDom).sort((a,b)=>b[1]-a[1]).map(([d,n]) =>
-      `<span class="domain-pill" style="background:${DOMAIN_COLORS[d]||'#333'}22;color:${DOMAIN_COLORS[d]||'#666'}">${DOMAIN_LABELS[d]||d}: ${n}</span>`
-    ).join(" ");
-
-    const lastScrape = evs[0]?.pipeline?.scraped_at || null;
-    const nFree  = evs.filter(e=>e.price?.is_free).length;
-    const nFam   = evs.filter(e=>e.audience?.is_family).length;
-    const nImg   = evs.filter(e=>e.media?.cover_image).length;
-    const pctImg = Math.round(nImg/evs.length*100);
-
-    return `
-      <div class="venue-card">
-        <div class="venue-header">
-          <div>
-            <div class="venue-name">${vid.replace(/-/g," ").replace(/\b\w/g,c=>c.toUpperCase())}</div>
-            <div class="venue-id">${vid} · ${lastScrape ? "importado " + fmtDatetime(lastScrape) : "sem data de importação"}</div>
-          </div>
-          <span class="badge badge-green">activo</span>
-        </div>
-        <div class="venue-stats" style="margin-bottom:14px;">
-          <div class="venue-stat"><div class="venue-stat-val">${evs.length}</div><div class="venue-stat-label">Eventos</div></div>
-          <div class="venue-stat"><div class="venue-stat-val" style="color:var(--yellow)">${nFree}</div><div class="venue-stat-label">Gratuitos</div></div>
-          <div class="venue-stat"><div class="venue-stat-val" style="color:var(--green)">${nFam}</div><div class="venue-stat-label">Famílias</div></div>
-          <div class="venue-stat"><div class="venue-stat-val" style="color:var(--musica)">${pctImg}%</div><div class="venue-stat-label">Com imagem</div></div>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px;">${domPills}</div>
-      </div>`;
-  }).join("");
+function closeD() {
+  document.getElementById('dpanel').classList.remove('on');
 }
 
-// ─────────────────────────────────────────────
-// DOMÍNIOS
-// ─────────────────────────────────────────────
-function renderDominios(events) {
-  const byDom = {};
-  events.forEach(e => {
-    const d = e.domain || "outros";
-    const c = e.category || "outros";
-    if (!byDom[d]) byDom[d] = {};
-    byDom[d][c] = (byDom[d][c]||0)+1;
-  });
+function renderQualidade(evs) {
+  var total = evs.length || 1;
+  var nImg   = evs.filter(function(e){ return e.media && e.media.cover_image; }).length;
+  var nPrice = evs.filter(function(e){ return e.price && (e.price.price_display || e.price.is_free); }).length;
+  var nDesc  = evs.filter(function(e){ return e.description && e.description.length > 20; }).length;
+  var nCat   = evs.filter(function(e){ return e.category && e.category !== 'outros'; }).length;
 
-  const grid = document.getElementById("domains-grid");
-  grid.innerHTML = Object.entries(byDom).sort((a,b)=>{
-    const na = Object.values(a[1]).reduce((s,v)=>s+v,0);
-    const nb = Object.values(b[1]).reduce((s,v)=>s+v,0);
-    return nb-na;
-  }).map(([dom, cats]) => {
-    const total = Object.values(cats).reduce((s,v)=>s+v,0);
-    const color = DOMAIN_COLORS[dom]||"#666";
-    const catRows = Object.entries(cats).sort((a,b)=>b[1]-a[1]).map(([cat,n]) => {
-      const pct = Math.round(n/total*100);
-      return `
-        <div class="bar-row">
-          <div class="bar-label">${cat}</div>
-          <div class="bar-track"><div class="bar-fill" style="width:${pct}%;background:${color}88"></div></div>
-          <div class="bar-count">${n}</div>
-        </div>`;
-    }).join("");
+  set('q-img',   pct(nImg,  total) + '%');
+  set('q-price', pct(nPrice,total) + '%');
+  set('q-desc',  pct(nDesc, total) + '%');
+  set('q-cat',   pct(nCat,  total) + '%');
 
-    return `
-      <div class="card">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
-          <div style="width:10px;height:10px;border-radius:2px;background:${color}"></div>
-          <div style="font-family:var(--serif);font-size:16px;font-weight:300">${DOMAIN_LABELS[dom]||dom}</div>
-          <div style="margin-left:auto;font-family:var(--serif);font-size:20px;font-weight:600;color:${color}">${total}</div>
-        </div>
-        ${catRows}
-      </div>`;
-  }).join("");
+  // quality fields
+  var venueIds = [];
+  evs.forEach(function(e){ if (venueIds.indexOf(e.venue_id) === -1) venueIds.push(e.venue_id); });
+  venueIds.sort();
+
+  set('qfields', QFIELDS.map(function(f) {
+    var n = evs.filter(f.check).length;
+    var p = pct(n, total);
+    var c = p >= 80 ? 'var(--green)' : p >= 50 ? 'var(--yellow)' : 'var(--red)';
+    var dots = venueIds.map(function(v) {
+      var ve = evs.filter(function(e){ return e.venue_id === v; });
+      var vp = pct(ve.filter(f.check).length, ve.length);
+      var vc = vp >= 80 ? 'var(--green)' : vp >= 50 ? 'var(--yellow)' : 'var(--red)';
+      return '<span class="qdot" style="color:'+vc+';background:'+vc+'1a" title="'+v+': '+vp+'%">'+v.slice(0,3)+' '+vp+'%</span>';
+    }).join('');
+    return '<div class="qrow">' +
+      '<div class="qname">'+f.label+'</div>' +
+      '<div class="qbar"><div class="qfill" style="width:'+p+'%;background:'+c+'"></div></div>' +
+      '<div class="qpct" style="color:'+c+'">'+p+'%</div>' +
+      '<div class="qdots">'+dots+'</div>' +
+      '</div>';
+  }).join(''));
+
+  // venue scores
+  var venueMap = {};
+  evs.forEach(function(e){ if (!venueMap[e.venue_id]) venueMap[e.venue_id] = []; venueMap[e.venue_id].push(e); });
+  var vids = Object.keys(venueMap).sort(function(a,b){ return venueMap[b].length - venueMap[a].length; });
+  set('qvenues', vids.map(function(vid) {
+    var ve = venueMap[vid];
+    var avg = Math.round(ve.reduce(function(s,e){ return s + score(e); }, 0) / ve.length);
+    var c = scoreColor(avg);
+    return '<div class="brow">' +
+      '<div class="blabel">'+vid+' <span style="color:var(--muted)">('+ve.length+')</span></div>' +
+      '<div class="btrack"><div class="bfill" style="width:'+avg+'%;background:'+c+'"></div></div>' +
+      '<div class="bcount" style="color:'+c+'">'+avg+'%</div>' +
+      '</div>';
+  }).join(''));
+
+  // missing table
+  var missing = evs.filter(function(e){ return score(e) < 90; });
+  missing.sort(function(a,b){ return score(a) - score(b); });
+  missing = missing.slice(0, 40);
+
+  var ok = '<span class="ok">✓</span>', miss = '<span class="miss">✗</span>';
+  set('missbody', missing.map(function(e) {
+    var s = score(e); var sc = scoreColor(s);
+    return '<tr>' +
+      '<td class="tlong" title="'+esc(e.title)+'">'+esc(e.title)+'</td>' +
+      '<td><span class="badge bdim">'+esc(e.venue_id)+'</span></td>' +
+      '<td>'+fmtDate(e.date_first)+'</td>' +
+      '<td style="text-align:center">'+((e.media&&e.media.cover_image)?ok:miss)+'</td>' +
+      '<td style="text-align:center">'+((e.price&&(e.price.price_display||e.price.is_free))?ok:miss)+'</td>' +
+      '<td style="text-align:center">'+((e.description&&e.description.length>20)?ok:miss)+'</td>' +
+      '<td style="text-align:center">'+((e.category&&e.category!=='outros')?ok:miss)+'</td>' +
+      '<td><span style="color:'+sc+';font-weight:500">'+s+'%</span></td>' +
+      '</tr>';
+  }).join('') || '<tr><td colspan="8" class="empty">Todos com score >= 90% ✓</td></tr>');
 }
 
-// ─────────────────────────────────────────────
-// TIMELINE
-// ─────────────────────────────────────────────
-function renderTimeline(events, index) {
-  const byMonth = index.by_month || {};
-  const months  = Object.keys(byMonth).sort();
-  const counts  = months.map(m => byMonth[m].length);
-  const maxC    = Math.max(...counts, 1);
-
-  set("tl-meses", months.length);
-  const bestMonth = months[counts.indexOf(Math.max(...counts))];
-  set("tl-proximo", bestMonth ? fmtMonth(bestMonth) : "—");
-  set("tl-media", months.length ? Math.round(counts.reduce((a,b)=>a+b,0)/months.length) : 0);
-  set("tl-familias", (index.family||[]).length);
-
-  // Bars
-  const barsDiv = document.getElementById("timeline-bars");
-  barsDiv.innerHTML = months.map((m, i) => {
-    const n   = counts[i];
-    const pct = Math.round(n/maxC*100);
-    const isBest = n === Math.max(...counts);
-    return `
-      <div class="bar-row">
-        <div class="bar-label">${fmtMonth(m)}</div>
-        <div class="bar-track" style="height:10px">
-          <div class="bar-fill" style="width:${pct}%;background:${isBest?'var(--musica)':'var(--border2)'}; height:10px"></div>
-        </div>
-        <div class="bar-count">${n}</div>
-      </div>`;
-  }).join("");
-
-  // Heatmap por dia
-  const byday = {};
-  events.forEach(e => {
-    (e.dates||[]).forEach(d => {
-      if (d.date) byday[d.date] = (byday[d.date]||0)+1;
-    });
-  });
-
-  // Agrupar por mês para heatmap
-  const heatDiv = document.getElementById("heatmap");
-  const monthGroups = {};
-  Object.entries(byday).forEach(([date, n]) => {
-    const m = date.slice(0,7);
-    if (!monthGroups[m]) monthGroups[m] = {};
-    monthGroups[m][date] = n;
-  });
-
-  const heatMax = Math.max(...Object.values(byday), 1);
-  heatDiv.innerHTML = Object.keys(monthGroups).sort().map(m => {
-    const days = monthGroups[m];
-    const dots = Object.entries(days).sort().map(([d,n]) => {
-      const alpha = 0.15 + (n/heatMax)*0.85;
-      return `<div class="timeline-dot" style="background:var(--musica);opacity:${alpha.toFixed(2)}" title="${d}: ${n} evento(s)"></div>`;
-    }).join("");
-    return `
-      <div class="timeline-month">
-        <div class="timeline-month-label">${fmtMonth(m)}</div>
-        <div class="timeline-events">${dots}</div>
-      </div>`;
-  }).join("");
-}
-
-// ─────────────────────────────────────────────
-// QUALIDADE
-// ─────────────────────────────────────────────
-function renderQualidade(events) {
-  const total = events.length || 1;
-  const nImg   = events.filter(e=>e.media?.cover_image).length;
-  const nPreco = events.filter(e=>e.price?.price_display || e.price?.is_free).length;
-  const nDesc  = events.filter(e=>e.description && e.description.length > 20).length;
-  const nCat   = events.filter(e=>e.category && e.category !== "outros").length;
-  const nTitle = events.filter(e=>e.title && e.title.length > 2).length;
-  const nDates = events.filter(e=>e.dates?.length > 0 && e.dates[0].date).length;
-  const nUrl   = events.filter(e=>e.source_url).length;
-  const nAud   = events.filter(e=>e.audience?.label).length;
-
-  set("q-completos", pct(nImg,total)+"%");
-  set("q-preco",     pct(nPreco,total)+"%");
-  set("q-desc",      pct(nDesc,total)+"%");
-  set("q-categoria", pct(nCat,total)+"%");
-
-  const fields = [
-    ["Título",       nTitle, total],
-    ["Data",         nDates, total],
-    ["Descrição",    nDesc,  total],
-    ["Imagem",       nImg,   total],
-    ["Preço",        nPreco, total],
-    ["Categoria",    nCat,   total],
-    ["URL fonte",    nUrl,   total],
-    ["Público",      nAud,   total],
-  ];
-
-  document.getElementById("quality-fields").innerHTML = fields.map(([label, n, t]) => {
-    const p = pct(n,t);
-    const color = p>=80?"var(--green)":p>=50?"var(--yellow)":"var(--red)";
-    return `
-      <div class="quality-field">
-        <div class="quality-field-name">${label}</div>
-        <div class="quality-field-bar"><div class="quality-field-fill" style="width:${p}%;background:${color}"></div></div>
-        <div class="quality-field-pct" style="color:${color}">${p}%</div>
-      </div>`;
-  }).join("");
-
-  // Status distribution
-  const statusCount = {};
-  events.forEach(e => { const s=e.event_status||"desconhecido"; statusCount[s]=(statusCount[s]||0)+1; });
-  const sMax = Math.max(...Object.values(statusCount),1);
-  document.getElementById("status-dist").innerHTML = Object.entries(statusCount)
-    .sort((a,b)=>b[1]-a[1]).map(([s,n]) => {
-      const p = Math.round(n/sMax*100);
-      return `
-        <div class="bar-row">
-          <div class="bar-label">${s}</div>
-          <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:var(--musica)88"></div></div>
-          <div class="bar-count">${n}</div>
-        </div>`;
-    }).join("");
-
-  // Missing table (max 20)
-  const missing = events.filter(e =>
-    !e.media?.cover_image || !e.price?.price_display || e.category==="outros" || !e.description
-  ).slice(0,20);
-
-  document.getElementById("missing-table").innerHTML = missing.map(e => `
-    <tr>
-      <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.title}</td>
-      <td><span class="badge badge-dim">${e.venue_id}</span></td>
-      <td>${fmtDate(e.date_first)}</td>
-      <td>${e.media?.cover_image ? "✓" : '<span style="color:var(--red)">✗</span>'}</td>
-      <td>${e.price?.price_display || e.price?.is_free ? "✓" : '<span style="color:var(--yellow)">✗</span>'}</td>
-      <td>${e.category&&e.category!=="outros" ? "✓" : '<span style="color:var(--yellow)">✗</span>'}</td>
-      <td>${e.description&&e.description.length>20 ? "✓" : '<span style="color:var(--red)">✗</span>'}</td>
-    </tr>`).join("") || '<tr><td colspan="7" style="color:var(--muted);text-align:center;padding:20px">Todos os eventos têm dados completos ✓</td></tr>';
-}
-
-// ─────────────────────────────────────────────
-// ACESSIBILIDADE
-// ─────────────────────────────────────────────
-function renderAcessibilidade(events) {
-  const total    = events.length||1;
-  const nLGP     = events.filter(e=>e.accessibility?.has_sign_language).length;
-  const nAD      = events.filter(e=>e.accessibility?.has_audio_description).length;
-  const nSub     = events.filter(e=>e.accessibility?.has_subtitles).length;
-  const nRelax   = events.filter(e=>e.accessibility?.is_relaxed_performance).length;
-  const nChair   = events.filter(e=>e.accessibility?.wheelchair_accessible).length;
-  const nFam     = events.filter(e=>e.audience?.is_family).length;
-  const nSchool  = events.filter(e=>e.audience?.is_educational).length;
-  const nFree    = events.filter(e=>e.price?.is_free).length;
-
-  const items = [
-    ["🤟", "Língua Gestual (LGP)", nLGP,   "var(--green)"],
-    ["🎧", "Audiodescrição",        nAD,    "var(--musica)"],
-    ["💬", "Legendas",              nSub,   "var(--pensamento)"],
-    ["🌿", "Sessão Relaxada",       nRelax, "var(--yellow)"],
-    ["♿", "Acessível em cadeira",  nChair, "var(--text)"],
-    ["⭐", "Para Famílias",         nFam,   "var(--yellow)"],
-    ["🎓", "Contexto Escolar",      nSchool,"var(--formacao)"],
-    ["🎟", "Entrada Livre",         nFree,  "var(--green)"],
-  ];
-
-  document.getElementById("acc-grid").innerHTML = items.map(([icon,label,n,color]) => `
-    <div class="acc-item">
-      <div class="acc-icon">${icon}</div>
-      <div class="acc-count" style="color:${color}">${n}</div>
-      <div class="acc-label">${label}</div>
-      <div style="font-size:10px;color:var(--muted)">${pct(n,total)}% do total</div>
-    </div>`).join("");
-
-  // LGP list
-  const lgpEvs = events.filter(e=>e.accessibility?.has_sign_language).slice(0,8);
-  document.getElementById("lgp-list").innerHTML = lgpEvs.length
-    ? lgpEvs.map(e => `
-        <div class="stat-row">
-          <span class="stat-key">${fmtDate(e.date_first)}</span>
-          <span class="stat-val" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${e.title}</span>
-        </div>`).join("")
-    : '<div style="color:var(--muted);font-size:12px">Nenhum evento com LGP detectado</div>';
-
-  // Idade
-  const ageGroups = {"Bebés (0-3)":0,"Pré-escolar (3-5)":0,"Crianças (6-12)":0,"Jovens (13-17)":0,"Adultos (18+)":0,"Para todos":0};
-  events.forEach(e => {
-    const a = e.audience;
-    if (!a) return;
-    if (a.label === "Para Todos" || a.age_min === 0 && a.age_max === null) ageGroups["Para todos"]++;
-    else if (a.age_min !== null && a.age_min <= 3)  ageGroups["Bebés (0-3)"]++;
-    else if (a.age_min !== null && a.age_min <= 5)  ageGroups["Pré-escolar (3-5)"]++;
-    else if (a.age_min !== null && a.age_min <= 12) ageGroups["Crianças (6-12)"]++;
-    else if (a.age_min !== null && a.age_min <= 17) ageGroups["Jovens (13-17)"]++;
-    else if (a.age_min !== null && a.age_min >= 18) ageGroups["Adultos (18+)"]++;
-  });
-  const ageMax = Math.max(...Object.values(ageGroups),1);
-  document.getElementById("age-dist").innerHTML = Object.entries(ageGroups)
-    .sort((a,b)=>b[1]-a[1]).map(([label,n]) => {
-      const p = Math.round(n/ageMax*100);
-      return `
-        <div class="bar-row">
-          <div class="bar-label">${label}</div>
-          <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:var(--formacao)88"></div></div>
-          <div class="bar-count">${n}</div>
-        </div>`;
-    }).join("");
-}
-
-// ─────────────────────────────────────────────
-// PIPELINE
-// ─────────────────────────────────────────────
 function renderPipeline() {
   if (!LOG) {
-    document.getElementById("section-pipeline").innerHTML =
-      '<div style="color:var(--muted);padding:40px;text-align:center">Sem dados de pipeline disponíveis.<br>Verifica se data/logs/latest.json existe.</div>';
+    set('sec-pipeline', '<div class="empty">Sem dados de pipeline.</div>');
     return;
   }
+  var s = LOG.summary || {};
+  set('pl-sc', s.total_scraped  || 0);
+  set('pl-vl', s.total_valid    || 0);
+  set('pl-in', s.total_invalid  || 0);
+  set('pl-du', (LOG.duration_seconds || 0) + 's');
 
-  const s = LOG.summary || {};
-  set("pl-scraped",  s.total_scraped  || 0);
-  set("pl-valid",    s.total_valid    || 0);
-  set("pl-invalid",  s.total_invalid  || 0);
-  set("pl-duration", (LOG.duration_seconds||0) + "s");
+  var vrows = (LOG.venues || []).map(function(v) {
+    var hasErr = v.errors && v.errors.length;
+    return '<tr>' +
+      '<td><strong>'+esc(v.venue_name||v.venue_id)+'</strong></td>' +
+      '<td>'+v.scraped+'</td>' +
+      '<td style="color:var(--green)">'+v.valid+'</td>' +
+      '<td style="color:'+(v.invalid>0?'var(--red)':'var(--muted)')+'">'+v.invalid+'</td>' +
+      '<td>'+(hasErr?'<span class="badge bmiss">'+v.errors.length+' erro(s)</span>':'<span class="badge bok">OK</span>')+'</td>' +
+      '</tr>';
+  }).join('');
+  set('plvbody', vrows || '<tr><td colspan="5" class="empty">Sem dados de venue.</td></tr>');
 
-  // Venues table
-  document.getElementById("pipeline-venues").innerHTML = (LOG.venues||[]).map(v => {
-    const hasErrors = v.errors?.length > 0;
-    return `
-      <tr>
-        <td><strong>${v.venue_name||v.venue_id}</strong></td>
-        <td>${v.scraped}</td>
-        <td style="color:var(--green)">${v.valid}</td>
-        <td style="color:${v.invalid>0?'var(--red)':'var(--muted)'}">${v.invalid}</td>
-        <td>${hasErrors
-          ? `<span class="badge badge-red">${v.errors.length} erro(s)</span>`
-          : '<span class="badge badge-green">OK</span>'}</td>
-      </tr>`;
-  }).join("");
+  var dedup = (s.total_valid||0) - (s.total_after_dedup||0);
+  var drows = [
+    ['Executado em', fmtDt(LOG.run_at)],
+    ['Duracao', LOG.duration_seconds + 's'],
+    ['Venues processados', s.venues_processed || (LOG.venues||[]).length],
+    ['Scraped raw', s.total_scraped || 0],
+    ['Apos validacao', s.total_valid || 0],
+    ['Removidos dedup', dedup],
+    ['Output final', s.total_after_dedup || (MASTER && MASTER.total_events) || 0],
+    ['Erros', s.total_errors || 0],
+  ].map(function(pair) {
+    return '<div class="srow"><span class="sk">'+pair[0]+'</span><span>'+pair[1]+'</span></div>';
+  }).join('');
+  set('pldetail', drows);
 
-  // Details
-  const dedup_removed = (s.total_valid||0) - (s.total_after_dedup||0);
-  document.getElementById("pipeline-details").innerHTML = `
-    <div class="stat-row"><span class="stat-key">Executado em</span><span class="stat-val">${fmtDatetime(LOG.run_at)}</span></div>
-    <div class="stat-row"><span class="stat-key">Duração total</span><span class="stat-val">${LOG.duration_seconds}s</span></div>
-    <div class="stat-row"><span class="stat-key">Venues processados</span><span class="stat-val">${s.venues_processed||0}</span></div>
-    <div class="stat-row"><span class="stat-key">Scraped (raw)</span><span class="stat-val">${s.total_scraped||0}</span></div>
-    <div class="stat-row"><span class="stat-key">Após validação</span><span class="stat-val" style="color:var(--green)">${s.total_valid||0}</span></div>
-    <div class="stat-row"><span class="stat-key">Removidos por dedup</span><span class="stat-val" style="color:var(--muted)">${dedup_removed}</span></div>
-    <div class="stat-row"><span class="stat-key">Output final</span><span class="stat-val" style="color:var(--musica)">${s.total_after_dedup||0}</span></div>
-    <div class="stat-row"><span class="stat-key">Erros totais</span><span class="stat-val" style="color:${(s.total_errors||0)>0?'var(--red)':'var(--green)'}">${s.total_errors||0}</span></div>`;
+  var allLogs = LOGS.slice(0, 10);
+  set('plhist', allLogs.map(function(l) {
+    var ls = l.summary || {};
+    var errs = ls.total_errors || 0;
+    return '<tr>' +
+      '<td>'+fmtDt(l.run_at)+'</td>' +
+      '<td>'+l.duration_seconds+'s</td>' +
+      '<td>'+( ls.total_scraped||0)+'</td>' +
+      '<td style="color:var(--green)">'+(ls.total_valid||0)+'</td>' +
+      '<td style="color:var(--muted)">'+(ls.total_after_dedup||0)+'</td>' +
+      '<td style="color:'+(errs>0?'var(--red)':'var(--muted)')+'">'+errs+'</td>' +
+      '</tr>';
+  }).join('') || '<tr><td colspan="6" class="empty">Sem historico.</td></tr>');
 }
 
-// ─────────────────────────────────────────────
-// UTILS
-// ─────────────────────────────────────────────
-function set(id, val) {
-  const el = document.getElementById(id);
-  if (el) el.textContent = val;
-}
-function pct(n, total) { return total ? Math.round(n/total*100) : 0; }
-function fmtDate(iso) {
-  if (!iso) return "—";
-  const d = new Date(iso + "T00:00:00");
-  return d.toLocaleDateString("pt-PT", {day:"2-digit",month:"short"});
-}
-function fmtDatetime(iso) {
-  if (!iso) return "—";
-  const d = new Date(iso);
-  return d.toLocaleDateString("pt-PT") + " " + d.toLocaleTimeString("pt-PT",{hour:"2-digit",minute:"2-digit"});
-}
-function fmtMonth(ym) {
-  if (!ym) return "—";
-  const [y,m] = ym.split("-");
-  const months = ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
-  return (months[parseInt(m)-1]||m) + " " + y;
+function switchTab(id, el) {
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('on'); });
+  document.querySelectorAll('.sec').forEach(function(s){ s.classList.remove('on'); });
+  if (el) el.classList.add('on');
+  document.getElementById('sec-' + id).classList.add('on');
+  if (id === 'eventos') renderTable();
 }
 
-// ─────────────────────────────────────────────
-// NAVEGAÇÃO
-// ─────────────────────────────────────────────
-function switchTab(id) {
-  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-  document.querySelectorAll(".section").forEach(s => s.classList.remove("active"));
-  event.target.classList.add("active");
-  document.getElementById("section-" + id).classList.add("active");
-}
-
-// ─────────────────────────────────────────────
-// INIT
-// ─────────────────────────────────────────────
 loadData();
 </script>
 </body>
