@@ -10,18 +10,15 @@ on:
         required: false
         default: 'false'
         type: boolean
-      venue:
-        description: 'Venue específico (deixar vazio para todos)'
-        required: false
-        default: ''
-        type: string
 
 permissions:
   contents: write
 
 jobs:
 
-  # ─── JOB 1: Descobrir venues dinamicamente ───────────────────────────────
+  # ─────────────────────────────────────────
+  # JOB 1 — Descobrir venues
+  # ─────────────────────────────────────────
   discover:
     name: Descobrir venues
     runs-on: ubuntu-latest
@@ -29,30 +26,23 @@ jobs:
       venues: ${{ steps.list.outputs.venues }}
     steps:
       - uses: actions/checkout@v4
-
       - id: list
-        name: Listar scrapers
         run: |
-          if [ -n "${{ github.event.inputs.venue }}" ]; then
-            # Venue específico (para debug manual)
-            VENUES='["${{ github.event.inputs.venue }}"]'
-          else
-            # Descoberta automática: qualquer pasta com scraper.py
-            VENUES=$(find pipeline/scrapers -name "scraper.py" \
-              | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
-              | sort \
-              | jq -R . | jq -sc .)
-          fi
+          VENUES=$(find pipeline/scrapers -name "scraper.py" \
+            | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
+            | sort \
+            | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))")
           echo "venues=$VENUES" >> $GITHUB_OUTPUT
           echo "Venues: $VENUES"
 
-  # ─── JOB 2: Scrape paralelo — um job por venue ───────────────────────────
-  # fail-fast: false → um venue a falhar não cancela os outros
+  # ─────────────────────────────────────────
+  # JOB 2 — Scrape paralelo (um job por venue)
+  # ─────────────────────────────────────────
   scrape:
     name: Scrape ${{ matrix.venue }}
     needs: discover
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 40
     strategy:
       fail-fast: false
       matrix:
@@ -60,52 +50,45 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependências
-        run: pip install -r requirements.txt
-
-      # Restaurar cache do venue do run anterior (evita re-scrape desnecessário)
-      - name: Restaurar cache do venue
-        uses: actions/cache@v4
-        with:
-          path: data/cache/${{ matrix.venue }}.cache.json
-          key: venue-cache-${{ matrix.venue }}-${{ hashFiles('pipeline/scrapers/${{ matrix.venue }}/scraper.py') }}
-          restore-keys: |
-            venue-cache-${{ matrix.venue }}-
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt -q
 
       - name: Scrape ${{ matrix.venue }}
         env:
-          FORCE: ${{ github.event.inputs.force_refresh == 'true' && '--force' || '' }}
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          python -m pipeline.run_venue ${{ matrix.venue }} $FORCE
+          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
+            python -m pipeline.run_venue ${{ matrix.venue }} --force
+          else
+            python -m pipeline.run_venue ${{ matrix.venue }}
+          fi
 
-      - name: Upload artefacto do venue
+      - name: Upload artefacto
         uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: venue-${{ matrix.venue }}
           path: |
             data/events/${{ matrix.venue }}.json
             data/venues/${{ matrix.venue }}.json
             data/logs/venue-${{ matrix.venue }}.json
-          retention-days: 1
           if-no-files-found: warn
+          retention-days: 1
 
-  # ─── JOB 3: Agregar, dedup, gerar master.json e publicar ─────────────────
-  aggregate:
+  # ─────────────────────────────────────────
+  # JOB 3 — Agregar + publicar
+  # ─────────────────────────────────────────
+  publish:
     name: Agregar e publicar
-    needs: [discover, scrape]
+    needs: scrape
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # Corre mesmo que alguns venues falhem
-    if: always() && needs.discover.result == 'success'
+    if: always()
 
     steps:
       - uses: actions/checkout@v4
@@ -117,40 +100,45 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependências
-        run: pip install -r requirements.txt
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt -q
 
-      - name: Download artefactos de todos os venues
+      - name: Download artefactos dos venues
         uses: actions/download-artifact@v4
         with:
           pattern: venue-*
           merge-multiple: true
           path: data/
 
-      - name: Agregar, dedup e gerar master.json
+      - name: Agregar e gerar master.json
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: python -m pipeline.aggregate
 
-      - name: Reconstruir index.html com dados actualizados
-        run: python -m pipeline.build_index
+      - name: Actualizar index.html com novos dados
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: python pipeline/scripts/update_index.py
 
-      - name: Enviar notificações
+      - name: Notificacoes
         if: always()
         env:
+          PYTHONPATH: ${{ github.workspace }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           NTFY_URL: ${{ secrets.NTFY_URL }}
         run: python -m pipeline.utils.notify
 
-      - name: Commit
+      - name: Commit e push
         run: |
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/ index.html
-          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ needs.discover.outputs.venues }}"
+          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC')"
           git push
 
-      - name: Upload relatório
+      - name: Upload relatorio
         if: always()
         uses: actions/upload-artifact@v4
         with:
