@@ -64,9 +64,9 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
-            python -m pipeline.run_venue ${{ matrix.venue }} --force
+            python pipeline/run_venue.py ${{ matrix.venue }} --force
           else
-            python -m pipeline.run_venue ${{ matrix.venue }}
+            python pipeline/run_venue.py ${{ matrix.venue }}
           fi
 
       - name: Upload artefacto
@@ -113,7 +113,7 @@ jobs:
       - name: Agregar e gerar master.json
         env:
           PYTHONPATH: ${{ github.workspace }}
-        run: python -m pipeline.aggregate
+        run: python pipeline/aggregate.py
 
       - name: Actualizar index.html com novos dados
         env:
@@ -128,7 +128,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           NTFY_URL: ${{ secrets.NTFY_URL }}
-        run: python -m pipeline.utils.notify
+        run: python pipeline/utils/notify.py
 
       - name: Commit e push
         run: |
