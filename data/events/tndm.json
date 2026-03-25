@@ -1,1 +1,1542 @@
-[]
+[
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2025-09-oficinas-de-teatro",
+    "source_id": "oficinas-de-teatro",
+    "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/oficinas-de-teatro/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Oficinas de Teatro",
+    "title_raw": "Oficinas de Teatro",
+    "subtitle": null,
+    "description": "Como se cria um grupo de teatro na escola?Esse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.O foco é o teatro escolar. ...",
+    "description_short": "Como se cria um grupo de teatro na escola?Esse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.O foco é o teatro escolar. ...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Oficinas e Formação",
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento"
+    ],
+    "dates": [
+      {
+        "date": "2025-09-01",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2025-09-01",
+    "date_last": "2025-09-01",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2025-09-01",
+    "date_close": "2026-07-01",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "ARRAIOLOS\nartista\nInês Leite (TEatroensaio)\nTORRÃO, ALCÁCER DO SAL\nartista\nMiguel Magalhães\nparceria com\nPlano Nacional das Artes\nparceiros locais\nCâmara Municipal de Alcácer do Sal e Convento da Terra; Câmara Municipal de Arraiolos\ndirigido a\nalunos dos 2.º e 3.º ciclos"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/oficinas_de_teatro_2026_1920_4122637269309b060312a.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "oficinas-de-teatro|2025-09",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:32.761686+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:ca0087b25879030d",
+      "harmonized_at": "2026-03-25T17:09:55.725005+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-03-filodemo",
+    "source_id": "filodemo",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/filodemo/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Filodemo",
+    "title_raw": "Filodemo",
+    "subtitle": null,
+    "description": "Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos...",
+    "description_short": "Filodemo é uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-03-27",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-03-27",
+    "date_last": "2026-03-27",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-03-27",
+    "date_close": "2026-04-18",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": true,
+      "price_min": null,
+      "price_max": null,
+      "price_display": "Entrada livre",
+      "price_raw": "Entrada livre",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "de\nLuís de Camões\nencenação\nPedro Penim\ninterpretação\nAna Coimbra, Ana Tang, Bernardo de Lacerda, Guilherme Arabolaza, João Grosso, José Neves, June João, Mariana Magalhães, Stela, Vítor Silva Costa\nfigurinos\nAldina Jesus\ndesenho de luz\nDaniel Varela\ndesenho de som\nMargarida Pinto\nsonoplastia\nJoão Neves, Rui Dâmaso\nvídeo\nAndré Dinis Carrilho\nassistência de encenação\nJoana Brito Silva\nprodução\nTeatro Nacional D. Maria II\nM/12\nduração\n1h45\nNo âmbito das comemorações dos 500 anos de Luís de Camões\n*5 abr não se realiza o espetáculo"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/filodemo_1920_5832374698c5fd60d32c.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "filodemo|2026-03",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:34.728398+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:ec706da41ccc58c4",
+      "harmonized_at": "2026-03-25T17:09:55.729647+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-04-nao-se-pode-nao-se-pode",
+    "source_id": "nao-se-pode-nao-se-pode",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/nao-se-pode-nao-se-pode/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Não se pode! Não se pode!",
+    "title_raw": "Não se pode! Não se pode!",
+    "subtitle": null,
+    "description": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio jun...",
+    "description_short": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio jun...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-04-26",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-04-26",
+    "date_last": "2026-04-26",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-04-26",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": true,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "textos\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação em  Aljezur, Lisboa (17-21 jun), Monchique, Ponta Delgada\nBerna Huidobro, Guilherme Félix, Inês Cardoso\ninterpretação em Águeda, Fafe, Lamego, Lisboa (3-7 jun), Paredes de Coura, Penafiel, Seia, Viana do Castelo e Vila Real\nMário Alberto Pereira, Marta Garcia Cruz, Sofia Pereira\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nNelda Magalhães, Rita Silva\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Águeda, Barcelos, Bragança, Évora, Fafe, Faro, Lagoa, Mafra, Paredes, Paredes de Coura, Penafiel, Ponta Delgada, Viana do Castelo e Vila Real.\n* Inscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/nao_se_pode_nao_se_pode_1920_345176296818a2c4c2384.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "nao-se-pode-nao-se-pode|2026-04",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:36.702168+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:11387bda66fa6141",
+      "harmonized_at": "2026-03-25T17:09:55.729988+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-cabe-mais-um",
+    "source_id": "cabe-mais-um",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/cabe-mais-um/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Cabe mais um?",
+    "title_raw": "Cabe mais um?",
+    "subtitle": null,
+    "description": "M/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.",
+    "description_short": "M/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-16",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-16",
+    "date_last": "2026-05-16",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-05-16",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": true,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": true,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "texto\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação\nBeatriz Jacinto, Mafalda Cardoso Pereira, Mariana Fonseca\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nLeonor Atalaia\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Coimbra, Ílhavo, Leiria, Lousã, Ponta Delgada, Santarém, Tomar, Tondela e Vale de Cambra.\n.\n.\nInscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/cabe_mais_um_1920_18501012016818a39a0211e.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "cabe-mais-um|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:38.646507+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:46d71614f25aab6a",
+      "harmonized_at": "2026-03-25T17:09:55.730255+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-04-ciclo-de-formacao",
+    "source_id": "ciclo-de-formacao",
+    "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/ciclo-de-formacao/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Ciclo de Formação",
+    "title_raw": "Ciclo de Formação",
+    "subtitle": null,
+    "description": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com difere...",
+    "description_short": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com difere...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Oficinas e Formação",
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento"
+    ],
+    "dates": [
+      {
+        "date": "2026-04-20",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-04-20",
+    "date_last": "2026-04-20",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-04-20",
+    "date_close": "2026-04-24",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "> inscrições abertas até 31 de mar\ndirigido a\nprofissionais das artes performativas, artes plásticas, profissionais nas áreas de costura, carpintaria e som\nformação de frequência gratuita mediante inscrição\nperíodo para inscrições\n16 fev a 31 mar\ncarga horária por módulo\n6 a 12 horas\nnúmero máximo de participantes por módulo\n15 pessoas\ncondições de inscrição\nenvio de nota biográfica abreviada e carta de motivação (máx 800 caracteres), em formato escrito, vídeo ou outro\n> Não é obrigatória a participação nos três módulos. No momento da inscrição deve ser indicado qual o módulo que se pretende frequentar, podendo a inscrição ser realizada para mais que um módulo.\nIniciativa do Teatro Nacional D. Maria II e da Fundação ”la Caixa”, em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/ciclo_de_formacao_2026_1920_206465145469309c792a213.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "ciclo-de-formacao|2026-04",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:40.634641+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:b56f66ee0aafc3b5",
+      "harmonized_at": "2026-03-25T17:09:55.730458+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-festival-panos",
+    "source_id": "festivalpanos2026",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/festivalpanos2026/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Festival PANOS",
+    "title_raw": "Festival PANOS",
+    "subtitle": null,
+    "description": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.Ao longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal...",
+    "description_short": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.Ao longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-22",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-22",
+    "date_last": "2026-05-22",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-05-22",
+    "date_close": "2026-05-24",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": true,
+    "festival_name": "Festival Panos O Panos",
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "textos de\nAna Markl\nInsegura — Uma Tragédia de Enganos\nJoaquim Arena\nO Meu Pai Carlitos\nMariana Jones\nOlívia\nM/12\nIniciativa do Teatro Nacional D. Maria II e da Fundação ”la Caixa”, em colaboração com o BPI e em parceria com o Município de Paredes — CCP."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/festival_panos_2026_1920_844157556930648c8e3bc.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "festival-panos|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:42.589777+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:75cfb2d1c029d50a",
+      "harmonized_at": "2026-03-25T17:09:55.730678+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-panos-palcos-novos-palavras-novas",
+    "source_id": "panos-palcos-novos-palavras-novas-2-2",
+    "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/panos-palcos-novos-palavras-novas-2-2/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "PANOS — palcos novos palavras novas",
+    "title_raw": "PANOS — palcos novos palavras novas",
+    "subtitle": null,
+    "description": "PANOS – palcos novos palavras novas é um projeto do Teatro Nacional D. Maria II que alia o teatro escolar/juvenil à nova dramaturgia. Todos os anos há peças encomendadas a escritores reconhecidos para serem apresentadas por jovens entre os 12 ...",
+    "description_short": "PANOS – palcos novos palavras novas é um projeto do Teatro Nacional D. Maria II que alia o teatro escolar/juvenil à nova dramaturgia. Todos os anos há peças encomendadas a escritores reconhecidos para serem apresentadas por jovens entre os 12 ...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Livros e Pensamento",
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-23",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-23",
+    "date_last": "2026-05-23",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-05-23",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": true,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "textos de\nAna Markl, Joaquim Arena, Mariana Jones\nedição\nTNDM II"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/lancamento_de_livros_panos_2026_1920_176211145469316b1ec11d6.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "panos-palcos-novos-palavras-novas|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:44.552250+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:47bd80b4215c2758",
+      "harmonized_at": "2026-03-25T17:09:55.730907+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-toshiib4",
+    "source_id": "toshiib4",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/toshiib4/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "TOSHiiB4",
+    "title_raw": "TOSHiiB4",
+    "subtitle": null,
+    "description": "TOSHiiB4, uma criação entre a não-ficção e a fantasia, propõe uma revisão empírica da sexualidade na era digital. Acontece num quarto oversized — incluindo o público nesta pijama party — onde a criadora e duas amigas exploram um espaço de au...",
+    "description_short": "TOSHiiB4, uma criação entre a não-ficção e a fantasia, propõe uma revisão empírica da sexualidade na era digital. Acontece num quarto oversized — incluindo o público nesta pijama party — onde a criadora e duas amigas exploram um espaço de au...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-27",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-27",
+    "date_last": "2026-05-27",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-05-27",
+    "date_close": "2026-05-31",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "criação\nLuísa Guerra\ncocriação\nJoana Mont’Alverne, Mafalda Banquart\ninterpretação\nLuísa Guerra, Joana Mont’Alverne, Mafalda Banquart\ncenografia\nBruno José Silva\ndesenho de luz\nSara Nogueira\nsonoplastia\nGonçalo Alegria\napoio à criação e vídeo\nBeatriz Diniz\nolhar externo\nStela Costa\nprodução executiva\nMarta Lima / Agente A Norte\ncoprodução\nTeatro Nacional D. Maria II, A Oficina / Centro Cultural Vila Flor, O Espaço do Tempo e Teatro Viriato\ncom o apoio\nda Câmara Municipal de Lisboa e do Polo Cultural Gaivotas | Boavista\nA classificar pela CCE\nIniciativa do Teatro Nacional D. Maria II, A Oficina / Centro Cultural Vila Flor, O Espaço do Tempo, Teatro Viriato."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/toshiib4_1920_1999142241693060ecad019.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "toshiib4|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:46.577310+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:586f9837e30f378f",
+      "harmonized_at": "2026-03-25T17:09:55.731182+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-crime-e-castigo",
+    "source_id": "crime-e-castigo",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/crime-e-castigo/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Crime e Castigo",
+    "title_raw": "Crime e Castigo",
+    "subtitle": null,
+    "description": "Após Frankenstein e Os Miseráveis, também apresentados pelo D. Maria II e pelo FIMFA Lx, a companhia belga Karyatides traz a Lisboa mais um clássico da literatura adaptado ao seu teatro de objetos: o imortal Crime e Castigo, de Fiódor Dostoi&ea...",
+    "description_short": "Após Frankenstein e Os Miseráveis, também apresentados pelo D. Maria II e pelo FIMFA Lx, a companhia belga Karyatides traz a Lisboa mais um clássico da literatura adaptado ao seu teatro de objetos: o imortal Crime e Castigo, de Fiódor Dostoi&ea...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Público em geral",
+      "Livros e Pensamento",
+      "Infância e Juventude",
+      "Participação",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-28",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-28",
+    "date_last": "2026-05-28",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-05-28",
+    "date_close": "2026-05-30",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": true,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "inspirado no romance de\nFiódor Dostoiévski\nencenação\nKarine Birgé\ninterpretação\nCyril Briant, Marie Delhaye\ndramaturgia\nRobin Birgé\ncenografia e figurinos\nClaire Farah\ndesenho de luz\nDimitri Joukovsky\ndesenho de som\nGuillaume Istace\ncoprodução\nThéâtre de Liège, Varia – Théâtre & Studio, Escher Theater (LU), Centre Culturel de Dinant, Théâtre de Namur, La Maison de la Culture de Tournai, La Coop asbl\napoios\nMinistère de la Fédération Wallonie Bruxelles – Service du Théâtre, La Roseraie – Bruxelles, Pierre de Lune – Centre Scénique Jeunes Publics de Bruxelles, Théâtre Les Tanneurs, Théâtre La Montagne Magique, Shelterprod, Taxshelter. be, ING, Tax-Shelter du Gouvernement Fédéral Belge\nprodução FIMFA Lx26\nA Tarumba\ncoprodução FIMFA Lx26\nTeatro Nacional D. Maria II\nA Tarumba é uma estrutura financiada por República Portuguesa – Cultura, Desporto e Juventude / DGArtes\nA classificar pela CCE\nduração\n1h15"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/crime_e_castigo_1920_1791712706695e8ce066a87.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "crime-e-castigo|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:48.484288+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:c4903c368b3c9ca1",
+      "harmonized_at": "2026-03-25T17:09:55.731413+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-05-terra-nullius",
+    "source_id": "terra-nullius",
+    "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/terra-nullius/",
+    "venue_id": "tndm",
+    "space_id": "jardins-bombarda",
+    "title": "Terra Nullius",
+    "title_raw": "Terra Nullius",
+    "subtitle": null,
+    "description": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
+    "description_short": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.Terra Nullius...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Livros e Pensamento",
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-30",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-30",
+    "date_last": "2026-05-30",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-05-30",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": true,
+      "price_min": null,
+      "price_max": null,
+      "price_display": "Entrada livre",
+      "price_raw": "Entrada livre",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Entrada livre\nde\nPaula Diogo\nedição\nTNDM II / Bicho-do-Mato\ncoleção\n«Textos de Teatro»\ncom a presença de\nJoana Gorjão Henriques, Paula Diogo, Pedro Penim"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/lancamento_de_livros_terra_nullius_1920_195062890069316b3c28ede.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "terra-nullius|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:50.429488+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:64e804f1c413d5ae",
+      "harmonized_at": "2026-03-25T17:09:55.731628+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-06-prologo",
+    "source_id": "prologo",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/prologo/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Prólogo",
+    "title_raw": "Prólogo",
+    "subtitle": null,
+    "description": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
+    "description_short": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove Prólogo, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.Este será um período de transição e de escuta, que ...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-22",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-06-22",
+    "date_last": "2026-06-22",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-06-22",
+    "date_close": "2026-07-25",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": true,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": ""
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/prologo_1920_93983766469306a833d46c.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "prologo|2026-06",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:52.328845+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:e5f06a6643f5cb60",
+      "harmonized_at": "2026-03-25T17:09:55.731845+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-07-o-cume",
+    "source_id": "o-cume",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/o-cume/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "O Cume",
+    "title_raw": "O Cume",
+    "subtitle": null,
+    "description": "Seis protagonistas dão por si num esconderijo — ou será um abrigo? Ou um bunker? — que está literalmente preso ao cume de uma montanha. Falam italiano, alemão, inglês (escocês) e francês — será que se compreendem uns aos outros? Ao que parec...",
+    "description_short": "Seis protagonistas dão por si num esconderijo — ou será um abrigo? Ou um bunker? — que está literalmente preso ao cume de uma montanha. Falam italiano, alemão, inglês (escocês) e francês — será que se compreendem uns aos outros? Ao que parec...",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Espetáculos",
+      "Infância e Juventude",
+      "Público em geral",
+      "Participação",
+      "Livros e Pensamento",
+      "Oficinas e Formação"
+    ],
+    "dates": [
+      {
+        "date": "2026-07-17",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-07-17",
+    "date_last": "2026-07-17",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-07-17",
+    "date_close": "2026-07-18",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "criação\nChristoph Marthaler\ninterpretação\nCharlotte Clamens, Federica Fracassi, Graham F. Valentine, Liliana Benini, Lukas Metzenbauer, Raphael Clamer\ndramaturgia\nMalte Ubenauf\ncenografia\nDuri Bischoff\nfigurinos\nSara Kittelmann\nluz\nLaurent Junod\nsom\nCharlotte Constant\ndireção dos ensaios musicais\nBendix Dethleffsen, Dominique Tille\nmaquilhagem e perucas\nPia Norberg\ncolaboração dramatúrgica\nÉric Vautrin\nestagiário de encenação\nLouis Rebetz\nacessórios e construção do cenário\nThéâtre Vidy-Lausanne\nconfeção de figurinos\nPiccolo Teatro di Milano – Teatro d’Europa\ndireção de cena\nVéronique Kespi, Guillaume Zemor (em alternância)\noperação de luz\nJean-Luc Mutrux, Cassandre Colliard (em alternância)\noperação de som\nFabio Gaggetta, Mathieu Pegoraro (em alternância)\nguarda-roupa\nCécilé Delanoë\nprodução executiva\nMarion Caillaud, Tristan Pannatier\nprodução\nThéâtre Vidy-Lausanne, Piccolo Teatro di Milano – Teatro d’Europa, MC93 - Maison de la culture de Seine-Saint-Denis\ncoprodução\nBonlieu Scène nationale Annecy, Ruhrfestspiele Recklinghausen, Les Théâtres de la Ville de Luxembourg, Festival d’Automne à Paris, Théâtre National Populaire de Villeurbanne, Festival d’Avignon, Maillon Théâtre de Strasbourg – Scène européenne, Malraux scène nationale Chambéry Savoie, Les 2 Scènes – Scène nationale de Besançon, tnba – Théâtre national Bordeaux Aquitaine, International Summer Festival Kampnagel\nNo contexto do projeto Interreg franco-suisse n° 20919 – LACS - Annecy-Chambéry-Besançon-Genève-Lausanne\napoio\nCercle des Mécènes du Théâtre de Vidy, Fondation Pro Scientia et Arte, Fondation Françoise Champoud\nagradecimentos\nIsabelle Faust\ncoapresentação\nTeatro Nacional D. Maria II, Festival de Almada\nEspetáculo integrado no Festival de Almada.\nO\nCume\né composto por textos de Christoph Marthaler, Malte Ubenauf e intérpretes do espetáculo, além de excertos e citações de Elisa Biagini, Olivier Cadiot, Patrizia Cavalli, Bodo Hell, Norbert Hinterberger, Gert Jonke, Antonio Moresco, Aldo Nove, Pier Paolo Pasolini, Werner Schwab, Christophe Tarkos, Dylan Thomas, Giuseppe Ungaretti e Patrizia Valduga. As músicas do espetáculo são inspiradas em composições dos Beatles, de Abade Bovet, Adriano Celentano, Wolfgang Amadeus Mozart e Franz Schubert, bem como em  melodias populares suíças e austríacas."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/o_cume_1920_9772886996930673ac9c5f.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "o-cume|2026-07",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T17:09:54.221711+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:e2cf41366f65199f",
+      "harmonized_at": "2026-03-25T17:09:55.732041+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  }
+]
