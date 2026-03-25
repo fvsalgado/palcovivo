@@ -10,12 +10,15 @@ build/
 venv/
 env/
 
-# Cache local — não versionar (dados raw temporários)
+# Cache local — não versionar (dados raw temporários e cache HTTP)
 data/cache/
 !data/cache/.gitkeep
 
+# Cache HTTP por venue (gerado em runtime, passado por artefacto entre jobs)
+data/cache/_http/
+data/cache/*/
+
 # Logs — versionar latest.json e logs datados para notificações funcionarem
-# data/logs/ — NÃO ignorar
 !data/logs/
 
 # Node / Astro (frontend)
