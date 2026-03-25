@@ -2,7 +2,7 @@
 Primeira Plateia — Scraper Theatro Circo (Braga)
 Venue: Theatro Circo | theatrocirco.com
 
-Estrutura real do site (sem JSON-LD, sem <time datetime>):
+Estrutura real do site (sem JSON-LD de Event, sem <time datetime>):
   - Programação: theatrocirco.com/programa/
   - Cada evento listado com: "28 março (sáb) → Categoria"
   - Página individual: mesmo formato de data no topo
@@ -13,6 +13,19 @@ Estratégia:
   1. HTML da página /programa/ → links + datas directamente da listagem
   2. Sitemap → visitar páginas individuais com parser de data nativo
   3. API (fallback histórico, sempre falha com 404)
+
+Melhorias v2:
+  - Hora extraída do .info-box span (ex: "21h30")
+  - Sala extraída do .info-box span (ex: "Sala Principal", "Sala Estúdio")
+  - Preço melhorado: suporta "5€", "5,50€", "Gratuito"
+  - Classificação etária extraída (ex: "M/14", "M/6", "Todos os públicos")
+  - Tags do .info-box (ex: "Dia Mundial do Teatro", "Acessibilidade")
+  - Subtítulo/autor extraído do h2.small
+  - Duração extraída do texto de créditos
+  - Sessões estruturadas via JSON em data-sessions do #popup-reserva
+  - URL de bilhetes mais robusta (bol.pt prioritário)
+  - Acessibilidade: LGP + Audiodescrição detectados em secção .access dedicada
+  - Todos os campos novos integrados no schema de saída
 """
 
 import re
@@ -90,6 +103,18 @@ MONTH_PT = {
     "novembro": "11", "dezembro": "12",
 }
 
+# Salas conhecidas do Theatro Circo para validação
+KNOWN_ROOMS = {
+    "sala principal", "sala estúdio", "sala estudio",
+    "grande auditório", "foyer", "claustro", "exterior",
+}
+
+# Classificações etárias portuguesas
+AGE_RATING_RE = re.compile(
+    r'\b(m/\d+|todos os públicos|todos os publicos|para todos|tp)\b',
+    re.IGNORECASE
+)
+
 
 # ---------------------------------------------------------------------------
 # SESSION
@@ -149,12 +174,9 @@ def _infer_year(month_num: str, month_end: str = None) -> str:
     - Por defeito usa o ano actual (cobre eventos recentes e próximos)
     """
     now = datetime.now()
-    # Para períodos: se o mês de fim ainda não passou, é este ano
     ref_month = int(month_end) if month_end else int(month_num)
     if ref_month >= now.month:
         return str(now.year)
-    # Mês já passou: se foi há pouco (< 6 meses), ainda é este ano
-    # Se foi há muito (> 6 meses), pode ser próximo ano mas é improvável
     return str(now.year)
 
 
@@ -186,21 +208,18 @@ def _parse_tc_date(text: str) -> tuple[Optional[str], Optional[str]]:
         return d1, d2
 
     # Múltiplos dias: "3, 10, 17, 24 e 31 março"
-    # Encontrar o mês e usar o primeiro número antes dele
     month_m = re.search(r'([a-záéíóúâêôãõç]{4,})', t)
     if month_m:
         month = MONTH_PT.get(month_m.group(1)[:3])
         if month:
             year_m = re.search(r'\d{4}', t)
             year   = year_m.group() if year_m else _infer_year(month)
-            # Todos os números antes do mês
             nums = re.findall(r'\d+', t[:month_m.start()])
             if nums:
                 day = nums[0].zfill(2)
                 return f"{year}-{month}-{day}", None
 
     # Mês abreviado (3 letras): "28 mar" ou "mar 28"
-    # Tentativa genérica com meses de 3 letras
     month_short_m = re.search(r'\b(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\b', t)
     if month_short_m:
         month = MONTH_PT.get(month_short_m.group(1))
@@ -213,6 +232,254 @@ def _parse_tc_date(text: str) -> tuple[Optional[str], Optional[str]]:
                     return f"{year}-{month}-{day.zfill(2)}", None
 
     return None, None
+
+
+def _parse_time_tc(text: str) -> Optional[str]:
+    """
+    Converte hora no formato TC "21h30", "21H30", "21:30", "21h" para "HH:MM".
+    """
+    if not text:
+        return None
+    m = re.search(r'(\d{1,2})[hH:](\d{2})?', text.strip())
+    if m:
+        hh = m.group(1).zfill(2)
+        mm = (m.group(2) or "00").zfill(2)
+        return f"{hh}:{mm}"
+    return None
+
+
+# ---------------------------------------------------------------------------
+# EXTRACÇÃO DE SESSÕES ESTRUTURADAS via #popup-reserva data-sessions
+#
+# O popup de reserva tem um atributo data-sessions com JSON:
+#   [{"start":"2026-03-27 21:30:00","notes":"","show_site":true}]
+# Esta é a fonte mais fiável de datas/horas.
+# ---------------------------------------------------------------------------
+
+def _extract_sessions_from_popup(soup: BeautifulSoup) -> list[dict]:
+    """
+    Extrai sessões estruturadas do atributo data-sessions do #popup-reserva.
+    Retorna lista de dicts com date, time_start, notes.
+    """
+    popup = soup.select_one("#popup-reserva[data-sessions]")
+    if not popup:
+        return []
+
+    raw = popup.get("data-sessions", "")
+    if not raw:
+        return []
+
+    try:
+        sessions_raw = _json.loads(raw)
+    except (_json.JSONDecodeError, ValueError):
+        logger.debug("TC: data-sessions JSON inválido")
+        return []
+
+    sessions = []
+    for s in sessions_raw:
+        if not isinstance(s, dict):
+            continue
+        start = s.get("start", "")
+        if not start:
+            continue
+        # Formato: "2026-03-27 21:30:00"
+        parts = str(start).strip().split(" ")
+        date_part = parts[0] if parts else ""
+        time_part = parts[1][:5] if len(parts) > 1 else None  # "21:30"
+
+        # Validar data
+        if not re.match(r'^\d{4}-\d{2}-\d{2}$', date_part):
+            continue
+
+        sessions.append({
+            "date":             date_part,
+            "time_start":       time_part,
+            "time_end":         None,
+            "duration_minutes": None,
+            "is_cancelled":     False,
+            "is_sold_out":      False,
+            "notes":            s.get("notes") or None,
+        })
+
+    return sessions
+
+
+# ---------------------------------------------------------------------------
+# EXTRACÇÃO DO INFO-BOX
+#
+# Estrutura real do .info-box:
+#   <div class="info-box">
+#     <div>
+#       <span>21h30</span>
+#       <span>Sala Principal</span>
+#     </div>
+#     <div class="bottom desktop">
+#       <span>5€ </span>
+#       <span>&nbsp;&nbsp;M/14&nbsp;&nbsp;</span>
+#       <div class="tag">Acessibilidade</div>
+#       <div class="tag">Dia Mundial do Teatro</div>
+#     </div>
+#   </div>
+# ---------------------------------------------------------------------------
+
+def _extract_info_box(soup: BeautifulSoup) -> dict:
+    """
+    Extrai hora, sala, preço, classificação etária e tags do .info-box.
+    Retorna dict com os campos encontrados.
+    """
+    result = {
+        "time_start":  None,
+        "room":        None,
+        "price_raw":   "",
+        "age_rating":  None,
+        "event_tags":  [],
+    }
+
+    info_box = soup.select_one(".info-box")
+    if not info_box:
+        return result
+
+    # Tags especiais (ex: "Dia Mundial do Teatro", "Acessibilidade")
+    for tag_el in info_box.select(".tag"):
+        tag_text = tag_el.get_text(strip=True)
+        if tag_text:
+            result["event_tags"].append(tag_text)
+
+    # Primeiro bloco de spans: hora + sala
+    first_div = info_box.find("div", class_=lambda c: not c or "bottom" not in (c or ""))
+    if first_div and first_div.name == "div":
+        spans = first_div.find_all("span", recursive=False)
+        for span in spans:
+            text = span.get_text(strip=True)
+            if not text:
+                continue
+            # Hora: contém "h" ou ":"  e dígitos
+            if result["time_start"] is None and re.search(r'\d{1,2}[hH:]\d{0,2}', text):
+                result["time_start"] = _parse_time_tc(text)
+            # Sala: texto sem dígitos e sem "h" que seja uma sala conhecida
+            elif result["room"] is None and not re.search(r'\d', text):
+                lower = text.lower()
+                if any(k in lower for k in KNOWN_ROOMS) or re.search(r'\bsala\b|\bauditório\b|\bfoyer\b', lower, re.IGNORECASE):
+                    result["room"] = text
+
+    # Bloco .bottom: preço + classificação etária
+    bottom = info_box.select_one(".bottom")
+    if bottom:
+        for span in bottom.find_all("span"):
+            text = span.get_text(strip=True).replace("\xa0", " ").strip()
+            if not text:
+                continue
+
+            # Preço: contém "€" ou "gratuito" ou "livre"
+            if result["price_raw"] == "" and (
+                "€" in text
+                or re.search(r'gratuito|entrada\s+livre|livre\s+acesso', text, re.IGNORECASE)
+            ):
+                result["price_raw"] = text
+
+            # Classificação etária: M/6, M/12, M/14, M/16, M/18, TP, Todos os públicos
+            age_m = AGE_RATING_RE.search(text)
+            if age_m and result["age_rating"] is None:
+                result["age_rating"] = age_m.group(0).upper().replace(
+                    "TODOS OS PÚBLICOS", "TP"
+                ).replace("TODOS OS PUBLICOS", "TP").replace("PARA TODOS", "TP")
+
+    return result
+
+
+# ---------------------------------------------------------------------------
+# EXTRACÇÃO DE DURAÇÃO dos créditos
+# ---------------------------------------------------------------------------
+
+def _extract_duration(soup: BeautifulSoup) -> Optional[int]:
+    """
+    Procura "Duração X minutos" ou "X min" no texto da página.
+    Retorna duração em minutos ou None.
+    """
+    # Procurar na secção de créditos primeiro, depois em todo o texto
+    for sel in [".credits", ".entry-content", "main"]:
+        el = soup.select_one(sel)
+        if not el:
+            continue
+        text = el.get_text(" ", strip=True)
+        m = re.search(
+            r'dura[çc][aã]o\s*[:\-]?\s*(\d+)\s*(?:minutos?|min\.?)',
+            text, re.IGNORECASE
+        )
+        if m:
+            return int(m.group(1))
+        # Formato alternativo: "65 min" isolado
+        m2 = re.search(r'\b(\d{2,3})\s*(?:minutos?|min\.?)\b', text, re.IGNORECASE)
+        if m2:
+            mins = int(m2.group(1))
+            if 10 <= mins <= 300:  # sanidade: entre 10 min e 5 horas
+                return mins
+    return None
+
+
+# ---------------------------------------------------------------------------
+# EXTRACÇÃO DE SUBTÍTULO / AUTOR
+# ---------------------------------------------------------------------------
+
+def _extract_subtitle(soup: BeautifulSoup) -> Optional[str]:
+    """
+    Extrai o h2.small da secção .title-top como subtítulo/autor.
+    Ex: "Sara Inês Gigante"
+    """
+    # Dentro de .title-top para evitar h2 do corpo
+    title_top = soup.select_one("section.title-top")
+    if title_top:
+        h2 = title_top.select_one("h2.small")
+        if h2:
+            text = h2.get_text(strip=True)
+            if text:
+                return text
+
+    # Fallback: qualquer h2 antes do conteúdo
+    for h2 in soup.select("h2.small"):
+        text = h2.get_text(strip=True)
+        if text and len(text) < 200:
+            return text
+
+    return None
+
+
+# ---------------------------------------------------------------------------
+# EXTRACÇÃO DE ACESSIBILIDADE (melhorada)
+# ---------------------------------------------------------------------------
+
+def _extract_accessibility(soup: BeautifulSoup) -> dict:
+    """
+    Detecta features de acessibilidade, priorizando a secção .access dedicada.
+    """
+    # Texto completo da página
+    ft = soup.get_text(" ", strip=True).lower()
+
+    # Secção .access tem texto explícito sobre LGP, Audiodescrição, etc.
+    access_text = ""
+    access_el = soup.select_one(".access")
+    if access_el:
+        access_text = access_el.get_text(" ", strip=True).lower()
+
+    # Combinar: secção dedicada tem prioridade mas texto geral também conta
+    combined = access_text + " " + ft
+
+    return {
+        "has_sign_language": bool(
+            re.search(r'lgp|língua gestual|lingua gestual', combined)
+        ),
+        "has_audio_description": bool(
+            re.search(r'audiodescrição|audiodescri[çc]|audio\s*descri', combined)
+        ),
+        "has_subtitles": bool(
+            re.search(r'legenda[sd]?', combined)
+        ),
+        "is_relaxed_performance": bool(
+            re.search(r'relaxed|descontraída|descontraida', combined)
+        ),
+        "wheelchair_accessible": True,  # TC tem acessibilidade garantida
+        "notes": access_el.get_text(strip=True) if access_el else None,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -235,11 +502,6 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
         soup = BeautifulSoup(resp.text, "lxml")
         entries: list[dict] = []
 
-        # Cada evento na listagem tem uma estrutura de bloco:
-        # [data + categoria em texto] + [<a href> para evento] + [<h3> título]
-        # Estratégia: encontrar todos os links para /event/ e, para cada um,
-        # subir na DOM para encontrar a data no elemento irmão anterior.
-
         for a in soup.find_all("a", href=True):
             href = a["href"]
             full = href if href.startswith("http") else f"{WEBSITE}{href}"
@@ -249,7 +511,7 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
             if "/en/" in full:
                 continue
 
-            # Extrair título do link (pode ser <h3>/<h4> dentro do <a>)
+            # Extrair título do link
             title = ""
             for sel in ["h3", "h4", "h2", ".event-title"]:
                 el = a.select_one(sel)
@@ -268,7 +530,6 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
                 if not node:
                     break
                 t = node.get_text(" ", strip=True)
-                # Padrão TC: "28 março (sáb)" ou "12 janeiro a 18 abril"
                 dm = re.search(
                     r'\d{1,2}\s+(?:jan(?:eiro)?|fev(?:ereiro)?|mar(?:ço)?|abr(?:il)?|mai(?:o)?|'
                     r'jun(?:ho)?|jul(?:ho)?|ago(?:sto)?|set(?:embro)?|out(?:ubro)?|'
@@ -285,10 +546,9 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
             cover = img.get("src", "") if img else ""
             if cover and not cover.startswith("http"):
                 cover = f"{WEBSITE}{cover}"
-            # Normalizar URLs de thumbnail WordPress → versão grande
             cover = re.sub(r'-\d+x\d+(\.\w+)$', r'\1', cover)
 
-            # Categoria — texto antes do "→" na linha de data
+            # Categoria — texto depois do "→" na linha de data
             cat = ""
             if "→" in date_text:
                 parts = date_text.split("→")
@@ -399,7 +659,6 @@ def _fetch_sitemap_urls(session: requests.Session) -> list[str]:
             all_pairs.extend(pairs)
             break
 
-    # Filtrar por cutoff e ordenar mais recentes primeiro
     recent  = [(u, d) for u, d in all_pairs if d >= cutoff]
     nodate  = [u     for u, d in all_pairs if not d]
     old     = len(all_pairs) - len(recent) - len(nodate)
@@ -451,17 +710,37 @@ def _parse_event_page(
             d1, d2 = _parse_tc_date(date_hint)
             if d1:
                 return {
-                    "source_id": url.rstrip("/").split("/")[-1],
-                    "source_url": url, "title": title_hint, "subtitle": None,
-                    "description": "", "categories": [cat_hint] if cat_hint else [],
-                    "tags": [], "dates": [_make_date(d1)], "date_open": d1,
-                    "date_close": d2, "is_ongoing": bool(d2), "price_raw": "",
-                    "ticketing_url": None, "audience": None, "cover_image": cover_hint,
-                    "space_id": None, "credits_raw": None,
-                    "accessibility": {"has_sign_language": False, "has_audio_description": False,
-                                      "has_subtitles": False, "is_relaxed_performance": False,
-                                      "wheelchair_accessible": True, "notes": None},
-                    "scraped_at": datetime.now(timezone.utc).isoformat(), "_method": "tc-304",
+                    "source_id":    url.rstrip("/").split("/")[-1],
+                    "source_url":   url,
+                    "title":        title_hint,
+                    "subtitle":     None,
+                    "description":  "",
+                    "categories":   [cat_hint] if cat_hint else [],
+                    "tags":         [],
+                    "event_tags":   [],
+                    "dates":        [_make_date(d1)],
+                    "date_open":    d1,
+                    "date_close":   d2,
+                    "is_ongoing":   bool(d2),
+                    "price_raw":    "",
+                    "age_rating":   None,
+                    "room":         None,
+                    "duration_minutes": None,
+                    "ticketing_url": None,
+                    "audience":     None,
+                    "cover_image":  cover_hint,
+                    "space_id":     None,
+                    "credits_raw":  None,
+                    "accessibility": {
+                        "has_sign_language":      False,
+                        "has_audio_description":  False,
+                        "has_subtitles":          False,
+                        "is_relaxed_performance": False,
+                        "wheelchair_accessible":  True,
+                        "notes":                  None,
+                    },
+                    "scraped_at": datetime.now(timezone.utc).isoformat(),
+                    "_method":    "tc-304",
                 }
         if resp is None:
             return None
@@ -488,65 +767,91 @@ def _parse_event_page(
     if not title:
         return None
 
+    # ── Subtítulo / Autor ──
+    subtitle = _extract_subtitle(soup)
+
+    # ── Info Box: hora, sala, preço, classificação etária, tags ──
+    info = _extract_info_box(soup)
+
+    # ── Sessões estruturadas via data-sessions (fonte mais fiável) ──
+    sessions = _extract_sessions_from_popup(soup)
+
     # ── Datas ──
     dates      = []
     date_close = None
 
-    # Tentar JSON-LD primeiro (pouco provável no TC mas vale a pena)
-    for script in soup.find_all("script", type="application/ld+json"):
-        try:
-            data = _json.loads(script.string or "")
-            if isinstance(data, list):
-                data = next((d for d in data if isinstance(d, dict) and d.get("@type") == "Event"), {})
-            if isinstance(data, dict) and data.get("@type") == "Event":
-                start = data.get("startDate", "")
-                end   = data.get("endDate",   "")
-                if start and len(start) >= 10:
-                    dates      = [_make_date(start[:10], start[11:16] if len(start) > 10 else None)]
-                    date_close = end[:10] if end and len(end) >= 10 else None
+    # 1. Sessões do popup (mais fiável — inclui hora exacta)
+    if sessions:
+        dates      = sessions
+        date_close = None  # sessões múltiplas não têm date_close no sentido de período
+        # Propagar duração para cada sessão se disponível
+    else:
+        # 2. Tentar JSON-LD (pouco provável no TC mas vale a pena)
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                data = _json.loads(script.string or "")
+                if isinstance(data, list):
+                    data = next((d for d in data if isinstance(d, dict) and d.get("@type") == "Event"), {})
+                if isinstance(data, dict) and data.get("@type") == "Event":
+                    start = data.get("startDate", "")
+                    end   = data.get("endDate",   "")
+                    if start and len(start) >= 10:
+                        dates      = [_make_date(start[:10], start[11:16] if len(start) > 10 else info["time_start"])]
+                        date_close = end[:10] if end and len(end) >= 10 else None
+                        break
+            except Exception:
+                pass
+
+        # 3. Tentar <time datetime>
+        if not dates:
+            for t in soup.select("time[datetime]"):
+                dt = t.get("datetime", "")
+                if dt and len(dt) >= 10:
+                    dates = [_make_date(dt[:10], dt[11:16] if len(dt) > 10 else info["time_start"])]
                     break
-        except Exception:
-            pass
 
-    # Tentar <time datetime>
-    if not dates:
-        for t in soup.select("time[datetime]"):
-            dt = t.get("datetime", "")
-            if dt and len(dt) >= 10:
-                dates = [_make_date(dt[:10], dt[11:16] if len(dt) > 10 else None)]
-                break
+        # 4. Parser nativo TC: procurar texto com formato "28 março (sáb)"
+        if not dates:
+            page_text = soup.get_text(" ", strip=True)
+            tc_date_re = re.compile(
+                r'\d{1,2}\s+(?:de\s+)?(?:janeiro|fevereiro|março|marco|abril|maio|junho|'
+                r'julho|agosto|setembro|outubro|novembro|dezembro)'
+                r'(?:\s+(?:a|até|-|–)\s+\d{1,2}\s+(?:de\s+)?(?:janeiro|fevereiro|março|'
+                r'marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro))?'
+                r'(?:\s+\d{4})?',
+                re.IGNORECASE
+            )
+            m = tc_date_re.search(page_text)
+            if m:
+                d1, d2 = _parse_tc_date(m.group(0))
+                if d1:
+                    dates      = [_make_date(d1, info["time_start"])]
+                    date_close = d2
 
-    # Parser nativo TC: procurar texto com formato "28 março (sáb)"
-    if not dates:
-        # Procurar em elementos de topo da página — data aparece antes do h1
-        page_text = soup.get_text(" ", strip=True)
-        # Padrão TC: dígito + espaço + mês por extenso
-        tc_date_re = re.compile(
-            r'\d{1,2}\s+(?:de\s+)?(?:janeiro|fevereiro|março|marco|abril|maio|junho|'
-            r'julho|agosto|setembro|outubro|novembro|dezembro)'
-            r'(?:\s+(?:a|até|-|–)\s+\d{1,2}\s+(?:de\s+)?(?:janeiro|fevereiro|março|'
-            r'marco|abril|maio|junho|julho|agosto|setembro|outubro|novembro|dezembro))?'
-            r'(?:\s+\d{4})?',
-            re.IGNORECASE
-        )
-        m = tc_date_re.search(page_text)
-        if m:
-            d1, d2 = _parse_tc_date(m.group(0))
+        # 5. Usar hint da listagem
+        if not dates and date_hint:
+            d1, d2 = _parse_tc_date(date_hint)
             if d1:
-                dates      = [_make_date(d1)]
+                dates      = [_make_date(d1, info["time_start"])]
                 date_close = d2
 
-    # Usar hint da listagem
-    if not dates and date_hint:
-        d1, d2 = _parse_tc_date(date_hint)
-        if d1:
-            dates      = [_make_date(d1)]
-            date_close = d2
+    # Se temos hora do info_box e sessões sem hora, propagar
+    if info["time_start"] and dates:
+        for d in dates:
+            if d.get("time_start") is None:
+                d["time_start"] = info["time_start"]
+
+    # ── Duração ── propagar para todas as sessões
+    duration = _extract_duration(soup)
+    if duration and dates:
+        for d in dates:
+            d["duration_minutes"] = duration
 
     # ── Filtro de datas passadas ──
     if PAST_DAYS_CUTOFF > 0 and dates:
         cutoff = (datetime.now(timezone.utc) - timedelta(days=PAST_DAYS_CUTOFF)).strftime("%Y-%m-%d")
-        if dates[0]["date"] and dates[0]["date"] < cutoff:
+        first_date = dates[0].get("date", "") if dates else ""
+        if first_date and first_date < cutoff:
             if not date_close or date_close < cutoff:
                 return None
 
@@ -576,78 +881,85 @@ def _parse_event_page(
             if el and el.get("src"):
                 src   = el["src"]
                 cover = src if src.startswith("http") else f"{WEBSITE}{src}"
-                # Remover sufixo de thumbnail WordPress
                 cover = re.sub(r'-\d+x\d+(\.\w+)$', r'\1', cover)
                 break
 
     # ── Preço ──
-    price_raw = ""
-    ft = soup.get_text(" ", strip=True)
-    # Padrão TC: "3,5€ adultos | Gratuito crianças..."
-    price_m = re.search(r'(\d+[,.]?\d*\s*€[^\n|.]*)', ft)
-    if price_m:
-        price_raw = price_m.group(1).strip()
-    if not price_raw and re.search(r'gratuito|entrada\s+livre|livre\s+acesso', ft, re.IGNORECASE):
-        price_raw = "Entrada livre"
+    # Prioridade: info_box > regex no texto geral
+    price_raw = info["price_raw"]
+    if not price_raw:
+        ft = soup.get_text(" ", strip=True)
+        price_m = re.search(r'(\d+[,.]?\d*\s*€[^\n|.]{0,40})', ft)
+        if price_m:
+            price_raw = price_m.group(1).strip()
+        if not price_raw and re.search(r'gratuito|entrada\s+livre|livre\s+acesso', ft, re.IGNORECASE):
+            price_raw = "Entrada livre"
 
     # ── Bilheteira ──
+    # Prioridade: link bol.pt > qualquer link com "bilhete"
     ticketing_url = None
-    for a in soup.find_all("a", href=True):
-        at = a.get_text(strip=True).lower()
-        h  = a["href"]
-        if any(k in at for k in ["bilhete", "comprar", "ticket"]) or "bol.pt" in h:
-            ticketing_url = h if h.startswith("http") else f"{WEBSITE}{h}"
-            break
+    bol_link = soup.find("a", href=re.compile(r'bol\.pt'))
+    if bol_link:
+        ticketing_url = bol_link["href"]
+    else:
+        for a in soup.find_all("a", href=True):
+            at = a.get_text(strip=True).lower()
+            h  = a["href"]
+            if any(k in at for k in ["bilhete", "comprar", "ticket"]):
+                ticketing_url = h if h.startswith("http") else f"{WEBSITE}{h}"
+                break
 
     # ── Acessibilidade ──
-    ftl = ft.lower()
-    accessibility = {
-        "has_sign_language":      "lgp" in ftl or "língua gestual" in ftl,
-        "has_audio_description":  "audiodescrição" in ftl or "audiodescri" in ftl,
-        "has_subtitles":          bool(re.search(r"legenda[sd]?", ftl)),
-        "is_relaxed_performance": "relaxed" in ftl or "descontraída" in ftl,
-        "wheelchair_accessible":  True,
-        "notes":                  None,
-    }
+    accessibility = _extract_accessibility(soup)
 
     # ── Categoria ──
     cats = []
     if cat_hint:
         cats = [cat_hint.strip()]
     else:
-        # Tentar extrair da página
+        ft = soup.get_text(" ", strip=True).lower()
         for kw in ["Música", "Teatro", "Dança", "Cinema", "Mediação", "Multidisciplinar"]:
-            if kw.lower() in ftl:
+            if kw.lower() in ft:
                 cats.append(kw)
                 break
 
-    # ── Tags ──
-    tags = []
+    # ── Tags de taxonomia WordPress ──
+    wp_tags = []
     for a in soup.find_all("a", href=True):
         if "/event_tag/" in a["href"]:
-            tags.append(a.get_text(strip=True))
+            wp_tags.append(a.get_text(strip=True))
+
+    # ── Créditos ──
+    credits_raw = None
+    credits_el = soup.select_one(".credits")
+    if credits_el:
+        credits_raw = credits_el.get_text(separator="\n", strip=True)
 
     return {
-        "source_id":     url.rstrip("/").split("/")[-1],
-        "source_url":    url,
-        "title":         title,
-        "subtitle":      None,
-        "description":   desc,
-        "categories":    cats,
-        "tags":          tags,
-        "dates":         dates,
-        "date_open":     dates[0]["date"] if dates else None,
-        "date_close":    date_close,
-        "is_ongoing":    bool(date_close),
-        "price_raw":     price_raw,
-        "ticketing_url": ticketing_url,
-        "audience":      None,
-        "cover_image":   cover or None,
-        "space_id":      None,
-        "credits_raw":   None,
-        "accessibility": accessibility,
-        "scraped_at":    datetime.now(timezone.utc).isoformat(),
-        "_method":       "tc-html",
+        "source_id":        url.rstrip("/").split("/")[-1],
+        "source_url":       url,
+        "title":            title,
+        "subtitle":         subtitle,
+        "description":      desc,
+        "categories":       cats,
+        "tags":             wp_tags,
+        "event_tags":       info["event_tags"],  # Tags especiais do info-box (ex: "Dia Mundial do Teatro")
+        "dates":            dates,
+        "date_open":        dates[0]["date"] if dates else None,
+        "date_close":       date_close,
+        "is_ongoing":       bool(date_close),
+        "price_raw":        price_raw,
+        "age_rating":       info["age_rating"],      # Ex: "M/14", "TP"
+        "room":             info["room"],             # Ex: "Sala Principal"
+        "duration_minutes": duration,                 # Ex: 65
+        "ticketing_url":    ticketing_url,
+        "audience":         None,
+        "cover_image":      cover or None,
+        "space_id":         None,
+        "credits_raw":      credits_raw,
+        "accessibility":    accessibility,
+        "scraped_at":       datetime.now(timezone.utc).isoformat(),
+        "_method":          "tc-html",
     }
 
 
