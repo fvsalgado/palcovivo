@@ -1,10 +1,11 @@
 {
   "venue_id": "ccb",
-  "scraped": 0,
-  "valid": 0,
+  "scraped": 810,
+  "valid": 810,
   "invalid": 0,
   "errors": [],
   "cache_hit": false,
   "merge_stats": {},
-  "venue_name": "Centro Cultural de Belém"
+  "venue_name": "Centro Cultural de Belém",
+  "avg_credibility_score": 0.848
 }
