@@ -222,7 +222,7 @@ def send_ntfy(report: dict) -> bool:
     s = report.get("summary", {})
     has_errors = s.get("total_errors", 0) > 0
 
-    title = "Primeira Plateia ✅" if not has_errors else "Primeira Plateia ⚠️"
+    title = "Primeira Plateia - OK" if not has_errors else "Primeira Plateia - ERRO"
     message = (
         f"{s.get('total_after_dedup', 0)} eventos · "
         f"{s.get('venues_processed', 0)} venues · "
