@@ -518,7 +518,7 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
         "date_close": raw_event.get("date_close"),
         "event_status": event_status,
         "is_premiere": event_status == "estreia",
-        "is_national_premiere": "nacional" in (raw_event.get("description", "").lower()),
+        "is_national_premiere": "nacional" in (raw_event.get("description") or "").lower(),
         "is_reprise": event_status == "reposicao",
         "production_origin": raw_event.get("production_origin"),
         "is_festival": is_festival,
