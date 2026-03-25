@@ -163,6 +163,7 @@ jobs:
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/ index.html
           git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
+          git pull --rebase origin main
           git push
 
       - name: Upload relatorio
