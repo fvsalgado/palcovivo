@@ -52,7 +52,6 @@ SITEMAP_URLS = [
 EVENT_URL_PATTERN = re.compile(r"/event/[^/]+/?$")
 
 # Filtro de lastmod — só processar URLs modificadas nos últimos N dias
-# O TC tem 1493 URLs de arquivo histórico; este filtro reduz para ~30-60 URLs recentes
 SITEMAP_MAX_AGE_DAYS = 365  # 12 meses
 
 # Método 3 — HTML directo
@@ -63,7 +62,7 @@ PROGRAMME_URLS = [
     f"{WEBSITE}/agenda/",
 ]
 
-REQUEST_DELAY = 0.3   # reduzido de 0.5 para 0.3s
+REQUEST_DELAY = 0.3
 TIMEOUT       = 20
 
 HEADERS = {
@@ -93,9 +92,10 @@ def _make_session() -> requests.Session:
     return session
 
 
-def _get(session, url, timeout=TIMEOUT):
+def _get(session, url, timeout=TIMEOUT, params=None):
+    """GET com tratamento de erros. Aceita params opcionais para query string."""
     try:
-        resp = session.get(url, timeout=timeout)
+        resp = session.get(url, timeout=timeout, params=params)
         resp.raise_for_status()
         return resp
     except requests.exceptions.Timeout:
@@ -207,7 +207,6 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
     smap_re  = re.compile(r"<sitemap[^>]*>(.*?)</sitemap>", re.DOTALL)
 
     def extract_event_pairs(xml_text: str) -> list[tuple[str, str]]:
-        """Extrai (url, lastmod) de um sitemap. lastmod pode ser ''."""
         pairs = []
         seen  = set()
         for block in block_re.findall(xml_text):
@@ -219,7 +218,6 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
                 if url not in seen and EVENT_URL_PATTERN.search(url):
                     pairs.append((url, lastmod))
                     seen.add(url)
-        # fallback: sem blocos <url>
         if not pairs:
             for url in loc_re.findall(xml_text):
                 url = url.strip()
@@ -229,7 +227,6 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
         return pairs
 
     def filter_sort(pairs: list[tuple[str, str]]) -> list[str]:
-        """Filtra por cutoff e ordena mais recentes primeiro."""
         recent   = [(u, d) for u, d in pairs if d >= cutoff]
         no_date  = [u     for u, d in pairs if not d]
         too_old  = [(u, d) for u, d in pairs if d and d < cutoff]
@@ -251,7 +248,6 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
         xml = resp.text
         logger.info(f"TC Sitemap: encontrado em {sitemap_url}")
 
-        # Sitemap index → seguir sub-sitemaps
         sub_blocks = smap_re.findall(xml)
         if sub_blocks:
             for block in sub_blocks:
@@ -271,7 +267,6 @@ def _fetch_sitemap_event_urls(session: requests.Session) -> list[str]:
             if all_pairs:
                 return filter_sort(all_pairs)
 
-        # Sitemap simples
         pairs = extract_event_pairs(xml)
         if pairs:
             logger.info(f"TC Sitemap: {len(pairs)} URLs de eventos")
@@ -285,7 +280,7 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
     """
     Faz parse de uma página de evento do TC.
     Tenta JSON-LD primeiro (schema.org Event) — mais rápido e fiável.
-    Fallback para selectores HTML genéricos (o TC não usa tribe-events).
+    Fallback para selectores HTML genéricos.
     """
     resp = _get(session, url)
     if not resp:
@@ -293,7 +288,6 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
 
     soup = BeautifulSoup(resp.text, "lxml")
 
-    # ── JSON-LD (método primário — schema.org Event) ──
     dates     = []
     price_raw = ""
     cover     = None
@@ -329,7 +323,6 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
         except Exception:
             pass
 
-    # ── Fallback HTML ──
     if not title:
         for sel in ["h1.entry-title", ".event-title h1", "h1"]:
             el = soup.select_one(sel)
@@ -338,7 +331,6 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
                 break
 
     if not dates:
-        # Tentar <time datetime="...">
         for t in soup.select("time[datetime]"):
             dt = t.get("datetime", "")
             if dt and len(dt) >= 10:
@@ -367,12 +359,11 @@ def _parse_event_page(url: str, session: requests.Session) -> Optional[dict]:
     if not title:
         return None
 
-    # ── Filtrar eventos passados (> 30 dias) ──
+    # Filtrar eventos passados (> 30 dias)
     if dates and dates[0].get("date"):
-        event_date = dates[0]["date"]
         cutoff_past = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
-        if event_date < cutoff_past:
-            return None  # evento já passou há mais de 30 dias → ignorar
+        if dates[0]["date"] < cutoff_past:
+            return None
 
     text = (desc + " " + soup.get_text()).lower()
     return {
