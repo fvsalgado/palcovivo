@@ -116,10 +116,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572132+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281825+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:bd63319a38d89f1b",
-      "harmonized_at": "2026-03-25T11:50:09.696663+00:00Z",
+      "raw_data_hash": "sha256:8d625edc62a16f8e",
+      "harmonized_at": "2026-03-25T16:28:35.393204+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -246,10 +246,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572185+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281878+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e8852fe3c8dc1866",
-      "harmonized_at": "2026-03-25T11:50:09.697851+00:00Z",
+      "raw_data_hash": "sha256:0e2635df0a743933",
+      "harmonized_at": "2026-03-25T16:28:35.394359+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -373,10 +373,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571451+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281167+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:c2bc4187e9b912d4",
-      "harmonized_at": "2026-03-25T11:50:09.682710+00:00Z",
+      "raw_data_hash": "sha256:606e2e48b89134ec",
+      "harmonized_at": "2026-03-25T16:28:35.379319+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -506,10 +506,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571376+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281076+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:2e5423abe360691e",
-      "harmonized_at": "2026-03-25T11:50:09.681501+00:00Z",
+      "raw_data_hash": "sha256:1f89cd7086e5f9e7",
+      "harmonized_at": "2026-03-25T16:28:35.378114+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -638,10 +638,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.570470+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280218+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:716b5e465f2d2722",
-      "harmonized_at": "2026-03-25T11:50:09.665027+00:00Z",
+      "raw_data_hash": "sha256:4631d71273cf76d7",
+      "harmonized_at": "2026-03-25T16:28:35.361895+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -768,10 +768,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.570495+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280246+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4ca2e4b2af3ceeeb",
-      "harmonized_at": "2026-03-25T11:50:09.665367+00:00Z",
+      "raw_data_hash": "sha256:2ac77f213e9cedd6",
+      "harmonized_at": "2026-03-25T16:28:35.362247+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -895,10 +895,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.570532+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280285+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:546d37657c20bfe8",
-      "harmonized_at": "2026-03-25T11:50:09.666147+00:00Z",
+      "raw_data_hash": "sha256:0457232034e576ec",
+      "harmonized_at": "2026-03-25T16:28:35.362928+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1027,10 +1027,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571247+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280948+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:80f062e481596871",
-      "harmonized_at": "2026-03-25T11:50:09.679326+00:00Z",
+      "raw_data_hash": "sha256:d472551c8b17460e",
+      "harmonized_at": "2026-03-25T16:28:35.375954+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1048,7 +1048,7 @@
     "title": "Alarve",
     "title_raw": "Alarve",
     "subtitle": null,
-    "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n&nbsp;\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nMúsica Ladainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n&nbsp;\n\nProgramação do Museu Aberto.",
+    "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n&nbsp;\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nLadainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n&nbsp;\n\nProgramação do Museu Aberto.",
     "description_short": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua…",
     "language_of_performance": null,
     "language_notes": null,
@@ -1155,10 +1155,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571392+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281092+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e1295fa4b151ee0d",
-      "harmonized_at": "2026-03-25T11:50:09.681622+00:00Z",
+      "raw_data_hash": "sha256:65073b2c8c26cdbc",
+      "harmonized_at": "2026-03-25T16:28:35.378250+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1285,10 +1285,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571470+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281188+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3f21fe043b00be0d",
-      "harmonized_at": "2026-03-25T11:50:09.683040+00:00Z",
+      "raw_data_hash": "sha256:6be4026d94117f82",
+      "harmonized_at": "2026-03-25T16:28:35.379640+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1411,10 +1411,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.570920+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280637+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:c7614f669ee48815",
-      "harmonized_at": "2026-03-25T11:50:09.672682+00:00Z",
+      "raw_data_hash": "sha256:4d059d7e194bac1c",
+      "harmonized_at": "2026-03-25T16:28:35.369379+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1432,7 +1432,7 @@
     "title": "Lugar de estar",
     "title_raw": "Lugar de estar",
     "subtitle": null,
-    "description": "Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século XX, e uma figura de referência no desenvolvimento do panorama urbano brasileiro, Burle Marx está associado ao imaginário moderno de grandes cidades como Brasília e Rio de Janeiro.\n\n&nbsp;\n\nEnquanto paisagista atento às questões da botânica, aprofundou conhecimentos em torno da flora brasileira e identificou dezenas de espécies endémicas, alertando para a importância da preservação ambiental. A utilização dessas espécies nos seus projetos gerou uma linguagem moderna singular, subvertendo a geometria e organização dos jardins europeus. As linhas simbióticas e as formas orgânicas dos seus projetos evidenciam igualmente afinidades com a arte e a arquitetura moderna. Durante mais de quarenta anos, Burle Marx foi também um defensor acérrimo dos biomas brasileiros, principalmente da Mata Atlântica, da Amazónia e do Cerrado.\n\n&nbsp;\n\nIncluindo estudos de composição, croquis, desenhos, fotografias e materiais de imprensa, esta exposição desenvolve-se através de cinco eixos — «Construir cidade e espaço público», «Compromisso estético e ético», «Projeto moderno», «Ativismo ambiental» e «Património botânico» —, numa seleção que também estabelece diálogos com seis artistas que vivem e trabalham em Portugal. Através da pintura, Juan Araujo investiga criticamente a arquitetura moderna, especialmente no Brasil e na América Latina; Filipe Feijão aborda as noções de construção e ruína; Mónica de Miranda dá destaque aos jardins «invisíveis» dos arredores de Lisboa; Fernanda Fragateiro sublinha o direito à fruição estética nos jardins públicos; Lourdes Castro dialoga com o património botânico autóctone da ilha da Madeira; e, finalmente, João dos Santos Martins explora a relação entre a coreografia e o jardim. Em confronto com os eixos da exposição, cada um\n\ndestes artistas estabelece perspetivas inéditas sobre a obra de Burle Marx.\n\nDiálogos com Fernanda Fragateiro, Filipe Feijão, Mónica de Miranda, Juan Araujo, Lourdes Castro e João dos Santos Martins\n\n&nbsp;\n\nExposição desenvolvida em colaboração entre o Instituto Burle Marx, responsável pela salvaguarda e difusão do acervo paisagístico desenvolvido pelo Escritório Burle Marx, e o Museu de Arte Moderna do Rio de Janeiro, onde foi apresentada de janeiro a maio de 2024.\n\nAdaptação da exposição no MAC/CCB com curadoria de Nuria Enguita, Marta Mestre. Artistas convidados Juan Araujo, Fernanda Fragateiro, Mónica de Miranda, Filipe Feijão, Lourdes Castro, João dos Santos Martins.\n\nDesenho Expositivo Diogo Passarinho Studio + RAR.STUDIO\n\nO MAC/CCB agradece a Michael e Jessica Gailing pela sua contribuição para este projeto.\n\n&nbsp;\n\nPrograma Públicos\n\n&nbsp;\n\n◾ Jardins: Lugares de Olhar ESGOTADO\n\nSábado, 21 de março, às 11:00\n\nCom Ivo Meco\n\nEvocando um olhar contemplativo sobre as espécies botânicas e partilhando curiosidades sobre cada uma delas, Ivo Meco convida-nos a percorrer espaços verdes e jardins em redor do CCB. O professor de Botânica, Biologia e Geologia, e autor de Jardins de Lisboa: Histórias de espaços, plantas e pessoas, leva-nos num passeio-conversa, suscitando novos olhares sobre os jardins.\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt.\n\n&nbsp;\n\n◾ Performance Alarve\n\nSexta e sábado, 27 e 28 de março, às 18:00\n\nDuração 40 min.\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust ​​\n\nLadainha Franz Schubert\n\nApoio vocal Joana Nascimento\n\nProdução executiva Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB Museu de Arte Contemporânea\n\nResidências Espaço Parasita, Lamia Santolino\n\nA Parasita é uma estrutura financiada pela República Portuguesa – Ministério da Cultura/Direcção-Geral das Artes.\n\nO corpo pode ser um campo de negociação entre a natureza e a construção. A partir desta premissa, João dos Santos Martins aborda a dança como prática de desaprendizagem e reinvenção. O bailarino e coreógrafo encontra na sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito —, um ponto de contacto com Roberto Burle Marx. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», também a migração revela um processo contínuo de ajuste de gestos.\n\nParticipação gratuita, sujeita ao número de lugares disponíveis.",
+    "description": "Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século XX, e uma figura de referência no desenvolvimento do panorama urbano brasileiro, Burle Marx está associado ao imaginário moderno de grandes cidades como Brasília e Rio de Janeiro.\n\n&nbsp;\n\nEnquanto paisagista atento às questões da botânica, aprofundou conhecimentos em torno da flora brasileira e identificou dezenas de espécies endémicas, alertando para a importância da preservação ambiental. A utilização dessas espécies nos seus projetos gerou uma linguagem moderna singular, subvertendo a geometria e organização dos jardins europeus. As linhas simbióticas e as formas orgânicas dos seus projetos evidenciam igualmente afinidades com a arte e a arquitetura moderna. Durante mais de quarenta anos, Burle Marx foi também um defensor acérrimo dos biomas brasileiros, principalmente da Mata Atlântica, da Amazónia e do Cerrado.\n\n&nbsp;\n\nIncluindo estudos de composição, croquis, desenhos, fotografias e materiais de imprensa, esta exposição desenvolve-se através de cinco eixos — «Construir cidade e espaço público», «Compromisso estético e ético», «Projeto moderno», «Ativismo ambiental» e «Património botânico» —, numa seleção que também estabelece diálogos com seis artistas que vivem e trabalham em Portugal. Através da pintura, Juan Araujo investiga criticamente a arquitetura moderna, especialmente no Brasil e na América Latina; Filipe Feijão aborda as noções de construção e ruína; Mónica de Miranda dá destaque aos jardins «invisíveis» dos arredores de Lisboa; Fernanda Fragateiro sublinha o direito à fruição estética nos jardins públicos; Lourdes Castro dialoga com o património botânico autóctone da ilha da Madeira; e, finalmente, João dos Santos Martins explora a relação entre a coreografia e o jardim. Em confronto com os eixos da exposição, cada um\n\ndestes artistas estabelece perspetivas inéditas sobre a obra de Burle Marx.\n\nDiálogos com Fernanda Fragateiro, Filipe Feijão, Mónica de Miranda, Juan Araujo, Lourdes Castro e João dos Santos Martins\n\n&nbsp;\n\nExposição desenvolvida em colaboração entre o Instituto Burle Marx, responsável pela salvaguarda e difusão do acervo paisagístico desenvolvido pelo Escritório Burle Marx, e o Museu de Arte Moderna do Rio de Janeiro, onde foi apresentada de janeiro a maio de 2024.\n\nAdaptação da exposição no MAC/CCB com curadoria de Nuria Enguita, Marta Mestre. Artistas convidados Juan Araujo, Fernanda Fragateiro, Mónica de Miranda, Filipe Feijão, Lourdes Castro, João dos Santos Martins.\n\nDesenho Expositivo Diogo Passarinho Studio + RAR.STUDIO\n\nO MAC/CCB agradece a Michael e Jessica Gailing pela sua contribuição para este projeto.\n\n&nbsp;\n\nPrograma Públicos\n\n&nbsp;\n\n◾ Jardins: Lugares de Olhar ESGOTADO\n\nSábado, 21 de março, às 11:00\n\nCom Ivo Meco\n\nEvocando um olhar contemplativo sobre as espécies botânicas e partilhando curiosidades sobre cada uma delas, Ivo Meco convida-nos a percorrer espaços verdes e jardins em redor do CCB. O professor de Botânica, Biologia e Geologia, e autor de Jardins de Lisboa: Histórias de espaços, plantas e pessoas, leva-nos num passeio-conversa, suscitando novos olhares sobre os jardins.\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt.\n\n&nbsp;\n\n◾ Performance Alarve\n\nSexta e sábado, 27 e 28 de março, às 18:00\n\nDuração 40 min.\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust ​​\n\nLadainha Franz Schubert\n\nApoio vocal Joana Nascimento\n\nProdução executiva Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB Museu de Arte Contemporânea\n\nResidências Espaço Parasita, Lamia Santolino\n\nA Parasita é uma estrutura financiada pela República Portuguesa – Ministério da Cultura/Direcção-Geral das Artes.\n\nO corpo pode ser um campo de negociação entre a natureza e a construção. A partir desta premissa, João dos Santos Martins aborda a dança como prática de desaprendizagem e reinvenção. O bailarino e coreógrafo encontra na sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito —, um ponto de contacto com Roberto Burle Marx. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», também a migração revela um processo contínuo de ajuste de gestos.\n\nEntrada gratuita, sujeita ao número de lugares disponíveis.",
     "description_short": "Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século…",
     "language_of_performance": null,
     "language_notes": null,
@@ -1537,10 +1537,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.570989+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280705+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:28480fce1f05ae73",
-      "harmonized_at": "2026-03-25T11:50:09.674290+00:00Z",
+      "raw_data_hash": "sha256:281c5d2f1afa2b55",
+      "harmonized_at": "2026-03-25T16:28:35.370984+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1664,10 +1664,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571144+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280851+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:dc8690369f1a44a7",
-      "harmonized_at": "2026-03-25T11:50:09.677598+00:00Z",
+      "raw_data_hash": "sha256:56b221b82bf247a8",
+      "harmonized_at": "2026-03-25T16:28:35.374259+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1797,10 +1797,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571192+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280894+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:01dd958c75b23882",
-      "harmonized_at": "2026-03-25T11:50:09.678422+00:00Z",
+      "raw_data_hash": "sha256:db408df8dd7f8aca",
+      "harmonized_at": "2026-03-25T16:28:35.375069+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1926,10 +1926,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571222+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280923+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:7058f1117fdae27e",
-      "harmonized_at": "2026-03-25T11:50:09.678995+00:00Z",
+      "raw_data_hash": "sha256:17e878fc4c7695b5",
+      "harmonized_at": "2026-03-25T16:28:35.375629+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2050,10 +2050,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571296+00:00",
+      "scraped_at": "2026-03-25T16:28:35.280995+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:b7877165d2ac39df",
-      "harmonized_at": "2026-03-25T11:50:09.679763+00:00Z",
+      "raw_data_hash": "sha256:c52231cdff3cadbe",
+      "harmonized_at": "2026-03-25T16:28:35.376404+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2178,10 +2178,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571329+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281028+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4bc90bd44ef0dd6e",
-      "harmonized_at": "2026-03-25T11:50:09.680447+00:00Z",
+      "raw_data_hash": "sha256:cd5751aa25b97d32",
+      "harmonized_at": "2026-03-25T16:28:35.377068+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2307,10 +2307,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571425+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281127+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e44dc3cb9e7ee8d2",
-      "harmonized_at": "2026-03-25T11:50:09.682251+00:00Z",
+      "raw_data_hash": "sha256:6fab2204e5b7ccfd",
+      "harmonized_at": "2026-03-25T16:28:35.378850+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2436,10 +2436,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571631+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281340+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e197b433f1603d30",
-      "harmonized_at": "2026-03-25T11:50:09.686189+00:00Z",
+      "raw_data_hash": "sha256:66d9575d215d348f",
+      "harmonized_at": "2026-03-25T16:28:35.382954+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2564,10 +2564,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571656+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281371+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:0dcf163b69f2cc14",
-      "harmonized_at": "2026-03-25T11:50:09.686607+00:00Z",
+      "raw_data_hash": "sha256:74079a9d197d64b1",
+      "harmonized_at": "2026-03-25T16:28:35.383416+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2691,10 +2691,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571685+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281401+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3870162103ed8e26",
-      "harmonized_at": "2026-03-25T11:50:09.687129+00:00Z",
+      "raw_data_hash": "sha256:3546b6839ac199ae",
+      "harmonized_at": "2026-03-25T16:28:35.383921+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2820,10 +2820,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571961+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281651+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:8e99d945fd430d9d",
-      "harmonized_at": "2026-03-25T11:50:09.693175+00:00Z",
+      "raw_data_hash": "sha256:6034477c1c56aa62",
+      "harmonized_at": "2026-03-25T16:28:35.389739+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2955,10 +2955,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571877+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281575+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:067aada430222be3",
-      "harmonized_at": "2026-03-25T11:50:09.691863+00:00Z",
+      "raw_data_hash": "sha256:8491e2f5375ca215",
+      "harmonized_at": "2026-03-25T16:28:35.388565+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3085,10 +3085,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571906+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281598+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:2d99719734b1baf9",
-      "harmonized_at": "2026-03-25T11:50:09.692247+00:00Z",
+      "raw_data_hash": "sha256:5d721bf16cd6abb2",
+      "harmonized_at": "2026-03-25T16:28:35.388933+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3212,10 +3212,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571923+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281615+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e16d9196594c2f1d",
-      "harmonized_at": "2026-03-25T11:50:09.692469+00:00Z",
+      "raw_data_hash": "sha256:0273886d6d3f632a",
+      "harmonized_at": "2026-03-25T16:28:35.389164+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3340,10 +3340,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.571944+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281636+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:be5952f843ecaf1f",
-      "harmonized_at": "2026-03-25T11:50:09.692998+00:00Z",
+      "raw_data_hash": "sha256:c18ac76c0963c760",
+      "harmonized_at": "2026-03-25T16:28:35.389571+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3469,10 +3469,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572022+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281710+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:92aee79d46ff0e45",
-      "harmonized_at": "2026-03-25T11:50:09.694880+00:00Z",
+      "raw_data_hash": "sha256:d0b2b19097787ac0",
+      "harmonized_at": "2026-03-25T16:28:35.391433+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3600,10 +3600,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572037+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281729+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:c660e7f291166485",
-      "harmonized_at": "2026-03-25T11:50:09.695050+00:00Z",
+      "raw_data_hash": "sha256:3b8e4b3c9068665d",
+      "harmonized_at": "2026-03-25T16:28:35.391603+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3729,10 +3729,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572057+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281751+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:51533585f36a4c26",
-      "harmonized_at": "2026-03-25T11:50:09.695363+00:00Z",
+      "raw_data_hash": "sha256:48fb753d1c2c99df",
+      "harmonized_at": "2026-03-25T16:28:35.391907+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3858,10 +3858,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572076+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281770+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:265f61ad3f49ca0b",
-      "harmonized_at": "2026-03-25T11:50:09.695671+00:00Z",
+      "raw_data_hash": "sha256:c658bf6adc8a8090",
+      "harmonized_at": "2026-03-25T16:28:35.392222+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3989,10 +3989,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572105+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281798+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:af25b167b67c6f8b",
-      "harmonized_at": "2026-03-25T11:50:09.696218+00:00Z",
+      "raw_data_hash": "sha256:ac948d4bf7c29024",
+      "harmonized_at": "2026-03-25T16:28:35.392741+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4118,10 +4118,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572259+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281951+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e51b8827cdd4f3ea",
-      "harmonized_at": "2026-03-25T11:50:09.699368+00:00Z",
+      "raw_data_hash": "sha256:291ef9b0829a4fe6",
+      "harmonized_at": "2026-03-25T16:28:35.395851+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4247,10 +4247,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572285+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281977+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ba38590c1953e2d5",
-      "harmonized_at": "2026-03-25T11:50:09.699618+00:00Z",
+      "raw_data_hash": "sha256:92a8109f12f1343a",
+      "harmonized_at": "2026-03-25T16:28:35.396093+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4371,10 +4371,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572319+00:00",
+      "scraped_at": "2026-03-25T16:28:35.281994+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:fc8417a2e32e7c86",
-      "harmonized_at": "2026-03-25T11:50:09.699789+00:00Z",
+      "raw_data_hash": "sha256:4e45d7bd8b0eed89",
+      "harmonized_at": "2026-03-25T16:28:35.396278+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4499,10 +4499,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582301+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291518+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:63b2a066f1377a3e",
-      "harmonized_at": "2026-03-25T11:50:09.840720+00:00Z",
+      "raw_data_hash": "sha256:f2c4acf338fc6023",
+      "harmonized_at": "2026-03-25T16:28:35.535542+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4628,10 +4628,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.577588+00:00",
+      "scraped_at": "2026-03-25T16:28:35.286974+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:9f4d85d2a3ca07cf",
-      "harmonized_at": "2026-03-25T11:50:09.751856+00:00Z",
+      "raw_data_hash": "sha256:df4896ae5d74f392",
+      "harmonized_at": "2026-03-25T16:28:35.447709+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4757,10 +4757,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582338+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291551+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e6009961068a7f48",
-      "harmonized_at": "2026-03-25T11:50:09.841319+00:00Z",
+      "raw_data_hash": "sha256:df123e81cb0956e3",
+      "harmonized_at": "2026-03-25T16:28:35.536061+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4888,10 +4888,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582351+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291562+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:487d7cb07920fb6f",
-      "harmonized_at": "2026-03-25T11:50:09.841476+00:00Z",
+      "raw_data_hash": "sha256:bc78444785108d29",
+      "harmonized_at": "2026-03-25T16:28:35.536236+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5017,10 +5017,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582369+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291577+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:6a2df9f8a9ffa032",
-      "harmonized_at": "2026-03-25T11:50:09.841789+00:00Z",
+      "raw_data_hash": "sha256:4095d9111bb0bf58",
+      "harmonized_at": "2026-03-25T16:28:35.536540+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5146,10 +5146,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582389+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291596+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:312152d52571f60a",
-      "harmonized_at": "2026-03-25T11:50:09.842114+00:00Z",
+      "raw_data_hash": "sha256:e871a61b564068b8",
+      "harmonized_at": "2026-03-25T16:28:35.536837+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5280,10 +5280,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582412+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291618+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:56f7c3b4cd6f3803",
-      "harmonized_at": "2026-03-25T11:50:09.842631+00:00Z",
+      "raw_data_hash": "sha256:479b02131a8f2acc",
+      "harmonized_at": "2026-03-25T16:28:35.537392+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5410,10 +5410,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582496+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291694+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ed0c663f79a2817b",
-      "harmonized_at": "2026-03-25T11:50:09.844446+00:00Z",
+      "raw_data_hash": "sha256:4b952cf7ddd545b8",
+      "harmonized_at": "2026-03-25T16:28:35.539213+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5539,10 +5539,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.572633+00:00",
+      "scraped_at": "2026-03-25T16:28:35.282317+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:af13817ff9ccfe49",
-      "harmonized_at": "2026-03-25T11:50:09.705911+00:00Z",
+      "raw_data_hash": "sha256:9be971bc7a52f0b2",
+      "harmonized_at": "2026-03-25T16:28:35.402389+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5668,10 +5668,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582562+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291759+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3b17901123769bf6",
-      "harmonized_at": "2026-03-25T11:50:09.845971+00:00Z",
+      "raw_data_hash": "sha256:43096f64a1ff9387",
+      "harmonized_at": "2026-03-25T16:28:35.540732+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5797,10 +5797,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.573014+00:00",
+      "scraped_at": "2026-03-25T16:28:35.282672+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:47b103db9a186a9d",
-      "harmonized_at": "2026-03-25T11:50:09.712949+00:00Z",
+      "raw_data_hash": "sha256:be1cb69757433652",
+      "harmonized_at": "2026-03-25T16:28:35.409390+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5926,10 +5926,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582033+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291270+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:681e5bc59c8552af",
-      "harmonized_at": "2026-03-25T11:50:09.835427+00:00Z",
+      "raw_data_hash": "sha256:82367ba2adf54aac",
+      "harmonized_at": "2026-03-25T16:28:35.530739+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6058,10 +6058,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.577897+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287280+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:958ca7661f393f0b",
-      "harmonized_at": "2026-03-25T11:50:09.757821+00:00Z",
+      "raw_data_hash": "sha256:f10c973ef6742269",
+      "harmonized_at": "2026-03-25T16:28:35.453537+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6079,7 +6079,7 @@
     "title": "Sinfonia N.º 41 &#8220;Júpiter&#8221;, de Mozart",
     "title_raw": "Sinfonia N.º 41 &#8220;Júpiter&#8221;, de Mozart",
     "subtitle": null,
-    "description": "London Mozart Players é a Orquestra de Câmara mais antiga do Reino Unido, fundada há mais de 75 anos por Harry Blech, com o intuito de apresentar obras de Mozart e Haydn.\n\nDurante as últimas décadas, o repertório da orquestra tem-se alargado para permitir a criação de experiências musicais ousadas, ambiciosas e acessíveis a uma grande variedade de públicos. A orquestra continua também a sua longa tradição de promover jovens talentos, tais como Nicola Benedetti, Jacqueline du Pré ou Jan Pascal Tortellier, três dos muitos jovens virtuosos que foram apoiados pela LMP no início das suas carreiras.\n\nNa sua visita a Portugal, a afamada orquestra londrina interpretará o icónico concerto para violoncelo e orquestra Nº1, de Shostakovich, com o violoncelista Filipe Quaresma, e a derradeira sinfonia de Mozart, Nº41, com o epíteto Júpiter, obra de uma imponência singular na história da música ocidental. Completa o programa a peça concertante Todo o Teatro é um Muro Branco de Música, inspirada pela poesia de Fernando Pessoa, do compositor Nuno Côrte-Real, que também assume a direção musical do concerto.\n\nEste programa é coapresentado pela Temporada Darcos e o CCB, com o apoio da Direção Geral das Artes, da Câmara Municipal de Torres Vedras e da Câmara Municipal de Lisboa.\n\n&nbsp;\n\nNo âmbito deste recital, terá lugar na Sala Lopes-Graça, também no dia 10 de abril, às 18:30, a conferência A sinfonia em finais do século XVIII: aspetos históricos e estilísticos por Luís M. Santos.\n\n&nbsp;\n\nPasse Concerto + Conferência (25% desconto) ⇒ COMPRAR\n\n&nbsp;\n\nO El Corte Inglés apoia o Programa de Mediação de Música Erudita do CCB.",
+    "description": "London Mozart Players é a Orquestra de Câmara mais antiga do Reino Unido, fundada há mais de 75 anos por Harry Blech, com o intuito de apresentar obras de Mozart e Haydn.\n\nDurante as últimas décadas, o repertório da orquestra tem-se alargado para permitir a criação de experiências musicais ousadas, ambiciosas e acessíveis a uma grande variedade de públicos. A orquestra continua também a sua longa tradição de promover jovens talentos, tais como Nicola Benedetti, Jacqueline du Pré ou Jan Pascal Tortellier, três dos muitos jovens virtuosos que foram apoiados pela LMP no início das suas carreiras.\n\nNa sua visita a Portugal, a afamada orquestra londrina interpretará o icónico concerto para violoncelo e orquestra Nº1, de Shostakovich, com o violoncelista Filipe Quaresma, e a derradeira sinfonia de Mozart, Nº41, com o epíteto Júpiter, obra de uma imponência singular na história da música ocidental. Completa o programa a peça concertante Todo o Teatro é um Muro Branco de Música, inspirada pela poesia de Fernando Pessoa, do compositor Nuno Côrte-Real que também assume a direção musical do concerto.\n\nEste programa é coapresentado pela Temporada Darcos e o CCB, com o apoio da Direção Geral das Artes, da Câmara Municipal de Torres Vedras e da Câmara Municipal de Lisboa.\n\nEste programa é coapresentado pela Temporada Darcos e o CCB, com o apoio da Direção Geral das Artes, da Câmara Municipal de Torres Vedras e da Câmara Municipal de Lisboa.\n\n&nbsp;\n\nNo âmbito deste recital, terá lugar na Sala Lopes-Graça, também no dia 10 de abril, às 18:30, a conferência A sinfonia em finais do século XVIII: aspetos históricos e estilísticos por Luís M. Santos.\n\n&nbsp;\n\nPasse Concerto + Conferência (25% desconto) ⇒ COMPRAR\n\n&nbsp;\n\nO El Corte Inglés apoia o Programa de Mediação de Música Erudita do CCB.",
     "description_short": "London Mozart Players é a Orquestra de Câmara mais antiga do Reino Unido, fundada há mais de 75 anos por Harry Blech, com o intuito de apresentar obras de Mozart e Haydn.\n\nDurante as últimas décadas, o repertório da orquestra tem-se alargado para permitir a criação de experiências musicais ousadas…",
     "language_of_performance": null,
     "language_notes": null,
@@ -6189,10 +6189,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.577936+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287317+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e092833013733306",
-      "harmonized_at": "2026-03-25T11:50:09.758446+00:00Z",
+      "raw_data_hash": "sha256:06e0d8b79aa503a9",
+      "harmonized_at": "2026-03-25T16:28:35.454177+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6322,10 +6322,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581421+00:00",
+      "scraped_at": "2026-03-25T16:28:35.290708+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:1baf044e84cc0f97",
-      "harmonized_at": "2026-03-25T11:50:09.822452+00:00Z",
+      "raw_data_hash": "sha256:c409df1db5df1e5b",
+      "harmonized_at": "2026-03-25T16:28:35.519266+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6449,10 +6449,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.578239+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287618+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ee7f5e4db27361ad",
-      "harmonized_at": "2026-03-25T11:50:09.764093+00:00Z",
+      "raw_data_hash": "sha256:767542d81ac4adf4",
+      "harmonized_at": "2026-03-25T16:28:35.459854+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6580,10 +6580,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.578264+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287642+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:b674e479a45921db",
-      "harmonized_at": "2026-03-25T11:50:09.764542+00:00Z",
+      "raw_data_hash": "sha256:297ecd0c79e0af38",
+      "harmonized_at": "2026-03-25T16:28:35.460334+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6710,10 +6710,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.578295+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287669+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:cf0de82ca2545bf3",
-      "harmonized_at": "2026-03-25T11:50:09.765073+00:00Z",
+      "raw_data_hash": "sha256:7b00987383d58bed",
+      "harmonized_at": "2026-03-25T16:28:35.460840+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6837,10 +6837,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.578341+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287716+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:51698dde6d1ef8fd",
-      "harmonized_at": "2026-03-25T11:50:09.765949+00:00Z",
+      "raw_data_hash": "sha256:e8988a90569f7538",
+      "harmonized_at": "2026-03-25T16:28:35.461709+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6957,10 +6957,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.578377+00:00",
+      "scraped_at": "2026-03-25T16:28:35.287753+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:32ad28669fe8c9ad",
-      "harmonized_at": "2026-03-25T11:50:09.766316+00:00Z",
+      "raw_data_hash": "sha256:9177f3a0346d8d03",
+      "harmonized_at": "2026-03-25T16:28:35.462075+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7086,10 +7086,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.580043+00:00",
+      "scraped_at": "2026-03-25T16:28:35.289417+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4a86d6d5f22f3e46",
-      "harmonized_at": "2026-03-25T11:50:09.797459+00:00Z",
+      "raw_data_hash": "sha256:333409f5386e67c9",
+      "harmonized_at": "2026-03-25T16:28:35.493288+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7214,10 +7214,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.579539+00:00",
+      "scraped_at": "2026-03-25T16:28:35.288890+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4fad2cf185c5df2c",
-      "harmonized_at": "2026-03-25T11:50:09.788001+00:00Z",
+      "raw_data_hash": "sha256:02653d0c1a1836c4",
+      "harmonized_at": "2026-03-25T16:28:35.483845+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7347,10 +7347,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.579829+00:00",
+      "scraped_at": "2026-03-25T16:28:35.289206+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:6ec16f0b4fca3bd4",
-      "harmonized_at": "2026-03-25T11:50:09.793215+00:00Z",
+      "raw_data_hash": "sha256:08c31490cd4dfb82",
+      "harmonized_at": "2026-03-25T16:28:35.488979+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7477,10 +7477,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.580056+00:00",
+      "scraped_at": "2026-03-25T16:28:35.289430+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:214b31551c0dd458",
-      "harmonized_at": "2026-03-25T11:50:09.797574+00:00Z",
+      "raw_data_hash": "sha256:59e811ae2a500214",
+      "harmonized_at": "2026-03-25T16:28:35.493406+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7603,10 +7603,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.580527+00:00",
+      "scraped_at": "2026-03-25T16:28:35.289888+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ec209be2bb47cef5",
-      "harmonized_at": "2026-03-25T11:50:09.806496+00:00Z",
+      "raw_data_hash": "sha256:ce5ebf33b73b254c",
+      "harmonized_at": "2026-03-25T16:28:35.502390+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7728,10 +7728,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.580568+00:00",
+      "scraped_at": "2026-03-25T16:28:35.289925+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4bb8198a9d561d4d",
-      "harmonized_at": "2026-03-25T11:50:09.806942+00:00Z",
+      "raw_data_hash": "sha256:d78e2baf7cfa30db",
+      "harmonized_at": "2026-03-25T16:28:35.502813+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7858,10 +7858,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581494+00:00",
+      "scraped_at": "2026-03-25T16:28:35.290775+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:6f1ece3b5ac36574",
-      "harmonized_at": "2026-03-25T11:50:09.823771+00:00Z",
+      "raw_data_hash": "sha256:1d201d74e1592806",
+      "harmonized_at": "2026-03-25T16:28:35.520536+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7980,10 +7980,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581143+00:00",
+      "scraped_at": "2026-03-25T16:28:35.290448+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:27dab1aa364e345a",
-      "harmonized_at": "2026-03-25T11:50:09.817048+00:00Z",
+      "raw_data_hash": "sha256:f6c1fdadc63faa07",
+      "harmonized_at": "2026-03-25T16:28:35.513862+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8108,10 +8108,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581448+00:00",
+      "scraped_at": "2026-03-25T16:28:35.290735+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4b24109234ece9bd",
-      "harmonized_at": "2026-03-25T11:50:09.823042+00:00Z",
+      "raw_data_hash": "sha256:35a8d4061b37a25e",
+      "harmonized_at": "2026-03-25T16:28:35.519796+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8236,10 +8236,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581763+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291022+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:7bedc5e8d24603a1",
-      "harmonized_at": "2026-03-25T11:50:09.828918+00:00Z",
+      "raw_data_hash": "sha256:73921d5fd7144ed3",
+      "harmonized_at": "2026-03-25T16:28:35.525607+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8368,10 +8368,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581782+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291040+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4043c920bc4f8055",
-      "harmonized_at": "2026-03-25T11:50:09.829271+00:00Z",
+      "raw_data_hash": "sha256:3dfeeffde0d16c44",
+      "harmonized_at": "2026-03-25T16:28:35.525948+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8497,10 +8497,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.581813+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291058+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:a4d71a0e085f8bec",
-      "harmonized_at": "2026-03-25T11:50:09.830957+00:00Z",
+      "raw_data_hash": "sha256:06799908f057c212",
+      "harmonized_at": "2026-03-25T16:28:35.526329+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8621,10 +8621,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582290+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291509+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:80342310aec6b221",
-      "harmonized_at": "2026-03-25T11:50:09.840621+00:00Z",
+      "raw_data_hash": "sha256:d1919edd96e5e060",
+      "harmonized_at": "2026-03-25T16:28:35.535449+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8756,10 +8756,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582314+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291529+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3b2fa6c32559d515",
-      "harmonized_at": "2026-03-25T11:50:09.840946+00:00Z",
+      "raw_data_hash": "sha256:88fd981d89edbc59",
+      "harmonized_at": "2026-03-25T16:28:35.535702+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8882,10 +8882,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582459+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291660+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:46d40a3325b80cb4",
-      "harmonized_at": "2026-03-25T11:50:09.843780+00:00Z",
+      "raw_data_hash": "sha256:afff2b112d71864f",
+      "harmonized_at": "2026-03-25T16:28:35.538545+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9012,10 +9012,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582577+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291771+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:6932a46cbe0c32d9",
-      "harmonized_at": "2026-03-25T11:50:09.846142+00:00Z",
+      "raw_data_hash": "sha256:08b7d230c918d111",
+      "harmonized_at": "2026-03-25T16:28:35.540903+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9136,10 +9136,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.582611+00:00",
+      "scraped_at": "2026-03-25T16:28:35.291802+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e5b6029df996cf01",
-      "harmonized_at": "2026-03-25T11:50:09.846839+00:00Z",
+      "raw_data_hash": "sha256:4c0947711c005b3c",
+      "harmonized_at": "2026-03-25T16:28:35.541601+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9264,10 +9264,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.590987+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299185+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:fe049c5781f2c32b",
-      "harmonized_at": "2026-03-25T11:50:10.000159+00:00Z",
+      "raw_data_hash": "sha256:baf94dbbc41cdf20",
+      "harmonized_at": "2026-03-25T16:28:35.697394+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9393,10 +9393,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591002+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299197+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:d071105460ddfc2e",
-      "harmonized_at": "2026-03-25T11:50:10.000317+00:00Z",
+      "raw_data_hash": "sha256:8ad37afb3c245326",
+      "harmonized_at": "2026-03-25T16:28:35.697553+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9524,10 +9524,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591016+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299211+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:5041121c0d5ccebe",
-      "harmonized_at": "2026-03-25T11:50:10.000468+00:00Z",
+      "raw_data_hash": "sha256:a101288feccc8d5e",
+      "harmonized_at": "2026-03-25T16:28:35.697703+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9653,10 +9653,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591035+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299226+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:a2012bf8d0fc9779",
-      "harmonized_at": "2026-03-25T11:50:10.000768+00:00Z",
+      "raw_data_hash": "sha256:da25938f42b4f5b6",
+      "harmonized_at": "2026-03-25T16:28:35.698001+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9782,10 +9782,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591052+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299242+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:bc26e011f883d9c0",
-      "harmonized_at": "2026-03-25T11:50:10.001081+00:00Z",
+      "raw_data_hash": "sha256:d30d6e871137ba35",
+      "harmonized_at": "2026-03-25T16:28:35.698317+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9916,10 +9916,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591107+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299288+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:8dfb098ee448d6ab",
-      "harmonized_at": "2026-03-25T11:50:10.001994+00:00Z",
+      "raw_data_hash": "sha256:54f9332c2d38f143",
+      "harmonized_at": "2026-03-25T16:28:35.699233+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10046,10 +10046,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591196+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299370+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:253d6c2118c5c19a",
-      "harmonized_at": "2026-03-25T11:50:10.004014+00:00Z",
+      "raw_data_hash": "sha256:4679509d39593110",
+      "harmonized_at": "2026-03-25T16:28:35.701193+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10176,10 +10176,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591229+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299401+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:c4b4ae976c17c455",
-      "harmonized_at": "2026-03-25T11:50:10.004655+00:00Z",
+      "raw_data_hash": "sha256:4b2cbef12ad2a378",
+      "harmonized_at": "2026-03-25T16:28:35.701837+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10305,10 +10305,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591296+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299468+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:babf017d2b36dd16",
-      "harmonized_at": "2026-03-25T11:50:10.006203+00:00Z",
+      "raw_data_hash": "sha256:b8b2500f1e1facfa",
+      "harmonized_at": "2026-03-25T16:28:35.703393+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10437,10 +10437,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.583193+00:00",
+      "scraped_at": "2026-03-25T16:28:35.292327+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:36a504b0ddc01b05",
-      "harmonized_at": "2026-03-25T11:50:09.857204+00:00Z",
+      "raw_data_hash": "sha256:6eddf06898bd991c",
+      "harmonized_at": "2026-03-25T16:28:35.551926+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10557,10 +10557,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.583239+00:00",
+      "scraped_at": "2026-03-25T16:28:35.292366+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:340711ace1f7bd0e",
-      "harmonized_at": "2026-03-25T11:50:09.857928+00:00Z",
+      "raw_data_hash": "sha256:d53ba3b0b7092b75",
+      "harmonized_at": "2026-03-25T16:28:35.552648+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10686,10 +10686,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.589530+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297891+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3c046506d1542c7a",
-      "harmonized_at": "2026-03-25T11:50:09.974731+00:00Z",
+      "raw_data_hash": "sha256:c6e516e37598e184",
+      "harmonized_at": "2026-03-25T16:28:35.672139+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10815,10 +10815,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.588421+00:00",
+      "scraped_at": "2026-03-25T16:28:35.296893+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:c4ce1fdc4d2ffe56",
-      "harmonized_at": "2026-03-25T11:50:09.953883+00:00Z",
+      "raw_data_hash": "sha256:cf8cee0e56802804",
+      "harmonized_at": "2026-03-25T16:28:35.651475+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -10942,10 +10942,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.584915+00:00",
+      "scraped_at": "2026-03-25T16:28:35.293776+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:13fbe740b51e1119",
-      "harmonized_at": "2026-03-25T11:50:09.888584+00:00Z",
+      "raw_data_hash": "sha256:16d55928290bc321",
+      "harmonized_at": "2026-03-25T16:28:35.586998+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11068,10 +11068,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591157+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299333+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3855e90a68623dca",
-      "harmonized_at": "2026-03-25T11:50:10.003237+00:00Z",
+      "raw_data_hash": "sha256:20ab22ad3f8078c7",
+      "harmonized_at": "2026-03-25T16:28:35.700414+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11197,10 +11197,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.586718+00:00",
+      "scraped_at": "2026-03-25T16:28:35.295443+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:1cffe4ef48454764",
-      "harmonized_at": "2026-03-25T11:50:09.923595+00:00Z",
+      "raw_data_hash": "sha256:e22a932ba77e85cb",
+      "harmonized_at": "2026-03-25T16:28:35.621481+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11329,10 +11329,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.586982+00:00",
+      "scraped_at": "2026-03-25T16:28:35.295685+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:2ebfd37bbaa53803",
-      "harmonized_at": "2026-03-25T11:50:09.928749+00:00Z",
+      "raw_data_hash": "sha256:89e5671b855d3c96",
+      "harmonized_at": "2026-03-25T16:28:35.626567+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11461,10 +11461,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.588341+00:00",
+      "scraped_at": "2026-03-25T16:28:35.296827+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:74ea0f0e1b605ddc",
-      "harmonized_at": "2026-03-25T11:50:09.952715+00:00Z",
+      "raw_data_hash": "sha256:bd0231cfd6adc75b",
+      "harmonized_at": "2026-03-25T16:28:35.650330+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11592,10 +11592,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.588372+00:00",
+      "scraped_at": "2026-03-25T16:28:35.296854+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3f8cc5c751008ddd",
-      "harmonized_at": "2026-03-25T11:50:09.953161+00:00Z",
+      "raw_data_hash": "sha256:807bedbf835741dc",
+      "harmonized_at": "2026-03-25T16:28:35.650758+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11717,10 +11717,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.588448+00:00",
+      "scraped_at": "2026-03-25T16:28:35.296916+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:eb5ce94d7ad4e69c",
-      "harmonized_at": "2026-03-25T11:50:09.954399+00:00Z",
+      "raw_data_hash": "sha256:c7b496625cca7591",
+      "harmonized_at": "2026-03-25T16:28:35.651980+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11843,10 +11843,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.588836+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297262+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:2bbc17d68cfd76f6",
-      "harmonized_at": "2026-03-25T11:50:09.961456+00:00Z",
+      "raw_data_hash": "sha256:11a6cd7cf0d315f2",
+      "harmonized_at": "2026-03-25T16:28:35.659061+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -11965,10 +11965,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.589151+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297550+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:9864f7f1e965be7d",
-      "harmonized_at": "2026-03-25T11:50:09.967571+00:00Z",
+      "raw_data_hash": "sha256:35d21c1f4c347d18",
+      "harmonized_at": "2026-03-25T16:28:35.665198+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12092,10 +12092,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.589184+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297577+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:b9f6fb30a66f1dc4",
-      "harmonized_at": "2026-03-25T11:50:09.968218+00:00Z",
+      "raw_data_hash": "sha256:1c42a87ce1628fb0",
+      "harmonized_at": "2026-03-25T16:28:35.665834+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12221,10 +12221,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.589230+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297621+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ceba8e511ec6533b",
-      "harmonized_at": "2026-03-25T11:50:09.968700+00:00Z",
+      "raw_data_hash": "sha256:a7f8488f9dcd7dfe",
+      "harmonized_at": "2026-03-25T16:28:35.666343+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12353,10 +12353,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.589575+00:00",
+      "scraped_at": "2026-03-25T16:28:35.297928+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:90bae4e0d5fb964e",
-      "harmonized_at": "2026-03-25T11:50:09.975195+00:00Z",
+      "raw_data_hash": "sha256:2d2b062681d159d4",
+      "harmonized_at": "2026-03-25T16:28:35.672565+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12483,10 +12483,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.590279+00:00",
+      "scraped_at": "2026-03-25T16:28:35.298546+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:a8bbcb64345029d3",
-      "harmonized_at": "2026-03-25T11:50:09.987241+00:00Z",
+      "raw_data_hash": "sha256:8d2e7d2fcb1fdbc6",
+      "harmonized_at": "2026-03-25T16:28:35.684536+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12618,10 +12618,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.590641+00:00",
+      "scraped_at": "2026-03-25T16:28:35.298868+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:5324011fd21b6966",
-      "harmonized_at": "2026-03-25T11:50:09.993976+00:00Z",
+      "raw_data_hash": "sha256:65927432720086e0",
+      "harmonized_at": "2026-03-25T16:28:35.691199+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12748,10 +12748,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.590968+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299170+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:42f5090431c1a3db",
-      "harmonized_at": "2026-03-25T11:50:09.999946+00:00Z",
+      "raw_data_hash": "sha256:5689a61402e76fc2",
+      "harmonized_at": "2026-03-25T16:28:35.697176+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -12875,10 +12875,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591082+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299265+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4cc6c7c5f57b50da",
-      "harmonized_at": "2026-03-25T11:50:10.001590+00:00Z",
+      "raw_data_hash": "sha256:81a954c0bfa6c0ef",
+      "harmonized_at": "2026-03-25T16:28:35.698829+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13001,10 +13001,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591311+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299480+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:46be37d7744d7bcc",
-      "harmonized_at": "2026-03-25T11:50:10.006376+00:00Z",
+      "raw_data_hash": "sha256:1e7970f91e23346e",
+      "harmonized_at": "2026-03-25T16:28:35.703568+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13125,10 +13125,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.591335+00:00",
+      "scraped_at": "2026-03-25T16:28:35.299501+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:3f009b8d5dfc1f71",
-      "harmonized_at": "2026-03-25T11:50:10.006826+00:00Z",
+      "raw_data_hash": "sha256:cc2863f1825116a7",
+      "harmonized_at": "2026-03-25T16:28:35.704007+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13139,8 +13139,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-primeira-infancia",
-    "source_id": "278744",
-    "source_url": "https://www.ccb.pt/evento/primeira-infancia/2026-06-23/",
+    "source_id": "278865",
+    "source_url": "https://www.ccb.pt/evento/primeira-infancia/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Primeira Infância",
@@ -13165,7 +13165,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "08:00",
         "time_end": "17:00",
         "duration_minutes": null,
@@ -13174,8 +13174,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -13253,10 +13253,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596709+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304556+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:64a332a18de22d0f",
-      "harmonized_at": "2026-03-25T11:50:10.106621+00:00Z",
+      "raw_data_hash": "sha256:dc76cb7942e6038b",
+      "harmonized_at": "2026-03-25T16:28:35.807786+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13267,8 +13267,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-pre-escolar",
-    "source_id": "278742",
-    "source_url": "https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-06-23/",
+    "source_id": "278863",
+    "source_url": "https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Pré-escolar",
@@ -13294,7 +13294,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "17:00",
         "duration_minutes": null,
@@ -13303,8 +13303,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -13382,10 +13382,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596727+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304592+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:f5c6ff5dd99677da",
-      "harmonized_at": "2026-03-25T11:50:10.106785+00:00Z",
+      "raw_data_hash": "sha256:9d6102d9dcf5050e",
+      "harmonized_at": "2026-03-25T16:28:35.807948+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13396,8 +13396,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-terceiro-ciclo-e-secundario",
-    "source_id": "278741",
-    "source_url": "https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-06-23/",
+    "source_id": "278862",
+    "source_url": "https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Terceiro Ciclo e Secundário",
@@ -13425,7 +13425,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": null,
         "duration_minutes": null,
@@ -13434,8 +13434,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -13513,10 +13513,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596741+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304604+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:50d7555282c4bba3",
-      "harmonized_at": "2026-03-25T11:50:10.106964+00:00Z",
+      "raw_data_hash": "sha256:3ad5c89872f7de56",
+      "harmonized_at": "2026-03-25T16:28:35.808099+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13527,8 +13527,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-universitario",
-    "source_id": "278745",
-    "source_url": "https://www.ccb.pt/evento/universitario/2026-06-23/",
+    "source_id": "278866",
+    "source_url": "https://www.ccb.pt/evento/universitario/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Universitário",
@@ -13554,7 +13554,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "17:00",
         "duration_minutes": null,
@@ -13563,8 +13563,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -13642,10 +13642,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596761+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304640+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:9f77992e34b78d9b",
-      "harmonized_at": "2026-03-25T11:50:10.107266+00:00Z",
+      "raw_data_hash": "sha256:2b7730a6966b243b",
+      "harmonized_at": "2026-03-25T16:28:35.808721+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13656,8 +13656,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-olhos-multiplos",
-    "source_id": "278735",
-    "source_url": "https://www.ccb.pt/evento/exposicao-olhos-multiplos/2026-06-23/",
+    "source_id": "278856",
+    "source_url": "https://www.ccb.pt/evento/exposicao-olhos-multiplos/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Olhos Múltiplos",
@@ -13680,7 +13680,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "18:30",
         "duration_minutes": null,
@@ -13689,8 +13689,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -13768,10 +13768,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596860+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304714+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:63c5c61a17a09a77",
-      "harmonized_at": "2026-03-25T11:50:10.108895+00:00Z",
+      "raw_data_hash": "sha256:39205ed97f5322d0",
+      "harmonized_at": "2026-03-25T16:28:35.810359+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13894,10 +13894,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597013+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304750+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:45e3a32b4ebbb5ee",
-      "harmonized_at": "2026-03-25T11:50:10.112091+00:00Z",
+      "raw_data_hash": "sha256:880c5fe0cb4e8aa9",
+      "harmonized_at": "2026-03-25T16:28:35.811119+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -13908,8 +13908,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-may-i-help-you-posso-ajudar",
-    "source_id": "278732",
-    "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-06-23/",
+    "source_id": "278854",
+    "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "May I Help You? Posso Ajudar?",
@@ -13932,7 +13932,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "18:30",
         "duration_minutes": null,
@@ -13941,8 +13941,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -14020,10 +14020,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596931+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304780+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:6c51e55e2dce17c6",
-      "harmonized_at": "2026-03-25T11:50:10.110312+00:00Z",
+      "raw_data_hash": "sha256:12d6f400e128cc7f",
+      "harmonized_at": "2026-03-25T16:28:35.811775+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14034,8 +14034,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-segundo-ciclo",
-    "source_id": "278740",
-    "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-06-23/",
+    "source_id": "278861",
+    "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Segundo Ciclo",
@@ -14061,7 +14061,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "13:30",
         "time_end": null,
         "duration_minutes": null,
@@ -14070,8 +14070,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -14149,10 +14149,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596999+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304873+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e8070c1aec3853fd",
-      "harmonized_at": "2026-03-25T11:50:10.111854+00:00Z",
+      "raw_data_hash": "sha256:c94113360498871f",
+      "harmonized_at": "2026-03-25T16:28:35.813949+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14163,8 +14163,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-educacao-inclusiva",
-    "source_id": "278334",
-    "source_url": "https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-06-21/",
+    "source_id": "278851",
+    "source_url": "https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Educação Inclusiva",
@@ -14190,7 +14190,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-21",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "17:00",
         "duration_minutes": null,
@@ -14199,8 +14199,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-21",
-    "date_last": "2026-06-21",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -14278,10 +14278,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596400+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304620+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:127f47941bd6ec7f",
-      "harmonized_at": "2026-03-25T11:50:10.100343+00:00Z",
+      "raw_data_hash": "sha256:9270eab79e5d542b",
+      "harmonized_at": "2026-03-25T16:28:35.808424+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14292,8 +14292,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-frida-orupabo",
-    "source_id": "278738",
-    "source_url": "https://www.ccb.pt/evento/exposicao-frida-orupabo/2026-06-23/",
+    "source_id": "278859",
+    "source_url": "https://www.ccb.pt/evento/exposicao-frida-orupabo/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Frida Orupabo",
@@ -14316,7 +14316,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "18:30",
         "duration_minutes": null,
@@ -14325,8 +14325,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -14404,10 +14404,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596827+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304688+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:76ebf7409f3352c7",
-      "harmonized_at": "2026-03-25T11:50:10.108341+00:00Z",
+      "raw_data_hash": "sha256:2bee639a06891b4a",
+      "harmonized_at": "2026-03-25T16:28:35.809801+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14527,10 +14527,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.593101+00:00",
+      "scraped_at": "2026-03-25T16:28:35.301015+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:08b50d03bb2fce21",
-      "harmonized_at": "2026-03-25T11:50:10.037535+00:00Z",
+      "raw_data_hash": "sha256:8900759013cca74a",
+      "harmonized_at": "2026-03-25T16:28:35.734810+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14647,10 +14647,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.592777+00:00",
+      "scraped_at": "2026-03-25T16:28:35.300744+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:65c1a08117d0dcb4",
-      "harmonized_at": "2026-03-25T11:50:10.031858+00:00Z",
+      "raw_data_hash": "sha256:b3b1f72346d7e796",
+      "harmonized_at": "2026-03-25T16:28:35.729059+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14776,10 +14776,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.593070+00:00",
+      "scraped_at": "2026-03-25T16:28:35.300990+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:08a1fcf25ce76a3d",
-      "harmonized_at": "2026-03-25T11:50:10.037035+00:00Z",
+      "raw_data_hash": "sha256:3e63f6769876905d",
+      "harmonized_at": "2026-03-25T16:28:35.734309+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14790,8 +14790,8 @@
   {
     "schema_version": "1.0",
     "id": "ccb-2026-06-terra-crua",
-    "source_id": "278730",
-    "source_url": "https://www.ccb.pt/evento/exposicao-terra-crua/2026-06-23/",
+    "source_id": "278852",
+    "source_url": "https://www.ccb.pt/evento/exposicao-terra-crua/2026-06-24/",
     "venue_id": "ccb",
     "space_id": null,
     "title": "Terra Crua",
@@ -14815,7 +14815,7 @@
     ],
     "dates": [
       {
-        "date": "2026-06-23",
+        "date": "2026-06-24",
         "time_start": "10:00",
         "time_end": "18:30",
         "duration_minutes": null,
@@ -14824,8 +14824,8 @@
         "notes": null
       }
     ],
-    "date_first": "2026-06-23",
-    "date_last": "2026-06-23",
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": null,
@@ -14903,10 +14903,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596785+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304661+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:9484c35948bac577",
-      "harmonized_at": "2026-03-25T11:50:10.107777+00:00Z",
+      "raw_data_hash": "sha256:94de10826002a535",
+      "harmonized_at": "2026-03-25T16:28:35.809257+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -14924,8 +14924,8 @@
     "title": "Exercício de Montagem",
     "title_raw": "Exercício de Montagem",
     "subtitle": null,
-    "description": "Pode um filme em progresso ser uma performance? Joana Craveiro parte de um conjunto de imagens que captou na Palestina para ensaiar uma resposta a esta pergunta.\n\nO registo de duas viagens à Cisjordânia são pretexto para um exercício de montagem em torno do que se viu e do que se escutou, narrado em português e em árabe – uma amálgama de imagens sem relação aparente, ou uma dramaturgia escondida que se esconde nas entrelinhas da vida e da paisagem do que se observou?\n\nTudo em aberto, neste projeto, tudo em construção.\n\n&nbsp;",
-    "description_short": "Pode um filme em progresso ser uma performance? Joana Craveiro parte de um conjunto de imagens que captou na Palestina para ensaiar uma resposta a esta pergunta.\n\nO registo de duas viagens à Cisjordânia são pretexto para um exercício de montagem em torno do que se viu e do que se escutou, narrado…",
+    "description": "Exercício de Montagem é um filme em progresso que é uma performance que é um filme que é uma performance: é uma tentativa de fazer sentido de algo que se viu e não se pode desver nesse lugar chamado Palestina. Um espetáculo que ensaia a montagem de um filme imaginado numa viagem à Palestina em 2023.\n\nComo vivem os palestinianos na Cisjordânia? E em Jerusalém oriental? E em ‘48’? Como é o seu dia-a-dia? Por onde podem circular e onde estão interditos? O que é um check-point e como é que isso influi no quotidiano destas pessoas? Porque é que M., num café de Jerusalém oriental, nos pediu que abríssemos os olhos porque «tudo é político»?\n\nNarrado a duas vozes – uma delas, a da artista palestiniana Tarab طرب. – este é apenas um dos exercícios de montagem possíveis de uma história complexa e traumática, da vida quotidiana de mulheres e homens de um país que não é reconhecido como país. O material provém de três viagens à Palestina (entre 2023 e 2026) e dos registos que daí resultaram — imagens, sons, diários, cadernos, memorabilia — bem como do profundo impacto e transformação que estas viagens produziram sobre quem as viveu.\n\n&nbsp;\n\n&#8211; eles pediram: falem, falem sobre nós, contem-lhes como é a vida aqui.\n\n&nbsp;\n\nExercício de Montagem é uma criação colectiva e partilhada do Teatro do Vestido e Tarab طرب sobre esta ideia: fazer um filme sobre o quotidiano na Palestina. E fazê-lo ao vivo, diante do público.\n\n&nbsp;\n\n&#8211; quando não tens mais palavras, o que vais escrever?\n\n&nbsp;\n\n*\n\nTudo é Palestina, disse ele\n\ne foi depois de eu começar uma frase com, «aqui é a Palestina» \n\ne ele me ter chamado a atenção.\n\nAs pessoas não sabem ou não percebem.\n\nQuando digo que vou à Palestina, pensam que vou para Gaza.\n\nTento explicar que não.\n\nEles não estão errados; como ele disse, tudo é Palestina.\n\nAinda assim, como explicar esta geografia?\n\n(excerto de diário de campo, 2024)\n\n&nbsp;",
+    "description_short": "Exercício de Montagem é um filme em progresso que é uma performance que é um filme que é uma performance: é uma tentativa de fazer sentido de algo que se viu e não se pode desver nesse lugar chamado Palestina. Um espetáculo que ensaia a montagem de um filme imaginado numa viagem à Palestina em…",
     "language_of_performance": null,
     "language_notes": null,
     "domain": "artes-palco",
@@ -15031,10 +15031,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.595702+00:00",
+      "scraped_at": "2026-03-25T16:28:35.303359+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:cb986a0cdfb8c6c2",
-      "harmonized_at": "2026-03-25T11:50:10.086848+00:00Z",
+      "raw_data_hash": "sha256:fc6d9d9e1188eef6",
+      "harmonized_at": "2026-03-25T16:28:35.783063+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15156,10 +15156,132 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.596655+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304241+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:69315b5549adc33d",
-      "harmonized_at": "2026-03-25T11:50:10.105378+00:00Z",
+      "raw_data_hash": "sha256:177c66b1f64b61f5",
+      "harmonized_at": "2026-03-25T16:28:35.801099+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ccb-2026-06-ministerio-do-sensivel",
+    "source_id": "278849",
+    "source_url": "https://www.ccb.pt/evento/ministerio-do-sensivel/2026-06-24/",
+    "venue_id": "ccb",
+    "space_id": null,
+    "title": "Ministério do Sensível",
+    "title_raw": "Ministério do Sensível",
+    "subtitle": null,
+    "description": "Talvez tenhamos que começar a pensar em proteger, organizar e a reivindicar o que faz de nós Humanos. Talvez possamos utilizar formas de organização da sociedade, colocando-as ao serviço de outras dimensões humanas que não se definem por critérios funcionais, operativos, lucrativos ou reguladores. Talvez seja indispensável organizar um grupo, uma claque, um movimento, uma comunidade em defesa do que parece dispensável. Do que, ilusoriamente e equivocamente, parece ocioso, inútil ou impotente. Talvez necessitemos de um Ministério para o Sensível, onde se reivindique a sensibilidade e o sensível como caminho para a Humanidade.\n\nPois criaremos todos juntos um – um espaço potencial para encontros, governado por pessoas para pessoas, dando lugar a identificações, discussões, iluminações e potenciais inspirações. Este projeto, que se configura em diferentes programas, pretende criar e empoderar uma comunidade de fruidores culturais, que com a arte como cúmplice, abraça a partilha do sensível como forma de construir espaços sociais e políticos.\n\nEste projeto irá começar com dois setores: o Departamento do Espectador e o Instituto do Invisível. Ambos os programas, além dos encontros já calendarizados, permitirão o acesso a um conjunto de espetáculos ao longo do ano. Se tens tanta curiosidade sobre eles quanto vontade de conheceres o espectador que vive dentro de ti, um destes grupos está à tua espera.\n\n&nbsp;\n\nCriação e coordenação Sara Franqueira\n\nProdução MãoSimMão\n\n&nbsp;\n\n&nbsp;\n\n&nbsp;",
+    "description_short": "Talvez tenhamos que começar a pensar em proteger, organizar e a reivindicar o que faz de nós Humanos. Talvez possamos utilizar formas de organização da sociedade, colocando-as ao serviço de outras dimensões humanas que não se definem por critérios funcionais, operativos, lucrativos ou reguladores…",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Projetos de Mediação"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-24",
+        "time_start": "10:30",
+        "time_end": "13:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-06-24",
+    "date_last": "2026-06-24",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": null,
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": null
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/Misterio-do-sensivel.jpeg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "ministerio-do-sensivel|2026-06",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "ccb"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T16:28:35.304845+00:00",
+      "scraper_id": "ccb",
+      "raw_data_hash": "sha256:73fa5ae10e7fe6f7",
+      "harmonized_at": "2026-03-25T16:28:35.813317+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15287,10 +15409,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597049+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304885+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:00525af9eae5261b",
-      "harmonized_at": "2026-03-25T11:50:10.112729+00:00Z",
+      "raw_data_hash": "sha256:3d2dbd396317642f",
+      "harmonized_at": "2026-03-25T16:28:35.814118+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15416,10 +15538,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597082+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304917+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:4fc277e37d69a054",
-      "harmonized_at": "2026-03-25T11:50:10.113418+00:00Z",
+      "raw_data_hash": "sha256:1e3261e3e4dcfd7a",
+      "harmonized_at": "2026-03-25T16:28:35.814793+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15544,10 +15666,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597119+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304957+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:61a564b47225787a",
-      "harmonized_at": "2026-03-25T11:50:10.114197+00:00Z",
+      "raw_data_hash": "sha256:76b6bd5021281e97",
+      "harmonized_at": "2026-03-25T16:28:35.815560+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15671,10 +15793,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597162+00:00",
+      "scraped_at": "2026-03-25T16:28:35.304997+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:bc580567dab55f60",
-      "harmonized_at": "2026-03-25T11:50:10.115210+00:00Z",
+      "raw_data_hash": "sha256:572f0dd767712c14",
+      "harmonized_at": "2026-03-25T16:28:35.816567+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15800,10 +15922,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597189+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305024+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:d1c77558af50cbc4",
-      "harmonized_at": "2026-03-25T11:50:10.115739+00:00Z",
+      "raw_data_hash": "sha256:27474dd56997b4d8",
+      "harmonized_at": "2026-03-25T16:28:35.817106+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -15927,10 +16049,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597221+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305045+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:fc5f19cef2e5019f",
-      "harmonized_at": "2026-03-25T11:50:10.116152+00:00Z",
+      "raw_data_hash": "sha256:9e4f475ec7a490fb",
+      "harmonized_at": "2026-03-25T16:28:35.817520+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16054,10 +16176,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597246+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305066+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:a1be9f9629841aa4",
-      "harmonized_at": "2026-03-25T11:50:10.116587+00:00Z",
+      "raw_data_hash": "sha256:c316590491c89b54",
+      "harmonized_at": "2026-03-25T16:28:35.817968+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16183,10 +16305,136 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597277+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305093+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:1dbe9c18e3c4ea21",
-      "harmonized_at": "2026-03-25T11:50:10.117228+00:00Z",
+      "raw_data_hash": "sha256:c79c1058853cb471",
+      "harmonized_at": "2026-03-25T16:28:35.818619+00:00Z",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ccb-2026-10-mike-stern-band",
+    "source_id": "278815",
+    "source_url": "https://www.ccb.pt/evento/mike-stern-band/",
+    "venue_id": "ccb",
+    "space_id": null,
+    "title": "Mike Stern Band",
+    "title_raw": "Mike Stern Band",
+    "subtitle": null,
+    "description": "Um dos grandes guitarristas de jazz da sua geração, Mike Stern possui a habilidade única de tocar com a elegância e o lirismo de Jim Hall, o swing pulsante de Wes Montgomery e o ataque turbulento e saturado de Jimi Hendrix. Aspetos destas influências de obras seminais podem ser ouvidos na sua forma de tocar nas 18 gravações que lançou enquanto líder ou no seu aclamado trabalho como sideman para Miles Davis, Billy Cobham, Brecker Brothers, Jaco Pastorius, Steps Ahead, David Sanborn, Blood, Sweat &amp; Tears, Joe Henderson e da banda Four Generations of Miles.\n\nMike Stern convida-nos a assistir um espectáculo acompanhado por uma banda de luxo, composta por Leni Stern na guitarra, nomeada uma das «50 Guitarristas Mais Sensacionais de Todos os Tempo», na edição de 50.º aniversário da revista Guitar Player em 2017; o incrível saxofonista Bob Franceschini; no baixo convida Chris Minh Doky, um baixista de referência Mundial e na bateria o incontornável Dennis Chambers.\n\n&nbsp;",
+    "description_short": "Um dos grandes guitarristas de jazz da sua geração, Mike Stern possui a habilidade única de tocar com a elegância e o lirismo de Jim Hall, o swing pulsante de Wes Montgomery e o ataque turbulento e saturado de Jimi Hendrix. Aspetos destas influências de obras seminais podem ser ouvidos na sua forma…",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "musica",
+    "category": "musica-classica",
+    "subcategory": null,
+    "tags": [
+      "Música"
+    ],
+    "categories_raw": [
+      "Espetáculos",
+      "Música",
+      "Música"
+    ],
+    "dates": [
+      {
+        "date": "2026-10-08",
+        "time_start": "20:00",
+        "time_end": "21:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-10-08",
+    "date_last": "2026-10-08",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": null,
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": null
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/mike_stern_1920x1080_NOINFO-2.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "mike-stern-band|2026-10",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "ccb"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-25T16:28:35.305113+00:00",
+      "scraper_id": "ccb",
+      "raw_data_hash": "sha256:47e978ff28188fa0",
+      "harmonized_at": "2026-03-25T16:28:35.819048+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16309,10 +16557,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597302+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305136+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:80e65c5883d8d7d5",
-      "harmonized_at": "2026-03-25T11:50:10.117655+00:00Z",
+      "raw_data_hash": "sha256:d78ac292bbf233f0",
+      "harmonized_at": "2026-03-25T16:28:35.819476+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16437,10 +16685,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597325+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305170+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:7dc167850941d0a9",
-      "harmonized_at": "2026-03-25T11:50:10.118036+00:00Z",
+      "raw_data_hash": "sha256:ec80b5154c8d4dcb",
+      "harmonized_at": "2026-03-25T16:28:35.819834+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16566,10 +16814,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597350+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305193+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:ee42def76efba8c3",
-      "harmonized_at": "2026-03-25T11:50:10.118263+00:00Z",
+      "raw_data_hash": "sha256:706b46e563ccd68f",
+      "harmonized_at": "2026-03-25T16:28:35.820056+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16692,10 +16940,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597372+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305213+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:88c2337c7a1bc4ce",
-      "harmonized_at": "2026-03-25T11:50:10.118670+00:00Z",
+      "raw_data_hash": "sha256:6825d90d7e0e1602",
+      "harmonized_at": "2026-03-25T16:28:35.820486+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16818,10 +17066,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597394+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305232+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:a558bfb41dd86e12",
-      "harmonized_at": "2026-03-25T11:50:10.119042+00:00Z",
+      "raw_data_hash": "sha256:ada690238aac0ed0",
+      "harmonized_at": "2026-03-25T16:28:35.820833+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -16945,10 +17193,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597415+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305256+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:8ee02942628dff71",
-      "harmonized_at": "2026-03-25T11:50:10.119382+00:00Z",
+      "raw_data_hash": "sha256:c0948ca8c151cc0e",
+      "harmonized_at": "2026-03-25T16:28:35.821201+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -17071,10 +17319,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597436+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305277+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:e8ff35894c36277d",
-      "harmonized_at": "2026-03-25T11:50:10.119777+00:00Z",
+      "raw_data_hash": "sha256:29aa70ab4f3c762c",
+      "harmonized_at": "2026-03-25T16:28:35.821604+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -17198,10 +17446,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-25T11:50:09.597464+00:00",
+      "scraped_at": "2026-03-25T16:28:35.305299+00:00",
       "scraper_id": "ccb",
-      "raw_data_hash": "sha256:07437d5174a18084",
-      "harmonized_at": "2026-03-25T11:50:10.120244+00:00Z",
+      "raw_data_hash": "sha256:28c172e107f8c0e9",
+      "harmonized_at": "2026-03-25T16:28:35.822061+00:00Z",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
