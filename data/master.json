@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-25T23:04:44.132542+00:00Z",
-  "total_events": 220,
+  "generated_at": "2026-03-25T23:27:47.286024+00:00Z",
+  "total_events": 221,
   "total_venues": 3,
   "quality": {
-    "total": 220,
+    "total": 221,
     "with_image": 100.0,
-    "with_price": 30.0,
-    "with_description": 66.4,
-    "with_category": 80.9,
+    "with_price": 29.9,
+    "with_description": 66.5,
+    "with_category": 81.0,
     "avg_credibility": 0.826
   },
   "events": [
@@ -125,10 +125,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:32.418388+00:00",
+        "scraped_at": "2026-03-25T23:25:29.883174+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6f0f717633aff1a8",
-        "harmonized_at": "2026-03-25T23:01:38.772168+00:00Z",
+        "raw_data_hash": "sha256:1401902f8532c6df",
+        "harmonized_at": "2026-03-25T23:25:36.180386+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -248,10 +248,143 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:12.178740+00:00",
+        "scraped_at": "2026-03-25T23:24:58.987010+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:5ef5269deb7d2edc",
-        "harmonized_at": "2026-03-25T23:01:35.841950+00:00Z",
+        "raw_data_hash": "sha256:15f1710dd5bbe076",
+        "harmonized_at": "2026-03-25T23:25:21.868383+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2025-09-notas-de-musica-8211-ciclo-de-conferenci",
+      "source_id": "265921",
+      "source_url": "https://www.ccb.pt/evento/notas-de-musica-ciclo-de-conferencias/2026-03-26/",
+      "venue_id": "ccb",
+      "space_id": "sala-lopes-graca",
+      "title": "Notas de Música &#8211; Ciclo de Conferências",
+      "title_raw": "Notas de Música &#8211; Ciclo de Conferências",
+      "subtitle": null,
+      "description": "O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em torno da música. Os concertos programados oferecem ao público uma experiência direta da escuta e as conferências procuram explorar caminhos de leitura, contexto e reflexão, enriquecendo a fruição artística e alargando o horizonte interpretativo das obras apresentadas. Cada conferência é pensada como um ponto de encontro entre músicos, investigadores e público, onde se cruzam perspetivas históricas, analíticas e performativas, tendo sempre em consideração o prazer da escuta e a emoção da música ao vivo.",
+      "description_short": "O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em torno da música. Os concertos programados oferecem ao público uma experiência direta da escuta e as conferências…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "Conferências",
+        "Música",
+        "Notas de Música"
+      ],
+      "categories_raw": [
+        "Conferências e Conversas",
+        "Música",
+        "Projetos de Mediação",
+        "Temporada 2025-26",
+        "Conferências",
+        "Música",
+        "Notas de Música"
+      ],
+      "dates": [
+        {
+          "date": "2025-09-26",
+          "time_start": "18:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "18:30"
+        }
+      ],
+      "date_first": "2025-09-26",
+      "date_last": "2025-09-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/160293-notas_de_musica_ciclo_de_conferencias-ccb/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/2000x940ciclonotasdemusicaI.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "notas-de-musica-8211-ciclo-de-conferencias|2025-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.141455+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:91a18828f51d16fa",
+        "harmonized_at": "2026-03-25T23:27:30.287558+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -373,10 +506,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:52.893553+00:00",
+        "scraped_at": "2026-03-25T23:24:50.846956+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:99af6daa862e3a0e",
-        "harmonized_at": "2026-03-25T23:01:38.760944+00:00Z",
+        "raw_data_hash": "sha256:c3bd0c71b7628ee3",
+        "harmonized_at": "2026-03-25T23:25:36.161944+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -534,10 +667,161 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:53.578898+00:00",
+        "scraped_at": "2026-03-25T23:24:51.545024+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ebc436a8e695ea88",
-        "harmonized_at": "2026-03-25T23:01:38.764427+00:00Z",
+        "raw_data_hash": "sha256:cc4935770b687508",
+        "harmonized_at": "2026-03-25T23:25:36.172862+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-revisitar-experimentar-e-aprender",
+      "source_id": "266951",
+      "source_url": "https://www.ccb.pt/evento/curso-e-formacao-revisitar-experimentar-e-aprender/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Revisitar, experimentar e aprender",
+      "title_raw": "Revisitar, experimentar e aprender",
+      "subtitle": "Cursos & Formação",
+      "description": "No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história da arte moderna e contemporânea. Concebidos como espaços de aprendizagem e reflexão, estes cursos presenciais propõem uma aproximação às coleções e exposições do museu, convidando o público a revisitar obras, artistas e movimentos que marcaram o desenvolvimento da arte dos séculos XX e XXI. A compreensão das obras dos artistas passa não apenas por conhecer o seu pensamento mas também por observar de que forma este se materializa. Aprender é também experimentar; e, ligando o conhecimento teórico à prática, descobrimos que o fazer nos permite entender melhor a realidade. Percorrer o processo criativo do artista através da experimentação torna-se, assim, uma via privilegiada de aprendizagem. Com uma duração de seis ou nove horas, estes cursos pretendem oferecer uma experiência formativa concentrada e acessível, articulando o olhar histórico com a experiência direta das obras. Esta nova vertente do Programa Educativo reforça o compromisso do MAC/CCB em promover o conhecimento, o pensamento crítico e a fruição e a experimentação, consolidando o museu como um espaço de aprendizagem ao longo da vida.\n\n&nbsp;\n\nCristina Gameiro\n\nCoordenadora de Educação e Mediação do MAC/CCB",
+      "description_short": "No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história da arte moderna e contemporânea. Concebidos como espaços de aprendizagem e reflexão, estes cursos presenciais propõem…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": "escolas",
+      "tags": [
+        "Curso",
+        "Formação",
+        "Museu"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "Famílias",
+        "MAC/CCB",
+        "Projetos de Mediação",
+        "Curso",
+        "Formação",
+        "Museu"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "14:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "14:30 às 18:00 (Papéis: Colagem, descolagem e informação)Inscrição até 13 março"
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "10:00 às 13:00 (Surrealismos)Inscrição até 30 março"
+        },
+        {
+          "date": "2026-03-07",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "10:00 às 13:00 (Pop Art)"
+        }
+      ],
+      "date_first": "2026-03-07",
+      "date_last": "2026-04-25",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": true,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/12/Jacques-Villeglé_Libération-Thorez-22-août-1964-1964_Col.-Berardo.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "revisitar-experimentar-e-aprender|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.142131+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:9cf2360e50a5c4d5",
+        "harmonized_at": "2026-03-25T23:27:30.300767+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -659,10 +943,138 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:54.234207+00:00",
+        "scraped_at": "2026-03-25T23:24:52.219597+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e39d2623c71afecd",
-        "harmonized_at": "2026-03-25T23:01:38.764603+00:00Z",
+        "raw_data_hash": "sha256:cdc63ea5db10e4b4",
+        "harmonized_at": "2026-03-25T23:25:36.173065+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-lee-ritenour-038-friends",
+      "source_id": "251945",
+      "source_url": "https://www.ccb.pt/evento/lee-ritenour-friends/",
+      "venue_id": "ccb",
+      "space_id": "grande-auditorio",
+      "title": "Lee Ritenour &#038; Friends",
+      "title_raw": "Lee Ritenour &#038; Friends",
+      "subtitle": null,
+      "description": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour foi um enfant terrible do fusion dos anos 70, uma estrela da pop dos anos 80, um expoente honorário do jazz brasileiro e um dos responsáveis pelo supergrupo dos anos 90, Fourplay. Os reconhecimentos de Ritenour incluem: 45 álbuns, 16 indicações ao Grammy, ex-aluno do ano na USC, homenageado pela Los Angeles&#8217; Jazz Society (2019), além de milhares de sessões com lendas como Frank Sinatra, Pink Floyd, B.B. King, Tony Bennett, entre outros.\n\n&nbsp;\n\nLee Ritenour apresenta-se em Portugal com o seu mais recente espetáculo, Lee Ritenour &amp; Friends, prometendo um momento inesquecível.",
+      "description_short": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "jazz-blues",
+      "subcategory": "jazz",
+      "tags": [
+        "Música"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Jazz",
+        "Música",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-26",
+          "time_start": "20:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "20:00"
+        }
+      ],
+      "date_first": "2026-03-26",
+      "date_last": "2026-03-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/164543-lee_ritenour_friends-fundacao_centro_cultural_de_belem/?lang=pt-PT"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/LeeRitenour_1920x1080_NOINFO-1.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "lee-ritenour-038-friends|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.141515+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:74743a3f6843b88c",
+        "harmonized_at": "2026-03-25T23:27:30.288580+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -799,7 +1211,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627130+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767140+00:00Z"
       }
     },
     {
@@ -929,134 +1343,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-lee-ritenour-038-friends",
-      "source_id": "251945",
-      "source_url": "https://www.ccb.pt/evento/lee-ritenour-friends/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Lee Ritenour &#038; Friends",
-      "title_raw": "Lee Ritenour &#038; Friends",
-      "subtitle": null,
-      "description": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour foi um enfant terrible do fusion dos anos 70, uma estrela da pop dos anos 80, um expoente honorário do jazz brasileiro e um dos responsáveis pelo supergrupo dos anos 90, Fourplay. Os reconhecimentos de Ritenour incluem: 45 álbuns, 16 indicações ao Grammy, ex-aluno do ano na USC, homenageado pela Los Angeles&#8217; Jazz Society (2019), além de milhares de sessões com lendas como Frank Sinatra, Pink Floyd, B.B. King, Tony Bennett, entre outros.\n\n&nbsp;\n\nLee Ritenour apresenta-se em Portugal com o seu mais recente espetáculo, Lee Ritenour &amp; Friends, prometendo um momento inesquecível.",
-      "description_short": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "jazz-blues",
-      "subcategory": "jazz",
-      "tags": [
-        "Música"
-      ],
-      "categories_raw": [
-        "Espetáculos",
-        "Jazz",
-        "Música",
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-26",
-          "time_start": "20:00",
-          "time_end": "20:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-26",
-      "date_last": "2026-03-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/LeeRitenour_1920x1080_NOINFO-1.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "lee-ritenour-038-friends|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627188+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f62d6094e5e5fdc3",
-        "harmonized_at": "2026-03-25T23:04:22.709257+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627152+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767146+00:00Z"
       }
     },
     {
@@ -1173,10 +1462,151 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:54.891019+00:00",
+        "scraped_at": "2026-03-25T23:24:52.896249+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:95f1782bb973b4c5",
-        "harmonized_at": "2026-03-25T23:01:38.764840+00:00Z",
+        "raw_data_hash": "sha256:d160f985bf637f68",
+        "harmonized_at": "2026-03-25T23:25:36.173313+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-museu-aberto",
+      "source_id": "277042",
+      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Museu Aberto",
+      "title_raw": "Museu Aberto",
+      "subtitle": "Celebração com entrada livre",
+      "description": "O MAC/CCB acolhe um programa de festa com performance, livros, música e convívio. São propostas em jeito de finissage das exposições Avenida 211: Um espaço de artistas em Lisboa e Lugar de estar: o legado Burle Marx que convidam a explorar os seus universos artísticos. Agora que a primavera já espreita, e que se sente a mudança de ciclo, o «Museu Aberto» renova o encontro com o público.\n\nAs festividades arrancam na sexta-feira, com a estreia da nova criação do coreógrafo João dos Santos Martins, intitulada Alarve, em diálogo com um dos mais importantes paisagistas brasileiros, Roberto Burle Marx. No sábado será a vez do lançamento do catálogo de Avenida 211, onde poderemos conhecer a história deste icónico espaço cultural em Lisboa, através das perspetivas da curadoria, ensaio e design. Segue-se o programa de música desenhado por Filho Único, num regresso aos seus dias da Avenida 211, com seis miniconcertos, de meia hora cada, que terão lugar no interior da exposição. O fim da tarde traz a reposição de Alarve de João dos Santos Martins. E, para terminar o dia, convidamos a todas e a todos para um brinde com «comes e bebes».\n\n&nbsp;\n\nPrograma\n\n27 março\n\n18:00 Performance Alarve, João dos Santos Martins\n\n28 março\n\n14:30 Abertura da Sala Lúdica: Atelier – Um espaço para imaginar, jogar e criar\n\n15:00 Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa \n\n16:00 Concertos com programação de Filho Único\n\nVasco Alves e as Rochas da Ajuda\n\nSa🎀ra\n\nAmuleto Apotropaico\n\nSheila Ramirez\n\nVaiapraia\n\nInês Tartaruga Água\n\n18:00 Performance Alarve, João dos Santos Martins\n\n19:00 Brinde",
+      "description_short": "O MAC/CCB acolhe um programa de festa com performance, livros, música e convívio. São propostas em jeito de finissage das exposições Avenida 211: Um espaço de artistas em Lisboa e Lugar de estar: o legado Burle Marx que convidam a explorar os seus universos artísticos. Agora que a primavera já…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "performance",
+      "subcategory": "performance-arte",
+      "tags": [
+        "Museu",
+        "Música",
+        "Performance"
+      ],
+      "categories_raw": [
+        "Apresentação",
+        "Atividades",
+        "MAC/CCB",
+        "Performance",
+        "Museu",
+        "Música",
+        "Performance"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-27",
+          "time_start": "18:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "18:00 - Entrada livre"
+        },
+        {
+          "date": "2026-03-28",
+          "time_start": "14:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "14:30 às 19:00 - Entrada livre"
+        }
+      ],
+      "date_first": "2026-03-27",
+      "date_last": "2026-03-28",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "estreia",
+      "is_premiere": true,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/MuseuAberto_TiagoFezasVital.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "museu-aberto|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.142188+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:2814b4b40b68abcd",
+        "harmonized_at": "2026-03-25T23:27:30.301666+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1298,10 +1728,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:55.547147+00:00",
+        "scraped_at": "2026-03-25T23:24:53.570391+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:58811f8701d4968a",
-        "harmonized_at": "2026-03-25T23:01:38.764965+00:00Z",
+        "raw_data_hash": "sha256:39f1e6ec24d011d9",
+        "harmonized_at": "2026-03-25T23:25:36.173441+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1455,10 +1885,264 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:14.124296+00:00",
+        "scraped_at": "2026-03-25T23:25:00.933291+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:de5a9a23cc056a23",
-        "harmonized_at": "2026-03-25T23:01:35.856491+00:00Z",
+        "raw_data_hash": "sha256:71b439306ccf1f90",
+        "harmonized_at": "2026-03-25T23:25:21.872685+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
+      "source_id": "277364",
+      "source_url": "https://www.ccb.pt/evento/lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa",
+      "title_raw": "Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa",
+      "subtitle": "Páginas de Um Prédio | Museu Aberto",
+      "description": "Lançamento do catálogo com Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismark (autores de ensaios), Sofia Gonçalves (design), Sara De Chiara e Giorgia Casara (investigação), Nuria Enguita (diretora artística MAC/CCB e cocuradora da exposição), Marta Mestre (curadora MAC/CCB e cocuradora da exposição) e Diogo Montenegro (edições MAC/CCB).\n\nBem ao jeito colaborativo que caracterizou o espaço-matéria-prima de Avenida 211: Um espaço de artistas em Lisboa, assim como a intervenção coletivista subjacente àquela apresentação, o MAC/CCB publica agora o catálogo homónimo. Editado numa abordagem caleidoscópica por Nuria Enguita e Marta Mestre, curadoras da exposição, com o apoio de Giorgia Casara e Sara De Chiara, investigadoras, este livro parte de um extenso ensaio visual de Pedro Tropa que, documentando o percurso expositivo, estrutura integrativamente o esqueleto editorial. O design gráfico, a cargo de Sofia Gonçalves, estabelece continuidades e divergências entre as diferentes categorias de informação apresentadas — documentação, material de arquivo, cronologias de acontecimentos, reproduções de obras, textos elucidativos, e por aí adiante. Por fim, o universo Avenida 211 é complementado pelos ensaios de Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismarck, cada qual enquadrando esta «experiência irrepetível» nos âmbitos artísticos, afetivos e socioeconómicos do tempo e do território em que decorreu.\n\n&nbsp;\n\nProgramação do Museu Aberto.",
+      "description_short": "Lançamento do catálogo com Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismark (autores de ensaios), Sofia Gonçalves (design), Sara De Chiara e Giorgia Casara (investigação), Nuria Enguita (diretora artística MAC/CCB e cocuradora da exposição), Marta Mestre (curadora MAC/CCB e cocuradora da…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Apresentação",
+        "Atividades",
+        "MAC/CCB"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "15:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "15:00"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Av211BXcreditoTiagoFezasVital.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.142234+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:c636a99c1bcc7ff9",
+        "harmonized_at": "2026-03-25T23:27:30.302109+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-ana-sofia-varela",
+      "source_id": "240705",
+      "source_url": "https://www.ccb.pt/evento/ana-sofia-varela-2/",
+      "venue_id": "ccb",
+      "space_id": "grande-auditorio",
+      "title": "Ana Sofia Varela",
+      "title_raw": "Ana Sofia Varela",
+      "subtitle": "A Mulher e Outras Guitarras |  Há Fado no Cais",
+      "description": "Ana Sofia Varela apresenta o álbum A Mulher e Outras Guitarras e celebra o seu aniversário no Grande Auditório do CCB. Entre os convidados estarão Camané, Pedro de Castro, Pedro Jóia e José Manuel Neto.\n\nFadista de voz singular e presença marcante, Ana Sofia Varela regressa aos palcos com um novo trabalho que celebra a mulher e a guitarra portuguesa.\n\nNeste concerto no Centro Cultural de Belém, a artista propõe um reencontro com as suas raízes e com as sonoridades que têm marcado o seu percurso, agora revisitadas à luz de uma nova maturidade artística. O espetáculo contará com a presença de vários convidados que integram o seu novo disco — um álbum de inéditos e alguns fados tradicionais com arranjos que cruzam delicadeza e arrojo, memória e descoberta.\n\nA par das novas composições, Ana Sofia Varela interpretará alguns dos temas que a consagraram, num alinhamento que confirma a sua relevância no panorama do fado contemporâneo e a profundidade emocional que sempre levou a palco.",
+      "description_short": "Ana Sofia Varela apresenta o álbum A Mulher e Outras Guitarras e celebra o seu aniversário no Grande Auditório do CCB. Entre os convidados estarão Camané, Pedro de Castro, Pedro Jóia e José Manuel Neto.\n\nFadista de voz singular e presença marcante, Ana Sofia Varela regressa aos palcos com um novo…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-popular-portuguesa",
+      "subcategory": "fado",
+      "tags": [
+        "Fado",
+        "Música"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Fado",
+        "Temporada 2025-26",
+        "Fado",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "19:00"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/160822-ana_sofia_varela_ha_fado_no_cais-fundacao_centro_cultural_de_belem/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AnaSofiaVarela_Alfredo-Matos.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ana-sofia-varela|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.142378+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:74b667070990031c",
+        "harmonized_at": "2026-03-25T23:27:30.304564+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1596,139 +2280,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-museu-aberto",
-      "source_id": "277042",
-      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-28/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Museu Aberto",
-      "title_raw": "Museu Aberto",
-      "subtitle": null,
-      "description": "O MAC/CCB acolhe um programa de festa com performance, livros, música e convívio. São propostas em jeito de finissage das exposições Avenida 211: Um espaço de artistas em Lisboa e Lugar de estar: o legado Burle Marx que convidam a explorar os seus universos artísticos. Agora que a primavera já espreita, e que se sente a mudança de ciclo, o «Museu Aberto» renova o encontro com o público.\n\nAs festividades arrancam na sexta-feira, com a estreia da nova criação do coreógrafo João dos Santos Martins, intitulada Alarve, em diálogo com um dos mais importantes paisagistas brasileiros, Roberto Burle Marx. No sábado será a vez do lançamento do catálogo de Avenida 211, onde poderemos conhecer a história deste icónico espaço cultural em Lisboa, através das perspetivas da curadoria, ensaio e design. Segue-se o programa de música desenhado por Filho Único, num regresso aos seus dias da Avenida 211, com seis miniconcertos, de meia hora cada, que terão lugar no interior da exposição. O fim da tarde traz a reposição de Alarve de João dos Santos Martins. E, para terminar o dia, convidamos a todas e a todos para um brinde com «comes e bebes».\n\n&nbsp;\n\nPrograma\n\n27 março\n\n18:00 Performance Alarve, João dos Santos Martins\n\n28 março\n\n14:30 Abertura da Sala Lúdica: Atelier – Um espaço para imaginar, jogar e criar\n\n15:00 Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa \n\n16:00 Concertos com programação de Filho Único\n\nVasco Alves e as Rochas da Ajuda\n\nSa🎀ra\n\nAmuleto Apotropaico\n\nSheila Ramirez\n\nVaiapraia\n\nInês Tartaruga Água\n\n18:00 Performance Alarve, João dos Santos Martins\n\n19:00 Brinde",
-      "description_short": "O MAC/CCB acolhe um programa de festa com performance, livros, música e convívio. São propostas em jeito de finissage das exposições Avenida 211: Um espaço de artistas em Lisboa e Lugar de estar: o legado Burle Marx que convidam a explorar os seus universos artísticos. Agora que a primavera já…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "performance",
-      "subcategory": "performance-arte",
-      "tags": [
-        "Museu",
-        "Música",
-        "Performance"
-      ],
-      "categories_raw": [
-        "Apresentação",
-        "Atividades",
-        "MAC/CCB",
-        "Performance",
-        "Museu",
-        "Música",
-        "Performance"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "15:00",
-          "time_end": "19:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "estreia",
-      "is_premiere": true,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/MuseuAberto_TiagoFezasVital.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "museu-aberto|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627846+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:81e15c32b7b97224",
-        "harmonized_at": "2026-03-25T23:04:22.720006+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627972+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767136+00:00Z"
       }
     },
     {
@@ -1856,7 +2410,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627986+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767150+00:00Z"
       }
     },
     {
@@ -1982,7 +2538,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627532+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767159+00:00Z"
       }
     },
     {
@@ -2108,7 +2666,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627599+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767163+00:00Z"
       }
     },
     {
@@ -2235,140 +2795,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-revisitar-experimentar-e-aprender",
-      "source_id": "266951",
-      "source_url": "https://www.ccb.pt/evento/curso-e-formacao-revisitar-experimentar-e-aprender/2026-03-28/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Revisitar, experimentar e aprender",
-      "title_raw": "Revisitar, experimentar e aprender",
-      "subtitle": null,
-      "description": "No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história da arte moderna e contemporânea. Concebidos como espaços de aprendizagem e reflexão, estes cursos presenciais propõem uma aproximação às coleções e exposições do museu, convidando o público a revisitar obras, artistas e movimentos que marcaram o desenvolvimento da arte dos séculos XX e XXI. A compreensão das obras dos artistas passa não apenas por conhecer o seu pensamento mas também por observar de que forma este se materializa. Aprender é também experimentar; e, ligando o conhecimento teórico à prática, descobrimos que o fazer nos permite entender melhor a realidade. Percorrer o processo criativo do artista através da experimentação torna-se, assim, uma via privilegiada de aprendizagem. Com uma duração de seis ou nove horas, estes cursos pretendem oferecer uma experiência formativa concentrada e acessível, articulando o olhar histórico com a experiência direta das obras. Esta nova vertente do Programa Educativo reforça o compromisso do MAC/CCB em promover o conhecimento, o pensamento crítico e a fruição e a experimentação, consolidando o museu como um espaço de aprendizagem ao longo da vida.\n\n&nbsp;\n\nCristina Gameiro\n\nCoordenadora de Educação e Mediação do MAC/CCB",
-      "description_short": "No âmbito das novas propostas do Serviço de Educação e Mediação, apresentamos um conjunto de cursos breves dedicados à exploração de momentos e contextos significativos da história da arte moderna e contemporânea. Concebidos como espaços de aprendizagem e reflexão, estes cursos presenciais propõem…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": "escolas",
-      "tags": [
-        "Curso",
-        "Formação",
-        "Museu"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "Famílias",
-        "MAC/CCB",
-        "Projetos de Mediação",
-        "Curso",
-        "Formação",
-        "Museu"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "10:00",
-          "time_end": "13:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": true,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/12/Jacques-Villeglé_Libération-Thorez-22-août-1964-1964_Col.-Berardo.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "revisitar-experimentar-e-aprender|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627785+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3fd8d3fc84dd18f0",
-        "harmonized_at": "2026-03-25T23:04:22.719263+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627744+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767168+00:00Z"
       }
     },
     {
@@ -2497,131 +2926,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
-      "source_id": "277364",
-      "source_url": "https://www.ccb.pt/evento/lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa",
-      "title_raw": "Lançamento do catálogo Avenida 211: Um espaço de artistas em Lisboa",
-      "subtitle": null,
-      "description": "Lançamento do catálogo com Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismark (autores de ensaios), Sofia Gonçalves (design), Sara De Chiara e Giorgia Casara (investigação), Nuria Enguita (diretora artística MAC/CCB e cocuradora da exposição), Marta Mestre (curadora MAC/CCB e cocuradora da exposição) e Diogo Montenegro (edições MAC/CCB).\n\nBem ao jeito colaborativo que caracterizou o espaço-matéria-prima de Avenida 211: Um espaço de artistas em Lisboa, assim como a intervenção coletivista subjacente àquela apresentação, o MAC/CCB publica agora o catálogo homónimo. Editado numa abordagem caleidoscópica por Nuria Enguita e Marta Mestre, curadoras da exposição, com o apoio de Giorgia Casara e Sara De Chiara, investigadoras, este livro parte de um extenso ensaio visual de Pedro Tropa que, documentando o percurso expositivo, estrutura integrativamente o esqueleto editorial. O design gráfico, a cargo de Sofia Gonçalves, estabelece continuidades e divergências entre as diferentes categorias de informação apresentadas — documentação, material de arquivo, cronologias de acontecimentos, reproduções de obras, textos elucidativos, e por aí adiante. Por fim, o universo Avenida 211 é complementado pelos ensaios de Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismarck, cada qual enquadrando esta «experiência irrepetível» nos âmbitos artísticos, afetivos e socioeconómicos do tempo e do território em que decorreu.\n\n&nbsp;\n\nProgramação do Museu Aberto.",
-      "description_short": "Lançamento do catálogo com Catarina Rosendo, Ricardo Nicolau e Pedro Levi Bismark (autores de ensaios), Sofia Gonçalves (design), Sara De Chiara e Giorgia Casara (investigação), Nuria Enguita (diretora artística MAC/CCB e cocuradora da exposição), Marta Mestre (curadora MAC/CCB e cocuradora da…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Apresentação",
-        "Atividades",
-        "MAC/CCB"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "15:00",
-          "time_end": "16:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Av211BXcreditoTiagoFezasVital.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627892+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2e51531fa0bade5a",
-        "harmonized_at": "2026-03-25T23:04:22.720378+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627822+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767172+00:00Z"
       }
     },
     {
@@ -2749,136 +3056,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-ana-sofia-varela",
-      "source_id": "240705",
-      "source_url": "https://www.ccb.pt/evento/ana-sofia-varela-2/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Ana Sofia Varela",
-      "title_raw": "Ana Sofia Varela",
-      "subtitle": null,
-      "description": "Ana Sofia Varela apresenta o álbum A Mulher e Outras Guitarras e celebra o seu aniversário no Grande Auditório do CCB. Entre os convidados estarão Camané, Pedro de Castro, Pedro Jóia e José Manuel Neto.\n\nFadista de voz singular e presença marcante, Ana Sofia Varela regressa aos palcos com um novo trabalho que celebra a mulher e a guitarra portuguesa.\n\nNeste concerto no Centro Cultural de Belém, a artista propõe um reencontro com as suas raízes e com as sonoridades que têm marcado o seu percurso, agora revisitadas à luz de uma nova maturidade artística. O espetáculo contará com a presença de vários convidados que integram o seu novo disco — um álbum de inéditos e alguns fados tradicionais com arranjos que cruzam delicadeza e arrojo, memória e descoberta.\n\nA par das novas composições, Ana Sofia Varela interpretará alguns dos temas que a consagraram, num alinhamento que confirma a sua relevância no panorama do fado contemporâneo e a profundidade emocional que sempre levou a palco.",
-      "description_short": "Ana Sofia Varela apresenta o álbum A Mulher e Outras Guitarras e celebra o seu aniversário no Grande Auditório do CCB. Entre os convidados estarão Camané, Pedro de Castro, Pedro Jóia e José Manuel Neto.\n\nFadista de voz singular e presença marcante, Ana Sofia Varela regressa aos palcos com um novo…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-popular-portuguesa",
-      "subcategory": "fado",
-      "tags": [
-        "Fado",
-        "Música"
-      ],
-      "categories_raw": [
-        "Espetáculos",
-        "Fado",
-        "Temporada 2025-26",
-        "Fado",
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "19:00",
-          "time_end": "20:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AnaSofiaVarela_Alfredo-Matos.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "ana-sofia-varela|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628018+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b97d9609819242be",
-        "harmonized_at": "2026-03-25T23:04:22.722417+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.627923+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767176+00:00Z"
       }
     },
     {
@@ -3004,10 +3184,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:56.201820+00:00",
+        "scraped_at": "2026-03-25T23:24:54.244218+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:782e9a2d07744a63",
-        "harmonized_at": "2026-03-25T23:01:38.765099+00:00Z",
+        "raw_data_hash": "sha256:f68b5026f54f8663",
+        "harmonized_at": "2026-03-25T23:25:36.173553+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3129,10 +3309,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:56.867305+00:00",
+        "scraped_at": "2026-03-25T23:24:54.929875+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0682d38ce9f6f6b1",
-        "harmonized_at": "2026-03-25T23:01:38.765255+00:00Z",
+        "raw_data_hash": "sha256:b04a84ec9977630b",
+        "harmonized_at": "2026-03-25T23:25:36.173711+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3254,10 +3434,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:57.523441+00:00",
+        "scraped_at": "2026-03-25T23:24:55.604374+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:20d9f6de1c9d2a93",
-        "harmonized_at": "2026-03-25T23:01:38.765398+00:00Z",
+        "raw_data_hash": "sha256:446611f9d835a421",
+        "harmonized_at": "2026-03-25T23:25:36.173852+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3531,10 +3711,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:16.291686+00:00",
+        "scraped_at": "2026-03-25T23:25:02.881353+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:ac4a19a0b9eb25db",
-        "harmonized_at": "2026-03-25T23:01:35.857740+00:00Z",
+        "raw_data_hash": "sha256:1ad55a9ef385f084",
+        "harmonized_at": "2026-03-25T23:25:21.873952+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3745,10 +3925,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:18.316956+00:00",
+        "scraped_at": "2026-03-25T23:25:04.835820+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:16e4bb056149ff4a",
-        "harmonized_at": "2026-03-25T23:01:35.858319+00:00Z",
+        "raw_data_hash": "sha256:b600b6767e62bdf7",
+        "harmonized_at": "2026-03-25T23:25:21.874508+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3880,7 +4060,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628041+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767131+00:00Z"
       }
     },
     {
@@ -4010,7 +4192,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628058+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767154+00:00Z"
       }
     },
     {
@@ -4139,7 +4323,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628202+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767185+00:00Z"
       }
     },
     {
@@ -4267,7 +4453,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628227+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767189+00:00Z"
       }
     },
     {
@@ -4394,7 +4582,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628254+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767192+00:00Z"
       }
     },
     {
@@ -4529,7 +4719,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628424+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767201+00:00Z"
       }
     },
     {
@@ -4646,10 +4838,139 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:58.184573+00:00",
+        "scraped_at": "2026-03-25T23:24:56.283587+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:2da4ec8249d6829b",
-        "harmonized_at": "2026-03-25T23:01:38.765501+00:00Z",
+        "raw_data_hash": "sha256:7eba059b936f6c5d",
+        "harmonized_at": "2026-03-25T23:25:36.173952+00:00Z",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-segundo-ciclo",
+      "source_id": "133219",
+      "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-03-31/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Segundo Ciclo",
+      "title_raw": "Segundo Ciclo",
+      "subtitle": null,
+      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
+      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": "escolas",
+      "tags": [
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-31",
+          "time_start": "13:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-31",
+      "date_last": "2026-03-31",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": true,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "segundo-ciclo|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-25T23:25:46.143210+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:3b928b4151f726f7",
+        "harmonized_at": "2026-03-25T23:27:30.321710+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4782,7 +5103,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628662+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767109+00:00Z"
       }
     },
     {
@@ -4912,7 +5235,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628715+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767122+00:00Z"
       }
     },
     {
@@ -5041,7 +5366,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628499+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767198+00:00Z"
       }
     },
     {
@@ -5171,7 +5498,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628449+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767207+00:00Z"
       }
     },
     {
@@ -5298,7 +5627,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628464+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767211+00:00Z"
       }
     },
     {
@@ -5426,7 +5757,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628483+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767214+00:00Z"
       }
     },
     {
@@ -5555,7 +5888,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628558+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767219+00:00Z"
       }
     },
     {
@@ -5686,7 +6021,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628571+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767223+00:00Z"
       }
     },
     {
@@ -5815,7 +6152,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628593+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767226+00:00Z"
       }
     },
     {
@@ -5944,7 +6283,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628611+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767231+00:00Z"
       }
     },
     {
@@ -6075,7 +6416,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628637+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767235+00:00Z"
       }
     },
     {
@@ -6204,136 +6547,9 @@
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
-        "is_active": true
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-segundo-ciclo",
-      "source_id": "133219",
-      "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-03-31/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Segundo Ciclo",
-      "title_raw": "Segundo Ciclo",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
-      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": "escolas",
-      "tags": [
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-31",
-          "time_start": "13:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-31",
-      "date_last": "2026-03-31",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": true,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "segundo-ciclo|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628820+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d6a734caeaca7d26",
-        "harmonized_at": "2026-03-25T23:04:22.736695+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true
+        "is_active": true,
+        "last_seen_at": "2026-03-25T23:04:22.628785+00:00",
+        "not_seen_since": "2026-03-25T23:27:30.767240+00:00Z"
       }
     },
     {
@@ -6468,10 +6684,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:31.765124+00:00",
+        "scraped_at": "2026-03-25T23:25:29.210764+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:39445cd458fd057d",
-        "harmonized_at": "2026-03-25T23:01:38.772036+00:00Z",
+        "raw_data_hash": "sha256:0b23c405efddc84e",
+        "harmonized_at": "2026-03-25T23:25:36.180271+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6592,10 +6808,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628836+00:00",
+        "scraped_at": "2026-03-25T23:25:46.143231+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d60bbfea48aa78b0",
-        "harmonized_at": "2026-03-25T23:04:22.736843+00:00Z",
+        "raw_data_hash": "sha256:184071a802b6c106",
+        "harmonized_at": "2026-03-25T23:27:30.321875+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6721,10 +6937,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.629134+00:00",
+        "scraped_at": "2026-03-25T23:25:46.143548+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6cc0137c4844e6b9",
-        "harmonized_at": "2026-03-25T23:04:22.741946+00:00Z",
+        "raw_data_hash": "sha256:df6be90e7b0da0a6",
+        "harmonized_at": "2026-03-25T23:27:30.327947+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6850,10 +7066,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.629474+00:00",
+        "scraped_at": "2026-03-25T23:25:46.143905+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:11027d4fb5eabd06",
-        "harmonized_at": "2026-03-25T23:04:22.747814+00:00Z",
+        "raw_data_hash": "sha256:0aabf783da4b6508",
+        "harmonized_at": "2026-03-25T23:27:30.334878+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6993,10 +7209,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:58.841334+00:00",
+        "scraped_at": "2026-03-25T23:24:56.959464+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:242dfc7daa09239f",
-        "harmonized_at": "2026-03-25T23:01:38.765597+00:00Z",
+        "raw_data_hash": "sha256:06b18c6e004dc58e",
+        "harmonized_at": "2026-03-25T23:25:36.174063+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7128,7 +7344,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T16:45:51.340959+00:00",
-        "not_seen_since": "2026-03-25T23:01:38.778240+00:00Z"
+        "not_seen_since": "2026-03-25T23:25:36.186214+00:00Z"
       }
     },
     {
@@ -7249,10 +7465,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634027+00:00",
+        "scraped_at": "2026-03-25T23:25:46.145824+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:33855768174f021a",
-        "harmonized_at": "2026-03-25T23:04:22.782327+00:00Z",
+        "raw_data_hash": "sha256:6e466e92ed649991",
+        "harmonized_at": "2026-03-25T23:27:30.373202+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7381,10 +7597,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634284+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146089+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f2c93de3cc544865",
-        "harmonized_at": "2026-03-25T23:04:22.787152+00:00Z",
+        "raw_data_hash": "sha256:603abb57fcbd925b",
+        "harmonized_at": "2026-03-25T23:27:30.379126+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7512,10 +7728,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634318+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146125+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ac317af0ae62e1b4",
-        "harmonized_at": "2026-03-25T23:04:22.787684+00:00Z",
+        "raw_data_hash": "sha256:a6b52feaf7add1e1",
+        "harmonized_at": "2026-03-25T23:27:30.379774+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7639,10 +7855,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634602+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146436+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7a5f2391252a733e",
-        "harmonized_at": "2026-03-25T23:04:22.792399+00:00Z",
+        "raw_data_hash": "sha256:23a729c888718906",
+        "harmonized_at": "2026-03-25T23:27:30.385461+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7770,10 +7986,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634626+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146461+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:72096e4c1abfaee6",
-        "harmonized_at": "2026-03-25T23:04:22.792776+00:00Z",
+        "raw_data_hash": "sha256:67e65169cddf6e29",
+        "harmonized_at": "2026-03-25T23:27:30.385910+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7900,10 +8116,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634652+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146491+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e9bfb3ba56ba3124",
-        "harmonized_at": "2026-03-25T23:04:22.793224+00:00Z",
+        "raw_data_hash": "sha256:16a6576fffa34d52",
+        "harmonized_at": "2026-03-25T23:27:30.386442+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8027,10 +8243,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634698+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146538+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d62147511bc7014f",
-        "harmonized_at": "2026-03-25T23:04:22.793944+00:00Z",
+        "raw_data_hash": "sha256:7cd8c18f16b60823",
+        "harmonized_at": "2026-03-25T23:27:30.387320+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8152,10 +8368,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:00:59.498291+00:00",
+        "scraped_at": "2026-03-25T23:24:57.635253+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:583ae5704b69215d",
-        "harmonized_at": "2026-03-25T23:01:38.765741+00:00Z",
+        "raw_data_hash": "sha256:5e0570c3b9063bcc",
+        "harmonized_at": "2026-03-25T23:25:36.174212+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8277,10 +8493,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:00.159628+00:00",
+        "scraped_at": "2026-03-25T23:24:58.315937+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:54c9362ed4ccd564",
-        "harmonized_at": "2026-03-25T23:01:38.765877+00:00Z",
+        "raw_data_hash": "sha256:1563c4eca4491933",
+        "harmonized_at": "2026-03-25T23:25:36.174351+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8397,10 +8613,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.634735+00:00",
+        "scraped_at": "2026-03-25T23:25:46.146574+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d5e1936833e6aad6",
-        "harmonized_at": "2026-03-25T23:04:22.794255+00:00Z",
+        "raw_data_hash": "sha256:97bcc3d2f0a4f081",
+        "harmonized_at": "2026-03-25T23:27:30.387695+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8522,10 +8738,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:00.817732+00:00",
+        "scraped_at": "2026-03-25T23:24:58.877408+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6642923df5e641f7",
-        "harmonized_at": "2026-03-25T23:01:38.766011+00:00Z",
+        "raw_data_hash": "sha256:4891f19dd9100a30",
+        "harmonized_at": "2026-03-25T23:25:36.174465+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8650,10 +8866,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.635863+00:00",
+        "scraped_at": "2026-03-25T23:25:46.147720+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:77e4dba3cd4c5b96",
-        "harmonized_at": "2026-03-25T23:04:22.812397+00:00Z",
+        "raw_data_hash": "sha256:7dcccb0a62017ecf",
+        "harmonized_at": "2026-03-25T23:27:30.409639+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8775,10 +8991,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:02.646112+00:00",
+        "scraped_at": "2026-03-25T23:25:00.241764+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:529433d537b88a3d",
-        "harmonized_at": "2026-03-25T23:01:38.766219+00:00Z",
+        "raw_data_hash": "sha256:9798bdef10f5c171",
+        "harmonized_at": "2026-03-25T23:25:36.174659+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8908,10 +9124,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.636172+00:00",
+        "scraped_at": "2026-03-25T23:25:46.148025+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:799cd6dcaa6eb369",
-        "harmonized_at": "2026-03-25T23:04:22.816734+00:00Z",
+        "raw_data_hash": "sha256:ded3405a03be670c",
+        "harmonized_at": "2026-03-25T23:27:30.414855+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9040,10 +9256,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:03.392249+00:00",
+        "scraped_at": "2026-03-25T23:25:00.800449+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:65b521e36ae65520",
-        "harmonized_at": "2026-03-25T23:01:38.766349+00:00Z",
+        "raw_data_hash": "sha256:05d5cdee4aae027c",
+        "harmonized_at": "2026-03-25T23:25:36.174787+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9174,10 +9390,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:04.085708+00:00",
+        "scraped_at": "2026-03-25T23:25:01.369339+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f85141ee7947b52e",
-        "harmonized_at": "2026-03-25T23:01:38.766449+00:00Z",
+        "raw_data_hash": "sha256:2df726e5e2bdc07f",
+        "harmonized_at": "2026-03-25T23:25:36.174886+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9299,10 +9515,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:04.762254+00:00",
+        "scraped_at": "2026-03-25T23:25:02.140884+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1b8b1c7942ad47a7",
-        "harmonized_at": "2026-03-25T23:01:38.766593+00:00Z",
+        "raw_data_hash": "sha256:87019641a840e85a",
+        "harmonized_at": "2026-03-25T23:25:36.175030+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9428,10 +9644,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.636387+00:00",
+        "scraped_at": "2026-03-25T23:25:46.148240+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bdecfd0033eaf594",
-        "harmonized_at": "2026-03-25T23:04:22.820387+00:00Z",
+        "raw_data_hash": "sha256:17d731535e6ca6ad",
+        "harmonized_at": "2026-03-25T23:27:30.419118+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9558,10 +9774,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.636401+00:00",
+        "scraped_at": "2026-03-25T23:25:46.148252+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:90aa0c766fa0f768",
-        "harmonized_at": "2026-03-25T23:04:22.820484+00:00Z",
+        "raw_data_hash": "sha256:52b9932e1534c334",
+        "harmonized_at": "2026-03-25T23:27:30.419235+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9683,10 +9899,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:05.422949+00:00",
+        "scraped_at": "2026-03-25T23:25:02.830252+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:683c2543ab3aa9d0",
-        "harmonized_at": "2026-03-25T23:01:38.766733+00:00Z",
+        "raw_data_hash": "sha256:0ab10e0b903a38ff",
+        "harmonized_at": "2026-03-25T23:25:36.175192+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9808,10 +10024,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:06.083860+00:00",
+        "scraped_at": "2026-03-25T23:25:03.542076+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:135d23d6596ec089",
-        "harmonized_at": "2026-03-25T23:01:38.766825+00:00Z",
+        "raw_data_hash": "sha256:9a2e61b52415f99c",
+        "harmonized_at": "2026-03-25T23:25:36.175286+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10026,10 +10242,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:20.360204+00:00",
+        "scraped_at": "2026-03-25T23:25:06.753950+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:691c4bef0f9b2c15",
-        "harmonized_at": "2026-03-25T23:01:35.858848+00:00Z",
+        "raw_data_hash": "sha256:1f4ecb46b9999860",
+        "harmonized_at": "2026-03-25T23:25:21.875011+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10151,10 +10367,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:06.740238+00:00",
+        "scraped_at": "2026-03-25T23:25:04.255816+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:31b9532b18f5776d",
-        "harmonized_at": "2026-03-25T23:01:38.766916+00:00Z",
+        "raw_data_hash": "sha256:656b33ac95725c08",
+        "harmonized_at": "2026-03-25T23:25:36.175387+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10276,10 +10492,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:07.395765+00:00",
+        "scraped_at": "2026-03-25T23:25:04.932273+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8b3ce98ab57ead74",
-        "harmonized_at": "2026-03-25T23:01:38.767042+00:00Z",
+        "raw_data_hash": "sha256:e0c0a5b0eb13e471",
+        "harmonized_at": "2026-03-25T23:25:36.175484+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10402,10 +10618,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.636871+00:00",
+        "scraped_at": "2026-03-25T23:25:46.148745+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:00948c99202db6f2",
-        "harmonized_at": "2026-03-25T23:04:22.828029+00:00Z",
+        "raw_data_hash": "sha256:81dd51837b5217b6",
+        "harmonized_at": "2026-03-25T23:27:30.428252+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10527,10 +10743,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.636907+00:00",
+        "scraped_at": "2026-03-25T23:25:46.148784+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1ceb09d24002ec38",
-        "harmonized_at": "2026-03-25T23:04:22.828391+00:00Z",
+        "raw_data_hash": "sha256:53da2dc22bd623f3",
+        "harmonized_at": "2026-03-25T23:27:30.428694+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10649,10 +10865,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.637393+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149313+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2f413019b43fd52e",
-        "harmonized_at": "2026-03-25T23:04:22.837737+00:00Z",
+        "raw_data_hash": "sha256:7cd20ba92a92e035",
+        "harmonized_at": "2026-03-25T23:27:30.438968+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10772,10 +10988,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:01.614469+00:00",
+        "scraped_at": "2026-03-25T23:24:59.565271+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d7c0a2191dfd097e",
-        "harmonized_at": "2026-03-25T23:01:38.766114+00:00Z",
+        "raw_data_hash": "sha256:303a880dacfa3eda",
+        "harmonized_at": "2026-03-25T23:25:36.174558+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10897,10 +11113,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:08.057920+00:00",
+        "scraped_at": "2026-03-25T23:25:05.616929+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:75e39ef63cee4966",
-        "harmonized_at": "2026-03-25T23:01:38.767183+00:00Z",
+        "raw_data_hash": "sha256:559f04469bff52a3",
+        "harmonized_at": "2026-03-25T23:25:36.175621+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11030,10 +11246,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.637661+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149602+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:40119d5c98e17ea2",
-        "harmonized_at": "2026-03-25T23:04:22.842175+00:00Z",
+        "raw_data_hash": "sha256:b25630949bea9432",
+        "harmonized_at": "2026-03-25T23:27:30.444454+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11160,10 +11376,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.637727+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149679+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a3332a87b57d38cd",
-        "harmonized_at": "2026-03-25T23:04:22.843248+00:00Z",
+        "raw_data_hash": "sha256:12fdf2642de81df2",
+        "harmonized_at": "2026-03-25T23:27:30.445738+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11288,10 +11504,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.637686+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149631+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a3a015ef9af15b3e",
-        "harmonized_at": "2026-03-25T23:04:22.842631+00:00Z",
+        "raw_data_hash": "sha256:11eae454e5649b39",
+        "harmonized_at": "2026-03-25T23:27:30.444984+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11416,10 +11632,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.637986+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149955+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9e3b7707a4eb9e1e",
-        "harmonized_at": "2026-03-25T23:04:22.847444+00:00Z",
+        "raw_data_hash": "sha256:ea9cffe85ed4ae11",
+        "harmonized_at": "2026-03-25T23:27:30.450772+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11548,10 +11764,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638004+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149975+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4dd8d3f69cf9e771",
-        "harmonized_at": "2026-03-25T23:04:22.847733+00:00Z",
+        "raw_data_hash": "sha256:6ae21df58abf2120",
+        "harmonized_at": "2026-03-25T23:27:30.451118+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11686,7 +11902,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T17:33:01.761563+00:00",
-        "not_seen_since": "2026-03-25T23:01:35.863716+00:00Z"
+        "not_seen_since": "2026-03-25T23:25:21.880178+00:00Z"
       }
     },
     {
@@ -11807,10 +12023,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638022+00:00",
+        "scraped_at": "2026-03-25T23:25:46.149996+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cd45d19dfeda0d42",
-        "harmonized_at": "2026-03-25T23:04:22.848071+00:00Z",
+        "raw_data_hash": "sha256:1e0e59e29521309f",
+        "harmonized_at": "2026-03-25T23:27:30.451470+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -11932,10 +12148,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:08.720183+00:00",
+        "scraped_at": "2026-03-25T23:25:06.298644+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1dec2b2224efd458",
-        "harmonized_at": "2026-03-25T23:01:38.767340+00:00Z",
+        "raw_data_hash": "sha256:463226a950960081",
+        "harmonized_at": "2026-03-25T23:25:36.175772+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12061,10 +12277,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638219+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150216+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:17fdb59fbb66affc",
-        "harmonized_at": "2026-03-25T23:04:22.851741+00:00Z",
+        "raw_data_hash": "sha256:0e1ddf060f2e5ba1",
+        "harmonized_at": "2026-03-25T23:27:30.455838+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12195,10 +12411,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:37.693575+00:00",
+        "scraped_at": "2026-03-25T23:25:35.075197+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:58056fa2ec2095a5",
-        "harmonized_at": "2026-03-25T23:01:38.773103+00:00Z",
+        "raw_data_hash": "sha256:62d52bb7a9718c9b",
+        "harmonized_at": "2026-03-25T23:25:36.181306+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12323,10 +12539,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638459+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150500+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:77e5a946fbb98efe",
-        "harmonized_at": "2026-03-25T23:04:22.855821+00:00Z",
+        "raw_data_hash": "sha256:1599846f919eb26e",
+        "harmonized_at": "2026-03-25T23:27:30.460690+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12452,10 +12668,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638491+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150539+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6c23e00f8bd5e128",
-        "harmonized_at": "2026-03-25T23:04:22.856282+00:00Z",
+        "raw_data_hash": "sha256:192ddd8c1d7a04ec",
+        "harmonized_at": "2026-03-25T23:27:30.461212+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12583,10 +12799,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638503+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150552+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0faeca3cabd4e85",
-        "harmonized_at": "2026-03-25T23:04:22.856419+00:00Z",
+        "raw_data_hash": "sha256:5f13a1752ef7951b",
+        "harmonized_at": "2026-03-25T23:27:30.461386+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12712,10 +12928,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638518+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150570+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:81638eb7151b919b",
-        "harmonized_at": "2026-03-25T23:04:22.856681+00:00Z",
+        "raw_data_hash": "sha256:7c758b429b578ffa",
+        "harmonized_at": "2026-03-25T23:27:30.461692+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12841,10 +13057,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638537+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150590+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:256a33486ae25a77",
-        "harmonized_at": "2026-03-25T23:04:22.857019+00:00Z",
+        "raw_data_hash": "sha256:1509a47906120230",
+        "harmonized_at": "2026-03-25T23:27:30.462000+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12975,10 +13191,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638557+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150619+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:70dde408718ad8e6",
-        "harmonized_at": "2026-03-25T23:04:22.857473+00:00Z",
+        "raw_data_hash": "sha256:ea828e6f9206e781",
+        "harmonized_at": "2026-03-25T23:27:30.462530+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13105,10 +13321,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638636+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150707+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a53769a813a71b1b",
-        "harmonized_at": "2026-03-25T23:04:22.859005+00:00Z",
+        "raw_data_hash": "sha256:3ecafebda93f4631",
+        "harmonized_at": "2026-03-25T23:27:30.464364+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13234,10 +13450,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638701+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150774+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d2bf4cbd4f0aa7cf",
-        "harmonized_at": "2026-03-25T23:04:22.860297+00:00Z",
+        "raw_data_hash": "sha256:fec4647590f5972f",
+        "harmonized_at": "2026-03-25T23:27:30.465878+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13358,10 +13574,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638449+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150489+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1f826f6225d6c59f",
-        "harmonized_at": "2026-03-25T23:04:22.855727+00:00Z",
+        "raw_data_hash": "sha256:9476fdfb42570ed4",
+        "harmonized_at": "2026-03-25T23:27:30.460588+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13493,10 +13709,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638470+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150514+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:978f179f262a1854",
-        "harmonized_at": "2026-03-25T23:04:22.855964+00:00Z",
+        "raw_data_hash": "sha256:50fb22916f21ff94",
+        "harmonized_at": "2026-03-25T23:27:30.460851+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13619,10 +13835,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638601+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150670+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:627cb1de645c23cd",
-        "harmonized_at": "2026-03-25T23:04:22.858444+00:00Z",
+        "raw_data_hash": "sha256:9a5e1be07f9f165d",
+        "harmonized_at": "2026-03-25T23:27:30.463698+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13749,10 +13965,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638713+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150788+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3dffe3c90008c991",
-        "harmonized_at": "2026-03-25T23:04:22.860451+00:00Z",
+        "raw_data_hash": "sha256:3ba88d5bc0abdc94",
+        "harmonized_at": "2026-03-25T23:27:30.466050+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13873,10 +14089,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.638747+00:00",
+        "scraped_at": "2026-03-25T23:25:46.150823+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3b982ea0e3fd7e90",
-        "harmonized_at": "2026-03-25T23:04:22.861035+00:00Z",
+        "raw_data_hash": "sha256:7cdaf1b554316bf3",
+        "harmonized_at": "2026-03-25T23:27:30.466748+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14005,10 +14221,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.639312+00:00",
+        "scraped_at": "2026-03-25T23:25:46.151396+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:58ed1a595496781a",
-        "harmonized_at": "2026-03-25T23:04:22.869626+00:00Z",
+        "raw_data_hash": "sha256:bccc55c19614ca49",
+        "harmonized_at": "2026-03-25T23:27:30.477048+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14125,10 +14341,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.639351+00:00",
+        "scraped_at": "2026-03-25T23:25:46.151439+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a161c7b0ab88c0f6",
-        "harmonized_at": "2026-03-25T23:04:22.870230+00:00Z",
+        "raw_data_hash": "sha256:ac4761b8515b4774",
+        "harmonized_at": "2026-03-25T23:27:30.477793+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14259,10 +14475,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:33.072411+00:00",
+        "scraped_at": "2026-03-25T23:25:30.557190+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:61cb2605166c3184",
-        "harmonized_at": "2026-03-25T23:01:38.772263+00:00Z",
+        "raw_data_hash": "sha256:d7e85a499e262b3c",
+        "harmonized_at": "2026-03-25T23:25:36.180482+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14384,10 +14600,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:11.362783+00:00",
+        "scraped_at": "2026-03-25T23:25:08.903413+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:96e5121deb94bd23",
-        "harmonized_at": "2026-03-25T23:01:38.767879+00:00Z",
+        "raw_data_hash": "sha256:9088c63e818f9dfa",
+        "harmonized_at": "2026-03-25T23:25:36.176340+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14507,10 +14723,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:12.020294+00:00",
+        "scraped_at": "2026-03-25T23:25:09.580686+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7f01078ecd853bc8",
-        "harmonized_at": "2026-03-25T23:01:38.768034+00:00Z",
+        "raw_data_hash": "sha256:76eb15e47f1df163",
+        "harmonized_at": "2026-03-25T23:25:36.176479+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14634,10 +14850,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.640834+00:00",
+        "scraped_at": "2026-03-25T23:25:46.153008+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b47d632531a6da86",
-        "harmonized_at": "2026-03-25T23:04:22.895729+00:00Z",
+        "raw_data_hash": "sha256:15c5b7426dda6db7",
+        "harmonized_at": "2026-03-25T23:27:30.508483+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14757,10 +14973,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:12.680104+00:00",
+        "scraped_at": "2026-03-25T23:25:10.260137+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9dcdca2f2e3085f9",
-        "harmonized_at": "2026-03-25T23:01:38.768155+00:00Z",
+        "raw_data_hash": "sha256:869474f0c6eb0ea4",
+        "harmonized_at": "2026-03-25T23:25:36.176596+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14900,10 +15116,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:33.729627+00:00",
+        "scraped_at": "2026-03-25T23:25:31.232577+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d335d14dd16cd278",
-        "harmonized_at": "2026-03-25T23:01:38.772372+00:00Z",
+        "raw_data_hash": "sha256:73db499e3141a128",
+        "harmonized_at": "2026-03-25T23:25:36.180592+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15034,10 +15250,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:13.340333+00:00",
+        "scraped_at": "2026-03-25T23:25:10.939586+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:abe83e3f3271d218",
-        "harmonized_at": "2026-03-25T23:01:38.768261+00:00Z",
+        "raw_data_hash": "sha256:398a462923544c8b",
+        "harmonized_at": "2026-03-25T23:25:36.176702+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15172,7 +15388,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T17:33:04.823838+00:00",
-        "not_seen_since": "2026-03-25T23:01:35.863728+00:00Z"
+        "not_seen_since": "2026-03-25T23:25:21.880190+00:00Z"
       }
     },
     {
@@ -15293,10 +15509,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.642582+00:00",
+        "scraped_at": "2026-03-25T23:25:46.154850+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:24a0c7eaab46ea55",
-        "harmonized_at": "2026-03-25T23:04:22.924907+00:00Z",
+        "raw_data_hash": "sha256:b897f7bf7e0073ca",
+        "harmonized_at": "2026-03-25T23:27:30.543250+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15425,10 +15641,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.642841+00:00",
+        "scraped_at": "2026-03-25T23:25:46.155105+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a5de0c3d8c812c02",
-        "harmonized_at": "2026-03-25T23:04:22.929187+00:00Z",
+        "raw_data_hash": "sha256:c1e97876ca4e1900",
+        "harmonized_at": "2026-03-25T23:27:30.548446+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15548,10 +15764,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:09.377774+00:00",
+        "scraped_at": "2026-03-25T23:25:06.976244+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:052caf2fc9a09a4f",
-        "harmonized_at": "2026-03-25T23:01:38.767432+00:00Z",
+        "raw_data_hash": "sha256:b4b6fe48370f974f",
+        "harmonized_at": "2026-03-25T23:25:36.175862+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15671,10 +15887,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:10.042166+00:00",
+        "scraped_at": "2026-03-25T23:25:07.659764+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9ac01d1d9118ae15",
-        "harmonized_at": "2026-03-25T23:01:38.767551+00:00Z",
+        "raw_data_hash": "sha256:d7866d0551345fdf",
+        "harmonized_at": "2026-03-25T23:25:36.175980+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15794,10 +16010,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:10.704379+00:00",
+        "scraped_at": "2026-03-25T23:25:08.225818+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4743480c760db9d6",
-        "harmonized_at": "2026-03-25T23:01:38.767659+00:00Z",
+        "raw_data_hash": "sha256:edf3fc7aacfa47f3",
+        "harmonized_at": "2026-03-25T23:25:36.176109+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15919,10 +16135,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:34.384141+00:00",
+        "scraped_at": "2026-03-25T23:25:31.790891+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:088821f6c41f1e08",
-        "harmonized_at": "2026-03-25T23:01:38.772492+00:00Z",
+        "raw_data_hash": "sha256:2b022bc305f1484d",
+        "harmonized_at": "2026-03-25T23:25:36.180710+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16051,10 +16267,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644031+00:00",
+        "scraped_at": "2026-03-25T23:25:46.156414+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:19a403f10656f453",
-        "harmonized_at": "2026-03-25T23:04:22.949017+00:00Z",
+        "raw_data_hash": "sha256:50f6bd5f715da668",
+        "harmonized_at": "2026-03-25T23:27:30.572824+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16182,10 +16398,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644061+00:00",
+        "scraped_at": "2026-03-25T23:25:46.156450+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1a2aa7e7d3f6184a",
-        "harmonized_at": "2026-03-25T23:04:22.949382+00:00Z",
+        "raw_data_hash": "sha256:57c0c050fcf98f13",
+        "harmonized_at": "2026-03-25T23:27:30.573257+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16314,10 +16530,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:38.354114+00:00",
+        "scraped_at": "2026-03-25T23:25:35.755153+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:042fdce4a01e8d7d",
-        "harmonized_at": "2026-03-25T23:01:38.773209+00:00Z",
+        "raw_data_hash": "sha256:e0e748536c80f58c",
+        "harmonized_at": "2026-03-25T23:25:36.181406+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16460,10 +16676,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:22.398184+00:00",
+        "scraped_at": "2026-03-25T23:25:08.665594+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:ddd75bf6a43d71f1",
-        "harmonized_at": "2026-03-25T23:01:35.859250+00:00Z",
+        "raw_data_hash": "sha256:554ec659c9ca4d00",
+        "harmonized_at": "2026-03-25T23:25:21.875402+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16589,10 +16805,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644099+00:00",
+        "scraped_at": "2026-03-25T23:25:46.156487+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f8870b84f42d62c7",
-        "harmonized_at": "2026-03-25T23:04:22.949978+00:00Z",
+        "raw_data_hash": "sha256:3facc2777a173d2e",
+        "harmonized_at": "2026-03-25T23:27:30.573981+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16714,10 +16930,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644124+00:00",
+        "scraped_at": "2026-03-25T23:25:46.156516+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4e04542c3fbdb32d",
-        "harmonized_at": "2026-03-25T23:04:22.950425+00:00Z",
+        "raw_data_hash": "sha256:d39a73d0c6e7444c",
+        "harmonized_at": "2026-03-25T23:27:30.574502+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16840,10 +17056,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644462+00:00",
+        "scraped_at": "2026-03-25T23:25:46.156880+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:09186389092322cf",
-        "harmonized_at": "2026-03-25T23:04:22.956304+00:00Z",
+        "raw_data_hash": "sha256:c314aa0b26b66dc0",
+        "harmonized_at": "2026-03-25T23:27:30.581567+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -16968,10 +17184,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:24.344544+00:00",
+        "scraped_at": "2026-03-25T23:25:10.641562+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:849d833dc75547ec",
-        "harmonized_at": "2026-03-25T23:01:35.859712+00:00Z",
+        "raw_data_hash": "sha256:29438226e8fb51ab",
+        "harmonized_at": "2026-03-25T23:25:21.875852+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17090,10 +17306,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644750+00:00",
+        "scraped_at": "2026-03-25T23:25:46.157196+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:990471bf638359cb",
-        "harmonized_at": "2026-03-25T23:04:22.961431+00:00Z",
+        "raw_data_hash": "sha256:829dd2e488efad9a",
+        "harmonized_at": "2026-03-25T23:27:30.587690+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17217,10 +17433,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644779+00:00",
+        "scraped_at": "2026-03-25T23:25:46.157226+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:84e6583adb89bc00",
-        "harmonized_at": "2026-03-25T23:04:22.961967+00:00Z",
+        "raw_data_hash": "sha256:6368eb8279dd73e5",
+        "harmonized_at": "2026-03-25T23:27:30.588343+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17346,10 +17562,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.644830+00:00",
+        "scraped_at": "2026-03-25T23:25:46.157271+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ab537b299f6f138b",
-        "harmonized_at": "2026-03-25T23:04:22.962381+00:00Z",
+        "raw_data_hash": "sha256:2d6c9d483b930987",
+        "harmonized_at": "2026-03-25T23:27:30.588838+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17475,10 +17691,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.645123+00:00",
+        "scraped_at": "2026-03-25T23:25:46.157581+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9806494f2949182d",
-        "harmonized_at": "2026-03-25T23:04:22.967172+00:00Z",
+        "raw_data_hash": "sha256:1df467d961188dca",
+        "harmonized_at": "2026-03-25T23:27:30.594653+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17607,10 +17823,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.645159+00:00",
+        "scraped_at": "2026-03-25T23:25:46.157618+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f01aade570038dd1",
-        "harmonized_at": "2026-03-25T23:04:22.967525+00:00Z",
+        "raw_data_hash": "sha256:374e28d7963bac90",
+        "harmonized_at": "2026-03-25T23:27:30.595069+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17807,10 +18023,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:26.326132+00:00",
+        "scraped_at": "2026-03-25T23:25:12.653050+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:d2d1c6c84d6af062",
-        "harmonized_at": "2026-03-25T23:01:35.860544+00:00Z",
+        "raw_data_hash": "sha256:689089aed86ea222",
+        "harmonized_at": "2026-03-25T23:25:21.876675+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17937,10 +18153,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.645804+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158290+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:73a1ac88904be2cf",
-        "harmonized_at": "2026-03-25T23:04:22.977410+00:00Z",
+        "raw_data_hash": "sha256:7c774327624b792c",
+        "harmonized_at": "2026-03-25T23:27:30.607022+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18078,10 +18294,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:28.232678+00:00",
+        "scraped_at": "2026-03-25T23:25:14.600360+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:a1e47db0de19a14a",
-        "harmonized_at": "2026-03-25T23:01:35.861014+00:00Z",
+        "raw_data_hash": "sha256:110d991330a1b346",
+        "harmonized_at": "2026-03-25T23:25:21.877137+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18203,10 +18419,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:13.998026+00:00",
+        "scraped_at": "2026-03-25T23:25:11.616360+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:846a6bc0c422de8b",
-        "harmonized_at": "2026-03-25T23:01:38.768387+00:00Z",
+        "raw_data_hash": "sha256:16b6c6cf9749f956",
+        "harmonized_at": "2026-03-25T23:25:36.176848+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18338,10 +18554,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646148+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158643+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:820f45401aaf2e1b",
-        "harmonized_at": "2026-03-25T23:04:22.982923+00:00Z",
+        "raw_data_hash": "sha256:f77c539473e84971",
+        "harmonized_at": "2026-03-25T23:27:30.613677+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18472,10 +18688,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:14.652650+00:00",
+        "scraped_at": "2026-03-25T23:25:12.290234+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bed3861ca4012ad7",
-        "harmonized_at": "2026-03-25T23:01:38.768501+00:00Z",
+        "raw_data_hash": "sha256:ceaaf03f2ef47cbc",
+        "harmonized_at": "2026-03-25T23:25:36.176973+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18597,10 +18813,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:15.309667+00:00",
+        "scraped_at": "2026-03-25T23:25:12.850874+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:73d259f5c05bd234",
-        "harmonized_at": "2026-03-25T23:01:38.768646+00:00Z",
+        "raw_data_hash": "sha256:c63465b63cd4cd0a",
+        "harmonized_at": "2026-03-25T23:25:36.177155+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18722,10 +18938,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:15.988976+00:00",
+        "scraped_at": "2026-03-25T23:25:13.550609+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5b333b3511e2df33",
-        "harmonized_at": "2026-03-25T23:01:38.768768+00:00Z",
+        "raw_data_hash": "sha256:9fa222d40f3aff85",
+        "harmonized_at": "2026-03-25T23:25:36.177283+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18852,10 +19068,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:30.250509+00:00",
+        "scraped_at": "2026-03-25T23:25:16.545435+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:6ba479045dc1ba0c",
-        "harmonized_at": "2026-03-25T23:01:35.861459+00:00Z",
+        "raw_data_hash": "sha256:20c7e05dea35c79d",
+        "harmonized_at": "2026-03-25T23:25:21.877562+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18980,10 +19196,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646459+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158966+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:38f688d7f8b7568b",
-        "harmonized_at": "2026-03-25T23:04:22.988148+00:00Z",
+        "raw_data_hash": "sha256:ca561cbcc5871d1e",
+        "harmonized_at": "2026-03-25T23:27:30.619901+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19109,10 +19325,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646472+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158980+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:04803490658cea9c",
-        "harmonized_at": "2026-03-25T23:04:22.988286+00:00Z",
+        "raw_data_hash": "sha256:4d579bd8a7a11707",
+        "harmonized_at": "2026-03-25T23:27:30.620065+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19240,10 +19456,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646483+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158993+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d2fbc695fb452de2",
-        "harmonized_at": "2026-03-25T23:04:22.988417+00:00Z",
+        "raw_data_hash": "sha256:1510f18d342425f2",
+        "harmonized_at": "2026-03-25T23:27:30.620220+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19369,10 +19585,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646500+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159016+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b2aa7896270e237f",
-        "harmonized_at": "2026-03-25T23:04:22.988678+00:00Z",
+        "raw_data_hash": "sha256:b493a005b77d0348",
+        "harmonized_at": "2026-03-25T23:27:30.620546+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19498,10 +19714,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646517+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159034+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8fc3a6198c2ef8ec",
-        "harmonized_at": "2026-03-25T23:04:22.988942+00:00Z",
+        "raw_data_hash": "sha256:93b6d88bf92a878f",
+        "harmonized_at": "2026-03-25T23:27:30.620850+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19632,10 +19848,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646563+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159086+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:65cab437122de625",
-        "harmonized_at": "2026-03-25T23:04:22.989713+00:00Z",
+        "raw_data_hash": "sha256:dfb6399de3252b58",
+        "harmonized_at": "2026-03-25T23:27:30.621795+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19762,10 +19978,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646650+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159175+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f9cd90e6b3eb3e9e",
-        "harmonized_at": "2026-03-25T23:04:22.991328+00:00Z",
+        "raw_data_hash": "sha256:4c05d1435e7fe3dd",
+        "harmonized_at": "2026-03-25T23:27:30.623736+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -19892,10 +20108,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646684+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159207+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3557fc7614f5d66c",
-        "harmonized_at": "2026-03-25T23:04:22.991870+00:00Z",
+        "raw_data_hash": "sha256:4dd79f278d138a14",
+        "harmonized_at": "2026-03-25T23:27:30.624395+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20021,10 +20237,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646753+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159274+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d91f59e0da5fc1d1",
-        "harmonized_at": "2026-03-25T23:04:22.993140+00:00Z",
+        "raw_data_hash": "sha256:9b175885409b0e97",
+        "harmonized_at": "2026-03-25T23:27:30.625891+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20147,10 +20363,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646610+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159134+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7fea89ee61fd05ab",
-        "harmonized_at": "2026-03-25T23:04:22.990679+00:00Z",
+        "raw_data_hash": "sha256:40065f6bf816b11b",
+        "harmonized_at": "2026-03-25T23:27:30.622957+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20277,10 +20493,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646444+00:00",
+        "scraped_at": "2026-03-25T23:25:46.158950+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:42916fbaeaccc898",
-        "harmonized_at": "2026-03-25T23:04:22.987963+00:00Z",
+        "raw_data_hash": "sha256:6a0e6b911bd55a23",
+        "harmonized_at": "2026-03-25T23:27:30.619676+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20404,10 +20620,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646540+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159061+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9ae3de900c6fad6f",
-        "harmonized_at": "2026-03-25T23:04:22.989378+00:00Z",
+        "raw_data_hash": "sha256:a71de4e1c69d43e1",
+        "harmonized_at": "2026-03-25T23:27:30.621395+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20530,10 +20746,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646767+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159300+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4f90a70a6b27622a",
-        "harmonized_at": "2026-03-25T23:04:22.993285+00:00Z",
+        "raw_data_hash": "sha256:995df1f49966299c",
+        "harmonized_at": "2026-03-25T23:27:30.626061+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20655,10 +20871,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:16.649409+00:00",
+        "scraped_at": "2026-03-25T23:25:14.230237+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bf078ca0ba5ba967",
-        "harmonized_at": "2026-03-25T23:01:38.768902+00:00Z",
+        "raw_data_hash": "sha256:5f3db856d4dec113",
+        "harmonized_at": "2026-03-25T23:25:36.177423+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20779,10 +20995,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.646797+00:00",
+        "scraped_at": "2026-03-25T23:25:46.159324+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d736027425ce9f40",
-        "harmonized_at": "2026-03-25T23:04:22.993651+00:00Z",
+        "raw_data_hash": "sha256:424ff1f2c1471e14",
+        "harmonized_at": "2026-03-25T23:27:30.626545+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -20949,10 +21165,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:17.306515+00:00",
+        "scraped_at": "2026-03-25T23:25:14.907256+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e97968a601246896",
-        "harmonized_at": "2026-03-25T23:01:38.769032+00:00Z",
+        "raw_data_hash": "sha256:d71c84b401e03bdb",
+        "harmonized_at": "2026-03-25T23:25:36.177532+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21072,10 +21288,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:17.966008+00:00",
+        "scraped_at": "2026-03-25T23:25:15.586052+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9985071020306113",
-        "harmonized_at": "2026-03-25T23:01:38.769185+00:00Z",
+        "raw_data_hash": "sha256:b26017a0f44e19a2",
+        "harmonized_at": "2026-03-25T23:25:36.177679+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21197,10 +21413,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:18.624661+00:00",
+        "scraped_at": "2026-03-25T23:25:16.148815+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:49e05e75b7f1415c",
-        "harmonized_at": "2026-03-25T23:01:38.769300+00:00Z",
+        "raw_data_hash": "sha256:9d5d673f5294da9e",
+        "harmonized_at": "2026-03-25T23:25:36.177795+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21340,10 +21556,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:19.281194+00:00",
+        "scraped_at": "2026-03-25T23:25:16.824546+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a63ef5189be1dcf4",
-        "harmonized_at": "2026-03-25T23:01:38.769406+00:00Z",
+        "raw_data_hash": "sha256:62191e76a742bdfd",
+        "harmonized_at": "2026-03-25T23:25:36.177899+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21474,10 +21690,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:19.937284+00:00",
+        "scraped_at": "2026-03-25T23:25:17.384370+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:780a0e3c8c77aa21",
-        "harmonized_at": "2026-03-25T23:01:38.769536+00:00Z",
+        "raw_data_hash": "sha256:be59106ac4f4116a",
+        "harmonized_at": "2026-03-25T23:25:36.178016+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21599,10 +21815,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:20.592313+00:00",
+        "scraped_at": "2026-03-25T23:25:18.058542+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7d2c2362c538f793",
-        "harmonized_at": "2026-03-25T23:01:38.769684+00:00Z",
+        "raw_data_hash": "sha256:5bceaa963fd20950",
+        "harmonized_at": "2026-03-25T23:25:36.178183+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21724,10 +21940,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:21.250104+00:00",
+        "scraped_at": "2026-03-25T23:25:18.736197+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d61ff646375f3216",
-        "harmonized_at": "2026-03-25T23:01:38.769819+00:00Z",
+        "raw_data_hash": "sha256:a4aa91d2c711e519",
+        "harmonized_at": "2026-03-25T23:25:36.178313+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21847,10 +22063,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.648392+00:00",
+        "scraped_at": "2026-03-25T23:25:46.161000+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:404b6a168425335a",
-        "harmonized_at": "2026-03-25T23:04:23.019247+00:00Z",
+        "raw_data_hash": "sha256:ddbc0e097180b1ed",
+        "harmonized_at": "2026-03-25T23:27:30.657324+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -21967,10 +22183,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.648097+00:00",
+        "scraped_at": "2026-03-25T23:25:46.160700+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f837340d45eb88e1",
-        "harmonized_at": "2026-03-25T23:04:23.014510+00:00Z",
+        "raw_data_hash": "sha256:ae20547df7e5a87f",
+        "harmonized_at": "2026-03-25T23:27:30.651604+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22096,10 +22312,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.648366+00:00",
+        "scraped_at": "2026-03-25T23:25:46.160974+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:33d77cfbc50ce449",
-        "harmonized_at": "2026-03-25T23:04:23.018814+00:00Z",
+        "raw_data_hash": "sha256:fa1d2ea7b325fe9b",
+        "harmonized_at": "2026-03-25T23:27:30.656794+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22221,10 +22437,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:21.910400+00:00",
+        "scraped_at": "2026-03-25T23:25:19.415577+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:440995b52622c991",
-        "harmonized_at": "2026-03-25T23:01:38.770033+00:00Z",
+        "raw_data_hash": "sha256:716f4c883cbca95d",
+        "harmonized_at": "2026-03-25T23:25:36.178436+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22346,10 +22562,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:22.570876+00:00",
+        "scraped_at": "2026-03-25T23:25:20.094635+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:98d5ae7249947904",
-        "harmonized_at": "2026-03-25T23:01:38.770208+00:00Z",
+        "raw_data_hash": "sha256:887056986c476213",
+        "harmonized_at": "2026-03-25T23:25:36.178546+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22489,10 +22705,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:35.061050+00:00",
+        "scraped_at": "2026-03-25T23:25:32.486241+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4a75f6abbf296a98",
-        "harmonized_at": "2026-03-25T23:01:38.772595+00:00Z",
+        "raw_data_hash": "sha256:c89792c54f2a8271",
+        "harmonized_at": "2026-03-25T23:25:36.180815+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22617,10 +22833,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.650816+00:00",
+        "scraped_at": "2026-03-25T23:25:46.163558+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5701b16fa4251caf",
-        "harmonized_at": "2026-03-25T23:04:23.059087+00:00Z",
+        "raw_data_hash": "sha256:648386da5d0a1bd6",
+        "harmonized_at": "2026-03-25T23:27:30.704473+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22742,10 +22958,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:23.230605+00:00",
+        "scraped_at": "2026-03-25T23:25:20.773271+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:312e71dbf9f0b05b",
-        "harmonized_at": "2026-03-25T23:01:38.770378+00:00Z",
+        "raw_data_hash": "sha256:26a88d585f56b89c",
+        "harmonized_at": "2026-03-25T23:25:36.178704+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22870,10 +23086,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:32.373980+00:00",
+        "scraped_at": "2026-03-25T23:25:18.437063+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:0abbd6521b3ed73c",
-        "harmonized_at": "2026-03-25T23:01:35.861888+00:00Z",
+        "raw_data_hash": "sha256:5d30f3287cd6e857",
+        "harmonized_at": "2026-03-25T23:25:21.878012+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -22995,10 +23211,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.651760+00:00",
+        "scraped_at": "2026-03-25T23:25:46.164537+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fbf8a6b6391726f0",
-        "harmonized_at": "2026-03-25T23:04:23.073969+00:00Z",
+        "raw_data_hash": "sha256:f15392ff22835df6",
+        "harmonized_at": "2026-03-25T23:27:30.722409+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23123,10 +23339,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652292+00:00",
+        "scraped_at": "2026-03-25T23:25:46.164874+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e2df49e6e5c4c10b",
-        "harmonized_at": "2026-03-25T23:04:23.079509+00:00Z",
+        "raw_data_hash": "sha256:ee2e04957d4b5070",
+        "harmonized_at": "2026-03-25T23:27:30.729379+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23252,10 +23468,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652356+00:00",
+        "scraped_at": "2026-03-25T23:25:46.165955+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a3c2a306368bbd63",
-        "harmonized_at": "2026-03-25T23:04:23.079656+00:00Z",
+        "raw_data_hash": "sha256:90c4eceef24cb2c3",
+        "harmonized_at": "2026-03-25T23:27:30.729541+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23383,10 +23599,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652369+00:00",
+        "scraped_at": "2026-03-25T23:25:46.165969+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3b037e1dcc34e454",
-        "harmonized_at": "2026-03-25T23:04:23.079785+00:00Z",
+        "raw_data_hash": "sha256:5b0e4b35dcd1efd5",
+        "harmonized_at": "2026-03-25T23:27:30.729694+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23512,10 +23728,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652407+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166005+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ddef2c0b67ffc873",
-        "harmonized_at": "2026-03-25T23:04:23.080311+00:00Z",
+        "raw_data_hash": "sha256:220f11a40041d2b9",
+        "harmonized_at": "2026-03-25T23:27:30.730310+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23638,10 +23854,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652491+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166083+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a55617b591d5f631",
-        "harmonized_at": "2026-03-25T23:04:23.081652+00:00Z",
+        "raw_data_hash": "sha256:681c4949c0435d3d",
+        "harmonized_at": "2026-03-25T23:27:30.731915+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23764,10 +23980,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652530+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166121+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:77175b8231603562",
-        "harmonized_at": "2026-03-25T23:04:23.082286+00:00Z",
+        "raw_data_hash": "sha256:a456092a3b830f3a",
+        "harmonized_at": "2026-03-25T23:27:30.732711+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23890,10 +24106,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652566+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166152+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:48429d6d3f8bcf7c",
-        "harmonized_at": "2026-03-25T23:04:23.082825+00:00Z",
+        "raw_data_hash": "sha256:585c8778e65c0e73",
+        "harmonized_at": "2026-03-25T23:27:30.733380+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24019,10 +24235,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652667+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166249+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:93bd1581025d45db",
-        "harmonized_at": "2026-03-25T23:04:23.084677+00:00Z",
+        "raw_data_hash": "sha256:6c7c56f0758d34c9",
+        "harmonized_at": "2026-03-25T23:27:30.735565+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24148,10 +24364,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652386+00:00",
+        "scraped_at": "2026-03-25T23:25:46.165986+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4c028191c9fbbb5c",
-        "harmonized_at": "2026-03-25T23:04:23.080053+00:00Z",
+        "raw_data_hash": "sha256:ad224098675b3fb2",
+        "harmonized_at": "2026-03-25T23:27:30.730001+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24274,10 +24490,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652462+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166054+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cee134d60cfb504d",
-        "harmonized_at": "2026-03-25T23:04:23.081205+00:00Z",
+        "raw_data_hash": "sha256:dc56cc663de125d5",
+        "harmonized_at": "2026-03-25T23:27:30.731381+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24401,10 +24617,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652433+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166028+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e98b29d3af1977db",
-        "harmonized_at": "2026-03-25T23:04:23.080751+00:00Z",
+        "raw_data_hash": "sha256:af610ad4807b2a1d",
+        "harmonized_at": "2026-03-25T23:27:30.730825+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24523,10 +24739,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652637+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166221+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b249f42f5314fff7",
-        "harmonized_at": "2026-03-25T23:04:23.084143+00:00Z",
+        "raw_data_hash": "sha256:efe4f499ca227b6f",
+        "harmonized_at": "2026-03-25T23:27:30.734911+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24657,10 +24873,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:23.886111+00:00",
+        "scraped_at": "2026-03-25T23:25:21.447130+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d53a5c88076a6168",
-        "harmonized_at": "2026-03-25T23:01:38.770499+00:00Z",
+        "raw_data_hash": "sha256:ee2b8128ff2e8f8f",
+        "harmonized_at": "2026-03-25T23:25:36.178818+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24788,10 +25004,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652681+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166261+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5379382a8ffc63da",
-        "harmonized_at": "2026-03-25T23:04:23.084832+00:00Z",
+        "raw_data_hash": "sha256:cda0b87df7b2cc31",
+        "harmonized_at": "2026-03-25T23:27:30.735733+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24917,10 +25133,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652712+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166312+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:34fb4be64b41812c",
-        "harmonized_at": "2026-03-25T23:04:23.085365+00:00Z",
+        "raw_data_hash": "sha256:0756ed6e72b9d89b",
+        "harmonized_at": "2026-03-25T23:27:30.736409+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25042,10 +25258,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:24.543592+00:00",
+        "scraped_at": "2026-03-25T23:25:22.007440+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5f42044f1a866859",
-        "harmonized_at": "2026-03-25T23:01:38.770661+00:00Z",
+        "raw_data_hash": "sha256:b3774185495ca291",
+        "harmonized_at": "2026-03-25T23:25:36.178974+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25176,10 +25392,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:25.197140+00:00",
+        "scraped_at": "2026-03-25T23:25:22.564712+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:2fb78904f9bbc5b4",
-        "harmonized_at": "2026-03-25T23:01:38.770758+00:00Z",
+        "raw_data_hash": "sha256:48a200b37fc521d2",
+        "harmonized_at": "2026-03-25T23:25:36.179082+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25304,10 +25520,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652752+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166366+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:acefa4136cb207cd",
-        "harmonized_at": "2026-03-25T23:04:23.085977+00:00Z",
+        "raw_data_hash": "sha256:5f9bf1bfe0c20c44",
+        "harmonized_at": "2026-03-25T23:27:30.737161+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25431,10 +25647,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652812+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166419+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6d8b07e1ce577841",
-        "harmonized_at": "2026-03-25T23:04:23.086787+00:00Z",
+        "raw_data_hash": "sha256:86fe8867528714c1",
+        "harmonized_at": "2026-03-25T23:27:30.738173+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25560,10 +25776,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652841+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166447+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fae8ffb970d22193",
-        "harmonized_at": "2026-03-25T23:04:23.087231+00:00Z",
+        "raw_data_hash": "sha256:8e2f022b0ef1911b",
+        "harmonized_at": "2026-03-25T23:27:30.738733+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25687,10 +25903,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652868+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166472+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:444ba3bbd4178ce4",
-        "harmonized_at": "2026-03-25T23:04:23.087577+00:00Z",
+        "raw_data_hash": "sha256:80ee0ef776571148",
+        "harmonized_at": "2026-03-25T23:27:30.739127+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25821,10 +26037,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:25.851812+00:00",
+        "scraped_at": "2026-03-25T23:25:23.240833+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:586e114266874e5b",
-        "harmonized_at": "2026-03-25T23:01:38.770904+00:00Z",
+        "raw_data_hash": "sha256:0e663e223b348fa0",
+        "harmonized_at": "2026-03-25T23:25:36.179232+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -25946,10 +26162,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:26.507873+00:00",
+        "scraped_at": "2026-03-25T23:25:23.915776+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d8ea6ebf3e4094b0",
-        "harmonized_at": "2026-03-25T23:01:38.771092+00:00Z",
+        "raw_data_hash": "sha256:9187513aaa9414ef",
+        "harmonized_at": "2026-03-25T23:25:36.179373+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26073,10 +26289,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652894+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166493+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8248e629a732038c",
-        "harmonized_at": "2026-03-25T23:04:23.087958+00:00Z",
+        "raw_data_hash": "sha256:ad4e609a4d0fa905",
+        "harmonized_at": "2026-03-25T23:27:30.739597+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26210,10 +26426,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:34.338578+00:00",
+        "scraped_at": "2026-03-25T23:25:20.364664+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:badce6f5ef01107a",
-        "harmonized_at": "2026-03-25T23:01:35.862216+00:00Z",
+        "raw_data_hash": "sha256:032156be0e68e57e",
+        "harmonized_at": "2026-03-25T23:25:21.878342+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26339,10 +26555,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652925+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166520+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:238ea034aec50b41",
-        "harmonized_at": "2026-03-25T23:04:23.088476+00:00Z",
+        "raw_data_hash": "sha256:b292d0fb0cd744c9",
+        "harmonized_at": "2026-03-25T23:27:30.740229+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26462,10 +26678,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:35.718453+00:00",
+        "scraped_at": "2026-03-25T23:25:33.162826+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ded8f4311d21fc86",
-        "harmonized_at": "2026-03-25T23:01:38.772715+00:00Z",
+        "raw_data_hash": "sha256:adb5416ee8f65655",
+        "harmonized_at": "2026-03-25T23:25:36.180929+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26596,10 +26812,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:36.376626+00:00",
+        "scraped_at": "2026-03-25T23:25:33.723875+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:fc8b50a8976a1b08",
-        "harmonized_at": "2026-03-25T23:01:38.772872+00:00Z",
+        "raw_data_hash": "sha256:87e69cef65492c3f",
+        "harmonized_at": "2026-03-25T23:25:36.181101+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26730,10 +26946,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:37.035281+00:00",
+        "scraped_at": "2026-03-25T23:25:34.400478+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ca93aac6e3124910",
-        "harmonized_at": "2026-03-25T23:01:38.772968+00:00Z",
+        "raw_data_hash": "sha256:13f8c43650c5ce40",
+        "harmonized_at": "2026-03-25T23:25:36.181199+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26891,10 +27107,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:27.166180+00:00",
+        "scraped_at": "2026-03-25T23:25:24.592769+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5d0251a9b67ada65",
-        "harmonized_at": "2026-03-25T23:01:38.771221+00:00Z",
+        "raw_data_hash": "sha256:298bd3f4443e82f9",
+        "harmonized_at": "2026-03-25T23:25:36.179491+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27016,10 +27232,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:27.824876+00:00",
+        "scraped_at": "2026-03-25T23:25:25.154502+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3b924ae23a05b5ce",
-        "harmonized_at": "2026-03-25T23:01:38.771373+00:00Z",
+        "raw_data_hash": "sha256:8e59950ae1e4492d",
+        "harmonized_at": "2026-03-25T23:25:36.179639+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27141,10 +27357,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:28.481666+00:00",
+        "scraped_at": "2026-03-25T23:25:25.830565+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:98cbd22e545f7804",
-        "harmonized_at": "2026-03-25T23:01:38.771460+00:00Z",
+        "raw_data_hash": "sha256:647b7b08be67943e",
+        "harmonized_at": "2026-03-25T23:25:36.179724+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27266,10 +27482,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:29.139496+00:00",
+        "scraped_at": "2026-03-25T23:25:26.507366+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b29159f71c44e9dc",
-        "harmonized_at": "2026-03-25T23:01:38.771547+00:00Z",
+        "raw_data_hash": "sha256:34e3bc99cc03171b",
+        "harmonized_at": "2026-03-25T23:25:36.179810+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27391,10 +27607,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:29.796177+00:00",
+        "scraped_at": "2026-03-25T23:25:27.184007+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:29bebd7ac5457832",
-        "harmonized_at": "2026-03-25T23:01:38.771645+00:00Z",
+        "raw_data_hash": "sha256:da9f8a4c7bb2757b",
+        "harmonized_at": "2026-03-25T23:25:36.179904+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27543,10 +27759,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:30.449487+00:00",
+        "scraped_at": "2026-03-25T23:25:27.856683+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6e27f593cd75a5a0",
-        "harmonized_at": "2026-03-25T23:01:38.771742+00:00Z",
+        "raw_data_hash": "sha256:3bb979c56bb53c99",
+        "harmonized_at": "2026-03-25T23:25:36.179997+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27668,10 +27884,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:01:31.107512+00:00",
+        "scraped_at": "2026-03-25T23:25:28.533699+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7c45c8cd783c26df",
-        "harmonized_at": "2026-03-25T23:01:38.771901+00:00Z",
+        "raw_data_hash": "sha256:45f772d6cc4f1420",
+        "harmonized_at": "2026-03-25T23:25:36.180173+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27794,10 +28010,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652949+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166541+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fc066504320f2474",
-        "harmonized_at": "2026-03-25T23:04:23.088830+00:00Z",
+        "raw_data_hash": "sha256:31970276f42b2fd0",
+        "harmonized_at": "2026-03-25T23:27:30.740667+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27920,10 +28136,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652973+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166564+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:60cba6de75647aa6",
-        "harmonized_at": "2026-03-25T23:04:23.089183+00:00Z",
+        "raw_data_hash": "sha256:de2a5b826617ac0b",
+        "harmonized_at": "2026-03-25T23:27:30.741080+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28048,10 +28264,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.652997+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166584+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:29c6bd94a565073a",
-        "harmonized_at": "2026-03-25T23:04:23.089491+00:00Z",
+        "raw_data_hash": "sha256:aee15317423a6ea8",
+        "harmonized_at": "2026-03-25T23:27:30.741459+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28177,10 +28393,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653023+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166604+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7c57cc1874e0be81",
-        "harmonized_at": "2026-03-25T23:04:23.089675+00:00Z",
+        "raw_data_hash": "sha256:1ba5cabb251ffe4f",
+        "harmonized_at": "2026-03-25T23:27:30.741683+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28303,10 +28519,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653047+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166628+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bc3fe900f798b591",
-        "harmonized_at": "2026-03-25T23:04:23.090017+00:00Z",
+        "raw_data_hash": "sha256:baa8ea5e1932c98a",
+        "harmonized_at": "2026-03-25T23:27:30.742093+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28429,10 +28645,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653075+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166647+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:afb10655b5d2eab5",
-        "harmonized_at": "2026-03-25T23:04:23.090315+00:00Z",
+        "raw_data_hash": "sha256:f05b1b5a656ced51",
+        "harmonized_at": "2026-03-25T23:27:30.742488+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28556,10 +28772,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653098+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166666+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f81e70ffe88bb81f",
-        "harmonized_at": "2026-03-25T23:04:23.090592+00:00Z",
+        "raw_data_hash": "sha256:8265ced7d5672276",
+        "harmonized_at": "2026-03-25T23:27:30.742829+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28682,10 +28898,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653120+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166683+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:01d3614f17ba0995",
-        "harmonized_at": "2026-03-25T23:04:23.090923+00:00Z",
+        "raw_data_hash": "sha256:def5fae9fb1c277a",
+        "harmonized_at": "2026-03-25T23:27:30.743227+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28809,10 +29025,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.653157+00:00",
+        "scraped_at": "2026-03-25T23:25:46.166705+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a199879badccfcb5",
-        "harmonized_at": "2026-03-25T23:04:23.091287+00:00Z",
+        "raw_data_hash": "sha256:94dfd2cf1f478252",
+        "harmonized_at": "2026-03-25T23:27:30.743687+00:00Z",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -28826,8 +29042,8 @@
       "artes-palco": [
         "theatro-circo-2025-04-amadeos",
         "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante",
-        "theatro-circo-2026-03-popular",
         "ccb-2026-03-museu-aberto",
+        "theatro-circo-2026-03-popular",
         "ccb-2026-03-alarve",
         "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026",
         "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au",
@@ -28876,6 +29092,7 @@
         "ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre",
         "ccb-2026-03-programa-ludico",
         "ccb-2026-03-programa-vincular-8211-servico-de-educac",
+        "ccb-2026-03-segundo-ciclo",
         "ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu",
         "ccb-2026-03-visitas-guiadas-ao-edificio-centro-cultu",
         "ccb-2026-03-primeira-infancia",
@@ -28884,7 +29101,6 @@
         "ccb-2026-03-educacao-inclusiva",
         "ccb-2026-03-universitario",
         "ccb-2026-03-visitas-orientadas-e-tematicas-oficinas",
-        "ccb-2026-03-segundo-ciclo",
         "ccb-2026-04-oficinas-de-ferias-de-pascoa-no-museu",
         "ccb-2026-04-o-coro-missao-democracia-8211-estreia",
         "ccb-2026-04-revisitar-experimentar-e-aprender",
@@ -28912,13 +29128,29 @@
         "ccb-2026-06-segundo-ciclo",
         "ccb-2026-06-educacao-inclusiva"
       ],
+      "pensamento": [
+        "ccb-2025-09-notas-de-musica-8211-ciclo-de-conferenci",
+        "ccb-2026-03-notas-de-musica-8211-ciclo-de-conferenci",
+        "ccb-2026-03-sobre-a-verdade-da-mentira",
+        "ccb-2026-03-programas-publicos",
+        "ccb-2026-04-conferencia-8211-a-sinfonia-em-finais-do",
+        "ccb-2026-04-programas-publicos",
+        "ccb-2026-04-cidade-cultural-participativa",
+        "ccb-2026-04-notas-de-musica-8211-ciclo-de-conferenci",
+        "ccb-2026-04-sobre-a-verdade-da-mentira",
+        "ccb-2026-05-conferencia-8211-o-belo-em-som-viagem-at",
+        "ccb-2026-05-constituicao-8211-estreia",
+        "ccb-2026-05-notas-de-musica-8211-ciclo-de-conferenci",
+        "ccb-2026-05-sobre-a-verdade-da-mentira",
+        "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca"
+      ],
       "musica": [
         "theatro-circo-2026-01-tres-tempos",
         "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m",
         "theatro-circo-2026-03-la-guitarra-flamenca-de-yerai-cortes",
         "ccb-2026-03-lee-ritenour-038-friends",
-        "ccb-2026-03-concertos-filho-unico",
         "ccb-2026-03-ana-sofia-varela",
+        "ccb-2026-03-concertos-filho-unico",
         "theatro-circo-2026-03-dora-morelenbaum",
         "ccb-2026-04-concerto-de-pascoa-requiem-de-mozart",
         "ccb-2026-04-sinfonia-n-41-8220jupiter8221-de-mozart",
@@ -28966,21 +29198,6 @@
         "ccb-2026-11-marco-rodrigues-canta-carlos-do-carmo",
         "ccb-2026-11-al-di-meola",
         "ccb-2026-12-glenn-miller-orchestra"
-      ],
-      "pensamento": [
-        "ccb-2026-03-notas-de-musica-8211-ciclo-de-conferenci",
-        "ccb-2026-03-sobre-a-verdade-da-mentira",
-        "ccb-2026-03-programas-publicos",
-        "ccb-2026-04-conferencia-8211-a-sinfonia-em-finais-do",
-        "ccb-2026-04-programas-publicos",
-        "ccb-2026-04-cidade-cultural-participativa",
-        "ccb-2026-04-notas-de-musica-8211-ciclo-de-conferenci",
-        "ccb-2026-04-sobre-a-verdade-da-mentira",
-        "ccb-2026-05-conferencia-8211-o-belo-em-som-viagem-at",
-        "ccb-2026-05-constituicao-8211-estreia",
-        "ccb-2026-05-notas-de-musica-8211-ciclo-de-conferenci",
-        "ccb-2026-05-sobre-a-verdade-da-mentira",
-        "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca"
       ],
       "outros": [
         "tndm-2026-03-filodemo",
@@ -29148,26 +29365,28 @@
         "tndm-2026-07-o-cume"
       ],
       "ccb": [
+        "ccb-2025-09-notas-de-musica-8211-ciclo-de-conferenci",
+        "ccb-2026-03-revisitar-experimentar-e-aprender",
+        "ccb-2026-03-lee-ritenour-038-friends",
         "ccb-2026-03-notas-de-musica-8211-ciclo-de-conferenci",
         "ccb-2026-03-sobre-a-verdade-da-mentira",
-        "ccb-2026-03-lee-ritenour-038-friends",
-        "ccb-2026-03-programas-publicos",
         "ccb-2026-03-museu-aberto",
+        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
+        "ccb-2026-03-ana-sofia-varela",
+        "ccb-2026-03-programas-publicos",
         "ccb-2026-03-alarve",
         "ccb-2026-03-avenida-211",
         "ccb-2026-03-lugar-de-estar",
         "ccb-2026-03-habitar-portugal",
-        "ccb-2026-03-revisitar-experimentar-e-aprender",
         "ccb-2026-03-avenida-ludica",
-        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
         "ccb-2026-03-concertos-filho-unico",
-        "ccb-2026-03-ana-sofia-varela",
         "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas",
         "ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre",
         "ccb-2026-03-visitas-as-exposicoes",
         "ccb-2026-03-programa-ludico",
         "ccb-2026-03-james-webb-theres-no-place-called-home-b",
         "ccb-2026-03-programa-vincular-8211-servico-de-educac",
+        "ccb-2026-03-segundo-ciclo",
         "ccb-2026-03-uma-deriva-atlantica",
         "ccb-2026-03-may-i-help-you-posso-ajudar",
         "ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu",
@@ -29180,7 +29399,6 @@
         "ccb-2026-03-universitario",
         "ccb-2026-03-visitas-orientadas-e-tematicas-oficinas",
         "ccb-2026-03-festas-de-aniversario-no-museu",
-        "ccb-2026-03-segundo-ciclo",
         "ccb-2026-04-programa-missao-democracia",
         "ccb-2026-04-visitas-as-exposicoes",
         "ccb-2026-04-concerto-de-pascoa-requiem-de-mozart",
@@ -29291,31 +29509,32 @@
         "theatro-circo-2025-04-amadeos"
       ],
       "2025-09": [
-        "tndm-2025-09-oficinas-de-teatro"
+        "tndm-2025-09-oficinas-de-teatro",
+        "ccb-2025-09-notas-de-musica-8211-ciclo-de-conferenci"
       ],
       "2026-01": [
         "theatro-circo-2026-01-tres-tempos"
       ],
       "2026-03": [
         "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m",
+        "ccb-2026-03-revisitar-experimentar-e-aprender",
         "theatro-circo-2026-03-la-guitarra-flamenca-de-yerai-cortes",
+        "ccb-2026-03-lee-ritenour-038-friends",
         "ccb-2026-03-notas-de-musica-8211-ciclo-de-conferenci",
         "ccb-2026-03-sobre-a-verdade-da-mentira",
-        "ccb-2026-03-lee-ritenour-038-friends",
         "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante",
+        "ccb-2026-03-museu-aberto",
         "theatro-circo-2026-03-popular",
         "tndm-2026-03-filodemo",
+        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
+        "ccb-2026-03-ana-sofia-varela",
         "ccb-2026-03-programas-publicos",
-        "ccb-2026-03-museu-aberto",
         "ccb-2026-03-alarve",
         "ccb-2026-03-avenida-211",
         "ccb-2026-03-lugar-de-estar",
         "ccb-2026-03-habitar-portugal",
-        "ccb-2026-03-revisitar-experimentar-e-aprender",
         "ccb-2026-03-avenida-ludica",
-        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
         "ccb-2026-03-concertos-filho-unico",
-        "ccb-2026-03-ana-sofia-varela",
         "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026",
         "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au",
         "theatro-circo-2026-03-dora-morelenbaum",
@@ -29328,6 +29547,7 @@
         "ccb-2026-03-james-webb-theres-no-place-called-home-b",
         "ccb-2026-03-programa-vincular-8211-servico-de-educac",
         "theatro-circo-2026-03-blue-moon",
+        "ccb-2026-03-segundo-ciclo",
         "ccb-2026-03-uma-deriva-atlantica",
         "ccb-2026-03-may-i-help-you-posso-ajudar",
         "ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu",
@@ -29340,7 +29560,6 @@
         "ccb-2026-03-universitario",
         "ccb-2026-03-visitas-orientadas-e-tematicas-oficinas",
         "ccb-2026-03-festas-de-aniversario-no-museu",
-        "ccb-2026-03-segundo-ciclo",
         "theatro-circo-2026-03-porta-do-ceu-ctb"
       ],
       "2026-04": [

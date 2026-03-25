@@ -1,8 +1,8 @@
 {
   "venue_id": "culturgest",
-  "scraped": 0,
+  "scraped": 1,
   "valid": 0,
-  "invalid": 0,
+  "invalid": 1,
   "errors": [],
   "cache_hit": false,
   "merge_stats": {},
