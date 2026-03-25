@@ -27,6 +27,14 @@ from bs4 import BeautifulSoup
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+import sys as _sys, os as _os
+_sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))))
+try:
+    from pipeline.core.http_cache import ConditionalSession as _ConditionalSession
+    _HTTP_CACHE_AVAILABLE = True
+except ImportError:
+    _HTTP_CACHE_AVAILABLE = False
+
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -99,6 +107,13 @@ def _make_session() -> requests.Session:
     session.mount("http://",  adapter)
     session.headers.update(HEADERS)
     return session
+
+
+def _make_conditional_session():
+    base = _make_session()
+    if _HTTP_CACHE_AVAILABLE:
+        return _ConditionalSession(venue_id=VENUE_ID, session=base)
+    return None
 
 
 def _get(session, url, timeout=TIMEOUT, params=None):
@@ -302,7 +317,7 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
         if not deduped:
             continue
 
-        # Visitar cada página individual para dados completos
+        cond_session = _make_conditional_session()
         events = []
         for i, entry in enumerate(deduped):
             ev = _parse_event_page(
@@ -311,6 +326,7 @@ def _scrape_via_programme_page(session: requests.Session) -> list[dict]:
                 title_hint=entry["title"],
                 cover_hint=entry["cover"],
                 cat_hint=entry["category"],
+                cond_session=cond_session,
             )
             if ev:
                 events.append(ev)
@@ -399,9 +415,10 @@ def _scrape_via_sitemap(session: requests.Session) -> list[dict]:
     if not urls:
         return []
 
+    cond_session = _make_conditional_session()
     events, skipped = [], 0
     for i, url in enumerate(urls):
-        ev = _parse_event_page(url, session)
+        ev = _parse_event_page(url, session, cond_session=cond_session)
         if ev:
             events.append(ev)
         else:
@@ -425,8 +442,31 @@ def _parse_event_page(
     title_hint: str = None,
     cover_hint: str = None,
     cat_hint: str = None,
+    cond_session=None,
 ) -> Optional[dict]:
-    resp = _get(session, url)
+    # ETag/304: se página não mudou e temos hints suficientes, usar hints
+    if cond_session is not None:
+        resp = cond_session.get_conditional(url)
+        if resp is None and title_hint and date_hint:
+            d1, d2 = _parse_tc_date(date_hint)
+            if d1:
+                return {
+                    "source_id": url.rstrip("/").split("/")[-1],
+                    "source_url": url, "title": title_hint, "subtitle": None,
+                    "description": "", "categories": [cat_hint] if cat_hint else [],
+                    "tags": [], "dates": [_make_date(d1)], "date_open": d1,
+                    "date_close": d2, "is_ongoing": bool(d2), "price_raw": "",
+                    "ticketing_url": None, "audience": None, "cover_image": cover_hint,
+                    "space_id": None, "credits_raw": None,
+                    "accessibility": {"has_sign_language": False, "has_audio_description": False,
+                                      "has_subtitles": False, "is_relaxed_performance": False,
+                                      "wheelchair_accessible": True, "notes": None},
+                    "scraped_at": datetime.now(timezone.utc).isoformat(), "_method": "tc-304",
+                }
+        if resp is None:
+            return None
+    else:
+        resp = _get(session, url)
     if not resp:
         return None
 
