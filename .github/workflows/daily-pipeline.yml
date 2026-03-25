@@ -10,65 +10,147 @@ on:
         required: false
         default: 'false'
         type: boolean
+      venue:
+        description: 'Venue específico (deixar vazio para todos)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
 
 jobs:
-  pipeline:
-    name: Scrape - Harmonize - Validate - Dedup - Output
+
+  # ─── JOB 1: Descobrir venues dinamicamente ───────────────────────────────
+  discover:
+    name: Descobrir venues
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    outputs:
+      venues: ${{ steps.list.outputs.venues }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: list
+        name: Listar scrapers
+        run: |
+          if [ -n "${{ github.event.inputs.venue }}" ]; then
+            # Venue específico (para debug manual)
+            VENUES='["${{ github.event.inputs.venue }}"]'
+          else
+            # Descoberta automática: qualquer pasta com scraper.py
+            VENUES=$(find pipeline/scrapers -name "scraper.py" \
+              | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
+              | sort \
+              | jq -R . | jq -sc .)
+          fi
+          echo "venues=$VENUES" >> $GITHUB_OUTPUT
+          echo "Venues: $VENUES"
+
+  # ─── JOB 2: Scrape paralelo — um job por venue ───────────────────────────
+  # fail-fast: false → um venue a falhar não cancela os outros
+  scrape:
+    name: Scrape ${{ matrix.venue }}
+    needs: discover
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        venue: ${{ fromJson(needs.discover.outputs.venues) }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependencias
-        run: |
-          pip install -r requirements.txt
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
 
-      - name: Correr pipeline
+      # Restaurar cache do venue do run anterior (evita re-scrape desnecessário)
+      - name: Restaurar cache do venue
+        uses: actions/cache@v4
+        with:
+          path: data/cache/${{ matrix.venue }}.cache.json
+          key: venue-cache-${{ matrix.venue }}-${{ hashFiles('pipeline/scrapers/${{ matrix.venue }}/scraper.py') }}
+          restore-keys: |
+            venue-cache-${{ matrix.venue }}-
+
+      - name: Scrape ${{ matrix.venue }}
         env:
-          GMAIL_USER: ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-          NTFY_URL: ${{ secrets.NTFY_URL }}
+          FORCE: ${{ github.event.inputs.force_refresh == 'true' && '--force' || '' }}
         run: |
-          FORCE=""
-          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
-            FORCE="--force"
-          fi
-          python -m pipeline.run $FORCE
+          python -m pipeline.run_venue ${{ matrix.venue }} $FORCE
 
-      - name: Enviar notificacoes
+      - name: Upload artefacto do venue
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: venue-${{ matrix.venue }}
+          path: |
+            data/events/${{ matrix.venue }}.json
+            data/venues/${{ matrix.venue }}.json
+            data/logs/venue-${{ matrix.venue }}.json
+          retention-days: 1
+          if-no-files-found: warn
+
+  # ─── JOB 3: Agregar, dedup, gerar master.json e publicar ─────────────────
+  aggregate:
+    name: Agregar e publicar
+    needs: [discover, scrape]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Corre mesmo que alguns venues falhem
+    if: always() && needs.discover.result == 'success'
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Download artefactos de todos os venues
+        uses: actions/download-artifact@v4
+        with:
+          pattern: venue-*
+          merge-multiple: true
+          path: data/
+
+      - name: Agregar, dedup e gerar master.json
+        run: python -m pipeline.aggregate
+
+      - name: Reconstruir index.html com dados actualizados
+        run: python -m pipeline.build_index
+
+      - name: Enviar notificações
         if: always()
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           NTFY_URL: ${{ secrets.NTFY_URL }}
-        run: |
-          python -m pipeline.utils.notify
+        run: python -m pipeline.utils.notify
 
-      - name: Commit dos dados gerados
-        if: success()
+      - name: Commit
         run: |
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
-          git add data/
-          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git add data/ index.html
+          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ needs.discover.outputs.venues }}"
           git push
 
-      - name: Upload relatorio
+      - name: Upload relatório
         if: always()
         uses: actions/upload-artifact@v4
         with:
