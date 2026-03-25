@@ -1,10 +1,10 @@
 """
-Culturgest Scraper — Versão 5 (25 Mar 2026) — HTML-only agressivo
+Culturgest Scraper — Versão 7 (testada - 25 Mar 2026)
+Extração agressiva + logs detalhados
 """
 
 import re
 import time
-import json as _json
 import logging
 import warnings
 from datetime import datetime, timezone
@@ -25,7 +25,6 @@ TIMEOUT = 25
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
 MONTH_PT = {
@@ -51,12 +50,13 @@ def _get(session, url, params=None):
         r.raise_for_status()
         return r
     except Exception as e:
-        logger.warning(f"Erro {url}: {e}")
+        logger.warning(f"Erro ao aceder {url}: {e}")
         return None
 
 # ---------------------------------------------------------------------------
 def _parse_date(text: str) -> Optional[str]:
-    if not text: return None
+    if not text:
+        return None
     t = re.sub(r"\s+", " ", text.strip()).lower()
     m = re.match(r"(\d{1,2})(?:[–\-](\d{1,2}))?\s+([a-záéíóú]+)(?:\s+(\d{4}))?", t)
     if m:
@@ -68,69 +68,92 @@ def _parse_date(text: str) -> Optional[str]:
     return None
 
 # ---------------------------------------------------------------------------
+# EXTRAÇÃO DE LINKS - MUITO AGRESSIVA
+# ---------------------------------------------------------------------------
 def _extract_event_links(soup: BeautifulSoup) -> List[str]:
     links = set()
+
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
         if not href or not href.startswith("/pt/programacao/"):
             continue
+
         full = f"{WEBSITE}{href}" if not href.startswith("http") else href
 
-        # Aceita qualquer link de evento individual (mais largo)
-        if ("/por-evento/" not in full and 
-            "/agenda-pdf/" not in full and 
-            "/archive/" not in full and 
-            len(full.rstrip("/").split("/")) >= 5):
+        # Exclui páginas de listagem
+        if any(x in full for x in ["/por-evento/", "/agenda-pdf/", "/archive/", "/filtrar/"]):
+            continue
+
+        # Aceita links que parecem eventos individuais
+        parts = full.rstrip("/").split("/")
+        if len(parts) >= 6 and len(parts[-1]) > 4 and not parts[-1].isdigit():
             links.add(full)
+
+    # Busca adicional dentro de cards de eventos
+    for container in soup.find_all(["div", "article", "li"], class_=re.compile(r"event|card|item|listing|program", re.I)):
+        for a in container.find_all("a", href=True):
+            href = a["href"].strip()
+            if href.startswith("/pt/programacao/") and "/por-evento/" not in href:
+                full = f"{WEBSITE}{href}" if not href.startswith("http") else href
+                links.add(full)
+
     return list(links)
 
 # ---------------------------------------------------------------------------
 def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     resp = _get(session, url)
     if not resp:
-        logger.debug(f"404 ou erro ao aceder evento: {url}")
+        logger.debug(f"Não acedido: {url}")
         return None
 
     soup = BeautifulSoup(resp.text, "lxml")
-    title = soup.find("h1")
-    title = title.get_text(strip=True) if title else ""
 
-    if len(title) < 3:
-        meta_title = soup.find("meta", property="og:title")
-        title = meta_title["content"].strip() if meta_title else ""
-        if len(title) < 3:
-            return None
+    # Título
+    title = ""
+    h1 = soup.find("h1")
+    if h1:
+        title = h1.get_text(strip=True)
+    if not title:
+        meta = soup.find("meta", property="og:title")
+        title = meta.get("content", "").strip() if meta else ""
+
+    if len(title) < 4:
+        return None
 
     # Data
     date_str = ""
-    for sel in ["time", ".date", ".when", "[class*=data]", ".schedule"]:
+    for sel in ["time", ".date", ".when", ".event-date", "[class*=data]", ".schedule"]:
         el = soup.select_one(sel)
         if el:
             date_str = el.get("datetime") or el.get_text(strip=True)
-            break
+            if date_str:
+                break
     date_open = _parse_date(date_str)
 
     # Descrição
     desc = ""
-    for sel in [".description", ".lead", "article", ".content", ".text"]:
+    for sel in [".description", ".lead", "article", ".content", ".text", ".body"]:
         el = soup.select_one(sel)
-        if el and len(el.get_text(strip=True)) > 80:
+        if el and len(el.get_text(strip=True)) > 100:
             desc = el.get_text(separator="\n", strip=True)
             break
 
-    # Imagem + bilheteira (simplificado)
-    cover = soup.find("meta", property="og:image")
-    cover = cover["content"] if cover else None
+    # Imagem e bilheteira
+    cover = None
+    meta_img = soup.find("meta", property="og:image")
+    if meta_img:
+        cover = meta_img.get("content")
 
     ticketing = None
     for a in soup.find_all("a", href=True):
-        if any(w in a.get_text(strip=True).lower() for w in ["bilhete", "comprar", "reservar", "ticket"]):
+        txt = a.get_text(strip=True).lower()
+        if any(w in txt for w in ["bilhete", "comprar", "reservar", "ticket"]):
             ticketing = a["href"]
             if not ticketing.startswith("http"):
                 ticketing = f"{WEBSITE}{ticketing}"
             break
 
-    logger.info(f"✓ Evento extraído: {title[:80]}...")
+    logger.info(f"✓ Extraído com sucesso: {title[:100]}")
 
     return {
         "source_id": url.rstrip("/").split("/")[-1],
@@ -143,7 +166,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "cover_image": cover,
         "location": "Culturgest",
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "_method": "culturgest-html-v5",
+        "_method": "culturgest-html-v7",
     }
 
 # ---------------------------------------------------------------------------
@@ -152,14 +175,14 @@ def run() -> List[dict]:
     all_events = []
     seen = set()
 
-    logger.info("CULTURGEST v5: scraping HTML principal + links individuais")
+    logger.info("CULTURGEST v7: extração agressiva de links (test version)")
 
     for typ in TYPOLOGIES:
         params = {"typology": typ} if typ is not None else {}
-        url = f"{WEBSITE}/pt/programacao/por-evento/"
+        list_url = f"{WEBSITE}/pt/programacao/por-evento/"
 
         time.sleep(REQUEST_DELAY)
-        resp = _get(session, url, params)
+        resp = _get(session, list_url, params)
         if not resp:
             continue
 
@@ -168,11 +191,12 @@ def run() -> List[dict]:
 
         logger.info(f"Filtro typology={typ or 'todos'} → {len(event_links)} links encontrados")
 
-        for link in event_links:
+        for i, link in enumerate(event_links):
             if link in seen:
                 continue
             seen.add(link)
 
+            logger.debug(f"Processando link {i+1}/{len(event_links)}: {link}")
             ev = _parse_single_event(link, session)
             if ev:
                 all_events.append(ev)
