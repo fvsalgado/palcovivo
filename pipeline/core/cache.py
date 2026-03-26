@@ -1,12 +1,14 @@
 """
-Primeira Plateia — Cache v2
-Melhorias vs v1:
+Primeira Plateia — Cache v2.1
+Melhorias vs v2:
   - Cache por URL individual (não só por venue monolítico)
   - ETag / Last-Modified → HTTP 304 evita re-download
   - Content hash por evento → detecta mudanças reais
   - TTL diferenciado: futuro/próximo/distante/passado
   - Tombstone: evento desaparecido ≠ apagado imediatamente
+  - Tombstone imediato para eventos passados há > TOMBSTONE_PAST_DAYS (90)
   - Regressão guard: novo scrape só substitui se score ≥ anterior
+  - Retenção de backups: 7 diários + 1 semanal + 1 mensal (substitui BACKUPS_MAX fixo)
 """
 
 import hashlib
@@ -262,7 +264,8 @@ def _fill_gaps(target: dict, source: dict) -> None:
 # TOMBSTONE — evento desaparecido ≠ apagado
 # ---------------------------------------------------------------------------
 
-TOMBSTONE_DAYS = 7  # marcar como inactivo após N dias sem ser visto
+TOMBSTONE_DAYS = 7       # marcar como inactivo após N dias sem ser visto
+TOMBSTONE_PAST_DAYS = 90  # tombstone imediato se evento passou há mais de N dias
 
 
 def mark_not_seen(event: dict) -> dict:
@@ -276,7 +279,23 @@ def mark_not_seen(event: dict) -> dict:
 
 
 def should_tombstone(event: dict) -> bool:
-    """Verifica se evento deve ser desactivado (não visto há > TOMBSTONE_DAYS)."""
+    """
+    Verifica se evento deve ser desactivado. Duas condições independentes:
+    1. Não foi visto há > TOMBSTONE_DAYS (desapareceu do feed).
+    2. O evento passou há > TOMBSTONE_PAST_DAYS (90 dias) — tombstone imediato,
+       independentemente de estar ou não no feed.
+    """
+    # Condição 2: evento muito antigo → tombstone imediato
+    date_last = event.get("date_last") or event.get("date_first")
+    if date_last:
+        try:
+            past_days = (datetime.now() - datetime.fromisoformat(date_last)).days
+            if past_days > TOMBSTONE_PAST_DAYS:
+                return True
+        except Exception:
+            pass
+
+    # Condição 1: não visto há demasiado tempo
     not_seen = (event.get("pipeline") or {}).get("not_seen_since")
     if not not_seen:
         return False
@@ -370,3 +389,109 @@ def clear_cache(venue_id: str = None) -> None:
                 except OSError:
                     pass
         logger.info("Cache: todos os ficheiros limpos")
+
+
+# ---------------------------------------------------------------------------
+# RETENÇÃO DE BACKUPS — 7 diários + 1 semanal + 1 mensal
+# ---------------------------------------------------------------------------
+# Política:
+#   - Manter os últimos 7 backups diários (1 por dia, o mais recente de cada dia)
+#   - Manter 1 backup semanal por semana ISO nas últimas 4 semanas
+#   - Manter 1 backup mensal por mês nos últimos 12 meses
+#   - Apagar todos os restantes
+#
+# Formato dos nomes: YYYYMMDD-HHMMSS.json (já usado pelo run_venue.py)
+# ---------------------------------------------------------------------------
+
+def prune_backups(backup_dir: Path, dry_run: bool = False) -> dict:
+    """
+    Aplica a política de retenção a um directório de backups de venue.
+
+    Parâmetros:
+        backup_dir: Path para data/backups/{venue_id}/
+        dry_run:    Se True, reporta o que faria sem apagar nada.
+
+    Retorna:
+        {"kept": int, "deleted": int, "kept_files": [...], "deleted_files": [...]}
+    """
+    from datetime import date as _date
+
+    files = sorted(backup_dir.glob("*.json"))
+    if not files:
+        return {"kept": 0, "deleted": 0, "kept_files": [], "deleted_files": []}
+
+    # Parsear datas dos nomes de ficheiro
+    parsed: list[tuple[datetime, Path]] = []
+    for f in files:
+        try:
+            # Formato: YYYYMMDD-HHMMSS.json
+            stem = f.stem  # e.g. "20260326-160541"
+            dt = datetime.strptime(stem, "%Y%m%d-%H%M%S")
+            parsed.append((dt, f))
+        except ValueError:
+            # Nome não reconhecido → preservar por precaução
+            parsed.append((datetime.min, f))
+
+    parsed.sort(key=lambda x: x[0])
+    now = datetime.now()
+
+    # ── Seleccionar ficheiros a manter ──────────────────────────────────────
+
+    keep: set[Path] = set()
+
+    # 1. 7 diários: 1 por dia (o mais recente de cada dia), últimos 7 dias
+    days_seen: dict[_date, Path] = {}
+    for dt, f in reversed(parsed):  # mais recente primeiro
+        d = dt.date()
+        if d not in days_seen:
+            days_seen[d] = f
+    for day, f in sorted(days_seen.items(), reverse=True)[:7]:
+        keep.add(f)
+
+    # 2. 1 semanal por semana ISO, últimas 4 semanas
+    weeks_seen: dict[tuple, Path] = {}
+    cutoff_weekly = now - timedelta(weeks=4)
+    for dt, f in reversed(parsed):
+        if dt < cutoff_weekly:
+            continue
+        iso_week = (dt.year, dt.isocalendar()[1])  # (ano, semana ISO)
+        if iso_week not in weeks_seen:
+            weeks_seen[iso_week] = f
+    keep.update(weeks_seen.values())
+
+    # 3. 1 mensal por mês, últimos 12 meses
+    months_seen: dict[tuple, Path] = {}
+    cutoff_monthly = now - timedelta(days=365)
+    for dt, f in reversed(parsed):
+        if dt < cutoff_monthly:
+            continue
+        month_key = (dt.year, dt.month)
+        if month_key not in months_seen:
+            months_seen[month_key] = f
+    keep.update(months_seen.values())
+
+    # ── Apagar o que não é para manter ────────────────────────────────────
+    to_delete = [f for _, f in parsed if f not in keep]
+
+    if not dry_run:
+        for f in to_delete:
+            try:
+                f.unlink()
+            except OSError as e:
+                logger.warning(f"prune_backups: não foi possível apagar {f.name} — {e}")
+
+    kept_names    = sorted(f.name for f in keep)
+    deleted_names = sorted(f.name for f in to_delete)
+
+    logger.info(
+        f"prune_backups {backup_dir.name}: "
+        f"mantidos {len(kept_names)}, apagados {len(deleted_names)}"
+        + (" [dry-run]" if dry_run else "")
+    )
+
+    return {
+        "kept":          len(kept_names),
+        "deleted":       len(deleted_names),
+        "kept_files":    kept_names,
+        "deleted_files": deleted_names,
+    }
