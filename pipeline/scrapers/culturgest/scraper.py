@@ -1,5 +1,5 @@
 """
-Culturgest Scraper — Versão 16 (26 Mar 2026)
+Culturgest Scraper — Versão 17 (26 Mar 2026)
 
 SOLUÇÃO DEFINITIVA:
   O sitemap.xml contém todos os URLs de /pt/programacao/<slug>/ directamente.
@@ -20,7 +20,6 @@ SOLUÇÃO DEFINITIVA:
     - Filtro opcional por data para correr só eventos futuros
 """
 
-import os
 import re
 import time
 import json as _json
@@ -169,10 +168,15 @@ def _get_event_urls_from_sitemap(session: requests.Session) -> List[str]:
 # STEP 2: Parsers de campos
 # ---------------------------------------------------------------------------
 
-def _parse_date(text: str) -> Optional[str]:
+def _parse_date(text: str, ref_year: Optional[str] = None) -> Optional[str]:
+    """
+    Parseia datas como '26 MAR', '26 MAR 2022', '– 12 JUN 2022'.
+    ref_year: ano de fallback quando a data não tem ano explícito.
+    """
     if not text:
         return None
     t = re.sub(r"\s+", " ", text.strip()).lower()
+    t = re.sub(r"^[–—\-]\s*", "", t).strip()  # remover dash inicial (date_end)
     t = re.sub(r"\b(seg|ter|qua|qui|sex|s[aá]b|dom)\b\.?", "", t).strip()
     t = t.replace(",", "").strip()
     m = re.match(r"(\d{1,2})\s+([a-záéíóúç]+)(?:\s+(\d{4}))?", t)
@@ -180,9 +184,32 @@ def _parse_date(text: str) -> Optional[str]:
         day = m.group(1).zfill(2)
         raw_month = m.group(2)
         month = MONTH_PT.get(raw_month[:3]) or MONTH_PT.get(raw_month)
-        year = m.group(3) or str(datetime.now().year)
+        year = m.group(3) or ref_year or str(datetime.now().year)
         if month:
             return f"{year}-{month}-{day}"
+    return None
+
+
+def _parse_time_range(text: str) -> tuple:
+    """Extrai (time_start, time_end) de '13:00 – 18:00' ou '22:00 - 00:00'."""
+    m = re.search(r"(\d{1,2}[h:]\d{2})\s*[–—\-]\s*(\d{1,2}[h:]\d{2})", text)
+    if m:
+        return _parse_time(m.group(1)), _parse_time(m.group(2))
+    return None, None
+
+
+def _parse_weekday_schedule(text: str) -> Optional[dict]:
+    """
+    Parseia horários semanais como 'TER A DOM 13:00 – 18:00'.
+    Devolve {weekdays, time_start, time_end} ou None.
+    """
+    t = text.lower()
+    day_mentions = re.findall(r"\b(seg|ter|qua|qui|sex|s[aá]b|dom)\b", t)
+    time_start, time_end = _parse_time_range(t)
+    if not time_start:
+        time_start = _parse_time(t)
+    if day_mentions or time_start:
+        return {"weekdays": day_mentions, "time_start": time_start, "time_end": time_end}
     return None
 
 
@@ -226,6 +253,13 @@ def _parse_duration(text: str) -> Optional[int]:
 
 
 def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
+    """
+    Extrai sessões de um evento. Três padrões suportados:
+
+    1. Sessões individuais no .date block: '26 MAR 21:00', '27 MAR 21:00'
+    2. Range de datas com horário semanal: '26 MAR – 12 JUN 2022' + 'TER A DOM 13:00 – 18:00'
+    3. Sessões especiais no .highlight: '25 MAR 22:00 - 00:00' (inaugurações, etc.)
+    """
     sessions = []
     date_block = (
         soup.select_one(".description-aside .event-info-block.date")
@@ -233,25 +267,133 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
     )
     if not date_block:
         return sessions
+
     for br in date_block.find_all("br"):
         br.replace_with("\n")
+
+    # Extrair linhas do bloco de datas
     paragraphs = date_block.find_all("p")
+    raw_lines = []
     if paragraphs:
         for p in paragraphs:
-            lines = [l.strip() for l in p.get_text().splitlines() if l.strip()]
-            _extract_sessions_from_lines(lines, sessions)
+            raw_lines += [l.strip() for l in p.get_text().splitlines() if l.strip()]
     else:
         raw = date_block.get_text(separator="\n", strip=True)
-        lines = [l.strip() for l in raw.splitlines() if l.strip()]
-        _extract_sessions_from_lines(lines, sessions)
+        raw_lines = [l.strip() for l in raw.splitlines() if l.strip()]
+
+    # Detectar se é range (ex: "26 MAR" + "– 12 JUN 2022") ou lista de sessões
+    # Um range tem exactamente uma linha de início e outra com dash "–"
+    date_start = None
+    date_end = None
+    ref_year = None  # ano extraído do date_end para corrigir date_start sem ano
+
+    # Primeira passagem: recolher datas para detectar range
+    parsed_dates = []
+    for line in raw_lines:
+        clean = re.sub(r"^[–—\-]\s*", "", line).strip()
+        d = _parse_date(clean)
+        has_dash = bool(re.match(r"^[–—\-]", line))
+        has_year = bool(re.search(r"\d{4}", clean))
+        if d:
+            parsed_dates.append((d, has_dash, has_year, clean))
+
+    is_range = (
+        len(parsed_dates) == 2
+        and not parsed_dates[0][1]   # primeira sem dash
+        and parsed_dates[1][1]       # segunda com dash
+    ) or (
+        len(parsed_dates) == 1
+        and any(re.match(r"^[–—\-]", l) for l in raw_lines)
+    )
+
+    if is_range and parsed_dates:
+        # Extrair ref_year do date_end (linha com dash), aplicar ao date_start
+        for d, has_dash, has_year, clean in parsed_dates:
+            if has_dash:
+                date_end = d
+                m_year = re.search(r"\d{4}", clean)
+                if m_year:
+                    ref_year = m_year.group()
+            else:
+                date_start = d
+
+        # Se date_start não tem ano e temos ref_year, re-parsear
+        if date_start and ref_year:
+            for line in raw_lines:
+                clean = re.sub(r"^[–—\-]\s*", "", line).strip()
+                if not re.match(r"^[–—\-]", line):
+                    d = _parse_date(clean, ref_year=ref_year)
+                    if d:
+                        date_start = d
+                        break
+
+        # Procurar horário semanal nos blocos seguintes (.event-info-block sem classe date)
+        weekly_schedule = None
+        for block in soup.select(".event-info-block"):
+            if "date" in block.get("class", []):
+                continue
+            for p in block.find_all("p"):
+                sched = _parse_weekday_schedule(p.get_text(strip=True))
+                if sched and sched.get("time_start"):
+                    weekly_schedule = sched
+                    break
+            if weekly_schedule:
+                break
+
+        # Produzir sessão de range (date_open / date_close)
+        if date_start:
+            sess = {
+                "date": date_start,
+                "date_end": date_end,
+                "time_start": weekly_schedule["time_start"] if weekly_schedule else None,
+                "time_end": weekly_schedule["time_end"] if weekly_schedule else None,
+                "weekdays": weekly_schedule["weekdays"] if weekly_schedule else [],
+                "is_ongoing": True,
+            }
+            sessions.append(sess)
+
+        # Sessões especiais no .highlight (inaugurações, visitas, etc.)
+        highlight = soup.select_one(".event-info-block.highlight")
+        if highlight:
+            for br in highlight.find_all("br"):
+                br.replace_with("\n")
+            for line in highlight.get_text().splitlines():
+                line = line.strip()
+                if not line or line == "\xa0":
+                    continue
+                d = _parse_date(line, ref_year=ref_year)
+                if d:
+                    t_start, t_end = _parse_time_range(line)
+                    if not t_start:
+                        t_start = _parse_time(line)
+                    sessions.append({
+                        "date": d,
+                        "time_start": t_start,
+                        "time_end": t_end,
+                        "notes": line,
+                    })
+
+    else:
+        # Modo normal: lista de sessões individuais
+        _extract_sessions_from_lines(raw_lines, sessions)
+
     return sessions
 
 
 def _extract_sessions_from_lines(lines: List[str], sessions: List[dict]) -> None:
+    """Parseia lista de sessões individuais: cada data (com hora opcional) = 1 sessão."""
+    # Detectar ref_year a partir das linhas com ano explícito
+    ref_year = None
+    for line in lines:
+        m = re.search(r"\b(20\d{2})\b", line)
+        if m:
+            ref_year = m.group(1)
+            break
+
     current_date = None
     current_time = None
     for line in lines:
-        d = _parse_date(line)
+        d = _parse_date(line, ref_year=ref_year)
         if d:
             if current_date:
                 sessions.append({"date": current_date, "time_start": current_time})
@@ -431,7 +573,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "location": "Culturgest",
         "accessibility": accessibility,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "_method": "culturgest-v16-sitemap",
+        "_method": "culturgest-v17-sitemap",
     }
 
 
@@ -447,9 +589,9 @@ def run(known_ids: Optional[set] = None) -> List[dict]:
     session = _make_session()
 
     if known_ids and not FULL_RESCAN:
-        logger.info(f"CULTURGEST v16 — modo incremental ({len(known_ids)} já conhecidos)")
+        logger.info(f"CULTURGEST v17 — modo incremental ({len(known_ids)} já conhecidos)")
     else:
-        logger.info("CULTURGEST v16 — listing via sitemap.xml (run completo)")
+        logger.info("CULTURGEST v17 — listing via sitemap.xml (run completo)")
 
     event_urls = _get_event_urls_from_sitemap(session)
 
