@@ -1,26 +1,56 @@
 name: Pipeline Diário
 
+# Nome dinâmico: distingue runs automáticos de manuais na listagem do GitHub
+run-name: >-
+  ${{
+    github.event_name == 'workflow_dispatch'
+    && format('Pipeline Manual — {0}{1}',
+        github.event.inputs.venues || 'all',
+        github.event.inputs.reset_venues != '' && format(' ⚠️ RESET {0}', github.event.inputs.reset_venues) || '')
+    || format('Pipeline Diário — {0}', github.event.schedule == '0 3 * * 0' && 'full rescan' || 'incremental')
+  }}
+
 on:
   schedule:
     - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC  → run incremental normal
     - cron: '0 3 * * 0'     # domingo às 3h UTC   → re-scan completo semanal
   workflow_dispatch:
     inputs:
-      force_refresh:
-        description: 'Ignorar cache HTTP e re-scraping completo'
-        required: false
-        default: 'false'
-        type: boolean
-      full_rescan:
-        description: 'Re-processar todos os URLs do sitemap (ignora known_ids)'
-        required: false
-        default: 'false'
-        type: boolean
       venues:
         description: 'Venues a correr (vírgula, ou "all" para todos)'
         required: false
         default: 'all'
         type: string
+      mode:
+        description: 'Modo de scraping'
+        required: false
+        default: 'incremental'
+        type: choice
+        options:
+          - incremental
+          - full_rescan
+          - force_refresh
+      dry_run:
+        description: 'Dry run — scrape sem commit nem push (só artefacto)'
+        required: false
+        default: false
+        type: boolean
+      notify:
+        description: 'Enviar notificações no fim do run'
+        required: false
+        default: true
+        type: boolean
+      reset_venues:
+        description: '⚠️ RESET (irreversível) — apagar histórico e recomeçar do zero (vírgula, ex: "culturgest,ccb")'
+        required: false
+        default: ''
+        type: string
+
+# Impede dois runs sobrepostos (ex: agendado + manual em simultâneo)
+# cancel-in-progress: false garante que o run em curso termina antes do próximo começar
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -31,7 +61,7 @@ jobs:
   # JOB 1 — Descobrir venues
   # ─────────────────────────────────────────
   discover:
-    name: Descobrir venues
+    name: 🔍 Descobrir venues
     runs-on: ubuntu-latest
     outputs:
       venues: ${{ steps.list.outputs.venues }}
@@ -69,7 +99,7 @@ jobs:
   # JOB 2 — Scrape paralelo (um job por venue)
   # ─────────────────────────────────────────
   scrape:
-    name: Scrape ${{ matrix.venue }}
+    name: 🕷️ Scrape ${{ matrix.venue }}
     needs: discover
     runs-on: ubuntu-latest
     timeout-minutes: 40
@@ -95,29 +125,64 @@ jobs:
         run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
 
       # Cache HTTP por semana — reutilizada entre runs diários
+      # No reset, a cache key inclui o run_id para forçar cache miss nesse venue
       - name: Restaurar cache HTTP
         uses: actions/cache@v4
         with:
           path: data/cache
-          key: http-cache-${{ matrix.venue }}-${{ steps.date.outputs.week }}
+          key: >-
+            http-cache-${{ matrix.venue }}-${{ steps.date.outputs.week }}${{
+              github.event.inputs.reset_venues != '' && contains(github.event.inputs.reset_venues, matrix.venue)
+              && format('-reset-{0}', github.run_id) || ''
+            }}
           restore-keys: |
             http-cache-${{ matrix.venue }}-
         id: http-cache
 
-      # FULL_RESCAN automático ao domingo (cron '0 3 * * 0')
-      # ou manual via workflow_dispatch com full_rescan=true
-      - name: Scrape ${{ matrix.venue }}
+      # RESET: apagar histórico do venue antes de scraping (só se solicitado manualmente)
+      # Apaga data/events/{venue}.json, data/backups/{venue}/ e cache monolítica
+      - name: ⚠️ Reset histórico ${{ matrix.venue }}
+        if: ${{ github.event.inputs.reset_venues != '' }}
+        run: |
+          RESET_LIST="${{ github.event.inputs.reset_venues }}"
+          VENUE="${{ matrix.venue }}"
+          if echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
+            echo "⚠️  RESET: a apagar histórico de $VENUE"
+            rm -f "data/events/$VENUE.json"
+            rm -rf "data/backups/$VENUE"
+            rm -f "data/cache/$VENUE.cache.json"
+            echo "✓ Histórico de $VENUE apagado — scrape do zero"
+          else
+            echo "— $VENUE não está na lista de reset, a continuar normalmente"
+          fi
+
+      # Modo de scraping: incremental (default) / full_rescan / force_refresh
+      # full_rescan também activa ao domingo via cron
+      # reset implica force_refresh automaticamente
+      - name: 🕷️ Scrape ${{ matrix.venue }}
         env:
           PYTHONPATH: ${{ github.workspace }}
           FULL_RESCAN: >-
             ${{
-              github.event.inputs.full_rescan == 'true' ||
+              github.event.inputs.mode == 'full_rescan' ||
               (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0')
             }}
         run: |
           ARGS=""
-          [ "${{ github.event.inputs.force_refresh }}" = "true" ] && ARGS="--force"
-          python pipeline/run_venue.py ${{ matrix.venue }} $ARGS
+          MODE="${{ github.event.inputs.mode }}"
+          RESET_LIST="${{ github.event.inputs.reset_venues }}"
+          VENUE="${{ matrix.venue }}"
+
+          # force_refresh ou reset implicam --force
+          if [ "$MODE" = "force_refresh" ]; then
+            ARGS="--force"
+          fi
+          if [ -n "$RESET_LIST" ] && echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
+            ARGS="--force"
+            echo "→ $VENUE resetado: a correr com --force"
+          fi
+
+          python pipeline/run_venue.py $VENUE $ARGS
 
       - name: Upload artefacto
         uses: actions/upload-artifact@v4
@@ -127,19 +192,131 @@ jobs:
             data/events/${{ matrix.venue }}.json
             data/venues/${{ matrix.venue }}.json
             data/logs/venue-${{ matrix.venue }}.json
+            data/backups/${{ matrix.venue }}/
             data/cache/${{ matrix.venue }}/
           if-no-files-found: warn
           retention-days: 1
 
   # ─────────────────────────────────────────
-  # JOB 3 — Agregar + publicar
+  # JOB 3 — Validação global (pré-publish)
   # ─────────────────────────────────────────
-  publish:
-    name: Agregar e publicar
+  validate:
+    name: ✅ Validar resultados
     needs: scrape
     runs-on: ubuntu-latest
-    timeout-minutes: 15
     if: always()
+    outputs:
+      ok: ${{ steps.check.outputs.ok }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt -q
+
+      - name: Download artefactos dos venues
+        uses: actions/download-artifact@v4
+        with:
+          pattern: venue-*
+          merge-multiple: true
+          path: data/
+
+      - name: ✅ Verificar sanidade dos dados
+        id: check
+        run: |
+          python3 << 'EOF'
+          import json, os, sys
+          from pathlib import Path
+          from datetime import datetime
+
+          events_dir = Path("data/events")
+          today = datetime.now().strftime("%Y-%m-%d")
+          cutoff_future = str(int(today[:4]) + 2) + today[4:]  # hoje + 2 anos
+
+          errors = []
+          warnings = []
+          table_rows = []
+
+          for f in sorted(events_dir.glob("*.json")):
+              venue = f.stem
+              try:
+                  events = json.loads(f.read_text(encoding="utf-8"))
+              except Exception as e:
+                  errors.append(f"{venue}: erro ao ler JSON — {e}")
+                  continue
+
+              n = len(events)
+              if n == 0:
+                  errors.append(f"{venue}: 0 eventos — possível falha de scraping")
+
+              # Datas absurdas (> 2 anos no futuro)
+              bad_dates = [
+                  e.get("id", "?")
+                  for e in events
+                  if (e.get("date_first") or "") > cutoff_future
+              ]
+              if bad_dates:
+                  warnings.append(f"{venue}: {len(bad_dates)} evento(s) com data > 2 anos no futuro")
+
+              # Score médio de credibilidade
+              scores = []
+              for e in events:
+                  s = 0.0
+                  if e.get("title") and len(e.get("title","")) > 2: s += 0.20
+                  if e.get("description") and len(e.get("description","")) > 30: s += 0.15
+                  if e.get("dates") and any(d.get("date") for d in e.get("dates",[])): s += 0.20
+                  if (e.get("media") or {}).get("cover_image"): s += 0.15
+                  if (e.get("price") or {}).get("price_display") or (e.get("price") or {}).get("is_free"): s += 0.10
+                  if e.get("source_url","").startswith("http"): s += 0.10
+                  scores.append(round(s, 2))
+              avg = round(sum(scores)/len(scores), 2) if scores else 0.0
+              if avg < 0.40:
+                  warnings.append(f"{venue}: score médio baixo ({avg:.2f})")
+
+              table_rows.append(f"| {venue} | {n} | {avg:.2f} | {'⚠️' if bad_dates else '✓'} |")
+
+          # Escrever Step Summary (aparece directamente no ecrã do run no GitHub)
+          summary_lines = [
+              "## Resumo do Pipeline",
+              "",
+              f"**Data:** {today}",
+              "",
+              "| Venue | Eventos | Score médio | Datas |",
+              "|-------|---------|-------------|-------|",
+          ] + table_rows
+
+          if warnings:
+              summary_lines += ["", "### ⚠️ Avisos", ""] + [f"- {w}" for w in warnings]
+          if errors:
+              summary_lines += ["", "### ❌ Erros críticos", ""] + [f"- {e}" for e in errors]
+          else:
+              summary_lines += ["", "### ✅ Validação passou sem erros críticos"]
+
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("\n".join(summary_lines) + "\n")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"ok={'false' if errors else 'true'}\n")
+
+          if errors:
+              print("ERROS DE VALIDAÇÃO:", errors, file=sys.stderr)
+              sys.exit(1)
+          EOF
+
+  # ─────────────────────────────────────────
+  # JOB 4 — Agregar + publicar
+  # ─────────────────────────────────────────
+  publish:
+    name: 🚀 Agregar e publicar
+    needs: [scrape, validate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    if: always() && needs.validate.outputs.ok != 'false'
 
     steps:
       - uses: actions/checkout@v4
@@ -171,8 +348,8 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: python pipeline/scripts/update_index.py
 
-      - name: Notificações
-        if: always()
+      - name: 📬 Notificações
+        if: ${{ github.event.inputs.notify != 'false' }}
         env:
           PYTHONPATH: ${{ github.workspace }}
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
@@ -181,14 +358,25 @@ jobs:
           NTFY_URL: ${{ secrets.NTFY_URL }}
         run: python pipeline/utils/notify.py
 
-      - name: Commit e push
+      - name: 💾 Commit e push
+        if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
-          git add data/events/ data/logs/ data/master.json data/venues/ index.html
-          git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
-          git pull --rebase origin main
-          git push
+          git add data/events/ data/logs/ data/master.json data/venues/ data/backups/ index.html
+          COMMIT_MSG="Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
+          [ -n "${{ github.event.inputs.reset_venues }}" ] && COMMIT_MSG="$COMMIT_MSG [RESET: ${{ github.event.inputs.reset_venues }}]"
+          [ "${{ github.event.inputs.mode }}" = "full_rescan" ] && COMMIT_MSG="$COMMIT_MSG [full rescan]"
+          git diff --staged --quiet || (
+            git commit -m "$COMMIT_MSG" \
+            && git pull --rebase origin main \
+            || (echo "❌ ERRO: conflito no rebase — push cancelado" && exit 1)
+            git push
+          )
+
+      - name: ℹ️ Dry run — sem commit
+        if: ${{ github.event.inputs.dry_run == 'true' }}
+        run: echo "ℹ️ Dry run activo — dados gerados mas não commitados. Ver artefactos para inspecção."
 
       - name: Upload relatório
         if: always()
