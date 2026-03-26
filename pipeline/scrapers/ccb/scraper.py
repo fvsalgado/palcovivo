@@ -7,6 +7,7 @@ import requests
 import time
 import logging
 import re
+import html as _html
 from datetime import datetime, timezone
 from typing import Optional
 from requests.adapters import HTTPAdapter
@@ -249,22 +250,62 @@ def parse_detail_dates(soup: BeautifulSoup) -> list[dict]:
 
 
 def _parse_portuguese_date(text: str) -> Optional[str]:
-    """Converte 'Quinta-feira, 2 abril de 2026' → '2026-04-02'."""
-    months = {
-        "janeiro": 1, "fevereiro": 2, "março": 3, "abril": 4,
-        "maio": 5, "junho": 6, "julho": 7, "agosto": 8,
-        "setembro": 9, "outubro": 10, "novembro": 11, "dezembro": 12,
+    """
+    Converte datas em múltiplos formatos para ISO 8601.
+    Suporta:
+      'Quinta-feira, 2 abril de 2026'      → 2026-04-02
+      'Sábado, 27 de março de 2026'        → 2026-03-27
+      'Domingo, 5 de junho de 2026'        → 2026-06-05
+      '2 de abril de 2026'                 → 2026-04-02
+      '27 mar. 2026' / '27 mar 2026'       → 2026-03-27
+      '27/03/2026' / '27-03-2026'          → 2026-03-27
+      '2026-03-27'                         → 2026-03-27  (ISO directo)
+    """
+    if not text:
+        return None
+
+    # 1. ISO directo YYYY-MM-DD
+    m = re.match(r'^(\d{4})-(\d{2})-(\d{2})', text.strip())
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
+
+    # 2. Formato numérico DD/MM/YYYY ou DD-MM-YYYY
+    m = re.match(r'^(\d{1,2})[/\-\.](\d{1,2})[/\-\.](\d{4})', text.strip())
+    if m:
+        return f"{m.group(3)}-{m.group(2).zfill(2)}-{m.group(1).zfill(2)}"
+
+    # 3. Formatos com nome de mês por extenso ou abreviado (PT)
+    MONTHS = {
+        "jan": 1, "fev": 2, "mar": 3, "abr": 4,
+        "mai": 5, "jun": 6, "jul": 7, "ago": 8,
+        "set": 9, "out": 10, "nov": 11, "dez": 12,
+        "janeiro": 1, "fevereiro": 2, "março": 3, "marco": 3,
+        "abril": 4, "maio": 5, "junho": 6, "julho": 7,
+        "agosto": 8, "setembro": 9, "outubro": 10,
+        "novembro": 11, "dezembro": 12,
     }
+
     text_lower = text.lower()
+    # Remover dia da semana inicial ("Quinta-feira, " / "Sábado, " etc.)
+    text_clean = re.sub(
+        r'^(segunda|terça|terca|quarta|quinta|sexta|s[aá]bado|domingo)'
+        r'[\-\s]*feira[,\s]+',
+        '', text_lower
+    ).strip().lstrip(',').strip()
+
+    # Padrão: DD [de] MÊS [de] YYYY  (aceita mês com ou sem "de" antes e depois)
+    month_keys = sorted(MONTHS.keys(), key=len, reverse=True)  # mais longos primeiro
+    month_pat = '|'.join(re.escape(k) for k in month_keys)
     m = re.search(
-        r'(\d{1,2})\s+(' + "|".join(months.keys()) + r')\s+(?:de\s+)?(\d{4})',
-        text_lower
+        r'(\d{1,2})\s+(?:de\s+)?(' + month_pat + r')\.?\s+(?:de\s+)?(\d{4})',
+        text_clean
     )
     if m:
-        day = int(m.group(1))
-        month = months[m.group(2)]
-        year = int(m.group(3))
-        return f"{year:04d}-{month:02d}-{day:02d}"
+        month_str = m.group(2).rstrip('.')
+        month = MONTHS.get(month_str)
+        if month:
+            return f"{int(m.group(3)):04d}-{month:02d}-{int(m.group(1)):02d}"
+
     return None
 
 
@@ -501,13 +542,17 @@ def parse_ccb_accessibility(event: dict) -> dict:
 def ccb_event_to_raw(event: dict) -> dict:
     now = datetime.now(timezone.utc).isoformat()
 
+    # Descodificar HTML entities em campos de texto (&#8211; → –, &#038; → &, etc.)
+    def _unescape(s):
+        return _html.unescape(s) if isinstance(s, str) else s
+
     return {
         "source_id": str(event.get("id", "")),
         "source_url": event.get("url", ""),
-        "title": event.get("title", ""),
+        "title": _unescape(event.get("title", "")),
         "subtitle": None,                           # preenchido pelo enrich
-        "description": event.get("description", ""),
-        "excerpt": event.get("excerpt", ""),
+        "description": _unescape(event.get("description", "")),
+        "excerpt": _unescape(event.get("excerpt", "")),
         "categories": parse_ccb_categories(event),
         "tags": [t.get("name", "") for t in event.get("tags", []) if isinstance(t, dict)],
         "dates": parse_ccb_dates_api(event),        # sobreposto pelo enrich se detail disponível
