@@ -1,14 +1,14 @@
 {
   "venue_id": "ccb",
-  "scraped": 810,
-  "valid": 767,
+  "scraped": 808,
+  "valid": 765,
   "invalid": 43,
   "errors": [],
   "cache_hit": false,
   "merge_stats": {
-    "substituted": 766,
+    "substituted": 765,
     "kept_existing": 0,
-    "new": 1,
+    "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0
   },
