@@ -24,7 +24,7 @@
     "scraper_id": "tndm",
     "api_url": null,
     "is_active": true,
-    "last_scraped": "2026-03-26T15:25:49.923738+00:00",
+    "last_scraped": "2026-03-26T16:48:17.701525+00:00",
     "scrape_frequency_hours": 48,
     "notes": "SSL inválido — verify=False. Fonte: /pt/programacao/toda-a-programacao/ com paginação."
   },
