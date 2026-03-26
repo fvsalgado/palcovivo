@@ -6,13 +6,12 @@
   "errors": [],
   "cache_hit": false,
   "merge_stats": {
-    "substituted": 765,
-    "kept_existing": 1,
-    "new": 115,
+    "substituted": 868,
+    "kept_existing": 13,
+    "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 15,
-    "source_id_dupes_resolved": 106
+    "skipped_old": 15
   },
   "venue_name": "Culturgest",
   "avg_credibility_score": 0.876
