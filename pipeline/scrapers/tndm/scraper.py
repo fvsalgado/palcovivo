@@ -1002,6 +1002,8 @@ def _parse_event_page(
         category = cats_raw[0]
     else:
         category = category_url  # inclui default "Teatro"
+        # Injectar na lista para que o harmonizer a receba
+        cats_raw = [category_url]
 
     domain = domain_url
 
@@ -1147,53 +1149,44 @@ def _parse_event_page(
     # ── Total de sessões ──────────────────────────────────────────────────────
     total_sessions = len(dates) if dates else None
 
-    return {
-        # Identificação
-        "source_id":     url.rstrip("/").split("/")[-1],
-        "source_url":    url,
-        "venue_id":      VENUE_ID,
-        "space_id":      space_id,
+    # ── Campos no topo para compatibilidade com o harmonizer ──────────────────
+    # O harmonizer lê estes campos directamente do raw (não dentro de sub-dicts):
+    #   audience    → string "M/12"
+    #   price_raw   → string de preço
+    #   ticketing_url → string URL
+    #   cover_image, thumbnail, trailer_url, gallery → strings/lista no topo
+    #   scraped_at  → string ISO no topo
+    #   credits_raw → string no topo (fallback se credits{} não existir)
 
-        # Conteúdo
-        "title":         title,
-        "title_raw":     title_raw,
-        "subtitle":      subtitle,
-        "description":   desc,
-        "description_short": desc_short,
+    audience_raw_str = audience.get("label_raw") or ""  # ex: "M/12"
+    price_raw_str    = price.get("price_raw") or ""
+
+    return {
+        # ── Campos raw que o harmonizer lê directamente ──────────────────────
+        "source_id":      url.rstrip("/").split("/")[-1],
+        "source_url":     url,
+        "space_id":       space_id,
+        "title":          title,
+        "subtitle":       subtitle,
+        "description":    desc,
+        "categories":     cats_raw,          # harmonizer → harmonize_category()
+        "tags":           [],
+        "dates":          dates,
+        "audience":       audience_raw_str,  # harmonizer espera string
+        "price_raw":      price_raw_str,     # harmonizer → parse_price()
+        "ticketing_url":  price.get("ticketing_url"),
+        "cover_image":    media.get("cover_image"),
+        "thumbnail":      None,
+        "trailer_url":    media.get("trailer_url"),
+        "gallery":        media.get("gallery", []),
+        "accessibility":  accessibility,
+        "scraped_at":     datetime.now(timezone.utc).isoformat(),
+        "production_origin": production_origin,
         "language_of_performance": language_of_performance,
         "language_notes": language_notes,
 
-        # Classificação
-        "domain":        domain,
-        "category":      category,
-        "subcategory":   None,
-        "tags":          [],
-        "categories_raw": cats_raw,
-
-        # Datas e sessões
-        "dates":         dates,
-        "date_first":    date_first,
-        "date_last":     date_last,
-        "total_sessions": total_sessions,
-        "is_ongoing":    bool(date_last and date_first and date_last > date_first),
-        "date_open":     date_first,
-        "date_close":    date_last,
-        "event_status":  event_status,
-        "is_premiere":   is_premiere,
-        "is_national_premiere": is_national_premiere,
-        "is_reprise":    is_reprise,
-
-        # Produção e distribuição
-        "production_origin": production_origin,
-        "is_festival":   False,
-        "festival_name": None,
-        "festival_id":   None,
-        "is_multi_venue": is_multi_venue,
-        "multi_venue_ids": venue_names,
-        "series_name":   None,
-        "series_edition": None,
-
-        # Ficha técnica
+        # ── Campos estruturados extra (harmonizer passa-os através) ──────────
+        # credits: o harmonizer usa raw_event.get("credits", {...}) directamente
         "credits": {
             "company":       credits.get("company"),
             "director":      credits.get("director"),
@@ -1204,34 +1197,19 @@ def _parse_event_page(
             "musicians":     credits.get("musicians", []),
             "credits_raw":   credits.get("credits_raw"),
         },
+        "credits_raw": credits.get("credits_raw"),  # fallback harmonizer v4
 
-        # Obra
+        # work: o harmonizer usa raw_event.get("work", {...}) directamente
         "work": work,
 
-        # Audiência
-        "audience": audience,
-
-        # Preço
-        "price": price,
-
-        # Acessibilidade
-        "accessibility": accessibility,
-
-        # Media
-        "media": media,
-
-        # Pipeline
-        "pipeline": {
-            "scraped_at":        datetime.now(timezone.utc).isoformat(),
-            "scraper_id":        SCRAPER_ID,
-            "raw_data_hash":     None,
-            "harmonized_at":     None,
-            "validated":         False,
-            "validation_errors": [],
-            "manually_edited":   False,
-            "manually_edited_at": None,
-            "is_active":         True,
-        },
+        # ── Campos informativos extras (não lidos pelo harmonizer, mas ficam no raw) ──
+        "date_open":        date_first,
+        "date_close":       date_last,
+        "is_ongoing":       bool(date_last and date_first and date_last > date_first),
+        "is_multi_venue":   is_multi_venue,
+        "venue_names":      venue_names,
+        "description_short": desc_short,
+        "_method":          SCRAPER_ID,
     }
 
 
