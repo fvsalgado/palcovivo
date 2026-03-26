@@ -154,7 +154,7 @@ def _dedup_by_source_id(events: list, venue_id: str) -> tuple[list, int]:
             seen_ids.add(eid)
         else:
             # Escolher o de maior score; em caso de empate, o de data mais antiga (correcto)
-            best = max(group, key=lambda e: (_score(e), -(e.get("date_first") or "9999") ))
+            best = max(group, key=lambda e: (_score(e), e.get("date_first") or "9999-99-99"))
             for dup in group:
                 seen_ids.add(dup.get("id"))
             if ev is best:
