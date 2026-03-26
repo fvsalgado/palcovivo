@@ -16,6 +16,7 @@ Uso num scraper:
 import hashlib
 import json
 import logging
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
@@ -138,7 +139,8 @@ class ConditionalSession:
                 with open(path, encoding="utf-8") as f:
                     entry = json.load(f)
                 cached_at = datetime.fromisoformat(
-                    entry.get("cached_at", "2000-01-01").replace("Z", "+00:00")
+                    re.sub(r'(\+\d{2}:\d{2})\+\d{2}:\d{2}$', r'\1',
+                           entry.get("cached_at", "2000-01-01").rstrip("Z"))
                 )
                 if cached_at < cutoff:
                     path.unlink()
