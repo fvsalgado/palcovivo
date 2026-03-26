@@ -1,8 +1,14 @@
 """
 Primeira Plateia — Taxonomia Canónica
-Versão: 1.0 | 2026-03-24
+Versão: 2.0 | 2026-03-26
 
-Estrutura: DOMAINS → categories → subcategories + aliases para harmonização
+Melhorias v2.0:
+  - Cobertura completa de aliases (0 categorias a cair em 'outros' com dados actuais)
+  - Classificador por texto como fallback (título + descrição)
+  - Geração automática de tags por inferência
+  - AUDIENCE_MAP expandido com formatos M/NN do CCB e Theatro Circo
+  - SERIES_PREFIX_PATTERNS expandido
+  - NUTS2/NUTS3 para filtro geográfico
 """
 
 # ---------------------------------------------------------------------------
@@ -12,49 +18,49 @@ DOMAINS = {
     "musica": {
         "label": "Música",
         "slug": "musica",
-        "emoji": "🎵",
+        "icon": "♪",
         "color": "#457B9D",
         "order": 1,
     },
     "artes-palco": {
         "label": "Artes de Palco",
         "slug": "artes-palco",
-        "emoji": "🎭",
+        "icon": "◈",
         "color": "#E63946",
         "order": 2,
     },
     "artes-visuais": {
         "label": "Artes Visuais",
         "slug": "artes-visuais",
-        "emoji": "🎨",
+        "icon": "◻",
         "color": "#F4A261",
         "order": 3,
     },
     "pensamento": {
         "label": "Pensamento & Palavra",
         "slug": "pensamento",
-        "emoji": "💬",
+        "icon": "◇",
         "color": "#2A9D8F",
         "order": 4,
     },
     "cinema": {
         "label": "Cinema",
         "slug": "cinema",
-        "emoji": "🎬",
+        "icon": "▶",
         "color": "#264653",
         "order": 5,
     },
     "formacao": {
         "label": "Formação & Participação",
         "slug": "formacao",
-        "emoji": "✏️",
+        "icon": "○",
         "color": "#8338EC",
         "order": 6,
     },
     "outros": {
         "label": "Outros",
         "slug": "outros",
-        "emoji": "•",
+        "icon": "·",
         "color": "#6C757D",
         "order": 7,
     },
@@ -65,7 +71,7 @@ DOMAINS = {
 # ---------------------------------------------------------------------------
 CATEGORIES = {
 
-    # ── MÚSICA ──────────────────────────────────────────────────────────────
+    # ── MÚSICA ───────────────────────────────────────────────────────────────
     "musica-classica": {
         "label": "Música Clássica",
         "domain": "musica",
@@ -145,7 +151,7 @@ CATEGORIES = {
         "subcategories": {},
     },
 
-    # ── ARTES DE PALCO ──────────────────────────────────────────────────────
+    # ── ARTES DE PALCO ───────────────────────────────────────────────────────
     "teatro": {
         "label": "Teatro",
         "domain": "artes-palco",
@@ -202,6 +208,7 @@ CATEGORIES = {
             "performance-arte": "Performance Arte",
             "happening": "Happening",
             "site-specific": "Site-Specific",
+            "multidisciplinar": "Multidisciplinar",
         },
     },
 
@@ -243,7 +250,7 @@ CATEGORIES = {
         },
     },
 
-    # ── PENSAMENTO & PALAVRA ─────────────────────────────────────────────────
+    # ── PENSAMENTO & PALAVRA ──────────────────────────────────────────────────
     "conferencias-debates": {
         "label": "Conferências & Debates",
         "domain": "pensamento",
@@ -285,7 +292,7 @@ CATEGORIES = {
         },
     },
 
-    # ── CINEMA ───────────────────────────────────────────────────────────────
+    # ── CINEMA ────────────────────────────────────────────────────────────────
     "cinema-ficcao": {
         "label": "Cinema de Ficção",
         "domain": "cinema",
@@ -322,7 +329,7 @@ CATEGORIES = {
         },
     },
 
-    # ── FORMAÇÃO & PARTICIPAÇÃO ──────────────────────────────────────────────
+    # ── FORMAÇÃO & PARTICIPAÇÃO ───────────────────────────────────────────────
     "workshops": {
         "label": "Workshops",
         "domain": "formacao",
@@ -334,6 +341,7 @@ CATEGORIES = {
         "subcategories": {
             "curso-curto": "Curso de Curta Duração",
             "masterclass": "Masterclass",
+            "aula-aberta": "Aula Aberta",
         },
     },
     "oficinas": {
@@ -355,18 +363,25 @@ CATEGORIES = {
         "subcategories": {
             "escolas": "Para Escolas",
             "atividades-ferias": "Atividades de Férias",
+            "mediacao": "Mediação",
+        },
+    },
+    "participacao": {
+        "label": "Participação",
+        "domain": "formacao",
+        "subcategories": {
+            "open-call": "Open Call",
+            "projeto-participativo": "Projeto Participativo",
         },
     },
 }
 
 # ---------------------------------------------------------------------------
 # DICIONÁRIO DE ALIASES → categoria canónica
-# Chave: texto raw (lowercase, sem acentos opcionais)
-# Valor: (domain_slug, category_slug, subcategory_slug_ou_None, flags_dict)
 # ---------------------------------------------------------------------------
 ALIASES: dict[str, dict] = {
 
-    # ── Música ───────────────────────────────────────────────────────────────
+    # ── Música ────────────────────────────────────────────────────────────────
     "musica": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "música": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "music": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
@@ -404,10 +419,12 @@ ALIASES: dict[str, dict] = {
     "ópera": {"domain": "artes-palco", "category": "opera-lirica", "subcategory": "opera", "flags": {}},
     "opera": {"domain": "artes-palco", "category": "opera-lirica", "subcategory": "opera", "flags": {}},
 
-    # ── Artes de Palco ───────────────────────────────────────────────────────
+    # ── Artes de Palco ────────────────────────────────────────────────────────
     "teatro": {"domain": "artes-palco", "category": "teatro", "subcategory": None, "flags": {}},
     "theater": {"domain": "artes-palco", "category": "teatro", "subcategory": None, "flags": {}},
     "espetáculo de teatro": {"domain": "artes-palco", "category": "teatro", "subcategory": None, "flags": {}},
+    "espetáculos": {"domain": "artes-palco", "category": "teatro", "subcategory": None, "flags": {}},
+    "espetaculo": {"domain": "artes-palco", "category": "teatro", "subcategory": None, "flags": {}},
     "dança": {"domain": "artes-palco", "category": "danca", "subcategory": None, "flags": {}},
     "danca": {"domain": "artes-palco", "category": "danca", "subcategory": None, "flags": {}},
     "dance": {"domain": "artes-palco", "category": "danca", "subcategory": None, "flags": {}},
@@ -416,28 +433,38 @@ ALIASES: dict[str, dict] = {
     "humor": {"domain": "artes-palco", "category": "circo-variedades", "subcategory": "humor", "flags": {}},
     "stand-up": {"domain": "artes-palco", "category": "circo-variedades", "subcategory": "humor", "flags": {}},
     "comédia": {"domain": "artes-palco", "category": "circo-variedades", "subcategory": "humor", "flags": {}},
+    "multidisciplinar": {"domain": "artes-palco", "category": "performance", "subcategory": "multidisciplinar", "flags": {}},
 
-    # ── Artes Visuais ────────────────────────────────────────────────────────
+    # ── Artes Visuais ─────────────────────────────────────────────────────────
     "exposição": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
     "exposicoes": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
     "exposições": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
     "exhibitions": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
+    "exhibition": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
     "mostra": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
+    "artes visuais": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
+    "artes-visuais": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None, "flags": {}},
     "instalação": {"domain": "artes-visuais", "category": "instalacao", "subcategory": None, "flags": {}},
     "instalacao": {"domain": "artes-visuais", "category": "instalacao", "subcategory": None, "flags": {}},
     "installation": {"domain": "artes-visuais", "category": "instalacao", "subcategory": None, "flags": {}},
     "visita guiada": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-guiada", "flags": {}},
     "visita-guiada": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-guiada", "flags": {}},
+    "visitas guiadas": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-guiada", "flags": {}},
+    "visitas-guiadas": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-guiada", "flags": {}},
     "visita temática": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-tematica", "flags": {}},
     "visita-tematica": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-tematica", "flags": {}},
     "visita-jogo": {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-jogo", "flags": {}},
     "percurso": {"domain": "artes-visuais", "category": "visitas", "subcategory": "percurso", "flags": {}},
+    "centro de arquitetura": {"domain": "artes-visuais", "category": "exposicoes", "subcategory": "arquitetura", "flags": {}},
 
-    # ── Pensamento & Palavra ─────────────────────────────────────────────────
+    # ── Pensamento & Palavra ──────────────────────────────────────────────────
     "conferência": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "conferencia", "flags": {}},
     "conferencias": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "conferencia", "flags": {}},
     "conferências": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "conferencia", "flags": {}},
+    "conferências e debates": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None, "flags": {}},
+    "conferencias e debates": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None, "flags": {}},
     "conferências e conversas": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None, "flags": {}},
+    "conferencias e conversas": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None, "flags": {}},
     "debate": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "debate", "flags": {}},
     "palestra": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "conferencia", "flags": {}},
     "talk": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "conferencia", "flags": {}},
@@ -448,12 +475,16 @@ ALIASES: dict[str, dict] = {
     "mesa redonda": {"domain": "pensamento", "category": "conversas", "subcategory": "mesa-redonda", "flags": {}},
     "poesia": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": "poesia", "flags": {}},
     "literatura": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": None, "flags": {}},
+    "livros e pensamento": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": None, "flags": {}},
+    "livros-e-pensamento": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": None, "flags": {}},
     "clube de leitura": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": "clube-leitura", "flags": {}},
     "apresentação de livro": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": "apresentacao-livro", "flags": {}},
+    "apresentação": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": "apresentacao-livro", "flags": {}},
+    "livraria": {"domain": "pensamento", "category": "literatura-poesia", "subcategory": "apresentacao-livro", "flags": {}},
     "podcast": {"domain": "pensamento", "category": "podcast-radio", "subcategory": "podcast", "flags": {}},
     "pensamento": {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None, "flags": {}},
 
-    # ── Cinema ───────────────────────────────────────────────────────────────
+    # ── Cinema ────────────────────────────────────────────────────────────────
     "cinema": {"domain": "cinema", "category": "cinema-ficcao", "subcategory": None, "flags": {}},
     "cinemaen": {"domain": "cinema", "category": "cinema-ficcao", "subcategory": None, "flags": {}},
     "filme": {"domain": "cinema", "category": "cinema-ficcao", "subcategory": None, "flags": {}},
@@ -461,51 +492,234 @@ ALIASES: dict[str, dict] = {
     "screening": {"domain": "cinema", "category": "cinema-ficcao", "subcategory": None, "flags": {}},
     "documentário": {"domain": "cinema", "category": "cinema-documental", "subcategory": "documentario", "flags": {}},
 
-    # ── Formação ────────────────────────────────────────────────────────────
+    # ── Formação & Participação ───────────────────────────────────────────────
     "workshop": {"domain": "formacao", "category": "workshops", "subcategory": None, "flags": {}},
-    "workshop-2": {"domain": "formacao", "category": "workshops", "subcategory": None, "flags": {}},
+    "workshops": {"domain": "formacao", "category": "workshops", "subcategory": None, "flags": {}},
     "atelier": {"domain": "formacao", "category": "workshops", "subcategory": None, "flags": {}},
     "laboratório": {"domain": "formacao", "category": "workshops", "subcategory": None, "flags": {}},
     "oficina": {"domain": "formacao", "category": "oficinas", "subcategory": "oficina-criativa", "flags": {}},
+    "oficinas": {"domain": "formacao", "category": "oficinas", "subcategory": "oficina-criativa", "flags": {}},
+    "oficinas e formação": {"domain": "formacao", "category": "oficinas", "subcategory": None, "flags": {}},
+    "oficinas-e-formacao": {"domain": "formacao", "category": "oficinas", "subcategory": None, "flags": {}},
     "curso": {"domain": "formacao", "category": "cursos", "subcategory": "curso-curto", "flags": {}},
     "formação": {"domain": "formacao", "category": "cursos", "subcategory": None, "flags": {}},
     "formacao": {"domain": "formacao", "category": "cursos", "subcategory": None, "flags": {}},
     "masterclass": {"domain": "formacao", "category": "cursos", "subcategory": "masterclass", "flags": {}},
     "academia": {"domain": "formacao", "category": "cursos", "subcategory": "curso-curto", "flags": {}},
+    "aula aberta": {"domain": "formacao", "category": "cursos", "subcategory": "aula-aberta", "flags": {}},
+    "aula-aberta": {"domain": "formacao", "category": "cursos", "subcategory": "aula-aberta", "flags": {}},
     "residência artística": {"domain": "formacao", "category": "residencias", "subcategory": None, "flags": {}},
     "atividades de férias": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "atividades-ferias", "flags": {"is_family": True}},
     "atividades-de-ferias": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "atividades-ferias", "flags": {"is_family": True}},
     "escolas": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "escolas", "flags": {"is_educational": True}},
+    "atividades": {"domain": "formacao", "category": "atividades-educativas", "subcategory": None, "flags": {}},
+    "mediação": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "mediacao", "flags": {}},
+    "mediacao": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "mediacao", "flags": {}},
+    "projetos de mediação": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "mediacao", "flags": {}},
+    "projetos-de-mediacao": {"domain": "formacao", "category": "atividades-educativas", "subcategory": "mediacao", "flags": {}},
+    "participação": {"domain": "formacao", "category": "participacao", "subcategory": None, "flags": {}},
+    "participacao": {"domain": "formacao", "category": "participacao", "subcategory": None, "flags": {}},
+    "open call": {"domain": "formacao", "category": "participacao", "subcategory": "open-call", "flags": {}},
 
-    # ── Contextos que NÃO são categorias — ativam flags ─────────────────────
+    # ── Público/audiência — ativam flags, não são categorias ──────────────────
+    "famílias": {"domain": None, "category": None, "subcategory": None, "flags": {"is_family": True}},
+    "familias": {"domain": None, "category": None, "subcategory": None, "flags": {"is_family": True}},
+    "infância e juventude": {"domain": None, "category": None, "subcategory": None, "flags": {"is_family": True}},
+    "infancia e juventude": {"domain": None, "category": None, "subcategory": None, "flags": {"is_family": True}},
+    "público em geral": {"domain": None, "category": None, "subcategory": None, "flags": {}},
+    "programação acessível": {"domain": None, "category": None, "subcategory": None, "flags": {"is_accessible": True}},
+    "programacao-acessivel": {"domain": None, "category": None, "subcategory": None, "flags": {"is_accessible": True}},
+
+    # ── Contextos/espaços/outros — ignorar como categoria ────────────────────
     "digital": {"domain": None, "category": None, "subcategory": None, "flags": {"is_digital": True}},
-    "museu": {"domain": None, "category": None, "subcategory": None, "flags": {}},  # ignorar como categoria
-    "cidade": {"domain": None, "category": None, "subcategory": None, "flags": {}},  # ignorar
+    "online": {"domain": None, "category": None, "subcategory": None, "flags": {"is_online": True}},
+    "museu": {"domain": None, "category": None, "subcategory": None, "flags": {}},
+    "mac/ccb": {"domain": None, "category": None, "subcategory": None, "flags": {}},
+    "museum": {"domain": None, "category": None, "subcategory": None, "flags": {}},
+    "cidade": {"domain": None, "category": None, "subcategory": None, "flags": {}},
+    "porto": {"domain": None, "category": None, "subcategory": None, "flags": {"geographic_scope": "porto"}},
+    "fora de portas": {"domain": None, "category": None, "subcategory": None, "flags": {"geographic_scope": "nacional"}},
+    "fora-de-portas": {"domain": None, "category": None, "subcategory": None, "flags": {"geographic_scope": "nacional"}},
+    "temporada 2025-26": {"domain": None, "category": None, "subcategory": None, "flags": {}},
     "atividades ao ar livre": {"domain": None, "category": None, "subcategory": None, "flags": {"is_outdoor": True}},
     "outdoor activities": {"domain": None, "category": None, "subcategory": None, "flags": {"is_outdoor": True}},
-    "garagem sul": {"domain": None, "category": None, "subcategory": None, "flags": {}},        # espaço, não categoria
+    "garagem sul": {"domain": None, "category": None, "subcategory": None, "flags": {}},
     "fábrica das artes": {"domain": None, "category": None, "subcategory": None, "flags": {"series_name": "Fábrica das Artes", "is_family": True}},
     "fabrica-das-artes": {"domain": None, "category": None, "subcategory": None, "flags": {"series_name": "Fábrica das Artes", "is_family": True}},
     "laboratório lipa": {"domain": None, "category": None, "subcategory": None, "flags": {"series_name": "Laboratório LIPA"}},
 }
 
 # ---------------------------------------------------------------------------
-# CLASSIFICAÇÃO DE PÚBLICO → age_min, age_max, is_family, school_level
+# CLASSIFICADOR POR TEXTO (fallback quando alias não encontrado)
+# ---------------------------------------------------------------------------
+TEXT_CLASSIFIER_RULES: list[tuple[list[str], dict]] = [
+    # Música
+    (["sinfoni", "filarmoni", "orquest"], {"domain": "musica", "category": "musica-classica", "subcategory": "sinfonica"}),
+    (["opera", "ópera", "líric"], {"domain": "artes-palco", "category": "opera-lirica", "subcategory": "opera"}),
+    (["camara", "câmara", "quarteto", "trio", "duo"], {"domain": "musica", "category": "musica-classica", "subcategory": "camara"}),
+    (["recital", "pianist", "violinist"], {"domain": "musica", "category": "musica-classica", "subcategory": "recital"}),
+    (["coral", "coro", "vozes"], {"domain": "musica", "category": "musica-classica", "subcategory": "coral"}),
+    (["jazz", "improvis", "big band"], {"domain": "musica", "category": "jazz-blues", "subcategory": "jazz"}),
+    (["fado", "fadista", "guitarra portuguesa"], {"domain": "musica", "category": "musica-popular-portuguesa", "subcategory": "fado"}),
+    (["eletróni", "electroni", "techno", "djset", "dj set"], {"domain": "musica", "category": "electronica", "subcategory": None}),
+    (["concerto", "music"], {"domain": "musica", "category": "musica-classica", "subcategory": None}),
+    # Artes de palco
+    (["ballet", "bailado", "dança clássi"], {"domain": "artes-palco", "category": "danca", "subcategory": "ballet"}),
+    (["dança contempor", "coreograf"], {"domain": "artes-palco", "category": "danca", "subcategory": "danca-contemporanea"}),
+    (["dança", "dance", "bailarin"], {"domain": "artes-palco", "category": "danca", "subcategory": None}),
+    (["teatro", "encenaç", "dramaturgi", "peça"], {"domain": "artes-palco", "category": "teatro", "subcategory": None}),
+    (["circo", "acrobaci", "malabar"], {"domain": "artes-palco", "category": "circo-variedades", "subcategory": None}),
+    (["performance", "site-specific", "happening"], {"domain": "artes-palco", "category": "performance", "subcategory": None}),
+    # Artes visuais
+    (["exposiç", "exhibit", "mostra", "galeri"], {"domain": "artes-visuais", "category": "exposicoes", "subcategory": None}),
+    (["instalaç", "videoarte", "video art"], {"domain": "artes-visuais", "category": "instalacao", "subcategory": None}),
+    (["visita guiada", "visita temáti"], {"domain": "artes-visuais", "category": "visitas", "subcategory": "visita-guiada"}),
+    # Pensamento
+    (["conferênci", "palestra", "colóqui", "simpósio", "semináro"], {"domain": "pensamento", "category": "conferencias-debates", "subcategory": None}),
+    (["debate", "mesa redonda", "forum"], {"domain": "pensamento", "category": "conferencias-debates", "subcategory": "debate"}),
+    (["livro", "lançamento", "literatura", "poesi", "leitura"], {"domain": "pensamento", "category": "literatura-poesia", "subcategory": None}),
+    (["conversa", "encontro com"], {"domain": "pensamento", "category": "conversas", "subcategory": None}),
+    (["podcast"], {"domain": "pensamento", "category": "podcast-radio", "subcategory": "podcast"}),
+    # Cinema
+    (["document", "documentári"], {"domain": "cinema", "category": "cinema-documental", "subcategory": "documentario"}),
+    (["cinema", "film", "sessão de"], {"domain": "cinema", "category": "cinema-ficcao", "subcategory": None}),
+    (["animaç"], {"domain": "cinema", "category": "cinema-animacao", "subcategory": None}),
+    # Formação
+    (["workshop", "atelier", "oficin"], {"domain": "formacao", "category": "workshops", "subcategory": None}),
+    (["masterclass", "formação", "curso"], {"domain": "formacao", "category": "cursos", "subcategory": None}),
+    (["residência artístic"], {"domain": "formacao", "category": "residencias", "subcategory": None}),
+    (["mediação", "escolas", "educativ"], {"domain": "formacao", "category": "atividades-educativas", "subcategory": None}),
+]
+
+
+def classify_by_text(title: str, description: str = "") -> dict | None:
+    """
+    Tenta classificar um evento por palavras-chave no título e descrição.
+    Retorna dict com domain/category/subcategory ou None se não encontrado.
+    """
+    text = f"{title} {description}".lower()
+    for keywords, result in TEXT_CLASSIFIER_RULES:
+        if any(kw in text for kw in keywords):
+            return result
+    return None
+
+
+# ---------------------------------------------------------------------------
+# GERAÇÃO AUTOMÁTICA DE TAGS
+# ---------------------------------------------------------------------------
+
+def generate_tags(event: dict) -> list[str]:
+    """
+    Gera tags automáticas a partir dos campos já harmonizados do evento.
+    Complementa (não substitui) tags manuais vindas do scraper.
+    """
+    tags: set[str] = set(event.get("tags") or [])
+
+    domain       = event.get("domain", "")
+    category     = event.get("category", "")
+    subcategory  = event.get("subcategory")
+    price        = event.get("price") or {}
+    audience     = event.get("audience") or {}
+    accessibility = event.get("accessibility") or {}
+    event_status = event.get("event_status", "")
+    pipeline     = event.get("pipeline") or {}
+
+    # Domínio / categoria
+    if domain and domain != "outros":
+        domain_label = DOMAINS.get(domain, {}).get("label", "")
+        if domain_label:
+            tags.add(domain_label.lower())
+    if subcategory:
+        subcat_label = (
+            CATEGORIES.get(category, {})
+            .get("subcategories", {})
+            .get(subcategory, "")
+        )
+        if subcat_label:
+            tags.add(subcat_label.lower())
+
+    # Preço
+    if price.get("is_free"):
+        tags.add("entrada-livre")
+    if price.get("has_discounts"):
+        tags.add("descontos")
+    if price.get("ticketing_provider"):
+        tags.add(f"bilhetes-{price['ticketing_provider']}")
+
+    # Público / família
+    if audience.get("is_family"):
+        tags.add("familia")
+    if audience.get("is_educational"):
+        tags.add("escolas")
+    age_min = audience.get("age_min")
+    if age_min is not None:
+        if age_min == 0:
+            tags.add("bebes")
+        elif age_min <= 6:
+            tags.add("criancas")
+        elif age_min <= 12:
+            tags.add("jovens")
+        elif age_min >= 18:
+            tags.add("adultos")
+
+    # Acessibilidade
+    if accessibility.get("has_sign_language"):
+        tags.add("lgp")
+    if accessibility.get("has_audio_description"):
+        tags.add("audiodescricao")
+    if accessibility.get("has_subtitles"):
+        tags.add("legendas")
+    if accessibility.get("is_relaxed_performance"):
+        tags.add("sessao-relaxada")
+
+    # Status do evento
+    if event_status == "estreia":
+        tags.add("estreia")
+    elif event_status == "unica-sessao":
+        tags.add("sessao-unica")
+
+    # Flags do pipeline
+    flags = pipeline.get("extra_flags") or {}
+    if flags.get("is_online"):
+        tags.add("online")
+    if flags.get("is_outdoor"):
+        tags.add("ar-livre")
+    if flags.get("is_digital"):
+        tags.add("digital")
+    if flags.get("geographic_scope") == "nacional":
+        tags.add("digressao-nacional")
+
+    # Série / festival
+    if event.get("series_name"):
+        tags.add("ciclo")
+    if event.get("is_festival"):
+        tags.add("festival")
+    if event.get("is_multi_venue"):
+        tags.add("multi-venue")
+
+    return sorted(tags)
+
+
+# ---------------------------------------------------------------------------
+# AUDIENCE MAP
 # ---------------------------------------------------------------------------
 AUDIENCE_MAP: dict[str, dict] = {
     "m/0-3 anos": {"age_min": 0, "age_max": 3, "is_family": True, "school_level": None, "label": "M/0-3 anos"},
     "bebés": {"age_min": 0, "age_max": 2, "is_family": True, "school_level": None, "label": "Bebés"},
+    "bebes": {"age_min": 0, "age_max": 2, "is_family": True, "school_level": None, "label": "Bebés"},
     "primeira infância": {"age_min": 0, "age_max": 3, "is_family": True, "school_level": None, "label": "Primeira Infância"},
     "primeira-infancia": {"age_min": 0, "age_max": 3, "is_family": True, "school_level": None, "label": "Primeira Infância"},
     "m/2-4": {"age_min": 2, "age_max": 4, "is_family": True, "school_level": None, "label": "M/2-4 anos"},
     "m/2-4 anos": {"age_min": 2, "age_max": 4, "is_family": True, "school_level": None, "label": "M/2-4 anos"},
     "m/3 anos": {"age_min": 3, "age_max": None, "is_family": True, "school_level": "pre-escolar", "label": "M/3 anos"},
+    "m/3": {"age_min": 3, "age_max": None, "is_family": True, "school_level": "pre-escolar", "label": "M/3 anos"},
     "m/3-5 anos": {"age_min": 3, "age_max": 5, "is_family": True, "school_level": "pre-escolar", "label": "M/3-5 anos"},
     "m/4-5": {"age_min": 4, "age_max": 5, "is_family": True, "school_level": "pre-escolar", "label": "M/4-5 anos"},
     "m/4-5 anos": {"age_min": 4, "age_max": 5, "is_family": True, "school_level": "pre-escolar", "label": "M/4-5 anos"},
     "pré-escolar": {"age_min": 3, "age_max": 5, "is_family": True, "school_level": "pre-escolar", "label": "Pré-Escolar"},
     "pre-escolar": {"age_min": 3, "age_max": 5, "is_family": True, "school_level": "pre-escolar", "label": "Pré-Escolar"},
     "m/6 anos": {"age_min": 6, "age_max": None, "is_family": True, "school_level": "primeiro-ciclo", "label": "M/6 anos"},
+    "m/6": {"age_min": 6, "age_max": None, "is_family": True, "school_level": "primeiro-ciclo", "label": "M/6 anos"},
     "primeiro ciclo": {"age_min": 6, "age_max": 9, "is_family": True, "school_level": "primeiro-ciclo", "label": "Primeiro Ciclo"},
     "primeiro-ciclo": {"age_min": 6, "age_max": 9, "is_family": True, "school_level": "primeiro-ciclo", "label": "Primeiro Ciclo"},
     "m/6-12anos": {"age_min": 6, "age_max": 12, "is_family": True, "school_level": None, "label": "M/6-12 anos"},
@@ -514,20 +728,33 @@ AUDIENCE_MAP: dict[str, dict] = {
     "segundo-ciclo": {"age_min": 10, "age_max": 12, "is_family": False, "school_level": "segundo-ciclo", "label": "Segundo Ciclo"},
     "terceiro ciclo e secundário": {"age_min": 13, "age_max": 17, "is_family": False, "school_level": "terceiro-ciclo", "label": "3.º Ciclo e Secundário"},
     "terceiro-ciclo-e-secundario": {"age_min": 13, "age_max": 17, "is_family": False, "school_level": "terceiro-ciclo", "label": "3.º Ciclo e Secundário"},
+    "m/8": {"age_min": 8, "age_max": None, "is_family": True, "school_level": None, "label": "M/8 anos"},
+    "m/8 anos": {"age_min": 8, "age_max": None, "is_family": True, "school_level": None, "label": "M/8 anos"},
+    "m/10": {"age_min": 10, "age_max": None, "is_family": True, "school_level": None, "label": "M/10 anos"},
+    "m/10 anos": {"age_min": 10, "age_max": None, "is_family": True, "school_level": None, "label": "M/10 anos"},
     "m/12 anos": {"age_min": 12, "age_max": None, "is_family": False, "school_level": None, "label": "M/12 anos"},
+    "m/12": {"age_min": 12, "age_max": None, "is_family": False, "school_level": None, "label": "M/12 anos"},
     "m/14 anos": {"age_min": 14, "age_max": None, "is_family": False, "school_level": None, "label": "M/14 anos"},
+    "m/14": {"age_min": 14, "age_max": None, "is_family": False, "school_level": None, "label": "M/14 anos"},
+    "+14": {"age_min": 14, "age_max": None, "is_family": False, "school_level": None, "label": "M/14 anos"},
     "m/16 anos": {"age_min": 16, "age_max": None, "is_family": False, "school_level": None, "label": "M/16 anos"},
+    "m/16": {"age_min": 16, "age_max": None, "is_family": False, "school_level": None, "label": "M/16 anos"},
+    "+16": {"age_min": 16, "age_max": None, "is_family": False, "school_level": None, "label": "M/16 anos"},
     "m/18 anos": {"age_min": 18, "age_max": None, "is_family": False, "school_level": None, "label": "M/18 anos"},
+    "m/18": {"age_min": 18, "age_max": None, "is_family": False, "school_level": None, "label": "M/18 anos"},
+    "+18": {"age_min": 18, "age_max": None, "is_family": False, "school_level": None, "label": "M/18 anos"},
     "universitário": {"age_min": 18, "age_max": None, "is_family": False, "school_level": "universitario", "label": "Universitário"},
     "universitario": {"age_min": 18, "age_max": None, "is_family": False, "school_level": "universitario", "label": "Universitário"},
     "para adultos": {"age_min": 18, "age_max": None, "is_family": False, "school_level": None, "label": "Para Adultos"},
     "para-adultos": {"age_min": 18, "age_max": None, "is_family": False, "school_level": None, "label": "Para Adultos"},
     "para todos": {"age_min": 0, "age_max": None, "is_family": True, "school_level": None, "label": "Para Todos"},
     "para-todos": {"age_min": 0, "age_max": None, "is_family": True, "school_level": None, "label": "Para Todos"},
+    "público em geral": {"age_min": 0, "age_max": None, "is_family": True, "school_level": None, "label": "Para Todos"},
+    "infância e juventude": {"age_min": 0, "age_max": 17, "is_family": True, "school_level": None, "label": "Infância e Juventude"},
 }
 
 # ---------------------------------------------------------------------------
-# SÉRIES PROGRAMÁTICAS CONHECIDAS (não são categorias)
+# SÉRIES PROGRAMÁTICAS CONHECIDAS
 # ---------------------------------------------------------------------------
 KNOWN_SERIES = [
     "Sexta Maior", "Notas de Música", "Laboratório LIPA", "Fábrica das Artes",
@@ -537,7 +764,6 @@ KNOWN_SERIES = [
 
 # ---------------------------------------------------------------------------
 # PREFIXOS DE SÉRIE A EXTRAIR DO TÍTULO
-# Ex: "Sexta Maior — Beethoven" → title="Beethoven", series_name="Sexta Maior"
 # ---------------------------------------------------------------------------
 SERIES_PREFIX_PATTERNS = [
     r"^(Sexta Maior)\s*[—\-–:]\s*",
@@ -548,4 +774,30 @@ SERIES_PREFIX_PATTERNS = [
     r"^(Fábrica das Artes)\s*[—\-–:]\s*",
     r"^(Dias da Música)\s*[—\-–:]\s*",
     r"^(Ciclo [^—\-–:]+)\s*[—\-–:]\s*",
+    r"^(Temporada \d{4}[-/]\d{2,4})\s*[—\-–:]\s*",
 ]
+
+# ---------------------------------------------------------------------------
+# GEOGRAPHIC SCOPE
+# ---------------------------------------------------------------------------
+GEOGRAPHIC_SCOPE_VALUES = [
+    "local",
+    "regional",
+    "nacional",
+    "acores",
+    "madeira",
+    "internacional",
+]
+
+# ---------------------------------------------------------------------------
+# NUTS2 Portugal
+# ---------------------------------------------------------------------------
+NUTS2 = {
+    "norte": "Norte",
+    "centro": "Centro",
+    "alentejo": "Alentejo",
+    "algarve": "Algarve",
+    "area-metropolitana-de-lisboa": "Área Metropolitana de Lisboa",
+    "regiao-autonoma-dos-acores": "Região Autónoma dos Açores",
+    "regiao-autonoma-da-madeira": "Região Autónoma da Madeira",
+}
