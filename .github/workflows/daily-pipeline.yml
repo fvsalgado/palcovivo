@@ -2,11 +2,17 @@ name: Pipeline Diário
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC  → run incremental normal
+    - cron: '0 3 * * 0'     # domingo às 3h UTC   → re-scan completo semanal
   workflow_dispatch:
     inputs:
       force_refresh:
-        description: 'Ignorar cache e re-scraping completo'
+        description: 'Ignorar cache HTTP e re-scraping completo'
+        required: false
+        default: 'false'
+        type: boolean
+      full_rescan:
+        description: 'Re-processar todos os URLs do sitemap (ignora known_ids)'
         required: false
         default: 'false'
         type: boolean
@@ -60,37 +66,11 @@ jobs:
           fi
 
   # ─────────────────────────────────────────
-  # JOB 2 — Restore cache do run anterior
-  # ─────────────────────────────────────────
-  restore-cache:
-    name: Restaurar cache HTTP
-    runs-on: ubuntu-latest
-    needs: discover
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Restaurar cache de URLs HTTP (ETag/Last-Modified)
-        uses: actions/cache@v4
-        with:
-          path: data/cache
-          key: http-cache-${{ github.run_id }}
-          restore-keys: |
-            http-cache-
-
-      - name: Upload cache para jobs paralelos
-        uses: actions/upload-artifact@v4
-        with:
-          name: http-cache
-          path: data/cache
-          if-no-files-found: ignore
-          retention-days: 1
-
-  # ─────────────────────────────────────────
-  # JOB 3 — Scrape paralelo (um job por venue)
+  # JOB 2 — Scrape paralelo (um job por venue)
   # ─────────────────────────────────────────
   scrape:
     name: Scrape ${{ matrix.venue }}
-    needs: [discover, restore-cache]
+    needs: discover
     runs-on: ubuntu-latest
     timeout-minutes: 40
     strategy:
@@ -106,25 +86,38 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependencias
+      - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      - name: Download cache HTTP
-        uses: actions/download-artifact@v4
-        with:
-          name: http-cache
-          path: data/cache
-        continue-on-error: true
+      # Calcular semana para cache key (deve vir antes do restore)
+      - name: Calcular semana (para cache key)
+        id: date
+        run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
 
+      # Cache HTTP por semana — reutilizada entre runs diários
+      - name: Restaurar cache HTTP
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: http-cache-${{ matrix.venue }}-${{ steps.date.outputs.week }}
+          restore-keys: |
+            http-cache-${{ matrix.venue }}-
+        id: http-cache
+
+      # FULL_RESCAN automático ao domingo (cron '0 3 * * 0')
+      # ou manual via workflow_dispatch com full_rescan=true
       - name: Scrape ${{ matrix.venue }}
         env:
           PYTHONPATH: ${{ github.workspace }}
+          FULL_RESCAN: >-
+            ${{
+              github.event.inputs.full_rescan == 'true' ||
+              (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0')
+            }}
         run: |
-          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
-            python pipeline/run_venue.py ${{ matrix.venue }} --force
-          else
-            python pipeline/run_venue.py ${{ matrix.venue }}
-          fi
+          ARGS=""
+          [ "${{ github.event.inputs.force_refresh }}" = "true" ] && ARGS="--force"
+          python pipeline/run_venue.py ${{ matrix.venue }} $ARGS
 
       - name: Upload artefacto
         uses: actions/upload-artifact@v4
@@ -139,7 +132,7 @@ jobs:
           retention-days: 1
 
   # ─────────────────────────────────────────
-  # JOB 4 — Agregar + publicar
+  # JOB 3 — Agregar + publicar
   # ─────────────────────────────────────────
   publish:
     name: Agregar e publicar
@@ -158,7 +151,7 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
 
-      - name: Instalar dependencias
+      - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
       - name: Download artefactos dos venues
@@ -178,13 +171,7 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: python pipeline/scripts/update_index.py
 
-      - name: Guardar cache HTTP para próximo run
-        uses: actions/cache@v4
-        with:
-          path: data/cache
-          key: http-cache-${{ github.run_id }}
-
-      - name: Notificacoes
+      - name: Notificações
         if: always()
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -203,7 +190,7 @@ jobs:
           git pull --rebase origin main
           git push
 
-      - name: Upload relatorio
+      - name: Upload relatório
         if: always()
         uses: actions/upload-artifact@v4
         with:
