@@ -21,15 +21,16 @@ on:
         required: false
         default: 'all'
         type: string
-      mode:
-        description: 'Modo — normal (incremental) · re-scan completo · forçar refresh HTTP'
+      full_rescan:
+        description: 'Re-scan completo — reprocessar todos os eventos, mesmo os já conhecidos'
         required: false
-        default: 'normal (incremental)'
-        type: choice
-        options:
-          - normal (incremental)
-          - re-scan completo
-          - forçar refresh HTTP
+        default: false
+        type: boolean
+      force_refresh:
+        description: 'Forçar refresh HTTP — ir buscar páginas à web mesmo que estejam em cache'
+        required: false
+        default: false
+        type: boolean
       dry_run:
         description: 'Teste sem gravar — corre o scrape mas não commita nem faz push'
         required: false
@@ -164,17 +165,16 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
           FULL_RESCAN: >-
             ${{
-              github.event.inputs.mode == 're-scan completo' ||
+              github.event.inputs.full_rescan == 'true' ||
               (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0')
             }}
         run: |
           ARGS=""
-          MODE="${{ github.event.inputs.mode }}"
           RESET_LIST="${{ github.event.inputs.reset_venues }}"
           VENUE="${{ matrix.venue }}"
 
           # force_refresh ou reset implicam --force
-          if [ "$MODE" = "forçar refresh HTTP" ]; then
+          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
             ARGS="--force"
           fi
           if [ -n "$RESET_LIST" ] && echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
@@ -366,7 +366,8 @@ jobs:
           git add data/events/ data/logs/ data/master.json data/venues/ data/backups/ index.html
           COMMIT_MSG="Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
           [ -n "${{ github.event.inputs.reset_venues }}" ] && COMMIT_MSG="$COMMIT_MSG [RESET: ${{ github.event.inputs.reset_venues }}]"
-          [ "${{ github.event.inputs.mode }}" = "re-scan completo" ] && COMMIT_MSG="$COMMIT_MSG [re-scan completo]"
+          [ "${{ github.event.inputs.full_rescan }}" = "true" ] && COMMIT_MSG="$COMMIT_MSG [re-scan completo]"
+          [ "${{ github.event.inputs.force_refresh }}" = "true" ] && COMMIT_MSG="$COMMIT_MSG [refresh HTTP]"
           git diff --staged --quiet || (
             git commit -m "$COMMIT_MSG" \
             && git pull --rebase origin main \
