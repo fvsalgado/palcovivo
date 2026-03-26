@@ -12,11 +12,26 @@ Melhorias vs v1:
 import hashlib
 import json
 import logging
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
 logger = logging.getLogger(__name__)
+
+
+def _safe_fromisoformat(s: str) -> datetime:
+    """
+    Parse ISO 8601 timestamp de forma robusta.
+    Corrige timestamps legados com Z final ou timezone duplicado (+00:00+00:00).
+    """
+    if not s:
+        raise ValueError("timestamp vazio")
+    # Remover Z final (legado: "...+00:00Z")
+    s = s.rstrip("Z")
+    # Corrigir timezone duplicado: "...+00:00+00:00" → "...+00:00"
+    s = re.sub(r'(\+\d{2}:\d{2})\+\d{2}:\d{2}$', r'\1', s)
+    return datetime.fromisoformat(s)
 
 ROOT      = Path(__file__).parent.parent.parent
 CACHE_DIR = ROOT / "data" / "cache"
@@ -71,7 +86,7 @@ def credibility_score(event: dict) -> float:
     if scraped_at:
         try:
             age_days = (datetime.now(timezone.utc) -
-                        datetime.fromisoformat(scraped_at.replace("Z", "+00:00"))).days
+                        _safe_fromisoformat(scraped_at)).days
             s -= min(0.10, age_days * 0.003)
         except Exception:
             pass
@@ -131,7 +146,7 @@ def load_url_cache(venue_id: str, url: str) -> Optional[dict]:
         event = data.get("event") or {}
         ttl   = _event_ttl_hours(event)
         if cached_at_str:
-            cached_at = datetime.fromisoformat(cached_at_str.replace("Z", "+00:00"))
+            cached_at = _safe_fromisoformat(cached_at_str)
             age = datetime.now(cached_at.tzinfo) - cached_at
             if age > timedelta(hours=ttl):
                 return None
@@ -148,7 +163,7 @@ def save_url_cache(venue_id: str, url: str, event: dict,
     path.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "url":           url,
-        "cached_at":     datetime.now(timezone.utc).isoformat() + "Z",
+        "cached_at":     datetime.now(timezone.utc).isoformat(),
         "etag":          etag,
         "last_modified": last_modified,
         "content_hash":  _content_hash(event),
@@ -255,7 +270,7 @@ def mark_not_seen(event: dict) -> dict:
     event = event.copy()
     pipeline = event.get("pipeline", {}).copy()
     pipeline["last_seen_at"] = pipeline.get("last_seen_at", pipeline.get("scraped_at", ""))
-    pipeline["not_seen_since"] = datetime.now(timezone.utc).isoformat() + "Z"
+    pipeline["not_seen_since"] = datetime.now(timezone.utc).isoformat()
     event["pipeline"] = pipeline
     return event
 
@@ -266,7 +281,7 @@ def should_tombstone(event: dict) -> bool:
     if not not_seen:
         return False
     try:
-        since = datetime.fromisoformat(not_seen.replace("Z", "+00:00"))
+        since = _safe_fromisoformat(not_seen)
         age   = datetime.now(timezone.utc) - since
         return age > timedelta(days=TOMBSTONE_DAYS)
     except Exception:
@@ -291,7 +306,7 @@ def load_cache(venue_id: str) -> dict:
             data = json.load(f)
         cached_at_str = data.get("cached_at", "")
         if cached_at_str:
-            cached_at = datetime.fromisoformat(cached_at_str.replace("Z", "+00:00"))
+            cached_at = _safe_fromisoformat(cached_at_str)
             age = datetime.now(cached_at.tzinfo) - cached_at
             if age > timedelta(hours=TTL["venue"]):
                 logger.info(f"Cache {venue_id}: expirado ({age})")
@@ -309,7 +324,7 @@ def save_cache(venue_id: str, events: list, metadata: dict = None) -> None:
     path = _venue_cache_path(venue_id)
     data = {
         "venue_id":    venue_id,
-        "cached_at":   datetime.now(timezone.utc).isoformat() + "Z",
+        "cached_at":   datetime.now(timezone.utc).isoformat(),
         "event_count": len(events),
         "metadata":    metadata or {},
         "events":      events,
