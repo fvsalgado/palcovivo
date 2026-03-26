@@ -11,8 +11,9 @@
     "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 0
+    "skipped_old": 0,
+    "source_id_dupes_resolved": 121
   },
   "venue_name": "Culturgest",
-  "avg_credibility_score": 0.873
+  "avg_credibility_score": 0.876
 }

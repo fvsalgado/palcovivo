@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-03-26T11:41:44.249440+00:00Z",
+  "run_at": "2026-03-26T13:07:22.774683+00:00Z",
   "duration_seconds": 0.3,
   "summary": {
     "venues_processed": 4,
     "total_scraped": 1773,
     "total_valid": 1674,
     "total_invalid": 99,
-    "total_after_dedup": 1389,
+    "total_after_dedup": 1268,
     "total_errors": 0,
-    "avg_credibility": 0.855
+    "avg_credibility": 0.856
   },
   "venue_quality": {
     "theatro-circo": {
@@ -20,12 +20,12 @@
       "avg_credibility": 0.792
     },
     "culturgest": {
-      "total": 995,
+      "total": 874,
       "with_image": 100.0,
-      "with_price": 51.3,
+      "with_price": 53.5,
       "with_description": 100.0,
-      "with_category": 52.6,
-      "avg_credibility": 0.873
+      "with_category": 54.7,
+      "avg_credibility": 0.876
     },
     "tndm": {
       "total": 14,
@@ -76,10 +76,11 @@
         "new": 0,
         "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 0
+        "skipped_old": 0,
+        "source_id_dupes_resolved": 121
       },
       "venue_name": "Culturgest",
-      "avg_credibility_score": 0.873
+      "avg_credibility_score": 0.876
     },
     {
       "venue_id": "theatro-circo",
