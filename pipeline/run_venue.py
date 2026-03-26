@@ -1,11 +1,14 @@
 """
-Primeira Plateia — Scrape de venue único v2
-Melhorias:
+Primeira Plateia — Scrape de venue único v3
+Melhorias vs v2:
   - ETag / Last-Modified: conditional requests → skip se 304
   - Merge com score de credibilidade (novo só substitui se melhor)
   - Tombstone: eventos desaparecidos marcados, não apagados imediatamente
   - Cache por URL individual para scraping incremental eficiente
   - Regressão guard: se novo scrape retorna 0 eventos e havia cache, usa cache
+  - Backup automático antes de cada write (30 por venue em data/backups/)
+  - Deduplicar por source_id: quando dois activos partilham source_id,
+    mantém o de maior credibility score e desactiva o outro
 """
 
 import argparse
@@ -26,7 +29,10 @@ ROOT       = Path(__file__).parent.parent
 DATA_DIR   = ROOT / "data"
 VENUES_DIR = DATA_DIR / "venues"
 EVENTS_DIR = DATA_DIR / "events"
-LOGS_DIR   = DATA_DIR / "logs"
+LOGS_DIR    = DATA_DIR / "logs"
+BACKUPS_DIR = DATA_DIR / "backups"
+
+BACKUPS_MAX = 30  # máximo de backups por venue
 
 from pipeline.core.harmonizer import harmonize_event
 from pipeline.core.validator  import validate_batch
@@ -86,6 +92,82 @@ def _load_existing_events(venue_id: str) -> dict[str, dict]:
     except Exception as e:
         logger.warning(f"{venue_id}: erro ao ler eventos existentes — {e}")
         return {}
+
+
+def _backup_events(venue_id: str) -> None:
+    """
+    Copia o ficheiro de eventos actual para data/backups/{venue_id}/{timestamp}.json
+    antes de ser substituído. Mantém apenas os últimos BACKUPS_MAX ficheiros.
+    """
+    src = EVENTS_DIR / f"{venue_id}.json"
+    if not src.exists():
+        return  # nada a fazer no primeiro run
+    backup_dir = BACKUPS_DIR / venue_id
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    dst = backup_dir / f"{ts}.json"
+    try:
+        dst.write_bytes(src.read_bytes())
+        logger.info(f"{venue_id}: backup guardado em {dst.name}")
+    except Exception as e:
+        logger.warning(f"{venue_id}: erro ao criar backup — {e}")
+        return
+    # Limpar backups antigos: manter só os últimos BACKUPS_MAX
+    backups = sorted(backup_dir.glob("*.json"))
+    excess = len(backups) - BACKUPS_MAX
+    if excess > 0:
+        for old in backups[:excess]:
+            try:
+                old.unlink()
+            except Exception:
+                pass
+        logger.info(f"{venue_id}: {excess} backup(s) antigo(s) removido(s)")
+
+
+def _dedup_by_source_id(events: list, venue_id: str) -> tuple[list, int]:
+    """
+    Quando dois eventos activos partilham o mesmo source_id (acontece quando
+    um scrape antigo produziu um ID errado e um scrape posterior produziu o ID
+    correcto), mantém apenas o com maior credibility score e desactiva o outro.
+
+    Retorna (lista_deduplicada, n_duplicados_resolvidos).
+    """
+    from pipeline.core.cache import credibility_score as _score
+    by_source: dict[str, list] = {}
+    for ev in events:
+        sid = ev.get("source_id")
+        if sid:
+            by_source.setdefault(sid, []).append(ev)
+
+    duplicates_resolved = 0
+    result = []
+    seen_ids: set[str] = set()
+
+    for ev in events:
+        sid = ev.get("source_id")
+        eid = ev.get("id")
+        if eid in seen_ids:
+            continue
+        group = by_source.get(sid, [])
+        if len(group) <= 1:
+            result.append(ev)
+            seen_ids.add(eid)
+        else:
+            # Escolher o de maior score; em caso de empate, o de data mais antiga (correcto)
+            best = max(group, key=lambda e: (_score(e), -(e.get("date_first") or "9999") ))
+            for dup in group:
+                seen_ids.add(dup.get("id"))
+            if ev is best:
+                result.append(ev)
+                if len(group) > 1:
+                    losers = [d["id"] for d in group if d is not best]
+                    logger.info(
+                        f"{venue_id}: dedup source_id={sid!r} — "
+                        f"mantido {best['id']}, desactivados {losers}"
+                    )
+                    duplicates_resolved += 1
+
+    return result, duplicates_resolved
 
 
 def _apply_merge(existing_map: dict, new_valid: list, venue_id: str) -> tuple[list, dict]:
@@ -263,6 +345,14 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
     inactive_count = len(final_events) - len(active_events)
     if inactive_count:
         logger.info(f"{venue_id}: {inactive_count} eventos inactivos (tombstone) excluídos do output")
+
+    # ── Deduplicar por source_id (resolve registos com ID errado de runs anteriores) ──
+    active_events, dupes = _dedup_by_source_id(active_events, venue_id)
+    if dupes:
+        report.setdefault("merge_stats", {})["source_id_dupes_resolved"] = dupes
+
+    # ── Backup do ficheiro actual antes de substituir ──
+    _backup_events(venue_id)
 
     # ── Guardar ──
     EVENTS_DIR.mkdir(parents=True, exist_ok=True)
