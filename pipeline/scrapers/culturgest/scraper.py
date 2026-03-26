@@ -1,26 +1,34 @@
 """
-Culturgest Scraper — Versão 13 (25 Mar 2026)
+Culturgest Scraper — Versão 14 (26 Mar 2026)
 
-DIAGNÓSTICO E FIX:
-  A página de listagem /pt/programacao/por-evento/ tem o container de eventos VAZIO:
-    <div class="events-section js-eventContainer not-fixed-nav"></div>
-  Os eventos são carregados via AJAX pelo JavaScript do site a partir de:
-    window.event_list_url="/pt/programacao/schedule/events/"
+DIAGNÓSTICO DO PROBLEMA v12/v13:
+─────────────────────────────────
+  O endpoint /pt/programacao/schedule/events/ devolve SEMPRE a página HTML
+  completa (91 KB) independentemente dos headers enviados (incluindo
+  X-Requested-With: XMLHttpRequest). O servidor Django do site não usa
+  request.is_ajax() (deprecado desde Django 3.1) para activar o modo fragmento.
 
-  O scraper v12 apontava para o endpoint correto mas _extract_event_links esperava
-  uma estrutura de path com 5+ segmentos — os slugs da Culturgest têm apenas 3
-  (/pt/programacao/<slug>/), causando a rejeição de todos os links.
+  O resultado: 0 ou 1 evento extraído (o link "Agenda" do nav de detalhe
+  que passa erroneamente no filtro de URL porque /por-evento/?$ não faz
+  match a /por-evento/? com query string vazia).
 
-  Adicionalmente, o endpoint AJAX pode exigir headers de sessão específicos.
-  Esta versão resolve ambos os problemas:
-    1. Filtro de path corrigido para aceitar slugs com 3 segmentos
-    2. Headers completos a imitar browser real (Accept, Accept-Language, Cookie inicial)
-    3. Sessão inicializada com GET à página de listagem para obter cookies CSRF
-    4. Fallback: se AJAX falhar, tenta extrair links da página HTML de listagem
-       através dos cards "Próximos Eventos" visíveis no HTML de detalhe
-    5. Parser de ficha técnica adicionado (credits_raw)
-    6. Acessibilidade melhorada: deteta audiodescrição mesmo quando está no bloco
-       .event-info-block fora do highlight (como no Diana Niepce)
+ESTRATÉGIA v14 — três níveis em cascata:
+──────────────────────────────────────────
+  1. filter_list_url  (/pt/programacao/filtrar/)
+     O JS do site define window.filter_list_url. Este endpoint é chamado
+     com os parâmetros de filtro e provavelmente devolve JSON com a lista
+     de eventos. Testamos GET sem parâmetros e com typology/public.
+
+  2. schedule/events/ com parâmetro 'from'
+     O endpoint de listagem pode precisar do parâmetro 'from=YYYY-MM-DD'
+     para activar o modo fragmento (eventos a partir de uma data).
+
+  3. Sitemap XML
+     Fallback robusto: /sitemap.xml ou robots.txt → descobrir sitemap
+     de programação → extrair slugs de eventos.
+
+  Após obter a lista de URLs, o parse de cada evento é idêntico ao v13
+  (já validado com o HTML real do evento Diana Niepce).
 """
 
 import re
@@ -28,9 +36,9 @@ import time
 import json as _json
 import logging
 import warnings
-from datetime import datetime, timezone
+from datetime import datetime, date, timezone
 from typing import Optional, List
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse, urljoin
 
 import requests
 import urllib3
@@ -43,14 +51,19 @@ logger = logging.getLogger(__name__)
 
 WEBSITE = "https://www.culturgest.pt"
 LIST_URL = f"{WEBSITE}/pt/programacao/por-evento/"
-AJAX_URL = f"{WEBSITE}/pt/programacao/schedule/events/"
+SCHEDULE_URL = f"{WEBSITE}/pt/programacao/schedule/events/"
+FILTER_URL = f"{WEBSITE}/pt/programacao/filtrar/"
+SITEMAP_URLS = [
+    f"{WEBSITE}/sitemap.xml",
+    f"{WEBSITE}/pt/sitemap.xml",
+    f"{WEBSITE}/robots.txt",
+]
 
 REQUEST_DELAY = 1.5
 TIMEOUT = 30
-MAX_PAGES = 20
+MAX_PAGES = 30
 
-# Headers completos a imitar browser real
-HEADERS_BASE = {
+HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
@@ -58,24 +71,11 @@ HEADERS_BASE = {
     "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-Mode": "navigate",
-}
-
-HEADERS_HTML = {
-    **HEADERS_BASE,
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Referer": LIST_URL,
 }
 
-HEADERS_AJAX = {
-    **HEADERS_BASE,
-    "Accept": "text/html, */*; q=0.01",
-    "Referer": LIST_URL,
-    "X-Requested-With": "XMLHttpRequest",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Dest": "empty",
-}
+HEADERS_HTML = {**HEADERS, "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
+HEADERS_JSON = {**HEADERS, "Accept": "application/json, text/javascript, */*; q=0.01", "X-Requested-With": "XMLHttpRequest"}
 
 MONTH_PT = {
     "jan": "01", "fev": "02", "mar": "03", "abr": "04", "mai": "05", "jun": "06",
@@ -87,67 +87,66 @@ MONTH_PT = {
 
 
 # ---------------------------------------------------------------------------
-# Utilitários de URL
+# Utilitários
 # ---------------------------------------------------------------------------
 
 def _normalize_url(url: str) -> str:
-    parsed = urlparse(url)
-    return urlunparse((parsed.scheme, parsed.netloc, parsed.path.rstrip("/"), "", "", ""))
+    p = urlparse(url)
+    return urlunparse((p.scheme, p.netloc, p.path.rstrip("/"), "", "", ""))
 
 
 def _is_event_url(url: str) -> bool:
     """
-    Verifica se o URL é de um evento individual.
-    Formato: /pt/programacao/<slug>/ — mínimo 3 segmentos de path não vazios.
-    Exclui páginas de listagem, filtros, arquivo, etc.
+    URL de evento individual: /pt/programacao/<slug>/
+    Exclui listagens, filtros, arquivo, nav links, e qualquer URL
+    com query string que não seja de evento (typology=, public=, page=).
     """
-    EXCLUDE = re.compile(
-        r"/por-evento/?$|/agenda-pdf/|/archive/|/bilheteira/|/colecao/|"
-        r"/informacoes/|/participacao/|/media/|/fundacao/|/search/|"
-        r"/schedule/|#|\?typology=|\?public=|\?page="
-    )
-    if EXCLUDE.search(url):
+    # Excluir query strings de listagem — eventos não têm query string
+    parsed = urlparse(url)
+    if parsed.query:
         return False
-    if "/programacao/" not in url:
+    path = parsed.path.rstrip("/")
+    # Deve ser exactamente /pt/programacao/<slug>
+    parts = [p for p in path.split("/") if p]
+    if len(parts) != 3:
         return False
-    path_parts = [p for p in urlparse(url).path.split("/") if p]
-    # /pt/programacao/<slug>/ → ['pt', 'programacao', '<slug>'] = 3 partes
-    return len(path_parts) >= 3
+    if parts[0] not in ("pt", "en"):
+        return False
+    if parts[1] != "programacao":
+        return False
+    # Excluir slugs de páginas de sistema
+    SYSTEM_SLUGS = {
+        "por-evento", "agenda-pdf", "archive", "schedule",
+        "filtrar", "sitemap", "por-semana", "por-mes",
+    }
+    if parts[2] in SYSTEM_SLUGS:
+        return False
+    return True
 
-
-# ---------------------------------------------------------------------------
-# Sessão com inicialização de cookies
-# ---------------------------------------------------------------------------
 
 def _make_session() -> requests.Session:
-    """
-    Cria sessão e inicializa cookies fazendo um GET à página de listagem.
-    Isto garante que o servidor nos dá o csrftoken e sessionid necessários
-    para que o endpoint AJAX responda corretamente.
-    """
     s = requests.Session()
     s.verify = False
     s.headers.update(HEADERS_HTML)
-
     try:
         r = s.get(LIST_URL, timeout=TIMEOUT)
         r.raise_for_status()
         logger.info(f"Sessão inicializada — cookies: {list(s.cookies.keys())}")
     except Exception as e:
-        logger.warning(f"Aviso ao inicializar sessão: {e}")
-
+        logger.warning(f"Sessão sem cookies iniciais: {e}")
     return s
 
 
-def _get(session: requests.Session, url: str, params: dict = None,
-         headers: dict = None):
+def _get(session: requests.Session, url: str, params: dict = None, headers: dict = None):
     try:
-        h = {**session.headers, **(headers or {})}
+        h = dict(session.headers)
+        if headers:
+            h.update(headers)
         r = session.get(url, params=params, headers=h, timeout=TIMEOUT)
         r.raise_for_status()
         return r
     except Exception as e:
-        logger.warning(f"Erro GET {url}: {e}")
+        logger.warning(f"GET {url}: {e}")
         return None
 
 
@@ -156,11 +155,9 @@ def _get(session: requests.Session, url: str, params: dict = None,
 # ---------------------------------------------------------------------------
 
 def _parse_date(text: str) -> Optional[str]:
-    """Converte 'DD MÊS YYYY' PT → 'YYYY-MM-DD'. Aceita maiúsculas."""
     if not text:
         return None
     t = re.sub(r"\s+", " ", text.strip()).lower()
-    # Remover dia da semana
     t = re.sub(r"\b(seg|ter|qua|qui|sex|s[aá]b|dom)\b\.?", "", t).strip()
     t = t.replace(",", "").strip()
     m = re.match(r"(\d{1,2})\s+([a-záéíóúç]+)(?:\s+(\d{4}))?", t)
@@ -175,7 +172,6 @@ def _parse_date(text: str) -> Optional[str]:
 
 
 def _parse_time(text: str) -> Optional[str]:
-    """Extrai HH:MM de '21:00', '21h00', '21h'."""
     if not text:
         return None
     m = re.search(r"\b(\d{1,2})[h:](\d{2})\b", text.lower())
@@ -195,11 +191,7 @@ def _parse_price(text: str) -> Optional[dict]:
     prices = re.findall(r"(\d+(?:[.,]\d+)?)\s*€", text)
     if prices:
         nums = [float(p.replace(",", ".")) for p in prices]
-        result = {
-            "is_free": False,
-            "price_min": min(nums),
-            "price_display": text.strip(),
-        }
+        result = {"is_free": False, "price_min": min(nums), "price_display": text.strip()}
         if len(nums) > 1:
             result["price_max"] = max(nums)
         return result
@@ -219,18 +211,243 @@ def _parse_duration(text: str) -> Optional[int]:
 
 
 # ---------------------------------------------------------------------------
-# Extração de links de eventos
+# ESTRATÉGIA 1: filter_list_url
 # ---------------------------------------------------------------------------
 
-def _extract_event_links(html: str) -> List[str]:
+def _fetch_via_filter(session: requests.Session) -> List[str]:
     """
-    Extrai links únicos de eventos de qualquer fragmento HTML —
-    funciona tanto com a página completa como com fragmentos AJAX.
+    Tenta obter lista de eventos via /pt/programacao/filtrar/
+    Este endpoint pode devolver JSON com URLs ou HTML de fragmento.
+    Tenta também o schedule/events/ com parâmetro 'from'.
     """
+    urls = []
+    today = date.today().strftime("%Y-%m-%d")
+
+    candidates = [
+        # filter_list_url sem parâmetros
+        (FILTER_URL, {}),
+        # filter_list_url com data
+        (FILTER_URL, {"from": today}),
+        # schedule/events com data
+        (SCHEDULE_URL, {"from": today}),
+        # schedule/events com data e page
+        (SCHEDULE_URL, {"from": today, "page": 1}),
+        # schedule/events com typology (força modo fragmento)
+        (SCHEDULE_URL, {"typology": ""}),
+    ]
+
+    for base_url, params in candidates:
+        time.sleep(REQUEST_DELAY)
+        resp = _get(session, base_url, params=params, headers=HEADERS_JSON)
+        if not resp:
+            continue
+
+        ct = resp.headers.get("Content-Type", "")
+        size = len(resp.text)
+        logger.info(f"Filter probe {base_url} {params} → {size} chars | {ct[:40]}")
+
+        # Se for JSON → extrair URLs
+        if "application/json" in ct:
+            try:
+                data = resp.json()
+                logger.info(f"  JSON keys: {list(data.keys())[:8]}")
+                # Tentar extrair eventos de estruturas comuns
+                for key in ("events", "results", "items", "data", "html"):
+                    val = data.get(key)
+                    if isinstance(val, list):
+                        for item in val:
+                            if isinstance(item, dict):
+                                for url_key in ("url", "link", "href", "slug"):
+                                    u = item.get(url_key, "")
+                                    if u and "/programacao/" in u:
+                                        full = u if u.startswith("http") else f"{WEBSITE}{u}"
+                                        if _is_event_url(full):
+                                            urls.append(full)
+                    elif isinstance(val, str) and len(val) > 100:
+                        # HTML embutido em JSON
+                        found = _extract_event_links_from_html(val)
+                        urls.extend(found)
+                        logger.info(f"  HTML em JSON → {len(found)} links")
+                if urls:
+                    logger.info(f"  {len(urls)} URLs via JSON")
+                    return list(dict.fromkeys(urls))
+            except Exception as e:
+                logger.debug(f"  Erro JSON: {e}")
+
+        # Se for HTML pequeno (< 50 KB) → provavelmente fragmento de eventos
+        elif size < 50_000:
+            found = _extract_event_links_from_html(resp.text)
+            if found:
+                logger.info(f"  Fragmento HTML → {len(found)} links")
+                urls.extend(found)
+                if urls:
+                    return list(dict.fromkeys(urls))
+
+        # HTML grande (>= 50 KB) → página completa, ignorar para extracção de listing
+        else:
+            logger.debug(f"  HTML completo ({size} chars) — ignorar para listing")
+
+    return list(dict.fromkeys(urls))
+
+
+# ---------------------------------------------------------------------------
+# ESTRATÉGIA 2: Sitemap XML
+# ---------------------------------------------------------------------------
+
+def _fetch_via_sitemap(session: requests.Session) -> List[str]:
+    """
+    Descobre e parseia sitemap.xml para obter URLs de eventos.
+    Tenta robots.txt primeiro para descobrir o sitemap correcto.
+    """
+    urls = []
+
+    # Tentar descobrir sitemap via robots.txt
+    sitemap_locations = list(SITEMAP_URLS)
+    robots_resp = _get(session, f"{WEBSITE}/robots.txt", headers=HEADERS_HTML)
+    if robots_resp:
+        for line in robots_resp.text.splitlines():
+            if line.lower().startswith("sitemap:"):
+                loc = line.split(":", 1)[1].strip()
+                if loc not in sitemap_locations:
+                    sitemap_locations.insert(0, loc)
+                    logger.info(f"Sitemap descoberto via robots.txt: {loc}")
+
+    for sitemap_url in sitemap_locations:
+        if sitemap_url.endswith("robots.txt"):
+            continue
+        time.sleep(REQUEST_DELAY)
+        resp = _get(session, sitemap_url, headers=HEADERS_HTML)
+        if not resp:
+            continue
+
+        ct = resp.headers.get("Content-Type", "")
+        logger.info(f"Sitemap {sitemap_url} → {len(resp.text)} chars | {ct[:40]}")
+
+        soup = BeautifulSoup(resp.text, "lxml-xml")
+
+        # Sitemapindex: contém links para outros sitemaps
+        for sitemap_ref in soup.find_all("sitemap"):
+            loc = sitemap_ref.find("loc")
+            if loc:
+                sub_url = loc.get_text(strip=True)
+                if "programacao" in sub_url or "events" in sub_url or "programm" in sub_url:
+                    logger.info(f"  Sub-sitemap: {sub_url}")
+                    time.sleep(REQUEST_DELAY)
+                    sub_resp = _get(session, sub_url, headers=HEADERS_HTML)
+                    if sub_resp:
+                        sub_soup = BeautifulSoup(sub_resp.text, "lxml-xml")
+                        for url_el in sub_soup.find_all("url"):
+                            loc2 = url_el.find("loc")
+                            if loc2:
+                                candidate = loc2.get_text(strip=True)
+                                if _is_event_url(candidate):
+                                    urls.append(candidate)
+
+        # Sitemap normal: lista de URLs directamente
+        for url_el in soup.find_all("url"):
+            loc = url_el.find("loc")
+            if loc:
+                candidate = loc.get_text(strip=True)
+                if _is_event_url(candidate):
+                    urls.append(candidate)
+
+        if urls:
+            logger.info(f"Sitemap: {len(urls)} URLs de eventos encontrados")
+            return list(dict.fromkeys(urls))
+
+    return urls
+
+
+# ---------------------------------------------------------------------------
+# ESTRATÉGIA 3: schedule/events/ paginado com parâmetros correctos
+# ---------------------------------------------------------------------------
+
+def _fetch_via_schedule_paginated(session: requests.Session) -> List[str]:
+    """
+    Tenta o schedule endpoint com múltiplas combinações de parâmetros
+    até encontrar uma que devolva fragmento HTML com eventos.
+    Após encontrar o padrão correcto, pagina até não haver mais eventos.
+    """
+    today = date.today().strftime("%Y-%m-%d")
+    all_urls: List[str] = []
+    seen_sets: List[frozenset] = []
+
+    # Detectar o padrão de parâmetros correcto
+    working_params = None
+    probe_variants = [
+        {"from": today},
+        {"from": today, "page": 1},
+        {"start": today},
+        {"date": today},
+        {"offset": 0},
+        {},  # sem parâmetros mas com headers JSON
+    ]
+
+    for variant in probe_variants:
+        time.sleep(REQUEST_DELAY)
+        resp = _get(session, SCHEDULE_URL, params=variant, headers=HEADERS_JSON)
+        if not resp:
+            continue
+        size = len(resp.text)
+        ct = resp.headers.get("Content-Type", "")
+        logger.info(f"Schedule probe {variant} → {size} chars | {ct[:30]}")
+
+        if size < 50_000:  # fragmento, não página completa
+            found = _extract_event_links_from_html(resp.text)
+            if found:
+                logger.info(f"  ✓ Padrão encontrado: {variant} → {len(found)} links")
+                working_params = variant
+                all_urls.extend(found)
+                seen_sets.append(frozenset(_normalize_url(u) for u in found))
+                break
+
+    if working_params is None:
+        logger.warning("Schedule: nenhum parâmetro produziu fragmento com eventos")
+        return all_urls
+
+    # Paginar com o padrão encontrado
+    page = 2
+    page_key = next((k for k in ("page", "offset") if k in working_params), None)
+
+    while page <= MAX_PAGES:
+        time.sleep(REQUEST_DELAY)
+
+        params = dict(working_params)
+        if page_key == "page":
+            params["page"] = page
+        elif page_key == "offset":
+            params["offset"] = (page - 1) * 20  # assumir 20 por página
+        else:
+            # Sem chave de paginação conhecida → tentar adicionar page=
+            params["page"] = page
+
+        resp = _get(session, SCHEDULE_URL, params=params, headers=HEADERS_JSON)
+        if not resp or len(resp.text) < 100:
+            break
+
+        found = _extract_event_links_from_html(resp.text)
+        page_set = frozenset(_normalize_url(u) for u in found)
+
+        if not found or page_set in seen_sets:
+            logger.info(f"Schedule pág {page}: fim da paginação")
+            break
+
+        seen_sets.append(page_set)
+        all_urls.extend(found)
+        logger.info(f"Schedule pág {page}: {len(found)} links ({len(all_urls)} total)")
+        page += 1
+
+    return list(dict.fromkeys(_normalize_url(u) for u in all_urls))
+
+
+# ---------------------------------------------------------------------------
+# Extracção de links de HTML (usado pelas 3 estratégias)
+# ---------------------------------------------------------------------------
+
+def _extract_event_links_from_html(html: str) -> List[str]:
     soup = BeautifulSoup(html, "lxml")
     links = []
     seen = set()
-
     for a in soup.find_all("a", href=True):
         href = a["href"].strip()
         full = href if href.startswith("http") else f"{WEBSITE}{href}"
@@ -240,12 +457,50 @@ def _extract_event_links(html: str) -> List[str]:
         if norm not in seen:
             seen.add(norm)
             links.append(full)
-
     return links
 
 
 # ---------------------------------------------------------------------------
-# Parser de datas do bloco lateral
+# Orquestrador de listing
+# ---------------------------------------------------------------------------
+
+def _get_event_urls(session: requests.Session) -> List[str]:
+    """
+    Tenta as 3 estratégias por ordem e devolve a primeira que produz resultados.
+    Regista diagnóstico detalhado para facilitar debugging futuro.
+    """
+    # Estratégia 1: filter_list_url / schedule com parâmetros
+    logger.info("=== Estratégia 1: filter endpoint ===")
+    urls = _fetch_via_filter(session)
+    if urls:
+        logger.info(f"Estratégia 1 bem-sucedida: {len(urls)} URLs")
+        return urls
+
+    # Estratégia 2: Sitemap
+    logger.info("=== Estratégia 2: sitemap XML ===")
+    urls = _fetch_via_sitemap(session)
+    if urls:
+        logger.info(f"Estratégia 2 bem-sucedida: {len(urls)} URLs")
+        return urls
+
+    # Estratégia 3: schedule paginado com probe de parâmetros
+    logger.info("=== Estratégia 3: schedule paginado ===")
+    urls = _fetch_via_schedule_paginated(session)
+    if urls:
+        logger.info(f"Estratégia 3 bem-sucedida: {len(urls)} URLs")
+        return urls
+
+    logger.error(
+        "TODAS AS ESTRATÉGIAS FALHARAM. "
+        "O site pode estar a usar SPA pura (client-side rendering). "
+        "Considerar: Playwright/Selenium para render JS, ou inspecção "
+        "manual do tráfego de rede para descobrir o endpoint real."
+    )
+    return []
+
+
+# ---------------------------------------------------------------------------
+# Parser de datas
 # ---------------------------------------------------------------------------
 
 def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
@@ -256,10 +511,8 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
     )
     if not date_block:
         return sessions
-
     for br in date_block.find_all("br"):
         br.replace_with("\n")
-
     paragraphs = date_block.find_all("p")
     if paragraphs:
         for p in paragraphs:
@@ -269,14 +522,12 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
         raw = date_block.get_text(separator="\n", strip=True)
         lines = [l.strip() for l in raw.splitlines() if l.strip()]
         _extract_sessions_from_lines(lines, sessions)
-
     return sessions
 
 
 def _extract_sessions_from_lines(lines: List[str], sessions: List[dict]) -> None:
     current_date = None
     current_time = None
-
     for line in lines:
         d = _parse_date(line)
         if d:
@@ -288,7 +539,6 @@ def _extract_sessions_from_lines(lines: List[str], sessions: List[dict]) -> None
             t = _parse_time(line)
             if t and current_date:
                 current_time = t
-
     if current_date:
         sessions.append({"date": current_date, "time_start": current_time})
 
@@ -298,10 +548,6 @@ def _extract_sessions_from_lines(lines: List[str], sessions: List[dict]) -> None
 # ---------------------------------------------------------------------------
 
 def _parse_technical_info(soup: BeautifulSoup) -> Optional[str]:
-    """
-    Extrai a ficha técnica de .detail-extras-technical-info.
-    Formato: pares <p class="subtitle-paragraph">Label</p><p>Valor</p>
-    """
     tech = soup.select_one(".detail-extras-technical-info")
     if not tech:
         return None
@@ -319,42 +565,12 @@ def _parse_technical_info(soup: BeautifulSoup) -> Optional[str]:
             if is_label and i + 1 < len(items):
                 label = p.get_text(strip=True)
                 value = items[i + 1].get_text(strip=True)
-                if label and value and value != "\xa0":
+                if label and value and value.strip() not in ("", "\xa0", "&nbsp;"):
                     parts.append(f"{label}: {value}")
                 i += 2
             else:
                 i += 1
     return " | ".join(parts) if parts else None
-
-
-# ---------------------------------------------------------------------------
-# Parser de acessibilidade
-# ---------------------------------------------------------------------------
-
-def _parse_accessibility(soup: BeautifulSoup) -> dict:
-    """
-    Deteta recursos de acessibilidade em todo o texto da página,
-    incluindo blocos .event-info-block adicionais fora do highlight.
-    """
-    full_text = soup.get_text(" ", strip=True).lower()
-    return {
-        "has_sign_language": bool(re.search(
-            r"l[íi]ngua\s+gestual|interpreta[çc][aã]o\s+gestual|\blgp\b", full_text
-        )),
-        "has_audio_description": bool(re.search(
-            r"audiodescrição|audiodescricao|[aá]udio.?descri", full_text
-        )),
-        "has_subtitles": bool(re.search(
-            r"\blegendas?\b|\bsubtitle", full_text
-        )),
-        "is_relaxed_performance": bool(re.search(
-            r"sess[aã]o\s+relaxada|relaxed\s+performance|acesso\s+pré.espetáculo", full_text
-        )),
-        "wheelchair_accessible": True,
-        "has_pre_show_access": bool(re.search(
-            r"acesso\s+pré.espetáculo|pre.?show\s+access", full_text
-        )),
-    }
 
 
 # ---------------------------------------------------------------------------
@@ -368,7 +584,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
 
     soup = BeautifulSoup(resp.text, "lxml")
 
-    # ── Título ──
+    # Título
     title = ""
     h1 = soup.select_one(".event-detail-header h1")
     if not h1:
@@ -380,51 +596,36 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         if meta:
             title = meta.get("content", "").split("|")[0].strip()
     if len(title) < 2:
-        logger.warning(f"Evento sem título válido: {url}")
         return None
 
-    # ── Subtítulo ──
+    # Subtítulo
     subtitle = None
-    # Pode aparecer em dois sítios — dentro do header ou do bloco description
-    for sel in [".event-detail-header .subtitle", ".description .subtitle"]:
+    for sel in [".event-detail-header .subtitle", ".description > .subtitle"]:
         sub = soup.select_one(sel)
         if sub:
             candidate = sub.get_text(strip=True)
-            # Rejeitar se for igual ao título (duplicado em alguns eventos)
             if candidate and candidate != title:
                 subtitle = candidate
                 break
 
-    # ── Categorias ──
-    categories = []
-    for a in soup.select(".event-types .type"):
-        t = a.get_text(strip=True)
-        if t and t not in categories:
-            categories.append(t)
+    # Categorias
+    categories = [
+        a.get_text(strip=True)
+        for a in soup.select(".event-types .type")
+        if a.get_text(strip=True)
+    ]
 
-    # ── Descrição ──
+    # Descrição
     desc = None
     desc_el = soup.select_one(".text-plugin")
     if desc_el:
         desc = desc_el.get_text(separator="\n", strip=True) or None
-    if not desc:
-        for sel in [".description", ".lead"]:
-            el = soup.select_one(sel)
-            if el:
-                candidate = el.get_text(separator="\n", strip=True)
-                if len(candidate) > 80:
-                    desc = candidate
-                    break
 
-    # ── Datas / sessões ──
+    # Datas
     sessions = _parse_dates_block(soup)
 
-    # ── Bloco highlight ──
-    price_raw = None
-    duration_minutes = None
-    space = None
-    age_rating = None
-
+    # Highlight: preço, duração, sala, classificação
+    price_raw = duration_minutes = space = age_rating = None
     highlight = soup.select_one(".description-aside .event-info-block.highlight")
     if highlight:
         for br in highlight.find_all("br"):
@@ -434,50 +635,54 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
             if not line:
                 continue
             if "€" in line or re.search(r"entrada\s+livre|gratuito", line, re.I):
-                if not price_raw:
-                    price_raw = line
+                price_raw = price_raw or line
             elif re.search(r"dura[çc][aã]o", line, re.I):
-                if not duration_minutes:
-                    duration_minutes = _parse_duration(line)
+                duration_minutes = duration_minutes or _parse_duration(line)
             elif re.search(
                 r"audit[oó]rio|grande\s+audit|pequeno\s+audit|est[uú]dio|"
                 r"black\s*box|palco|sala\s*\d",
                 line, re.I
             ):
-                if not space:
-                    space = line
+                space = space or line
             elif re.search(r"\bm\s*/\s*\d+\b|\bm\s*\+\s*\d+\b", line, re.I):
-                if not age_rating:
-                    age_rating = line
+                age_rating = age_rating or line
 
     price = _parse_price(price_raw) or {}
 
-    # ── Bilheteira ──
+    # Bilheteira
     ticketing_url = None
     btn = soup.select_one("a.event-tickets-btn[href]")
     if btn:
         href = btn["href"]
         ticketing_url = href if href.startswith("http") else f"{WEBSITE}{href}"
-    if not ticketing_url:
-        for a in soup.find_all("a", href=True):
-            txt = a.get_text(strip=True).lower()
-            if any(w in txt for w in ["comprar bilhete", "bilhetes", "reservar"]):
-                href = a["href"]
-                if "mailto:" not in href and "javascript:" not in href:
-                    ticketing_url = href if href.startswith("http") else f"{WEBSITE}{href}"
-                    break
 
-    # ── Imagem ──
+    # Imagem
     cover_image = None
     og_img = soup.find("meta", property="og:image")
     if og_img:
         cover_image = og_img.get("content")
 
-    # ── Ficha técnica ──
+    # Ficha técnica
     credits_raw = _parse_technical_info(soup)
 
-    # ── Acessibilidade ──
-    accessibility = _parse_accessibility(soup)
+    # Acessibilidade
+    full_text = soup.get_text(" ", strip=True).lower()
+    accessibility = {
+        "has_sign_language": bool(re.search(
+            r"l[íi]ngua\s+gestual|interpreta[çc][aã]o\s+gestual|\blgp\b", full_text
+        )),
+        "has_audio_description": bool(re.search(
+            r"audiodescrição|audiodescricao|[aá]udio.?descri", full_text
+        )),
+        "has_subtitles": bool(re.search(r"\blegendas?\b|\bsubtitle", full_text)),
+        "is_relaxed_performance": bool(re.search(
+            r"sess[aã]o\s+relaxada|relaxed\s+performance", full_text
+        )),
+        "wheelchair_accessible": True,
+        "has_pre_show_access": bool(re.search(
+            r"acesso\s+pré.espetáculo|pre.?show\s+access", full_text
+        )),
+    }
 
     n = len(sessions)
     logger.info(f"✓ {title[:65]} ({n} sess{'ão' if n == 1 else 'ões'})")
@@ -502,142 +707,40 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "location": "Culturgest",
         "accessibility": accessibility,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "_method": "culturgest-v13",
+        "_method": "culturgest-v14",
     }
 
 
 # ---------------------------------------------------------------------------
-# Função principal
+# Entrada principal
 # ---------------------------------------------------------------------------
 
 def run() -> List[dict]:
-    """
-    Estratégia de listing em dois níveis:
-    1. Endpoint AJAX /schedule/events/?page=N — o que o JS do site usa
-    2. Fallback: página HTML completa de listagem (por-evento/) — contém
-       links de eventos nos submenus de destaque e nos "Próximos Eventos"
-       visíveis nas páginas de detalhe que eventualmente se ligam de volta
-    """
     session = _make_session()
-    all_events: List[dict] = []
-    seen_norm_urls: set = set()
-    seen_page_sets: List[frozenset] = []
+    logger.info("CULTURGEST v14 — estratégia em cascata")
 
-    logger.info("CULTURGEST v13 — fix AJAX + headers de sessão")
+    event_urls = _get_event_urls(session)
 
-    page = 1
-    while page <= MAX_PAGES:
+    if not event_urls:
+        logger.error("Sem URLs de eventos. Verificar logs acima para diagnóstico.")
+        return []
+
+    logger.info(f"{len(event_urls)} URLs únicos a processar")
+
+    all_events = []
+    seen = set()
+    for url in event_urls:
+        norm = _normalize_url(url)
+        if norm in seen:
+            continue
+        seen.add(norm)
         time.sleep(REQUEST_DELAY)
-
-        resp = _get(session, AJAX_URL, params={"page": page}, headers=HEADERS_AJAX)
-
-        if not resp:
-            logger.warning(f"Página {page}: sem resposta")
-            if page == 1:
-                logger.info("A tentar fallback: página HTML de listagem")
-                resp = _get(session, LIST_URL, headers=HEADERS_HTML)
-                if not resp:
-                    break
-            else:
-                break
-
-        content_type = resp.headers.get("Content-Type", "")
-        html = resp.text
-
-        # Se a resposta for JSON, extrair HTML interno
-        if "application/json" in content_type:
-            try:
-                data = resp.json()
-                logger.info(f"Resposta JSON com chaves: {list(data.keys())[:8]}")
-                html = (
-                    data.get("html")
-                    or data.get("content")
-                    or data.get("results")
-                    or ""
-                )
-                if isinstance(html, list):
-                    html = " ".join(str(x) for x in html)
-            except Exception as e:
-                logger.warning(f"Erro a parsear JSON: {e}")
-                break
-
-        logger.info(f"Página {page}: {len(html)} chars | content-type: {content_type[:40]}")
-
-        # Primeiros 300 chars para diagnóstico (apenas página 1)
-        if page == 1:
-            logger.debug(f"Início do HTML: {html[:300]}")
-
-        raw_links = _extract_event_links(html)
-        norm_links = [_normalize_url(l) for l in raw_links]
-        page_set = frozenset(norm_links)
-
-        logger.info(f"Página {page} → {len(raw_links)} links de eventos")
-
-        if not raw_links:
-            if page == 1:
-                logger.warning(
-                    "Página 1 sem links de eventos. "
-                    "O endpoint AJAX pode ter mudado de estrutura ou de URL. "
-                    f"Primeiros 500 chars: {html[:500]}"
-                )
-            break
-
-        # Paragem inteligente: ciclo de URLs
-        if page_set in seen_page_sets:
-            logger.info(f"Página {page}: ciclo detetado — a parar")
-            break
-        seen_page_sets.append(page_set)
-
-        new_count = 0
-        for raw_link, norm_link in zip(raw_links, norm_links):
-            if norm_link in seen_norm_urls:
-                continue
-            seen_norm_urls.add(norm_link)
-            new_count += 1
-            ev = _parse_single_event(raw_link, session)
-            if ev:
-                all_events.append(ev)
-            time.sleep(REQUEST_DELAY)
-
-        if new_count == 0:
-            logger.info(f"Página {page}: sem URLs novos — a parar")
-            break
-
-        page += 1
-
-    logger.info(f"Total recolhido: {len(all_events)} eventos únicos")
-    return all_events
-
-
-# ---------------------------------------------------------------------------
-# Teste local com HTML estático (para CI sem rede)
-# ---------------------------------------------------------------------------
-
-def run_from_html(listing_html: str, detail_htmls: dict) -> List[dict]:
-    """
-    Modo de teste offline: recebe o HTML de listagem e um dict
-    {url: html} de páginas de detalhe. Útil para testes unitários.
-    """
-    import io
-
-    class MockSession:
-        headers = {}
-        def get(self, url, **kwargs):
-            if url in detail_htmls:
-                r = requests.models.Response()
-                r.status_code = 200
-                r._content = detail_htmls[url].encode()
-                return r
-            return None
-
-    links = _extract_event_links(listing_html)
-    mock_session = MockSession()
-    results = []
-    for link in links:
-        ev = _parse_single_event(link, mock_session)
+        ev = _parse_single_event(url, session)
         if ev:
-            results.append(ev)
-    return results
+            all_events.append(ev)
+
+    logger.info(f"Total recolhido: {len(all_events)} eventos")
+    return all_events
 
 
 if __name__ == "__main__":
