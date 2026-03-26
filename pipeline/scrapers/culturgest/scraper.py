@@ -52,7 +52,7 @@ FILTER_FROM_DATE: Optional[str] = None  # ex: date.today().strftime("%Y-%m-%d")
 # Modo incremental: set de source_ids já conhecidos — skip automático
 # O pipeline pode passar este set via run(known_ids={...})
 # Em modo FULL_RESCAN, ignorar o cache (re-processa tudo)
-FULL_RESCAN: bool = False  # True: processa todos os 952 URLs mesmo se conhecidos
+FULL_RESCAN: bool = os.environ.get("FULL_RESCAN", "false").lower() == "true"  # workflow ou env var
 
 HEADERS = {
     "User-Agent": (
@@ -446,9 +446,9 @@ def run(known_ids: Optional[set] = None) -> List[dict]:
     session = _make_session()
 
     if known_ids and not FULL_RESCAN:
-        logger.info(f"CULTURGEST v15 — modo incremental ({len(known_ids)} já conhecidos)")
+        logger.info(f"CULTURGEST v16 — modo incremental ({len(known_ids)} já conhecidos)")
     else:
-        logger.info("CULTURGEST v15 — listing via sitemap.xml (run completo)")
+        logger.info("CULTURGEST v16 — listing via sitemap.xml (run completo)")
 
     event_urls = _get_event_urls_from_sitemap(session)
 
