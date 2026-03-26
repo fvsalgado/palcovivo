@@ -1,12 +1,12 @@
 {
-  "run_at": "2026-03-26T15:57:45.198439+00:00Z",
+  "run_at": "2026-03-26T16:06:22.073403+00:00Z",
   "duration_seconds": 0.3,
   "summary": {
     "venues_processed": 4,
-    "total_scraped": 1957,
-    "total_valid": 1861,
-    "total_invalid": 96,
-    "total_after_dedup": 1261,
+    "total_scraped": 1841,
+    "total_valid": 1742,
+    "total_invalid": 99,
+    "total_after_dedup": 1264,
     "total_errors": 0,
     "avg_credibility": 0.856
   },
@@ -20,11 +20,11 @@
       "avg_credibility": 0.792
     },
     "culturgest": {
-      "total": 872,
+      "total": 875,
       "with_image": 100.0,
-      "with_price": 53.2,
+      "with_price": 53.6,
       "with_description": 100.0,
-      "with_category": 54.7,
+      "with_category": 54.6,
       "avg_credibility": 0.876
     },
     "tndm": {
@@ -48,17 +48,17 @@
     {
       "venue_id": "ccb",
       "scraped": 808,
-      "valid": 769,
-      "invalid": 39,
+      "valid": 765,
+      "invalid": 43,
       "errors": [],
-      "cache_hit": false,
+      "cache_hit": true,
       "merge_stats": {
-        "substituted": 757,
+        "substituted": 754,
         "kept_existing": 0,
         "new": 11,
         "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 1,
+        "skipped_old": 0,
         "source_id_dupes_resolved": 11
       },
       "venue_name": "Centro Cultural de Belém",
@@ -70,25 +70,33 @@
       "valid": 896,
       "invalid": 56,
       "errors": [],
-      "cache_hit": false,
-      "merge_stats": {},
+      "cache_hit": true,
+      "merge_stats": {
+        "substituted": 765,
+        "kept_existing": 1,
+        "new": 115,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 15,
+        "source_id_dupes_resolved": 106
+      },
       "venue_name": "Culturgest",
       "avg_credibility_score": 0.876
     },
     {
       "venue_id": "theatro-circo",
-      "scraped": 185,
-      "valid": 184,
-      "invalid": 1,
+      "scraped": 69,
+      "valid": 69,
+      "invalid": 0,
       "errors": [],
-      "cache_hit": false,
+      "cache_hit": true,
       "merge_stats": {
-        "substituted": 184,
+        "substituted": 68,
         "kept_existing": 0,
         "new": 0,
         "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 0
+        "skipped_old": 1
       },
       "venue_name": "Theatro Circo",
       "avg_credibility_score": 0.792
@@ -99,7 +107,7 @@
       "valid": 12,
       "invalid": 0,
       "errors": [],
-      "cache_hit": false,
+      "cache_hit": true,
       "merge_stats": {
         "substituted": 12,
         "kept_existing": 0,

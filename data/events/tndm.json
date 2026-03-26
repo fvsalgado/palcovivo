@@ -11,7 +11,7 @@
     "subtitle": null,
     "description": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de envolvimento de alunas e alunos a partir das suas linguagens artísticas e das referências culturais locais.\nPara os jovens participantes, este projeto tem proporcionado um espaço e um tempo em que o teatro se transforma em pertença e liberdade, intrinsecamente conectado com as suas vidas.\nAs oficinas permitem ainda fomentar as relações entre jovens, entre jovens e artista, e também com a comunidade escolar. No final do processo de trabalho, em cada localidade, realiza-se uma partilha informal na escola e/ou no teatro.\nAo longo do ano letivo, em cada município, serão ainda desenhadas atividades de envolvimento com a comunidade escolar e no território, como workshops, visitas e assistências a espetáculos.",
     "description_short": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "formacao",
     "category": "oficinas",
@@ -36,12 +36,12 @@
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": "2025-09-01",
-    "date_close": "2025-09-01",
+    "date_close": null,
     "event_status": "unica-sessao",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -88,8 +88,8 @@
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -111,10 +111,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:27.590917+00:00",
+      "scraped_at": "2026-03-26T01:13:51.087632+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:7a84977c3117d229",
-      "harmonized_at": "2026-03-26T15:25:49.923951+00:00",
+      "raw_data_hash": "sha256:fd826387d97858cb",
+      "harmonized_at": "2026-03-26T16:05:46.266691+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -134,7 +134,7 @@
     "subtitle": null,
     "description": "Filodemo\né uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um retrato distante, quase anacrónico, das convenções e dos modos de amar de outro tempo. Mas é precisamente nessa distância que se abre um espaço fértil para a invenção: olhar de novo para o que nos é estranho para compreender o que em nós permanece igual. Pedro Penim parte dessa dissonância temporal para propor uma encenação que confronta a inocência do texto com as urgências do presente. Num tempo em que certos discursos procuram cristalizar o passado e transformá-lo em instrumento de exclusão, o diálogo com os clássicos torna-se um gesto de resistência. Reencenar\nFilodemo\né, assim, mais do que celebrar o génio de Camões: é afirmar que o teatro continua a ser um lugar de disputa simbólica, de reapropriação e de liberdade. Entre a poesia e o jogo cénico,\nFilodemo\ncelebra o reencontro entre a palavra de Camões e o palco contemporâneo, um diálogo entre a distância e a presença, entre o passado que nos funda e o presente que o reinscreve.\nConversa com artistas após o espetáculo\n4 de abril\n— As sessões de 27, 28 e 29 de março são de\nentrada livre\n,\nmediante o levantamento de bilhetes, na Bilheteira do D. Maria II\n— Jardins do Bombarda, a partir das 13h do próprio dia, exclusivamente para a sessão desse dia.\nLimite de 2 bilhetes por pessoa, sujeito à lotação disponível.",
     "description_short": "Filodemo\né uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -151,153 +151,9 @@
     "dates": [
       {
         "date": "2026-03-27",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-03-28",
-        "time_start": "19:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-03-29",
-        "time_start": "16:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-01",
         "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-02",
-        "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-03",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-04",
-        "time_start": "19:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-05",
-        "time_start": "16:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-08",
-        "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-09",
-        "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-10",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-11",
-        "time_start": "19:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-12",
-        "time_start": "16:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-15",
-        "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-16",
-        "time_start": "20:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-17",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": 105,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-04-18",
-        "time_start": "19:00",
-        "time_end": null,
-        "duration_minutes": 105,
+        "time_end": "21:00",
+        "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
@@ -306,7 +162,7 @@
         "date": "2026-04-24",
         "time_start": "21:00",
         "time_end": null,
-        "duration_minutes": 105,
+        "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
@@ -315,7 +171,7 @@
         "date": "2026-05-15",
         "time_start": "21:30",
         "time_end": null,
-        "duration_minutes": 105,
+        "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
@@ -324,7 +180,7 @@
         "date": "2026-06-05",
         "time_start": "21:30",
         "time_end": null,
-        "duration_minutes": 105,
+        "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
@@ -332,7 +188,7 @@
     ],
     "date_first": "2026-03-27",
     "date_last": "2026-06-05",
-    "total_sessions": 20,
+    "total_sessions": 4,
     "is_ongoing": true,
     "date_open": "2026-03-27",
     "date_close": "2026-06-05",
@@ -340,7 +196,7 @@
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -375,63 +231,22 @@
       "subtitle_language": null,
       "is_relaxed_performance": false,
       "wheelchair_accessible": true,
-      "notes": "Sessão com Língua Gestual Portuguesa no dia 12 de abril. O espetáculo utiliza luz estroboscópica."
+      "notes": null
     },
     "credits": {
       "company": null,
-      "director": "Pedro Penim",
+      "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "Ana Coimbra"
-        },
-        {
-          "role": "actor",
-          "name": "Ana Tang"
-        },
-        {
-          "role": "actor",
-          "name": "Bernardo de Lacerda"
-        },
-        {
-          "role": "actor",
-          "name": "Guilherme Arabolaza"
-        },
-        {
-          "role": "actor",
-          "name": "João Grosso"
-        },
-        {
-          "role": "actor",
-          "name": "José Neves"
-        },
-        {
-          "role": "actor",
-          "name": "June João"
-        },
-        {
-          "role": "actor",
-          "name": "Mariana Magalhães"
-        },
-        {
-          "role": "actor",
-          "name": "Stela"
-        },
-        {
-          "role": "actor",
-          "name": "Vítor Silva Costa"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "de\nLuís de Camões\nencenação\nPedro Penim\ninterpretação\nAna Coimbra, Ana Tang, Bernardo de Lacerda, Guilherme Arabolaza, João Grosso, José Neves, June João, Mariana Magalhães, Stela, Vítor Silva Costa\nfigurinos\nAldina Jesus\ndesenho de luz\nDaniel Varela\ndesenho de som\nMargarida Pinto\nsonoplastia\nJoão Neves, Rui Dâmaso\nvídeo\nAndré Dinis Carrilho\nassistência de encenação\nJoana Brito Silva\nprodução\nTeatro Nacional D. Maria II\nM/12\nduração\n1h45\nNo âmbito das comemorações dos 500 anos de Luís de Camões\n*5 abr não se realiza o espetáculo"
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -442,19 +257,7 @@
       "cover_image_local": null,
       "thumbnail": null,
       "trailer_url": "https://www.youtube.com/embed/zTIz3liyEvY?si=07fQKx_UVR6BzK8I",
-      "gallery": [
-        "https://www.tndm.pt/fotos/galerias/filodemo_0301_redes_filipeferreira_tndmii_1749232769c3d958a3968.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_0568_redes_filipeferreira_tndmii_1158483869c3d962e50d6.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1135_redes_filipeferreira_tndmii_120512781269c3d96b39bc3.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1395_redes_filipeferreira_tndmii_64302370069c3d975e8c46.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1627_redes_filipeferreira_tndmii_81611400269c3d98015797.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1802_redes_filipeferreira_tndmii_189854807569c3d98fc6541.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1933_redes_filipeferreira_tndmii_192809554769c3d99820f26.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_1994_redes_filipeferreira_tndmii_20867543869c3d99fea419.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_2452_redes_filipeferreira_tndmii_3773843869c3d9a91c93f.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_2815_redes_filipeferreira_tndmii_6892518169c3d9b0e945e.jpg",
-        "https://www.tndm.pt/fotos/galerias/filodemo_3023_redes_filipeferreira_tndmii_114391629669c3d9b92e26a.jpg"
-      ]
+      "gallery": []
     },
     "dedup": {
       "fingerprint": "filodemo|2026-03",
@@ -465,10 +268,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:29.479928+00:00",
+      "scraped_at": "2026-03-26T01:13:52.963532+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:a7459c043e365825",
-      "harmonized_at": "2026-03-26T15:25:49.934610+00:00",
+      "raw_data_hash": "sha256:aa2b164114026477",
+      "harmonized_at": "2026-03-26T16:05:46.277407+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -488,7 +291,7 @@
     "subtitle": null,
     "description": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio junto ao portão? Só pode ser um ataque! Os gatos são perigosos, sabe-se lá o que trazem de fora. A menos que descubram o que existe para além do quintal... Não se pode! Não se pode!\nEm 2025, artistas de Lagos, Ourém e Ponte de Lima\nforam convocados a participar na criação de dois\nnovos espetáculos Boca Aberta, a partir de um\nmesmo tema. Os espetáculos — ‘Cabe mais um?’ e\n‘Não se pode! Não se pode!’ —, estrearam e foram\ninicialmente apresentados nas cidades de origem\ndos respetivos artistas e seguiram em digressão\npor Portugal. Em 2026, estas criações são\napresentadas pela primeira vez em Lisboa e\ncontinuam a digressão pelo país.",
     "description_short": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio junto ao portão? Só pode ser um ataque! Os gatos são…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -506,7 +309,43 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "11h30 e 16h"
+        "notes": null
+      },
+      {
+        "date": "2026-06-06",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-07",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-20",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-21",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       },
       {
         "date": "2026-03-28",
@@ -524,7 +363,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-05-16",
@@ -542,7 +381,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-05-23",
@@ -563,13 +402,22 @@
         "notes": "horário a anunciar"
       },
       {
+        "date": "2026-05-31",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
         "date": "2026-11-22",
         "time_start": null,
         "time_end": null,
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-06-03",
@@ -578,20 +426,56 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "10h30 e 14h30"
+        "notes": null
+      },
+      {
+        "date": "2026-06-05",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-17",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-18",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-19",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-03-28",
     "date_last": "2026-11-22",
-    "total_sessions": 9,
-    "is_ongoing": false,
+    "total_sessions": 18,
+    "is_ongoing": true,
     "date_open": "2026-06-04",
-    "date_close": "2026-06-03",
+    "date_close": "2026-06-19",
     "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -624,55 +508,22 @@
       "subtitle_language": null,
       "is_relaxed_performance": false,
       "wheelchair_accessible": true,
-      "notes": "Todas as sessões deste espetáculo são sessões descontraídas. Sessão com interpretação em Língua Gestual Portuguesa e com audiodescrição nos dias 6 e 20 de junho, às 16h."
+      "notes": null
     },
     "credits": {
       "company": null,
-      "director": "Catarina Requeijo",
+      "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "em Águeda"
-        },
-        {
-          "role": "actor",
-          "name": "Fafe"
-        },
-        {
-          "role": "actor",
-          "name": "Lamego"
-        },
-        {
-          "role": "actor",
-          "name": "Lisboa (3-7 jun)"
-        },
-        {
-          "role": "actor",
-          "name": "Paredes de Coura"
-        },
-        {
-          "role": "actor",
-          "name": "Penafiel"
-        },
-        {
-          "role": "actor",
-          "name": "Seia"
-        },
-        {
-          "role": "actor",
-          "name": "Viana do Castelo e Vila Real"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "textos\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação em  Aljezur, Lisboa (17-21 jun), Monchique, Ponta Delgada\nBerna Huidobro, Guilherme Félix, Inês Cardoso\ninterpretação em Águeda, Fafe, Lamego, Lisboa (3-7 jun), Paredes de Coura, Penafiel, Seia, Viana do Castelo e Vila Real\nMário Alberto Pereira, Marta Garcia Cruz, Sofia Pereira\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nNelda Magalhães, Rita Silva\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Águeda, Barcelos, Bragança, Évora, Fafe, Faro, Lagoa, Mafra, Paredes, Paredes de Coura, Penafiel, Ponta Delgada, Viana do Castelo e Vila Real.\n* Inscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -683,14 +534,7 @@
       "cover_image_local": null,
       "thumbnail": null,
       "trailer_url": "https://www.youtube.com/embed/uFRTlXYT2gc?si=oYCylV3NBQEoe-0O",
-      "gallery": [
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_718_redes_filipe_ferreira_1743353256681e0c0f43965.jpg",
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_526_redes_filipe_ferreira_852512683681e0c1a77930.jpg",
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_720_redes_filipe_ferreira_199060065681e0c26cdda5.jpg",
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_579_redes_filipe_ferreira_316887205681e0c304ddcc.jpg",
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_785_redes_filipe_ferreira_1417774881681e0c3bbd03c.jpg",
-        "https://www.tndm.pt/fotos/galerias/boca_aberta_25_560_redes_filipe_ferreira_722821252681e0c485338f.jpg"
-      ]
+      "gallery": []
     },
     "dedup": {
       "fingerprint": "nao-se-pode-nao-se-pode|2026-03",
@@ -701,10 +545,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:31.364826+00:00",
+      "scraped_at": "2026-03-26T01:13:54.883690+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:03c54f2731f59674",
-      "harmonized_at": "2026-03-26T15:25:49.936054+00:00",
+      "raw_data_hash": "sha256:14461fc37665ca3d",
+      "harmonized_at": "2026-03-26T16:05:46.278813+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -724,7 +568,7 @@
     "subtitle": null,
     "description": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um bicho tão diferente e que, de certeza, levou pulgas lá para dentro. O cão tenta adaptar-se e nem se importa de fazer vida de gato. Mas parece que, naquela casa, não cabe mais ninguém. Ou será que cabe mais um?\nEm 2025, artistas de Lagos, Ourém e Ponte de Lima\nforam convocados a participar na criação de dois\nnovos espetáculos Boca Aberta, a partir de um\nmesmo tema. Os espetáculos — ‘Cabe mais um?’ e\n‘Não se pode! Não se pode!’ —, estrearam e foram\ninicialmente apresentados nas cidades de origem\ndos respetivos artistas e seguiram em digressão\npor Portugal. Em 2026, estas criações são\napresentadas pela primeira vez em Lisboa e\ncontinuam a digressão pelo país.",
     "description_short": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um bicho tão diferente e que, de certeza, levou pulgas lá…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -742,7 +586,16 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "11h30 e 16h"
+        "notes": null
+      },
+      {
+        "date": "2026-05-10",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       },
       {
         "date": "2026-03-28",
@@ -760,7 +613,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-05-23",
@@ -769,7 +622,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-05-30",
@@ -778,7 +631,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-06-04",
@@ -787,7 +640,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       },
       {
         "date": "2026-11-14",
@@ -805,20 +658,38 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "10h30 e 14h30"
+        "notes": null
+      },
+      {
+        "date": "2026-05-07",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-08",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-03-28",
     "date_last": "2026-11-14",
-    "total_sessions": 8,
+    "total_sessions": 11,
     "is_ongoing": false,
     "date_open": "2026-05-09",
-    "date_close": "2026-05-06",
+    "date_close": "2026-05-08",
     "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -851,35 +722,22 @@
       "subtitle_language": null,
       "is_relaxed_performance": false,
       "wheelchair_accessible": true,
-      "notes": "Todas as sessões deste espetáculo são sessões descontraídas. Sessão com interpretação em Língua Gestual Portuguesa e com audiodescrição nos dias 7 de março, às 16h, em Leiria; e 9 de maio, às 16h em Lisboa."
+      "notes": null
     },
     "credits": {
       "company": null,
-      "director": "Catarina Requeijo",
+      "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "Beatriz Jacinto"
-        },
-        {
-          "role": "actor",
-          "name": "Mafalda Cardoso Pereira"
-        },
-        {
-          "role": "actor",
-          "name": "Mariana Fonseca"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "texto\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação\nBeatriz Jacinto, Mafalda Cardoso Pereira, Mariana Fonseca\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nLeonor Atalaia\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Coimbra, Ílhavo, Leiria, Lousã, Ponta Delgada, Santarém, Tomar, Tondela e Vale de Cambra.\n.\n.\nInscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -890,16 +748,7 @@
       "cover_image_local": null,
       "thumbnail": null,
       "trailer_url": "https://www.youtube.com/embed/uFRTlXYT2gc?si=cDimlWr-qind48wG",
-      "gallery": [
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0036_205454268067e6815a0e06b.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0005_65033970767e68161d40ab.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0009_49401016467e6816abf929.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0013_197307431667e68173c1d6a.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0016_155548250167e6817d08969.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0040_132143475767e6818686c1d.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0042_180386715667e6818dd3464.jpg",
-        "https://www.tndm.pt/fotos/galerias/_joayoversosroldayo_2024_odisseianacional_tndmii_bocaaberta_cabemaisum_processo_18mar_ourem_lowres_0049_180439830067e68194c6b74.jpg"
-      ]
+      "gallery": []
     },
     "dedup": {
       "fingerprint": "cabe-mais-um|2026-03",
@@ -910,10 +759,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:33.252885+00:00",
+      "scraped_at": "2026-03-26T01:13:56.901817+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:cac82542f787bbc1",
-      "harmonized_at": "2026-03-26T15:25:49.936595+00:00",
+      "raw_data_hash": "sha256:9b6841fc5f7ea4a0",
+      "harmonized_at": "2026-03-26T16:05:46.279376+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -933,7 +782,7 @@
     "subtitle": null,
     "description": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com diferentes profissionais e conhecer os seus processos de trabalho, bem como de experimentar na prática diferentes técnicas inerentes ao processo de criação em cada uma das áreas.\nFormadores e duração:\nCenografia e Adereços\ncom Carla Martínez, 12h\n> saber mais\naqui\nFigurinos\ncom Aldina Jesus, 12h\n> saber mais\naqui\nSonoplastia\ncom Sérgio Delgado, 6h\n> saber mais\naqui\nConheça\naqui\no calendário da formação em Ponte de Lima, Ourém e Lagos.",
     "description_short": "No primeiro semestre de 2026, o D. Maria II promove um ciclo de formação em diferentes áreas criativas de um espetáculo: figurinos, sonoplastia, cenografia e adereços. Neste ciclo, as pessoas participantes terão oportunidade de contactar com diferentes profissionais e conhecer os seus processos de…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -958,6 +807,42 @@
         "notes": null
       },
       {
+        "date": "2026-04-21",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-04-22",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-04-23",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-04-24",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
         "date": "2026-04-27",
         "time_start": null,
         "time_end": null,
@@ -974,19 +859,55 @@
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
+      },
+      {
+        "date": "2026-05-05",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-06",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-07",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-08",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-04-20",
-    "date_last": "2026-05-04",
-    "total_sessions": 3,
+    "date_last": "2026-05-08",
+    "total_sessions": 11,
     "is_ongoing": true,
     "date_open": "2026-04-20",
-    "date_close": "2026-05-04",
+    "date_close": "2026-05-08",
     "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1033,8 +954,8 @@
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1056,10 +977,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:35.129360+00:00",
+      "scraped_at": "2026-03-26T01:13:58.821427+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:6711f5f41a10ad9e",
-      "harmonized_at": "2026-03-26T15:25:49.937112+00:00",
+      "raw_data_hash": "sha256:82d9f66d6c41e2a9",
+      "harmonized_at": "2026-03-26T16:05:46.279882+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1079,7 +1000,7 @@
     "subtitle": null,
     "description": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.\nAo longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal e as novas dramaturgias, a partir da criação artística em conjunto com dezenas de grupos de norte a sul do país. Grupos de jovens, de escolas, associações, teatros e grupos municipais escolhem e encenam um de três textos, ensaiam e apresentam o espetáculo nas suas cidades, vilas ou aldeias e os palcos descentralizam-se. Seis criações são depois selecionadas por um júri para apresentação no Festival PANOS, uma celebração coletiva e intensa da experiência teatral, que decorre durante três dias, em Paredes.\nConheça os grupos participantes na edição 2026 do PANOS – palcos novos palavras novas,\naqui\n.",
     "description_short": "O PANOS — palcos novos palavras novas é um projeto onde se lê, faz e apresenta teatro de e para jovens, dos 12 aos 19 anos.\nAo longo de quase um ano, num processo composto por várias fases, o PANOS promove e valoriza o teatro juvenil em Portugal e as novas dramaturgias, a partir da criação…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1102,19 +1023,37 @@
         "is_cancelled": false,
         "is_sold_out": false,
         "notes": null
+      },
+      {
+        "date": "2026-05-23",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-24",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-05-22",
-    "date_last": "2026-05-22",
-    "total_sessions": 1,
-    "is_ongoing": false,
+    "date_last": "2026-05-24",
+    "total_sessions": 3,
+    "is_ongoing": true,
     "date_open": "2026-05-22",
-    "date_close": "2026-05-22",
-    "event_status": "unica-sessao",
+    "date_close": "2026-05-24",
+    "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": true,
     "festival_name": "Festival Panos O Panos",
     "festival_id": null,
@@ -1161,8 +1100,8 @@
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1184,10 +1123,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:37.050814+00:00",
+      "scraped_at": "2026-03-26T01:14:00.729331+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:0429a2156665d012",
-      "harmonized_at": "2026-03-26T15:25:49.937500+00:00",
+      "raw_data_hash": "sha256:82f507c86e7306f2",
+      "harmonized_at": "2026-03-26T16:05:46.280280+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1207,7 +1146,7 @@
     "subtitle": null,
     "description": "PANOS – palcos novos palavras novas é um projeto do Teatro Nacional D. Maria II que alia o teatro escolar/juvenil à nova dramaturgia. Todos os anos há peças encomendadas a escritores reconhecidos para serem apresentadas por jovens entre os 12 e os 19 anos. Nesta décima oitava edição, os textos são de Ana Markl, Joaquim Arena e Mariana Jones.\nInsegura: Uma tragédia de enganos\nde Ana Markl\nNum futuro vagamente distópico, as pessoas cansaram-se de sofrer por amor. Cansaram-se tanto, que todas têm um Seguro Contra o Desgosto. Todas, menos as poucas que ainda acreditam que uma relação romântica pode durar para sempre. Esse não é o caso de Leonor, que, ao receber uma mensagem dramática do namorado, ativa imediatamente o seu seguro. Em\nInsegura: Uma tragédia de enganos\n, Ana Markl questiona se será mesmo possível corrermos à frente do sofrimento sem nos estamparmos logo contra um muro?\nO Meu Pai Carlitos\nde Joaquim Arena\nCarlitos, 40 anos, pai de Pedro, Joana e Luís (falecido aos 15 anos), desaparece. A família desespera: a mulher Maria Teresa e a mãe; bem como a D. Bia Zé, os vizinhos e amigos. O tempo passa e as autoridades não têm sucesso nas buscas que vão fazendo na região. Em\nO Meu Pai Carlitos\n, de Joaquim Arena, percorremos em revista, durante a investigação, o passado de Carlitos. Porque afinal Carlitos desapareceu? Por causa da morte do filho Luís? Porque a vida lhe é insuportável? Que homem é afinal Carlitos?\nOlívia\nde Mariana Jones\nOlívia\n, de Mariana Jones, é uma peça sobre o olhar – uma mulher à janela revisita fragmentos da sua vida e das vidas que a rodeiam: vizinhos, amigas, filhas, amores e fantasmas do quotidiano. Entre o íntimo e o mundo, a narradora confronta-se com a passagem do tempo, com a solidão. A janela torna-se espelho e palco, fronteira e abrigo, lugar de reflexão sobre a condição humana em toda a sua vulnerabilidade.",
     "description_short": "PANOS – palcos novos palavras novas é um projeto do Teatro Nacional D. Maria II que alia o teatro escolar/juvenil à nova dramaturgia. Todos os anos há peças encomendadas a escritores reconhecidos para serem apresentadas por jovens entre os 12 e os 19 anos. Nesta décima oitava edição, os textos são…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1229,7 +1168,7 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": null
+        "notes": "horário a anunciar"
       }
     ],
     "date_first": "2026-05-23",
@@ -1237,12 +1176,12 @@
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": "2026-05-23",
-    "date_close": "2026-05-23",
+    "date_close": null,
     "event_status": "unica-sessao",
     "is_premiere": false,
     "is_national_premiere": true,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1289,8 +1228,8 @@
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1312,10 +1251,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:38.956757+00:00",
+      "scraped_at": "2026-03-26T01:14:02.789653+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:847be64851290285",
-      "harmonized_at": "2026-03-26T15:25:49.937939+00:00",
+      "raw_data_hash": "sha256:b70a87ea207d0819",
+      "harmonized_at": "2026-03-26T16:05:46.280742+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1335,7 +1274,7 @@
     "subtitle": null,
     "description": "TOSHiiB4\n, uma criação entre a não-ficção e a fantasia, propõe uma revisão empírica da sexualidade na era digital. Acontece num quarto\noversized\n— incluindo o público nesta pijama\nparty\n— onde a criadora e duas amigas exploram um espaço de autodeterminação sexual dentro de um computador.\nO espetáculo reflete sobre a infância e a adolescência — a de quem teve um computador só para si — e sobre a obscuridade de narrativas omissas na educação sexual convencional.\nTOSHiiB4\nconvoca três amigas em superação de trauma sexual, identitário e tecnológico, gerindo, com delicadeza, o público e o privado, e abrindo-se a um público intergeracional — aqui desafiado nas suas crenças e não no seu pudor.\nTOSHiiB4\nfoi o projeto vencedor da 8.ª edição da Bolsa Amélia Rey Colaço.\nConversa com artistas após o espetáculo\n30 de maio",
     "description_short": "TOSHiiB4\n, uma criação entre a não-ficção e a fantasia, propõe uma revisão empírica da sexualidade na era digital. Acontece num quarto\noversized\n— incluindo o público nesta pijama\nparty\n— onde a criadora e duas amigas exploram um espaço de autodeterminação sexual dentro de um computador.\nO…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1353,7 +1292,7 @@
       {
         "date": "2026-05-27",
         "time_start": "20:00",
-        "time_end": null,
+        "time_end": "21:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1362,7 +1301,7 @@
       {
         "date": "2026-05-28",
         "time_start": "20:00",
-        "time_end": null,
+        "time_end": "21:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1370,8 +1309,8 @@
       },
       {
         "date": "2026-05-29",
-        "time_start": "21:00",
-        "time_end": null,
+        "time_start": "20:00",
+        "time_end": "21:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1379,8 +1318,8 @@
       },
       {
         "date": "2026-05-30",
-        "time_start": "19:00",
-        "time_end": null,
+        "time_start": "20:00",
+        "time_end": "21:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1388,8 +1327,8 @@
       },
       {
         "date": "2026-05-31",
-        "time_start": "16:00",
-        "time_end": null,
+        "time_start": "20:00",
+        "time_end": "21:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1420,20 +1359,29 @@
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "21h"
+        "notes": null
+      },
+      {
+        "date": "2026-09-05",
+        "time_start": "21:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-05-27",
-    "date_last": "2026-09-04",
-    "total_sessions": 8,
+    "date_last": "2026-09-05",
+    "total_sessions": 9,
     "is_ongoing": true,
     "date_open": "2026-05-27",
-    "date_close": "2026-09-04",
+    "date_close": "2026-09-05",
     "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1466,39 +1414,22 @@
       "subtitle_language": null,
       "is_relaxed_performance": false,
       "wheelchair_accessible": true,
-      "notes": "Sessão com Língua Gestual Portuguesa no dia 30 de maio."
+      "notes": null
     },
     "credits": {
       "company": null,
       "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "o apoio"
-        },
-        {
-          "role": "actor",
-          "name": "Luísa Guerra"
-        },
-        {
-          "role": "actor",
-          "name": "Joana Mont’Alverne"
-        },
-        {
-          "role": "actor",
-          "name": "Mafalda Banquart"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "criação\nLuísa Guerra\ncocriação\nJoana Mont’Alverne, Mafalda Banquart\ninterpretação\nLuísa Guerra, Joana Mont’Alverne, Mafalda Banquart\ncenografia\nBruno José Silva\ndesenho de luz\nSara Nogueira\nsonoplastia\nGonçalo Alegria\napoio à criação e vídeo\nBeatriz Diniz\nolhar externo\nStela Costa\nprodução executiva\nMarta Lima / Agente A Norte\ncoprodução\nTeatro Nacional D. Maria II, A Oficina / Centro Cultural Vila Flor, O Espaço do Tempo e Teatro Viriato\ncom o apoio\nda Câmara Municipal de Lisboa e do Polo Cultural Gaivotas | Boavista\nA classificar pela CCE\nIniciativa do Teatro Nacional D. Maria II, A Oficina / Centro Cultural Vila Flor, O Espaço do Tempo, Teatro Viriato."
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1520,10 +1451,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:40.845443+00:00",
+      "scraped_at": "2026-03-26T01:14:04.881463+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:bb81aa0f5a273cd8",
-      "harmonized_at": "2026-03-26T15:25:49.938776+00:00",
+      "raw_data_hash": "sha256:e010aad29b94cee4",
+      "harmonized_at": "2026-03-26T16:05:46.281545+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1543,7 +1474,7 @@
     "subtitle": null,
     "description": "Após\nFrankenstein\ne\nOs Miseráveis\n, também apresentados pelo D. Maria II e pelo FIMFA Lx, a companhia belga Karyatides traz a Lisboa mais um clássico da literatura adaptado ao seu teatro de objetos: o imortal\nCrime e Castigo\n, de Fiódor Dostoiévski. O texto do autor russo, que desvenda a anatomia de um crime, desde a sua fantasia até à sua confissão, é aqui apresentado num ritmo intenso, entre ação e reflexão, humor e delicadeza, pontuado por humor e canções, sem nunca perder a sua reconhecida profundidade.\nHabituada a adaptar grandes textos literários, a companhia Karyatides mergulha-nos nas angústias psicológicas do jovem Raskólnikov. No palco, dois intérpretes dão vida aos diferentes protagonistas, manipulando figuras de madeira, gesso, resina, bonecos de tecido e objetos variados. Os papéis e géneros invertem-se e misturam-se sem cessar, num cenário sóbrio, que é simultaneamente um tribunal e um confessionário. Diferentes pontos de vista sobre o crime justapõem-se, incitando uma reflexão sobre a liberdade, a responsabilidade, a culpabilidade e a justiça.",
     "description_short": "Após\nFrankenstein\ne\nOs Miseráveis\n, também apresentados pelo D. Maria II e pelo FIMFA Lx, a companhia belga Karyatides traz a Lisboa mais um clássico da literatura adaptado ao seu teatro de objetos: o imortal\nCrime e Castigo\n, de Fiódor Dostoiévski. O texto do autor russo, que desvenda a anatomia…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1557,23 +1488,41 @@
         "date": "2026-05-28",
         "time_start": "21:30",
         "time_end": null,
-        "duration_minutes": 75,
+        "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
-        "notes": "21h30"
+        "notes": null
+      },
+      {
+        "date": "2026-05-29",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-30",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
       }
     ],
     "date_first": "2026-05-28",
-    "date_last": "2026-05-28",
-    "total_sessions": 1,
-    "is_ongoing": false,
+    "date_last": "2026-05-30",
+    "total_sessions": 3,
+    "is_ongoing": true,
     "date_open": "2026-05-28",
-    "date_close": "2026-05-28",
-    "event_status": "unica-sessao",
+    "date_close": "2026-05-30",
+    "event_status": "em-cartaz",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1606,31 +1555,22 @@
       "subtitle_language": null,
       "is_relaxed_performance": false,
       "wheelchair_accessible": true,
-      "notes": "Espetáculo falado em francês, com legendas em português."
+      "notes": null
     },
     "credits": {
       "company": null,
-      "director": "Karine Birgé",
+      "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "Cyril Briant"
-        },
-        {
-          "role": "actor",
-          "name": "Marie Delhaye"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "inspirado no romance de\nFiódor Dostoiévski\nencenação\nKarine Birgé\ninterpretação\nCyril Briant, Marie Delhaye\ndramaturgia\nRobin Birgé\ncenografia e figurinos\nClaire Farah\ndesenho de luz\nDimitri Joukovsky\ndesenho de som\nGuillaume Istace\ncoprodução\nThéâtre de Liège, Varia – Théâtre & Studio, Escher Theater (LU), Centre Culturel de Dinant, Théâtre de Namur, La Maison de la Culture de Tournai, La Coop asbl\napoios\nMinistère de la Fédération Wallonie Bruxelles – Service du Théâtre, La Roseraie – Bruxelles, Pierre de Lune – Centre Scénique Jeunes Publics de Bruxelles, Théâtre Les Tanneurs, Théâtre La Montagne Magique, Shelterprod, Taxshelter. be, ING, Tax-Shelter du Gouvernement Fédéral Belge\nprodução FIMFA Lx26\nA Tarumba\ncoprodução FIMFA Lx26\nTeatro Nacional D. Maria II\nA Tarumba é uma estrutura financiada por República Portuguesa – Cultura, Desporto e Juventude / DGArtes\nA classificar pela CCE\nduração\n1h15"
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1652,10 +1592,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:42.710155+00:00",
+      "scraped_at": "2026-03-26T01:14:06.758315+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:99e0883e5be81d2f",
-      "harmonized_at": "2026-03-26T15:25:49.939269+00:00",
+      "raw_data_hash": "sha256:96b55fbe31d31379",
+      "harmonized_at": "2026-03-26T16:05:46.282037+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1675,7 +1615,7 @@
     "subtitle": null,
     "description": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.\nTerra Nullius\n, que resulta dessa \"viagem”, é um espetáculo-percurso que transborda do espaço do teatro e tenta capturar a experiência de um lugar distante, ocupando a geografia urbana da cidade e o espaço virtual de discussão e pensamento. É uma grande tapeçaria sonora que cruza geografias e as põe em diálogo com cada nova cidade a que chega.\nPara cada localização, é desenhado um percurso na cidade, criando uma sobreposição com a faixa sonora pré-existente. O público é, então, convidado a caminhar pela cidade em grupo, terminando com a leitura solitária do livro\nTerra Nullius\n, que depois leva para casa.\nLivro à venda na\nLivraria Online\n.",
     "description_short": "Durante um ano, Paula Diogo esteve em Reiquiavique a desenvolver um projeto que tentava capturar uma \"experiência do lugar”, cruzando-a com narrativas pessoais e coletivas. Como procedimento, usou duas ações simples: caminhar e escrever.\nTerra Nullius\n, que resulta dessa \"viagem”, é um…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1705,12 +1645,12 @@
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": "2026-05-30",
-    "date_close": "2026-05-30",
+    "date_close": null,
     "event_status": "unica-sessao",
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1752,20 +1692,15 @@
       "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "a presença de"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "Entrada livre\nde\nPaula Diogo\nedição\nTNDM II / Bicho-do-Mato\ncoleção\n«Textos de Teatro»\ncom a presença de\nJoana Gorjão Henriques, Paula Diogo, Pedro Penim"
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1787,10 +1722,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:44.606935+00:00",
+      "scraped_at": "2026-03-26T01:14:08.670029+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:99cf45aab52cfbd8",
-      "harmonized_at": "2026-03-26T15:25:49.939717+00:00",
+      "raw_data_hash": "sha256:b44a57da5804a7ea",
+      "harmonized_at": "2026-03-26T16:05:46.282478+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1810,7 +1745,7 @@
     "subtitle": null,
     "description": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove\nPrólogo\n, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.\nEste será um período de transição e de escuta, que procura redescobrir o edifício e a sua envolvente, testar modos de acolhimento e preparar o regresso.\nAo longo dos meses de junho e julho, o Teatro será palco de visitas guiadas, oficinas, encontros, experiências artísticas e ações de mediação, para além da edição de 2026 do Cenários, o evento de pensamento do D. Maria II.\nPrólogo\né o ensaio do reencontro: o momento antecipatório em que o D. Maria II volta a respirar antes de reabrir em pleno.",
     "description_short": "Encerrado para obras de requalificação desde janeiro de 2023, o Teatro Nacional D. Maria II promove\nPrólogo\n, um programa que antecipa a grande reabertura do edifício, agendada para 18 de setembro.\nEste será um período de transição e de escuta, que procura redescobrir o edifício e a sua envolvente…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1840,12 +1775,12 @@
     "total_sessions": 1,
     "is_ongoing": false,
     "date_open": "2026-06-22",
-    "date_close": "2026-06-22",
+    "date_close": null,
     "event_status": "unica-sessao",
     "is_premiere": false,
     "is_national_premiere": true,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -1888,12 +1823,12 @@
       "cast": [],
       "creative_team": [],
       "musicians": [],
-      "credits_raw": null
+      "credits_raw": ""
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -1915,10 +1850,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:46.513493+00:00",
+      "scraped_at": "2026-03-26T01:14:10.533200+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:ca7919033c8ac5b8",
-      "harmonized_at": "2026-03-26T15:25:49.940183+00:00",
+      "raw_data_hash": "sha256:9f063545e427581f",
+      "harmonized_at": "2026-03-26T16:05:46.282931+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1938,7 +1873,7 @@
     "subtitle": null,
     "description": "Seis protagonistas dão por si num esconderijo — ou será um abrigo? Ou um\nbunker\n? — que está literalmente preso ao cume de uma montanha. Falam italiano, alemão, inglês (escocês) e francês — será que se compreendem uns aos outros? Ao que parece, está a ser organizada uma cimeira no lugar cimeiro desta montanha — mas o mundo exterior está envolto em incerteza, assim como as intenções de cada um deles. No teatro musical de Christoph Marthaler, encenador suíço-alemão, as pessoas cantam, desorientam-se frequentes vezes e, ocasionalmente, encontram o que não procuravam. O humor e a música fazem o resto. Tal como uma Europa que está a tentar encontrar-se a si mesma, não restam dúvidas de que se alcançará o lugar cimeiro, ainda que os caminhos para o atingir pareçam um tanto tortuosos.",
     "description_short": "Seis protagonistas dão por si num esconderijo — ou será um abrigo? Ou um\nbunker\n? — que está literalmente preso ao cume de uma montanha. Falam italiano, alemão, inglês (escocês) e francês — será que se compreendem uns aos outros? Ao que parece, está a ser organizada uma cimeira no lugar cimeiro…",
-    "language_of_performance": "pt",
+    "language_of_performance": null,
     "language_notes": null,
     "domain": "outros",
     "category": "outros",
@@ -1956,7 +1891,7 @@
       {
         "date": "2026-07-17",
         "time_start": "21:30",
-        "time_end": null,
+        "time_end": "18:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1964,8 +1899,8 @@
       },
       {
         "date": "2026-07-18",
-        "time_start": "18:00",
-        "time_end": null,
+        "time_start": "21:30",
+        "time_end": "18:00",
         "duration_minutes": null,
         "is_cancelled": false,
         "is_sold_out": false,
@@ -1982,7 +1917,7 @@
     "is_premiere": false,
     "is_national_premiere": false,
     "is_reprise": false,
-    "production_origin": "nacional",
+    "production_origin": null,
     "is_festival": false,
     "festival_name": null,
     "festival_id": null,
@@ -2019,43 +1954,18 @@
     },
     "credits": {
       "company": null,
-      "director": "dos ensaios musicais",
+      "director": null,
       "conductor": null,
       "choreographer": null,
-      "cast": [
-        {
-          "role": "actor",
-          "name": "Charlotte Clamens"
-        },
-        {
-          "role": "actor",
-          "name": "Federica Fracassi"
-        },
-        {
-          "role": "actor",
-          "name": "Graham F. Valentine"
-        },
-        {
-          "role": "actor",
-          "name": "Liliana Benini"
-        },
-        {
-          "role": "actor",
-          "name": "Lukas Metzenbauer"
-        },
-        {
-          "role": "actor",
-          "name": "Raphael Clamer"
-        }
-      ],
+      "cast": [],
       "creative_team": [],
       "musicians": [],
       "credits_raw": "criação\nChristoph Marthaler\ninterpretação\nCharlotte Clamens, Federica Fracassi, Graham F. Valentine, Liliana Benini, Lukas Metzenbauer, Raphael Clamer\ndramaturgia\nMalte Ubenauf\ncenografia\nDuri Bischoff\nfigurinos\nSara Kittelmann\nluz\nLaurent Junod\nsom\nCharlotte Constant\ndireção dos ensaios musicais\nBendix Dethleffsen, Dominique Tille\nmaquilhagem e perucas\nPia Norberg\ncolaboração dramatúrgica\nÉric Vautrin\nestagiário de encenação\nLouis Rebetz\nacessórios e construção do cenário\nThéâtre Vidy-Lausanne\nconfeção de figurinos\nPiccolo Teatro di Milano – Teatro d’Europa\ndireção de cena\nVéronique Kespi, Guillaume Zemor (em alternância)\noperação de luz\nJean-Luc Mutrux, Cassandre Colliard (em alternância)\noperação de som\nFabio Gaggetta, Mathieu Pegoraro (em alternância)\nguarda-roupa\nCécilé Delanoë\nprodução executiva\nMarion Caillaud, Tristan Pannatier\nprodução\nThéâtre Vidy-Lausanne, Piccolo Teatro di Milano – Teatro d’Europa, MC93 - Maison de la culture de Seine-Saint-Denis\ncoprodução\nBonlieu Scène nationale Annecy, Ruhrfestspiele Recklinghausen, Les Théâtres de la Ville de Luxembourg, Festival d’Automne à Paris, Théâtre National Populaire de Villeurbanne, Festival d’Avignon, Maillon Théâtre de Strasbourg – Scène européenne, Malraux scène nationale Chambéry Savoie, Les 2 Scènes – Scène nationale de Besançon, tnba – Théâtre national Bordeaux Aquitaine, International Summer Festival Kampnagel\nNo contexto do projeto Interreg franco-suisse n° 20919 – LACS - Annecy-Chambéry-Besançon-Genève-Lausanne\napoio\nCercle des Mécènes du Théâtre de Vidy, Fondation Pro Scientia et Arte, Fondation Françoise Champoud\nagradecimentos\nIsabelle Faust\ncoapresentação\nTeatro Nacional D. Maria II, Festival de Almada\nEspetáculo integrado no Festival de Almada.\nO\nCume\né composto por textos de Christoph Marthaler, Malte Ubenauf e intérpretes do espetáculo, além de excertos e citações de Elisa Biagini, Olivier Cadiot, Patrizia Cavalli, Bodo Hell, Norbert Hinterberger, Gert Jonke, Antonio Moresco, Aldo Nove, Pier Paolo Pasolini, Werner Schwab, Christophe Tarkos, Dylan Thomas, Giuseppe Ungaretti e Patrizia Valduga. As músicas do espetáculo são inspiradas em composições dos Beatles, de Abade Bovet, Adriano Celentano, Wolfgang Amadeus Mozart e Franz Schubert, bem como em  melodias populares suíças e austríacas."
     },
     "work": {
       "original_title": null,
-      "playwright": null,
       "composer": null,
+      "playwright": null,
       "choreographer": null,
       "year_created": null,
       "country_of_origin": null,
@@ -2077,10 +1987,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:25:48.419890+00:00",
+      "scraped_at": "2026-03-26T01:14:12.383081+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:045669470a4d1e7f",
-      "harmonized_at": "2026-03-26T15:25:49.940531+00:00",
+      "raw_data_hash": "sha256:854bc62d42e93062",
+      "harmonized_at": "2026-03-26T16:05:46.283266+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,

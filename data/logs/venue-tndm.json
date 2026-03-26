@@ -4,7 +4,7 @@
   "valid": 12,
   "invalid": 0,
   "errors": [],
-  "cache_hit": false,
+  "cache_hit": true,
   "merge_stats": {
     "substituted": 12,
     "kept_existing": 0,

@@ -1,17 +1,17 @@
 {
   "venue_id": "theatro-circo",
-  "scraped": 185,
-  "valid": 184,
-  "invalid": 1,
+  "scraped": 69,
+  "valid": 69,
+  "invalid": 0,
   "errors": [],
-  "cache_hit": false,
+  "cache_hit": true,
   "merge_stats": {
-    "substituted": 184,
+    "substituted": 68,
     "kept_existing": 0,
     "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 0
+    "skipped_old": 1
   },
   "venue_name": "Theatro Circo",
   "avg_credibility_score": 0.792
