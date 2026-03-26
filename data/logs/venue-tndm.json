@@ -10,7 +10,8 @@
     "kept_existing": 0,
     "new": 0,
     "tombstoned": 0,
-    "gaps_filled": 0
+    "gaps_filled": 0,
+    "skipped_old": 0
   },
   "venue_name": "Teatro Nacional D. Maria II",
   "avg_credibility_score": 0.864
