@@ -4,15 +4,16 @@
   "valid": 765,
   "invalid": 43,
   "errors": [],
-  "cache_hit": false,
+  "cache_hit": true,
   "merge_stats": {
     "substituted": 765,
     "kept_existing": 0,
     "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 0
+    "skipped_old": 0,
+    "source_id_dupes_resolved": 1
   },
   "venue_name": "Centro Cultural de Belém",
-  "avg_credibility_score": 0.841
+  "avg_credibility_score": 0.84
 }

@@ -4,7 +4,7 @@
   "valid": 12,
   "invalid": 0,
   "errors": [],
-  "cache_hit": false,
+  "cache_hit": true,
   "merge_stats": {
     "substituted": 12,
     "kept_existing": 0,
@@ -14,5 +14,5 @@
     "skipped_old": 0
   },
   "venue_name": "Teatro Nacional D. Maria II",
-  "avg_credibility_score": 0.864
+  "avg_credibility_score": 0.87
 }
