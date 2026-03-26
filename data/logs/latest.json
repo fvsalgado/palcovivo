@@ -1,12 +1,12 @@
 {
-  "run_at": "2026-03-26T13:45:37.602759+00:00Z",
+  "run_at": "2026-03-26T13:56:33.693499+00:00Z",
   "duration_seconds": 0.3,
   "summary": {
     "venues_processed": 4,
     "total_scraped": 1778,
     "total_valid": 1679,
     "total_invalid": 99,
-    "total_after_dedup": 1261,
+    "total_after_dedup": 1264,
     "total_errors": 0,
     "avg_credibility": 0.856
   },
@@ -20,11 +20,11 @@
       "avg_credibility": 0.792
     },
     "culturgest": {
-      "total": 872,
+      "total": 875,
       "with_image": 100.0,
-      "with_price": 53.2,
+      "with_price": 53.6,
       "with_description": 100.0,
-      "with_category": 54.7,
+      "with_category": 54.6,
       "avg_credibility": 0.876
     },
     "tndm": {
@@ -70,7 +70,15 @@
       "invalid": 56,
       "errors": [],
       "cache_hit": false,
-      "merge_stats": {},
+      "merge_stats": {
+        "substituted": 765,
+        "kept_existing": 1,
+        "new": 115,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 15,
+        "source_id_dupes_resolved": 106
+      },
       "venue_name": "Culturgest",
       "avg_credibility_score": 0.876
     },
