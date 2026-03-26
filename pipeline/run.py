@@ -27,6 +27,7 @@ import logging
 import sys
 import traceback
 import importlib
+import inspect
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
@@ -217,6 +218,9 @@ def run_scraper(venue: dict, registry: dict, force_refresh: bool = False) -> lis
     """
     Corre o scraper de um venue.
     Se cache válida e não forçado, usa cache.
+
+    Modo incremental: se o scraper aceitar known_ids, passa o conjunto de
+    source_ids já em cache para evitar re-scraping de eventos conhecidos.
     """
     venue_id = venue["id"]
     scraper_module_path = registry.get(venue_id)
@@ -230,16 +234,44 @@ def run_scraper(venue: dict, registry: dict, force_refresh: bool = False) -> lis
         logger.info(f"{venue_id}: a usar cache")
         return get_cached_events(venue_id)
 
-    # Importar e correr scraper
+    # Importar scraper
     try:
         scraper_mod = importlib.import_module(scraper_module_path)
     except ImportError as e:
         logger.error(f"{venue_id}: erro ao importar scraper — {e}")
         return []
 
+    # Construir known_ids a partir da cache existente (modo incremental)
+    # Só passado se o scraper declarar o parâmetro na assinatura de run()
+    known_ids: Optional[set] = None
     try:
-        raw_events = scraper_mod.run()
+        sig = inspect.signature(scraper_mod.run)
+        if "known_ids" in sig.parameters:
+            cached = get_cached_events(venue_id)
+            known_ids = {ev["source_id"] for ev in cached if ev.get("source_id")}
+            if known_ids:
+                logger.info(f"{venue_id}: modo incremental — {len(known_ids)} IDs já em cache")
+    except Exception:
+        pass  # scraper sem run() válido — falhará na chamada seguinte
+
+    try:
+        if known_ids is not None:
+            raw_events = scraper_mod.run(known_ids=known_ids)
+        else:
+            raw_events = scraper_mod.run()
+
         logger.info(f"{venue_id}: {len(raw_events)} eventos raw recolhidos")
+
+        # Em modo incremental, fundir novos eventos com os já em cache
+        # para não perder os que foram ignorados pelo scraper
+        if known_ids:
+            cached = get_cached_events(venue_id)
+            cached_by_id = {ev["source_id"]: ev for ev in cached if ev.get("source_id")}
+            new_by_id = {ev["source_id"]: ev for ev in raw_events if ev.get("source_id")}
+            # Novos sobrepõem os cached (actualização); cached preenche o resto
+            merged = {**cached_by_id, **new_by_id}
+            raw_events = list(merged.values())
+            logger.info(f"{venue_id}: {len(raw_events)} eventos após fusão incremental")
 
         save_cache(venue_id, raw_events)
 
