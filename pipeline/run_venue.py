@@ -15,7 +15,7 @@ import json
 import logging
 import sys
 import traceback
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import sys as _sys
@@ -91,19 +91,23 @@ def _load_existing_events(venue_id: str) -> dict[str, dict]:
 def _apply_merge(existing_map: dict, new_valid: list, venue_id: str) -> tuple[list, dict]:
     """
     Aplica merge inteligente entre eventos existentes e novos.
-    - Novos eventos com score ≥ existente → substituem
+    - Novos eventos com score >= existente → substituem
     - Novos com score inferior → preenche lacunas mas mantém base existente
     - Eventos existentes não vistos → marcados como tombstone candidate
+    - Eventos novos já passados há > 30 dias que não existiam → ignorados
+      (evita importar o histórico completo do sitemap a cada run)
     Retorna (lista_final, stats_merge).
     """
-    stats = {"substituted": 0, "kept_existing": 0, "new": 0, "tombstoned": 0, "gaps_filled": 0}
+    stats = {"substituted": 0, "kept_existing": 0, "new": 0, "tombstoned": 0, "gaps_filled": 0, "skipped_old": 0}
     new_ids = {e["id"] for e in new_valid}
     final: dict[str, dict] = {}
+    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
 
     # Processar eventos novos
     for ev in new_valid:
         eid = ev["id"]
         if eid in existing_map:
+            # Evento já existe → merge normal independentemente da data
             merged, reason = merge_event(existing_map[eid], ev)
             final[eid] = merged
             if "substituído" in reason:
@@ -114,6 +118,12 @@ def _apply_merge(existing_map: dict, new_valid: list, venue_id: str) -> tuple[li
                 stats["kept_existing"] += 1
             logger.debug(f"{venue_id}/{eid}: {reason}")
         else:
+            # Evento novo — ignorar se já passou há mais de 30 dias
+            date_last = ev.get("date_last") or ev.get("date_first")
+            if date_last and date_last < cutoff:
+                stats["skipped_old"] += 1
+                logger.debug(f"{venue_id}/{eid}: ignorado (histórico, date_last={date_last})")
+                continue
             final[eid] = ev
             stats["new"] += 1
 
@@ -134,7 +144,8 @@ def _apply_merge(existing_map: dict, new_valid: list, venue_id: str) -> tuple[li
         f"{stats['substituted']} substituídos, "
         f"{stats['kept_existing']} mantidos, "
         f"{stats['gaps_filled']} com lacunas preenchidas, "
-        f"{stats['tombstoned']} tombstoned"
+        f"{stats['tombstoned']} tombstoned, "
+        f"{stats['skipped_old']} históricos ignorados"
     )
     return list(final.values()), stats
 
@@ -209,7 +220,7 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
             if raw:
                 save_cache(venue_id, raw)
                 venue.setdefault("data_source", {})["last_scraped"] = (
-                    datetime.now(timezone.utc).isoformat() + "Z"
+                    datetime.now(timezone.utc).isoformat()
                 )
                 with open(venue_path, "w", encoding="utf-8") as f:
                     json.dump(venue, f, ensure_ascii=False, indent=2)
