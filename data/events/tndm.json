@@ -111,10 +111,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:13:51.087632+00:00",
+      "scraped_at": "2026-03-26T13:13:36.410127+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:fd826387d97858cb",
-      "harmonized_at": "2026-03-26T13:08:33.839169+00:00",
+      "raw_data_hash": "sha256:d1804f9a342f7dd3",
+      "harmonized_at": "2026-03-26T13:13:58.960871+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -268,10 +268,501 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:13:52.963532+00:00",
+      "scraped_at": "2026-03-26T13:13:38.347951+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:aa2b164114026477",
-      "harmonized_at": "2026-03-26T13:08:33.847493+00:00",
+      "raw_data_hash": "sha256:b77639831f54930e",
+      "harmonized_at": "2026-03-26T13:13:58.965181+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-03-nao-se-pode-nao-se-pode",
+    "source_id": "nao-se-pode-nao-se-pode",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/nao-se-pode-nao-se-pode/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Não se pode! Não se pode!",
+    "title_raw": "Não se pode! Não se pode!",
+    "subtitle": null,
+    "description": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio junto ao portão? Só pode ser um ataque! Os gatos são perigosos, sabe-se lá o que trazem de fora. A menos que descubram o que existe para além do quintal... Não se pode! Não se pode!\nEm 2025, artistas de Lagos, Ourém e Ponte de Lima\nforam convocados a participar na criação de dois\nnovos espetáculos Boca Aberta, a partir de um\nmesmo tema. Os espetáculos — ‘Cabe mais um?’ e\n‘Não se pode! Não se pode!’ —, estrearam e foram\ninicialmente apresentados nas cidades de origem\ndos respetivos artistas e seguiram em digressão\npor Portugal. Em 2026, estas criações são\napresentadas pela primeira vez em Lisboa e\ncontinuam a digressão pelo país.",
+    "description_short": "Dois cães de guarda passam o dia a patrulhar um quintal, de um muro para o outro, cauda apontada e nariz para o ar. Ali há regras muito importantes para cumprir. Só assim conseguem que nenhum intruso apareça. Mas, então... o que faz um gato vadio junto ao portão? Só pode ser um ataque! Os gatos são…",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Infância e Juventude",
+      "Público em geral"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-04",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-06",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-07",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-20",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-21",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-03-28",
+        "time_start": "11:00",
+        "time_end": "15:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-04-26",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-05-16",
+        "time_start": "16:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-23",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-05-23",
+        "time_start": "16:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-30",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-05-31",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-11-22",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-06-03",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-05",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-17",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-18",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-19",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-03-28",
+    "date_last": "2026-11-22",
+    "total_sessions": 18,
+    "is_ongoing": true,
+    "date_open": "2026-06-04",
+    "date_close": "2026-06-19",
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": "M/2025 anos",
+      "label_raw": "M/2025",
+      "age_min": 2025,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": true,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "textos\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação em  Aljezur, Lisboa (17-21 jun), Monchique, Ponta Delgada\nBerna Huidobro, Guilherme Félix, Inês Cardoso\ninterpretação em Águeda, Fafe, Lamego, Lisboa (3-7 jun), Paredes de Coura, Penafiel, Seia, Viana do Castelo e Vila Real\nMário Alberto Pereira, Marta Garcia Cruz, Sofia Pereira\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nNelda Magalhães, Rita Silva\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Águeda, Barcelos, Bragança, Évora, Fafe, Faro, Lagoa, Mafra, Paredes, Paredes de Coura, Penafiel, Ponta Delgada, Viana do Castelo e Vila Real.\n* Inscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/nao_se_pode_nao_se_pode_1920_345176296818a2c4c2384.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "nao-se-pode-nao-se-pode|2026-03",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:13:40.298547+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:5e16319b2ceb5545",
+      "harmonized_at": "2026-03-26T13:13:58.966576+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tndm-2026-03-cabe-mais-um",
+    "source_id": "cabe-mais-um",
+    "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/cabe-mais-um/",
+    "venue_id": "tndm",
+    "space_id": "sala-estudio",
+    "title": "Cabe mais um?",
+    "title_raw": "Cabe mais um?",
+    "subtitle": null,
+    "description": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um bicho tão diferente e que, de certeza, levou pulgas lá para dentro. O cão tenta adaptar-se e nem se importa de fazer vida de gato. Mas parece que, naquela casa, não cabe mais ninguém. Ou será que cabe mais um?\nEm 2025, artistas de Lagos, Ourém e Ponte de Lima\nforam convocados a participar na criação de dois\nnovos espetáculos Boca Aberta, a partir de um\nmesmo tema. Os espetáculos — ‘Cabe mais um?’ e\n‘Não se pode! Não se pode!’ —, estrearam e foram\ninicialmente apresentados nas cidades de origem\ndos respetivos artistas e seguiram em digressão\npor Portugal. Em 2026, estas criações são\napresentadas pela primeira vez em Lisboa e\ncontinuam a digressão pelo país.",
+    "description_short": "Dois gatos vivem numa casa há muito tempo. Espreguiçam-se e penteiam os bigodes sempre que lhes dá na gana. Só uma coisa os impede de serem gatos à vontade: o cão que, entretanto, passou a viver com eles. Os gatos desconfiam deste estranho, um bicho tão diferente e que, de certeza, levou pulgas lá…",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "outros",
+    "category": "outros",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Infância e Juventude",
+      "Público em geral"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-09",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-10",
+        "time_start": "11:30",
+        "time_end": "16:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-03-28",
+        "time_start": "11:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-16",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-05-23",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-05-30",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-06-04",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": "horário a anunciar"
+      },
+      {
+        "date": "2026-11-14",
+        "time_start": "16:00",
+        "time_end": "11:00",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-06",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-07",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-08",
+        "time_start": "10:30",
+        "time_end": "14:30",
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-03-28",
+    "date_last": "2026-11-14",
+    "total_sessions": 11,
+    "is_ongoing": false,
+    "date_open": "2026-05-09",
+    "date_close": "2026-05-08",
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": "M/2025 anos",
+      "label_raw": "M/2025",
+      "age_min": 2025,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": true,
+      "has_audio_description": true,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "texto\nInês Fonseca Santos e Maria João Cruz\nencenação\nCatarina Requeijo\ninterpretação\nBeatriz Jacinto, Mafalda Cardoso Pereira, Mariana Fonseca\ncenografia\nCarla Martínez\nfigurinos\nAldina Jesus\nsonoplastia\nSérgio Delgado\nassistência de encenação\nLuís Godinho, Manuela Pedroso\nprodução / mediação\nLeonor Atalaia\nprodução\nTeatro Nacional D. Maria II\nM/3\nUma iniciativa do Teatro Nacional D. Maria II e da Fundação \"la Caixa\", em colaboração com o BPI, e em parceria com o Plano Nacional das Artes e os Municípios de Lagos, Ourém e Ponte de Lima.\nEste espetáculo será ainda apresentado em jardins de infância nos municípios de Coimbra, Ílhavo, Leiria, Lousã, Ponta Delgada, Santarém, Tomar, Tondela e Vale de Cambra.\n.\n.\nInscrição escolas Lisboa: espetáculos para a infância ano lectivo 2025/2026, limitada à lotação existente."
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/cabe_mais_um_1920_18501012016818a39a0211e.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "cabe-mais-um|2026-03",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:13:42.258694+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:f79d7afc147cd4ea",
+      "harmonized_at": "2026-03-26T13:13:58.967286+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -486,10 +977,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:13:58.821427+00:00",
+      "scraped_at": "2026-03-26T13:13:44.140648+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:82d9f66d6c41e2a9",
-      "harmonized_at": "2026-03-26T13:08:33.849929+00:00",
+      "raw_data_hash": "sha256:3fb036ae62973502",
+      "harmonized_at": "2026-03-26T13:13:58.967788+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -632,10 +1123,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:00.729331+00:00",
+      "scraped_at": "2026-03-26T13:13:46.055459+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:82f507c86e7306f2",
-      "harmonized_at": "2026-03-26T13:08:33.850345+00:00",
+      "raw_data_hash": "sha256:b778e9636bfdca58",
+      "harmonized_at": "2026-03-26T13:13:58.968209+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -760,10 +1251,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:02.789653+00:00",
+      "scraped_at": "2026-03-26T13:13:47.958011+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:b70a87ea207d0819",
-      "harmonized_at": "2026-03-26T13:08:33.850790+00:00",
+      "raw_data_hash": "sha256:cb1aeabd4ee3c3d8",
+      "harmonized_at": "2026-03-26T13:13:58.968649+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -960,10 +1451,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:04.881463+00:00",
+      "scraped_at": "2026-03-26T13:13:49.890279+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:e010aad29b94cee4",
-      "harmonized_at": "2026-03-26T13:08:33.851640+00:00",
+      "raw_data_hash": "sha256:2dba1f9257231a73",
+      "harmonized_at": "2026-03-26T13:13:58.969489+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1101,10 +1592,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:06.758315+00:00",
+      "scraped_at": "2026-03-26T13:13:51.814579+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:96b55fbe31d31379",
-      "harmonized_at": "2026-03-26T13:08:33.852131+00:00",
+      "raw_data_hash": "sha256:952b273628808adc",
+      "harmonized_at": "2026-03-26T13:13:58.969999+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1231,10 +1722,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:08.670029+00:00",
+      "scraped_at": "2026-03-26T13:13:53.694396+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:b44a57da5804a7ea",
-      "harmonized_at": "2026-03-26T13:08:33.852572+00:00",
+      "raw_data_hash": "sha256:04659768b9a173c2",
+      "harmonized_at": "2026-03-26T13:13:58.970449+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1359,10 +1850,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:10.533200+00:00",
+      "scraped_at": "2026-03-26T13:13:55.585503+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:9f063545e427581f",
-      "harmonized_at": "2026-03-26T13:08:33.853019+00:00",
+      "raw_data_hash": "sha256:947e39d25fe983bc",
+      "harmonized_at": "2026-03-26T13:13:58.970885+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1496,10 +1987,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T01:14:12.383081+00:00",
+      "scraped_at": "2026-03-26T13:13:57.457130+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:854bc62d42e93062",
-      "harmonized_at": "2026-03-26T13:08:33.853371+00:00",
+      "raw_data_hash": "sha256:7394b7ed68bd9a96",
+      "harmonized_at": "2026-03-26T13:13:58.971259+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,

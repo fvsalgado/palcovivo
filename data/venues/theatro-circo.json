@@ -24,7 +24,7 @@
     "scraper_id": "theatro-circo",
     "api_url": null,
     "is_active": true,
-    "last_scraped": "2026-03-26T11:36:05.159875+00:00",
+    "last_scraped": "2026-03-26T13:14:10.322882+00:00",
     "scrape_frequency_hours": 24,
     "notes": "Site custom WP sem The Events Calendar. Usar /programa/ como fonte principal."
   },

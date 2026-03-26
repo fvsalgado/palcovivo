@@ -1,6 +1,835 @@
 [
   {
     "schema_version": "1.0",
+    "id": "theatro-circo-2026-06-indigo-quintet",
+    "source_id": "indigo-quintet",
+    "source_url": "https://theatrocirco.com/event/indigo-quintet/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "Indigo Quintet",
+    "title_raw": "Indigo Quintet",
+    "subtitle": "Indigo Quintet",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "musica",
+    "category": "musica-classica",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Música"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-26",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-06-26",
+    "date_last": "2026-06-26",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-06-26",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": 9.0,
+      "price_max": 9.0,
+      "price_display": "9€",
+      "price_raw": "9€",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174450-indigo_quintet-theatro_circo/Sessoes"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/CRED-PORTA-253-vertical.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "indigo-quintet|2026-06",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:13:56.033709+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:038e0b03aeb238ed",
+      "harmonized_at": "2026-03-26T13:14:10.323050+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce",
+    "source_id": "as-correntes-de-joao-cesar-monteiro",
+    "source_url": "https://theatrocirco.com/event/as-correntes-de-joao-cesar-monteiro/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "Cinema de agosto: As correntes de João César Monteiro",
+    "title_raw": "Cinema de agosto: As correntes de João César Monteiro",
+    "subtitle": "Lucky Star",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "artes-palco",
+    "category": "teatro",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Teatro"
+    ],
+    "dates": [
+      {
+        "date": "2026-08-03",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-08-10",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-08-17",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-08-24",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-08-31",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-08-03",
+    "date_last": "2026-08-31",
+    "total_sessions": 5,
+    "is_ongoing": false,
+    "date_open": "2026-08-03",
+    "date_close": null,
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": 4.0,
+      "price_max": 4.0,
+      "price_display": "4€",
+      "price_raw": "4€",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://theatrocirco.bol.pt/"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/cr1000562-ab7ed8-vert.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "cinema-de-agosto-as-correntes-de-joao-cesar-monteiro|2026-08",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:13:58.777394+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:339a5a29b4d58d5c",
+      "harmonized_at": "2026-03-26T13:14:10.332214+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-05-american-blues-mai-2026-ctb",
+    "source_id": "american-blues-mai",
+    "source_url": "https://theatrocirco.com/event/american-blues-mai/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "American Blues (mai 2026) (CTB)",
+    "title_raw": "American Blues (mai 2026) (CTB)",
+    "subtitle": "CTB",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "artes-palco",
+    "category": "teatro",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Teatro"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-12",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-13",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-14",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-12",
+    "date_last": "2026-05-14",
+    "total_sessions": 3,
+    "is_ongoing": false,
+    "date_open": "2026-05-12",
+    "date_close": null,
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": 10.0,
+      "price_max": 10.0,
+      "price_display": "10€",
+      "price_raw": "10€",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174866-american_blues_companhia_de_teatro_de_braga-theatro_circo/Sessoes"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Autor\nTennessee Williams\nDramaturgia e encenação\nLelio Lecis\nEspaço cénico\nLelio Lecis\nFigurino\nValentina Ena\nDesenho de luz\nSérgio Lajas\nSom\nSepehr Mousavi\nMontagem\nFernando Gomes\nInterpretação\nAndré Laires, Eduarda Filipa, Jaime Mousanto, Rogerio Boane, Solange Sá\nCoprodução\nAkroama/Companhia de Teatro de Braga"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/AMERICAN-BLUES-2.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "american-blues-mai-2026-ctb|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:14:05.085615+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:2c17d8352b337311",
+      "harmonized_at": "2026-03-26T13:14:10.332624+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-05-mulheres-estrangeiras-ctb",
+    "source_id": "mulheres-estrangeiras",
+    "source_url": "https://theatrocirco.com/event/mulheres-estrangeiras/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "Mulheres Estrangeiras (CTB)",
+    "title_raw": "Mulheres Estrangeiras (CTB)",
+    "subtitle": "Olga Kozakou-Tsiara / Roi Theatre – Chipre",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "artes-palco",
+    "category": "teatro",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Teatro"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-20",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": 55,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-20",
+    "date_last": "2026-05-20",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2026-05-20",
+    "date_close": null,
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": 10.0,
+      "price_max": 10.0,
+      "price_display": "10€",
+      "price_raw": "10€",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Adaptação e encenação\nValentina Sofokleous\nDesenho de luz e som\nDimitris Giannakou\nInterpretação\nValentina Sofokleous, Loukia Michael Mousoulioti, Nafsika Apostratou\nDuração\n55 minutos"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/MULHERES-ESTRANGEIRAS-vertical.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "mulheres-estrangeiras-ctb|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:14:05.864294+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:09114101d86cee9a",
+      "harmonized_at": "2026-03-26T13:14:10.332783+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-06-american-blues-jun-2026-ctb",
+    "source_id": "american-blues-jun",
+    "source_url": "https://theatrocirco.com/event/american-blues-jun/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "American Blues (jun 2026) (CTB)",
+    "title_raw": "American Blues (jun 2026) (CTB)",
+    "subtitle": "CTB",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "artes-palco",
+    "category": "teatro",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Teatro"
+    ],
+    "dates": [
+      {
+        "date": "2026-06-16",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-17",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-06-18",
+        "time_start": "21:30",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-06-16",
+    "date_last": "2026-06-18",
+    "total_sessions": 3,
+    "is_ongoing": false,
+    "date_open": "2026-06-16",
+    "date_close": null,
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": 10.0,
+      "price_max": 10.0,
+      "price_display": "10€",
+      "price_raw": "10€",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174866-american_blues_companhia_de_teatro_de_braga-theatro_circo/Sessoes"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Autor\nTennessee Williams\nDramaturgia e encenação\nLelio Lecis\nEspaço cénico\nLelio Lecis\nFigurino\nValentina Ena\nDesenho de luz\nSérgio Lajas\nSom\nSepehr Mousavi\nMontagem\nFernando Gomes\nInterpretação\nAndré Laires, Eduarda Filipa, Jaime Mousanto, Rogerio Boane, Solange Sá\nCoprodução\nAkroama/Companhia de Teatro de Braga"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/AMERICAN-BLUES-2.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "american-blues-jun-2026-ctb|2026-06",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:14:06.614946+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:aaf2f80cb8b72388",
+      "harmonized_at": "2026-03-26T13:14:10.332897+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta",
+    "source_id": "xxxv-fitu-bracara-avgvsta",
+    "source_url": "https://theatrocirco.com/event/xxxv-fitu-bracara-avgvsta/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "XXXV FITU Bracara Avgvsta",
+    "title_raw": "XXXV FITU Bracara Avgvsta",
+    "subtitle": "Tuna Universitária do Minho",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "musica",
+    "category": "musica-classica",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Música"
+    ],
+    "dates": [
+      {
+        "date": "2026-05-22",
+        "time_start": "21:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      },
+      {
+        "date": "2026-05-23",
+        "time_start": "21:00",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-05-22",
+    "date_last": "2026-05-23",
+    "total_sessions": 2,
+    "is_ongoing": false,
+    "date_open": "2026-05-22",
+    "date_close": null,
+    "event_status": "em-cartaz",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": ""
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/Fotografia-por-Joao-Cunha-32.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "xxxv-fitu-bracara-avgvsta|2026-05",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-26T13:14:09.920068+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:08ce767c4f125085",
+      "harmonized_at": "2026-03-26T13:14:10.333013+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "theatro-circo-2026-01-tres-tempos",
     "source_id": "tres-tempos-2026",
     "source_url": "https://theatrocirco.com/event/tres-tempos-2026/",
@@ -121,7 +950,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:38.011035+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345518+00:00"
     }
   },
   {
@@ -282,7 +1113,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:38.683288+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345533+00:00"
     }
   },
   {
@@ -407,7 +1240,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:39.331862+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345540+00:00"
     }
   },
   {
@@ -532,7 +1367,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:39.978252+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345546+00:00"
     }
   },
   {
@@ -657,7 +1494,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:40.622643+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345556+00:00"
     }
   },
   {
@@ -791,7 +1630,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:41.267456+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345561+00:00"
     }
   },
   {
@@ -916,7 +1757,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:41.822964+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345568+00:00"
     }
   },
   {
@@ -1041,7 +1884,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:42.474468+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345573+00:00"
     }
   },
   {
@@ -1166,7 +2011,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:43.124273+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345578+00:00"
     }
   },
   {
@@ -1309,7 +2156,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:43.769828+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345583+00:00"
     }
   },
   {
@@ -1434,7 +2283,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:44.416161+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345587+00:00"
     }
   },
   {
@@ -1559,7 +2410,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:45.067204+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345593+00:00"
     }
   },
   {
@@ -1684,7 +2537,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:45.613473+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345597+00:00"
     }
   },
   {
@@ -1807,7 +2662,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:46.271294+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345604+00:00"
     }
   },
   {
@@ -1932,7 +2789,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:46.917670+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345609+00:00"
     }
   },
   {
@@ -2064,7 +2923,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:47.561916+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345613+00:00"
     }
   },
   {
@@ -2198,7 +3059,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:48.205738+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345618+00:00"
     }
   },
   {
@@ -2323,7 +3186,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:48.853076+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345623+00:00"
     }
   },
   {
@@ -2448,7 +3313,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:49.398608+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345628+00:00"
     }
   },
   {
@@ -2573,7 +3440,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:50.048756+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345633+00:00"
     }
   },
   {
@@ -2698,7 +3567,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:50.695307+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345638+00:00"
     }
   },
   {
@@ -2823,7 +3694,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:51.339981+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345643+00:00"
     }
   },
   {
@@ -2948,7 +3821,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:51.998470+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345647+00:00"
     }
   },
   {
@@ -3073,7 +3948,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:52.649761+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345665+00:00"
     }
   },
   {
@@ -3196,7 +4073,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:53.195669+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345672+00:00"
     }
   },
   {
@@ -3319,7 +4198,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:53.848922+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345677+00:00"
     }
   },
   {
@@ -3442,7 +4323,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:54.398304+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345682+00:00"
     }
   },
   {
@@ -3567,7 +4450,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:54.944586+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345688+00:00"
     }
   },
   {
@@ -3690,7 +4575,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:55.591578+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345693+00:00"
     }
   },
   {
@@ -3813,7 +4700,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:56.139305+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345698+00:00"
     }
   },
   {
@@ -3947,7 +4836,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:56.788900+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345703+00:00"
     }
   },
   {
@@ -4072,7 +4963,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:57.334554+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345708+00:00"
     }
   },
   {
@@ -4206,7 +5099,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:57.876258+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345713+00:00"
     }
   },
   {
@@ -4331,7 +5226,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:58.421707+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345717+00:00"
     }
   },
   {
@@ -4456,7 +5353,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:59.090156+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345729+00:00"
     }
   },
   {
@@ -4581,7 +5480,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:13:59.739608+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345734+00:00"
     }
   },
   {
@@ -4751,7 +5652,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:00.386272+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345739+00:00"
     }
   },
   {
@@ -4874,7 +5777,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:01.034865+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345746+00:00"
     }
   },
   {
@@ -4999,7 +5904,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:01.999576+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345751+00:00"
     }
   },
   {
@@ -5142,7 +6049,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:02.989070+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345755+00:00"
     }
   },
   {
@@ -5276,7 +6185,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:03.744250+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345761+00:00"
     }
   },
   {
@@ -5401,7 +6312,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:04.390830+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345766+00:00"
     }
   },
   {
@@ -5526,7 +6439,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:05.038701+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345770+00:00"
     }
   },
   {
@@ -5651,7 +6566,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:05.688431+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345775+00:00"
     }
   },
   {
@@ -5776,7 +6693,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:06.337699+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345781+00:00"
     }
   },
   {
@@ -5901,7 +6820,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:06.986325+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345786+00:00"
     }
   },
   {
@@ -6035,132 +6956,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-indigo-quintet",
-    "source_id": "indigo-quintet",
-    "source_url": "https://theatrocirco.com/event/indigo-quintet/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "Indigo Quintet",
-    "title_raw": "Indigo Quintet",
-    "subtitle": "Indigo Quintet",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "musica",
-    "category": "musica-classica",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Música"
-    ],
-    "dates": [
-      {
-        "date": "2026-06-26",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-06-26",
-    "date_last": "2026-06-26",
-    "total_sessions": 1,
-    "is_ongoing": false,
-    "date_open": "2026-06-26",
-    "date_close": null,
-    "event_status": "unica-sessao",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": 9.0,
-      "price_max": 9.0,
-      "price_display": "9€",
-      "price_raw": "9€",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174450-indigo_quintet-theatro_circo/Sessoes"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/CRED-PORTA-253-vertical.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "indigo-quintet|2026-06",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:08.277126+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:ecf5c6f6cf156e0b",
-      "harmonized_at": "2026-03-26T13:08:31.951208+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:07.630815+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345791+00:00"
     }
   },
   {
@@ -6294,7 +7092,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:08.920569+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345796+00:00"
     }
   },
   {
@@ -6428,7 +7228,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:09.564618+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345801+00:00"
     }
   },
   {
@@ -6553,168 +7355,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce",
-    "source_id": "as-correntes-de-joao-cesar-monteiro",
-    "source_url": "https://theatrocirco.com/event/as-correntes-de-joao-cesar-monteiro/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "Cinema de agosto: As correntes de João César Monteiro",
-    "title_raw": "Cinema de agosto: As correntes de João César Monteiro",
-    "subtitle": "Lucky Star",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "artes-palco",
-    "category": "teatro",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Teatro"
-    ],
-    "dates": [
-      {
-        "date": "2026-08-03",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-08-10",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-08-17",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-08-24",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-08-31",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-08-03",
-    "date_last": "2026-08-31",
-    "total_sessions": 5,
-    "is_ongoing": false,
-    "date_open": "2026-08-03",
-    "date_close": null,
-    "event_status": "em-cartaz",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": 4.0,
-      "price_max": 4.0,
-      "price_display": "4€",
-      "price_raw": "4€",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://theatrocirco.bol.pt/"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/cr1000562-ab7ed8-vert.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "cinema-de-agosto-as-correntes-de-joao-cesar-monteiro|2026-08",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:10.856325+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:31a57ca5394ce6ad",
-      "harmonized_at": "2026-03-26T13:08:31.951703+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:10.209481+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345807+00:00"
     }
   },
   {
@@ -6839,7 +7482,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:11.504133+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345812+00:00"
     }
   },
   {
@@ -6964,7 +7609,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:12.150239+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345817+00:00"
     }
   },
   {
@@ -7089,7 +7736,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:12.796924+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345822+00:00"
     }
   },
   {
@@ -7214,7 +7863,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:13.442688+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345827+00:00"
     }
   },
   {
@@ -7366,7 +8017,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:14.085117+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345836+00:00"
     }
   },
   {
@@ -7491,7 +8144,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:14.732722+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345841+00:00"
     }
   },
   {
@@ -7634,7 +8289,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:15.379675+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345846+00:00"
     }
   },
   {
@@ -7768,418 +8425,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-american-blues-mai-2026-ctb",
-    "source_id": "american-blues-mai",
-    "source_url": "https://theatrocirco.com/event/american-blues-mai/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "American Blues (mai 2026) (CTB)",
-    "title_raw": "American Blues (mai 2026) (CTB)",
-    "subtitle": "CTB",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "artes-palco",
-    "category": "teatro",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Teatro"
-    ],
-    "dates": [
-      {
-        "date": "2026-05-12",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-05-13",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-05-14",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-05-12",
-    "date_last": "2026-05-14",
-    "total_sessions": 3,
-    "is_ongoing": false,
-    "date_open": "2026-05-12",
-    "date_close": null,
-    "event_status": "em-cartaz",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": 10.0,
-      "price_max": 10.0,
-      "price_display": "10€",
-      "price_raw": "10€",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174866-american_blues_companhia_de_teatro_de_braga-theatro_circo/Sessoes"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "Autor\nTennessee Williams\nDramaturgia e encenação\nLelio Lecis\nEspaço cénico\nLelio Lecis\nFigurino\nValentina Ena\nDesenho de luz\nSérgio Lajas\nSom\nSepehr Mousavi\nMontagem\nFernando Gomes\nInterpretação\nAndré Laires, Eduarda Filipa, Jaime Mousanto, Rogerio Boane, Solange Sá\nCoprodução\nAkroama/Companhia de Teatro de Braga"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/AMERICAN-BLUES-2.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "american-blues-mai-2026-ctb|2026-05",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:17.310718+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:902a7a12b5b6ea72",
-      "harmonized_at": "2026-03-26T13:08:31.952916+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-mulheres-estrangeiras-ctb",
-    "source_id": "mulheres-estrangeiras",
-    "source_url": "https://theatrocirco.com/event/mulheres-estrangeiras/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "Mulheres Estrangeiras (CTB)",
-    "title_raw": "Mulheres Estrangeiras (CTB)",
-    "subtitle": "Olga Kozakou-Tsiara / Roi Theatre – Chipre",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "artes-palco",
-    "category": "teatro",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Teatro"
-    ],
-    "dates": [
-      {
-        "date": "2026-05-20",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": 55,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-05-20",
-    "date_last": "2026-05-20",
-    "total_sessions": 1,
-    "is_ongoing": false,
-    "date_open": "2026-05-20",
-    "date_close": null,
-    "event_status": "unica-sessao",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": 10.0,
-      "price_max": 10.0,
-      "price_display": "10€",
-      "price_raw": "10€",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "Adaptação e encenação\nValentina Sofokleous\nDesenho de luz e som\nDimitris Giannakou\nInterpretação\nValentina Sofokleous, Loukia Michael Mousoulioti, Nafsika Apostratou\nDuração\n55 minutos"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/MULHERES-ESTRANGEIRAS-vertical.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "mulheres-estrangeiras-ctb|2026-05",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:17.954733+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:22241a47ac985a57",
-      "harmonized_at": "2026-03-26T13:08:31.953045+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-american-blues-jun-2026-ctb",
-    "source_id": "american-blues-jun",
-    "source_url": "https://theatrocirco.com/event/american-blues-jun/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "American Blues (jun 2026) (CTB)",
-    "title_raw": "American Blues (jun 2026) (CTB)",
-    "subtitle": "CTB",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "artes-palco",
-    "category": "teatro",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Teatro"
-    ],
-    "dates": [
-      {
-        "date": "2026-06-16",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-06-17",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-06-18",
-        "time_start": "21:30",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-06-16",
-    "date_last": "2026-06-18",
-    "total_sessions": 3,
-    "is_ongoing": false,
-    "date_open": "2026-06-16",
-    "date_close": null,
-    "event_status": "em-cartaz",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": 10.0,
-      "price_max": 10.0,
-      "price_display": "10€",
-      "price_raw": "10€",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174866-american_blues_companhia_de_teatro_de_braga-theatro_circo/Sessoes"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "Autor\nTennessee Williams\nDramaturgia e encenação\nLelio Lecis\nEspaço cénico\nLelio Lecis\nFigurino\nValentina Ena\nDesenho de luz\nSérgio Lajas\nSom\nSepehr Mousavi\nMontagem\nFernando Gomes\nInterpretação\nAndré Laires, Eduarda Filipa, Jaime Mousanto, Rogerio Boane, Solange Sá\nCoprodução\nAkroama/Companhia de Teatro de Braga"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/AMERICAN-BLUES-2.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "american-blues-jun-2026-ctb|2026-06",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:18.622222+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:a95a2cb95391a255",
-      "harmonized_at": "2026-03-26T13:08:31.953150+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:16.665252+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345851+00:00"
     }
   },
   {
@@ -8302,7 +8550,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:19.269251+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345856+00:00"
     }
   },
   {
@@ -8436,7 +8686,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:19.916085+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345861+00:00"
     }
   },
   {
@@ -8570,7 +8822,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:20.562243+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345866+00:00"
     }
   },
   {
@@ -8704,139 +8958,9 @@
       "validation_errors": [],
       "manually_edited": false,
       "manually_edited_at": null,
-      "is_active": true
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta",
-    "source_id": "xxxv-fitu-bracara-avgvsta",
-    "source_url": "https://theatrocirco.com/event/xxxv-fitu-bracara-avgvsta/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "XXXV FITU Bracara Avgvsta",
-    "title_raw": "XXXV FITU Bracara Avgvsta",
-    "subtitle": "Tuna Universitária do Minho",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "musica",
-    "category": "musica-classica",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Música"
-    ],
-    "dates": [
-      {
-        "date": "2026-05-22",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      },
-      {
-        "date": "2026-05-23",
-        "time_start": "21:00",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-05-22",
-    "date_last": "2026-05-23",
-    "total_sessions": 2,
-    "is_ongoing": false,
-    "date_open": "2026-05-22",
-    "date_close": null,
-    "event_status": "em-cartaz",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": null,
-      "price_max": null,
-      "price_display": null,
-      "price_raw": null,
-      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": ""
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/Fotografia-por-Joao-Cunha-32.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "xxxv-fitu-bracara-avgvsta|2026-05",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-26T01:14:21.856397+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:8b444ade57c9d9b1",
-      "harmonized_at": "2026-03-26T13:08:31.953695+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true
+      "is_active": true,
+      "last_seen_at": "2026-03-26T01:14:21.206364+00:00",
+      "not_seen_since": "2026-03-26T13:14:10.345871+00:00"
     }
   },
   {
@@ -8963,7 +9087,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:56:44.629212+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969317+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345876+00:00"
     }
   },
   {
@@ -9088,7 +9212,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:00.166921+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969331+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345882+00:00"
     }
   },
   {
@@ -9215,7 +9339,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:09.315677+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969339+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345888+00:00"
     }
   },
   {
@@ -9369,7 +9493,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:11.870120+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969348+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345892+00:00"
     }
   },
   {
@@ -9496,7 +9620,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:15.288083+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969354+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345898+00:00"
     }
   },
   {
@@ -9632,7 +9756,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:16.560934+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969359+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345903+00:00"
     }
   },
   {
@@ -9759,7 +9883,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:17.220020+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969367+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345907+00:00"
     }
   },
   {
@@ -9895,7 +10019,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:18.385955+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969372+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345912+00:00"
     }
   },
   {
@@ -10022,7 +10146,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:19.550373+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969378+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345917+00:00"
     }
   },
   {
@@ -10149,7 +10273,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:20.820810+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969383+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345922+00:00"
     }
   },
   {
@@ -10303,7 +10427,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:21.480951+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969388+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345927+00:00"
     }
   },
   {
@@ -10430,7 +10554,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:22.136444+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969393+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345934+00:00"
     }
   },
   {
@@ -10557,7 +10681,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:22.792349+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969398+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345939+00:00"
     }
   },
   {
@@ -10684,7 +10808,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:23.449466+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969405+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345944+00:00"
     }
   },
   {
@@ -10811,7 +10935,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:24.109248+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969410+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345948+00:00"
     }
   },
   {
@@ -10938,7 +11062,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:24.766304+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969415+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345953+00:00"
     }
   },
   {
@@ -11065,7 +11189,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:25.422686+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969420+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345958+00:00"
     }
   },
   {
@@ -11210,7 +11334,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:26.081969+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969426+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345963+00:00"
     }
   },
   {
@@ -11337,7 +11461,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:26.738936+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969431+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345969+00:00"
     }
   },
   {
@@ -11464,7 +11588,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:27.396195+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969436+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345973+00:00"
     }
   },
   {
@@ -11591,7 +11715,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:28.048319+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969441+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345978+00:00"
     }
   },
   {
@@ -11718,7 +11842,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:28.599762+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969445+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345984+00:00"
     }
   },
   {
@@ -11872,7 +11996,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:29.147659+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969450+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345989+00:00"
     }
   },
   {
@@ -12026,7 +12150,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:29.801480+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969457+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345993+00:00"
     }
   },
   {
@@ -12153,7 +12277,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:30.349122+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969462+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.345998+00:00"
     }
   },
   {
@@ -12280,7 +12404,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:31.003166+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969467+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346003+00:00"
     }
   },
   {
@@ -12416,7 +12540,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:31.658847+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969472+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346008+00:00"
     }
   },
   {
@@ -12552,7 +12676,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:32.311919+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969477+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346015+00:00"
     }
   },
   {
@@ -12679,7 +12803,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:32.967668+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969484+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346020+00:00"
     }
   },
   {
@@ -12806,7 +12930,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:33.625181+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969489+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346025+00:00"
     }
   },
   {
@@ -12933,7 +13057,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:34.298684+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969493+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346030+00:00"
     }
   },
   {
@@ -13078,7 +13202,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:35.463794+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969498+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346037+00:00"
     }
   },
   {
@@ -13205,7 +13329,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:36.119853+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969503+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346042+00:00"
     }
   },
   {
@@ -13332,7 +13456,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:36.773918+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969513+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346047+00:00"
     }
   },
   {
@@ -13459,7 +13583,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:38.104411+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969518+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346051+00:00"
     }
   },
   {
@@ -13595,7 +13719,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:38.769452+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969523+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346056+00:00"
     }
   },
   {
@@ -13722,7 +13846,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:39.428377+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969528+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346061+00:00"
     }
   },
   {
@@ -13894,7 +14018,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:40.084833+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969533+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346066+00:00"
     }
   },
   {
@@ -14030,7 +14154,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:40.630526+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969538+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346071+00:00"
     }
   },
   {
@@ -14173,7 +14297,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:41.287500+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969543+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346076+00:00"
     }
   },
   {
@@ -14300,7 +14424,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:41.944473+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969548+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346080+00:00"
     }
   },
   {
@@ -14436,7 +14560,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:42.490002+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969553+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346086+00:00"
     }
   },
   {
@@ -14599,7 +14723,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:44.881972+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969557+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346091+00:00"
     }
   },
   {
@@ -14726,7 +14850,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:45.539306+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969564+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346096+00:00"
     }
   },
   {
@@ -14853,7 +14977,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:46.195240+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969569+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346101+00:00"
     }
   },
   {
@@ -14980,7 +15104,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:46.852049+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969574+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346106+00:00"
     }
   },
   {
@@ -15107,7 +15231,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:47.507361+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969579+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346111+00:00"
     }
   },
   {
@@ -15234,7 +15358,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:48.163463+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969583+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346116+00:00"
     }
   },
   {
@@ -15368,7 +15492,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:48.820797+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969588+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346121+00:00"
     }
   },
   {
@@ -15495,7 +15619,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:49.476840+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969593+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346125+00:00"
     }
   },
   {
@@ -15622,7 +15746,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:50.029456+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969597+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346130+00:00"
     }
   },
   {
@@ -15758,7 +15882,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:50.683002+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969604+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346136+00:00"
     }
   },
   {
@@ -15894,7 +16018,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:51.335786+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969609+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346142+00:00"
     }
   },
   {
@@ -16057,7 +16181,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:51.993306+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969616+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346147+00:00"
     }
   },
   {
@@ -16184,7 +16308,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:52.649305+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969621+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346152+00:00"
     }
   },
   {
@@ -16311,7 +16435,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:53.304028+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969626+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346157+00:00"
     }
   },
   {
@@ -16445,7 +16569,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:53.965154+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969630+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346161+00:00"
     }
   },
   {
@@ -16572,7 +16696,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:54.624290+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969635+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346166+00:00"
     }
   },
   {
@@ -16699,7 +16823,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:55.172558+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969640+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346172+00:00"
     }
   },
   {
@@ -16833,7 +16957,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:55.843079+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969645+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346177+00:00"
     }
   },
   {
@@ -16960,7 +17084,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:56.497001+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969649+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346182+00:00"
     }
   },
   {
@@ -17087,7 +17211,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:57.152197+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969654+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346188+00:00"
     }
   },
   {
@@ -17214,7 +17338,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:57.811515+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969659+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346193+00:00"
     }
   },
   {
@@ -17341,7 +17465,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:58.468647+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969665+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346198+00:00"
     }
   },
   {
@@ -17468,7 +17592,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:59.121555+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969670+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346203+00:00"
     }
   },
   {
@@ -17595,7 +17719,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:57:59.777247+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969675+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346208+00:00"
     }
   },
   {
@@ -17722,7 +17846,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:00.434666+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969680+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346213+00:00"
     }
   },
   {
@@ -17849,7 +17973,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:01.090047+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969684+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346217+00:00"
     }
   },
   {
@@ -17976,7 +18100,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:01.646679+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969689+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346222+00:00"
     }
   },
   {
@@ -18103,7 +18227,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:02.827578+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969694+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346227+00:00"
     }
   },
   {
@@ -18230,7 +18354,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:03.600274+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969699+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346232+00:00"
     }
   },
   {
@@ -18366,7 +18490,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:04.308736+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969703+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346239+00:00"
     }
   },
   {
@@ -18502,7 +18626,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:04.968269+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969708+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346243+00:00"
     }
   },
   {
@@ -18629,7 +18753,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:05.619594+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969715+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346248+00:00"
     }
   },
   {
@@ -18756,7 +18880,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:06.276262+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969722+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346255+00:00"
     }
   },
   {
@@ -18883,7 +19007,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:06.931953+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969740+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346260+00:00"
     }
   },
   {
@@ -19010,7 +19134,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:07.586343+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969745+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346264+00:00"
     }
   },
   {
@@ -19153,7 +19277,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:08.243186+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969750+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346270+00:00"
     }
   },
   {
@@ -19289,7 +19413,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:08.898725+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969755+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346275+00:00"
     }
   },
   {
@@ -19416,7 +19540,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:09.555598+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969759+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346280+00:00"
     }
   },
   {
@@ -19552,7 +19676,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:10.210053+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969764+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346285+00:00"
     }
   },
   {
@@ -19679,7 +19803,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:10.867365+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969769+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346291+00:00"
     }
   },
   {
@@ -19815,7 +19939,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:11.524705+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969774+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346295+00:00"
     }
   },
   {
@@ -19942,7 +20066,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:12.181314+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969783+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346300+00:00"
     }
   },
   {
@@ -20069,7 +20193,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:12.837042+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969788+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346305+00:00"
     }
   },
   {
@@ -20196,7 +20320,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:13.490395+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969793+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346310+00:00"
     }
   },
   {
@@ -20323,7 +20447,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:14.149782+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969798+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346315+00:00"
     }
   },
   {
@@ -20450,7 +20574,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:14.807622+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969802+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346320+00:00"
     }
   },
   {
@@ -20577,7 +20701,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:15.483271+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969807+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346325+00:00"
     }
   },
   {
@@ -20704,7 +20828,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:41.756357+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969812+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346329+00:00"
     }
   },
   {
@@ -20831,7 +20955,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:16.802590+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969816+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346334+00:00"
     }
   },
   {
@@ -20956,7 +21080,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:17.457928+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969821+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346341+00:00"
     }
   },
   {
@@ -21083,7 +21207,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:18.110067+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969826+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346345+00:00"
     }
   },
   {
@@ -21219,7 +21343,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:18.770088+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969833+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346350+00:00"
     }
   },
   {
@@ -21346,7 +21470,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:19.424466+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969837+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346355+00:00"
     }
   },
   {
@@ -21473,7 +21597,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:20.082943+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969842+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346361+00:00"
     }
   },
   {
@@ -21609,7 +21733,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:20.740416+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969847+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346366+00:00"
     }
   },
   {
@@ -21736,7 +21860,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:47.824576+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969854+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346371+00:00"
     }
   },
   {
@@ -21863,7 +21987,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:22.052953+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969859+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346376+00:00"
     }
   },
   {
@@ -21999,7 +22123,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:22.708604+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969863+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346381+00:00"
     }
   },
   {
@@ -22126,7 +22250,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:23.364511+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969868+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346386+00:00"
     }
   },
   {
@@ -22253,7 +22377,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:49.793292+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969873+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346392+00:00"
     }
   },
   {
@@ -22380,7 +22504,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:24.675334+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969879+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346396+00:00"
     }
   },
   {
@@ -22516,7 +22640,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:25.988996+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969886+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346403+00:00"
     }
   },
   {
@@ -22643,7 +22767,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:26.644757+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969891+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346408+00:00"
     }
   },
   {
@@ -22770,7 +22894,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:27.300330+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969896+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346413+00:00"
     }
   },
   {
@@ -22897,7 +23021,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:52.314632+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969901+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346418+00:00"
     }
   },
   {
@@ -23024,7 +23148,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:28.612939+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969906+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346422+00:00"
     }
   },
   {
@@ -23151,7 +23275,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:29.269047+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969911+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346427+00:00"
     }
   },
   {
@@ -23287,7 +23411,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:29.929761+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969915+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346432+00:00"
     }
   },
   {
@@ -23414,7 +23538,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:30.584625+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969920+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346437+00:00"
     }
   },
   {
@@ -23541,7 +23665,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:31.241222+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969925+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346443+00:00"
     }
   },
   {
@@ -23668,7 +23792,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:31.899251+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969930+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346448+00:00"
     }
   },
   {
@@ -23795,7 +23919,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:32.556793+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969936+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346452+00:00"
     }
   },
   {
@@ -23922,7 +24046,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:33.211143+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969941+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346457+00:00"
     }
   },
   {
@@ -24049,7 +24173,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:33.868923+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969946+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346461+00:00"
     }
   },
   {
@@ -24176,7 +24300,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:34.541136+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969951+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346466+00:00"
     }
   },
   {
@@ -24303,7 +24427,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:35.198462+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969955+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346472+00:00"
     }
   },
   {
@@ -24430,7 +24554,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:35.857848+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969960+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346477+00:00"
     }
   },
   {
@@ -24557,7 +24681,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:36.509639+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969965+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346482+00:00"
     }
   },
   {
@@ -24684,7 +24808,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:37.165485+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969970+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346487+00:00"
     }
   },
   {
@@ -24811,7 +24935,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:37.818749+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969977+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346494+00:00"
     }
   },
   {
@@ -24938,7 +25062,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:38.470152+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969981+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346499+00:00"
     }
   },
   {
@@ -25063,7 +25187,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:39.127918+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969988+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346503+00:00"
     }
   },
   {
@@ -25190,7 +25314,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:39.787070+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969993+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346508+00:00"
     }
   },
   {
@@ -25326,7 +25450,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:40.442045+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.969998+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346513+00:00"
     }
   },
   {
@@ -25453,7 +25577,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:41.098706+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970003+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346518+00:00"
     }
   },
   {
@@ -25580,7 +25704,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:43.072547+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970008+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346522+00:00"
     }
   },
   {
@@ -25707,7 +25831,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:43.727786+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970012+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346528+00:00"
     }
   },
   {
@@ -25832,7 +25956,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:45.198507+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970017+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346533+00:00"
     }
   },
   {
@@ -25955,7 +26079,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:45.855718+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970022+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346538+00:00"
     }
   },
   {
@@ -26082,7 +26206,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:46.513248+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970026+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346544+00:00"
     }
   },
   {
@@ -26207,7 +26331,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:47.167953+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970031+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346549+00:00"
     }
   },
   {
@@ -26334,7 +26458,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:48.480748+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970038+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346553+00:00"
     }
   },
   {
@@ -26461,7 +26585,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:49.138762+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970045+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346558+00:00"
     }
   },
   {
@@ -26586,7 +26710,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:50.449790+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970049+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346562+00:00"
     }
   },
   {
@@ -26713,7 +26837,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:51.108874+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970054+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346567+00:00"
     }
   },
   {
@@ -26840,7 +26964,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:51.766033+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970059+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346571+00:00"
     }
   },
   {
@@ -26967,7 +27091,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:52.974671+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970063+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346577+00:00"
     }
   },
   {
@@ -27094,7 +27218,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:53.524797+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970068+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346582+00:00"
     }
   },
   {
@@ -27230,7 +27354,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:54.180807+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970073+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346587+00:00"
     }
   },
   {
@@ -27357,7 +27481,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:55.510030+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970078+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346593+00:00"
     }
   },
   {
@@ -27484,7 +27608,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:56.062279+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970082+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346598+00:00"
     }
   },
   {
@@ -27611,7 +27735,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:56.718701+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970089+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346603+00:00"
     }
   },
   {
@@ -27738,7 +27862,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:57.268689+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970094+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346607+00:00"
     }
   },
   {
@@ -27865,7 +27989,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:57.822519+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970098+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346612+00:00"
     }
   },
   {
@@ -27992,7 +28116,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:58.479140+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970103+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346617+00:00"
     }
   },
   {
@@ -28128,7 +28252,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:59.134019+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970113+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346622+00:00"
     }
   },
   {
@@ -28255,7 +28379,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:58:59.792008+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970118+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346626+00:00"
     }
   },
   {
@@ -28382,7 +28506,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:00.345604+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970123+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346631+00:00"
     }
   },
   {
@@ -28509,7 +28633,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:01.004843+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970127+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346637+00:00"
     }
   },
   {
@@ -28636,7 +28760,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:02.100651+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970132+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346643+00:00"
     }
   },
   {
@@ -28763,7 +28887,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:03.002656+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970137+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346649+00:00"
     }
   },
   {
@@ -28890,7 +29014,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:03.789631+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970144+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346670+00:00"
     }
   },
   {
@@ -29017,7 +29141,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:04.483183+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970148+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346675+00:00"
     }
   },
   {
@@ -29144,7 +29268,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:05.141035+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970153+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346681+00:00"
     }
   },
   {
@@ -29271,7 +29395,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:05.799621+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970157+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346686+00:00"
     }
   },
   {
@@ -29398,7 +29522,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:06.457202+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970162+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346690+00:00"
     }
   },
   {
@@ -29525,7 +29649,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:07.113419+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970167+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346696+00:00"
     }
   },
   {
@@ -29652,7 +29776,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:07.773624+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970171+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346701+00:00"
     }
   },
   {
@@ -29779,7 +29903,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:08.430354+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970176+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346707+00:00"
     }
   },
   {
@@ -29906,7 +30030,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:09.088937+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970181+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346716+00:00"
     }
   },
   {
@@ -30033,7 +30157,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:09.747033+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970185+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346721+00:00"
     }
   },
   {
@@ -30160,7 +30284,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:10.402707+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970192+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346726+00:00"
     }
   },
   {
@@ -30287,7 +30411,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:11.061209+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970197+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346731+00:00"
     }
   },
   {
@@ -30414,7 +30538,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:11.717365+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970202+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346736+00:00"
     }
   },
   {
@@ -30541,7 +30665,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:12.373197+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970206+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346740+00:00"
     }
   },
   {
@@ -30668,7 +30792,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:13.030725+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970211+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346746+00:00"
     }
   },
   {
@@ -30795,7 +30919,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:13.687986+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970216+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346750+00:00"
     }
   },
   {
@@ -30922,7 +31046,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:14.344240+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970220+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346755+00:00"
     }
   },
   {
@@ -31047,7 +31171,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:15.680785+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970225+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346760+00:00"
     }
   },
   {
@@ -31174,7 +31298,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:16.338789+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970241+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346766+00:00"
     }
   },
   {
@@ -31301,7 +31425,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:16.994437+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970246+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346771+00:00"
     }
   },
   {
@@ -31428,7 +31552,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:17.649137+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970254+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346776+00:00"
     }
   },
   {
@@ -31555,7 +31679,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:18.307481+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970259+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346781+00:00"
     }
   },
   {
@@ -31682,7 +31806,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T10:59:18.964499+00:00",
-      "not_seen_since": "2026-03-26T13:08:31.970264+00:00"
+      "not_seen_since": "2026-03-26T13:14:10.346786+00:00"
     }
   }
 ]
