@@ -21,6 +21,9 @@ data/cache/*/
 # Logs — versionar latest.json e logs datados para notificações funcionarem
 !data/logs/
 
+# Backups de eventos — versionados (mantidos até 30 por venue)
+# Não excluir: data/backups/ é commitado intencionalmente
+
 # Node / Astro (frontend)
 node_modules/
 .astro/
