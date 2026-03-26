@@ -10,6 +10,7 @@ Melhorias:
 
 import argparse
 import importlib
+import inspect
 import json
 import logging
 import sys
@@ -168,8 +169,29 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
         report["cache_hit"] = True
     else:
         try:
-            raw = mod.run()
+            # Modo incremental: passar known_ids se o scraper suportar
+            known_ids = None
+            try:
+                sig = inspect.signature(mod.run)
+                if "known_ids" in sig.parameters:
+                    cached_ids_src = get_cached_events(venue_id)
+                    known_ids = {ev["source_id"] for ev in cached_ids_src if ev.get("source_id")}
+                    if known_ids:
+                        logger.info(f"{venue_id}: modo incremental — {len(known_ids)} IDs já em cache")
+            except Exception:
+                pass
+
+            raw = mod.run(known_ids=known_ids) if known_ids is not None else mod.run()
             logger.info(f"{venue_id}: {len(raw)} eventos raw recolhidos")
+
+            # Em modo incremental, fundir novos com cache (não perder eventos saltados)
+            if known_ids:
+                cached_all = get_cached_events(venue_id)
+                cached_by_id = {ev["source_id"]: ev for ev in cached_all if ev.get("source_id")}
+                new_by_id   = {ev["source_id"]: ev for ev in raw       if ev.get("source_id")}
+                merged = {**cached_by_id, **new_by_id}
+                raw = list(merged.values())
+                logger.info(f"{venue_id}: {len(raw)} eventos após fusão incremental")
 
             # ── Regressão guard ──
             if len(raw) == 0 and not force:
