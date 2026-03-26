@@ -111,10 +111,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:04:53.387603+00:00",
+      "scraped_at": "2026-03-26T15:25:27.590917+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:e262176f4dcb24de",
-      "harmonized_at": "2026-03-26T15:05:16.189218+00:00",
+      "raw_data_hash": "sha256:7a84977c3117d229",
+      "harmonized_at": "2026-03-26T15:25:49.923951+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -465,10 +465,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:04:55.335411+00:00",
+      "scraped_at": "2026-03-26T15:25:29.479928+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:1f22398751bf67eb",
-      "harmonized_at": "2026-03-26T15:05:16.193123+00:00",
+      "raw_data_hash": "sha256:a7459c043e365825",
+      "harmonized_at": "2026-03-26T15:25:49.934610+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -701,10 +701,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:04:57.270092+00:00",
+      "scraped_at": "2026-03-26T15:25:31.364826+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:a32ed4d07e57199c",
-      "harmonized_at": "2026-03-26T15:05:16.194227+00:00",
+      "raw_data_hash": "sha256:03c54f2731f59674",
+      "harmonized_at": "2026-03-26T15:25:49.936054+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -910,10 +910,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:04:59.163085+00:00",
+      "scraped_at": "2026-03-26T15:25:33.252885+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:68173a96828569cd",
-      "harmonized_at": "2026-03-26T15:05:16.194778+00:00",
+      "raw_data_hash": "sha256:cac82542f787bbc1",
+      "harmonized_at": "2026-03-26T15:25:49.936595+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1056,10 +1056,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:01.142850+00:00",
+      "scraped_at": "2026-03-26T15:25:35.129360+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:3d581f79f2fde6f1",
-      "harmonized_at": "2026-03-26T15:05:16.195308+00:00",
+      "raw_data_hash": "sha256:6711f5f41a10ad9e",
+      "harmonized_at": "2026-03-26T15:25:49.937112+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1184,10 +1184,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:03.090382+00:00",
+      "scraped_at": "2026-03-26T15:25:37.050814+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:1b4575ded42cf207",
-      "harmonized_at": "2026-03-26T15:05:16.195691+00:00",
+      "raw_data_hash": "sha256:0429a2156665d012",
+      "harmonized_at": "2026-03-26T15:25:49.937500+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1312,10 +1312,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:05.016494+00:00",
+      "scraped_at": "2026-03-26T15:25:38.956757+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:d2328c5bcbac8d44",
-      "harmonized_at": "2026-03-26T15:05:16.196161+00:00",
+      "raw_data_hash": "sha256:847be64851290285",
+      "harmonized_at": "2026-03-26T15:25:49.937939+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1520,10 +1520,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:06.946099+00:00",
+      "scraped_at": "2026-03-26T15:25:40.845443+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:08dcd9071ce53980",
-      "harmonized_at": "2026-03-26T15:05:16.197036+00:00",
+      "raw_data_hash": "sha256:bb81aa0f5a273cd8",
+      "harmonized_at": "2026-03-26T15:25:49.938776+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1652,10 +1652,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:08.854006+00:00",
+      "scraped_at": "2026-03-26T15:25:42.710155+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:ff80f19d6c1a85ed",
-      "harmonized_at": "2026-03-26T15:05:16.197518+00:00",
+      "raw_data_hash": "sha256:99e0883e5be81d2f",
+      "harmonized_at": "2026-03-26T15:25:49.939269+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1787,10 +1787,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:10.844578+00:00",
+      "scraped_at": "2026-03-26T15:25:44.606935+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:d6a275e009b9acbf",
-      "harmonized_at": "2026-03-26T15:05:16.197982+00:00",
+      "raw_data_hash": "sha256:99cf45aab52cfbd8",
+      "harmonized_at": "2026-03-26T15:25:49.939717+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1915,10 +1915,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:12.736632+00:00",
+      "scraped_at": "2026-03-26T15:25:46.513493+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:7eae80d1dc288df4",
-      "harmonized_at": "2026-03-26T15:05:16.198436+00:00",
+      "raw_data_hash": "sha256:ca7919033c8ac5b8",
+      "harmonized_at": "2026-03-26T15:25:49.940183+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2077,10 +2077,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-26T15:05:14.684858+00:00",
+      "scraped_at": "2026-03-26T15:25:48.419890+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:c7d7e1740a99e7e4",
-      "harmonized_at": "2026-03-26T15:05:16.198783+00:00",
+      "raw_data_hash": "sha256:045669470a4d1e7f",
+      "harmonized_at": "2026-03-26T15:25:49.940531+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
