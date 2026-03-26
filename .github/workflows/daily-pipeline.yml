@@ -17,31 +17,31 @@ on:
   workflow_dispatch:
     inputs:
       venues:
-        description: 'Venues a correr (vírgula, ou "all" para todos)'
+        description: 'Venues a correr — nome(s) separados por vírgula, ou "all" para todos'
         required: false
         default: 'all'
         type: string
       mode:
-        description: 'Modo de scraping'
+        description: 'Modo — normal (incremental) · re-scan completo · forçar refresh HTTP'
         required: false
-        default: 'incremental'
+        default: 'normal (incremental)'
         type: choice
         options:
-          - incremental
-          - full_rescan
-          - force_refresh
+          - normal (incremental)
+          - re-scan completo
+          - forçar refresh HTTP
       dry_run:
-        description: 'Dry run — scrape sem commit nem push (só artefacto)'
+        description: 'Teste sem gravar — corre o scrape mas não commita nem faz push'
         required: false
         default: false
         type: boolean
       notify:
-        description: 'Enviar notificações no fim do run'
+        description: 'Notificar por email/ntfy quando o pipeline terminar'
         required: false
         default: true
         type: boolean
       reset_venues:
-        description: '⚠️ RESET (irreversível) — apagar histórico e recomeçar do zero (vírgula, ex: "culturgest,ccb")'
+        description: '⚠️ RESET — apagar histórico e começar do zero (ex: "culturgest,ccb")'
         required: false
         default: ''
         type: string
@@ -164,7 +164,7 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
           FULL_RESCAN: >-
             ${{
-              github.event.inputs.mode == 'full_rescan' ||
+              github.event.inputs.mode == 're-scan completo' ||
               (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0')
             }}
         run: |
@@ -174,7 +174,7 @@ jobs:
           VENUE="${{ matrix.venue }}"
 
           # force_refresh ou reset implicam --force
-          if [ "$MODE" = "force_refresh" ]; then
+          if [ "$MODE" = "forçar refresh HTTP" ]; then
             ARGS="--force"
           fi
           if [ -n "$RESET_LIST" ] && echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
@@ -366,7 +366,7 @@ jobs:
           git add data/events/ data/logs/ data/master.json data/venues/ data/backups/ index.html
           COMMIT_MSG="Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
           [ -n "${{ github.event.inputs.reset_venues }}" ] && COMMIT_MSG="$COMMIT_MSG [RESET: ${{ github.event.inputs.reset_venues }}]"
-          [ "${{ github.event.inputs.mode }}" = "full_rescan" ] && COMMIT_MSG="$COMMIT_MSG [full rescan]"
+          [ "${{ github.event.inputs.mode }}" = "re-scan completo" ] && COMMIT_MSG="$COMMIT_MSG [re-scan completo]"
           git diff --staged --quiet || (
             git commit -m "$COMMIT_MSG" \
             && git pull --rebase origin main \
