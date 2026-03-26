@@ -20,6 +20,7 @@ SOLUÇÃO DEFINITIVA:
     - Filtro opcional por data para correr só eventos futuros
 """
 
+import os
 import re
 import time
 import json as _json
@@ -52,7 +53,7 @@ FILTER_FROM_DATE: Optional[str] = None  # ex: date.today().strftime("%Y-%m-%d")
 # Modo incremental: set de source_ids já conhecidos — skip automático
 # O pipeline pode passar este set via run(known_ids={...})
 # Em modo FULL_RESCAN, ignorar o cache (re-processa tudo)
-FULL_RESCAN: bool = os.environ.get("FULL_RESCAN", "false").lower() == "true"  # workflow ou env var
+FULL_RESCAN: bool = False  # True: processa todos os 952 URLs mesmo se conhecidos
 
 HEADERS = {
     "User-Agent": (
