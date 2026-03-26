@@ -457,6 +457,12 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     if extra_flags.get("is_educational"):
         audience["is_educational"] = True
 
+    # Propagar flags residuais para pipeline.extra_flags
+    # (is_online, is_outdoor, is_digital, geographic_scope, is_accessible)
+    _CONSUMED_FLAGS = {"series_name", "is_family", "is_educational"}
+    pipeline_extra_flags = {k: v for k, v in extra_flags.items()
+                            if k not in _CONSUMED_FLAGS and v}
+
     # Preço
     price = parse_price(raw_event.get("price_raw", ""))
     if raw_event.get("ticketing_url"):
@@ -564,5 +570,6 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
             "manually_edited": False,
             "manually_edited_at": None,
             "is_active": True,
+            "extra_flags": pipeline_extra_flags or None,
         },
     }
