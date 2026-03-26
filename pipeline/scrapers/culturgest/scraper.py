@@ -1,5 +1,5 @@
 """
-Culturgest Scraper — Versão 15 (26 Mar 2026)
+Culturgest Scraper — Versão 16 (26 Mar 2026)
 
 SOLUÇÃO DEFINITIVA:
   O sitemap.xml contém todos os URLs de /pt/programacao/<slug>/ directamente.
@@ -48,6 +48,11 @@ TIMEOUT = 30
 # Filtrar apenas eventos com data >= FILTER_FROM_DATE (None = todos)
 # Útil para runs incrementais: só eventos a partir de hoje
 FILTER_FROM_DATE: Optional[str] = None  # ex: date.today().strftime("%Y-%m-%d")
+
+# Modo incremental: set de source_ids já conhecidos — skip automático
+# O pipeline pode passar este set via run(known_ids={...})
+# Em modo FULL_RESCAN, ignorar o cache (re-processa tudo)
+FULL_RESCAN: bool = False  # True: processa todos os 952 URLs mesmo se conhecidos
 
 HEADERS = {
     "User-Agent": (
@@ -425,7 +430,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "location": "Culturgest",
         "accessibility": accessibility,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "_method": "culturgest-v15-sitemap",
+        "_method": "culturgest-v16-sitemap",
     }
 
 
@@ -433,9 +438,17 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
 # Entrada principal
 # ---------------------------------------------------------------------------
 
-def run() -> List[dict]:
+def run(known_ids: Optional[set] = None) -> List[dict]:
+    """
+    known_ids: set de source_ids já em cache — skip automático em modo incremental.
+               None ou conjunto vazio = processar tudo (primeiro run ou FULL_RESCAN).
+    """
     session = _make_session()
-    logger.info("CULTURGEST v15 — listing via sitemap.xml")
+
+    if known_ids and not FULL_RESCAN:
+        logger.info(f"CULTURGEST v15 — modo incremental ({len(known_ids)} já conhecidos)")
+    else:
+        logger.info("CULTURGEST v15 — listing via sitemap.xml (run completo)")
 
     event_urls = _get_event_urls_from_sitemap(session)
 
@@ -443,7 +456,20 @@ def run() -> List[dict]:
         logger.error("Sem URLs de eventos. Verificar acesso ao sitemap.")
         return []
 
-    logger.info(f"{len(event_urls)} URLs a processar")
+    # Filtrar slugs já conhecidos (modo incremental)
+    if known_ids and not FULL_RESCAN:
+        new_urls = []
+        skipped = 0
+        for url in event_urls:
+            slug = _normalize_url(url).rstrip("/").split("/")[-1]
+            if slug in known_ids:
+                skipped += 1
+            else:
+                new_urls.append(url)
+        logger.info(f"Sitemap: {len(event_urls)} total, {skipped} já conhecidos, {len(new_urls)} novos")
+        event_urls = new_urls
+    else:
+        logger.info(f"{len(event_urls)} URLs a processar")
 
     all_events = []
     seen = set()
