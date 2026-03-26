@@ -531,6 +531,18 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     # Ficha técnica
     credits_raw = _parse_technical_info(soup)
 
+    # Créditos de imagem (ex: "© Francisco Vidal")
+    # Primeiro .event-info-block da aside que não tem classe adicional
+    credits_image = None
+    for block in soup.select(".description-aside .event-info-block"):
+        classes = set(block.get("class", []))
+        extra = classes - {"event-info-block"}
+        if not extra:  # bloco sem classe adicional = créditos de imagem
+            text = block.get_text(strip=True)
+            if text and text != "\xa0":
+                credits_image = text
+            break
+
     # Acessibilidade
     full_text = soup.get_text(" ", strip=True).lower()
     accessibility = {
@@ -570,6 +582,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "ticketing_url": ticketing_url,
         "cover_image": cover_image,
         "credits_raw": credits_raw,
+        "credits_image": credits_image,
         "location": "Culturgest",
         "accessibility": accessibility,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
