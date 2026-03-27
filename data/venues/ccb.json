@@ -5,7 +5,7 @@
   "venue_type": "centro-cultural",
   "is_permanent": true,
   "address": {
-    "street": "Praça do Imério",
+    "street": "Praça do Império",
     "postcode": "1400-206",
     "municipality": "Lisboa",
     "region": "Lisboa",
@@ -13,12 +13,19 @@
     "coordinates": {
       "lat": 38.6975,
       "lon": -9.2055
-    }
+    },
+    "number": null,
+    "parish": "Belém",
+    "district": "Lisboa",
+    "postal_code": "1449-003",
+    "nuts2": "area-metropolitana-de-lisboa",
+    "nuts3": "grande-lisboa"
   },
   "contact": {
-    "website": "https://ccb.pt",
-    "email": null,
-    "phone": null
+    "website": "https://www.ccb.pt",
+    "email": "ccb@ccb.pt",
+    "phone": null,
+    "box_office_url": "https://www.ccb.pt/pt/bilheteira"
   },
   "data_source": {
     "scraper_id": "ccb",
@@ -32,5 +39,81 @@
     "created_at": "2026-03-25",
     "created_by": "pipeline-auto",
     "verified": false
+  },
+  "short_name": "CCB",
+  "legal_name": "Fundação Centro Cultural de Belém",
+  "acronym": "CCB",
+  "geo": {
+    "lat": 38.697,
+    "lng": -9.2063,
+    "google_place_id": "ChIJC3RNpDUzGQ0RblFIDAx-8R8"
+  },
+  "spaces": [
+    {
+      "id": "grande-auditorio",
+      "name": "Grande Auditório",
+      "capacity": 1500,
+      "type": "auditorio"
+    },
+    {
+      "id": "pequeno-auditorio",
+      "name": "Pequeno Auditório",
+      "capacity": 300,
+      "type": "auditorio"
+    },
+    {
+      "id": "centro-reunioes",
+      "name": "Centro de Reuniões",
+      "capacity": 200,
+      "type": "sala"
+    },
+    {
+      "id": "garagem-sul",
+      "name": "Garagem Sul",
+      "capacity": 200,
+      "type": "galeria"
+    },
+    {
+      "id": "mac-ccb",
+      "name": "MAC/CCB",
+      "capacity": null,
+      "type": "museu"
+    }
+  ],
+  "transport": {
+    "metro": [
+      "Belém (linha amarela)"
+    ],
+    "bus": [
+      "728",
+      "714",
+      "729"
+    ],
+    "tram": [
+      "15E"
+    ],
+    "train": [
+      "Belém (linha de Cascais)"
+    ],
+    "parking": true,
+    "bike_parking": true,
+    "notes": "Parque de estacionamento subterrâneo no próprio CCB"
+  },
+  "ticketing": {
+    "primary_system": "bol",
+    "ticketing_url": "https://www.bol.pt",
+    "has_online_sales": true,
+    "has_box_office": true,
+    "accepts_lisboa_card": true
+  },
+  "accessibility": {
+    "wheelchair": true,
+    "hearing_loop": true,
+    "audio_description": true,
+    "sign_language_regular": false,
+    "sign_language_occasional": true,
+    "relaxed_performances": true,
+    "accessible_toilets": true,
+    "accessible_parking": true
   }
 }
