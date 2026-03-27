@@ -1,6 +1,5 @@
 name: Pipeline Diário
 
-# Nome dinâmico: distingue runs automáticos de manuais na listagem do GitHub
 run-name: >-
   ${{
     github.event_name == 'workflow_dispatch'
@@ -12,43 +11,44 @@ run-name: >-
 
 on:
   schedule:
-    - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC  → run incremental normal
-    - cron: '0 3 * * 0'     # domingo às 3h UTC   → re-scan completo semanal
+    - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC  → incremental
+    - cron: '0 3 * * 0'     # domingo às 3h UTC   → re-scan completo
   workflow_dispatch:
     inputs:
       venues:
-        description: 'Venues a correr — nome(s) separados por vírgula, ou "all" para todos'
+        description: 'Venues a correr (separados por vírgula, ou "all")'
         required: false
         default: 'all'
         type: string
       full_rescan:
-        description: 'Re-scan completo — reprocessar todos os eventos, mesmo os já conhecidos'
+        description: 'Re-scan completo (reprocessar tudo, mesmo eventos conhecidos)'
         required: false
         default: false
         type: boolean
       force_refresh:
-        description: 'Forçar refresh HTTP — ir buscar páginas à web mesmo que estejam em cache'
+        description: 'Forçar refresh HTTP (ignorar cache local)'
         required: false
         default: false
         type: boolean
       dry_run:
-        description: 'Teste sem gravar — corre o scrape mas não commita nem faz push'
+        description: 'Dry run (scrape sem commit/push)'
         required: false
         default: false
         type: boolean
       notify:
-        description: 'Notificar por email/ntfy quando o pipeline terminar'
+        description: 'Notificar por email/ntfy ao terminar'
         required: false
         default: true
         type: boolean
       reset_venues:
-        description: '⚠️ RESET — apagar histórico e começar do zero (ex: "culturgest,ccb")'
+        description: |
+          ⚠️ RESET — apagar histórico de venues específicos antes de correr.
+          Exemplos: "ccb" · "culturgest" · "theatro-circo,tndm" · "all"
+          Usar "all" para reset completo de todos os venues.
         required: false
         default: ''
         type: string
 
-# Impede dois runs sobrepostos (ex: agendado + manual em simultâneo)
-# cancel-in-progress: false garante que o run em curso termina antes do próximo começar
 concurrency:
   group: pipeline
   cancel-in-progress: false
@@ -58,66 +58,92 @@ permissions:
 
 jobs:
 
-  # ─────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────────────────
   # JOB 1 — Descobrir venues e criar batches
-  # ─────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────────────────
   discover:
     name: 🔍 Descobrir venues
     runs-on: ubuntu-latest
     outputs:
       venues: ${{ steps.list.outputs.venues }}
       batches: ${{ steps.list.outputs.batches }}
+      has_venues: ${{ steps.list.outputs.has_venues }}
+
     steps:
       - uses: actions/checkout@v4
 
       - id: list
         env:
-          INPUT_VENUES: ${{ github.event.inputs.venues }}
+          INPUT_VENUES: ${{ github.event.inputs.venues || 'all' }}
         run: |
-          ALL=$(find pipeline/scrapers -name "scraper.py" \
+          # Descobrir todos os scrapers disponíveis
+          ALL_JSON=$(find pipeline/scrapers -mindepth 2 -maxdepth 2 -name "scraper.py" \
             | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
             | sort \
-            | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))")
-
-          SELECTED="$INPUT_VENUES"
-
-          if [ -z "$SELECTED" ] || [ "$SELECTED" = "all" ]; then
-            VENUES="$ALL"
-            echo "A correr todos os venues: $ALL"
-          else
-            VENUES=$(echo "$SELECTED" | python3 -c "
+            | python3 -c "
           import sys, json
-          selected = [s.strip() for s in sys.stdin.read().split(',') if s.strip()]
-          available = json.loads('$ALL')
-          result = [v for v in available if v in selected]
-          unknown = [v for v in selected if v not in available]
+          lines = [l.strip() for l in sys.stdin if l.strip()]
+          print(json.dumps(lines))
+          ")
+
+          echo "Todos os venues disponíveis: $ALL_JSON"
+
+          # Filtrar pela seleção do utilizador
+          VENUES_JSON=$(python3 -c "
+          import sys, json, os
+
+          all_venues = json.loads(os.environ['ALL_JSON'])
+          selected_raw = os.environ.get('INPUT_VENUES', 'all').strip()
+
+          if not selected_raw or selected_raw == 'all':
+              print(json.dumps(all_venues))
+              sys.exit(0)
+
+          selected = [s.strip() for s in selected_raw.split(',') if s.strip()]
+          result = [v for v in all_venues if v in selected]
+          unknown = [v for v in selected if v not in all_venues]
           if unknown:
               print(f'AVISO: venues desconhecidos ignorados: {unknown}', file=sys.stderr)
           print(json.dumps(result))
-          ")
-            echo "A correr venues seleccionados: $VENUES"
-          fi
+          " ALL_JSON="$ALL_JSON")
 
-          echo "venues=$VENUES" >> $GITHUB_OUTPUT
+          echo "Venues selecionados: $VENUES_JSON"
+          VENUE_COUNT=$(echo "$VENUES_JSON" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))")
+          echo "Total: $VENUE_COUNT venues"
 
-          # Criar batches de até 10 venues cada
-          BATCHES=$(python3 -c "
-          import os, json, math
-          venues = json.loads(os.environ.get('ALL_VENUES', '[]'))
+          # Criar batches de até 10 venues
+          BATCHES_JSON=$(python3 -c "
+          import json, os
+          venues = json.loads(os.environ['VENUES_JSON'])
           batch_size = 10
           batches = [venues[i:i+batch_size] for i in range(0, len(venues), batch_size)]
+          # Garantir que nunca é lista vazia — o GitHub Actions não aceita matrix vazia
+          if not batches:
+              batches = [[]]
           print(json.dumps(batches))
-          " ALL_VENUES="$VENUES")
+          " VENUES_JSON="$VENUES_JSON")
 
-          echo "batches=$BATCHES" >> $GITHUB_OUTPUT
-          echo "Batches criados: $(echo "$BATCHES" | python3 -c "import sys,json; b=json.load(sys.stdin); print(f'{len(b)} batches de até 10 venues')")"
+          HAS_VENUES=$(python3 -c "
+          import json, os
+          venues = json.loads(os.environ['VENUES_JSON'])
+          print('true' if venues else 'false')
+          " VENUES_JSON="$VENUES_JSON")
 
-  # ─────────────────────────────────────────
-  # JOB 2 — Scrape em batches (um job por batch de até 10 venues)
-  # ─────────────────────────────────────────
+          echo "venues=$VENUES_JSON" >> $GITHUB_OUTPUT
+          echo "batches=$BATCHES_JSON" >> $GITHUB_OUTPUT
+          echo "has_venues=$HAS_VENUES" >> $GITHUB_OUTPUT
+
+          echo "Batches: $BATCHES_JSON"
+          echo "has_venues: $HAS_VENUES"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # JOB 2 — Scrape em batches
+  # Só corre se houver venues para processar
+  # ─────────────────────────────────────────────────────────────────────────
   scrape:
     name: 🕷️ Scrape batch ${{ strategy.job-index }}
     needs: discover
+    if: needs.discover.outputs.has_venues == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
@@ -136,12 +162,10 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      # Calcular semana para cache key (deve vir antes do restore)
-      - name: Calcular semana (para cache key)
+      - name: Calcular semana (cache key)
         id: date
         run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
 
-      # Calcular índice do batch e verificar se algum venue do batch está em reset
       - name: Calcular batch index e reset flag
         id: batch_meta
         env:
@@ -154,7 +178,8 @@ jobs:
 
           batch = json.loads(os.environ["BATCH_JSON"])
           all_batches = json.loads(os.environ["ALL_BATCHES_JSON"])
-          reset_list = os.environ.get("RESET_LIST", "")
+          reset_raw = os.environ.get("RESET_LIST", "").strip()
+          all_venues_json = os.environ.get("ALL_VENUES_JSON", "[]")
 
           # Encontrar índice deste batch
           batch_index = 0
@@ -163,22 +188,25 @@ jobs:
                   batch_index = i
                   break
 
-          # Verificar se algum venue do batch está na lista de reset
-          reset_venues = [v.strip() for v in reset_list.split(",") if v.strip()]
+          # Resolver reset_venues: "all" expande para todos os venues do batch
+          if reset_raw == "all":
+              reset_venues = list(batch)
+              print(f"RESET ALL: a resetar todos os venues do batch: {reset_venues}")
+          else:
+              reset_venues = [v.strip() for v in reset_raw.split(",") if v.strip()]
+
           batch_has_reset = any(v in reset_venues for v in batch)
 
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"batch_index={batch_index}\n")
               f.write(f"batch_has_reset={'true' if batch_has_reset else 'false'}\n")
               f.write(f"batch_venues={json.dumps(batch)}\n")
+              f.write(f"reset_venues={json.dumps(reset_venues)}\n")
 
           print(f"Batch {batch_index}: {batch}")
-          print(f"Tem reset: {batch_has_reset}")
+          print(f"Tem reset: {batch_has_reset} ({reset_venues})")
           EOF
 
-      # Cache HTTP por venue é gerida por venue individualmente dentro do batch
-      # A cache key base usa o índice do batch e a semana
-      # No reset, a cache key inclui o run_id para forçar cache miss em todo o batch
       - name: Restaurar cache HTTP do batch
         uses: actions/cache@v4
         with:
@@ -190,15 +218,13 @@ jobs:
             }}
           restore-keys: |
             http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-
-        id: http-cache
 
-      # Scrape sequencial de cada venue no batch
       - name: 🕷️ Scrape venues do batch
         env:
           PYTHONPATH: ${{ github.workspace }}
           INPUT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
-          INPUT_RESET_VENUES: ${{ github.event.inputs.reset_venues }}
           BATCH_VENUES_JSON: ${{ steps.batch_meta.outputs.batch_venues }}
+          RESET_VENUES_JSON: ${{ steps.batch_meta.outputs.reset_venues }}
           FULL_RESCAN: >-
             ${{
               github.event.inputs.full_rescan == 'true' ||
@@ -209,11 +235,16 @@ jobs:
           import os, json, subprocess, sys, shutil
 
           batch_venues = json.loads(os.environ["BATCH_VENUES_JSON"])
+          reset_venues = json.loads(os.environ.get("RESET_VENUES_JSON", "[]"))
           force_refresh = os.environ.get("INPUT_FORCE_REFRESH", "false") == "true"
-          reset_list_raw = os.environ.get("INPUT_RESET_VENUES", "")
-          reset_venues = [v.strip() for v in reset_list_raw.split(",") if v.strip()]
+
+          if not batch_venues:
+              print("Batch vazio — nada a processar")
+              sys.exit(0)
 
           print(f"A processar batch: {batch_venues}")
+          if reset_venues:
+              print(f"Venues em reset: {reset_venues}")
 
           for venue in batch_venues:
               print(f"\n{'='*60}")
@@ -230,15 +261,17 @@ jobs:
                   if os.path.exists(backup_dir):
                       shutil.rmtree(backup_dir)
                       print(f"   Apagado: {backup_dir}")
+                  # Apagar também cache HTTP por URL
+                  http_cache_dir = f"data/cache/_http/{venue}"
+                  if os.path.exists(http_cache_dir):
+                      shutil.rmtree(http_cache_dir)
+                      print(f"   Apagado: {http_cache_dir}")
                   print(f"✓ Histórico de {venue} apagado — scrape do zero")
 
-              # Determinar argumentos do scraper
+              # Argumentos do scraper
               args = []
-              if force_refresh:
+              if force_refresh or venue in reset_venues:
                   args.append("--force")
-              if venue in reset_venues:
-                  args = ["--force"]  # reset implica --force
-                  print(f"→ {venue} resetado: a correr com --force")
 
               cmd = ["python", "pipeline/run_venue.py", venue] + args
               print(f"Comando: {' '.join(cmd)}")
@@ -253,6 +286,7 @@ jobs:
 
       - name: Upload artefacto do batch
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: batch-${{ steps.batch_meta.outputs.batch_index }}
           path: |
@@ -264,14 +298,29 @@ jobs:
           if-no-files-found: warn
           retention-days: 1
 
-  # ─────────────────────────────────────────
-  # JOB 3 — Validação global (pré-publish)
-  # ─────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────────────────
+  # JOB 2b — Skip gracioso quando não há venues
+  # ─────────────────────────────────────────────────────────────────────────
+  no_venues:
+    name: ⚠️ Sem venues para processar
+    needs: discover
+    if: needs.discover.outputs.has_venues == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Aviso
+        run: |
+          echo "Nenhum venue encontrado para processar."
+          echo "Verifica se os scrapers existem em pipeline/scrapers/<venue>/scraper.py"
+          echo "Venues disponíveis: ${{ needs.discover.outputs.venues }}"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # JOB 3 — Validação global
+  # ─────────────────────────────────────────────────────────────────────────
   validate:
     name: ✅ Validar resultados
-    needs: scrape
+    needs: [discover, scrape]
     runs-on: ubuntu-latest
-    if: always()
+    if: always() && needs.discover.outputs.has_venues == 'true'
     outputs:
       ok: ${{ steps.check.outputs.ok }}
 
@@ -306,9 +355,8 @@ jobs:
 
           events_dir = Path("data/events")
           today = datetime.now().strftime("%Y-%m-%d")
-          cutoff_future = str(int(today[:4]) + 2) + today[4:]  # hoje + 2 anos
+          cutoff_future = str(int(today[:4]) + 2) + today[4:]
 
-          # Carregar counts do commit anterior (para detecção de regressões)
           prev_counts = {}
           for f in sorted(events_dir.glob("*.json")):
               try:
@@ -337,24 +385,21 @@ jobs:
               if n == 0:
                   errors.append(f"{venue}: 0 eventos — possível falha de scraping")
 
-              # Detecção de regressão: queda > 50% em relação ao commit anterior
               prev_n = prev_counts.get(venue, 0)
               if prev_n >= 10 and n < prev_n * 0.5:
                   warnings.append(
-                      f"{venue}: queda abrupta de eventos ({prev_n} → {n}, "
-                      f"-{round((1 - n/prev_n) * 100)}%) — verificar scraper"
+                      f"{venue}: queda abrupta ({prev_n} → {n}, "
+                      f"-{round((1 - n/prev_n) * 100)}%)"
                   )
 
-              # Datas absurdas (> 2 anos no futuro)
               bad_dates = [
                   e.get("id", "?")
                   for e in events
                   if (e.get("date_first") or "") > cutoff_future
               ]
               if bad_dates:
-                  warnings.append(f"{venue}: {len(bad_dates)} evento(s) com data > 2 anos no futuro")
+                  warnings.append(f"{venue}: {len(bad_dates)} evento(s) com data > 2 anos")
 
-              # Score médio de credibilidade (usa a função canónica do pipeline)
               scores = [credibility_score(e) for e in events]
               avg = round(sum(scores)/len(scores), 2) if scores else 0.0
               if avg < 0.40:
@@ -366,7 +411,6 @@ jobs:
                   delta = f" ({'+' if diff >= 0 else ''}{diff})"
               table_rows.append(f"| {venue} | {n}{delta} | {avg:.2f} | {'⚠️' if bad_dates else '✓'} |")
 
-          # Escrever Step Summary (aparece directamente no ecrã do run no GitHub)
           summary_lines = [
               "## Resumo do Pipeline",
               "",
@@ -394,15 +438,15 @@ jobs:
               sys.exit(1)
           EOF
 
-  # ─────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────────────────
   # JOB 4 — Agregar + publicar
-  # ─────────────────────────────────────────
+  # ─────────────────────────────────────────────────────────────────────────
   publish:
     name: 🚀 Agregar e publicar
-    needs: [scrape, validate]
+    needs: [discover, scrape, validate]
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    if: always() && needs.validate.outputs.ok != 'false'
+    if: always() && needs.discover.outputs.has_venues == 'true' && needs.validate.outputs.ok != 'false'
 
     steps:
       - uses: actions/checkout@v4
@@ -468,7 +512,7 @@ jobs:
 
       - name: ℹ️ Dry run — sem commit
         if: ${{ github.event.inputs.dry_run == 'true' }}
-        run: echo "ℹ️ Dry run activo — dados gerados mas não commitados. Ver artefactos para inspecção."
+        run: echo "ℹ️ Dry run activo — dados gerados mas não commitados."
 
       - name: Upload relatório
         if: always()
