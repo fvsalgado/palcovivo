@@ -2,173 +2,563 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://primeiraplateia.pt/schemas/venue.json",
   "title": "Venue",
-  "description": "Espaço cultural na Primeira Plateia",
+  "description": "Espaço cultural na Primeira Plateia | v1.1: nuts2/nuts3 em address, scraping_config removido para venues.config.json",
   "type": "object",
-  "required": ["id", "name", "venue_type", "address", "geo", "contact", "data_source"],
+  "required": [
+    "id",
+    "name",
+    "venue_type",
+    "address",
+    "geo",
+    "contact",
+    "data_source"
+  ],
   "properties": {
-    "schema_version": { "type": "string" },
-    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "name": { "type": "string" },
-    "short_name": { "type": ["string", "null"] },
-    "legal_name": { "type": ["string", "null"] },
-    "acronym": { "type": ["string", "null"] },
-    "aliases": { "type": "array", "items": { "type": "string" } },
+    "schema_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "short_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "legal_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "acronym": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "venue_type": {
       "type": "string",
-      "enum": ["teatro", "sala-de-concertos", "centro-cultural", "museu", "galeria", "cinema", "biblioteca", "espaco-ao-ar-livre", "festival", "clube", "bar-cultural", "outro"]
+      "enum": [
+        "teatro",
+        "sala-de-concertos",
+        "centro-cultural",
+        "museu",
+        "galeria",
+        "cinema",
+        "biblioteca",
+        "espaco-ao-ar-livre",
+        "festival",
+        "clube",
+        "bar-cultural",
+        "outro"
+      ]
     },
-    "venue_subtypes": { "type": "array", "items": { "type": "string" } },
-    "is_permanent": { "type": "boolean" },
-    "is_multi_space": { "type": "boolean" },
+    "venue_subtypes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "is_permanent": {
+      "type": "boolean"
+    },
+    "is_multi_space": {
+      "type": "boolean"
+    },
     "address": {
       "type": "object",
-      "required": ["municipality", "district", "country", "postal_code"],
+      "required": [
+        "municipality",
+        "district",
+        "country",
+        "postal_code"
+      ],
       "properties": {
-        "street": { "type": ["string", "null"] },
-        "number": { "type": ["string", "null"] },
-        "parish": { "type": ["string", "null"] },
-        "municipality": { "type": "string" },
-        "district": { "type": "string" },
-        "region": { "type": ["string", "null"] },
-        "country": { "type": "string", "const": "PT" },
-        "postal_code": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{3}$" },
-        "full_address": { "type": ["string", "null"] },
-        "nuts2": { "type": ["string", "null"] },
-        "nuts3": { "type": ["string", "null"] }
+        "street": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parish": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "municipality": {
+          "type": "string"
+        },
+        "district": {
+          "type": "string"
+        },
+        "region": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "country": {
+          "type": "string",
+          "const": "PT"
+        },
+        "postal_code": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{3}$"
+        },
+        "full_address": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nuts2": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Código NUTS2 (ex: 'area-metropolitana-de-lisboa')",
+          "enum": [
+            "norte",
+            "centro",
+            "alentejo",
+            "algarve",
+            "area-metropolitana-de-lisboa",
+            "regiao-autonoma-dos-acores",
+            "regiao-autonoma-da-madeira",
+            null
+          ]
+        },
+        "nuts3": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Código NUTS3 (ex: 'grande-lisboa')"
+        }
       }
     },
     "geo": {
       "type": "object",
-      "required": ["lat", "lng"],
+      "required": [
+        "lat",
+        "lng"
+      ],
       "properties": {
-        "lat": { "type": "number" },
-        "lng": { "type": "number" },
-        "google_place_id": { "type": ["string", "null"] }
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        },
+        "google_place_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "contact": {
       "type": "object",
-      "required": ["website"],
+      "required": [
+        "website"
+      ],
       "properties": {
-        "website": { "type": "string", "format": "uri" },
-        "email": { "type": ["string", "null"] },
-        "phone": { "type": ["string", "null"] },
-        "box_office_phone": { "type": ["string", "null"] },
-        "box_office_email": { "type": ["string", "null"] },
-        "box_office_url": { "type": ["string", "null"] }
+        "website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "box_office_phone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "box_office_email": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "box_office_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "social": {
       "type": "object",
       "properties": {
-        "instagram": { "type": ["string", "null"] },
-        "facebook": { "type": ["string", "null"] },
-        "youtube": { "type": ["string", "null"] },
-        "twitter_x": { "type": ["string", "null"] },
-        "linkedin": { "type": ["string", "null"] },
-        "spotify": { "type": ["string", "null"] }
+        "instagram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "facebook": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "youtube": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "twitter_x": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "linkedin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "spotify": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "media": {
       "type": "object",
       "properties": {
-        "logo_svg": { "type": ["string", "null"] },
-        "logo_png": { "type": ["string", "null"] },
-        "logo_dark": { "type": ["string", "null"] },
-        "facade_photo": { "type": ["string", "null"] },
-        "cover_photo": { "type": ["string", "null"] },
-        "gallery": { "type": "array", "items": { "type": "string" } },
-        "photo_credits": { "type": ["string", "null"] }
+        "logo_svg": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "logo_png": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "logo_dark": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "facade_photo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cover_photo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gallery": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "photo_credits": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "spaces": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "name"],
+        "required": [
+          "id",
+          "name"
+        ],
         "properties": {
-          "id": { "type": "string" },
-          "name": { "type": "string" },
-          "capacity": { "type": ["integer", "null"] },
-          "type": { "type": "string", "enum": ["auditorio", "sala", "galeria", "estudio", "espaco-exterior", "museu", "outro"] },
-          "has_accessibility": { "type": "boolean" },
-          "description": { "type": ["string", "null"] }
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "capacity": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "auditorio",
+              "sala",
+              "galeria",
+              "estudio",
+              "espaco-exterior",
+              "museu",
+              "outro"
+            ]
+          },
+          "has_accessibility": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         }
       }
     },
     "accessibility": {
       "type": "object",
       "properties": {
-        "wheelchair": { "type": "boolean" },
-        "hearing_loop": { "type": "boolean" },
-        "audio_description": { "type": "boolean" },
-        "sign_language_regular": { "type": "boolean" },
-        "sign_language_occasional": { "type": "boolean" },
-        "relaxed_performances": { "type": "boolean" },
-        "accessible_toilets": { "type": "boolean" },
-        "accessible_parking": { "type": "boolean" },
-        "braille_materials": { "type": "boolean" },
-        "notes": { "type": ["string", "null"] }
+        "wheelchair": {
+          "type": "boolean"
+        },
+        "hearing_loop": {
+          "type": "boolean"
+        },
+        "audio_description": {
+          "type": "boolean"
+        },
+        "sign_language_regular": {
+          "type": "boolean"
+        },
+        "sign_language_occasional": {
+          "type": "boolean"
+        },
+        "relaxed_performances": {
+          "type": "boolean"
+        },
+        "accessible_toilets": {
+          "type": "boolean"
+        },
+        "accessible_parking": {
+          "type": "boolean"
+        },
+        "braille_materials": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "transport": {
       "type": "object",
       "properties": {
-        "metro": { "type": "array", "items": { "type": "string" } },
-        "bus": { "type": "array", "items": { "type": "string" } },
-        "tram": { "type": "array", "items": { "type": "string" } },
-        "train": { "type": "array", "items": { "type": "string" } },
-        "parking": { "type": "boolean" },
-        "bike_parking": { "type": "boolean" },
-        "notes": { "type": ["string", "null"] }
+        "metro": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "bus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tram": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "train": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "parking": {
+          "type": "boolean"
+        },
+        "bike_parking": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "amenities": {
       "type": "object",
       "properties": {
-        "cafe": { "type": "boolean" },
-        "restaurant": { "type": "boolean" },
-        "shop": { "type": "boolean" },
-        "library": { "type": "boolean" },
-        "cloakroom": { "type": "boolean" },
-        "outdoor_space": { "type": "boolean" }
+        "cafe": {
+          "type": "boolean"
+        },
+        "restaurant": {
+          "type": "boolean"
+        },
+        "shop": {
+          "type": "boolean"
+        },
+        "library": {
+          "type": "boolean"
+        },
+        "cloakroom": {
+          "type": "boolean"
+        },
+        "outdoor_space": {
+          "type": "boolean"
+        }
       }
     },
     "ticketing": {
       "type": "object",
       "properties": {
-        "primary_system": { "type": ["string", "null"] },
-        "ticketing_url": { "type": ["string", "null"] },
-        "has_online_sales": { "type": "boolean" },
-        "has_box_office": { "type": "boolean" },
-        "accepts_lisboa_card": { "type": "boolean" },
-        "discount_programs": { "type": "array", "items": { "type": "string" } },
-        "notes": { "type": ["string", "null"] }
+        "primary_system": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ticketing_url": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "has_online_sales": {
+          "type": "boolean"
+        },
+        "has_box_office": {
+          "type": "boolean"
+        },
+        "accepts_lisboa_card": {
+          "type": "boolean"
+        },
+        "discount_programs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
     "data_source": {
       "type": "object",
-      "required": ["scraper_id", "api_type", "api_url"],
+      "required": [
+        "scraper_id",
+        "api_type",
+        "api_url"
+      ],
       "properties": {
-        "scraper_id": { "type": "string" },
-        "api_type": { "type": "string", "enum": ["rest", "rss", "html", "json", "graphql"] },
-        "api_url": { "type": "string" },
-        "api_requires_auth": { "type": "boolean" },
-        "scraper_notes": { "type": ["string", "null"] },
-        "update_frequency": { "type": "string", "enum": ["hourly", "daily", "weekly"] },
-        "last_scraped": { "type": ["string", "null"] },
-        "is_active": { "type": "boolean" }
+        "scraper_id": {
+          "type": "string"
+        },
+        "api_type": {
+          "type": "string",
+          "enum": [
+            "rest",
+            "rss",
+            "html",
+            "json",
+            "graphql"
+          ]
+        },
+        "api_url": {
+          "type": "string"
+        },
+        "last_scraped": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "is_active": {
+          "type": "boolean"
+        },
+        "config_registry": {
+          "type": "string",
+          "description": "Configuração de scraping em pipeline/venues.config.json",
+          "const": "pipeline/venues.config.json"
+        }
       }
     },
     "meta": {
       "type": "object",
       "properties": {
-        "created_at": { "type": "string" },
-        "updated_at": { "type": "string" },
-        "created_by": { "type": "string" },
-        "verified": { "type": "boolean" },
-        "verified_at": { "type": ["string", "null"] },
-        "notes": { "type": ["string", "null"] }
+        "created_at": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "verified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     }
   }
