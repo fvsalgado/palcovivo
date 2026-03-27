@@ -5232,8 +5232,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "theatro-circo",
-        "culturgest"
+        "culturgest",
+        "theatro-circo"
       ],
       "series_name": null,
       "series_edition": null,
@@ -5297,8 +5297,8 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "theatro-circo",
-          "culturgest"
+          "culturgest",
+          "theatro-circo"
         ]
       },
       "pipeline": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T08:28:28.818267+00:00Z",
+  "generated_at": "2026-03-27T08:32:24.055856+00:00Z",
   "total_events": 306,
   "total_venues": 4,
   "quality": {
@@ -13647,8 +13647,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "theatro-circo",
-        "culturgest"
+        "culturgest",
+        "theatro-circo"
       ],
       "series_name": null,
       "series_edition": null,
@@ -13712,8 +13712,8 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "theatro-circo",
-          "culturgest"
+          "culturgest",
+          "theatro-circo"
         ]
       },
       "pipeline": {
@@ -23549,8 +23549,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "theatro-circo",
-        "culturgest"
+        "culturgest",
+        "theatro-circo"
       ],
       "series_name": null,
       "series_edition": null,
@@ -23614,8 +23614,8 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "theatro-circo",
-          "culturgest"
+          "culturgest",
+          "theatro-circo"
         ]
       },
       "pipeline": {
