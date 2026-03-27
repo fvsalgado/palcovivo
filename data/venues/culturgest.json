@@ -2,14 +2,24 @@
   "schema_version": "1.0",
   "id": "culturgest",
   "name": "Culturgest",
-  "venue_type": "teatro",
+  "venue_type": "centro-cultural",
   "is_permanent": true,
   "address": {
-    "municipality": "Portugal",
-    "country": "PT"
+    "municipality": "Lisboa",
+    "country": "PT",
+    "street": "Rua Arco do Cego",
+    "number": "50",
+    "parish": "Avenidas Novas",
+    "district": "Lisboa",
+    "region": "Lisboa",
+    "postal_code": "1000-300",
+    "nuts2": "area-metropolitana-de-lisboa",
+    "nuts3": "grande-lisboa"
   },
   "contact": {
-    "website": "https://www.culturgest.pt"
+    "website": "https://www.culturgest.pt",
+    "email": "culturgest@culturgest.pt",
+    "box_office_url": "https://www.culturgest.pt/pt/bilheteira"
   },
   "data_source": {
     "scraper_id": "culturgest",
@@ -22,5 +32,73 @@
     "created_at": "2026-03-25",
     "created_by": "pipeline-auto",
     "verified": false
+  },
+  "short_name": "Culturgest",
+  "legal_name": "Culturgest — Fundação CGD, S.A.",
+  "acronym": null,
+  "geo": {
+    "lat": 38.734,
+    "lng": -9.145,
+    "google_place_id": "ChIJb5Pq1lIzGQ0RqoOKFZXUiHM"
+  },
+  "spaces": [
+    {
+      "id": "grande-auditorio",
+      "name": "Grande Auditório",
+      "capacity": 684,
+      "type": "auditorio"
+    },
+    {
+      "id": "pequeno-auditorio",
+      "name": "Pequeno Auditório",
+      "capacity": 264,
+      "type": "auditorio"
+    },
+    {
+      "id": "galeria-1",
+      "name": "Galeria 1",
+      "capacity": null,
+      "type": "galeria"
+    },
+    {
+      "id": "galeria-2",
+      "name": "Galeria 2",
+      "capacity": null,
+      "type": "galeria"
+    }
+  ],
+  "transport": {
+    "metro": [
+      "Picoas (linha azul)",
+      "Saldanha (linha amarela/vermelha)"
+    ],
+    "bus": [
+      "736",
+      "738",
+      "744",
+      "783"
+    ],
+    "tram": [],
+    "train": [],
+    "parking": false,
+    "bike_parking": true,
+    "notes": "Estacionamento público nas ruas adjacentes"
+  },
+  "ticketing": {
+    "primary_system": "ticketline",
+    "ticketing_url": "https://www.ticketline.sapo.pt",
+    "has_online_sales": true,
+    "has_box_office": true,
+    "accepts_lisboa_card": false
+  },
+  "accessibility": {
+    "wheelchair": true,
+    "hearing_loop": false,
+    "audio_description": false,
+    "sign_language_regular": false,
+    "sign_language_occasional": true,
+    "relaxed_performances": false,
+    "accessible_toilets": true,
+    "accessible_parking": false
   }
 }
