@@ -686,7 +686,195 @@ select.select-styled:focus { outline: 2px solid var(--accent); }
 .merge-chip span { font-weight: 700; color: var(--text); }
 
 /* ── Scrollable log area ───────────────────────────────────── */
-.log-table-wrap {
+/* ── Eventos Table ──────────────────────────────────────────── */
+.eventos-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.eventos-search {
+  flex: 1;
+  min-width: 200px;
+  padding: 7px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 13px;
+  outline: none;
+  transition: border-color .15s;
+}
+.eventos-search:focus { border-color: var(--accent); }
+.eventos-select {
+  padding: 7px 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+.eventos-count {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.eventos-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.eventos-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.eventos-table thead th {
+  background: var(--surface2);
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+.eventos-table thead th:hover { color: var(--text); }
+.eventos-table thead th.sorted-asc::after { content: ' ↑'; color: var(--accent); }
+.eventos-table thead th.sorted-desc::after { content: ' ↓'; color: var(--accent); }
+.eventos-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background .1s;
+}
+.eventos-table tbody tr:last-child { border-bottom: none; }
+.eventos-table tbody tr:hover { background: var(--surface2); }
+.eventos-table tbody tr.evento-expanded { background: rgba(59,130,246,.06); }
+.eventos-table td {
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+.evento-title-cell { max-width: 260px; }
+.evento-title-main { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; }
+.evento-title-sub { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; }
+.evento-detail-row { display: none; }
+.evento-detail-row.open { display: table-row; }
+.evento-detail-inner {
+  padding: 16px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.evento-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.evento-detail-section {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+.evento-detail-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--muted);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.evento-field { display: flex; gap: 8px; margin-bottom: 6px; font-size: 12px; align-items: flex-start; }
+.evento-field-key { color: var(--muted); min-width: 120px; flex-shrink: 0; }
+.evento-field-val { color: var(--text); word-break: break-word; }
+.evento-field-val.null-val { color: var(--muted); font-style: italic; }
+.evento-dates-list { display: flex; flex-direction: column; gap: 4px; }
+.evento-date-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 3px 8px;
+  background: rgba(59,130,246,.1);
+  border: 1px solid rgba(59,130,246,.2);
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: monospace;
+}
+.evento-date-chip.cancelled { background: rgba(239,68,68,.1); border-color: rgba(239,68,68,.2); color: var(--red); text-decoration: line-through; }
+.evento-date-chip.sold-out { background: rgba(245,158,11,.1); border-color: rgba(245,158,11,.2); color: var(--amber); }
+.evento-tags-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.evento-warnings-list { display: flex; flex-direction: column; gap: 4px; }
+.evento-warning-chip {
+  padding: 3px 8px;
+  background: rgba(245,158,11,.1);
+  border: 1px solid rgba(245,158,11,.2);
+  border-radius: 4px;
+  font-size: 11px;
+  color: var(--amber);
+}
+.evento-img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.evento-json-toggle {
+  font-size: 11px;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 4px 0;
+  display: inline-block;
+  margin-top: 8px;
+}
+.evento-json-block {
+  display: none;
+  margin-top: 8px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 11px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  color: var(--muted2);
+  max-height: 300px;
+  overflow-y: auto;
+}
+.evento-json-block.open { display: block; }
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pagination-btns { display: flex; gap: 4px; }
+.pagination-btn {
+  padding: 5px 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background .1s;
+}
+.pagination-btn:hover:not(:disabled) { background: var(--border); }
+.pagination-btn:disabled { opacity: .4; cursor: not-allowed; }
+.pagination-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.pagination-info { font-size: 12px; color: var(--muted); }
+
+/* ── Log Improvements ──────────────────────────────────────── */
+
   max-height: 520px;
   overflow-y: auto;
   border: 1px solid var(--border);
@@ -730,6 +918,12 @@ select.select-styled:focus { outline: 2px solid var(--accent); }
       </div>
       <div class="nav-item" data-tab="qualidade">
         <span class="nav-icon">◎</span> Qualidade
+      </div>
+      <div class="nav-section-title">Conteúdo</div>
+      <div class="nav-item" data-tab="eventos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        Eventos
+        <span class="nav-badge" id="eventos-badge" style="display:none"></span>
       </div>
       <div class="nav-section-title">Logs</div>
       <div class="nav-item" data-tab="logs">
@@ -828,6 +1022,18 @@ select.select-styled:focus { outline: 2px solid var(--accent); }
     </div>
 
     <!-- ── PIPELINE LOGS ───────────────────────────────────── -->
+    <div class="section" id="tab-eventos">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Eventos</div>
+          <div class="section-sub">Todos os eventos do master.json — filtra, pesquisa e inspecciona cada evento em detalhe</div>
+        </div>
+      </div>
+      <div id="eventos-content">
+        <div class="alert alert-blue">A carregar eventos…</div>
+      </div>
+    </div>
+
     <div class="section" id="tab-logs">
       <div class="section-header">
         <div>
@@ -1076,8 +1282,36 @@ async function loadDashboard() {
 }
 
 async function loadRunLogs() {
-  // Known run log filenames from listing (sorted descending)
-  const runFiles = [
+  // Try to fetch a logs index if available, otherwise probe recent filenames
+  const now = new Date();
+  const candidates = [];
+
+  // Generate candidates for last 3 days, every possible hour/minute combo is too much,
+  // so we fetch the known files from the latest log's context plus probe recent timestamps
+  for (let daysAgo = 0; daysAgo <= 2; daysAgo++) {
+    const d = new Date(now);
+    d.setUTCDate(d.getUTCDate() - daysAgo);
+    const dateStr = d.toISOString().slice(0, 10).replace(/-/g, '');
+    // Add known patterns from both yesterday and today
+    for (let h = 0; h < 24; h++) {
+      for (const m of ['00','15','30','45']) {
+        const ts = `${dateStr}-${String(h).padStart(2,'0')}${m}00`;
+        candidates.push(`run-${ts}.json`);
+      }
+    }
+  }
+
+  // Also add any hardcoded known files from this session
+  const known = [
+    'run-20260327-122952.json',
+    'run-20260327-120952.json',
+    'run-20260327-113905.json',
+    'run-20260327-113455.json',
+    'run-20260327-104432.json',
+    'run-20260327-083346.json',
+    'run-20260327-083223.json',
+    'run-20260327-082828.json',
+    'run-20260327-081607.json',
     'run-20260327-004446.json',
     'run-20260326-164855.json',
     'run-20260326-160621.json',
@@ -1098,10 +1332,12 @@ async function loadRunLogs() {
     'run-20260325-230444.json',
     'run-20260325-174316.json',
     'run-20260325-171825.json',
-  ].slice(0, 20);
+  ];
+  // Deduplicate
+  const allCandidates = [...new Set([...known, ...candidates])];
 
   const results = await Promise.allSettled(
-    runFiles.map(f =>
+    allCandidates.slice(0, 60).map(f =>
       fetch('../data/logs/' + f)
         .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(d => ({ ...d, _filename: f }))
@@ -1118,6 +1354,7 @@ function renderAll() {
   renderOverview();
   renderVenues();
   renderQualidade();
+  renderEventos();
   renderLogs();
   renderUnknownTags();
 }
@@ -1660,6 +1897,412 @@ function renderUnknownTags() {
       </table>
     </div>
   </div>`;
+}
+
+// ── EVENTOS ──────────────────────────────────────────────────
+const eventosState = {
+  all: [],
+  filtered: [],
+  sortKey: 'date_first',
+  sortDir: 'asc',
+  page: 1,
+  perPage: 50,
+  search: '',
+  venue: '',
+  domain: '',
+  expandedId: null,
+};
+
+function renderEventos() {
+  const container = document.getElementById('eventos-content');
+  const m = state.master;
+  if (!m || !m.events) {
+    container.innerHTML = '<div class="alert alert-blue">master.json não disponível.</div>';
+    return;
+  }
+
+  eventosState.all = m.events;
+
+  // Update badge
+  const badge = document.getElementById('eventos-badge');
+  badge.textContent = m.total_events;
+  badge.style.display = '';
+
+  // Build venue + domain options
+  const venues = [...new Set(m.events.map(e => e.venue_id))].sort();
+  const domains = [...new Set(m.events.map(e => e.domain).filter(Boolean))].sort();
+
+  const venueNames = {
+    ccb: 'CCB', culturgest: 'Culturgest',
+    'theatro-circo': 'Theatro Circo', tndm: 'TNDM',
+  };
+  const domainNames = {
+    'artes-palco': 'Artes de Palco', 'musica': 'Música',
+    'artes-visuais': 'Artes Visuais', 'cinema': 'Cinema',
+    'pensamento': 'Pensamento', 'formacao': 'Formação', 'outros': 'Outros',
+  };
+
+  container.innerHTML = `
+  <div class="eventos-toolbar">
+    <input class="eventos-search" id="ev-search" type="search" placeholder="Pesquisar título, descrição, venue…" value="${eventosState.search}">
+    <select class="eventos-select" id="ev-venue">
+      <option value="">Todos os venues</option>
+      ${venues.map(v => `<option value="${v}" ${eventosState.venue===v?'selected':''}>${venueNames[v]||v}</option>`).join('')}
+    </select>
+    <select class="eventos-select" id="ev-domain">
+      <option value="">Todos os domínios</option>
+      ${domains.map(d => `<option value="${d}" ${eventosState.domain===d?'selected':''}>${domainNames[d]||d}</option>`).join('')}
+    </select>
+    <span class="eventos-count" id="ev-count"></span>
+  </div>
+  <div class="eventos-table-wrap">
+    <table class="eventos-table" id="ev-table">
+      <thead>
+        <tr>
+          <th data-sort="title">Título</th>
+          <th data-sort="venue_id">Venue</th>
+          <th data-sort="domain">Domínio</th>
+          <th data-sort="date_first">Primeira data</th>
+          <th data-sort="date_last">Última data</th>
+          <th data-sort="total_sessions">Sessões</th>
+          <th>Qualidade</th>
+          <th>Flags</th>
+        </tr>
+      </thead>
+      <tbody id="ev-tbody"></tbody>
+    </table>
+  </div>
+  <div class="pagination-bar">
+    <div class="pagination-info" id="ev-pagination-info"></div>
+    <div class="pagination-btns" id="ev-pagination-btns"></div>
+  </div>`;
+
+  // Event listeners
+  document.getElementById('ev-search').addEventListener('input', e => {
+    eventosState.search = e.target.value;
+    eventosState.page = 1;
+    applyEventosFilter();
+  });
+  document.getElementById('ev-venue').addEventListener('change', e => {
+    eventosState.venue = e.target.value;
+    eventosState.page = 1;
+    applyEventosFilter();
+  });
+  document.getElementById('ev-domain').addEventListener('change', e => {
+    eventosState.domain = e.target.value;
+    eventosState.page = 1;
+    applyEventosFilter();
+  });
+  document.querySelectorAll('#ev-table thead th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.sort;
+      if (eventosState.sortKey === key) {
+        eventosState.sortDir = eventosState.sortDir === 'asc' ? 'desc' : 'asc';
+      } else {
+        eventosState.sortKey = key;
+        eventosState.sortDir = 'asc';
+      }
+      applyEventosFilter();
+    });
+  });
+
+  applyEventosFilter();
+}
+
+function applyEventosFilter() {
+  const { all, search, venue, domain, sortKey, sortDir, page, perPage } = eventosState;
+  const q = search.toLowerCase();
+
+  let filtered = all.filter(e => {
+    if (venue && e.venue_id !== venue) return false;
+    if (domain && e.domain !== domain) return false;
+    if (q) {
+      const hay = [e.title, e.subtitle, e.description, e.venue_id, e.category].filter(Boolean).join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  // Sort
+  filtered.sort((a, b) => {
+    let av = a[sortKey] ?? '', bv = b[sortKey] ?? '';
+    if (typeof av === 'string') av = av.toLowerCase();
+    if (typeof bv === 'string') bv = bv.toLowerCase();
+    if (av < bv) return sortDir === 'asc' ? -1 : 1;
+    if (av > bv) return sortDir === 'asc' ? 1 : -1;
+    return 0;
+  });
+
+  eventosState.filtered = filtered;
+
+  // Update sort headers
+  document.querySelectorAll('#ev-table thead th[data-sort]').forEach(th => {
+    th.classList.remove('sorted-asc', 'sorted-desc');
+    if (th.dataset.sort === sortKey) {
+      th.classList.add(sortDir === 'asc' ? 'sorted-asc' : 'sorted-desc');
+    }
+  });
+
+  // Count
+  document.getElementById('ev-count').textContent = `${filtered.length} evento${filtered.length !== 1 ? 's' : ''}`;
+
+  renderEventosPage();
+  renderEventosPagination();
+}
+
+function renderEventosPage() {
+  const { filtered, page, perPage } = eventosState;
+  const start = (page - 1) * perPage;
+  const slice = filtered.slice(start, start + perPage);
+
+  const venueNames = {
+    ccb: 'CCB', culturgest: 'Culturgest',
+    'theatro-circo': 'Theatro Circo', tndm: 'TNDM',
+  };
+  const domainColors = {
+    'artes-palco': '#818cf8', 'musica': '#34d399',
+    'artes-visuais': '#fb923c', 'cinema': '#f472b6',
+    'pensamento': '#60a5fa', 'formacao': '#facc15', 'outros': '#9ca3af',
+  };
+
+  const tbody = document.getElementById('ev-tbody');
+  if (!slice.length) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center;padding:24px;color:var(--muted)">Nenhum evento encontrado.</td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = slice.map(ev => {
+    const qs = ev.pipeline?.quality_score ?? null;
+    const qsPct = qs != null ? Math.round(qs * 100) : null;
+    const qsColor = qsPct == null ? 'var(--muted)' : qsPct >= 80 ? 'var(--green)' : qsPct >= 60 ? 'var(--amber)' : 'var(--red)';
+    const domColor = domainColors[ev.domain] || '#9ca3af';
+    const warnings = ev.pipeline?.quality_warnings || [];
+    const isFree = ev.price?.is_free;
+    const hasPrice = ev.price?.price_display;
+    const priceLabel = isFree ? '<span style="color:var(--green);font-size:10px">GRÁTIS</span>'
+      : hasPrice ? `<span style="font-size:10px">${ev.price.price_display}</span>`
+      : '<span style="color:var(--muted);font-size:10px">—</span>';
+
+    const flags = [];
+    if (ev.is_premiere) flags.push('<span class="tag-chip" style="background:rgba(129,140,248,.15);border-color:rgba(129,140,248,.3);color:#818cf8">estreia</span>');
+    if (ev.is_festival) flags.push('<span class="tag-chip" style="background:rgba(251,146,60,.15);border-color:rgba(251,146,60,.3);color:#fb923c">festival</span>');
+    if (ev.is_ongoing) flags.push('<span class="tag-chip" style="background:rgba(52,211,153,.15);border-color:rgba(52,211,153,.3);color:#34d399">em curso</span>');
+    if (warnings.length) flags.push(`<span class="tag-chip" style="background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.2);color:var(--amber)">⚠ ${warnings.length}</span>`);
+
+    return `
+    <tr class="evento-row" data-id="${ev.id}" onclick="toggleEventoDetail('${ev.id}')">
+      <td class="evento-title-cell">
+        <div class="evento-title-main" title="${ev.title}">${ev.title}</div>
+        ${ev.subtitle ? `<div class="evento-title-sub">${ev.subtitle}</div>` : ''}
+      </td>
+      <td style="white-space:nowrap">${venueNames[ev.venue_id] || ev.venue_id}</td>
+      <td><span style="color:${domColor};font-size:11px">${ev.domain || '—'}</span></td>
+      <td style="font-family:monospace;font-size:11px">${ev.date_first || '—'}</td>
+      <td style="font-family:monospace;font-size:11px">${ev.date_last || '—'}</td>
+      <td style="text-align:center">${ev.total_sessions ?? '—'}</td>
+      <td>
+        ${qsPct != null ? `<span style="color:${qsColor};font-weight:700;font-size:12px">${qsPct}%</span>` : '<span style="color:var(--muted)">—</span>'}
+      </td>
+      <td><div style="display:flex;gap:4px;flex-wrap:wrap">${flags.join('') || '<span style="color:var(--muted)">—</span>'}</div></td>
+    </tr>
+    <tr class="evento-detail-row" id="edr-${ev.id}">
+      <td colspan="8">
+        ${buildEventoDetail(ev)}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function buildEventoDetail(ev) {
+  const fmt2 = v => v != null ? v : '<span class="null-val">—</span>';
+  const yesno = v => v ? '✓ Sim' : '✗ Não';
+
+  const img = ev.media?.cover_image
+    ? `<img class="evento-img" src="${ev.media.cover_image}" alt="${ev.title}" onerror="this.style.display='none'">`
+    : '';
+
+  const dates = (ev.dates || []).slice(0, 30).map(d => {
+    const cls = d.is_cancelled ? 'cancelled' : d.is_sold_out ? 'sold-out' : '';
+    return `<div class="evento-date-chip ${cls}">${d.date}${d.time_start ? ' ' + d.time_start : ''}${d.is_cancelled ? ' · cancelado' : d.is_sold_out ? ' · esgotado' : ''}</div>`;
+  }).join('');
+  const moreDates = ev.dates?.length > 30 ? `<div style="font-size:11px;color:var(--muted);margin-top:4px">+ ${ev.dates.length - 30} sessões adicionais</div>` : '';
+
+  const credits = ev.credits || {};
+  const creditFields = [
+    ['Companhia', credits.company],
+    ['Encenação/Dir.', credits.director],
+    ['Maestro', credits.conductor],
+    ['Coreografia', credits.choreographer],
+  ].filter(([, v]) => v);
+  const cast = credits.cast || [];
+  const team = credits.creative_team || [];
+  const musicians = credits.musicians || [];
+
+  const warnings = ev.pipeline?.quality_warnings || [];
+  const warningHTML = warnings.length
+    ? warnings.map(w => `<div class="evento-warning-chip">⚠ ${w}</div>`).join('')
+    : '<span style="color:var(--green);font-size:11px">✓ Sem avisos</span>';
+
+  const tagsHTML = (ev.tags || []).map(t => `<span class="tag-chip">${t}</span>`).join('') || '—';
+
+  const sourceLink = ev.source_url
+    ? `<a href="${ev.source_url}" target="_blank" style="color:var(--accent);font-size:11px">↗ Ver no site original</a>` : '';
+  const ticketLink = ev.price?.ticketing_url
+    ? `<a href="${ev.price.ticketing_url}" target="_blank" style="color:var(--green);font-size:11px">🎟 Comprar bilhete</a>` : '';
+
+  return `
+  <div class="evento-detail-inner">
+    <div class="evento-detail-grid">
+
+      <div class="evento-detail-section" style="grid-column: span 2">
+        ${img}
+        <div class="evento-detail-section-title">Identificação</div>
+        <div class="evento-field"><span class="evento-field-key">ID</span><span class="evento-field-val" style="font-family:monospace;font-size:11px">${ev.id}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Título</span><span class="evento-field-val"><strong>${ev.title}</strong></span></div>
+        ${ev.subtitle ? `<div class="evento-field"><span class="evento-field-key">Subtítulo</span><span class="evento-field-val">${ev.subtitle}</span></div>` : ''}
+        <div class="evento-field"><span class="evento-field-key">Venue</span><span class="evento-field-val">${ev.venue_id}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Domínio</span><span class="evento-field-val">${fmt2(ev.domain)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Categoria</span><span class="evento-field-val">${fmt2(ev.category)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Subcategoria</span><span class="evento-field-val">${fmt2(ev.subcategory)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Tags</span><span class="evento-field-val"><div class="evento-tags-list">${tagsHTML}</div></span></div>
+        <div class="evento-field"><span class="evento-field-key">Status</span><span class="evento-field-val">${fmt2(ev.event_status)}</span></div>
+        <div style="margin-top:8px;display:flex;gap:12px;flex-wrap:wrap">${sourceLink}${ticketLink}</div>
+      </div>
+
+      <div class="evento-detail-section">
+        <div class="evento-detail-section-title">Datas (${(ev.dates||[]).length} sessões)</div>
+        <div class="evento-dates-list">${dates}${moreDates}</div>
+      </div>
+
+      <div class="evento-detail-section">
+        <div class="evento-detail-section-title">Preço & Bilheteira</div>
+        <div class="evento-field"><span class="evento-field-key">Entrada livre</span><span class="evento-field-val">${yesno(ev.price?.is_free)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Preço</span><span class="evento-field-val">${fmt2(ev.price?.price_display)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Preço mín.</span><span class="evento-field-val">${fmt2(ev.price?.price_min)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Preço máx.</span><span class="evento-field-val">${fmt2(ev.price?.price_max)}</span></div>
+        <div class="evento-detail-section-title" style="margin-top:12px">Público</div>
+        <div class="evento-field"><span class="evento-field-key">Label</span><span class="evento-field-val">${fmt2(ev.audience?.label)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Idade mín.</span><span class="evento-field-val">${fmt2(ev.audience?.age_min)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Família</span><span class="evento-field-val">${yesno(ev.audience?.is_family)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Educativo</span><span class="evento-field-val">${yesno(ev.audience?.is_educational)}</span></div>
+      </div>
+
+      ${(creditFields.length || cast.length || team.length || musicians.length || credits.credits_raw) ? `
+      <div class="evento-detail-section">
+        <div class="evento-detail-section-title">Créditos</div>
+        ${creditFields.map(([k,v]) => `<div class="evento-field"><span class="evento-field-key">${k}</span><span class="evento-field-val">${v}</span></div>`).join('')}
+        ${cast.length ? `<div class="evento-field"><span class="evento-field-key">Elenco</span><span class="evento-field-val">${cast.map(c=>c.name||c).join(', ')}</span></div>` : ''}
+        ${musicians.length ? `<div class="evento-field"><span class="evento-field-key">Músicos</span><span class="evento-field-val">${musicians.map(c=>c.name||c).join(', ')}</span></div>` : ''}
+        ${team.length ? `<div class="evento-field"><span class="evento-field-key">Equipa criativa</span><span class="evento-field-val">${team.map(c=>typeof c==='object'?(c.name+(c.role?` (${c.role})`:'')):(c)).join(', ')}</span></div>` : ''}
+        ${credits.credits_raw ? `<div class="evento-field"><span class="evento-field-key">Raw</span><span class="evento-field-val" style="font-size:11px;color:var(--muted)">${credits.credits_raw}</span></div>` : ''}
+      </div>` : ''}
+
+      <div class="evento-detail-section">
+        <div class="evento-detail-section-title">Acessibilidade</div>
+        <div class="evento-field"><span class="evento-field-key">Cadeira de rodas</span><span class="evento-field-val">${yesno(ev.accessibility?.wheelchair_accessible)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Língua gestual</span><span class="evento-field-val">${yesno(ev.accessibility?.has_sign_language)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Audiodescrição</span><span class="evento-field-val">${yesno(ev.accessibility?.has_audio_description)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Legendas</span><span class="evento-field-val">${yesno(ev.accessibility?.has_subtitles)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Sessão relaxada</span><span class="evento-field-val">${yesno(ev.accessibility?.is_relaxed_performance)}</span></div>
+        <div class="evento-detail-section-title" style="margin-top:12px">Produção</div>
+        <div class="evento-field"><span class="evento-field-key">Origem</span><span class="evento-field-val">${fmt2(ev.production_origin)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Estreia</span><span class="evento-field-val">${yesno(ev.is_premiere)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Estreia nacional</span><span class="evento-field-val">${yesno(ev.is_national_premiere)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Festival</span><span class="evento-field-val">${ev.is_festival ? (ev.festival_name || 'Sim') : 'Não'}</span></div>
+      </div>
+
+      <div class="evento-detail-section">
+        <div class="evento-detail-section-title">Pipeline & Qualidade</div>
+        <div class="evento-field"><span class="evento-field-key">Scraper</span><span class="evento-field-val">${fmt2(ev.pipeline?.scraper_id)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Scraped em</span><span class="evento-field-val" style="font-size:11px">${fmt2(ev.pipeline?.scraped_at?.replace('T',' ').slice(0,16))}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Harmonizado</span><span class="evento-field-val" style="font-size:11px">${fmt2(ev.pipeline?.harmonized_at?.replace('T',' ').slice(0,16))}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Validado</span><span class="evento-field-val">${yesno(ev.pipeline?.validated)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Quality score</span><span class="evento-field-val"><strong>${ev.pipeline?.quality_score != null ? Math.round(ev.pipeline.quality_score*100)+'%' : '—'}</strong></span></div>
+        <div class="evento-field"><span class="evento-field-key">Dedup fingerprint</span><span class="evento-field-val" style="font-family:monospace;font-size:10px">${fmt2(ev.dedup?.fingerprint)}</span></div>
+        <div class="evento-field"><span class="evento-field-key">Canonical</span><span class="evento-field-val">${yesno(ev.dedup?.is_canonical)}</span></div>
+        <div style="margin-top:10px">
+          <div class="evento-detail-section-title">Avisos de qualidade</div>
+          <div class="evento-warnings-list">${warningHTML}</div>
+        </div>
+      </div>
+
+      ${ev.description ? `
+      <div class="evento-detail-section" style="grid-column: span 2">
+        <div class="evento-detail-section-title">Descrição</div>
+        <div style="font-size:12px;line-height:1.6;color:var(--muted2)">${ev.description.replace(/\n/g,'<br>')}</div>
+      </div>` : ''}
+
+    </div>
+    <span class="evento-json-toggle" onclick="toggleEventoJson('${ev.id}')">{ } Ver JSON completo</span>
+    <div class="evento-json-block" id="ejson-${ev.id}">${JSON.stringify(ev, null, 2)}</div>
+  </div>`;
+}
+
+function toggleEventoDetail(id) {
+  const detailRow = document.getElementById('edr-' + id);
+  const allRows = document.querySelectorAll('.evento-row');
+  const allDetails = document.querySelectorAll('.evento-detail-row');
+
+  if (eventosState.expandedId === id) {
+    detailRow.classList.remove('open');
+    document.querySelector(`.evento-row[data-id="${id}"]`)?.classList.remove('evento-expanded');
+    eventosState.expandedId = null;
+    return;
+  }
+
+  allDetails.forEach(r => r.classList.remove('open'));
+  allRows.forEach(r => r.classList.remove('evento-expanded'));
+
+  detailRow.classList.add('open');
+  document.querySelector(`.evento-row[data-id="${id}"]`)?.classList.add('evento-expanded');
+  eventosState.expandedId = id;
+}
+
+function toggleEventoJson(id) {
+  document.getElementById('ejson-' + id)?.classList.toggle('open');
+}
+
+function renderEventosPagination() {
+  const { filtered, page, perPage } = eventosState;
+  const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+  const start = (page - 1) * perPage + 1;
+  const end = Math.min(page * perPage, filtered.length);
+
+  document.getElementById('ev-pagination-info').textContent =
+    filtered.length === 0 ? '' : `${start}–${end} de ${filtered.length}`;
+
+  const btns = document.getElementById('ev-pagination-btns');
+  if (totalPages <= 1) { btns.innerHTML = ''; return; }
+
+  // Show at most 7 page buttons
+  let pages = [];
+  if (totalPages <= 7) {
+    pages = Array.from({length: totalPages}, (_, i) => i + 1);
+  } else {
+    pages = [1];
+    if (page > 3) pages.push('…');
+    for (let i = Math.max(2, page-1); i <= Math.min(totalPages-1, page+1); i++) pages.push(i);
+    if (page < totalPages - 2) pages.push('…');
+    pages.push(totalPages);
+  }
+
+  btns.innerHTML = `
+    <button class="pagination-btn" onclick="goEventosPage(${page-1})" ${page===1?'disabled':''}>‹</button>
+    ${pages.map(p => p === '…'
+      ? `<span style="padding:5px 4px;color:var(--muted)">…</span>`
+      : `<button class="pagination-btn ${p===page?'active':''}" onclick="goEventosPage(${p})">${p}</button>`
+    ).join('')}
+    <button class="pagination-btn" onclick="goEventosPage(${page+1})" ${page===totalPages?'disabled':''}>›</button>`;
+}
+
+function goEventosPage(p) {
+  const totalPages = Math.ceil(eventosState.filtered.length / eventosState.perPage);
+  if (p < 1 || p > totalPages) return;
+  eventosState.page = p;
+  eventosState.expandedId = null;
+  renderEventosPage();
+  renderEventosPagination();
+  document.getElementById('eventos-content').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 // ── AÇÕES ─────────────────────────────────────────────────────
