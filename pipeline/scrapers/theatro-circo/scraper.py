@@ -856,14 +856,39 @@ def _parse_event_page(
                 return None
 
     # ── Descrição ──
+    # Estrutura real do TC: <section class="text module"><div class="col-lg-8"><p>...</p>
     desc = ""
-    for sel in [".entry-content", ".event-description", ".event-content", "article .content", "main p"]:
-        el = soup.select_one(sel)
-        if el:
-            d = el.get_text(separator="\n", strip=True)
+
+    # 1. Selector primário nativo do TC
+    text_section = soup.select_one("section.text .col-lg-8")
+    if text_section:
+        for unwanted in text_section.select(".credits, .credit-wrapper"):
+            unwanted.decompose()
+        d = text_section.get_text(separator="\n", strip=True)
+        if len(d) > 30:
+            desc = d
+
+    # 2. Fallback: qualquer section.text
+    if not desc:
+        text_section2 = soup.select_one("section.text")
+        if text_section2:
+            for unwanted in text_section2.select(".credits, .credit-wrapper, footer"):
+                unwanted.decompose()
+            d = text_section2.get_text(separator="\n", strip=True)
             if len(d) > 30:
                 desc = d
-                break
+
+    # 3. Fallback histórico (outros temas WP)
+    if not desc:
+        for sel in [".entry-content", ".event-description", ".event-content", "article .content"]:
+            el = soup.select_one(sel)
+            if el:
+                d = el.get_text(separator="\n", strip=True)
+                if len(d) > 30:
+                    desc = d
+                    break
+
+    # 4. og:description como último recurso (é sempre preenchido no TC)
     if not desc:
         og = soup.find("meta", property="og:description")
         if og:
