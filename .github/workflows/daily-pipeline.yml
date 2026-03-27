@@ -206,6 +206,13 @@ jobs:
                   if os.path.exists(backup_dir):
                       shutil.rmtree(backup_dir)
                       print(f"   Apagado: {backup_dir}")
+                  # Apagar http-cache do venue (ETags/hashes) para forçar GETs frescos.
+                  # Sem isto, o ConditionalSession recebe 304s em massa após reset
+                  # porque o http-cache é restaurado do GitHub Actions cache.
+                  http_cache_dir = f"data/cache/_http/{venue}"
+                  if os.path.exists(http_cache_dir):
+                      shutil.rmtree(http_cache_dir)
+                      print(f"   Apagado: {http_cache_dir} (http-cache ETags)")
                   print(f"✓ Histórico de {venue} apagado — scrape do zero")
               # Determinar argumentos do scraper
               args = []
