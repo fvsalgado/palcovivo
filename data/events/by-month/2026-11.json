@@ -123,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037812+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772234+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:72cdf04ddb44e78b",
-        "harmonized_at": "2026-03-27T11:38:30.438801+00:00",
+        "raw_data_hash": "sha256:5c3e9f89bf3b05b2",
+        "harmonized_at": "2026-03-27T12:05:14.145053+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -261,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037835+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772255+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0fe28d06637d222a",
-        "harmonized_at": "2026-03-27T11:38:30.439222+00:00",
+        "raw_data_hash": "sha256:b94e3f62b3f93e83",
+        "harmonized_at": "2026-03-27T12:05:14.145456+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -399,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037858+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772277+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:56b7bc51a4dae418",
-        "harmonized_at": "2026-03-27T11:38:30.439583+00:00",
+        "raw_data_hash": "sha256:cb236c05348f99e7",
+        "harmonized_at": "2026-03-27T12:05:14.145833+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -422,7 +422,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-bill-ryder-jones",
+      "id": "theatro-circo-2026-11-bill-ryder-jones-b087",
       "source_id": "bill-ryder-jones-3",
       "source_url": "https://theatrocirco.com/event/bill-ryder-jones-3/",
       "venue_id": "theatro-circo",
@@ -437,7 +437,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -534,22 +537,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:17.987021+00:00",
+        "scraped_at": "2026-03-27T12:08:20.523656+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1bdda310aeb8435a",
-        "harmonized_at": "2026-03-26T15:28:47.176547+00:00",
+        "raw_data_hash": "sha256:7339cc93956d2c00",
+        "harmonized_at": "2026-03-27T12:08:50.086861+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:17.987021+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709865+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-rubel",
+      "id": "theatro-circo-2026-11-rubel-29a4",
       "source_id": "rubel-3",
       "source_url": "https://theatrocirco.com/event/rubel-3/",
       "venue_id": "theatro-circo",
@@ -564,7 +574,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -661,17 +674,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:17.320964+00:00",
+        "scraped_at": "2026-03-27T12:08:19.877046+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:cde3b5a2c2b2191d",
-        "harmonized_at": "2026-03-26T15:28:47.176443+00:00",
+        "raw_data_hash": "sha256:98c05eab3c75c9af",
+        "harmonized_at": "2026-03-27T12:08:50.086728+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:17.320964+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709859+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -792,10 +812,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037880+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772301+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:29261b9c62dc55cd",
-        "harmonized_at": "2026-03-27T11:38:30.439963+00:00",
+        "raw_data_hash": "sha256:fcb49234a44cd52b",
+        "harmonized_at": "2026-03-27T12:05:14.146186+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -815,7 +835,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-recita-1-dezembro",
+      "id": "theatro-circo-2026-11-recita-1-dezembro-69d7",
       "source_id": "recita-1o-dezembro-2",
       "source_url": "https://theatrocirco.com/event/recita-1o-dezembro-2/",
       "venue_id": "theatro-circo",
@@ -830,7 +850,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -925,17 +948,25 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:15.993877+00:00",
+        "scraped_at": "2026-03-27T12:08:18.583596+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:196bbf68b3f93074",
-        "harmonized_at": "2026-03-26T15:28:47.176244+00:00",
+        "raw_data_hash": "sha256:0fcb39eda62e97bc",
+        "harmonized_at": "2026-03-27T12:08:50.086489+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:15.993877+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709852+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.5
       }
     }
   ]

@@ -170,7 +170,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:21.225095+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105808+00:00"
       }
     },
     {
@@ -306,12 +308,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:21.978707+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105814+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-paulo-rocha-e-os-paroxismos",
+      "id": "theatro-circo-2026-08-paulo-rocha-e-os-paroxismos-fc30",
       "source_id": "paulo-rocha-e-os-paroxismos",
       "source_url": "https://theatrocirco.com/event/paulo-rocha-e-os-paroxismos/",
       "venue_id": "theatro-circo",
@@ -326,7 +330,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -423,22 +430,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:27.109623+00:00",
+        "scraped_at": "2026-03-27T12:08:29.608199+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9a5e0ad6b2c5078e",
-        "harmonized_at": "2026-03-26T15:28:47.178202+00:00",
+        "raw_data_hash": "sha256:43ef0259882cc371",
+        "harmonized_at": "2026-03-27T12:08:50.090009+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:27.109623+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709928+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-o-desejado-ou-as-montanhas-da-lua-paulo-",
+      "id": "theatro-circo-2026-08-o-desejado-ou-as-montanhas-da-lua-paulo--36c7",
       "source_id": "o-desejado-ou-as-montanhas-da-lua-paulo-rocha",
       "source_url": "https://theatrocirco.com/event/o-desejado-ou-as-montanhas-da-lua-paulo-rocha/",
       "venue_id": "theatro-circo",
@@ -453,7 +467,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -550,17 +567,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:27.773297+00:00",
+        "scraped_at": "2026-03-27T12:08:30.258199+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:77ec301063f18340",
-        "harmonized_at": "2026-03-26T15:28:47.178301+00:00",
+        "raw_data_hash": "sha256:19f23e31a3508216",
+        "harmonized_at": "2026-03-27T12:08:50.090114+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:27.773297+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709934+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -696,12 +720,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:22.730811+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105819+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-mascara-de-aco-contra-abismo-azul-paulo-",
+      "id": "theatro-circo-2026-08-mascara-de-aco-contra-abismo-azul-paulo--448a",
       "source_id": "mascara-de-aco-contra-abismo-azul-paulo-rocha",
       "source_url": "https://theatrocirco.com/event/mascara-de-aco-contra-abismo-azul-paulo-rocha/",
       "venue_id": "theatro-circo",
@@ -716,7 +742,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -813,17 +842,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:26.443117+00:00",
+        "scraped_at": "2026-03-27T12:08:28.960839+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0955ce1950a36743",
-        "harmonized_at": "2026-03-26T15:28:47.178084+00:00",
+        "raw_data_hash": "sha256:d36bcfd9819341d6",
+        "harmonized_at": "2026-03-27T12:08:50.089886+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:26.443117+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709923+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -959,12 +995,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:23.481820+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105825+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-a-raiz-do-coracao-paulo-rocha",
+      "id": "theatro-circo-2026-08-a-raiz-do-coracao-paulo-rocha-186f",
       "source_id": "a-raiz-do-coracao-paulo-rocha",
       "source_url": "https://theatrocirco.com/event/a-raiz-do-coracao-paulo-rocha/",
       "venue_id": "theatro-circo",
@@ -979,7 +1017,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1076,17 +1117,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:25.778916+00:00",
+        "scraped_at": "2026-03-27T12:08:28.313591+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bd4b2db4e59e2bf0",
-        "harmonized_at": "2026-03-26T15:28:47.177975+00:00",
+        "raw_data_hash": "sha256:07ce336d82fc2821",
+        "harmonized_at": "2026-03-27T12:08:50.089768+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:25.778916+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709917+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1222,12 +1270,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:24.239509+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105831+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-vanitas-ou-o-outro-mundo-paulo-rocha",
+      "id": "theatro-circo-2026-08-vanitas-ou-o-outro-mundo-paulo-rocha-62cf",
       "source_id": "vanitas-ou-o-outro-mundo-paulo-rocha",
       "source_url": "https://theatrocirco.com/event/vanitas-ou-o-outro-mundo-paulo-rocha/",
       "venue_id": "theatro-circo",
@@ -1242,7 +1292,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1339,17 +1392,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:25.114689+00:00",
+        "scraped_at": "2026-03-27T12:08:27.664293+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a17e623ecc95e866",
-        "harmonized_at": "2026-03-26T15:28:47.177857+00:00",
+        "raw_data_hash": "sha256:c4c9574b12fda214",
+        "harmonized_at": "2026-03-27T12:08:50.089636+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:25.114689+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709911+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1510,14 +1570,16 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:26.861666+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105837+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-visita-noturna-ao-theatro-circo",
-      "source_id": "visita-noturna-ao-theatro-circo",
-      "source_url": "https://theatrocirco.com/event/visita-noturna-ao-theatro-circo/",
+      "id": "theatro-circo-2026-08-visita-noturna-ao-theatro-circo-1d17",
+      "source_id": "visita-noturna-ao-theatro-circo-2",
+      "source_url": "https://theatrocirco.com/event/visita-noturna-ao-theatro-circo-2/",
       "venue_id": "theatro-circo",
       "space_id": null,
       "title": "Visita Noturna ao Theatro Circo",
@@ -1530,7 +1592,11 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "lgp",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1543,13 +1609,22 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-08-28",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-08-27",
-      "date_last": "2026-08-27",
-      "total_sessions": 1,
+      "date_last": "2026-08-28",
+      "total_sessions": 2,
       "is_ongoing": false,
-      "date_open": "2026-08-27",
+      "date_open": "2026-08-28",
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
@@ -1584,7 +1659,7 @@
         "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
       },
       "accessibility": {
-        "has_sign_language": false,
+        "has_sign_language": true,
         "has_audio_description": false,
         "has_subtitles": false,
         "subtitle_language": null,
@@ -1627,17 +1702,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:24.557828+00:00",
+        "scraped_at": "2026-03-27T12:08:26.370001+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0bd9fd3f0a173696",
-        "harmonized_at": "2026-03-26T15:28:47.177744+00:00",
+        "raw_data_hash": "sha256:0d19587481b06fbb",
+        "harmonized_at": "2026-03-27T12:08:50.089399+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:24.557828+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709906+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1773,7 +1855,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:29.152621+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105844+00:00"
       }
     }
   ]

@@ -4,7 +4,152 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-space-is-the-place-john-",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-e430",
+      "source_id": "julho-e-de-jazz",
+      "source_url": "https://theatrocirco.com/event/julho-e-de-jazz/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Julho é de Jazz",
+      "title_raw": "Julho é de Jazz",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-07-02",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-07-09",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-07-02",
+      "date_last": "2026-07-09",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-07-02",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "julho-e-de-jazz|2026-07",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:08:46.612865+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:b6ea621b1ab538f4",
+        "harmonized_at": "2026-03-27T12:08:50.093065+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.5
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-space-is-the-place-john--9e41",
       "source_id": "julho-e-de-jazz-space-is-the-place-john-coney",
       "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-space-is-the-place-john-coney/",
       "venue_id": "theatro-circo",
@@ -19,7 +164,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -116,17 +264,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:44.178020+00:00",
+        "scraped_at": "2026-03-27T12:08:47.913553+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ab85bf7e22ba6b04",
-        "harmonized_at": "2026-03-26T15:28:47.181285+00:00",
+        "raw_data_hash": "sha256:3d39d7b151b9c5da",
+        "harmonized_at": "2026-03-27T12:08:50.093240+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:44.178020+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710071+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -248,10 +403,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037561+00:00",
+        "scraped_at": "2026-03-27T12:03:45.771989+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:09499a2e146e190b",
-        "harmonized_at": "2026-03-27T11:38:30.434424+00:00",
+        "raw_data_hash": "sha256:507e573143e30fe9",
+        "harmonized_at": "2026-03-27T12:05:14.140680+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -387,10 +542,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037614+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772035+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:eb14c689d0d3bd48",
-        "harmonized_at": "2026-03-27T11:38:30.435274+00:00",
+        "raw_data_hash": "sha256:2700f08d96b5d6b8",
+        "harmonized_at": "2026-03-27T12:05:14.141535+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -410,7 +565,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-vijay-iyer-trio",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-vijay-iyer-trio-4c11",
       "source_id": "julho-e-de-jazz-vijay-iyer-trio",
       "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-vijay-iyer-trio/",
       "venue_id": "theatro-circo",
@@ -425,7 +580,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -522,22 +680,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:42.261008+00:00",
+        "scraped_at": "2026-03-27T12:08:45.967898+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:fb481edf01115f7c",
-        "harmonized_at": "2026-03-26T15:28:47.181004+00:00",
+        "raw_data_hash": "sha256:74c12cb3390438c1",
+        "harmonized_at": "2026-03-27T12:08:50.092954+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:42.261008+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710058+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-david-murray-quartet",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-david-murray-quartet-69d4",
       "source_id": "julho-e-de-jazz-david-murray-quartet",
       "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-david-murray-quartet/",
       "venue_id": "theatro-circo",
@@ -552,7 +717,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -649,17 +817,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:41.597856+00:00",
+        "scraped_at": "2026-03-27T12:08:45.321040+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d7c5380167388b08",
-        "harmonized_at": "2026-03-26T15:28:47.180891+00:00",
+        "raw_data_hash": "sha256:7ec58d168826a9ab",
+        "harmonized_at": "2026-03-27T12:08:50.092839+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:41.597856+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710052+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -783,10 +958,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037639+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772060+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:248ba4f3d7e1783e",
-        "harmonized_at": "2026-03-27T11:38:30.435829+00:00",
+        "raw_data_hash": "sha256:d55fbae1697225f4",
+        "harmonized_at": "2026-03-27T12:05:14.142088+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -807,7 +982,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-o-ancoradouro-do-tempo-sol-de-carvalho",
+      "id": "theatro-circo-2026-07-o-ancoradouro-do-tempo-sol-de-carvalho-431f",
       "source_id": "o-ancoradouro-do-tempo-sol-de-carvalho",
       "source_url": "https://theatrocirco.com/event/o-ancoradouro-do-tempo-sol-de-carvalho/",
       "venue_id": "theatro-circo",
@@ -822,7 +997,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -919,22 +1097,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:40.907752+00:00",
+        "scraped_at": "2026-03-27T12:08:44.652737+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:41b5f3684ddc4292",
-        "harmonized_at": "2026-03-26T15:28:47.180776+00:00",
+        "raw_data_hash": "sha256:d5d3916773087d08",
+        "harmonized_at": "2026-03-27T12:08:50.092713+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:40.907752+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710047+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-do-bolero-ao-malhao-de-ravel-a-rusga",
+      "id": "theatro-circo-2026-07-do-bolero-ao-malhao-de-ravel-a-rusga-cee0",
       "source_id": "do-bolero-ao-malhao-de-ravel-a-rusga",
       "source_url": "https://theatrocirco.com/event/do-bolero-ao-malhao-de-ravel-a-rusga/",
       "venue_id": "theatro-circo",
@@ -949,7 +1134,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -1046,17 +1234,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:40.210983+00:00",
+        "scraped_at": "2026-03-27T12:08:44.006736+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:66ca9411cc976624",
-        "harmonized_at": "2026-03-26T15:28:47.180660+00:00",
+        "raw_data_hash": "sha256:5e7541eafd4693af",
+        "harmonized_at": "2026-03-27T12:08:50.092583+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:40.210983+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710041+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1177,10 +1372,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037666+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772088+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e99ff305697ca26c",
-        "harmonized_at": "2026-03-27T11:38:30.436235+00:00",
+        "raw_data_hash": "sha256:f46f4baece05ab0f",
+        "harmonized_at": "2026-03-27T12:05:14.142492+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1200,7 +1395,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-inside-scofield-joerg-st",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-inside-scofield-joerg-st-29cf",
       "source_id": "julho-e-de-jazz-inside-scofield-joerg-steineck",
       "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-inside-scofield-joerg-steineck/",
       "venue_id": "theatro-circo",
@@ -1215,7 +1410,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1312,28 +1510,35 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:39.547448+00:00",
+        "scraped_at": "2026-03-27T12:08:43.360740+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:117710d89f776542",
-        "harmonized_at": "2026-03-26T15:28:47.180518+00:00",
+        "raw_data_hash": "sha256:b103df11d566deb7",
+        "harmonized_at": "2026-03-27T12:08:50.092461+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:39.547448+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710036+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz",
-      "source_id": "julho-e-de-jazz-2",
-      "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-2/",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-mary-halvorson-amaryllis-d4c8",
+      "source_id": "julho-e-de-jazz-mary-halvorson-amaryllis-sextet",
+      "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-mary-halvorson-amaryllis-sextet/",
       "venue_id": "theatro-circo",
       "space_id": null,
-      "title": "Julho é de Jazz",
-      "title_raw": "Julho é de Jazz",
+      "title": "Julho é de Jazz: Mary Halvorson Amaryllis Sextet",
+      "title_raw": "Julho é de Jazz: Mary Halvorson Amaryllis Sextet",
       "subtitle": null,
       "description": "",
       "description_short": "",
@@ -1342,14 +1547,17 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
       "dates": [
         {
-          "date": "2026-07-09",
-          "time_start": null,
+          "date": "2026-07-11",
+          "time_start": "21:30",
           "time_end": null,
           "duration_minutes": null,
           "is_cancelled": false,
@@ -1357,11 +1565,11 @@
           "notes": null
         }
       ],
-      "date_first": "2026-07-09",
-      "date_last": "2026-07-09",
+      "date_first": "2026-07-11",
+      "date_last": "2026-07-11",
       "total_sessions": 1,
       "is_ongoing": false,
-      "date_open": "2026-07-09",
+      "date_open": "2026-07-11",
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
@@ -1387,11 +1595,13 @@
       },
       "price": {
         "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "http://theatrocirco.bol.pt/Comprar/Cartoes/5668-8294-0-julho_e_de_jazz_semana_1-faz_cultura/"
+        "price_min": 12.0,
+        "price_max": 12.0,
+        "price_display": "12€",
+        "price_raw": "12€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
       },
       "accessibility": {
         "has_sign_language": false,
@@ -1429,7 +1639,7 @@
         "gallery": []
       },
       "dedup": {
-        "fingerprint": "julho-e-de-jazz|2026-07",
+        "fingerprint": "julho-e-de-jazz-mary-halvorson-amaryllis-sextet|2026-07",
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
@@ -1437,17 +1647,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:43.512873+00:00",
+        "scraped_at": "2026-03-27T12:08:42.711482+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:385db28b9f7534bc",
-        "harmonized_at": "2026-03-26T15:28:47.181200+00:00",
+        "raw_data_hash": "sha256:ee429b5d15a4a4ef",
+        "harmonized_at": "2026-03-27T12:08:50.092337+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:43.512873+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710065+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1590,7 +1807,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:18.084233+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105791+00:00"
       }
     },
     {
@@ -1725,139 +1944,14 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:20.472508+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105799+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-mary-halvorson-amaryllis",
-      "source_id": "julho-e-de-jazz-mary-halvorson-amaryllis-sextet",
-      "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-mary-halvorson-amaryllis-sextet/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Julho é de Jazz: Mary Halvorson Amaryllis Sextet",
-      "title_raw": "Julho é de Jazz: Mary Halvorson Amaryllis Sextet",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-07-11",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-07-11",
-      "date_last": "2026-07-11",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-07-11",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 12.0,
-        "price_max": 12.0,
-        "price_display": "12€",
-        "price_raw": "12€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "julho-e-de-jazz-mary-halvorson-amaryllis-sextet|2026-07",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T15:28:38.991433+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1877aad13b6a9a58",
-        "harmonized_at": "2026-03-26T15:28:47.180398+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:38.991433+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710030+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-julho-e-de-jazz-orquestra-jazz-de-matosi",
+      "id": "theatro-circo-2026-07-julho-e-de-jazz-orquestra-jazz-de-matosi-8a55",
       "source_id": "julho-e-de-jazz-orquestra-jazz-de-matosinhos-peter-evans",
       "source_url": "https://theatrocirco.com/event/julho-e-de-jazz-orquestra-jazz-de-matosinhos-peter-evans/",
       "venue_id": "theatro-circo",
@@ -1872,7 +1966,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -1969,22 +2066,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:37.770559+00:00",
+        "scraped_at": "2026-03-27T12:08:40.629312+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8741ccbc19ac6968",
-        "harmonized_at": "2026-03-26T15:28:47.180158+00:00",
+        "raw_data_hash": "sha256:3baa84a54d28d282",
+        "harmonized_at": "2026-03-27T12:08:50.092089+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:37.770559+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710019+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo",
+      "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-c2fc",
       "source_id": "visita-guiada-ao-theatro-circo-5",
       "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-5/",
       "venue_id": "theatro-circo",
@@ -1999,7 +2103,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -2096,22 +2203,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:38.325159+00:00",
+        "scraped_at": "2026-03-27T12:08:41.275823+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a17002e1ff820298",
-        "harmonized_at": "2026-03-26T15:28:47.180288+00:00",
+        "raw_data_hash": "sha256:3a4c25f0fae97394",
+        "harmonized_at": "2026-03-27T12:08:50.092220+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:38.325159+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710025+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-showcase-backstage-2025",
+      "id": "theatro-circo-2026-07-showcase-backstage-2025-2ab2",
       "source_id": "showcase-backstage-2025",
       "source_url": "https://theatrocirco.com/event/showcase-backstage-2025/",
       "venue_id": "theatro-circo",
@@ -2126,7 +2240,10 @@
       "domain": "artes-palco",
       "category": "danca",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Dança"
       ],
@@ -2223,17 +2340,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:37.207346+00:00",
+        "scraped_at": "2026-03-27T12:08:39.979551+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6a8fe1d545a8203c",
-        "harmonized_at": "2026-03-26T15:28:47.180061+00:00",
+        "raw_data_hash": "sha256:abccbd8f06a22f96",
+        "harmonized_at": "2026-03-27T12:08:50.091989+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:37.207346+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710013+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -2354,10 +2478,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037687+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772109+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3467ac092c574b7a",
-        "harmonized_at": "2026-03-27T11:38:30.436678+00:00",
+        "raw_data_hash": "sha256:973b5dd41263fed2",
+        "harmonized_at": "2026-03-27T12:05:14.142950+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2377,7 +2501,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-a-prisioneira-de-bordeus-de-patricia-maz",
+      "id": "theatro-circo-2026-07-a-prisioneira-de-bordeus-de-patricia-maz-614c",
       "source_id": "a-prisioneira-de-bordeus-de-patricia-mazuy",
       "source_url": "https://theatrocirco.com/event/a-prisioneira-de-bordeus-de-patricia-mazuy/",
       "venue_id": "theatro-circo",
@@ -2392,7 +2516,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -2489,22 +2616,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:36.542472+00:00",
+        "scraped_at": "2026-03-27T12:08:39.333670+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a6aa703ddf1045d7",
-        "harmonized_at": "2026-03-26T15:28:47.179946+00:00",
+        "raw_data_hash": "sha256:aa05f6ec5178bae0",
+        "harmonized_at": "2026-03-27T12:08:50.091869+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:36.542472+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710006+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-as-cores-do-som",
+      "id": "theatro-circo-2026-07-as-cores-do-som-8769",
       "source_id": "as-cores-do-som",
       "source_url": "https://theatrocirco.com/event/as-cores-do-som/",
       "venue_id": "theatro-circo",
@@ -2516,10 +2650,14 @@
       "description_short": "",
       "language_of_performance": null,
       "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": "mediacao",
+      "tags": [
+        "formação & participação",
+        "mediação",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Mediação"
       ],
@@ -2616,17 +2754,23 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:35.986829+00:00",
+        "scraped_at": "2026-03-27T12:08:38.684692+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1040cd2700ffe013",
-        "harmonized_at": "2026-03-26T15:28:47.179845+00:00",
+        "raw_data_hash": "sha256:e4abb7402193ca55",
+        "harmonized_at": "2026-03-27T12:08:50.091754+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:35.986829+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709997+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
       }
     },
     {
@@ -2782,10 +2926,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:23.661924+00:00",
+        "scraped_at": "2026-03-27T12:09:22.756442+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:03580ba8aa0dd75e",
-        "harmonized_at": "2026-03-27T11:38:31.981554+00:00",
+        "raw_data_hash": "sha256:510f40084691f762",
+        "harmonized_at": "2026-03-27T12:09:24.270865+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2921,10 +3065,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037716+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772137+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:38b568aa09b0ab3b",
-        "harmonized_at": "2026-03-27T11:38:30.437328+00:00",
+        "raw_data_hash": "sha256:5718992ff74097ab",
+        "harmonized_at": "2026-03-27T12:05:14.143576+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2944,7 +3088,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-justica-camilo-castelo-branco",
+      "id": "theatro-circo-2026-07-mit25-justica-camilo-castelo-branco-8646",
       "source_id": "mit25-justica-camilo-castelo-branco",
       "source_url": "https://theatrocirco.com/event/mit25-justica-camilo-castelo-branco/",
       "venue_id": "theatro-circo",
@@ -2959,7 +3103,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3056,22 +3203,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:34.765406+00:00",
+        "scraped_at": "2026-03-27T12:08:37.389644+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0e6108b85023d6d5",
-        "harmonized_at": "2026-03-26T15:28:47.179604+00:00",
+        "raw_data_hash": "sha256:4d6c7937692689d2",
+        "harmonized_at": "2026-03-27T12:08:50.091493+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:34.765406+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709992+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-decameron-teatro-nacional-de-mario",
+      "id": "theatro-circo-2026-07-mit25-decameron-teatro-nacional-de-mario-eaa3",
       "source_id": "mit25-decameron-teatro-nacional-de-marionetas",
       "source_url": "https://theatrocirco.com/event/mit25-decameron-teatro-nacional-de-marionetas/",
       "venue_id": "theatro-circo",
@@ -3086,7 +3240,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3183,22 +3340,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:33.542683+00:00",
+        "scraped_at": "2026-03-27T12:08:36.087799+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:cac4ffdb8e9763c4",
-        "harmonized_at": "2026-03-26T15:28:47.179351+00:00",
+        "raw_data_hash": "sha256:581522c6b822502c",
+        "harmonized_at": "2026-03-27T12:08:50.091187+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:33.542683+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709981+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-o-rei-veado-teatro-nacional-de-mar",
+      "id": "theatro-circo-2026-07-mit25-o-rei-veado-teatro-nacional-de-mar-9747",
       "source_id": "mit25-o-rei-veado-teatro-nacional-de-marionetas",
       "source_url": "https://theatrocirco.com/event/mit25-o-rei-veado-teatro-nacional-de-marionetas/",
       "venue_id": "theatro-circo",
@@ -3213,7 +3377,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -3310,22 +3477,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:34.100848+00:00",
+        "scraped_at": "2026-03-27T12:08:36.739753+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0d4dbb67586de73b",
-        "harmonized_at": "2026-03-26T15:28:47.179462+00:00",
+        "raw_data_hash": "sha256:9c84eacfa6d3eff4",
+        "harmonized_at": "2026-03-27T12:08:50.091300+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:34.100848+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709986+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-os-das-latas-de-conserva-edward-bo",
+      "id": "theatro-circo-2026-07-mit25-os-das-latas-de-conserva-edward-bo-8067",
       "source_id": "mit25-os-das-latas-de-conserva-edward-bond",
       "source_url": "https://theatrocirco.com/event/mit25-os-das-latas-de-conserva-edward-bond/",
       "venue_id": "theatro-circo",
@@ -3340,7 +3514,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3437,22 +3614,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:32.877734+00:00",
+        "scraped_at": "2026-03-27T12:08:35.440516+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0601801185c8f60b",
-        "harmonized_at": "2026-03-26T15:28:47.179239+00:00",
+        "raw_data_hash": "sha256:29e6342b7f955a03",
+        "harmonized_at": "2026-03-27T12:08:50.091072+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:32.877734+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709975+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-esta-maldita-verdade-amarga",
+      "id": "theatro-circo-2026-07-mit25-esta-maldita-verdade-amarga-b29e",
       "source_id": "mit25-esta-maldita-verdade-amarga",
       "source_url": "https://theatrocirco.com/event/mit25-esta-maldita-verdade-amarga/",
       "venue_id": "theatro-circo",
@@ -3467,7 +3651,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -3564,22 +3751,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:32.212710+00:00",
+        "scraped_at": "2026-03-27T12:08:34.791487+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4e826744a6996445",
-        "harmonized_at": "2026-03-26T15:28:47.179133+00:00",
+        "raw_data_hash": "sha256:4fc30d7a2d4d38dc",
+        "harmonized_at": "2026-03-27T12:08:50.090965+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:32.212710+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709970+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-a-terra-do-vento-akroama-teatro-de",
+      "id": "theatro-circo-2026-07-mit25-a-terra-do-vento-akroama-teatro-de-5242",
       "source_id": "mit25-a-terra-do-vento-akroama-teatro-delle-saline",
       "source_url": "https://theatrocirco.com/event/mit25-a-terra-do-vento-akroama-teatro-delle-saline/",
       "venue_id": "theatro-circo",
@@ -3594,7 +3788,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3691,22 +3888,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:31.655767+00:00",
+        "scraped_at": "2026-03-27T12:08:34.144209+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:be030acf449d0cf1",
-        "harmonized_at": "2026-03-26T15:28:47.179014+00:00",
+        "raw_data_hash": "sha256:1561cc5efb4b6567",
+        "harmonized_at": "2026-03-27T12:08:50.090842+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:31.655767+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709964+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-auto-da-barca-do-inferno-gil-vicen",
+      "id": "theatro-circo-2026-07-mit25-auto-da-barca-do-inferno-gil-vicen-438a",
       "source_id": "mit25-auto-da-barca-do-inferno-gil-vicente",
       "source_url": "https://theatrocirco.com/event/mit25-auto-da-barca-do-inferno-gil-vicente/",
       "venue_id": "theatro-circo",
@@ -3721,7 +3925,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3818,17 +4025,161 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:30.991286+00:00",
+        "scraped_at": "2026-03-27T12:08:33.494522+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a3eb5442a749c993",
-        "harmonized_at": "2026-03-26T15:28:47.178899+00:00",
+        "raw_data_hash": "sha256:e5df78cb858d49bf",
+        "harmonized_at": "2026-03-27T12:08:50.090715+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:30.991286+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709959+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-07-mit25-o-jardim-de-valentin-tranvia-teatr-d884",
+      "source_id": "mit25-o-jardim-de-valentin-tranvia-teatro",
+      "source_url": "https://theatrocirco.com/event/mit25-o-jardim-de-valentin-tranvia-teatro/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "MIT25: O Jardim de Valentín - Tranvia Teatro",
+      "title_raw": "MIT25: O Jardim de Valentín - Tranvia Teatro",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-07-25",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-07-25",
+      "date_last": "2026-07-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-07-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 10.0,
+        "price_max": 10.0,
+        "price_display": "10€",
+        "price_raw": "10€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "mit25-o-jardim-de-valentin-tranvia-teatro|2026-07",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:08:32.847692+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:c044a61c08b01e10",
+        "harmonized_at": "2026-03-27T12:08:50.090579+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -3964,139 +4315,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5
+        "quality_score": 0.5,
+        "last_seen_at": "2026-03-27T11:33:41.252869+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105889+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-o-jardim-de-valentin-tranvia-teatr",
-      "source_id": "mit25-o-jardim-de-valentin-tranvia-teatro",
-      "source_url": "https://theatrocirco.com/event/mit25-o-jardim-de-valentin-tranvia-teatro/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "MIT25: O Jardim de Valentín - Tranvia Teatro",
-      "title_raw": "MIT25: O Jardim de Valentín - Tranvia Teatro",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-07-25",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-07-25",
-      "date_last": "2026-07-25",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-07-25",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 10.0,
-        "price_max": 10.0,
-        "price_display": "10€",
-        "price_raw": "10€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "mit25-o-jardim-de-valentin-tranvia-teatro|2026-07",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T15:28:30.432957+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:63e1cbae640ef5ff",
-        "harmonized_at": "2026-03-26T15:28:47.178780+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:30.432957+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709953+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-mit25-pedido-casamento-anton-tchekhov",
+      "id": "theatro-circo-2026-07-mit25-pedido-casamento-anton-tchekhov-befc",
       "source_id": "mit25-pedido-casamento-anton-tchekhov",
       "source_url": "https://theatrocirco.com/event/mit25-pedido-casamento-anton-tchekhov/",
       "venue_id": "theatro-circo",
@@ -4111,7 +4337,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -4208,17 +4437,162 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:29.767276+00:00",
+        "scraped_at": "2026-03-27T12:08:32.200205+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8a23db910660e230",
-        "harmonized_at": "2026-03-26T15:28:47.178664+00:00",
+        "raw_data_hash": "sha256:f73c9a8646f1437e",
+        "harmonized_at": "2026-03-27T12:08:50.090466+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:29.767276+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709947+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-07-verdades-dificeis-de-mike-leigh-b7b9",
+      "source_id": "verdades-dificeis-de-mike-leigh",
+      "source_url": "https://theatrocirco.com/event/verdades-dificeis-de-mike-leigh/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Verdades Difíceis de Mike Leigh",
+      "title_raw": "Verdades Difíceis de Mike Leigh",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "cinema",
+      "category": "cinema-ficcao",
+      "subcategory": null,
+      "tags": [
+        "cinema",
+        "sessao-relaxada",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Cinema"
+      ],
+      "dates": [
+        {
+          "date": "2026-07-28",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-07-28",
+      "date_last": "2026-07-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-07-28",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": true,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "verdades-dificeis-de-mike-leigh|2026-07",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:08:31.551012+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:713e21fdbaebc1cb",
+        "harmonized_at": "2026-03-27T12:08:50.090357+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -4362,134 +4736,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-verdades-dificeis-de-mike-leigh",
-      "source_id": "verdades-dificeis-de-mike-leigh",
-      "source_url": "https://theatrocirco.com/event/verdades-dificeis-de-mike-leigh/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Verdades Difíceis de Mike Leigh",
-      "title_raw": "Verdades Difíceis de Mike Leigh",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-07-28",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-07-28",
-      "date_last": "2026-07-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-07-28",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": true,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "verdades-dificeis-de-mike-leigh|2026-07",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T15:28:29.102168+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7eac97012cf2d024",
-        "harmonized_at": "2026-03-26T15:28:47.178537+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:29.102168+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709939+00:00"
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:43.149945+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105895+00:00"
       }
     },
     {
@@ -4633,7 +4882,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:45.423763+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105901+00:00"
       }
     }
   ]

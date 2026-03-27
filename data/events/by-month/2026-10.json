@@ -119,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037742+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772162+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d8816931de7a3428",
-        "harmonized_at": "2026-03-27T11:38:30.437748+00:00",
+        "raw_data_hash": "sha256:adb38abbf98cd102",
+        "harmonized_at": "2026-03-27T12:05:14.144021+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -142,7 +142,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-10-ctb-justica-camilo-castelo-branco",
+      "id": "theatro-circo-2026-10-ctb-justica-camilo-castelo-branco-5054",
       "source_id": "ctb-justica-camilo-castelo-branco-3",
       "source_url": "https://theatrocirco.com/event/ctb-justica-camilo-castelo-branco-3/",
       "venue_id": "theatro-circo",
@@ -157,7 +157,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -254,22 +257,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:19.985522+00:00",
+        "scraped_at": "2026-03-27T12:08:22.464872+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7be33f1adfcf5ea0",
-        "harmonized_at": "2026-03-26T15:28:47.176860+00:00",
+        "raw_data_hash": "sha256:41967ca9e4aaafd3",
+        "harmonized_at": "2026-03-27T12:08:50.087165+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:19.985522+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709877+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-10-fellini-8",
+      "id": "theatro-circo-2026-10-fellini-8-b410",
       "source_id": "fellini-8-%c2%bd",
       "source_url": "https://theatrocirco.com/event/fellini-8-%c2%bd/",
       "venue_id": "theatro-circo",
@@ -284,7 +294,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -381,24 +394,31 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:27:43.289857+00:00",
+        "scraped_at": "2026-03-27T12:07:46.812355+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0dbf057d28c2a21c",
-        "harmonized_at": "2026-03-26T15:28:47.170979+00:00",
+        "raw_data_hash": "sha256:63e8af6ec63b3d6f",
+        "harmonized_at": "2026-03-27T12:08:50.081046+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:27:43.289857+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709767+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-10-reedu-opera",
-      "source_id": "reedu-opera",
-      "source_url": "https://theatrocirco.com/event/reedu-opera/",
+      "id": "theatro-circo-2026-10-reedu-opera-0f83",
+      "source_id": "reedu-opera-2",
+      "source_url": "https://theatrocirco.com/event/reedu-opera-2/",
       "venue_id": "theatro-circo",
       "space_id": null,
       "title": "Re[EDU]: Opera?",
@@ -411,7 +431,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -424,11 +447,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-10-18",
+          "time_start": "11:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-10-18",
       "date_last": "2026-10-18",
-      "total_sessions": 1,
+      "total_sessions": 2,
       "is_ongoing": false,
       "date_open": "2026-10-18",
       "date_close": null,
@@ -455,11 +487,11 @@
         "notes": null
       },
       "price": {
-        "is_free": true,
+        "is_free": false,
         "price_min": null,
         "price_max": null,
-        "price_display": "Entrada livre",
-        "price_raw": "Entrada livre",
+        "price_display": "gratuito, mediante inscrição",
+        "price_raw": "gratuito, mediante inscrição",
         "has_discounts": false,
         "discount_notes": null,
         "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
@@ -481,7 +513,7 @@
         "cast": [],
         "creative_team": [],
         "musicians": [],
-        "credits_raw": "Público-alvo\nMaiores de 16 anos com interesse em escrita para Ópera\nLocal das sessões de criação\ntodas as sessões irão decorrer no Theatro Circo, à exceção de 18 de outubro, que acontecerá nas instalações da CERCI Braga.\nMediação\nMário João Alves e Artur Carvalho\nParceiros\nSinfonietta de Braga e CERCI Braga"
+        "credits_raw": "Público-alvo\nMaiores de 16 anos com interesse em escrita para Ópera\nLocal das sessões de criação\nTodas as sessões irão decorrer no Theatro Circo, à exceção de 18 de outubro, que acontecerá nas instalações da CERCI Braga.\nMediação\nMário João Alves e Artur Carvalho\nParceiros\nSinfonietta de Braga e CERCI Braga"
       },
       "work": {
         "original_title": null,
@@ -508,17 +540,23 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:10.982566+00:00",
+        "scraped_at": "2026-03-27T12:07:48.653049+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:15a58f7083836b3a",
-        "harmonized_at": "2026-03-26T15:28:47.175556+00:00",
+        "raw_data_hash": "sha256:975014c50fe83e22",
+        "harmonized_at": "2026-03-27T12:08:50.081339+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:10.982566+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709793+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
@@ -638,10 +676,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037767+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772187+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e6de8b83b53b8382",
-        "harmonized_at": "2026-03-27T11:38:30.438186+00:00",
+        "raw_data_hash": "sha256:b4178b057b43df0b",
+        "harmonized_at": "2026-03-27T12:05:14.144431+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -661,7 +699,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-10-tres-tempos",
+      "id": "theatro-circo-2026-10-tres-tempos-3380",
       "source_id": "tres-tempos",
       "source_url": "https://theatrocirco.com/event/tres-tempos/",
       "venue_id": "theatro-circo",
@@ -676,7 +714,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -773,22 +814,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:27:33.180095+00:00",
+        "scraped_at": "2026-03-27T12:07:36.777652+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:03aa1cf0660a1be1",
-        "harmonized_at": "2026-03-26T15:28:47.169256+00:00",
+        "raw_data_hash": "sha256:00dc6df7ddfa53e3",
+        "harmonized_at": "2026-03-27T12:08:50.079295+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:27:33.180095+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709761+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-10-festival-semibreve",
+      "id": "theatro-circo-2026-10-festival-semibreve-5ef9",
       "source_id": "festival-semibreve-2",
       "source_url": "https://theatrocirco.com/event/festival-semibreve-2/",
       "venue_id": "theatro-circo",
@@ -803,7 +850,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "festival",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -898,17 +949,25 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:19.317667+00:00",
+        "scraped_at": "2026-03-27T12:08:21.817590+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c6ea96184774fd58",
-        "harmonized_at": "2026-03-26T15:28:47.176775+00:00",
+        "raw_data_hash": "sha256:85952c8b9c2075cb",
+        "harmonized_at": "2026-03-27T12:08:50.087075+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:19.317667+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709871+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.5
       }
     },
     {
@@ -1030,10 +1089,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037789+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772210+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9a3d3a5a8e3a0e34",
-        "harmonized_at": "2026-03-27T11:38:30.438555+00:00",
+        "raw_data_hash": "sha256:5cc91075ef18c5ee",
+        "harmonized_at": "2026-03-27T12:05:14.144826+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

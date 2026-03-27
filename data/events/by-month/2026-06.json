@@ -118,10 +118,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028002+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764638+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e202b83a09085844",
-        "harmonized_at": "2026-03-27T11:38:30.330023+00:00",
+        "raw_data_hash": "sha256:dbcacfee80e9629e",
+        "harmonized_at": "2026-03-27T12:05:14.036949+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -315,7 +315,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:32:54.441894+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105694+00:00"
       }
     },
     {
@@ -617,10 +619,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028022+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764657+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:61ec59ac69344c63",
-        "harmonized_at": "2026-03-27T11:38:30.330277+00:00",
+        "raw_data_hash": "sha256:405e17e9be03fffe",
+        "harmonized_at": "2026-03-27T12:05:14.037206+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -938,10 +940,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028037+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764669+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:998d4826275b7a5a",
-        "harmonized_at": "2026-03-27T11:38:30.330433+00:00",
+        "raw_data_hash": "sha256:ff905302f0c25a97",
+        "harmonized_at": "2026-03-27T12:05:14.037367+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1261,10 +1263,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028054+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764684+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0218314696ce4f39",
-        "harmonized_at": "2026-03-27T11:38:30.330593+00:00",
+        "raw_data_hash": "sha256:736a7d48f50dcd0f",
+        "harmonized_at": "2026-03-27T12:05:14.037522+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1582,10 +1584,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028075+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764717+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:327c5215e1ec2925",
-        "harmonized_at": "2026-03-27T11:38:30.330983+00:00",
+        "raw_data_hash": "sha256:3934db624bb2f3c5",
+        "harmonized_at": "2026-03-27T12:05:14.037840+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1901,10 +1903,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028101+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764746+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0bc985d69cfe0d7",
-        "harmonized_at": "2026-03-27T11:38:30.331517+00:00",
+        "raw_data_hash": "sha256:907a45df7fc6d9f9",
+        "harmonized_at": "2026-03-27T12:05:14.038352+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2223,10 +2225,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028145+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764792+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6922d7a7edd21628",
-        "harmonized_at": "2026-03-27T11:38:30.332371+00:00",
+        "raw_data_hash": "sha256:9adbc38c98526247",
+        "harmonized_at": "2026-03-27T12:05:14.039137+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2545,10 +2547,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028184+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764833+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a4a86a7885b9211c",
-        "harmonized_at": "2026-03-27T11:38:30.333044+00:00",
+        "raw_data_hash": "sha256:9566a0e901586157",
+        "harmonized_at": "2026-03-27T12:05:14.039794+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2866,10 +2868,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028278+00:00",
+        "scraped_at": "2026-03-27T12:03:45.764935+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:143943f9d82b6662",
-        "harmonized_at": "2026-03-27T11:38:30.333959+00:00",
+        "raw_data_hash": "sha256:26d5d04b08a6fb52",
+        "harmonized_at": "2026-03-27T12:05:14.040673+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3016,7 +3018,7 @@
         "scraped_at": "2026-03-27T11:00:01.591103+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:02c86cbcd5e08ce7",
-        "harmonized_at": "2026-03-27T11:38:30.971701+00:00",
+        "harmonized_at": "2026-03-27T12:05:19.959868+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3163,7 +3165,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.6,
+        "last_seen_at": "2026-03-27T11:32:56.687722+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105719+00:00"
       }
     },
     {
@@ -3299,7 +3303,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:32:57.447249+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105727+00:00"
       }
     },
     {
@@ -3566,10 +3572,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028347+00:00",
+        "scraped_at": "2026-03-27T12:03:45.765002+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:731856b9c74d2119",
-        "harmonized_at": "2026-03-27T11:38:30.334838+00:00",
+        "raw_data_hash": "sha256:8362b91e91ead7b2",
+        "harmonized_at": "2026-03-27T12:05:14.041470+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3866,10 +3872,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028709+00:00",
+        "scraped_at": "2026-03-27T12:03:45.765392+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:046e7964c3bd617b",
-        "harmonized_at": "2026-03-27T11:38:30.339730+00:00",
+        "raw_data_hash": "sha256:6e5afb3c6e8a9cf4",
+        "harmonized_at": "2026-03-27T12:05:14.046267+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4036,7 +4042,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:32:59.642519+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105733+00:00"
       }
     },
     {
@@ -4163,10 +4171,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029626+00:00",
+        "scraped_at": "2026-03-27T12:03:45.766283+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2b8aaff1bef28dba",
-        "harmonized_at": "2026-03-27T11:38:30.352069+00:00",
+        "raw_data_hash": "sha256:8d8c40130d18125d",
+        "harmonized_at": "2026-03-27T12:05:14.058382+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4324,7 +4332,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:02.040047+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105740+00:00"
       }
     },
     {
@@ -4459,7 +4469,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:05.929682+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105745+00:00"
       }
     },
     {
@@ -4596,7 +4608,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:08.080182+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105751+00:00"
       }
     },
     {
@@ -4710,10 +4724,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029667+00:00",
+        "scraped_at": "2026-03-27T12:03:45.766314+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:046325c0cd19a902",
-        "harmonized_at": "2026-03-27T11:38:30.352596+00:00",
+        "raw_data_hash": "sha256:7348751a85da752d",
+        "harmonized_at": "2026-03-27T12:05:14.058902+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4852,10 +4866,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029992+00:00",
+        "scraped_at": "2026-03-27T12:03:45.766629+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:caaf3bcfb27d6b1f",
-        "harmonized_at": "2026-03-27T11:38:30.357240+00:00",
+        "raw_data_hash": "sha256:fb208cac3e67e72c",
+        "harmonized_at": "2026-03-27T12:05:14.063521+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5006,7 +5020,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:08.836097+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105757+00:00"
       }
     },
     {
@@ -5143,7 +5159,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:09.592001+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105763+00:00"
       }
     },
     {
@@ -5296,7 +5314,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:39.260363+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105883+00:00"
       }
     },
     {
@@ -5481,10 +5501,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.034651+00:00",
+        "scraped_at": "2026-03-27T12:03:45.768988+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7c7bf79c8e618490",
-        "harmonized_at": "2026-03-27T11:38:30.391030+00:00",
+        "raw_data_hash": "sha256:a38b1fe7399c2a73",
+        "harmonized_at": "2026-03-27T12:05:14.097983+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5620,10 +5640,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.035235+00:00",
+        "scraped_at": "2026-03-27T12:03:45.769595+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:089e36d23edfde7a",
-        "harmonized_at": "2026-03-27T11:38:30.399726+00:00",
+        "raw_data_hash": "sha256:17e2716671a9f24a",
+        "harmonized_at": "2026-03-27T12:05:14.106649+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5774,7 +5794,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:10.367044+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105768+00:00"
       }
     },
     {
@@ -5897,10 +5919,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:21.678749+00:00",
+        "scraped_at": "2026-03-27T12:09:20.870794+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:fb0279ee1a38707f",
-        "harmonized_at": "2026-03-27T11:38:31.981234+00:00",
+        "raw_data_hash": "sha256:805e6709a816235e",
+        "harmonized_at": "2026-03-27T12:09:24.270533+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6034,10 +6056,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.036292+00:00",
+        "scraped_at": "2026-03-27T12:03:45.770719+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4ad538a3bdfdf796",
-        "harmonized_at": "2026-03-27T11:38:30.416380+00:00",
+        "raw_data_hash": "sha256:b637d2ec55bacfda",
+        "harmonized_at": "2026-03-27T12:05:14.122725+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6170,10 +6192,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037078+00:00",
+        "scraped_at": "2026-03-27T12:03:45.771482+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:08cfedd94193933c",
-        "harmonized_at": "2026-03-27T11:38:30.427082+00:00",
+        "raw_data_hash": "sha256:4f9fe9052dc16d70",
+        "harmonized_at": "2026-03-27T12:05:14.133311+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6330,7 +6352,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:12.583317+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105774+00:00"
       }
     },
     {
@@ -6455,10 +6479,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037463+00:00",
+        "scraped_at": "2026-03-27T12:03:45.771908+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a21d85c53ecc63ec",
-        "harmonized_at": "2026-03-27T11:38:30.433007+00:00",
+        "raw_data_hash": "sha256:9341a97532bfae82",
+        "harmonized_at": "2026-03-27T12:05:14.139250+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6596,10 +6620,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037504+00:00",
+        "scraped_at": "2026-03-27T12:03:45.771947+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c00228ff31593137",
-        "harmonized_at": "2026-03-27T11:38:30.433670+00:00",
+        "raw_data_hash": "sha256:898dc79ecc6bab26",
+        "harmonized_at": "2026-03-27T12:05:14.139932+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6794,7 +6818,7 @@
         "scraped_at": "2026-03-27T11:00:10.875771+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:acc169478d0650d5",
-        "harmonized_at": "2026-03-27T11:38:30.972600+00:00",
+        "harmonized_at": "2026-03-27T12:05:19.960750+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6942,7 +6966,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:33:13.337487+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105780+00:00"
       }
     },
     {
@@ -7069,7 +7095,144 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:46.737044+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710094+00:00"
+        "not_seen_since": "2026-03-27T12:08:50.106493+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-06-silvia-perez-cruz-e-salvador-sobral-103b",
+      "source_id": "silvia-perez-cruz-e-salvador-sobral",
+      "source_url": "https://theatrocirco.com/event/silvia-perez-cruz-e-salvador-sobral/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Sílvia Pérez Cruz e Salvador Sobral",
+      "title_raw": "Sílvia Pérez Cruz e Salvador Sobral",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-06-27",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-06-27",
+      "date_last": "2026-06-27",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-06-27",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 25.0,
+        "price_max": 25.0,
+        "price_display": "25€",
+        "price_raw": "25€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "silvia-perez-cruz-e-salvador-sobral|2026-06",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:08:49.653642+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:5d85fbfe0eb65352",
+        "harmonized_at": "2026-03-27T12:08:50.093584+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -7212,139 +7375,14 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:33:15.759702+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105785+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-silvia-perez-cruz-e-salvador-sobral",
-      "source_id": "silvia-perez-cruz-e-salvador-sobral",
-      "source_url": "https://theatrocirco.com/event/silvia-perez-cruz-e-salvador-sobral/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Sílvia Pérez Cruz e Salvador Sobral",
-      "title_raw": "Sílvia Pérez Cruz e Salvador Sobral",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-27",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-27",
-      "date_last": "2026-06-27",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-06-27",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 25.0,
-        "price_max": 25.0,
-        "price_display": "25€",
-        "price_raw": "25€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "silvia-perez-cruz-e-salvador-sobral|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T15:28:46.182144+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c4f82ea0a0a576d7",
-        "harmonized_at": "2026-03-26T15:28:47.181643+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:46.182144+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710088+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-30-grande-premio-de-literatura-dst",
+      "id": "theatro-circo-2026-06-30-grande-premio-de-literatura-dst-b5ed",
       "source_id": "30-o-grande-premio-de-literatura-dst",
       "source_url": "https://theatrocirco.com/event/30-o-grande-premio-de-literatura-dst/",
       "venue_id": "theatro-circo",
@@ -7356,10 +7394,15 @@
       "description_short": "",
       "language_of_performance": null,
       "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
+      "domain": "artes-palco",
+      "category": "performance",
+      "subcategory": "multidisciplinar",
+      "tags": [
+        "artes de palco",
+        "entrada-livre",
+        "multidisciplinar",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Multidisciplinar"
       ],
@@ -7456,22 +7499,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:45.504115+00:00",
+        "scraped_at": "2026-03-27T12:08:49.006148+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4f9ebf4137fa5424",
-        "harmonized_at": "2026-03-26T15:28:47.181513+00:00",
+        "raw_data_hash": "sha256:f15a1797a604102d",
+        "harmonized_at": "2026-03-27T12:08:50.093473+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:45.504115+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710083+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-tardes-de-solidao-de-albert-serra",
+      "id": "theatro-circo-2026-06-tardes-de-solidao-de-albert-serra-85bc",
       "source_id": "tardes-de-solidao-de-albert-serra",
       "source_url": "https://theatrocirco.com/event/tardes-de-solidao-de-albert-serra/",
       "venue_id": "theatro-circo",
@@ -7486,7 +7535,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -7583,17 +7635,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:44.841603+00:00",
+        "scraped_at": "2026-03-27T12:08:48.459321+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e450ebfa76e1d41d",
-        "harmonized_at": "2026-03-26T15:28:47.181406+00:00",
+        "raw_data_hash": "sha256:ee017a16ffbd9fa7",
+        "harmonized_at": "2026-03-27T12:08:50.093364+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:44.841603+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.710077+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     }
   ]

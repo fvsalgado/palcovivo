@@ -136,7 +136,7 @@
         "scraped_at": "2026-03-27T11:31:50.890214+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-27T11:38:31.407157+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.396295+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -271,7 +271,7 @@
         "scraped_at": "2026-03-27T11:24:37.879508+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:03a6981e50361a41",
-        "harmonized_at": "2026-03-27T11:38:31.300705+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.289189+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -427,7 +427,7 @@
         "scraped_at": "2026-03-27T11:24:39.846466+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-27T11:38:31.301185+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.289643+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -444,7 +444,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-02-wonderlandi",
+      "id": "theatro-circo-2026-02-wonderlandi-45ab",
       "source_id": "wonderlandi",
       "source_url": "https://theatrocirco.com/event/wonderlandi/",
       "venue_id": "theatro-circo",
@@ -459,7 +459,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -556,22 +559,27 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:57.023621+00:00",
+        "scraped_at": "2026-03-27T12:07:00.203174+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:edcfa8fb350e7067",
-        "harmonized_at": "2026-03-26T15:28:47.162979+00:00",
+        "raw_data_hash": "sha256:0912d25c32f29244",
+        "harmonized_at": "2026-03-27T12:08:50.072692+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:57.023621+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709595+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-02-luca-argel-convida-moreno-veloso",
+      "id": "theatro-circo-2026-02-luca-argel-convida-moreno-veloso-6d06",
       "source_id": "luca-argel-convida-moreno-veloso",
       "source_url": "https://theatrocirco.com/event/luca-argel-convida-moreno-veloso/",
       "venue_id": "theatro-circo",
@@ -586,7 +594,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -683,22 +694,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:52.476386+00:00",
+        "scraped_at": "2026-03-27T12:06:55.668622+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e4ff795296bd44f2",
-        "harmonized_at": "2026-03-26T15:28:47.162160+00:00",
+        "raw_data_hash": "sha256:0547da34430bcfa5",
+        "harmonized_at": "2026-03-27T12:08:50.071855+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:52.476386+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709550+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-02-companhia-de-espectadores-da-leitura-a-e",
+      "id": "theatro-circo-2026-02-companhia-de-espectadores-da-leitura-a-e-465e",
       "source_id": "companhia-de-espectadores-fev2026",
       "source_url": "https://theatrocirco.com/event/companhia-de-espectadores-fev2026/",
       "venue_id": "theatro-circo",
@@ -713,7 +730,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -810,22 +830,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:27:12.581468+00:00",
+        "scraped_at": "2026-03-27T12:07:15.722758+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c8b32180a3f3badd",
-        "harmonized_at": "2026-03-26T15:28:47.165572+00:00",
+        "raw_data_hash": "sha256:1b685e092d09f13b",
+        "harmonized_at": "2026-03-27T12:08:50.075440+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:27:12.581468+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709719+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-02-visita-guiada-ao-theatro-circo-28022026",
+      "id": "theatro-circo-2026-02-visita-guiada-ao-theatro-circo-28022026-1545",
       "source_id": "visita-guiada-ao-theatro-circo-fev2026",
       "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-fev2026/",
       "venue_id": "theatro-circo",
@@ -840,7 +866,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -946,17 +974,22 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:27:13.129997+00:00",
+        "scraped_at": "2026-03-27T12:07:16.265908+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f4fe4b70aa95e1b5",
-        "harmonized_at": "2026-03-26T15:28:47.165731+00:00",
+        "raw_data_hash": "sha256:c906c59790b95149",
+        "harmonized_at": "2026-03-27T12:08:50.075579+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:27:13.129997+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709725+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.75
       }
     }
   ]

@@ -119,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037898+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772319+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8f1ac0f5cab5eaf6",
-        "harmonized_at": "2026-03-27T11:38:30.440410+00:00",
+        "raw_data_hash": "sha256:61424df3e05f575d",
+        "harmonized_at": "2026-03-27T12:05:14.146584+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -142,7 +142,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-12-ctb-em-pessoa",
+      "id": "theatro-circo-2026-12-ctb-em-pessoa-29f1",
       "source_id": "ctb-em-pessoa-2",
       "source_url": "https://theatrocirco.com/event/ctb-em-pessoa-2/",
       "venue_id": "theatro-circo",
@@ -157,7 +157,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -254,22 +257,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:15.330610+00:00",
+        "scraped_at": "2026-03-27T12:08:17.937472+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:263301f0a94e91ec",
-        "harmonized_at": "2026-03-26T15:28:47.176151+00:00",
+        "raw_data_hash": "sha256:ec993f7934d8b3f8",
+        "harmonized_at": "2026-03-27T12:08:50.086393+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:15.330610+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709846+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-12-concerto-s-geraldo",
+      "id": "theatro-circo-2026-12-concerto-s-geraldo-213d",
       "source_id": "concerto-s-geraldo",
       "source_url": "https://theatrocirco.com/event/concerto-s-geraldo/",
       "venue_id": "theatro-circo",
@@ -284,7 +294,9 @@
       "domain": "outros",
       "category": "outros",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "sessao-unica"
+      ],
       "categories_raw": [],
       "dates": [
         {
@@ -377,17 +389,26 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:14.665784+00:00",
+        "scraped_at": "2026-03-27T12:08:17.287435+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9cf3f2cffd94d193",
-        "harmonized_at": "2026-03-26T15:28:47.176068+00:00",
+        "raw_data_hash": "sha256:906ac4d400b94f7f",
+        "harmonized_at": "2026-03-27T12:08:50.086302+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:14.665784+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709840+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "evento em dominio outros — verificar categories_raw",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.4
       }
     },
     {
@@ -508,10 +529,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037924+00:00",
+        "scraped_at": "2026-03-27T12:03:45.772345+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a3d129ccd450a18b",
-        "harmonized_at": "2026-03-27T11:38:30.440898+00:00",
+        "raw_data_hash": "sha256:2b54d38c1a0af6fa",
+        "harmonized_at": "2026-03-27T12:05:14.147096+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -531,9 +552,9 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-12-ctb-endgame-samuel-beckett",
-      "source_id": "ctb-endgame-samuel-beckett-3",
-      "source_url": "https://theatrocirco.com/event/ctb-endgame-samuel-beckett-3/",
+      "id": "theatro-circo-2026-12-ctb-endgame-samuel-beckett-6846",
+      "source_id": "ctb-endgame-samuel-beckett-4",
+      "source_url": "https://theatrocirco.com/event/ctb-endgame-samuel-beckett-4/",
       "venue_id": "theatro-circo",
       "space_id": null,
       "title": "CTB: Endgame - Samuel Beckett",
@@ -546,7 +567,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -559,13 +583,22 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-12-20",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-12-17",
-      "date_last": "2026-12-17",
-      "total_sessions": 1,
+      "date_last": "2026-12-20",
+      "total_sessions": 2,
       "is_ongoing": false,
-      "date_open": "2026-12-17",
+      "date_open": "2026-12-20",
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
@@ -643,17 +676,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:12.314784+00:00",
+        "scraped_at": "2026-03-27T12:08:14.695414+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:855f6bb7cf6bee39",
-        "harmonized_at": "2026-03-26T15:28:47.175772+00:00",
+        "raw_data_hash": "sha256:e96640090b0b8101",
+        "harmonized_at": "2026-03-27T12:08:50.085888+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:12.314784+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709834+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     }
   ]

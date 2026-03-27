@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-a-doce-vida",
+      "id": "theatro-circo-2026-09-a-doce-vida-0a1c",
       "source_id": "a-doce-vida",
       "source_url": "https://theatrocirco.com/event/a-doce-vida/",
       "venue_id": "theatro-circo",
@@ -19,7 +19,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -116,22 +119,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:10.323207+00:00",
+        "scraped_at": "2026-03-27T12:08:13.400500+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8d894d96993b74ea",
-        "harmonized_at": "2026-03-26T15:28:47.175466+00:00",
+        "raw_data_hash": "sha256:784ed995ab99d4a7",
+        "harmonized_at": "2026-03-27T12:08:50.085681+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:10.323207+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709829+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-violencia-e-paixao",
+      "id": "theatro-circo-2026-09-violencia-e-paixao-be97",
       "source_id": "violencia-e-paixao",
       "source_url": "https://theatrocirco.com/event/violencia-e-paixao/",
       "venue_id": "theatro-circo",
@@ -146,7 +156,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -243,22 +256,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:09.110427+00:00",
+        "scraped_at": "2026-03-27T12:08:12.107307+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e5a739f125e1c1f8",
-        "harmonized_at": "2026-03-26T15:28:47.175271+00:00",
+        "raw_data_hash": "sha256:09ce74ae35fab3ad",
+        "harmonized_at": "2026-03-27T12:08:50.085475+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:09.110427+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709822+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-braga-encena-o-diario-secreto-do-velho-t",
+      "id": "theatro-circo-2026-09-braga-encena-o-diario-secreto-do-velho-t-9ee7",
       "source_id": "braga-encena-o-diario-secreto-do-velho-teofilo",
       "source_url": "https://theatrocirco.com/event/braga-encena-o-diario-secreto-do-velho-teofilo/",
       "venue_id": "theatro-circo",
@@ -273,7 +293,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -370,22 +393,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:22.534549+00:00",
+        "scraped_at": "2026-03-27T12:08:25.076629+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:20efbb4a65605137",
-        "harmonized_at": "2026-03-26T15:28:47.177322+00:00",
+        "raw_data_hash": "sha256:09ec2f518199d6bb",
+        "harmonized_at": "2026-03-27T12:08:50.089144+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:22.534549+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709900+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-encontros-da-imagem",
+      "id": "theatro-circo-2026-09-encontros-da-imagem-0ce6",
       "source_id": "encontros-da-imagem",
       "source_url": "https://theatrocirco.com/event/encontros-da-imagem/",
       "venue_id": "theatro-circo",
@@ -400,7 +430,11 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "entrada-livre",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -497,22 +531,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:01.296423+00:00",
+        "scraped_at": "2026-03-27T12:08:04.982901+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6d5553dc29eb963d",
-        "harmonized_at": "2026-03-26T15:28:47.173984+00:00",
+        "raw_data_hash": "sha256:f1b49ffd45279344",
+        "harmonized_at": "2026-03-27T12:08:50.084210+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:01.296423+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709806+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-paraiso",
+      "id": "theatro-circo-2026-09-paraiso-322e",
       "source_id": "paraiso",
       "source_url": "https://theatrocirco.com/event/paraiso/",
       "venue_id": "theatro-circo",
@@ -527,7 +567,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "entrada-livre",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -624,22 +668,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:05.160424+00:00",
+        "scraped_at": "2026-03-27T12:08:08.237111+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3d8291c1ed8f6378",
-        "harmonized_at": "2026-03-26T15:28:47.174639+00:00",
+        "raw_data_hash": "sha256:34b18a2a66696de8",
+        "harmonized_at": "2026-03-27T12:08:50.084835+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:05.160424+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709814+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-braga-en-cena-a-narcisa",
+      "id": "theatro-circo-2026-09-braga-en-cena-a-narcisa-42b5",
       "source_id": "braga-en-cena-a-narcisa",
       "source_url": "https://theatrocirco.com/event/braga-en-cena-a-narcisa/",
       "venue_id": "theatro-circo",
@@ -654,7 +704,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -751,22 +804,27 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:27:59.294429+00:00",
+        "scraped_at": "2026-03-27T12:08:02.879883+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:645a9cc31aac0b5b",
-        "harmonized_at": "2026-03-26T15:28:47.173672+00:00",
+        "raw_data_hash": "sha256:057bff9a5b142e40",
+        "harmonized_at": "2026-03-27T12:08:50.083895+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:27:59.294429+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709800+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-ctb-justica-camilo-castelo-branco",
+      "id": "theatro-circo-2026-09-ctb-justica-camilo-castelo-branco-4de6",
       "source_id": "ctb-justica-camilo-castelo-branco-2",
       "source_url": "https://theatrocirco.com/event/ctb-justica-camilo-castelo-branco-2/",
       "venue_id": "theatro-circo",
@@ -781,7 +839,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -878,22 +939,29 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:21.979770+00:00",
+        "scraped_at": "2026-03-27T12:08:24.409049+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f2e588d85a48b4fb",
-        "harmonized_at": "2026-03-26T15:28:47.177212+00:00",
+        "raw_data_hash": "sha256:cf6870ede20e1c6c",
+        "harmonized_at": "2026-03-27T12:08:50.089026+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:21.979770+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709894+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-09-cinex-matthew-herbert-x-daniel-blaufuks-",
+      "id": "theatro-circo-2026-09-cinex-matthew-herbert-x-daniel-blaufuks--9d80",
       "source_id": "cinex-matthew-herbert-x-daniel-blaufuks-naquele-dia-em-lisboa",
       "source_url": "https://theatrocirco.com/event/cinex-matthew-herbert-x-daniel-blaufuks-naquele-dia-em-lisboa/",
       "venue_id": "theatro-circo",
@@ -908,7 +976,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -1005,17 +1076,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:28:20.650056+00:00",
+        "scraped_at": "2026-03-27T12:08:23.114985+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:75f36e6be962c124",
-        "harmonized_at": "2026-03-26T15:28:47.176973+00:00",
+        "raw_data_hash": "sha256:4e3f2cfce4bb81b6",
+        "harmonized_at": "2026-03-27T12:08:50.088757+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:20.650056+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709888+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     }
   ]

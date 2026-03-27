@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-valor-sentimental",
+      "id": "theatro-circo-2026-03-valor-sentimental-b61a",
       "source_id": "valor-sentimental",
       "source_url": "https://theatrocirco.com/event/valor-sentimental/",
       "venue_id": "theatro-circo",
@@ -19,7 +19,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -116,17 +119,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:45.556004+00:00",
+        "scraped_at": "2026-03-27T12:06:49.015045+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:451b7062911f574d",
-        "harmonized_at": "2026-03-26T15:28:47.161279+00:00",
+        "raw_data_hash": "sha256:82f7c9069ea8e302",
+        "harmonized_at": "2026-03-27T12:08:50.070962+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:45.556004+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709510+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -299,12 +309,14 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.6,
+        "last_seen_at": "2026-03-27T11:31:57.603575+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105459+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-romeu-julieta",
+      "id": "theatro-circo-2026-03-romeu-julieta-67c1",
       "source_id": "romeu-julieta-mar",
       "source_url": "https://theatrocirco.com/event/romeu-julieta-mar/",
       "venue_id": "theatro-circo",
@@ -319,7 +331,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -425,17 +439,23 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:46.840836+00:00",
+        "scraped_at": "2026-03-27T12:06:50.168487+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:98225c443b9e4a36",
-        "harmonized_at": "2026-03-26T15:28:47.161383+00:00",
+        "raw_data_hash": "sha256:9c7e3e650888879b",
+        "harmonized_at": "2026-03-27T12:08:50.071069+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:46.840836+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709516+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
@@ -559,7 +579,7 @@
         "scraped_at": "2026-03-27T11:24:41.900596+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:b4e7501aed4fdc9e",
-        "harmonized_at": "2026-03-27T11:38:31.301629+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.290103+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -715,10 +735,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.007436+00:00",
+        "scraped_at": "2026-03-27T12:03:45.742636+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7432f7b7604c9837",
-        "harmonized_at": "2026-03-27T11:38:30.071167+00:00",
+        "raw_data_hash": "sha256:53d2dbe975055202",
+        "harmonized_at": "2026-03-27T12:05:13.777761+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -854,7 +874,7 @@
         "scraped_at": "2026-03-27T11:00:20.758313+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ce5b973b581a3559",
-        "harmonized_at": "2026-03-27T11:38:30.975140+00:00",
+        "harmonized_at": "2026-03-27T12:05:19.963243+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -873,7 +893,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-contraponto-pierrot-lunaire-de-arnold-sc",
+      "id": "theatro-circo-2026-03-contraponto-pierrot-lunaire-de-arnold-sc-511c",
       "source_id": "pierrot-lunaire-arnold-schoenberg-ars-ad-hoc",
       "source_url": "https://theatrocirco.com/event/pierrot-lunaire-arnold-schoenberg-ars-ad-hoc/",
       "venue_id": "theatro-circo",
@@ -888,7 +908,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "legendas",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -985,22 +1009,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:47.508986+00:00",
+        "scraped_at": "2026-03-27T12:06:50.818414+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a82a3ec0bf80ee48",
-        "harmonized_at": "2026-03-26T15:28:47.161496+00:00",
+        "raw_data_hash": "sha256:8895d444e5b5e017",
+        "harmonized_at": "2026-03-27T12:08:50.071184+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:47.508986+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709521+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-a-voz-de-hind-rajab",
+      "id": "theatro-circo-2026-03-a-voz-de-hind-rajab-529c",
       "source_id": "a-voz-de-hind-rajab",
       "source_url": "https://theatrocirco.com/event/a-voz-de-hind-rajab/",
       "venue_id": "theatro-circo",
@@ -1015,7 +1045,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -1112,17 +1145,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:53.803069+00:00",
+        "scraped_at": "2026-03-27T12:06:56.963184+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3b62f55f6bb5d1b4",
-        "harmonized_at": "2026-03-26T15:28:47.162391+00:00",
+        "raw_data_hash": "sha256:c99c5fc4a57a7976",
+        "harmonized_at": "2026-03-27T12:08:50.072101+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:53.803069+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709563+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1243,7 +1283,7 @@
         "scraped_at": "2026-03-27T11:24:43.876099+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d1436c709f442f2d",
-        "harmonized_at": "2026-03-27T11:38:31.302065+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.290536+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1381,7 +1421,7 @@
         "scraped_at": "2026-03-27T11:24:45.788807+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:97b1c1ec465a2995",
-        "harmonized_at": "2026-03-27T11:38:31.302457+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.290959+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1398,7 +1438,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-lenda-de-miragayaum-teatro-de-fingir",
+      "id": "theatro-circo-2026-03-lenda-de-miragayaum-teatro-de-fingir-e511",
       "source_id": "lenda-de-miragaya-um-teatro-de-fingir",
       "source_url": "https://theatrocirco.com/event/lenda-de-miragaya-um-teatro-de-fingir/",
       "venue_id": "theatro-circo",
@@ -1413,7 +1453,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1537,22 +1579,27 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:42.110884+00:00",
+        "scraped_at": "2026-03-27T12:06:45.441163+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6fc93566c111d5bb",
-        "harmonized_at": "2026-03-26T15:28:47.161119+00:00",
+        "raw_data_hash": "sha256:396a35e4e4b82097",
+        "harmonized_at": "2026-03-27T12:08:50.070789+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:42.110884+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709504+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-batalha-atras-de-batalha-mar-2026",
+      "id": "theatro-circo-2026-03-batalha-atras-de-batalha-mar-2026-b379",
       "source_id": "batalha-atras-de-batalha-2026",
       "source_url": "https://theatrocirco.com/event/batalha-atras-de-batalha-2026/",
       "venue_id": "theatro-circo",
@@ -1567,7 +1614,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -1664,17 +1714,24 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:54.472151+00:00",
+        "scraped_at": "2026-03-27T12:06:57.611985+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4dad49e4f81d97ff",
-        "harmonized_at": "2026-03-26T15:28:47.162490+00:00",
+        "raw_data_hash": "sha256:7363a220deb8a9ae",
+        "harmonized_at": "2026-03-27T12:08:50.072206+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:54.472151+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709569+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -1812,7 +1869,7 @@
         "scraped_at": "2026-03-27T11:00:22.871279+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a8701821699fad",
-        "harmonized_at": "2026-03-27T11:38:30.975670+00:00",
+        "harmonized_at": "2026-03-27T12:05:19.963851+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1947,7 +2004,7 @@
         "scraped_at": "2026-03-27T11:24:47.775521+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:938386c6a7ddad32",
-        "harmonized_at": "2026-03-27T11:38:31.302912+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.291411+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1965,7 +2022,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-apresentacao-tres-tempos",
+      "id": "theatro-circo-2026-03-apresentacao-tres-tempos-010a",
       "source_id": "apresentacao-tres-tempos",
       "source_url": "https://theatrocirco.com/event/apresentacao-tres-tempos/",
       "venue_id": "theatro-circo",
@@ -1980,7 +2037,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -2075,22 +2135,30 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:31.071066+00:00",
+        "scraped_at": "2026-03-27T12:06:34.413467+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:17c3efa14351b5a5",
-        "harmonized_at": "2026-03-26T15:28:47.160762+00:00",
+        "raw_data_hash": "sha256:31b4d980c60a3744",
+        "harmonized_at": "2026-03-27T12:08:50.070432+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:31.071066+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709489+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.5
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-yerai-cortes",
+      "id": "theatro-circo-2026-03-yerai-cortes-85f0",
       "source_id": "yerai-cortes",
       "source_url": "https://theatrocirco.com/event/yerai-cortes/",
       "venue_id": "theatro-circo",
@@ -2105,7 +2173,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -2202,22 +2273,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:39.530280+00:00",
+        "scraped_at": "2026-03-27T12:06:43.036604+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6fa95c3079992e46",
-        "harmonized_at": "2026-03-26T15:28:47.160900+00:00",
+        "raw_data_hash": "sha256:d0b04981b5191d61",
+        "harmonized_at": "2026-03-27T12:08:50.070547+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:39.530280+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709498+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-maria-vitoria",
+      "id": "theatro-circo-2026-03-maria-vitoria-9c01",
       "source_id": "maria-vitoria",
       "source_url": "https://theatrocirco.com/event/maria-vitoria/",
       "venue_id": "theatro-circo",
@@ -2232,7 +2309,10 @@
       "domain": "cinema",
       "category": "cinema-ficcao",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "cinema",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Cinema"
       ],
@@ -2329,22 +2409,28 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T15:26:17.962336+00:00",
+        "scraped_at": "2026-03-27T12:06:19.999846+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0b138d9e2737a5c6",
-        "harmonized_at": "2026-03-26T15:28:47.149418+00:00",
+        "raw_data_hash": "sha256:d4aac19bd85190db",
+        "harmonized_at": "2026-03-27T12:08:50.070287+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T15:26:17.962336+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709482+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-la-guitarra-flamenca-de-yerai-cortes",
+      "id": "theatro-circo-2026-03-la-guitarra-flamenca-de-yerai-cortes-f3aa",
       "source_id": "la-guitarra-flamenca-de-yerai-cortes",
       "source_url": "https://theatrocirco.com/event/la-guitarra-flamenca-de-yerai-cortes/",
       "venue_id": "theatro-circo",
@@ -2359,7 +2445,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "legendas",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -2441,7 +2531,7 @@
         "genre_original": null
       },
       "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/uploads/2025/11/FOTOGRAMA_4_000000002028129.jpg",
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
         "cover_image_local": null,
         "thumbnail": null,
         "trailer_url": null,
@@ -2456,17 +2546,22 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-26T01:13:39.331862+00:00",
+        "scraped_at": "2026-03-27T12:06:18.137694+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0a3b41877fc3c4d2",
-        "harmonized_at": "2026-03-26T16:05:41.819882+00:00",
+        "raw_data_hash": "sha256:8a039da38dbdca41",
+        "harmonized_at": "2026-03-27T12:08:50.066518+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-26T01:13:39.331862+00:00",
-        "not_seen_since": "2026-03-27T11:38:31.709468+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.75
       }
     },
     {
@@ -2587,7 +2682,7 @@
         "scraped_at": "2026-03-27T11:24:49.796669+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d5e24a644293511b",
-        "harmonized_at": "2026-03-27T11:38:31.303215+00:00",
+        "harmonized_at": "2026-03-27T12:05:20.291748+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2730,7 +2825,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T01:17:59.297529+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493930+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205859+00:00"
       }
     },
     {
@@ -2862,7 +2957,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627152+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493978+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205908+00:00"
       }
     },
     {
@@ -3006,7 +3101,7 @@
         "scraped_at": "2026-03-27T10:59:24.082104+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:38188d39c9c512a9",
-        "harmonized_at": "2026-03-27T11:38:30.959619+00:00",
+        "harmonized_at": "2026-03-27T12:05:19.947509+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3154,7 +3249,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:31:58.355619+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105486+00:00"
       }
     },
     {
@@ -3302,10 +3399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.006525+00:00",
+        "scraped_at": "2026-03-27T12:03:45.741640+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a6bdffcdfa008031",
-        "harmonized_at": "2026-03-27T11:38:30.059241+00:00",
+        "raw_data_hash": "sha256:c10c2a909765fe75",
+        "harmonized_at": "2026-03-27T12:05:13.758807+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3455,10 +3552,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.006877+00:00",
+        "scraped_at": "2026-03-27T12:03:45.742006+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ec9fea0bd4ecb1ff",
-        "harmonized_at": "2026-03-27T11:38:30.065140+00:00",
+        "raw_data_hash": "sha256:6409cc6221d84c68",
+        "harmonized_at": "2026-03-27T12:05:13.771779+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3609,7 +3706,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:31:59.106776+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105497+00:00"
       }
     },
     {
@@ -3960,10 +4059,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:03.581002+00:00",
+        "scraped_at": "2026-03-27T12:09:03.633142+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:76b1c0e6d5847d71",
-        "harmonized_at": "2026-03-27T11:38:31.975968+00:00",
+        "raw_data_hash": "sha256:0d7ae797ca9a8a93",
+        "harmonized_at": "2026-03-27T12:09:24.265224+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4093,10 +4192,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.007582+00:00",
+        "scraped_at": "2026-03-27T12:03:45.742805+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1e9e73989c6f3cb0",
-        "harmonized_at": "2026-03-27T11:38:30.072561+00:00",
+        "raw_data_hash": "sha256:c164258495b224db",
+        "harmonized_at": "2026-03-27T12:05:13.779122+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4234,10 +4333,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.007740+00:00",
+        "scraped_at": "2026-03-27T12:03:45.742959+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0a768e48f3125213",
-        "harmonized_at": "2026-03-27T11:38:30.074755+00:00",
+        "raw_data_hash": "sha256:d9ae55c5285957dc",
+        "harmonized_at": "2026-03-27T12:05:13.781289+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4386,7 +4485,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627972+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493972+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205901+00:00"
       }
     },
     {
@@ -4516,7 +4615,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627986+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493983+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205915+00:00"
       }
     },
     {
@@ -4644,7 +4743,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627532+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493995+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205928+00:00"
       }
     },
     {
@@ -4772,7 +4871,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627599+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494000+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205934+00:00"
       }
     },
     {
@@ -4901,7 +5000,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627744+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494008+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205942+00:00"
       }
     },
     {
@@ -5032,7 +5131,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627822+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494016+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205949+00:00"
       }
     },
     {
@@ -5162,7 +5261,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627923+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494022+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205955+00:00"
       }
     },
     {
@@ -5298,7 +5397,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:32:01.271657+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105505+00:00"
       }
     },
     {
@@ -5441,7 +5542,9 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75
+        "quality_score": 0.75,
+        "last_seen_at": "2026-03-27T11:32:02.215126+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105512+00:00"
       }
     },
     {
@@ -5577,7 +5680,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.7,
+        "last_seen_at": "2026-03-27T11:32:03.160976+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105519+00:00"
       }
     },
     {
@@ -5810,10 +5915,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:05.638386+00:00",
+        "scraped_at": "2026-03-27T12:09:05.536066+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:84b20bd3218520d2",
-        "harmonized_at": "2026-03-27T11:38:31.977000+00:00",
+        "raw_data_hash": "sha256:5c956826d71396d7",
+        "harmonized_at": "2026-03-27T12:09:24.266247+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6032,10 +6137,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:07.638199+00:00",
+        "scraped_at": "2026-03-27T12:09:07.442682+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:949dc62b78b281b8",
-        "harmonized_at": "2026-03-27T11:38:31.977627+00:00",
+        "raw_data_hash": "sha256:cc33050aed9799ae",
+        "harmonized_at": "2026-03-27T12:09:24.266891+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6180,7 +6285,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628058+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493989+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205921+00:00"
       }
     },
     {
@@ -6311,7 +6416,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628202+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494028+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205962+00:00"
       }
     },
     {
@@ -6441,7 +6546,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628227+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494033+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205969+00:00"
       }
     },
     {
@@ -6570,7 +6675,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628254+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494039+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205975+00:00"
       }
     },
     {
@@ -6707,7 +6812,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628424+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494050+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205988+00:00"
       }
     },
     {
@@ -6844,7 +6949,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.6,
+        "last_seen_at": "2026-03-27T11:32:04.055241+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105525+00:00"
       }
     },
     {
@@ -6975,7 +7082,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:25:46.143210+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493944+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205870+00:00"
       }
     },
     {
@@ -7105,7 +7212,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628662+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493959+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205887+00:00"
       }
     },
     {
@@ -7237,7 +7344,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628715+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.493966+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205895+00:00"
       }
     },
     {
@@ -7368,7 +7475,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628499+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494045+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205981+00:00"
       }
     },
     {
@@ -7500,7 +7607,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628449+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494056+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.205995+00:00"
       }
     },
     {
@@ -7629,7 +7736,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628464+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494061+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206001+00:00"
       }
     },
     {
@@ -7759,7 +7866,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628483+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494069+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206007+00:00"
       }
     },
     {
@@ -7890,7 +7997,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628558+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494075+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206013+00:00"
       }
     },
     {
@@ -8023,7 +8130,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628571+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494081+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206020+00:00"
       }
     },
     {
@@ -8154,7 +8261,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628593+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494086+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206026+00:00"
       }
     },
     {
@@ -8285,7 +8392,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628611+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494097+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206033+00:00"
       }
     },
     {
@@ -8418,7 +8525,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628637+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494103+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206039+00:00"
       }
     },
     {
@@ -8549,7 +8656,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628785+00:00",
-        "not_seen_since": "2026-03-27T11:38:30.494109+00:00"
+        "not_seen_since": "2026-03-27T12:05:14.206046+00:00"
       }
     },
     {
@@ -8703,7 +8810,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.6,
+        "last_seen_at": "2026-03-27T11:33:29.908250+00:00",
+        "not_seen_since": "2026-03-27T12:08:50.105854+00:00"
       }
     }
   ]
