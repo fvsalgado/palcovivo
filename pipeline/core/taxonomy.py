@@ -599,19 +599,44 @@ ALIASES: dict[str, dict] = {**_ALIASES_HARDCODED, **_json_aliases}
 
 # ---------------------------------------------------------------------------
 # LOG DE TAGS DESCONHECIDAS
+# Buffer em memória — acumula durante o run, escreve uma única vez no fim
+# via flush_unknown_tags(). Evita milhares de escritas de disco por run.
 # ---------------------------------------------------------------------------
+
+# Buffer: {(tag, venue_id): {"first_seen": "YYYY-MM-DD", "count": N}}
+_unknown_tags_buffer: dict[tuple[str, str], dict] = {}
+
 
 def log_unknown_tag(tag: str, venue_id: str) -> None:
     """
-    Regista uma tag desconhecida em data/logs/unknown_tags.json.
-    Formato: {"tag": "...", "venue_id": "...", "first_seen": "YYYY-MM-DD", "count": N}
-    De-duplica por (tag, venue_id) — incrementa count se já existir.
+    Regista uma tag desconhecida no buffer em memória.
+    Não escreve em disco — chamar flush_unknown_tags() no fim do run.
     """
+    key = (tag, venue_id)
+    if key in _unknown_tags_buffer:
+        _unknown_tags_buffer[key]["count"] += 1
+    else:
+        _unknown_tags_buffer[key] = {
+            "first_seen": date.today().isoformat(),
+            "count": 1,
+        }
+
+
+def flush_unknown_tags() -> int:
+    """
+    Persiste o buffer de tags desconhecidas em data/logs/unknown_tags.json.
+    Faz merge com entradas já existentes no ficheiro (incrementa counts).
+    Retorna o número de tags distintas no buffer.
+    Deve ser chamada uma vez no fim de cada run de venue.
+    """
+    if not _unknown_tags_buffer:
+        return 0
+
     log_path = _UNKNOWN_TAGS_LOG
     try:
         log_path.parent.mkdir(parents=True, exist_ok=True)
 
-        # Ler registo existente
+        # Ler registo existente do disco
         entries: list[dict] = []
         if log_path.exists():
             try:
@@ -622,24 +647,42 @@ def log_unknown_tag(tag: str, venue_id: str) -> None:
             except Exception:
                 entries = []
 
-        today = date.today().isoformat()
+        # Indexar existentes por (tag, venue_id) para merge eficiente
+        index: dict[tuple[str, str], dict] = {
+            (e["tag"], e["venue_id"]): e
+            for e in entries
+            if "tag" in e and "venue_id" in e
+        }
 
-        # Procurar entrada existente
-        for entry in entries:
-            if entry.get("tag") == tag and entry.get("venue_id") == venue_id:
-                entry["count"] = entry.get("count", 1) + 1
-                break
-        else:
-            entries.append({"tag": tag, "venue_id": venue_id, "first_seen": today, "count": 1})
+        # Merge do buffer
+        for (tag, venue_id), buf in _unknown_tags_buffer.items():
+            key = (tag, venue_id)
+            if key in index:
+                index[key]["count"] = index[key].get("count", 0) + buf["count"]
+            else:
+                index[key] = {
+                    "tag": tag,
+                    "venue_id": venue_id,
+                    "first_seen": buf["first_seen"],
+                    "count": buf["count"],
+                }
 
-        # Guardar atomicamente
+        merged = sorted(index.values(), key=lambda e: (-e["count"], e["tag"]))
+
+        # Escrever atomicamente
         tmp_path = log_path.with_suffix(".tmp")
         with open(tmp_path, "w", encoding="utf-8") as _f:
-            json.dump(entries, _f, ensure_ascii=False, indent=2)
+            json.dump(merged, _f, ensure_ascii=False, indent=2)
         tmp_path.replace(log_path)
 
+        n = len(_unknown_tags_buffer)
+        _unknown_tags_buffer.clear()
+        _logger.info("taxonomy: %d tag(s) desconhecida(s) registadas em %s", n, log_path)
+        return n
+
     except Exception as _e:
-        _logger.warning("taxonomy: erro ao registar tag desconhecida %r — %s", tag, _e)
+        _logger.warning("taxonomy: erro ao fazer flush de tags desconhecidas — %s", _e)
+        return 0
 
 
 # ---------------------------------------------------------------------------
