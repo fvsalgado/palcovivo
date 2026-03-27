@@ -1,14 +1,12 @@
 """
-Primeira Plateia — Scrape de venue único v3
-Melhorias vs v2:
-  - ETag / Last-Modified: conditional requests → skip se 304
-  - Merge com score de credibilidade (novo só substitui se melhor)
-  - Tombstone: eventos desaparecidos marcados, não apagados imediatamente
-  - Cache por URL individual para scraping incremental eficiente
-  - Regressão guard: se novo scrape retorna 0 eventos e havia cache, usa cache
-  - Backup automático antes de cada write (30 por venue em data/backups/)
-  - Deduplicar por source_id: quando dois activos partilham source_id,
-    mantém o de maior credibility score e desactiva o outro
+Primeira Plateia — Scrape de venue único v4
+Melhorias vs v3:
+  - Lê configuração de pipeline/venues.config.json (frequência, timeout, flags, rate limiting)
+  - Rate limiting configurável: delay_between_requests_ms por venue
+  - Timeout por venue configurável
+  - prune_backups() substitui BACKUPS_MAX fixo (política 7d+1w+1m)
+  - Tombstone imediato para eventos passados há > 90 dias
+  - flags de scraping (two_pass, fetch_detail_html) passados ao scraper se suportado
 """
 
 import argparse
@@ -32,7 +30,29 @@ EVENTS_DIR = DATA_DIR / "events"
 LOGS_DIR    = DATA_DIR / "logs"
 BACKUPS_DIR = DATA_DIR / "backups"
 
-BACKUPS_MAX = 30  # máximo de backups por venue
+# Carregar registry de venues.config.json
+import time as _time
+
+_REGISTRY_PATH = Path(__file__).parent / "venues.config.json"
+
+def _load_registry() -> dict:
+    try:
+        with open(_REGISTRY_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {"venues": {}, "defaults": {}}
+
+def _venue_config(venue_id: str) -> dict:
+    """Devolve config do venue fundido com defaults."""
+    reg = _load_registry()
+    defaults = reg.get("defaults", {})
+    specific = reg.get("venues", {}).get(venue_id, {})
+    # Merge superficial: específico sobrepõe default
+    merged = {**defaults, **specific}
+    # Merge de sub-dicts
+    for key in ("rate_limit", "flags"):
+        merged[key] = {**defaults.get(key, {}), **specific.get(key, {})}
+    return merged
 
 from pipeline.core.harmonizer import harmonize_event
 from pipeline.core.validator  import validate_batch
@@ -41,6 +61,7 @@ from pipeline.core.cache      import (
     credibility_score, merge_event,
     mark_not_seen, should_tombstone,
     load_url_cache, save_url_cache, url_cache_unchanged,
+    prune_backups,
 )
 
 logging.basicConfig(
@@ -97,31 +118,25 @@ def _load_existing_events(venue_id: str) -> dict[str, dict]:
 def _backup_events(venue_id: str) -> None:
     """
     Copia o ficheiro de eventos actual para data/backups/{venue_id}/{timestamp}.json
-    antes de ser substituído. Mantém apenas os últimos BACKUPS_MAX ficheiros.
+    antes de ser substituído. Aplica política de retenção 7d+1w+1m via prune_backups().
     """
-    src = EVENTS_DIR / f"{venue_id}.json"
-    if not src.exists():
-        return  # nada a fazer no primeiro run
+    event_src = EVENTS_DIR / f"{venue_id}.json"
+    if not event_src.exists():
+        return
     backup_dir = BACKUPS_DIR / venue_id
     backup_dir.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     dst = backup_dir / f"{ts}.json"
     try:
-        dst.write_bytes(src.read_bytes())
+        dst.write_bytes(event_src.read_bytes())
         logger.info(f"{venue_id}: backup guardado em {dst.name}")
     except Exception as e:
         logger.warning(f"{venue_id}: erro ao criar backup — {e}")
         return
-    # Limpar backups antigos: manter só os últimos BACKUPS_MAX
-    backups = sorted(backup_dir.glob("*.json"))
-    excess = len(backups) - BACKUPS_MAX
-    if excess > 0:
-        for old in backups[:excess]:
-            try:
-                old.unlink()
-            except Exception:
-                pass
-        logger.info(f"{venue_id}: {excess} backup(s) antigo(s) removido(s)")
+    # Política de retenção: 7 diários + 1 semanal + 1 mensal
+    result = prune_backups(backup_dir)
+    if result["deleted"] > 0:
+        logger.info(f"{venue_id}: {result['deleted']} backup(s) antigo(s) removido(s) (mantidos: {result['kept']})")
 
 
 def _dedup_by_source_id(events: list, venue_id: str) -> tuple[list, int]:
@@ -240,6 +255,12 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
 
     ensure_venue_file(venue_id)
 
+    # Carregar config do venue (frequência, timeout, flags, rate limiting)
+    vcfg        = _venue_config(venue_id)
+    rate_delay  = vcfg.get("rate_limit", {}).get("delay_between_requests_ms", 500) / 1000.0
+    timeout_s   = vcfg.get("timeout_seconds", 60)
+    scraper_flags = vcfg.get("flags", {})
+
     venue_path = VENUES_DIR / f"{venue_id}.json"
     with open(venue_path, encoding="utf-8") as f:
         venue = json.load(f)
@@ -274,7 +295,19 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
             except Exception:
                 pass
 
-            raw = mod.run(known_ids=known_ids) if known_ids is not None else mod.run()
+            # Passar flags e rate_delay ao scraper se suportado
+            _run_kwargs = {}
+            try:
+                _sig = inspect.signature(mod.run)
+                if "known_ids"    in _sig.parameters and known_ids is not None:
+                    _run_kwargs["known_ids"]    = known_ids
+                if "rate_delay"   in _sig.parameters:
+                    _run_kwargs["rate_delay"]   = rate_delay
+                if "scraper_flags" in _sig.parameters:
+                    _run_kwargs["scraper_flags"] = scraper_flags
+            except Exception:
+                pass
+            raw = mod.run(**_run_kwargs)
             logger.info(f"{venue_id}: {len(raw)} eventos raw recolhidos")
 
             # Em modo incremental, fundir novos com cache (não perder eventos saltados)
