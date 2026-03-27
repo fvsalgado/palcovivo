@@ -180,6 +180,15 @@ def validate_event(event: dict) -> tuple[bool, list[str], list[str]]:
     if event_id and not re.match(r"^[a-z0-9-]+$", event_id):
         errors.append(f"id com caracteres invalidos: '{event_id[:60]}'")
 
+    date_first = event.get("date_first")
+    date_last  = event.get("date_last")
+    if date_first and date_last and date_first > date_last:
+        errors.append(f"date_first ({date_first}) > date_last ({date_last})")
+
+    total_sessions = len(event.get("dates") or [])
+    if total_sessions > 500:
+        errors.append(f"total_sessions improvavel ({total_sessions}) — possivel bug no scraper")
+
     for _field, check_fn, msg in QUALITY_ALERTS:
         if not check_fn(event):
             warnings.append(msg)
