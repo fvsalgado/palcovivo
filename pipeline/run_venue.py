@@ -64,6 +64,7 @@ from pipeline.core.cache      import (
     load_url_cache, save_url_cache, url_cache_unchanged,
     prune_backups,
 )
+from pipeline.core.taxonomy import flush_unknown_tags
 
 logging.basicConfig(
     level=logging.INFO,
@@ -419,6 +420,11 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
         avg_score = round(sum(credibility_score(e) for e in active_events) / len(active_events), 3)
         report["avg_credibility_score"] = avg_score
         logger.info(f"{venue_id}: score médio de credibilidade = {avg_score:.2f}")
+
+    # Persistir tags desconhecidas acumuladas durante este run
+    n_unknown = flush_unknown_tags()
+    if n_unknown:
+        report["unknown_tags_flushed"] = n_unknown
 
     return report
 
