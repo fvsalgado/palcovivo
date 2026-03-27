@@ -250,6 +250,9 @@ def write_fragments(master: dict) -> None:
 
     files_written = 0
     for month, ids in sorted(by_month_index.items()):
+        missing = [eid for eid in ids if eid not in events_by_id]
+        if missing:
+            logger.warning(f"write_fragments: {len(missing)} evento(s) no índice by_month/{month} mas ausentes de events — possível inconsistência")
         month_events = [events_by_id[eid] for eid in ids if eid in events_by_id]
         month_doc = {
             "month":  month,

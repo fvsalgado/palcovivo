@@ -590,7 +590,11 @@ _ALIASES_HARDCODED: dict[str, dict] = {
 # Carregar do JSON; se falhar, usar dict hardcoded
 # Merge: hardcoded é a base completa; JSON pode adicionar aliases de novos venues
 # sem tocar no código Python. Resultado: todos os aliases hardcoded + overrides do JSON.
-ALIASES: dict[str, dict] = {**_ALIASES_HARDCODED, **(_load_aliases_from_json() or {})}
+_json_aliases = _load_aliases_from_json() or {}
+for _k in _json_aliases:
+    if _k in _ALIASES_HARDCODED:
+        _logger.debug("taxonomy: JSON sobrepõe alias hardcoded: %r", _k)
+ALIASES: dict[str, dict] = {**_ALIASES_HARDCODED, **_json_aliases}
 
 
 # ---------------------------------------------------------------------------

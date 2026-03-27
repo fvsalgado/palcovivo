@@ -454,8 +454,6 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     is_festival, festival_name = detect_festival(title, description)
     if not series_name:
         series_name = extra_flags.pop("series_name", None)
-    if extra_flags.get("series_name"):
-        series_name = extra_flags.pop("series_name")
 
     # Público
     raw_audience = raw_event.get("audience", "")

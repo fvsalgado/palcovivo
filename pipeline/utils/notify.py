@@ -86,8 +86,8 @@ def _alert_venues(venues: list[dict], venue_quality: dict, cb: dict, prev_counts
         name   = v.get("venue_name", vid)
         reasons: list[str] = []
 
-        # Circuit breaker failures
-        failures = (cb.get(vid) or {}).get("consecutive_failures", 0)
+        # Circuit breaker failures (campo "failures" conforme circuit_breaker.py)
+        failures = (cb.get(vid) or {}).get("failures", 0)
         if failures >= 3:
             reasons.append(f"{failures} falhas consecutivas")
 
@@ -172,8 +172,8 @@ def build_email_html(report: dict) -> str:
         dc       = "#2A9D8F" if delta.startswith("+") else "#E63946" if delta.startswith("-") else "#888"
         delta_cell = f'<span style="color:{dc};font-weight:600;">{delta}</span>'
 
-        # Consecutive failures
-        failures      = (cb.get(vid) or {}).get("consecutive_failures", 0)
+        # Consecutive failures (campo "failures" conforme circuit_breaker.py)
+        failures      = (cb.get(vid) or {}).get("failures", 0)
         failures_cell = (
             f'<span style="color:#E63946;font-weight:600;">{failures}</span>'
             if failures >= 3
