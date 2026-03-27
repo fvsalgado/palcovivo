@@ -207,6 +207,14 @@ jobs:
           print(f"Tem reset: {batch_has_reset} ({reset_venues})")
           EOF
 
+      - name: Restaurar estado do circuit breaker
+        uses: actions/cache@v4
+        with:
+          path: data/cache/circuit_breaker.json
+          key: circuit-breaker-${{ github.run_id }}
+          restore-keys: |
+            circuit-breaker-
+
       - name: Restaurar cache HTTP do batch
         uses: actions/cache@v4
         with:
@@ -284,6 +292,13 @@ jobs:
           print("Batch completo.")
           EOF
 
+      - name: Guardar estado do circuit breaker
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: data/cache/circuit_breaker.json
+          key: circuit-breaker-${{ github.run_id }}
+
       - name: Upload artefacto do batch
         uses: actions/upload-artifact@v4
         if: always()
@@ -296,7 +311,7 @@ jobs:
             data/backups/
             data/cache/
           if-no-files-found: warn
-          retention-days: 1
+          retention-days: 3
 
   # ─────────────────────────────────────────────────────────────────────────
   # JOB 2b — Skip gracioso quando não há venues
