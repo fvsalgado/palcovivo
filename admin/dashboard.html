@@ -4,1524 +4,1678 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Primeira Plateia — Dashboard</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #f2f0eb;
-  --s1: #ffffff;
-  --s2: #f7f6f2;
-  --s3: #eceae3;
-  --border: #e0ddd5;
-  --border2: #ccc9c0;
-  --text: #1c1b20;
-  --text2: #5a5870;
-  --muted: #9896a8;
-  --dim: #e8e6df;
-  --green: #0f8f60;
-  --yellow: #b87800;
-  --red: #cc2a38;
-  --blue: #2255cc;
-  --purple: #6633cc;
-  --orange: #c45010;
-  --teal: #0a8880;
-  --mono: 'DM Mono', monospace;
-  --serif: 'Instrument Serif', Georgia, serif;
-  --grid-gap: 12px;
-}
+/* ── Reset & Root ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+
+:root {
+  --bg:        #0d0d1a;
+  --surface:   #131325;
+  --surface2:  #1a1a30;
+  --border:    #252540;
+  --border2:   #2e2e50;
+  --accent:    #3B82F6;
+  --accent-dim:#1d4ed8;
+  --green:     #10B981;
+  --amber:     #F59E0B;
+  --red:       #EF4444;
+  --text:      #e8e8f4;
+  --muted:     #6b7280;
+  --muted2:    #9ca3af;
+  --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html, body { height: 100%; }
+
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--mono);
-  font-size: 12px;
+  font-family: var(--font);
+  font-size: 14px;
   line-height: 1.5;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-a { color: var(--blue); text-decoration: none; }
-a:hover { text-decoration: underline; }
-::selection { background: rgba(102,153,255,.25); }
-::-webkit-scrollbar { width: 5px; height: 5px; }
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 
-/* Loading */
-#loading {
-  position: fixed; inset: 0; background: var(--bg);
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  z-index: 9999; gap: 16px;
-}
-.spin {
-  width: 32px; height: 32px;
-  border: 1.5px solid var(--border2); border-top-color: var(--blue);
-  border-radius: 50%; animation: spin .7s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-.load-text { font-size: 11px; color: var(--muted); letter-spacing: .5px; }
-
-/* Header */
-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 14px 24px;
+/* ── Topbar ────────────────────────────────────────────────── */
+#topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 52px;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
-  position: sticky; top: 0;
-  background: rgba(242,240,235,.95); backdrop-filter: blur(16px);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
   z-index: 100;
 }
-.logo { display: flex; align-items: baseline; gap: 8px; }
-.logo-name {
-  font-family: var(--serif); font-size: 16px; font-weight: 400;
-  letter-spacing: -.2px;
+
+#topbar-left { display: flex; align-items: center; gap: 12px; }
+#topbar-logo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -.3px;
 }
-.logo-name em { font-style: italic; color: var(--text2); }
-.logo-tag {
-  font-size: 10px; color: var(--muted); text-transform: uppercase;
-  letter-spacing: 1px; border-left: 1px solid var(--border2); padding-left: 8px;
+#topbar-logo span { color: var(--accent); }
+#topbar-sub {
+  font-size: 11px;
+  color: var(--muted);
+  padding: 3px 8px;
+  background: rgba(59,130,246,.1);
+  border-radius: 4px;
+  border: 1px solid rgba(59,130,246,.2);
 }
-.hdr-right { display: flex; align-items: center; gap: 10px; }
-.run-badge {
+
+#topbar-right { display: flex; align-items: center; gap: 12px; }
+#last-updated { font-size: 11px; color: var(--muted); }
+#refresh-btn {
   display: flex; align-items: center; gap: 6px;
-  background: var(--s2); border: 1px solid var(--border);
-  border-radius: 20px; padding: 4px 10px;
-  font-size: 10px; color: var(--muted);
+  padding: 6px 12px;
+  background: rgba(59,130,246,.12);
+  border: 1px solid rgba(59,130,246,.3);
+  border-radius: 6px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s;
 }
-.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--muted); flex-shrink: 0; }
-.dot.live { background: var(--green); box-shadow: 0 0 6px rgba(15,143,96,.45); animation: pulse 2.5s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
-.btn {
-  display: inline-flex; align-items: center; gap: 5px;
-  background: var(--s2); border: 1px solid var(--border);
-  border-radius: 4px; padding: 5px 11px;
-  font-family: var(--mono); font-size: 11px; cursor: pointer;
-  color: var(--text2); transition: .12s;
-}
-.btn:hover { border-color: var(--blue); color: var(--blue); background: rgba(34,85,204,.06); }
+#refresh-btn:hover { background: rgba(59,130,246,.22); }
+#refresh-btn.spinning svg { animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-/* Tabs */
-.tabs {
-  display: flex; border-bottom: 1px solid var(--border);
-  background: var(--s1); padding: 0 24px; overflow-x: auto; gap: 0;
-}
-.tab {
-  padding: 11px 16px; font-size: 10px; color: var(--muted);
-  cursor: pointer; border-bottom: 2px solid transparent;
-  white-space: nowrap; text-transform: uppercase; letter-spacing: .8px;
-  transition: .12s; background: none; border-top: none; border-left: none; border-right: none;
-  font-family: var(--mono);
-}
-.tab:hover { color: var(--text2); }
-.tab.on { color: var(--text); border-bottom-color: var(--blue); }
-.tab-badge {
-  display: inline-block; background: var(--s3); border-radius: 10px;
-  padding: 1px 6px; font-size: 9px; color: var(--muted); margin-left: 4px; vertical-align: middle;
+/* ── App Layout ────────────────────────────────────────────── */
+#app {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
 }
 
-/* Layout */
-main { padding: 20px 24px; max-width: 1600px; margin: 0 auto; }
-.sec { display: none; }
-.sec.on { display: block; animation: fadeIn .2s ease; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-
-/* Grid layouts */
-.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); margin-bottom: var(--grid-gap); }
-.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--grid-gap); margin-bottom: var(--grid-gap); }
-.g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: var(--grid-gap); margin-bottom: var(--grid-gap); }
-.g5 { display: grid; grid-template-columns: repeat(5,1fr); gap: var(--grid-gap); margin-bottom: var(--grid-gap); }
-@media(max-width:1100px) { .g4{grid-template-columns:repeat(2,1fr)} .g5{grid-template-columns:repeat(3,1fr)} }
-@media(max-width:800px) { .g2,.g3{grid-template-columns:1fr} .g5{grid-template-columns:repeat(2,1fr)} }
-
-/* KPI */
-.kpi {
-  background: var(--s1); border: 1px solid var(--border);
-  border-radius: 6px; padding: 16px 18px; position: relative; overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+/* ── Sidebar ───────────────────────────────────────────────── */
+#sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
-.kpi::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-  background: var(--kcolor, var(--border2));
-}
-.kval { font-family: var(--serif); font-size: 38px; line-height: 1; margin-bottom: 4px; color: var(--kcolor, var(--text)); }
-.klabel { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; }
-.ksub { font-size: 10px; color: var(--muted); margin-top: 3px; }
-.kpi-sm .kval { font-size: 26px; }
 
-/* Card */
+#sidebar-nav { padding: 12px 0; flex: 1; }
+
+.nav-section-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 8px 20px 4px;
+  margin-top: 4px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 20px;
+  color: var(--muted2);
+  text-decoration: none;
+  font-size: 13px;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  transition: all .12s;
+  user-select: none;
+}
+.nav-item:hover {
+  color: var(--text);
+  background: rgba(255,255,255,.035);
+}
+.nav-item.active {
+  color: var(--text);
+  background: rgba(59,130,246,.08);
+  border-left-color: var(--accent);
+}
+.nav-item .nav-icon { font-size: 14px; width: 18px; text-align: center; flex-shrink: 0; }
+.nav-item .nav-badge {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(239,68,68,.2);
+  color: var(--red);
+}
+
+#sidebar-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+}
+#sidebar-footer a { color: var(--accent); text-decoration: none; }
+#sidebar-footer a:hover { text-decoration: underline; }
+
+/* ── Main Content ──────────────────────────────────────────── */
+#main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 32px;
+}
+
+/* ── Sections ──────────────────────────────────────────────── */
+.section { display: none; }
+.section.active { display: block; }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.section-title { font-size: 20px; font-weight: 700; }
+.section-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+/* ── KPI Row ───────────────────────────────────────────────── */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color .15s;
+}
+.kpi-card:hover { border-color: var(--border2); }
+.kpi-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.kpi-value {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+}
+.kpi-sub { font-size: 11px; color: var(--muted); }
+.kpi-card.kpi-danger { border-color: rgba(239,68,68,.4); background: rgba(239,68,68,.04); }
+.kpi-card.kpi-danger .kpi-value { color: var(--red); }
+
+/* ── Status Grid ───────────────────────────────────────────── */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+/* ── Cards ─────────────────────────────────────────────────── */
 .card {
-  background: var(--s1); border: 1px solid var(--border);
-  border-radius: 6px; padding: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,.04);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
 }
-.card-mb { margin-bottom: var(--grid-gap); }
-.ctitle {
-  font-family: var(--serif); font-size: 14px; font-weight: 400;
-  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
+.card + .card { margin-top: 14px; }
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
-.ctitle-right { margin-left: auto; font-family: var(--mono); font-size: 10px; color: var(--muted); font-style: normal; }
+.card-title { font-size: 14px; font-weight: 700; }
+.card-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
 
-/* Bar chart */
-.brow { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; }
-.brow:last-child { margin-bottom: 0; }
-.blabel { min-width: 130px; font-size: 11px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text2); }
-.btrack { flex: 1; height: 4px; background: var(--border2); border-radius: 2px; overflow: hidden; }
-.bfill { height: 100%; border-radius: 2px; transition: width .4s ease; }
-.bcount { min-width: 32px; text-align: right; font-size: 10px; color: var(--muted); }
+/* ── Status Venue Card (Overview) ──────────────────────────── */
+.venue-status-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.venue-status-card:hover { border-color: var(--border2); }
 
-/* Mini sparkline-like month chart */
-.month-chart { display: flex; align-items: flex-end; gap: 3px; height: 40px; }
-.mcol { flex: 1; background: var(--border2); border-radius: 2px 2px 0 0; transition: .2s; cursor: default; min-width: 4px; position: relative; }
-.mcol:hover { opacity: .8; }
-.mcol-tip {
-  display: none; position: absolute; bottom: calc(100% + 4px); left: 50%;
-  transform: translateX(-50%); background: var(--s1); border: 1px solid var(--border);
-  border-radius: 3px; padding: 3px 7px; font-size: 10px; white-space: nowrap; z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,.1);
+.venue-status-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-.mcol:hover .mcol-tip { display: block; }
+.venue-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.venue-dot.ok { background: var(--green); box-shadow: 0 0 6px var(--green); }
+.venue-dot.warning { background: var(--amber); box-shadow: 0 0 6px var(--amber); }
+.venue-dot.error { background: var(--red); box-shadow: 0 0 6px var(--red); }
 
-/* Venue cards grid */
-.vcards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: var(--grid-gap); margin-bottom: var(--grid-gap); }
-.vcard {
-  background: var(--s1); border: 1px solid var(--border);
-  border-radius: 6px; padding: 15px; cursor: pointer; transition: .15s;
-  position: relative; overflow: hidden;
-}
-.vcard::after {
-  content: ''; position: absolute; inset: 0; opacity: 0;
-  background: linear-gradient(135deg, rgba(34,85,204,.04), transparent);
-  transition: .15s;
-}
-.vcard:hover, .vcard.on { border-color: var(--blue); }
-.vcard:hover::after, .vcard.on::after { opacity: 1; }
-.vcard-head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
-.vcard-name { font-family: var(--serif); font-size: 15px; font-style: italic; }
-.vcard-id { font-size: 9px; color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: .5px; }
-.vcard-count { font-family: var(--serif); font-size: 30px; color: var(--blue); line-height: 1; }
-.vcard-meta { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
-.vmchip {
-  font-size: 9px; background: var(--s3); border: 1px solid var(--border2);
-  border-radius: 10px; padding: 2px 7px; color: var(--text2);
-}
-.vmchip.ok { border-color: rgba(52,217,160,.25); color: var(--green); background: rgba(15,143,96,.07); }
-.vmchip.warn { border-color: rgba(184,120,0,.2); color: var(--yellow); background: rgba(240,184,64,.06); }
-.vmchip.bad { border-color: rgba(240,85,101,.25); color: var(--red); background: rgba(240,85,101,.06); }
+.venue-status-name { font-weight: 600; font-size: 13px; }
 
-/* Table */
-.twrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 11px; }
-th {
-  text-align: left; padding: 7px 10px; color: var(--muted);
-  font-size: 9px; text-transform: uppercase; letter-spacing: .7px;
-  border-bottom: 1px solid var(--border2); white-space: nowrap;
-  cursor: pointer; user-select: none; background: none; font-family: var(--mono);
-  transition: .1s;
+.venue-status-cb {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  margin-left: auto;
 }
-th:hover { color: var(--text2); }
-th.sorted { color: var(--blue); }
-th.sorted::after { content: ' ↕'; font-size: 8px; }
-td { padding: 8px 10px; border-bottom: 1px solid rgba(0,0,0,.03); vertical-align: middle; }
-td.tlong { max-width: 240px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-tr:hover td { background: rgba(0,0,0,.025); }
-tr:last-child td { border-bottom: none; }
-.tfoot { padding: 8px 10px; font-size: 10px; color: var(--muted); border-top: 1px solid var(--border2); }
+.cb-ok { background: rgba(16,185,129,.15); color: var(--green); }
+.cb-warning { background: rgba(245,158,11,.15); color: var(--amber); }
+.cb-suspended { background: rgba(239,68,68,.15); color: var(--red); }
 
-/* Badges */
-.badge { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; }
-.bdim { background: rgba(0,0,0,.05); color: var(--muted); }
-.bok { background: rgba(15,143,96,.11); color: var(--green); }
-.bwarn { background: rgba(184,120,0,.1); color: var(--yellow); }
-.bmiss { background: rgba(204,42,56,.1); color: var(--red); }
-.bblue { background: rgba(34,85,204,.1); color: var(--blue); }
-.bpurple { background: rgba(102,51,204,.1); color: var(--purple); }
+.venue-status-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.venue-status-stats strong { color: var(--text); }
 
-/* Filters bar */
-.fbar {
-  display: flex; align-items: center; gap: 8px; margin-bottom: 12px;
-  flex-wrap: wrap; padding: 10px; background: var(--s1);
-  border: 1px solid var(--border); border-radius: 6px;
+.cred-bar-wrapper { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.cred-bar-label { color: var(--muted); width: 80px; flex-shrink: 0; }
+.cred-bar-track {
+  flex: 1;
+  height: 5px;
+  background: rgba(255,255,255,.08);
+  border-radius: 3px;
+  overflow: hidden;
 }
-.sinput {
-  background: var(--s2); border: 1px solid var(--border); border-radius: 4px;
-  padding: 6px 11px; font-family: var(--mono); font-size: 11px; color: var(--text);
-  outline: none; width: 240px; transition: .12s;
+.cred-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width .4s ease;
 }
-.sinput:focus { border-color: var(--blue); }
-.sinput::placeholder { color: var(--muted); }
-.fsel {
-  background: var(--s2); border: 1px solid var(--border); border-radius: 4px;
-  padding: 6px 10px; font-family: var(--mono); font-size: 11px; color: var(--text2);
-  outline: none; cursor: pointer;
-}
-.fsel:focus { border-color: var(--blue); }
-.fbtn {
-  background: var(--s2); border: 1px solid var(--border); border-radius: 3px;
-  padding: 4px 9px; font-family: var(--mono); font-size: 10px; color: var(--muted);
-  cursor: pointer; transition: .1s; white-space: nowrap;
-}
-.fbtn:hover { color: var(--text2); border-color: var(--border2); }
-.fbtn.on { background: rgba(204,42,56,.08); border-color: rgba(204,42,56,.35); color: var(--red); }
-.fbtn.on-b { background: rgba(34,85,204,.08); border-color: rgba(34,85,204,.4); color: var(--blue); }
-.fcount { font-size: 10px; color: var(--muted); margin-left: auto; }
-.fdiv { width: 1px; height: 16px; background: var(--border2); }
+.cred-bar-pct { color: var(--muted2); min-width: 32px; text-align: right; }
 
-/* Venue selector pills */
-.vpills { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
-.vpill {
-  background: var(--s2); border: 1px solid var(--border); border-radius: 20px;
-  padding: 4px 12px; font-family: var(--mono); font-size: 11px; color: var(--muted);
-  cursor: pointer; transition: .12s;
+/* ── Venue Deep-Dive Cards ─────────────────────────────────── */
+.venue-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 14px;
+  overflow: hidden;
 }
-.vpill:hover { color: var(--text2); border-color: var(--border2); }
-.vpill.on { background: rgba(34,85,204,.08); border-color: rgba(34,85,204,.4); color: var(--blue); }
 
-/* Detail panel */
-.dpanel {
-  background: var(--s1); border: 1px solid var(--border);
-  border-radius: 6px; margin-top: 12px; display: none; overflow: hidden;
+.venue-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background .12s;
 }
-.dpanel.on { display: block; animation: fadeIn .15s ease; }
-.dpanel-head {
-  display: flex; align-items: flex-start; gap: 14px; padding: 16px;
+.venue-card-header:hover { background: rgba(255,255,255,.02); }
+
+.venue-card-title { font-size: 15px; font-weight: 700; flex: 1; }
+.venue-card-meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+
+.expand-chevron {
+  font-size: 12px;
+  color: var(--muted);
+  transition: transform .2s;
+}
+.venue-card.expanded .expand-chevron { transform: rotate(180deg); }
+
+.venue-card-body {
+  display: none;
+  padding: 0 20px 20px;
+  border-top: 1px solid var(--border);
+}
+.venue-card.expanded .venue-card-body { display: block; }
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.stat-box {
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 12px;
+  text-align: center;
+}
+.stat-box-val { font-size: 22px; font-weight: 700; }
+.stat-box-lbl { font-size: 10px; color: var(--muted); margin-top: 2px; text-transform: uppercase; letter-spacing: .04em; }
+
+.quality-bars { margin-bottom: 16px; }
+.quality-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+.quality-bar-label { width: 130px; flex-shrink: 0; color: var(--muted2); }
+.quality-bar-track {
+  flex: 1;
+  height: 7px;
+  background: rgba(255,255,255,.07);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.quality-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width .5s ease;
+}
+.quality-bar-fill.good { background: var(--green); }
+.quality-bar-fill.ok { background: var(--amber); }
+.quality-bar-fill.bad { background: var(--red); }
+.quality-bar-pct { width: 40px; text-align: right; color: var(--muted2); font-size: 11px; }
+
+.cb-panel {
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+.cb-panel-item { display: flex; flex-direction: column; gap: 2px; }
+.cb-panel-key { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.cb-panel-val { font-weight: 600; }
+
+.flags-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.flag-chip {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  background: rgba(59,130,246,.12);
+  color: var(--accent);
+  border: 1px solid rgba(59,130,246,.2);
+}
+.flag-chip.off {
+  background: rgba(255,255,255,.04);
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+.errors-list { margin-top: 8px; }
+.error-item {
+  font-size: 11px;
+  color: var(--red);
+  background: rgba(239,68,68,.07);
+  border: 1px solid rgba(239,68,68,.2);
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  font-family: monospace;
+}
+
+/* ── Badges ────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.badge-green  { background: rgba(16,185,129,.15); color: var(--green); }
+.badge-amber  { background: rgba(245,158,11,.15);  color: var(--amber); }
+.badge-red    { background: rgba(239,68,68,.15);   color: var(--red); }
+.badge-blue   { background: rgba(59,130,246,.15);  color: var(--accent); }
+.badge-gray   { background: rgba(255,255,255,.07); color: var(--muted2); }
+
+/* ── Tables ────────────────────────────────────────────────── */
+.table-wrap { overflow-x: auto; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+thead th {
+  text-align: left;
+  padding: 8px 12px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(135deg, var(--s2), var(--s1));
+  white-space: nowrap;
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.dimg-wrap { width: 100px; height: 70px; flex-shrink: 0; border-radius: 4px; overflow: hidden; }
-.dimg-wrap img { width: 100%; height: 100%; object-fit: cover; }
-.dph { width: 100px; height: 70px; background: var(--s3); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
-.dtitle { font-family: var(--serif); font-size: 18px; font-style: italic; margin-bottom: 3px; line-height: 1.2; }
-.dsubtitle { font-size: 11px; color: var(--text2); margin-bottom: 6px; }
-.dmeta-chips { display: flex; gap: 5px; flex-wrap: wrap; }
-.dclose { margin-left: auto; background: none; border: none; color: var(--muted); cursor: pointer; font-size: 16px; padding: 2px 5px; line-height: 1; flex-shrink: 0; }
-.dclose:hover { color: var(--red); }
-.dpanel-body { padding: 14px 16px; }
-.dgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap: 7px; }
-.dfield { background: var(--s2); border: 1px solid var(--border); border-radius: 4px; padding: 9px 10px; }
-.dflabel { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 3px; }
-.dfval { font-size: 11px; word-break: break-word; color: var(--text); }
-.dfull { grid-column: 1/-1; }
-.dsessions { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
-.dsess {
-  background: var(--s3); border: 1px solid var(--border2); border-radius: 4px;
-  padding: 6px 10px; font-size: 10px; display: flex; flex-direction: column; gap: 1px;
+tbody tr { transition: background .1s; }
+tbody tr:hover { background: rgba(255,255,255,.025); }
+tbody td {
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  vertical-align: middle;
 }
-.dsess.sold-out { border-color: rgba(204,42,56,.25); }
-.dsess.cancelled { opacity: .4; text-decoration: line-through; }
-.dsess-date { color: var(--text); font-weight: 500; }
-.dsess-time { color: var(--text2); }
-.dsess-flag { font-size: 9px; color: var(--red); }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr.expandable { cursor: pointer; }
 
-/* Accessibility pills */
-.a11y { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 8px; }
-.a11y-pill {
-  font-size: 9px; border-radius: 10px; padding: 2px 8px;
-  background: rgba(15,143,96,.09); border: 1px solid rgba(15,143,96,.18); color: var(--green);
+.log-row-expanded { background: rgba(59,130,246,.04); }
+.log-detail-row td {
+  padding: 0;
+  border-bottom: 1px solid var(--border);
 }
-
-/* Quality rows */
-.qrow { display: flex; align-items: center; gap: 8px; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.04); }
-.qrow:last-child { border-bottom: none; }
-.qname { min-width: 120px; font-size: 11px; color: var(--text2); }
-.qbar { flex: 1; height: 3px; background: var(--border2); border-radius: 2px; overflow: hidden; }
-.qfill { height: 100%; border-radius: 2px; transition: width .4s ease; }
-.qpct { min-width: 36px; text-align: right; font-size: 10px; }
-.qdots { display: flex; gap: 3px; min-width: 120px; justify-content: flex-end; flex-wrap: wrap; }
-.qdot { font-size: 9px; padding: 1px 5px; border-radius: 2px; cursor: default; }
-
-/* Score indicator */
-.score-ring {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; border-radius: 50%; font-size: 11px; font-weight: 500;
-  border: 2px solid; flex-shrink: 0;
+.log-detail-inner {
+  padding: 12px 16px;
+  font-size: 11px;
+  font-family: monospace;
+  color: var(--muted2);
+  background: rgba(0,0,0,.3);
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
-/* Stat rows */
-.srow { display: flex; justify-content: space-between; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.03); font-size: 11px; }
-.srow:last-child { border-bottom: none; }
-.sk { color: var(--muted); }
-
-/* Price histogram */
-.phist { display: flex; align-items: flex-end; gap: 4px; height: 48px; margin-top: 4px; }
-.pbar { flex: 1; border-radius: 2px 2px 0 0; background: rgba(34,85,204,.4); min-width: 8px; transition: .2s; cursor: default; position: relative; }
-.pbar:hover { background: rgba(34,85,204,.65); }
-.pbar-tip { display: none; position: absolute; bottom: calc(100% + 3px); left: 50%; transform: translateX(-50%); background: var(--s1); border: 1px solid var(--border); border-radius: 3px; padding: 2px 6px; font-size: 9px; white-space: nowrap; z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
-.pbar:hover .pbar-tip { display: block; }
-.pbar-labels { display: flex; gap: 4px; margin-top: 3px; }
-.pbar-label { flex: 1; text-align: center; font-size: 8px; color: var(--muted); }
-
-/* Pipeline timeline */
-.ptimeline { position: relative; padding-left: 20px; }
-.ptimeline::before { content: ''; position: absolute; left: 6px; top: 4px; bottom: 4px; width: 1px; background: var(--border2); }
-.pt-item { position: relative; margin-bottom: 12px; }
-.pt-dot { position: absolute; left: -17px; top: 3px; width: 7px; height: 7px; border-radius: 50%; background: var(--border2); }
-.pt-dot.ok { background: var(--green); }
-.pt-dot.err { background: var(--red); }
-.pt-label { font-size: 11px; color: var(--text); }
-.pt-meta { font-size: 10px; color: var(--muted); margin-top: 1px; }
-
-/* Merge stats mini */
-.mstat { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
-.mchip { font-size: 9px; padding: 2px 7px; border-radius: 3px; background: var(--s3); border: 1px solid var(--border2); color: var(--muted); }
-
-/* Today highlight */
-.today-strip {
-  background: linear-gradient(135deg, rgba(15,143,96,.07), rgba(52,217,160,.02));
-  border: 1px solid rgba(15,143,96,.15); border-radius: 6px;
-  padding: 14px 16px; margin-bottom: var(--grid-gap);
+/* ── Quality Matrix ────────────────────────────────────────── */
+.matrix-table thead th:first-child { min-width: 140px; }
+.matrix-table thead th { text-align: center; min-width: 70px; }
+.matrix-table tbody td:first-child { font-weight: 600; }
+.matrix-table tbody td { text-align: center; }
+.matrix-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 22px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
 }
-.today-label { font-size: 9px; text-transform: uppercase; letter-spacing: .8px; color: var(--green); margin-bottom: 8px; }
-.today-events { display: flex; gap: 8px; flex-wrap: wrap; }
-.today-ev {
-  background: rgba(0,0,0,.04); border: 1px solid var(--border);
-  border-radius: 5px; padding: 7px 10px; font-size: 10px;
-  cursor: pointer; transition: .12s; max-width: 200px;
+.matrix-cell.c-good { background: rgba(16,185,129,.15); color: var(--green); }
+.matrix-cell.c-ok   { background: rgba(245,158,11,.15);  color: var(--amber); }
+.matrix-cell.c-bad  { background: rgba(239,68,68,.15);   color: var(--red); }
+.matrix-cell.c-na   { background: rgba(255,255,255,.04); color: var(--muted); }
+.global-row td { border-top: 2px solid var(--border2); font-weight: 700; }
+
+/* ── Ações ─────────────────────────────────────────────────── */
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
 }
-.today-ev:hover { border-color: var(--green); }
-.today-ev-title { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 2px; }
-.today-ev-meta { color: var(--muted); font-size: 9px; }
+.action-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.action-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+.action-card p { font-size: 12px; color: var(--muted); margin-bottom: 14px; line-height: 1.6; }
 
-/* Pagination */
-.pagination { display: flex; align-items: center; gap: 6px; padding: 10px 0; }
-.ppage { background: var(--s2); border: 1px solid var(--border); border-radius: 3px; padding: 4px 9px; font-family: var(--mono); font-size: 10px; color: var(--muted); cursor: pointer; transition: .1s; }
-.ppage:hover { color: var(--text2); border-color: var(--border2); }
-.ppage.on { background: rgba(34,85,204,.1); border-color: rgba(34,85,204,.4); color: var(--blue); }
-.ppage:disabled { opacity: .3; cursor: not-allowed; }
-.pinfo { font-size: 10px; color: var(--muted); margin-left: 4px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: opacity .15s, background .15s;
+  font-family: var(--font);
+}
+.btn:hover { opacity: .85; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-green   { background: var(--green); color: #fff; }
+.btn-ghost   { background: rgba(255,255,255,.07); color: var(--text); border: 1px solid var(--border); }
+.btn-ghost:hover { background: rgba(255,255,255,.11); opacity: 1; }
+.btn-sm { padding: 6px 12px; font-size: 12px; }
 
-/* Accessibility tab */
-.a11y-matrix { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 8px; }
-.a11y-card { background: var(--s2); border: 1px solid var(--border); border-radius: 5px; padding: 12px; }
-.a11y-icon { font-size: 20px; margin-bottom: 6px; }
-.a11y-name { font-size: 11px; color: var(--text); margin-bottom: 3px; }
-.a11y-n { font-family: var(--serif); font-size: 24px; color: var(--green); }
-.a11y-pct { font-size: 10px; color: var(--muted); }
+select.select-styled {
+  background: var(--surface2);
+  border: 1px solid var(--border2);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 13px;
+  padding: 8px 12px;
+  font-family: var(--font);
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+select.select-styled:focus { outline: 2px solid var(--accent); }
 
-/* Empty */
-.empty { text-align: center; padding: 40px; color: var(--muted); font-size: 12px; }
+.info-box {
+  background: rgba(59,130,246,.06);
+  border: 1px solid rgba(59,130,246,.2);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 12px;
+  color: var(--muted2);
+  line-height: 1.7;
+}
+.info-box strong { color: var(--accent); }
+
+/* ── Alerts / Notes ────────────────────────────────────────── */
+.alert {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.alert-amber { background: rgba(245,158,11,.08); border: 1px solid rgba(245,158,11,.25); color: var(--amber); }
+.alert-blue  { background: rgba(59,130,246,.08); border: 1px solid rgba(59,130,246,.25); color: #93c5fd; }
+.alert-red   { background: rgba(239,68,68,.08);  border: 1px solid rgba(239,68,68,.25);  color: #fca5a5; }
+
+/* ── Loading Spinner ───────────────────────────────────────── */
+.spinner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.spinner {
+  width: 32px; height: 32px;
+  border: 3px solid rgba(59,130,246,.2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+/* ── Dividers ──────────────────────────────────────────────── */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 20px 0;
+}
+
+/* ── Unknown Tags ──────────────────────────────────────────── */
+.tag-chip {
+  display: inline-block;
+  background: rgba(245,158,11,.12);
+  border: 1px solid rgba(245,158,11,.2);
+  color: var(--amber);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* ── Toast ─────────────────────────────────────────────────── */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 10px 18px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .25s, transform .25s;
+  pointer-events: none;
+  z-index: 9999;
+  max-width: 320px;
+}
+#toast.show { opacity: 1; transform: translateY(0); }
+#toast.error { background: var(--red); }
+
+/* ── CORS Note ─────────────────────────────────────────────── */
+#cors-note {
+  display: none;
+  background: rgba(245,158,11,.06);
+  border: 1px solid rgba(245,158,11,.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 12px;
+  color: var(--amber);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+#cors-note code {
+  background: rgba(0,0,0,.3);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+/* ── Merge Stats ───────────────────────────────────────────── */
+.merge-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.merge-chip {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255,255,255,.05);
+  color: var(--muted2);
+  border: 1px solid var(--border);
+}
+.merge-chip span { font-weight: 700; color: var(--text); }
+
+/* ── Scrollable log area ───────────────────────────────────── */
+.log-table-wrap {
+  max-height: 520px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.log-table-wrap table { font-size: 12px; }
 </style>
 </head>
 <body>
 
-<div id="loading">
-  <div class="spin"></div>
-  <div class="load-text">a carregar dados…</div>
+<!-- ── Topbar ─────────────────────────────────────────────── -->
+<div id="topbar">
+  <div id="topbar-left">
+    <div id="topbar-logo">Primeira <span>Plateia</span></div>
+    <div id="topbar-sub">Ops Dashboard</div>
+  </div>
+  <div id="topbar-right">
+    <span id="last-updated">A carregar…</span>
+    <button id="refresh-btn" onclick="loadDashboard()">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M1 4v6h6M23 20v-6h-6"/>
+        <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4-4.64 4.36A9 9 0 0 1 3.51 15"/>
+      </svg>
+      Actualizar
+    </button>
+  </div>
 </div>
 
-<header>
-  <div class="logo">
-    <div class="logo-name">Primeira <em>Plateia</em></div>
-    <div class="logo-tag">dashboard</div>
-  </div>
-  <div class="hdr-right">
-    <div class="run-badge">
-      <div class="dot" id="sdot"></div>
-      <span id="rinfo">—</span>
-    </div>
-    <button class="btn" onclick="loadData()">↻</button>
-    <a class="btn" href="../index.html" target="_blank">↗ site</a>
-  </div>
-</header>
+<!-- ── App ────────────────────────────────────────────────── -->
+<div id="app">
 
-<div class="tabs">
-  <button class="tab on"  onclick="switchTab('resumo',this)">Resumo <span class="tab-badge" id="tb-evs">—</span></button>
-  <button class="tab"     onclick="switchTab('eventos',this)">Eventos <span class="tab-badge" id="tb-evs2">—</span></button>
-  <button class="tab"     onclick="switchTab('calendario',this)">Calendário</button>
-  <button class="tab"     onclick="switchTab('qualidade',this)">Qualidade</button>
-  <button class="tab"     onclick="switchTab('acessibilidade',this)">Acessibilidade</button>
-  <button class="tab"     onclick="switchTab('pipeline',this)">Pipeline</button>
-</div>
-
-<main>
-
-<!-- ═══════════════════════════════════════════════════════
-     RESUMO
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec on" id="sec-resumo">
-
-  <div class="g5" id="kpi-row" style="margin-bottom:12px"></div>
-
-  <div id="today-strip" style="display:none">
-    <div class="today-strip">
-      <div class="today-label">● Hoje</div>
-      <div class="today-events" id="today-evs"></div>
-    </div>
-  </div>
-
-  <div class="g2">
-    <div class="card">
-      <div class="ctitle">
-        Distribuição por domínio
-        <span class="ctitle-right" id="dom-total"></span>
+  <!-- Sidebar -->
+  <aside id="sidebar">
+    <nav id="sidebar-nav">
+      <div class="nav-section-title">Principal</div>
+      <div class="nav-item active" data-tab="overview">
+        <span class="nav-icon">◈</span> Overview
       </div>
-      <div id="dom-bars"></div>
-    </div>
-    <div class="card">
-      <div class="ctitle">Eventos por mês</div>
-      <div id="month-chart"></div>
-      <div id="month-labels" style="display:flex;gap:3px;margin-top:4px;font-size:8px;color:var(--muted)"></div>
-    </div>
-  </div>
-
-  <div class="vcards" id="vcards"></div>
-
-  <div class="g2">
-    <div class="card">
-      <div class="ctitle">Distribuição de preços <span class="ctitle-right" id="price-n"></span></div>
-      <div id="price-hist"></div>
-    </div>
-    <div class="card">
-      <div class="ctitle">Estatísticas rápidas</div>
-      <div id="quick-stats"></div>
-    </div>
-  </div>
-</div>
-
-<!-- ═══════════════════════════════════════════════════════
-     EVENTOS
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec" id="sec-eventos">
-  <div class="vpills" id="vpills"></div>
-  <div class="fbar">
-    <input class="sinput" id="esearch" placeholder="Pesquisar título, artistas, descrição…" oninput="renderTable()">
-    <div class="fdiv"></div>
-    <select class="fsel" id="fdom" onchange="renderTable()">
-      <option value="">Todos os domínios</option>
-      <option value="musica">Música</option>
-      <option value="artes-palco">Artes de Palco</option>
-      <option value="artes-visuais">Artes Visuais</option>
-      <option value="pensamento">Pensamento</option>
-      <option value="cinema">Cinema</option>
-      <option value="formacao">Formação</option>
-      <option value="outros">Outros</option>
-    </select>
-    <select class="fsel" id="fstatus" onchange="renderTable()">
-      <option value="">Todos os estados</option>
-      <option value="em-cartaz">Em cartaz</option>
-      <option value="estreia">Estreia</option>
-      <option value="unica-sessao">Sessão única</option>
-    </select>
-    <div class="fdiv"></div>
-    <button class="fbtn" data-f="free"   onclick="toggleF(this)">gratuitos</button>
-    <button class="fbtn" data-f="multi"  onclick="toggleF(this)">multi-sessão</button>
-    <button class="fbtn" data-f="noimg"  onclick="toggleF(this)">sem imagem</button>
-    <button class="fbtn" data-f="nodesc" onclick="toggleF(this)">sem descrição</button>
-    <span class="fcount" id="ecount"></span>
-  </div>
-  <div class="twrap">
-    <table>
-      <thead><tr>
-        <th onclick="doSort('title')" id="th-title">Título</th>
-        <th onclick="doSort('venue_id')" id="th-venue">Venue</th>
-        <th onclick="doSort('domain')" id="th-domain">Domínio</th>
-        <th onclick="doSort('date_first')" id="th-date" class="sorted">Data</th>
-        <th onclick="doSort('total_sessions')" id="th-sess">Sessões</th>
-        <th onclick="doSort('price_min')" id="th-price">Preço</th>
-        <th style="text-align:center">Img</th>
-        <th style="text-align:center">Desc</th>
-        <th onclick="doSort('score')" id="th-score">Score</th>
-        <th></th>
-      </tr></thead>
-      <tbody id="etbody"></tbody>
-    </table>
-  </div>
-  <div class="tfoot" id="tfoot"></div>
-  <div class="pagination" id="pagination"></div>
-  <div class="dpanel" id="dpanel">
-    <div class="dpanel-head">
-      <div id="dimg-wrap"></div>
-      <div style="flex:1;min-width:0">
-        <div class="dtitle" id="dtitle"></div>
-        <div class="dsubtitle" id="dsubtitle"></div>
-        <div class="dmeta-chips" id="dmeta-chips"></div>
+      <div class="nav-item" data-tab="venues">
+        <span class="nav-icon">◉</span> Venues
       </div>
-      <button class="dclose" onclick="closeD()">✕</button>
+      <div class="nav-item" data-tab="qualidade">
+        <span class="nav-icon">◎</span> Qualidade
+      </div>
+      <div class="nav-section-title">Logs</div>
+      <div class="nav-item" data-tab="logs">
+        <span class="nav-icon">≡</span> Pipeline Logs
+      </div>
+      <div class="nav-item" data-tab="unknown-tags">
+        <span class="nav-icon">⚠</span> Tags Desconhecidas
+        <span class="nav-badge" id="unknown-badge" style="display:none"></span>
+      </div>
+      <div class="nav-section-title">Admin</div>
+      <div class="nav-item" data-tab="acoes">
+        <span class="nav-icon">▶</span> Ações
+      </div>
+    </nav>
+    <div id="sidebar-footer">
+      <a href="index.html">← Admin clássico</a>
     </div>
-    <div class="dpanel-body">
-      <div class="dgrid" id="dgrid"></div>
-      <div id="dsessions-wrap"></div>
-    </div>
-  </div>
-</div>
+  </aside>
 
-<!-- ═══════════════════════════════════════════════════════
-     CALENDÁRIO
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec" id="sec-calendario">
-  <div class="fbar" style="margin-bottom:12px">
-    <select class="fsel" id="cal-venue" onchange="renderCalendar()">
-      <option value="">Todos os venues</option>
-    </select>
-    <select class="fsel" id="cal-domain" onchange="renderCalendar()">
-      <option value="">Todos os domínios</option>
-    </select>
-    <div class="fcount" id="cal-count"></div>
-  </div>
-  <div id="cal-container"></div>
-</div>
+  <!-- Main -->
+  <main id="main">
 
-<!-- ═══════════════════════════════════════════════════════
-     QUALIDADE
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec" id="sec-qualidade">
-  <div class="g4" id="q-kpis"></div>
-  <div class="g2">
-    <div class="card">
-      <div class="ctitle">Completude por campo</div>
-      <div id="qfields"></div>
+    <div id="cors-note">
+      <strong>Nota:</strong> Estás a abrir este ficheiro directamente (<code>file://</code>).
+      Para carregar os dados do JSON, serve os ficheiros com:
+      <code>python -m http.server 8080</code> e abre <code>http://localhost:8080/admin/dashboard.html</code>
     </div>
-    <div class="card">
-      <div class="ctitle">Score por venue <em style="font-family:var(--mono);font-size:10px;color:var(--muted);font-style:normal">— credibilidade média</em></div>
-      <div id="qvenues"></div>
-    </div>
-  </div>
-  <div class="card card-mb">
-    <div class="ctitle">Eventos com dados em falta <span class="ctitle-right" id="miss-count"></span></div>
-    <div class="twrap">
-      <table>
-        <thead><tr>
-          <th>Título</th><th>Venue</th><th>Data</th>
-          <th style="text-align:center">Img</th>
-          <th style="text-align:center">Preço</th>
-          <th style="text-align:center">Desc</th>
-          <th style="text-align:center">Cat</th>
-          <th style="text-align:center">Tags</th>
-          <th>Score</th>
-          <th></th>
-        </tr></thead>
-        <tbody id="missbody"></tbody>
-      </table>
-    </div>
-  </div>
-</div>
 
-<!-- ═══════════════════════════════════════════════════════
-     ACESSIBILIDADE
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec" id="sec-acessibilidade">
-  <div class="a11y-matrix card-mb" id="a11y-matrix"></div>
-  <div class="g2">
-    <div class="card">
-      <div class="ctitle">Por venue</div>
-      <div class="twrap">
-        <table>
-          <thead><tr>
-            <th>Venue</th><th>LGP</th><th>Audiodesc.</th><th>Subtítulos</th><th>Acessível</th><th>Total eventos</th>
-          </tr></thead>
-          <tbody id="a11y-venue-body"></tbody>
-        </table>
+    <!-- ── OVERVIEW ────────────────────────────────────────── -->
+    <div class="section active" id="tab-overview">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Overview</div>
+          <div class="section-sub">Estado geral do pipeline e venues</div>
+        </div>
+      </div>
+
+      <div class="kpi-row" id="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Eventos Activos</div>
+          <div class="kpi-value" id="kpi-events">—</div>
+          <div class="kpi-sub">no master.json</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Venues a Monitorizar</div>
+          <div class="kpi-value" id="kpi-venues">—</div>
+          <div class="kpi-sub">activos no pipeline</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Credibilidade Média</div>
+          <div class="kpi-value" id="kpi-cred">—</div>
+          <div class="kpi-sub">avg score global</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Último Run</div>
+          <div class="kpi-value" id="kpi-run" style="font-size:18px;padding-top:4px;">—</div>
+          <div class="kpi-sub" id="kpi-run-abs">—</div>
+        </div>
+        <div class="kpi-card" id="kpi-errors-card">
+          <div class="kpi-label">Erros</div>
+          <div class="kpi-value" id="kpi-errors">—</div>
+          <div class="kpi-sub">no último run</div>
+        </div>
+      </div>
+
+      <div class="card-title" style="margin-bottom:12px;font-size:13px;font-weight:700;color:var(--muted2);text-transform:uppercase;letter-spacing:.06em;">Estado dos Venues</div>
+      <div class="grid-2" id="venue-status-grid">
+        <div class="spinner-wrap"><div class="spinner"></div><span>A carregar venues…</span></div>
       </div>
     </div>
-    <div class="card">
-      <div class="ctitle">Eventos com recursos de acessibilidade</div>
-      <div id="a11y-ev-list"></div>
-    </div>
-  </div>
-</div>
 
-<!-- ═══════════════════════════════════════════════════════
-     PIPELINE
-     ═══════════════════════════════════════════════════════ -->
-<div class="sec" id="sec-pipeline">
-  <div class="g4" id="pl-kpis"></div>
-  <div class="g2">
-    <div class="card">
-      <div class="ctitle">Último run — por venue</div>
-      <div class="twrap">
-        <table>
-          <thead><tr>
-            <th>Venue</th><th>Scraped</th><th>Válidos</th><th>Inválidos</th>
-            <th>Merge</th><th>Credibilidade</th><th>Status</th>
-          </tr></thead>
-          <tbody id="plvbody"></tbody>
-        </table>
+    <!-- ── VENUES ──────────────────────────────────────────── -->
+    <div class="section" id="tab-venues">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Venues</div>
+          <div class="section-sub">Detalhe por venue — qualidade, circuit breaker, erros</div>
+        </div>
+      </div>
+      <div id="venues-list">
+        <div class="spinner-wrap"><div class="spinner"></div><span>A carregar…</span></div>
       </div>
     </div>
-    <div class="card">
-      <div class="ctitle">Detalhe do run</div>
-      <div id="pldetail"></div>
+
+    <!-- ── QUALIDADE ───────────────────────────────────────── -->
+    <div class="section" id="tab-qualidade">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Qualidade</div>
+          <div class="section-sub">Preenchimento de campos por venue</div>
+        </div>
+      </div>
+      <div id="qualidade-content">
+        <div class="spinner-wrap"><div class="spinner"></div><span>A carregar…</span></div>
+      </div>
     </div>
-  </div>
-  <div class="card card-mb" style="margin-top:12px">
-    <div class="ctitle">Histórico de runs <span class="ctitle-right" id="hist-count"></span></div>
-    <div class="twrap">
-      <table>
-        <thead><tr>
-          <th>Data/Hora</th><th>Duração</th><th>Scraped</th><th>Válidos</th><th>Dedup</th><th>Erros</th><th>Tendência</th>
-        </tr></thead>
-        <tbody id="plhist"></tbody>
-      </table>
+
+    <!-- ── PIPELINE LOGS ───────────────────────────────────── -->
+    <div class="section" id="tab-logs">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Pipeline Logs</div>
+          <div class="section-sub">Histórico de execuções (últimas 20). Clica numa linha para ver detalhes.</div>
+        </div>
+      </div>
+      <div id="logs-content">
+        <div class="spinner-wrap"><div class="spinner"></div><span>A carregar logs…</span></div>
+      </div>
     </div>
-  </div>
+
+    <!-- ── UNKNOWN TAGS ────────────────────────────────────── -->
+    <div class="section" id="tab-unknown-tags">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Tags Desconhecidas</div>
+          <div class="section-sub">Tags não reconhecidas pelo taxonomizador</div>
+        </div>
+      </div>
+      <div class="alert alert-amber">
+        Estas tags não foram reconhecidas pelo taxonomizador. Adicione-as a
+        <strong>pipeline/taxonomy_aliases.json</strong>.
+      </div>
+      <div id="unknown-tags-content">
+        <div class="spinner-wrap"><div class="spinner"></div><span>A carregar…</span></div>
+      </div>
+    </div>
+
+    <!-- ── AÇÕES ───────────────────────────────────────────── -->
+    <div class="section" id="tab-acoes">
+      <div class="section-header">
+        <div>
+          <div class="section-title">Ações</div>
+          <div class="section-sub">Triggers manuais via GitHub Actions</div>
+        </div>
+      </div>
+
+      <div class="action-grid">
+        <div class="action-card">
+          <h3>Correr Pipeline Completo</h3>
+          <p>Dispara o workflow principal que scrape todos os venues activos, valida e publica o master.json.</p>
+          <a href="https://github.com/fvsalgado/palcovivo/actions" target="_blank" class="btn btn-primary">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            Abrir GitHub Actions
+          </a>
+        </div>
+
+        <div class="action-card">
+          <h3>Forçar Refresh de Venue</h3>
+          <p>Re-scrape imediato de um venue específico. Abre o workflow no GitHub com os parâmetros correctos.</p>
+          <select class="select-styled" id="venue-select">
+            <option value="">Selecciona um venue…</option>
+            <option value="ccb">Centro Cultural de Belém (ccb)</option>
+            <option value="culturgest">Culturgest (culturgest)</option>
+            <option value="theatro-circo">Theatro Circo (theatro-circo)</option>
+            <option value="tndm">Teatro Nacional D. Maria II (tndm)</option>
+          </select>
+          <button class="btn btn-ghost" onclick="openVenueRefresh()">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M1 4v6h6M23 20v-6h-6"/>
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4-4.64 4.36A9 9 0 0 1 3.51 15"/>
+            </svg>
+            Forçar Refresh
+          </button>
+        </div>
+
+        <div class="action-card">
+          <h3>Ver Dados no GitHub</h3>
+          <p>Abre o repositório para inspecionar data/master.json, logs e configurações directamente.</p>
+          <a href="https://github.com/fvsalgado/palcovivo/tree/main/data" target="_blank" class="btn btn-ghost">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            Abrir GitHub
+          </a>
+        </div>
+
+        <div class="action-card">
+          <h3>Admin Clássico</h3>
+          <p>Acede ao painel de administração original para gestão de venues e configurações manuais.</p>
+          <a href="index.html" class="btn btn-ghost">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            Admin &amp; Venues
+          </a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <strong>Nota de segurança:</strong> Acções destrutivas (reset de circuit breaker, limpeza de cache,
+        rollback de dados) só estão disponíveis via <strong>GitHub Actions</strong> com aprovação manual.
+        Este dashboard é <strong>read-only</strong> — não faz escrita nos dados.
+      </div>
+    </div>
+
+  </main>
 </div>
 
-</main>
+<div id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════════════════════
-// ESTADO
-// ═══════════════════════════════════════════════════════
-var MASTER = null, LOG = null, LOGS = [];
-var curVenue = 'all', sortKey = 'date_first', sortAsc = true;
-var activeF = {}, curPage = 1;
-var PAGE_SIZE = 50;
-var GITHUB_RAW = 'https://raw.githubusercontent.com/fvsalgado/palcovivo/main';
-var calVenue = '', calDomain = '';
+/* ══════════════════════════════════════════════════════════════
+   PRIMEIRA PLATEIA — OPS DASHBOARD
+   Versão: 1.0  |  Pure HTML/JS, sem dependências externas
+   ══════════════════════════════════════════════════════════════ */
 
-var DLABELS = {
-  'musica':'Música','artes-palco':'Artes de Palco','artes-visuais':'Artes Visuais',
-  'pensamento':'Pensamento','cinema':'Cinema','formacao':'Formação','outros':'Outros'
+// ── State ────────────────────────────────────────────────────
+const state = {
+  master: null,
+  latest: null,
+  circuitBreaker: null,
+  unknownTags: null,
+  runLogs: [],
+  loaded: false,
 };
-var DCOLORS = {
-  'musica':'#9b72f5','artes-palco':'#f05565','artes-visuais':'#22d3c8',
-  'pensamento':'#34d9a0','cinema':'#f0b840','formacao':'#6699ff','outros':'#484860'
-};
-var QFIELDS = [
-  {key:'title',  label:'Título',      check:function(e){ return !!e.title && e.title.length>1; }},
-  {key:'desc',   label:'Descrição',   check:function(e){ return !!(e.description && e.description.length>20); }},
-  {key:'img',    label:'Imagem',      check:function(e){ return !!(e.media && e.media.cover_image); }},
-  {key:'date',   label:'Data',        check:function(e){ return !!e.date_first; }},
-  {key:'price',  label:'Preço',       check:function(e){ return !!(e.price && (e.price.price_display || e.price.is_free)); }},
-  {key:'cat',    label:'Categoria',   check:function(e){ return !!(e.category && e.category !== 'outros'); }},
-  {key:'url',    label:'URL fonte',   check:function(e){ return !!e.source_url; }},
-  {key:'tags',   label:'Tags',        check:function(e){ return !!(e.tags && e.tags.length); }},
-  {key:'cred',   label:'Ficha técn.', check:function(e){ return !!(e.credits && e.credits.credits_raw); }},
-];
 
-// ═══════════════════════════════════════════════════════
-// UTILS
-// ═══════════════════════════════════════════════════════
-function score(e) {
-  var n = 0;
-  for (var i=0;i<QFIELDS.length;i++) if (QFIELDS[i].check(e)) n++;
-  return Math.round(n / QFIELDS.length * 100);
-}
-function pct(n,t){ return t ? Math.round(n/t*100) : 0; }
-function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-function fmtDate(iso){
-  if (!iso) return '—';
-  var p=iso.split('-'); return p[2]+'/'+p[1]+'/'+p[0].slice(2);
-}
-function fmtDt(iso){
-  if (!iso) return '—';
-  var d=new Date(iso);
-  return d.toLocaleDateString('pt-PT')+' '+d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
-}
-function set(id,v){ var el=document.getElementById(id); if(el) el.innerHTML=String(v); }
-function scoreColor(s){ return s>=75?'var(--green)':s>=50?'var(--yellow)':'var(--red)'; }
-function scoreRing(s) {
-  var c = scoreColor(s);
-  return '<div class="score-ring" style="color:'+c+';border-color:'+c+'">'+s+'%</div>';
-}
-function today(){ return new Date().toISOString().slice(0,10); }
-function domLabel(d){ return DLABELS[d]||d||'—'; }
-function domColor(d){ return DCOLORS[d]||'var(--muted)'; }
-function cleanTitle(t){ return esc(String(t||'').replace(/&#\d+;/g,function(m){ var c=parseInt(m.slice(2,-1)); return String.fromCharCode(c); })); }
-
-// ═══════════════════════════════════════════════════════
-// FETCH
-// ═══════════════════════════════════════════════════════
-async function fetchJ(local, remote) {
-  try { var r = await fetch(local); if(r.ok) return r.json(); } catch(e){}
-  try { var r2 = await fetch(GITHUB_RAW+remote); if(r2.ok) return r2.json(); } catch(e){}
-  return null;
+// ── Formatters ───────────────────────────────────────────────
+function fmt(n) {
+  if (n == null || n === undefined) return 'N/D';
+  return Number(n).toLocaleString('pt-PT');
 }
 
-async function loadData() {
-  document.getElementById('loading').style.display = 'flex';
-  var [master, log] = await Promise.all([
-    fetchJ('../data/master.json','/data/master.json'),
-    fetchJ('../data/logs/latest.json','/data/logs/latest.json')
+function fmtPct(v, decimals = 1) {
+  if (v == null) return 'N/D';
+  return Number(v).toFixed(decimals) + '%';
+}
+
+function fmtCredPct(v) {
+  if (v == null) return 'N/D';
+  return (Number(v) * 100).toFixed(1) + '%';
+}
+
+function timeAgo(isoStr) {
+  if (!isoStr) return 'N/D';
+  try {
+    // strip trailing Z if already has timezone
+    const clean = isoStr.replace(/Z$/, '').replace(/\+00:00Z$/, '+00:00');
+    const d = new Date(clean);
+    const now = new Date();
+    const diff = Math.floor((now - d) / 1000);
+    if (diff < 0) return 'agora';
+    if (diff < 60) return `há ${diff}s`;
+    if (diff < 3600) return `há ${Math.floor(diff / 60)} min`;
+    if (diff < 86400) return `há ${Math.floor(diff / 3600)}h`;
+    return `há ${Math.floor(diff / 86400)} dias`;
+  } catch { return 'N/D'; }
+}
+
+function fmtDate(isoStr) {
+  if (!isoStr) return 'N/D';
+  try {
+    const clean = isoStr.replace(/Z$/, '').replace(/\+00:00Z$/, '+00:00');
+    return new Date(clean).toLocaleString('pt-PT', {
+      day: '2-digit', month: '2-digit', year: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+  } catch { return isoStr; }
+}
+
+function fmtDuration(secs) {
+  if (secs == null) return 'N/D';
+  if (secs < 60) return secs.toFixed(1) + 's';
+  return Math.floor(secs / 60) + 'm ' + (secs % 60).toFixed(0) + 's';
+}
+
+function colorPct(pct) {
+  if (pct >= 80) return 'good';
+  if (pct >= 50) return 'ok';
+  return 'bad';
+}
+
+function matrixColorClass(pct) {
+  if (pct == null) return 'c-na';
+  if (pct >= 80) return 'c-good';
+  if (pct >= 50) return 'c-ok';
+  return 'c-bad';
+}
+
+function cbStatusLabel(cb) {
+  if (!cb) return { label: 'N/D', cls: 'cb-ok' };
+  const status = cb.status || 'ok';
+  const failures = cb.failures || 0;
+  if (status === 'open') return { label: '🔴 Suspenso', cls: 'cb-suspended' };
+  if (status === 'half-open') return { label: '🟡 Half-open', cls: 'cb-warning' };
+  if (failures > 0) return { label: `⚠ ${failures} falha${failures > 1 ? 's' : ''}`, cls: 'cb-warning' };
+  return { label: 'OK', cls: 'cb-ok' };
+}
+
+// ── Navigation ───────────────────────────────────────────────
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const tab = item.dataset.tab;
+    document.querySelectorAll('.nav-item').forEach(x => x.classList.remove('active'));
+    item.classList.add('active');
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById('tab-' + tab)?.classList.add('active');
+  });
+});
+
+// ── Toast ────────────────────────────────────────────────────
+function showToast(msg, isError = false) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = isError ? 'show error' : 'show';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.className = ''; }, 3200);
+}
+
+// ── Data Loading ─────────────────────────────────────────────
+async function loadDashboard() {
+  const btn = document.getElementById('refresh-btn');
+  btn.classList.add('spinning');
+  document.getElementById('last-updated').textContent = 'A carregar…';
+
+  const [masterRes, latestRes, cbRes, unknownRes] = await Promise.allSettled([
+    fetch('../data/master.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('../data/logs/latest.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('../data/cache/circuit_breaker.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+    fetch('../data/logs/unknown_tags.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
   ]);
-  MASTER = master; LOG = log; LOGS = log ? [log] : [];
 
-  // Carregar logs históricos
-  var logFiles = ['run-20260326-003653','run-20260325-232747','run-20260325-230444',
-    'run-20260325-174316','run-20260325-171825','run-20260325-170408',
-    'run-20260325-165939','run-20260325-164830','run-20260325-163252',
-    'run-20260325-115029','run-20260325-114529','run-20260325-113407',
-    'run-20260325-112644','run-20260325-112213','run-20260325-080550',
-    'run-20260324-172032','run-20260324-155730','run-20260324-154111',
-    'run-20260324-121907','run-20260324-120805'];
-  var extras = await Promise.all(logFiles.map(function(f){
-    return fetchJ('../data/logs/'+f+'.json','/data/logs/'+f+'.json');
-  }));
-  LOGS = extras.filter(Boolean).sort(function(a,b){ return (b.run_at||'')>(a.run_at||'')?1:-1; });
-  if (log && !LOGS.find(function(l){ return l.run_at===log.run_at; })) LOGS.unshift(log);
+  // Detect CORS / file:// issues
+  const anyFailed = [masterRes, latestRes, cbRes, unknownRes].some(r => r.status === 'rejected');
+  if (anyFailed && window.location.protocol === 'file:') {
+    document.getElementById('cors-note').style.display = 'block';
+  }
 
-  document.getElementById('loading').style.display = 'none';
-  if (!MASTER) { alert('Não foi possível carregar master.json.'); return; }
+  state.master        = masterRes.status === 'fulfilled'  ? masterRes.value  : null;
+  state.latest        = latestRes.status === 'fulfilled'  ? latestRes.value  : null;
+  state.circuitBreaker = cbRes.status === 'fulfilled'     ? cbRes.value      : null;
+  state.unknownTags   = unknownRes.status === 'fulfilled' ? unknownRes.value : null;
+
+  // Load run logs (last 20, most recent first)
+  await loadRunLogs();
+
+  state.loaded = true;
+  btn.classList.remove('spinning');
+  document.getElementById('last-updated').textContent = 'Actualizado: ' + new Date().toLocaleTimeString('pt-PT');
+
   renderAll();
 }
 
-// ═══════════════════════════════════════════════════════
-// RENDER ALL
-// ═══════════════════════════════════════════════════════
-function renderAll() {
-  var evs = MASTER.events || [];
-  var dot = document.getElementById('sdot');
-  if (evs.length) dot.classList.add('live');
-  if (MASTER.generated_at) {
-    var d = new Date(MASTER.generated_at);
-    document.getElementById('rinfo').textContent = d.toLocaleDateString('pt-PT') + ' ' + d.toLocaleTimeString('pt-PT',{hour:'2-digit',minute:'2-digit'});
-  }
-  set('tb-evs', evs.length);
-  set('tb-evs2', evs.length);
+async function loadRunLogs() {
+  // Known run log filenames from listing (sorted descending)
+  const runFiles = [
+    'run-20260327-004446.json',
+    'run-20260326-164855.json',
+    'run-20260326-160621.json',
+    'run-20260326-155744.json',
+    'run-20260326-151019.json',
+    'run-20260326-135633.json',
+    'run-20260326-134537.json',
+    'run-20260326-131108.json',
+    'run-20260326-130722.json',
+    'run-20260326-114143.json',
+    'run-20260326-110231.json',
+    'run-20260326-103645.json',
+    'run-20260326-090806.json',
+    'run-20260326-011641.json',
+    'run-20260326-011208.json',
+    'run-20260326-003653.json',
+    'run-20260325-232747.json',
+    'run-20260325-230444.json',
+    'run-20260325-174316.json',
+    'run-20260325-171825.json',
+  ].slice(0, 20);
 
-  renderResumo(evs);
-  buildVenueSelector(evs);
-  buildCalSelectors(evs);
-  renderTable();
-  renderCalendar();
-  renderQualidade(evs);
-  renderA11y(evs);
-  renderPipeline();
-}
-
-// ═══════════════════════════════════════════════════════
-// RESUMO
-// ═══════════════════════════════════════════════════════
-function renderResumo(evs) {
-  var idx = (MASTER && MASTER.index) || {};
-  var total = evs.length;
-  var nV = Object.keys(idx.by_venue||{}).length;
-  var todayStr = today();
-  var nHoje = 0, todayEvs = [];
-  evs.forEach(function(e){
-    var dates = e.dates || [];
-    var hasToday = e.date_first===todayStr || dates.some(function(d){return d.date===todayStr;});
-    if (hasToday) { nHoje++; todayEvs.push(e); }
-  });
-  var nFree = evs.filter(function(e){ return e.price&&e.price.is_free; }).length;
-  var nPremieres = evs.filter(function(e){ return e.is_premiere || e.event_status==='estreia'; }).length;
-  var avgScore = total ? Math.round(evs.reduce(function(s,e){ return s+score(e); },0)/total) : 0;
-
-  var kpis = [
-    {id:'k-total', val:total,     label:'Eventos',     sub:Object.keys(idx.by_month||{}).length+' meses',   color:'var(--blue)'},
-    {id:'k-ven',   val:nV,        label:'Venues',      sub:'activos',                                        color:'var(--purple)'},
-    {id:'k-hoje',  val:nHoje,     label:'Hoje',        sub:todayStr,                                         color:'var(--green)'},
-    {id:'k-free',  val:nFree,     label:'Gratuitos',   sub:'entrada livre',                                  color:'var(--teal)'},
-    {id:'k-prem',  val:nPremieres,label:'Estreias',    sub:'em cartaz',                                      color:'var(--yellow)'},
-  ];
-  set('kpi-row', kpis.map(function(k){
-    return '<div class="kpi kpi-sm" style="--kcolor:'+k.color+'">' +
-      '<div class="kval" style="color:'+k.color+'">'+k.val+'</div>' +
-      '<div class="klabel">'+k.label+'</div>' +
-      '<div class="ksub">'+k.sub+'</div>' +
-      '</div>';
-  }).join(''));
-
-  // Today strip
-  if (todayEvs.length) {
-    document.getElementById('today-strip').style.display = 'block';
-    set('today-evs', todayEvs.slice(0,8).map(function(e){
-      var t = e.dates && e.dates.find(function(d){return d.date===todayStr;});
-      var time = (t && t.time_start) || '—';
-      return '<div class="today-ev" onclick="openEvent(\''+esc(e.id)+'\')">' +
-        '<div class="today-ev-title">'+cleanTitle(e.title)+'</div>' +
-        '<div class="today-ev-meta">'+esc(e.venue_id)+' · '+time+'</div>' +
-        '</div>';
-    }).join('') + (todayEvs.length>8?'<div class="today-ev-meta" style="align-self:center">+'+( todayEvs.length-8)+' mais</div>':''));
-  }
-
-  // Domain bars
-  var byDom = idx.by_domain || {};
-  var domEntries = Object.keys(byDom).map(function(d){ return [d,byDom[d].length]; });
-  domEntries.sort(function(a,b){ return b[1]-a[1]; });
-  set('dom-total', total + ' total');
-  set('dom-bars', domEntries.map(function(p){
-    var c = DCOLORS[p[0]]||'#666', pc = pct(p[1],total);
-    return '<div class="brow">'+
-      '<div class="blabel"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:'+c+';margin-right:6px;vertical-align:middle"></span>'+domLabel(p[0])+'</div>'+
-      '<div class="btrack"><div class="bfill" style="width:'+pc+'%;background:'+c+'"></div></div>'+
-      '<div class="bcount">'+p[1]+'</div></div>';
-  }).join(''));
-
-  // Month chart
-  var byMonth = idx.by_month || {};
-  var months = Object.keys(byMonth).sort();
-  var maxM = Math.max.apply(null, months.map(function(m){return byMonth[m].length;}));
-  set('month-chart', '<div class="month-chart">' +
-    months.map(function(m){
-      var n = byMonth[m].length;
-      var h = maxM ? Math.max(4, Math.round(n/maxM*100)) : 4;
-      var active = m===todayStr.slice(0,7) ? 'background:rgba(34,85,204,.55)' : '';
-      return '<div class="mcol" style="height:'+h+'%;'+active+'">' +
-        '<div class="mcol-tip">'+m+': '+n+'</div></div>';
-    }).join('') + '</div>');
-  set('month-labels', months.map(function(m){ return '<div style="flex:1;text-align:center">'+m.slice(5)+'</div>'; }).join(''));
-
-  // Venue cards
-  var venueMap = {};
-  evs.forEach(function(e){ if(!venueMap[e.venue_id]) venueMap[e.venue_id]=[]; venueMap[e.venue_id].push(e); });
-  var vids = Object.keys(venueMap).sort(function(a,b){ return venueMap[b].length-venueMap[a].length; });
-  set('vcards', vids.map(function(vid){
-    var ve = venueMap[vid];
-    var avgS = Math.round(ve.reduce(function(s,e){return s+score(e);},0)/ve.length);
-    var sc = scoreColor(avgS);
-    var nImg = ve.filter(function(e){return e.media&&e.media.cover_image;}).length;
-    var nFree2 = ve.filter(function(e){return e.price&&e.price.is_free;}).length;
-    var nLGP = ve.filter(function(e){return e.accessibility&&e.accessibility.has_sign_language;}).length;
-    var nPrem = ve.filter(function(e){return e.is_premiere||e.event_status==='estreia';}).length;
-    var domCounts = {};
-    ve.forEach(function(e){ domCounts[e.domain]=(domCounts[e.domain]||0)+1; });
-    var topDom = Object.keys(domCounts).sort(function(a,b){return domCounts[b]-domCounts[a];})[0];
-
-    return '<div class="vcard" onclick="goVenue(\''+vid+'\')">' +
-      '<div class="vcard-head">' +
-        '<div><div class="vcard-name">'+vid.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();})+'</div>' +
-        '<div class="vcard-id">'+vid+'</div></div>' +
-        '<div class="vcard-count">'+ve.length+'</div>' +
-      '</div>' +
-      '<div class="brow" style="margin:0 0 8px">' +
-        '<div class="blabel" style="min-width:70px;font-size:10px">score médio</div>' +
-        '<div class="btrack"><div class="bfill" style="width:'+avgS+'%;background:'+sc+'"></div></div>' +
-        '<div class="bcount" style="color:'+sc+'">'+avgS+'%</div>' +
-      '</div>' +
-      '<div class="vcard-meta">' +
-        (topDom ? '<span class="vmchip" style="color:'+domColor(topDom)+';border-color:'+domColor(topDom)+'40">'+domLabel(topDom)+'</span>' : '') +
-        '<span class="vmchip '+(nImg/ve.length>.7?'ok':'')+'">img '+pct(nImg,ve.length)+'%</span>' +
-        (nFree2 ? '<span class="vmchip ok">'+nFree2+' grátis</span>' : '') +
-        (nLGP ? '<span class="vmchip ok">'+nLGP+' LGP</span>' : '') +
-        (nPrem ? '<span class="vmchip warn">'+nPrem+' estreia'+( nPrem>1?'s':'')+' </span>' : '') +
-      '</div>' +
-    '</div>';
-  }).join(''));
-
-  // Price histogram
-  var prices = evs.filter(function(e){return e.price&&e.price.price_min;}).map(function(e){return e.price.price_min;});
-  var buckets = [
-    {label:'0-5€',  min:0,  max:5},
-    {label:'6-10€', min:6,  max:10},
-    {label:'11-15€',min:11, max:15},
-    {label:'16-25€',min:16, max:25},
-    {label:'26+€',  min:26, max:999},
-  ];
-  var bcounts = buckets.map(function(b){ return prices.filter(function(p){return p>=b.min&&p<=b.max;}).length; });
-  var maxB = Math.max.apply(null,bcounts)||1;
-  set('price-n', prices.length + ' c/ preço · ' + evs.filter(function(e){return e.price&&e.price.is_free;}).length + ' gratuitos');
-  set('price-hist',
-    '<div class="phist">' +
-    bcounts.map(function(n,i){
-      var h = Math.max(4, Math.round(n/maxB*100));
-      return '<div class="pbar" style="height:'+h+'%"><div class="pbar-tip">'+buckets[i].label+': '+n+'</div></div>';
-    }).join('') + '</div>' +
-    '<div class="pbar-labels">'+buckets.map(function(b){return '<div class="pbar-label">'+b.label+'</div>';}).join('')+'</div>'
+  const results = await Promise.allSettled(
+    runFiles.map(f =>
+      fetch('../data/logs/' + f)
+        .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(d => ({ ...d, _filename: f }))
+    )
   );
 
-  // Quick stats
-  var nCancelled = evs.filter(function(e){return e.dates&&e.dates.some(function(d){return d.is_cancelled;});}).length;
-  var nSoldOut = evs.filter(function(e){return e.dates&&e.dates.some(function(d){return d.is_sold_out;});}).length;
-  var nMulti = evs.filter(function(e){return (e.total_sessions||1)>1;}).length;
-  var nDesc = evs.filter(function(e){return e.description&&e.description.length>20;}).length;
-  var totalSessions = evs.reduce(function(s,e){return s+(e.total_sessions||e.dates&&e.dates.length||1);},0);
-
-  set('quick-stats', [
-    ['Total de sessões', totalSessions],
-    ['Multi-sessão', nMulti + ' eventos'],
-    ['Em cartaz', evs.filter(function(e){return e.event_status==='em-cartaz';}).length],
-    ['Com descrição', pct(nDesc,total)+'%'],
-    ['Cancelados (sessões)', nCancelled],
-    ['Esgotados', nSoldOut],
-    ['Score médio', avgScore+'%'],
-  ].map(function(p){ return '<div class="srow"><span class="sk">'+p[0]+'</span><span>'+p[1]+'</span></div>'; }).join(''));
+  state.runLogs = results
+    .filter(r => r.status === 'fulfilled')
+    .map(r => r.value);
 }
 
-// ═══════════════════════════════════════════════════════
-// EVENTOS — selectores
-// ═══════════════════════════════════════════════════════
-function buildVenueSelector(evs) {
-  var vids = [];
-  evs.forEach(function(e){ if(vids.indexOf(e.venue_id)===-1) vids.push(e.venue_id); });
-  vids.sort();
-  var html = '<button class="vpill on" data-v="all" onclick="setVenue(\'all\',this)">Todos ('+evs.length+')</button>';
-  vids.forEach(function(v){
-    var n = evs.filter(function(e){return e.venue_id===v;}).length;
-    html += '<button class="vpill" data-v="'+v+'" onclick="setVenue(\''+v+'\',this)">'+v+' ('+n+')</button>';
-  });
-  set('vpills', html);
+// ── Render All ───────────────────────────────────────────────
+function renderAll() {
+  renderOverview();
+  renderVenues();
+  renderQualidade();
+  renderLogs();
+  renderUnknownTags();
 }
 
-function setVenue(vid, el) {
-  curVenue = vid; curPage = 1;
-  document.querySelectorAll('.vpill').forEach(function(b){b.classList.remove('on');});
-  el.classList.add('on');
-  closeD(); renderTable();
-}
-function goVenue(vid) {
-  curVenue = vid; curPage = 1;
-  switchTab('eventos', document.querySelectorAll('.tab')[1]);
-  document.querySelectorAll('.vpill').forEach(function(b){b.classList.toggle('on',b.dataset.v===vid);});
-  renderTable();
-}
+// ── OVERVIEW ─────────────────────────────────────────────────
+function renderOverview() {
+  const m = state.master;
+  const l = state.latest;
 
-// ═══════════════════════════════════════════════════════
-// EVENTOS — tabela + paginação
-// ═══════════════════════════════════════════════════════
-function toggleF(btn) {
-  var f = btn.dataset.f;
-  if (activeF[f]) { delete activeF[f]; btn.classList.remove('on','on-b'); }
-  else { activeF[f]=true; btn.classList.add(f==='free'||f==='multi'?'on-b':'on'); }
-  curPage=1; renderTable();
-}
+  // KPIs
+  document.getElementById('kpi-events').textContent =
+    m ? fmt(m.total_events) : 'N/D';
 
-function doSort(key) {
-  if(sortKey===key){sortAsc=!sortAsc;}else{sortKey=key;sortAsc=true;}
-  curPage=1;
-  document.querySelectorAll('th').forEach(function(th){th.classList.remove('sorted');});
-  var el=document.getElementById('th-'+key);
-  if(el) el.classList.add('sorted');
-  renderTable();
-}
+  document.getElementById('kpi-venues').textContent =
+    m ? fmt(m.total_venues) : (l ? fmt(l.summary?.venues_processed) : 'N/D');
 
-function getFiltered() {
-  var evs = (MASTER&&MASTER.events)||[];
-  var q = document.getElementById('esearch').value.toLowerCase();
-  var fdom = document.getElementById('fdom').value;
-  var fstatus = document.getElementById('fstatus').value;
-  return evs.filter(function(e){
-    if(curVenue!=='all'&&e.venue_id!==curVenue) return false;
-    if(fdom&&e.domain!==fdom) return false;
-    if(fstatus&&e.event_status!==fstatus) return false;
-    if(q){
-      var cred = (e.credits&&e.credits.credits_raw)||'';
-      var hay = ((e.title||'')+' '+(e.description||'')+' '+(e.category||'')+' '+(e.domain||'')+' '+cred).toLowerCase();
-      if(hay.indexOf(q)===-1) return false;
-    }
-    if(activeF.free && !(e.price&&e.price.is_free)) return false;
-    if(activeF.multi && (e.total_sessions||1)<2) return false;
-    if(activeF.noimg && e.media&&e.media.cover_image) return false;
-    if(activeF.nodesc && e.description&&e.description.length>20) return false;
-    return true;
-  });
-}
+  const cred = m?.quality?.avg_credibility ?? l?.summary?.avg_credibility;
+  document.getElementById('kpi-cred').textContent =
+    cred != null ? fmtCredPct(cred) : 'N/D';
 
-function renderTable() {
-  var filtered = getFiltered();
-  filtered.sort(function(a,b){
-    var va, vb;
-    if(sortKey==='score'){va=score(a);vb=score(b);}
-    else if(sortKey==='price_min'){va=(a.price&&a.price.price_min)||999;vb=(b.price&&b.price.price_min)||999;}
-    else{va=(a[sortKey]||'');vb=(b[sortKey]||'');}
-    if(va<vb) return sortAsc?-1:1;
-    if(va>vb) return sortAsc?1:-1;
-    return 0;
-  });
+  const runAt = l?.run_at;
+  document.getElementById('kpi-run').textContent = timeAgo(runAt);
+  document.getElementById('kpi-run-abs').textContent = fmtDate(runAt);
 
-  var total = filtered.length;
-  var pages = Math.ceil(total/PAGE_SIZE)||1;
-  if(curPage>pages) curPage=1;
-  var start = (curPage-1)*PAGE_SIZE, end = Math.min(start+PAGE_SIZE,total);
-  var page = filtered.slice(start,end);
-
-  set('ecount', total + ' evento' + (total!==1?'s':''));
-  set('tfoot', 'Mostrando '+start+'–'+end+' de '+total);
-
-  var ok='<span style="color:var(--green)">✓</span>', miss='<span style="color:var(--muted)">—</span>';
-  set('etbody', page.map(function(e){
-    var s=score(e), sc=scoreColor(s);
-    var hasImg=!!(e.media&&e.media.cover_image);
-    var hasDesc=!!(e.description&&e.description.length>20);
-    var nsess=e.total_sessions||(e.dates&&e.dates.length)||1;
-    var priceStr=e.price&&e.price.is_free?'<span class="badge bok">grátis</span>':
-      e.price&&e.price.price_display?esc(e.price.price_display):'<span style="color:var(--muted)">—</span>';
-    var dc=domColor(e.domain);
-    var statusBadge = e.event_status==='em-cartaz'?'<span class="badge bok">cartaz</span>':
-      e.event_status==='estreia'?'<span class="badge bwarn">estreia</span>':'';
-    return '<tr>'+
-      '<td class="tlong" title="'+esc(e.title)+'">'+cleanTitle(e.title)+(e.subtitle?' <span style="color:var(--muted);font-size:10px">'+cleanTitle(e.subtitle)+'</span>':'')+'</td>'+
-      '<td><span class="badge bdim">'+esc(e.venue_id)+'</span></td>'+
-      '<td><span style="color:'+dc+';font-size:10px">●</span> <span style="font-size:10px">'+domLabel(e.domain)+'</span></td>'+
-      '<td style="font-size:10px">'+fmtDate(e.date_first)+(nsess>1?' <span style="color:var(--muted)">→ '+fmtDate(e.date_last)+'</span>':'')+'</td>'+
-      '<td style="text-align:center;color:var(--text2)">'+nsess+'</td>'+
-      '<td>'+priceStr+'</td>'+
-      '<td style="text-align:center">'+(hasImg?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+(hasDesc?ok:miss)+'</td>'+
-      '<td><span style="color:'+sc+';font-size:11px">'+s+'%</span></td>'+
-      '<td><button class="btn" style="padding:2px 8px;font-size:10px" onclick="showD(\''+esc(e.id)+'\')">+</button></td>'+
-      '</tr>';
-  }).join('')||'<tr><td colspan="10" class="empty">Nenhum evento encontrado.</td></tr>');
-
-  // Paginação
-  var phtml = '';
-  if(pages>1){
-    phtml += '<button class="ppage" onclick="goPage('+(curPage-1)+')" '+(curPage<=1?'disabled':'')+'>←</button>';
-    var startP=Math.max(1,curPage-2), endP=Math.min(pages,curPage+2);
-    if(startP>1) phtml+='<button class="ppage" onclick="goPage(1)">1</button>'+(startP>2?'<span style="color:var(--muted);font-size:10px">…</span>':'');
-    for(var p=startP;p<=endP;p++) phtml+='<button class="ppage '+(p===curPage?'on':'')+'" onclick="goPage('+p+')">'+p+'</button>';
-    if(endP<pages) phtml+=(endP<pages-1?'<span style="color:var(--muted);font-size:10px">…</span>':'')+'<button class="ppage" onclick="goPage('+pages+')">'+pages+'</button>';
-    phtml += '<button class="ppage" onclick="goPage('+(curPage+1)+')" '+(curPage>=pages?'disabled':'')+'>→</button>';
-    phtml += '<span class="pinfo">pág '+curPage+'/'+pages+'</span>';
+  const errors = l?.summary?.total_errors ?? 0;
+  document.getElementById('kpi-errors').textContent = fmt(errors);
+  const errCard = document.getElementById('kpi-errors-card');
+  if (errors > 0) {
+    errCard.classList.add('kpi-danger');
+  } else {
+    errCard.classList.remove('kpi-danger');
   }
-  set('pagination', phtml);
+
+  // Venue status grid
+  const grid = document.getElementById('venue-status-grid');
+  if (!l && !m) {
+    grid.innerHTML = '<div class="alert alert-blue" style="grid-column:1/-1">Dados não disponíveis. Verifica a ligação ao servidor de ficheiros.</div>';
+    return;
+  }
+
+  const venues = l?.venues || [];
+  const vq = l?.venue_quality || {};
+  const cb = state.circuitBreaker || {};
+  const config = {
+    ccb: { name: 'Centro Cultural de Belém', freq: '12h', mode: 'wp_api' },
+    culturgest: { name: 'Culturgest', freq: '24h', mode: 'html_static' },
+    'theatro-circo': { name: 'Theatro Circo', freq: '12h', mode: 'wp_api' },
+    tndm: { name: 'Teatro Nacional D. Maria II', freq: '24h', mode: 'html_static' },
+  };
+
+  if (venues.length === 0 && Object.keys(vq).length === 0) {
+    grid.innerHTML = '<div class="alert alert-blue" style="grid-column:1/-1">Sem dados de venues no último run.</div>';
+    return;
+  }
+
+  const venueIds = venues.length > 0
+    ? venues.map(v => v.venue_id)
+    : Object.keys(vq);
+
+  grid.innerHTML = venueIds.map(vid => {
+    const v = venues.find(x => x.venue_id === vid) || {};
+    const q = vq[vid] || {};
+    const cbEntry = cb[vid] || { failures: 0, status: 'ok', next_retry: null };
+    const cbInfo = cbStatusLabel(cbEntry);
+    const conf = config[vid] || {};
+
+    const hasErrors = (v.errors || []).length > 0;
+    const dotCls = cbEntry.status === 'open' ? 'error' :
+                   (cbEntry.failures > 0 || hasErrors) ? 'warning' : 'ok';
+
+    const credPct = q.avg_credibility != null
+      ? (q.avg_credibility * 100)
+      : (v.avg_credibility_score != null ? v.avg_credibility_score * 100 : null);
+    const credColor = credPct != null ? (credPct >= 80 ? '#10B981' : credPct >= 60 ? '#F59E0B' : '#EF4444') : '#6b7280';
+
+    return `
+    <div class="venue-status-card">
+      <div class="venue-status-header">
+        <div class="venue-dot ${dotCls}"></div>
+        <div class="venue-status-name">${conf.name || vid}</div>
+        <div class="venue-status-cb ${cbInfo.cls}">${cbInfo.label}</div>
+      </div>
+      <div class="venue-status-stats">
+        <div><strong>${fmt(v.scraped ?? 'N/D')}</strong> scraped</div>
+        <div><strong>${fmt(v.valid ?? 'N/D')}</strong> válidos</div>
+        <div><strong>${fmt(v.invalid ?? 0)}</strong> inválidos</div>
+        <div><strong>${fmt(q.total ?? 'N/D')}</strong> activos</div>
+      </div>
+      <div class="cred-bar-wrapper">
+        <div class="cred-bar-label">Credibilidade</div>
+        <div class="cred-bar-track">
+          <div class="cred-bar-fill" style="width:${credPct ?? 0}%;background:${credColor}"></div>
+        </div>
+        <div class="cred-bar-pct">${credPct != null ? credPct.toFixed(1) + '%' : 'N/D'}</div>
+      </div>
+      ${hasErrors ? `<div style="font-size:11px;color:var(--red)">⚠ ${v.errors.length} erro(s) no último run</div>` : ''}
+    </div>`;
+  }).join('');
 }
 
-function goPage(p){
-  if(p<1||p>Math.ceil(getFiltered().length/PAGE_SIZE)) return;
-  curPage=p; renderTable();
-  document.getElementById('sec-eventos').scrollIntoView({behavior:'smooth',block:'start'});
-}
+// ── VENUES ───────────────────────────────────────────────────
+function renderVenues() {
+  const l = state.latest;
+  const cb = state.circuitBreaker || {};
+  const container = document.getElementById('venues-list');
 
-// ═══════════════════════════════════════════════════════
-// DETALHE DE EVENTO
-// ═══════════════════════════════════════════════════════
-function openEvent(id) {
-  switchTab('eventos', document.querySelectorAll('.tab')[1]);
-  showD(id);
-}
+  if (!l) {
+    container.innerHTML = '<div class="alert alert-blue">Dados não disponíveis.</div>';
+    return;
+  }
 
-function showD(id) {
-  var evs = (MASTER&&MASTER.events)||[];
-  var e = evs.find(function(x){return x.id===id;});
-  if (!e) return;
-  var panel = document.getElementById('dpanel');
-  panel.classList.add('on');
+  const venues = l.venues || [];
+  const vq = l.venue_quality || {};
+  const config = {
+    ccb:            { name: 'Centro Cultural de Belém', type: 'Cultural', mode: 'wp_api',       freq: '12h', flags: { incremental: true, two_pass: true, fetch_detail_html: true } },
+    culturgest:     { name: 'Culturgest',               type: 'Cultural', mode: 'html_static',  freq: '24h', flags: { incremental: true, two_pass: true, fetch_detail_html: true } },
+    'theatro-circo':{ name: 'Theatro Circo',            type: 'Teatro',   mode: 'wp_api',       freq: '12h', flags: { incremental: true, two_pass: true, fetch_detail_html: true } },
+    tndm:           { name: 'Teatro Nacional D. Maria II', type: 'Teatro', mode: 'html_static', freq: '24h', flags: { incremental: true, two_pass: true, fetch_detail_html: true } },
+  };
 
-  // Header
-  var imgH = (e.media&&e.media.cover_image)
-    ? '<div class="dimg-wrap"><img src="'+esc(e.media.cover_image)+'" onerror="this.parentNode.innerHTML=\'<div class=\\\"dph\\\">🎭</div>\'" loading="lazy"></div>'
-    : '<div class="dph">🎭</div>';
-  set('dimg-wrap', imgH);
-  set('dtitle', cleanTitle(e.title));
-  set('dsubtitle', e.subtitle ? cleanTitle(e.subtitle) : '');
+  const venueIds = venues.length > 0
+    ? venues.map(v => v.venue_id)
+    : Object.keys(vq);
 
-  var sc = score(e), c = scoreColor(sc);
-  var domC = domColor(e.domain);
-  var chips = [
-    '<span class="badge bdim">'+esc(e.venue_id)+'</span>',
-    '<span class="badge bblue" style="color:'+domC+';background:'+domC+'1a">'+domLabel(e.domain)+'</span>',
-    e.event_status==='em-cartaz'?'<span class="badge bok">em cartaz</span>':
-    e.event_status==='estreia'?'<span class="badge bwarn">estreia</span>':'<span class="badge bdim">'+esc(e.event_status||'—')+'</span>',
-    '<span class="badge" style="color:'+c+';background:'+c+'1a">score '+sc+'%</span>',
-    e.price&&e.price.is_free?'<span class="badge bok">gratuito</span>':
-    e.price&&e.price.price_display?'<span class="badge bdim">'+esc(e.price.price_display)+'</span>':'',
-  ].filter(Boolean).join(' ');
-  set('dmeta-chips', chips);
+  if (venueIds.length === 0) {
+    container.innerHTML = '<div class="alert alert-blue">Sem dados de venues.</div>';
+    return;
+  }
 
-  // Fields
-  var preco = (e.price&&(e.price.price_display||(e.price.is_free?'Gratuito':null)))||'—';
-  var tktLink = (e.price&&e.price.ticketing_url)?'<a href="'+esc(e.price.ticketing_url)+'" target="_blank">bilhetes ↗</a>':'—';
-  var srcLink = e.source_url?'<a href="'+esc(e.source_url)+'" target="_blank">abrir ↗</a>':'—';
-  var pubAge = (e.audience&&(e.audience.label||(e.audience.age_min?'M/'+e.audience.age_min:null)||(e.audience.is_family?'Famílias':null)))||'—';
-  var scraped = (e.pipeline&&e.pipeline.scraped_at)?fmtDt(e.pipeline.scraped_at):'—';
-  var space = e.space_id ? esc(e.space_id.replace(/-/g,' ').replace(/\b\w/g,function(c){return c.toUpperCase();})) : '—';
-  var nsess = e.total_sessions||(e.dates&&e.dates.length)||1;
-
-  var fields = [
-    ['ID',           esc(e.id)],
-    ['Venue',        esc(e.venue_id)],
-    ['Domínio',      domLabel(e.domain)],
-    ['Categoria',    esc(e.category||'—')],
-    ['Espaço',       space],
-    ['Início',       fmtDate(e.date_first)],
-    ['Fim',          fmtDate(e.date_last)],
-    ['Sessões',      String(nsess)],
-    ['Público',      pubAge],
-    ['Preço',        esc(preco)],
-    ['Bilheteira',   tktLink],
-    ['URL',          srcLink],
-    ['Scraped',      scraped],
-    ['Score',        '<span style="color:'+c+'">'+sc+'%</span>'],
+  const qualityFields = [
+    { key: 'description',     label: 'Descrição' },
+    { key: 'cover_image',     label: 'Imagem' },
+    { key: 'price_display',   label: 'Preço' },
+    { key: 'ticketing_url',   label: 'Bilheteira URL' },
+    { key: 'credits_any',     label: 'Créditos' },
+    { key: 'subcategory',     label: 'Subcategoria' },
+    { key: 'accessibility',   label: 'Acessibilidade' },
   ];
-  var html = fields.map(function(p){
-    return '<div class="dfield"><div class="dflabel">'+p[0]+'</div><div class="dfval">'+p[1]+'</div></div>';
+
+  container.innerHTML = venueIds.map((vid, idx) => {
+    const v   = venues.find(x => x.venue_id === vid) || {};
+    const q   = vq[vid] || {};
+    const fp  = q.field_pct || {};
+    const cbE = cb[vid] || { failures: 0, status: 'ok', next_retry: null };
+    const cbI = cbStatusLabel(cbE);
+    const conf = config[vid] || { name: vid, type: 'N/D', mode: 'N/D', flags: {} };
+    const hasErrors = (v.errors || []).length > 0;
+
+    const dotCls = cbE.status === 'open' ? 'error' :
+                   (cbE.failures > 0 || hasErrors) ? 'warning' : 'ok';
+    const statusBadgeCls = dotCls === 'ok' ? 'badge-green' : dotCls === 'warning' ? 'badge-amber' : 'badge-red';
+    const statusLabel = dotCls === 'ok' ? 'OK' : dotCls === 'warning' ? 'Warning' : 'Erro';
+
+    const credPct = q.avg_credibility != null ? (q.avg_credibility * 100) :
+      (v.avg_credibility_score != null ? v.avg_credibility_score * 100 : null);
+
+    const merge = v.merge_stats || {};
+    const mergeKeys = Object.entries(merge).filter(([,val]) => val > 0);
+
+    const qBars = qualityFields.map(f => {
+      const pct = fp[f.key] ?? null;
+      const cls = pct != null ? colorPct(pct) : 'bad';
+      const w   = pct ?? 0;
+      return `
+      <div class="quality-bar-row">
+        <div class="quality-bar-label">${f.label}</div>
+        <div class="quality-bar-track"><div class="quality-bar-fill ${cls}" style="width:${w}%"></div></div>
+        <div class="quality-bar-pct">${pct != null ? fmtPct(pct) : 'N/D'}</div>
+      </div>`;
+    }).join('');
+
+    const cbNextRetry = cbE.next_retry
+      ? `<div class="cb-panel-item"><div class="cb-panel-key">Próxima tentativa</div><div class="cb-panel-val" style="color:var(--amber)">${fmtDate(cbE.next_retry)}</div></div>`
+      : '';
+    const cbLastFailure = cbE.last_failure
+      ? `<div class="cb-panel-item"><div class="cb-panel-key">Última falha</div><div class="cb-panel-val">${fmtDate(cbE.last_failure)}</div></div>`
+      : '';
+
+    const flags = conf.flags || {};
+
+    return `
+    <div class="venue-card" id="vc-${vid}">
+      <div class="venue-card-header" onclick="toggleVenueCard('${vid}')">
+        <div class="venue-dot ${dotCls}" style="width:9px;height:9px"></div>
+        <div class="venue-card-title">${conf.name}</div>
+        <div class="venue-card-meta">
+          <span class="badge badge-gray">${conf.mode}</span>
+          <span class="badge badge-gray">${conf.freq}</span>
+          <span class="badge ${statusBadgeCls}">${statusLabel}</span>
+          <span style="color:var(--muted);font-size:11px">${fmt(v.scraped ?? 0)} scraped</span>
+        </div>
+        <div class="expand-chevron">▼</div>
+      </div>
+      <div class="venue-card-body">
+        <div class="stats-row">
+          <div class="stat-box">
+            <div class="stat-box-val">${fmt(v.scraped ?? 0)}</div>
+            <div class="stat-box-lbl">Scraped</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-val" style="color:var(--green)">${fmt(v.valid ?? 0)}</div>
+            <div class="stat-box-lbl">Válidos</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-val" style="color:${(v.invalid || 0) > 0 ? 'var(--red)' : 'var(--muted)'}">${fmt(v.invalid ?? 0)}</div>
+            <div class="stat-box-lbl">Inválidos</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-val" style="color:var(--accent)">${fmt(q.total ?? 0)}</div>
+            <div class="stat-box-lbl">Activos</div>
+          </div>
+        </div>
+
+        ${credPct != null ? `
+        <div class="cred-bar-wrapper" style="margin-bottom:16px">
+          <div class="cred-bar-label">Credibilidade média</div>
+          <div class="cred-bar-track" style="height:8px">
+            <div class="cred-bar-fill" style="width:${credPct}%;background:${credPct >= 80 ? 'var(--green)' : credPct >= 60 ? 'var(--amber)' : 'var(--red)'}"></div>
+          </div>
+          <div class="cred-bar-pct" style="font-size:12px;font-weight:700">${credPct.toFixed(1)}%</div>
+        </div>` : ''}
+
+        <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Qualidade dos Campos</div>
+        <div class="quality-bars">${qBars}</div>
+
+        <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Circuit Breaker</div>
+        <div class="cb-panel">
+          <div class="cb-panel-item">
+            <div class="cb-panel-key">Estado</div>
+            <div class="cb-panel-val ${cbI.cls}">${cbI.label}</div>
+          </div>
+          <div class="cb-panel-item">
+            <div class="cb-panel-key">Falhas consecutivas</div>
+            <div class="cb-panel-val">${cbE.failures ?? 0}</div>
+          </div>
+          ${cbLastFailure}
+          ${cbNextRetry}
+        </div>
+
+        ${mergeKeys.length > 0 ? `
+        <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Merge Stats</div>
+        <div class="merge-chips">
+          ${mergeKeys.map(([k, val]) => `<div class="merge-chip">${k}: <span>${val}</span></div>`).join('')}
+        </div>` : ''}
+
+        <div style="margin-top:12px;">
+          <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Flags do Scraper</div>
+          <div class="flags-row">
+            <span class="flag-chip ${flags.incremental ? '' : 'off'}">incremental</span>
+            <span class="flag-chip ${flags.two_pass ? '' : 'off'}">two_pass</span>
+            <span class="flag-chip ${flags.fetch_detail_html ? '' : 'off'}">fetch_detail_html</span>
+          </div>
+        </div>
+
+        ${hasErrors ? `
+        <div style="margin-top:12px;">
+          <div style="font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px">Erros</div>
+          <div class="errors-list">
+            ${(v.errors || []).map(e => `<div class="error-item">${e}</div>`).join('')}
+          </div>
+        </div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleVenueCard(vid) {
+  document.getElementById('vc-' + vid)?.classList.toggle('expanded');
+}
+
+// ── QUALIDADE ────────────────────────────────────────────────
+function renderQualidade() {
+  const l = state.latest;
+  const container = document.getElementById('qualidade-content');
+
+  if (!l) {
+    container.innerHTML = '<div class="alert alert-blue">Dados não disponíveis.</div>';
+    return;
+  }
+
+  const vq = l.venue_quality || {};
+  const venueIds = Object.keys(vq);
+
+  if (venueIds.length === 0) {
+    container.innerHTML = '<div class="alert alert-blue">Sem dados de qualidade.</div>';
+    return;
+  }
+
+  const fields = [
+    { key: 'description',        label: 'Descrição' },
+    { key: 'cover_image',        label: 'Imagem' },
+    { key: 'price_display',      label: 'Preço' },
+    { key: 'ticketing_url',      label: 'Bilheteira' },
+    { key: 'credits_any',        label: 'Créditos' },
+    { key: 'subcategory',        label: 'Subcategoria' },
+    { key: 'audience_age',       label: 'Idades' },
+    { key: 'duration_minutes',   label: 'Duração' },
+    { key: 'accessibility',      label: 'Acessib.' },
+  ];
+
+  const venueNames = {
+    ccb:              'CCB',
+    culturgest:       'Culturgest',
+    'theatro-circo':  'Theatro Circo',
+    tndm:             'TNDM',
+  };
+
+  // Global averages
+  const globalAvg = {};
+  fields.forEach(f => {
+    const vals = venueIds
+      .map(vid => vq[vid]?.field_pct?.[f.key])
+      .filter(v => v != null);
+    globalAvg[f.key] = vals.length > 0 ? vals.reduce((a,b) => a+b, 0) / vals.length : null;
+  });
+
+  const headerCells = fields.map(f => `<th title="${f.key}">${f.label}</th>`).join('');
+  const dataRows = venueIds.map(vid => {
+    const fp = vq[vid]?.field_pct || {};
+    const cells = fields.map(f => {
+      const pct = fp[f.key] ?? null;
+      const cls = matrixColorClass(pct);
+      return `<td><div class="matrix-cell ${cls}">${pct != null ? fmtPct(pct, 0) : '—'}</div></td>`;
+    }).join('');
+    const cred = vq[vid]?.avg_credibility;
+    return `
+    <tr>
+      <td><strong>${venueNames[vid] || vid}</strong></td>
+      ${cells}
+      <td><div class="matrix-cell ${matrixColorClass(cred != null ? cred * 100 : null)}">${cred != null ? fmtCredPct(cred) : '—'}</div></td>
+    </tr>`;
   }).join('');
 
-  if (e.description) {
-    html += '<div class="dfield dfull"><div class="dflabel">Descrição</div><div class="dfval" style="white-space:pre-wrap;max-height:100px;overflow:auto;font-size:11px;color:var(--text2)">'+esc(e.description)+'</div></div>';
+  const globalRow = `
+  <tr class="global-row">
+    <td>Média Global</td>
+    ${fields.map(f => {
+      const avg = globalAvg[f.key];
+      const cls = matrixColorClass(avg);
+      return `<td><div class="matrix-cell ${cls}">${avg != null ? fmtPct(avg, 0) : '—'}</div></td>`;
+    }).join('')}
+    <td>
+      ${(() => {
+        const creds = venueIds.map(vid => vq[vid]?.avg_credibility).filter(v => v != null);
+        const avg = creds.length > 0 ? creds.reduce((a,b)=>a+b,0)/creds.length : null;
+        const cls = matrixColorClass(avg != null ? avg * 100 : null);
+        return `<div class="matrix-cell ${cls}">${avg != null ? fmtCredPct(avg) : '—'}</div>`;
+      })()}
+    </td>
+  </tr>`;
+
+  container.innerHTML = `
+  <div class="card" style="padding:0;overflow:hidden">
+    <div class="table-wrap">
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Venue</th>
+            ${headerCells}
+            <th>Credib.</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${dataRows}
+          ${globalRow}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="margin-top:24px">
+    <div class="section-title" style="font-size:15px;margin-bottom:14px">Detalhe por Venue</div>
+    ${venueIds.map(vid => {
+      const q = vq[vid] || {};
+      const fp = q.field_pct || {};
+      const conf = { ccb:'CCB', culturgest:'Culturgest', 'theatro-circo':'Theatro Circo', tndm:'TNDM' };
+      return `
+      <div class="card" style="margin-bottom:14px">
+        <div class="card-header">
+          <div>
+            <div class="card-title">${venueNames[vid] || vid}</div>
+            <div class="card-sub">${fmt(q.total ?? 0)} eventos activos · Credibilidade: ${q.avg_credibility != null ? fmtCredPct(q.avg_credibility) : 'N/D'}</div>
+          </div>
+        </div>
+        <div class="quality-bars">
+          ${fields.map(f => {
+            const pct = fp[f.key] ?? null;
+            const cls = pct != null ? colorPct(pct) : 'bad';
+            return `
+            <div class="quality-bar-row">
+              <div class="quality-bar-label">${f.label}</div>
+              <div class="quality-bar-track"><div class="quality-bar-fill ${cls}" style="width:${pct ?? 0}%"></div></div>
+              <div class="quality-bar-pct">${pct != null ? fmtPct(pct) : 'N/D'}</div>
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
+    }).join('')}
+  </div>`;
+}
+
+// ── PIPELINE LOGS ─────────────────────────────────────────────
+function renderLogs() {
+  const container = document.getElementById('logs-content');
+  const logs = [state.latest, ...state.runLogs].filter(Boolean);
+
+  // Deduplicate by run_at
+  const seen = new Set();
+  const unique = logs.filter(l => {
+    if (!l.run_at || seen.has(l.run_at)) return false;
+    seen.add(l.run_at);
+    return true;
+  });
+
+  // Sort by run_at descending
+  unique.sort((a, b) => {
+    try {
+      return new Date(b.run_at.replace(/Z$/, '').replace(/\+00:00Z$/, '+00:00'))
+           - new Date(a.run_at.replace(/Z$/, '').replace(/\+00:00Z$/, '+00:00'));
+    } catch { return 0; }
+  });
+
+  const display = unique.slice(0, 20);
+
+  if (display.length === 0) {
+    container.innerHTML = '<div class="alert alert-blue">Sem logs disponíveis.</div>';
+    return;
   }
-  if (e.credits && e.credits.credits_raw) {
-    html += '<div class="dfield dfull"><div class="dflabel">Ficha técnica</div><div class="dfval" style="white-space:pre-wrap;max-height:80px;overflow:auto;font-size:10px;color:var(--text2)">'+esc(e.credits.credits_raw)+'</div></div>';
+
+  const rows = display.map((log, i) => {
+    const s = log.summary || {};
+    const hasErrors = (s.total_errors || 0) > 0;
+    const status = hasErrors ? 'Erro' : 'OK';
+    const statusCls = hasErrors ? 'badge-red' : 'badge-green';
+    return `
+    <tr class="expandable log-row" data-idx="${i}" onclick="toggleLogRow(${i})">
+      <td><span style="font-family:monospace;font-size:11px">${fmtDate(log.run_at)}</span></td>
+      <td>${fmtDuration(log.duration_seconds)}</td>
+      <td>${fmt(s.venues_processed)}</td>
+      <td>${fmt(s.total_scraped)}</td>
+      <td style="color:var(--green)">${fmt(s.total_valid)}</td>
+      <td>${fmt(s.total_after_dedup)}</td>
+      <td style="color:${hasErrors ? 'var(--red)' : 'var(--muted)'}">${fmt(s.total_errors)}</td>
+      <td><span class="badge ${statusCls}">${status}</span></td>
+    </tr>
+    <tr class="log-detail-row" id="log-detail-${i}" style="display:none">
+      <td colspan="8">
+        <div class="log-detail-inner">${JSON.stringify(log, null, 2)}</div>
+      </td>
+    </tr>`;
+  }).join('');
+
+  container.innerHTML = `
+  <div class="log-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Timestamp</th>
+          <th>Duração</th>
+          <th>Venues</th>
+          <th>Scraped</th>
+          <th>Válidos</th>
+          <th>Dedup</th>
+          <th>Erros</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows}
+      </tbody>
+    </table>
+  </div>
+  <div style="margin-top:10px;font-size:11px;color:var(--muted)">
+    A mostrar ${display.length} runs. Clica numa linha para expandir o JSON completo.
+  </div>`;
+}
+
+function toggleLogRow(idx) {
+  const detail = document.getElementById('log-detail-' + idx);
+  const rows = document.querySelectorAll('.log-row');
+  if (!detail) return;
+  const isOpen = detail.style.display !== 'none';
+  detail.style.display = isOpen ? 'none' : 'table-row';
+  if (rows[idx]) {
+    rows[idx].classList.toggle('log-row-expanded', !isOpen);
   }
-  set('dgrid', html);
+}
 
-  // Sessões
-  var sessHtml = '';
-  if (e.dates && e.dates.length > 1) {
-    sessHtml = '<div style="margin-top:12px"><div style="font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px">Sessões ('+e.dates.length+')</div>' +
-      '<div class="dsessions">' +
-      e.dates.map(function(d){
-        var cls = d.is_sold_out?'sold-out':d.is_cancelled?'cancelled':'';
-        return '<div class="dsess '+cls+'">'+
-          '<div class="dsess-date">'+fmtDate(d.date)+'</div>'+
-          (d.time_start?'<div class="dsess-time">'+esc(d.time_start)+'</div>':'')+
-          (d.duration_minutes?'<div class="dsess-time">'+d.duration_minutes+'min</div>':'')+
-          (d.is_sold_out?'<div class="dsess-flag">esgotado</div>':'')+
-          (d.is_cancelled?'<div class="dsess-flag">cancelado</div>':'')+
-          '</div>';
-      }).join('') +
-      '</div></div>';
+// ── UNKNOWN TAGS ─────────────────────────────────────────────
+function renderUnknownTags() {
+  const container = document.getElementById('unknown-tags-content');
+  const tags = state.unknownTags;
+
+  if (!tags) {
+    container.innerHTML = '<div class="alert alert-blue">Ficheiro unknown_tags.json não disponível.</div>';
+    return;
   }
 
-  // Acessibilidade
-  var a11y = e.accessibility || {};
-  var a11yPills = [];
-  if(a11y.has_sign_language) a11yPills.push('LGP');
-  if(a11y.has_audio_description) a11yPills.push('Audiodesc.');
-  if(a11y.has_subtitles) a11yPills.push('Legendas');
-  if(a11y.wheelchair_accessible) a11yPills.push('♿ Acessível');
-  if(a11y.is_relaxed_performance) a11yPills.push('Sessão relaxada');
-  if(a11yPills.length) {
-    sessHtml += '<div class="a11y">'+a11yPills.map(function(p){return '<span class="a11y-pill">'+p+'</span>';}).join('')+'</div>';
+  if (!Array.isArray(tags) || tags.length === 0) {
+    container.innerHTML = `
+    <div class="card">
+      <div style="text-align:center;padding:20px;color:var(--muted)">
+        <div style="font-size:24px;margin-bottom:8px">✓</div>
+        Não há tags desconhecidas. O taxonomizador está a funcionar correctamente.
+      </div>
+    </div>`;
+    document.getElementById('unknown-badge').style.display = 'none';
+    return;
   }
-  set('dsessions-wrap', sessHtml);
 
-  panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+  // Sort by count descending
+  const sorted = [...tags].sort((a, b) => (b.count || 0) - (a.count || 0));
+
+  // Update sidebar badge
+  const badge = document.getElementById('unknown-badge');
+  badge.textContent = sorted.length;
+  badge.style.display = '';
+
+  const rows = sorted.map(t => `
+  <tr>
+    <td><span class="tag-chip">${t.tag || 'N/D'}</span></td>
+    <td style="color:var(--muted)">${t.venue_id || 'N/D'}</td>
+    <td style="font-size:11px;color:var(--muted)">${t.first_seen || 'N/D'}</td>
+    <td><strong>${fmt(t.count || 0)}</strong></td>
+  </tr>`).join('');
+
+  container.innerHTML = `
+  <div class="card" style="padding:0;overflow:hidden">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Venue</th>
+            <th>Primeira vez</th>
+            <th>Contagem</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  </div>`;
 }
 
-function closeD(){ document.getElementById('dpanel').classList.remove('on'); }
-
-// ═══════════════════════════════════════════════════════
-// CALENDÁRIO
-// ═══════════════════════════════════════════════════════
-function buildCalSelectors(evs){
-  var vids=[], doms=[];
-  evs.forEach(function(e){
-    if(vids.indexOf(e.venue_id)===-1) vids.push(e.venue_id);
-    if(doms.indexOf(e.domain)===-1) doms.push(e.domain);
-  });
-  vids.sort(); doms.sort();
-  var vs = '<option value="">Todos os venues</option>'+vids.map(function(v){return '<option>'+v+'</option>';}).join('');
-  var ds = '<option value="">Todos os domínios</option>'+doms.map(function(d){return '<option value="'+d+'">'+domLabel(d)+'</option>';}).join('');
-  document.getElementById('cal-venue').innerHTML = vs;
-  document.getElementById('cal-domain').innerHTML = ds;
+// ── AÇÕES ─────────────────────────────────────────────────────
+function openVenueRefresh() {
+  const vid = document.getElementById('venue-select').value;
+  if (!vid) {
+    showToast('Selecciona um venue primeiro.', true);
+    return;
+  }
+  const url = `https://github.com/fvsalgado/palcovivo/actions?venue=${vid}`;
+  showToast(`A abrir GitHub Actions para ${vid}…`);
+  window.open(url, '_blank');
 }
 
-function renderCalendar(){
-  var evs = (MASTER&&MASTER.events)||[];
-  var vf = document.getElementById('cal-venue').value;
-  var df = document.getElementById('cal-domain').value;
-  if(vf) evs = evs.filter(function(e){return e.venue_id===vf;});
-  if(df) evs = evs.filter(function(e){return e.domain===df;});
-
-  // Build date → events map
-  var dateMap = {};
-  evs.forEach(function(e){
-    var dates = e.dates&&e.dates.length ? e.dates.map(function(d){return d.date;}) : (e.date_first?[e.date_first]:[]);
-    dates.forEach(function(d){
-      if(!dateMap[d]) dateMap[d]=[];
-      dateMap[d].push(e);
-    });
-  });
-
-  var allDates = Object.keys(dateMap).sort();
-  set('cal-count', Object.values(dateMap).reduce(function(s,a){return s+a.length;},0)+' sessões em '+allDates.length+' dias');
-  if(!allDates.length){set('cal-container','<div class="empty">Sem eventos.</div>');return;}
-
-  // Group by month
-  var months = {};
-  allDates.forEach(function(d){
-    var m=d.slice(0,7); if(!months[m]) months[m]=[];
-    months[m].push(d);
-  });
-
-  var html = '';
-  Object.keys(months).sort().forEach(function(month){
-    var [y,m] = month.split('-').map(Number);
-    var daysInMonth = new Date(y,m,0).getDate();
-    var firstDow = new Date(y,m-1,1).getDay(); // 0=Sun
-    firstDow = (firstDow+6)%7; // Mon=0
-    var monthName = new Date(y,m-1,1).toLocaleDateString('pt-PT',{month:'long',year:'numeric'});
-
-    html += '<div style="margin-bottom:20px">' +
-      '<div style="font-family:var(--serif);font-size:14px;font-style:italic;margin-bottom:8px;color:var(--text2)">'+monthName+'</div>' +
-      '<div style="display:grid;grid-template-columns:repeat(7,1fr);gap:3px">';
-
-    // Day headers
-    ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].forEach(function(d){
-      html+='<div style="text-align:center;font-size:9px;color:var(--muted);padding:3px 0">'+d+'</div>';
-    });
-
-    // Empty cells
-    for(var i=0;i<firstDow;i++) html+='<div></div>';
-
-    // Days
-    for(var day=1;day<=daysInMonth;day++){
-      var dateStr = month+'-'+(day<10?'0':'')+day;
-      var dayEvs = dateMap[dateStr]||[];
-      var isToday = dateStr===today();
-      var hasEvs = dayEvs.length>0;
-
-      var title = hasEvs ? dayEvs.slice(0,3).map(function(e){return cleanTitle(e.title);}).join('\n')+(dayEvs.length>3?'\n+mais':'') : '';
-      var bg = isToday ? 'background:rgba(15,143,96,.12);border-color:rgba(52,217,160,.4)' :
-               hasEvs ? 'background:rgba(34,85,204,.06);border-color:rgba(34,85,204,.2)' : 'background:var(--s2)';
-
-      html += '<div style="border:1px solid var(--border);border-radius:4px;padding:4px;min-height:40px;'+bg+';cursor:'+(hasEvs?'pointer':'default')+'"'+
-        (hasEvs?' title="'+title.replace(/"/g,'&quot;')+'" onclick="showCalDay(\''+dateStr+'\')"':'')+'>'+
-        '<div style="font-size:10px;color:'+(isToday?'var(--green)':hasEvs?'var(--text)':'var(--muted)')+'">'+day+'</div>'+
-        (hasEvs?'<div style="display:flex;flex-wrap:wrap;gap:2px;margin-top:2px">'+
-          dayEvs.slice(0,3).map(function(e){
-            var c=domColor(e.domain);
-            return '<div style="width:6px;height:6px;border-radius:50%;background:'+c+'" title="'+cleanTitle(e.title)+'"></div>';
-          }).join('')+(dayEvs.length>3?'<div style="font-size:8px;color:var(--muted)">+'+( dayEvs.length-3)+'</div>':'')+'</div>':'')+
-        '</div>';
-    }
-    html += '</div></div>';
-  });
-  set('cal-container', html);
-}
-
-function showCalDay(dateStr) {
-  var evs = (MASTER&&MASTER.events)||[];
-  var dayEvs = evs.filter(function(e){
-    return (e.date_first===dateStr)||(e.dates&&e.dates.some(function(d){return d.date===dateStr;}));
-  });
-  if(!dayEvs.length) return;
-  if(dayEvs.length===1){ openEvent(dayEvs[0].id); return; }
-  // múltiplos: ir para tab eventos filtrado
-  var el = document.querySelectorAll('.tab')[1];
-  switchTab('eventos', el);
-  document.getElementById('esearch').value = dateStr;
-  // hack: filtrar por data directamente
-  curPage=1;
-  var evs2=(MASTER&&MASTER.events)||[];
-  var filt=evs2.filter(function(e){return (e.date_first===dateStr)||(e.dates&&e.dates.some(function(d){return d.date===dateStr;}));});
-  set('ecount', filt.length+' evento'+(filt.length!==1?'s':''));
-  var ok='<span style="color:var(--green)">✓</span>',miss='<span style="color:var(--muted)">—</span>';
-  set('etbody', filt.map(function(e){
-    var s=score(e),sc=scoreColor(s);
-    var hasImg=!!(e.media&&e.media.cover_image),hasDesc=!!(e.description&&e.description.length>20);
-    var nsess=e.total_sessions||(e.dates&&e.dates.length)||1;
-    var priceStr=e.price&&e.price.is_free?'<span class="badge bok">grátis</span>':e.price&&e.price.price_display?esc(e.price.price_display):'—';
-    return '<tr>'+
-      '<td class="tlong" title="'+esc(e.title)+'">'+cleanTitle(e.title)+'</td>'+
-      '<td><span class="badge bdim">'+esc(e.venue_id)+'</span></td>'+
-      '<td><span style="color:'+domColor(e.domain)+'">'+domLabel(e.domain)+'</span></td>'+
-      '<td>'+fmtDate(e.date_first)+'</td>'+
-      '<td style="text-align:center">'+nsess+'</td>'+
-      '<td>'+priceStr+'</td>'+
-      '<td style="text-align:center">'+(hasImg?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+(hasDesc?ok:miss)+'</td>'+
-      '<td><span style="color:'+sc+'">'+s+'%</span></td>'+
-      '<td><button class="btn" style="padding:2px 8px;font-size:10px" onclick="showD(\''+esc(e.id)+'\')">+</button></td>'+
-      '</tr>';
-  }).join(''));
-  set('pagination','');set('tfoot','');
-}
-
-// ═══════════════════════════════════════════════════════
-// QUALIDADE
-// ═══════════════════════════════════════════════════════
-function renderQualidade(evs) {
-  var total = evs.length||1;
-  var checks = QFIELDS.map(function(f){ return evs.filter(f.check).length; });
-
-  set('q-kpis', [
-    {label:'Com imagem',    n:evs.filter(function(e){return e.media&&e.media.cover_image;}).length, color:'var(--green)'},
-    {label:'Com preço',     n:evs.filter(function(e){return e.price&&(e.price.price_display||e.price.is_free);}).length, color:'var(--yellow)'},
-    {label:'Com descrição', n:evs.filter(function(e){return e.description&&e.description.length>20;}).length, color:'var(--blue)'},
-    {label:'Com tags',      n:evs.filter(function(e){return e.tags&&e.tags.length;}).length, color:'var(--purple)'},
-  ].map(function(k){
-    var p=pct(k.n,total);
-    return '<div class="kpi" style="--kcolor:'+k.color+'"><div class="kval">'+p+'%</div><div class="klabel">'+k.label+'</div><div class="ksub">'+k.n+' / '+total+'</div></div>';
-  }).join(''));
-
-  var venueIds = [];
-  evs.forEach(function(e){ if(venueIds.indexOf(e.venue_id)===-1) venueIds.push(e.venue_id); });
-  venueIds.sort();
-
-  set('qfields', QFIELDS.map(function(f,i){
-    var n=checks[i], p=pct(n,total);
-    var c = p>=80?'var(--green)':p>=50?'var(--yellow)':'var(--red)';
-    var dots = venueIds.map(function(v){
-      var ve=evs.filter(function(e){return e.venue_id===v;});
-      var vp=pct(ve.filter(f.check).length,ve.length);
-      var vc=vp>=80?'var(--green)':vp>=50?'var(--yellow)':'var(--red)';
-      return '<span class="qdot" style="color:'+vc+';background:'+vc+'15" title="'+v+': '+vp+'%">'+v.slice(0,3)+' '+vp+'%</span>';
-    }).join('');
-    return '<div class="qrow">'+
-      '<div class="qname">'+f.label+'</div>'+
-      '<div class="qbar"><div class="qfill" style="width:'+p+'%;background:'+c+'"></div></div>'+
-      '<div class="qpct" style="color:'+c+'">'+p+'%</div>'+
-      '<div class="qdots">'+dots+'</div>'+
-      '</div>';
-  }).join(''));
-
-  var venueMap={};
-  evs.forEach(function(e){ if(!venueMap[e.venue_id]) venueMap[e.venue_id]=[]; venueMap[e.venue_id].push(e); });
-  var vids=Object.keys(venueMap).sort(function(a,b){return venueMap[b].length-venueMap[a].length;});
-  set('qvenues', vids.map(function(vid){
-    var ve=venueMap[vid];
-    var avg=Math.round(ve.reduce(function(s,e){return s+score(e);},0)/ve.length);
-    var c=scoreColor(avg);
-    return '<div class="brow">'+
-      '<div class="blabel">'+vid+' <span style="color:var(--muted)">('+ve.length+')</span></div>'+
-      '<div class="btrack"><div class="bfill" style="width:'+avg+'%;background:'+c+'"></div></div>'+
-      '<div class="bcount" style="color:'+c+'">'+avg+'%</div>'+
-      '</div>';
-  }).join(''));
-
-  var missing = evs.filter(function(e){return score(e)<90;}).sort(function(a,b){return score(a)-score(b);}).slice(0,50);
-  set('miss-count', missing.length+' eventos abaixo de 90%');
-  var ok='<span style="color:var(--green)">✓</span>',miss='<span style="color:var(--red)">✗</span>';
-  set('missbody', missing.map(function(e){
-    var s=score(e),sc=scoreColor(s);
-    return '<tr>'+
-      '<td class="tlong" title="'+esc(e.title)+'">'+cleanTitle(e.title)+'</td>'+
-      '<td><span class="badge bdim">'+esc(e.venue_id)+'</span></td>'+
-      '<td style="font-size:10px">'+fmtDate(e.date_first)+'</td>'+
-      '<td style="text-align:center">'+((e.media&&e.media.cover_image)?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+((e.price&&(e.price.price_display||e.price.is_free))?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+((e.description&&e.description.length>20)?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+((e.category&&e.category!=='outros')?ok:miss)+'</td>'+
-      '<td style="text-align:center">'+((e.tags&&e.tags.length)?ok:miss)+'</td>'+
-      '<td><span style="color:'+sc+'">'+s+'%</span></td>'+
-      '<td><button class="btn" style="padding:2px 7px;font-size:9px" onclick="showD(\''+esc(e.id)+'\');switchTab(\'eventos\',document.querySelectorAll(\'.tab\')[1])">ver</button></td>'+
-      '</tr>';
-  }).join('')||'<tr><td colspan="10" class="empty">Todos com score ≥ 90% ✓</td></tr>');
-}
-
-// ═══════════════════════════════════════════════════════
-// ACESSIBILIDADE
-// ═══════════════════════════════════════════════════════
-function renderA11y(evs) {
-  var total=evs.length||1;
-  var fields = [
-    {icon:'👐', key:'has_sign_language',       label:'LGP'},
-    {icon:'🎧', key:'has_audio_description',   label:'Audiodescr.'},
-    {icon:'📝', key:'has_subtitles',           label:'Legendas'},
-    {icon:'♿', key:'wheelchair_accessible',   label:'Acessível'},
-    {icon:'🧘', key:'is_relaxed_performance',  label:'Sessão relaxada'},
-  ];
-  var counts = fields.map(function(f){
-    return evs.filter(function(e){return e.accessibility&&e.accessibility[f.key];}).length;
-  });
-
-  set('a11y-matrix', fields.map(function(f,i){
-    var p=pct(counts[i],total);
-    return '<div class="a11y-card">'+
-      '<div class="a11y-icon">'+f.icon+'</div>'+
-      '<div class="a11y-name">'+f.label+'</div>'+
-      '<div class="a11y-n">'+counts[i]+'</div>'+
-      '<div class="a11y-pct">'+p+'% dos eventos</div>'+
-      '</div>';
-  }).join(''));
-
-  // Por venue
-  var venueMap={};
-  evs.forEach(function(e){ if(!venueMap[e.venue_id]) venueMap[e.venue_id]=[]; venueMap[e.venue_id].push(e); });
-  set('a11y-venue-body', Object.keys(venueMap).sort().map(function(vid){
-    var ve=venueMap[vid];
-    function n(k){ return ve.filter(function(e){return e.accessibility&&e.accessibility[k];}).length; }
-    var ok='<span style="color:var(--green)">✓</span>',miss='<span style="color:var(--muted)">—</span>';
-    function cell(k){ var c=n(k); return c?'<span style="color:var(--green)">'+c+'</span>':miss; }
-    return '<tr>'+
-      '<td><span class="badge bdim">'+vid+'</span></td>'+
-      '<td>'+cell('has_sign_language')+'</td>'+
-      '<td>'+cell('has_audio_description')+'</td>'+
-      '<td>'+cell('has_subtitles')+'</td>'+
-      '<td>'+cell('wheelchair_accessible')+'</td>'+
-      '<td style="color:var(--muted)">'+ve.length+'</td>'+
-      '</tr>';
-  }).join(''));
-
-  // Lista de eventos acessíveis
-  var a11yEvs = evs.filter(function(e){
-    var a=e.accessibility||{};
-    return a.has_sign_language||a.has_audio_description||a.has_subtitles||a.is_relaxed_performance;
-  }).sort(function(a,b){return (a.date_first||'')>(b.date_first||'')?1:-1;});
-
-  set('a11y-ev-list', a11yEvs.length ? a11yEvs.map(function(e){
-    var a=e.accessibility||{};
-    var pills=[];
-    if(a.has_sign_language) pills.push('LGP');
-    if(a.has_audio_description) pills.push('Audiodesc.');
-    if(a.has_subtitles) pills.push('Legendas');
-    if(a.is_relaxed_performance) pills.push('Relaxada');
-    return '<div class="brow" style="align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(0,0,0,.04)">'+
-      '<div class="blabel" style="min-width:unset;flex:1">'+
-        '<div style="font-size:11px;color:var(--text)">'+cleanTitle(e.title)+'</div>'+
-        '<div style="font-size:10px;color:var(--muted)">'+esc(e.venue_id)+' · '+fmtDate(e.date_first)+'</div>'+
-      '</div>'+
-      '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-left:8px">'+pills.map(function(p){return '<span class="a11y-pill" style="font-size:8px">'+p+'</span>';}).join('')+'</div>'+
-      '</div>';
-  }).join('') : '<div class="empty">Sem eventos com recursos de acessibilidade identificados.</div>');
-}
-
-// ═══════════════════════════════════════════════════════
-// PIPELINE
-// ═══════════════════════════════════════════════════════
-function renderPipeline() {
-  if (!LOG) { set('sec-pipeline','<div class="empty">Sem dados de pipeline.</div>'); return; }
-  var s = LOG.summary||{};
-  var dur = LOG.duration_seconds||0;
-  var dedup = (s.total_valid||0)-(s.total_after_dedup||0);
-
-  set('pl-kpis', [
-    {val:s.total_scraped||0,     label:'Scraped raw',    color:'var(--blue)'},
-    {val:s.total_valid||0,       label:'Válidos',         color:'var(--green)'},
-    {val:s.total_invalid||0,     label:'Inválidos',       color:'var(--red)'},
-    {val:(dur<60?dur+'s':Math.round(dur/60)+'min'), label:'Duração', color:'var(--yellow)'},
-  ].map(function(k){
-    return '<div class="kpi" style="--kcolor:'+k.color+'"><div class="kval">'+k.val+'</div><div class="klabel">'+k.label+'</div></div>';
-  }).join(''));
-
-  set('plvbody', (LOG.venues||[]).map(function(v){
-    var hasErr=v.errors&&v.errors.length;
-    var cred = v.avg_credibility_score ? Math.round(v.avg_credibility_score*100)+'%' : '—';
-    var credC = v.avg_credibility_score ? scoreColor(Math.round(v.avg_credibility_score*100)) : 'var(--muted)';
-    var ms = v.merge_stats||{};
-    var mergeStr = ms.new!==undefined ?
-      [ms.new?ms.new+' nov':'', ms.substituted?ms.substituted+' sub':'', ms.tombstoned?'<span class="badge bmiss">'+ms.tombstoned+' tomb</span>':''].filter(Boolean).join(' · ') : '—';
-    return '<tr>'+
-      '<td><strong>'+esc(v.venue_name||v.venue_id)+'</strong></td>'+
-      '<td style="color:var(--text2)">'+v.scraped+'</td>'+
-      '<td style="color:var(--green)">'+v.valid+'</td>'+
-      '<td style="color:'+(v.invalid>0?'var(--red)':'var(--muted)')+'">'+(v.invalid||0)+'</td>'+
-      '<td style="font-size:10px;color:var(--muted)">'+mergeStr+'</td>'+
-      '<td style="color:'+credC+'">'+cred+'</td>'+
-      '<td>'+(hasErr?'<span class="badge bmiss">'+v.errors.length+' erro(s)</span>':'<span class="badge bok">OK</span>')+'</td>'+
-      '</tr>';
-  }).join('')||'<tr><td colspan="7" class="empty">Sem dados.</td></tr>');
-
-  set('pldetail', [
-    ['Executado',       fmtDt(LOG.run_at)],
-    ['Duração',         dur+'s'],
-    ['Venues',          s.venues_processed||(LOG.venues||[]).length],
-    ['Scraped raw',     s.total_scraped||0],
-    ['Após validação',  s.total_valid||0],
-    ['Removidos dedup', dedup],
-    ['Output final',    s.total_after_dedup||(MASTER&&MASTER.total_events)||0],
-    ['Erros',           s.total_errors||0],
-  ].map(function(p){
-    return '<div class="srow"><span class="sk">'+p[0]+'</span><span>'+p[1]+'</span></div>';
-  }).join(''));
-
-  set('hist-count', LOGS.length+' runs');
-  var prevValid = null;
-  set('plhist', LOGS.slice(0,20).map(function(l){
-    var ls=l.summary||{};
-    var errs=ls.total_errors||0;
-    var trend='';
-    if(prevValid!==null){
-      var diff=(ls.total_valid||0)-prevValid;
-      trend=diff>0?'<span style="color:var(--green)">↑'+diff+'</span>':
-            diff<0?'<span style="color:var(--red)">↓'+Math.abs(diff)+'</span>':
-            '<span style="color:var(--muted)">→</span>';
-    }
-    prevValid=ls.total_valid||0;
-    return '<tr>'+
-      '<td style="font-size:10px">'+fmtDt(l.run_at)+'</td>'+
-      '<td style="color:var(--muted)">'+l.duration_seconds+'s</td>'+
-      '<td>'+( ls.total_scraped||0)+'</td>'+
-      '<td style="color:var(--green)">'+(ls.total_valid||0)+'</td>'+
-      '<td style="color:var(--muted)">'+(ls.total_after_dedup||0)+'</td>'+
-      '<td style="color:'+(errs>0?'var(--red)':'var(--muted')+'">'+errs+'</td>'+
-      '<td>'+trend+'</td>'+
-      '</tr>';
-  }).join('')||'<tr><td colspan="7" class="empty">Sem histórico.</td></tr>');
-}
-
-// ═══════════════════════════════════════════════════════
-// NAVEGAÇÃO
-// ═══════════════════════════════════════════════════════
-function switchTab(id, el) {
-  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on');});
-  document.querySelectorAll('.sec').forEach(function(s){s.classList.remove('on');});
-  if(el) el.classList.add('on');
-  document.getElementById('sec-'+id).classList.add('on');
-  if(id==='eventos') renderTable();
-  if(id==='calendario') renderCalendar();
-}
-
-loadData();
+// ── INIT ─────────────────────────────────────────────────────
+loadDashboard();
 </script>
 </body>
 </html>
