@@ -1,0 +1,1022 @@
+{
+  "month": "2026-09",
+  "total": 8,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-a-doce-vida",
+      "source_id": "a-doce-vida",
+      "source_url": "https://theatrocirco.com/event/a-doce-vida/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "A Doce Vida",
+      "title_raw": "A Doce Vida",
+      "subtitle": "Federico Fellini",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "cinema",
+      "category": "cinema-ficcao",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Cinema"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-01",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-01",
+      "date_last": "2026-09-01",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-01",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/162061-cinema_a_doce_vida-theatro_circo/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "a-doce-vida|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:10.323207+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:8d894d96993b74ea",
+        "harmonized_at": "2026-03-26T15:28:47.175466+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:10.323207+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960214+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-violencia-e-paixao",
+      "source_id": "violencia-e-paixao",
+      "source_url": "https://theatrocirco.com/event/violencia-e-paixao/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Violência e Paixão",
+      "title_raw": "Violência e Paixão",
+      "subtitle": "Luchino Visconti",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "cinema",
+      "category": "cinema-ficcao",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Cinema"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-08",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-08",
+      "date_last": "2026-09-08",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-08",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/162062-cinema_violencia_e_paixao-theatro_circo/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "violencia-e-paixao|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:09.110427+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:e5a739f125e1c1f8",
+        "harmonized_at": "2026-03-26T15:28:47.175271+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:09.110427+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960208+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-braga-encena-o-diario-secreto-do-velho-t",
+      "source_id": "braga-encena-o-diario-secreto-do-velho-teofilo",
+      "source_url": "https://theatrocirco.com/event/braga-encena-o-diario-secreto-do-velho-teofilo/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Braga En’Cena: O Diário Secreto do Velho Teófilo",
+      "title_raw": "Braga En’Cena: O Diário Secreto do Velho Teófilo",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-09",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-09",
+      "date_last": "2026-09-09",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-09",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 5.0,
+        "price_max": 5.0,
+        "price_display": "5€",
+        "price_raw": "5€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "braga-encena-o-diario-secreto-do-velho-teofilo|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:22.534549+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:20efbb4a65605137",
+        "harmonized_at": "2026-03-26T15:28:47.177322+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:22.534549+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960302+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-encontros-da-imagem",
+      "source_id": "encontros-da-imagem",
+      "source_url": "https://theatrocirco.com/event/encontros-da-imagem/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Encontros da Imagem",
+      "title_raw": "Encontros da Imagem",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "cinema",
+      "category": "cinema-ficcao",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Cinema"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-20",
+          "time_start": "14:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-20",
+      "date_last": "2026-09-20",
+      "total_sessions": 1,
+      "is_ongoing": true,
+      "date_open": "2026-09-20",
+      "date_close": "2026-10-19",
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": true,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Entrada livre",
+        "price_raw": "entrada livre",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "A exposição no Theatro Circo poderá ser visitada de quarta-feira a sábado das 14h30 às 18h30."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "encontros-da-imagem|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:01.296423+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:6d5553dc29eb963d",
+        "harmonized_at": "2026-03-26T15:28:47.173984+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:01.296423+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960195+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-paraiso",
+      "source_id": "paraiso",
+      "source_url": "https://theatrocirco.com/event/paraiso/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "PARAÍSO",
+      "title_raw": "PARAÍSO",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-20",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-20",
+      "date_last": "2026-09-20",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-20",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": true,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Entrada livre",
+        "price_raw": "Entrada livre",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.bol.pt/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Theatro Circo, gnration e Livraria Centésima Página\nCoordenação Curatorial\nNuno Abreu\nCuradoria, Cinema e Pensamento\nBANTUMEN\nCuradoria Mediação e Pensamento\nRosa Cabecinhas, CONCILIARE (CECS, Universidade do Minho)\nApoio à divulgação\nAntena 3, RDP África e RTP"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "paraiso|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:05.160424+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:3d8291c1ed8f6378",
+        "harmonized_at": "2026-03-26T15:28:47.174639+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:05.160424+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960201+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-braga-en-cena-a-narcisa",
+      "source_id": "braga-en-cena-a-narcisa",
+      "source_url": "https://theatrocirco.com/event/braga-en-cena-a-narcisa/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Braga En' Cena: À Narcisa",
+      "title_raw": "Braga En' Cena: À Narcisa",
+      "subtitle": "Projeto Expressar",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-23",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": 60,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-23",
+      "date_last": "2026-09-23",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-23",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 5.0,
+        "price_max": 5.0,
+        "price_display": "5€",
+        "price_raw": "5€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção e Encenação\nJuliana Kleinubing\nIntérpretes\nBeatriz Lobo, Carolina Sousa, Gonçalo Ferreira e Joshua Swifth\nDuração\n60 minutos"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "braga-en-cena-a-narcisa|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:27:59.294429+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:645a9cc31aac0b5b",
+        "harmonized_at": "2026-03-26T15:28:47.173672+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:27:59.294429+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960188+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-ctb-justica-camilo-castelo-branco",
+      "source_id": "ctb-justica-camilo-castelo-branco-2",
+      "source_url": "https://theatrocirco.com/event/ctb-justica-camilo-castelo-branco-2/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "CTB: Justiça - Camilo Castelo Branco",
+      "title_raw": "CTB: Justiça - Camilo Castelo Branco",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-24",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-24",
+      "date_last": "2026-09-24",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-24",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 10.0,
+        "price_max": 10.0,
+        "price_display": "10€",
+        "price_raw": "10€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ctb-justica-camilo-castelo-branco|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:21.979770+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:f2e588d85a48b4fb",
+        "harmonized_at": "2026-03-26T15:28:47.177212+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:21.979770+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960290+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-09-cinex-matthew-herbert-x-daniel-blaufuks-",
+      "source_id": "cinex-matthew-herbert-x-daniel-blaufuks-naquele-dia-em-lisboa",
+      "source_url": "https://theatrocirco.com/event/cinex-matthew-herbert-x-daniel-blaufuks-naquele-dia-em-lisboa/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Cinex: Matthew Herbert x Daniel Blaufuks - Naquele dia em Lisboa",
+      "title_raw": "Cinex: Matthew Herbert x Daniel Blaufuks - Naquele dia em Lisboa",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-09-27",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-09-27",
+      "date_last": "2026-09-27",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-09-27",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 12.0,
+        "price_max": 12.0,
+        "price_display": "12€",
+        "price_raw": "12€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "cinex-matthew-herbert-x-daniel-blaufuks-naquele-dia-em-lisboa|2026-09",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:20.650056+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:75f36e6be962c124",
+        "harmonized_at": "2026-03-26T15:28:47.176973+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:20.650056+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960276+00:00"
+      }
+    }
+  ]
+}

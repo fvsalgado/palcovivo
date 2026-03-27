@@ -1,0 +1,1768 @@
+{
+  "month": "2026-08",
+  "total": 13,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce",
+      "source_id": "as-correntes-de-joao-cesar-monteiro",
+      "source_url": "https://theatrocirco.com/event/as-correntes-de-joao-cesar-monteiro/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Cinema de agosto: As correntes de João César Monteiro",
+      "title_raw": "Cinema de agosto: As correntes de João César Monteiro",
+      "subtitle": "Lucky Star",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-03",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-10",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-17",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-24",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-31",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-03",
+      "date_last": "2026-08-31",
+      "total_sessions": 5,
+      "is_ongoing": false,
+      "date_open": "2026-08-03",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.bol.pt/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/cr1000562-ab7ed8-vert.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "cinema-de-agosto-as-correntes-de-joao-cesar-monteiro|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:50.581707+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:76d5306fc4e46d9c",
+        "harmonized_at": "2026-03-27T07:42:23.946199+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-veredas",
+      "source_id": "veredas",
+      "source_url": "https://theatrocirco.com/event/veredas/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Veredas",
+      "title_raw": "Veredas",
+      "subtitle": "João César Monteiro",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-03",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-03",
+      "date_last": "2026-08-03",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-03",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/Veredas-de-Joao-Cesar-Monteiro-vertical.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "veredas|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:52.258897+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:1f9c05b812a09dc8",
+        "harmonized_at": "2026-03-27T07:42:23.946348+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-paulo-rocha-e-os-paroxismos",
+      "source_id": "paulo-rocha-e-os-paroxismos",
+      "source_url": "https://theatrocirco.com/event/paulo-rocha-e-os-paroxismos/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Paulo Rocha e os Paroxismos",
+      "title_raw": "Paulo Rocha e os Paroxismos",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "cinema",
+      "category": "cinema-ficcao",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Cinema"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-04",
+          "time_start": null,
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-04",
+      "date_last": "2026-08-04",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-04",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "paulo-rocha-e-os-paroxismos|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:27.109623+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:9a5e0ad6b2c5078e",
+        "harmonized_at": "2026-03-26T15:28:47.178202+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:27.109623+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960359+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-o-desejado-ou-as-montanhas-da-lua-paulo-",
+      "source_id": "o-desejado-ou-as-montanhas-da-lua-paulo-rocha",
+      "source_url": "https://theatrocirco.com/event/o-desejado-ou-as-montanhas-da-lua-paulo-rocha/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "O Desejado ou As Montanhas da Lua - Paulo Rocha",
+      "title_raw": "O Desejado ou As Montanhas da Lua - Paulo Rocha",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-04",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-04",
+      "date_last": "2026-08-04",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-04",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "o-desejado-ou-as-montanhas-da-lua-paulo-rocha|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:27.773297+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:77ec301063f18340",
+        "harmonized_at": "2026-03-26T15:28:47.178301+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:27.773297+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960369+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-silvestre",
+      "source_id": "silvestre",
+      "source_url": "https://theatrocirco.com/event/silvestre/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Silvestre",
+      "title_raw": "Silvestre",
+      "subtitle": "João César Monteiro",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-10",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-10",
+      "date_last": "2026-08-10",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-10",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/Silvestre-vertical.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "silvestre|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:53.976303+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:7d050f60d3fcd4dd",
+        "harmonized_at": "2026-03-27T07:42:23.946435+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-mascara-de-aco-contra-abismo-azul-paulo-",
+      "source_id": "mascara-de-aco-contra-abismo-azul-paulo-rocha",
+      "source_url": "https://theatrocirco.com/event/mascara-de-aco-contra-abismo-azul-paulo-rocha/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Máscara de Aço Contra Abismo Azul - Paulo Rocha",
+      "title_raw": "Máscara de Aço Contra Abismo Azul - Paulo Rocha",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-11",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-11",
+      "date_last": "2026-08-11",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-11",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "mascara-de-aco-contra-abismo-azul-paulo-rocha|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:26.443117+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:0955ce1950a36743",
+        "harmonized_at": "2026-03-26T15:28:47.178084+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:26.443117+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960349+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-a-flor-do-mar",
+      "source_id": "a-flor-do-mar",
+      "source_url": "https://theatrocirco.com/event/a-flor-do-mar/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "À Flor do Mar",
+      "title_raw": "À Flor do Mar",
+      "subtitle": "João César Monteiro",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-17",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-17",
+      "date_last": "2026-08-17",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-17",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/a-flor-do-mar-vertical.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "a-flor-do-mar|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:55.673871+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:1a6b8cd304413ff3",
+        "harmonized_at": "2026-03-27T07:42:23.946549+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-a-raiz-do-coracao-paulo-rocha",
+      "source_id": "a-raiz-do-coracao-paulo-rocha",
+      "source_url": "https://theatrocirco.com/event/a-raiz-do-coracao-paulo-rocha/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "A Raiz do Coração - Paulo Rocha",
+      "title_raw": "A Raiz do Coração - Paulo Rocha",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-18",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-18",
+      "date_last": "2026-08-18",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-18",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "a-raiz-do-coracao-paulo-rocha|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:25.778916+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:bd4b2db4e59e2bf0",
+        "harmonized_at": "2026-03-26T15:28:47.177975+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:25.778916+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960338+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-o-ultimo-mergulho",
+      "source_id": "o-ultimo-mergulho",
+      "source_url": "https://theatrocirco.com/event/o-ultimo-mergulho/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "O Último Mergulho",
+      "title_raw": "O Último Mergulho",
+      "subtitle": "João César Monteiro",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-24",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-24",
+      "date_last": "2026-08-24",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-24",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/o-ultimo-mergulho-vertical.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "o-ultimo-mergulho|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:57.402400+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:842dfb743b6e10b5",
+        "harmonized_at": "2026-03-27T07:42:23.946652+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-vanitas-ou-o-outro-mundo-paulo-rocha",
+      "source_id": "vanitas-ou-o-outro-mundo-paulo-rocha",
+      "source_url": "https://theatrocirco.com/event/vanitas-ou-o-outro-mundo-paulo-rocha/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Vanitas ou O Outro Mundo - Paulo Rocha",
+      "title_raw": "Vanitas ou O Outro Mundo - Paulo Rocha",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-25",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-25",
+      "date_last": "2026-08-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "vanitas-ou-o-outro-mundo-paulo-rocha|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:25.114689+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:a17e623ecc95e866",
+        "harmonized_at": "2026-03-26T15:28:47.177857+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:25.114689+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960328+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708",
+      "source_id": "visita-guiada-ao-theatro-circo-ago2026",
+      "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-ago2026/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Visita Guiada ao Theatro Circo (26 e 27/08/2026)",
+      "title_raw": "Visita Guiada ao Theatro Circo (26 e 27/08/2026)",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-26",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-26",
+          "time_start": "22:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-27",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-08-27",
+          "time_start": "22:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-26",
+      "date_last": "2026-08-27",
+      "total_sessions": 4,
+      "is_ongoing": false,
+      "date_open": "2026-08-26",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 1.0,
+        "price_max": 18.0,
+        "price_display": "1€ – 18€",
+        "price_raw": "3,5€ adultos | Gratuito para crianças e jovens até aos 18 anos do concelho de Braga | 1€ Crianças e jovens até aos 18 anos fora do concelho",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Horários disponíveis\n26 agosto • 21h visita em português e 22h visita em inglês\n27 agosto • 21h visita em português e 22h visita em espanhol\nDuração\n45 minutos\nLimite máximo de participantes\n30\nO valor da entrada é dedutível em espetáculos de programação própria do com valor superior a 3,50€.\nA compra de bilhetes para as visitas guiadas é feita na bilheteira do Theatro Circo por ordem de chegada no dia da visita e está sujeita à lotação (máximo 30 participantes por sessão).\n_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)\nO\ndst group\né mecenas do programa de Mediação e Participação."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/250303_theatro_circo_musica_camara_lais_pereira-46-vert.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "visita-guiada-ao-theatro-circo-26-e-27082026|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:41:59.492313+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:8469132933a4e3ae",
+        "harmonized_at": "2026-03-27T07:42:23.946751+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada"
+        ],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-visita-noturna-ao-theatro-circo",
+      "source_id": "visita-noturna-ao-theatro-circo",
+      "source_url": "https://theatrocirco.com/event/visita-noturna-ao-theatro-circo/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Visita Noturna ao Theatro Circo",
+      "title_raw": "Visita Noturna ao Theatro Circo",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-27",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-27",
+      "date_last": "2026-08-27",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-27",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 1.0,
+        "price_max": 18.0,
+        "price_display": "1€ – 18€",
+        "price_raw": "3,5€ adultos | Gratuito/1€ menores 18 anos",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "visita-noturna-ao-theatro-circo|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:24.557828+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:0bd9fd3f0a173696",
+        "harmonized_at": "2026-03-26T15:28:47.177744+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:24.557828+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960316+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-08-as-bodas-de-deus",
+      "source_id": "as-bodas-de-deus",
+      "source_url": "https://theatrocirco.com/event/as-bodas-de-deus/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "As Bodas de Deus",
+      "title_raw": "As Bodas de Deus",
+      "subtitle": "João César Monteiro",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-08-31",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-08-31",
+      "date_last": "2026-08-31",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-08-31",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 4.0,
+        "price_max": 4.0,
+        "price_display": "4€",
+        "price_raw": "4€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "_\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2026/03/as-bodas-de-deus-vertical.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "as-bodas-de-deus|2026-08",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:42:01.280725+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:3b8460b561f66a18",
+        "harmonized_at": "2026-03-27T07:42:23.946907+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    }
+  ]
+}

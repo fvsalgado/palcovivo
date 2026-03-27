@@ -1,0 +1,656 @@
+{
+  "month": "2026-12",
+  "total": 5,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-12-marisol",
+      "source_id": "260579",
+      "source_url": "https://www.ccb.pt/evento/exposicao-marisol/2026-12-03/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Marisol",
+      "title_raw": "Marisol",
+      "subtitle": null,
+      "description": "A primeira retrospetiva dedicada aos desenhos de Marisol Escobar (Paris, 1930 – Nova Iorque, 2016), reúne mais de 100 obras produzidas desde a década de 1950 até à sua morte. Apresentadas ao lado de esculturas que prolongam a sua prática de desenho em três dimensões, de materiais de arquivo e de vários filmes de Andy Warhol em que participou, as obras, quase integralmente provenientes da coleção do Buffalo AKG Art Museum, destacam o desenho — o meio pelo qual expressou preocupações globais, desconfortos pessoais e ficções imaginativas — como fio condutor da sua carreira. O título remete para a pergunta que o galerista Leo Castelli fez no final da década de 1950 — «Como podes partir quando as coisas estão apenas a começar?» —, ecoando a decisão da artista de se afastar do mundo da arte em momentos cruciais que implicaram a transformação do seu trabalho.\n\n \n\nCuradoria Laura Vallés Vílchez\n\nExposição coproduzida pelo MAC/CCB e pela Fundación Botín, Santander Concebida em colaboração com o Buffalo AKG Art Museum",
+      "description_short": "A primeira retrospetiva dedicada aos desenhos de Marisol Escobar (Paris, 1930 – Nova Iorque, 2016), reúne mais de 100 obras produzidas desde a década de 1950 até à sua morte. Apresentadas ao lado de esculturas que prolongam a sua prática de desenho em três dimensões, de materiais de arquivo e de…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-12-03",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-12-03",
+      "date_last": "2026-12-03",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/10_creditoMarisol-Escobar_Untitled-1974_colored-pencil-and-collage-on-paper.-Bequest-of-Marisol-2016.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "marisol|2026-12",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682868+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:d525c538bb26ae0f",
+        "harmonized_at": "2026-03-27T07:45:57.247174+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-12-ctb-em-pessoa",
+      "source_id": "ctb-em-pessoa-2",
+      "source_url": "https://theatrocirco.com/event/ctb-em-pessoa-2/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "CTB: Em Pessoa",
+      "title_raw": "CTB: Em Pessoa",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-12-03",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-12-03",
+      "date_last": "2026-12-03",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-12-03",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 10.0,
+        "price_max": 10.0,
+        "price_display": "10€",
+        "price_raw": "10€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ctb-em-pessoa|2026-12",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:15.330610+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:263301f0a94e91ec",
+        "harmonized_at": "2026-03-26T15:28:47.176151+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:15.330610+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960232+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-12-concerto-s-geraldo",
+      "source_id": "concerto-s-geraldo",
+      "source_url": "https://theatrocirco.com/event/concerto-s-geraldo/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Concerto S. Geraldo",
+      "title_raw": "Concerto S. Geraldo",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "outros",
+      "category": "outros",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [],
+      "dates": [
+        {
+          "date": "2026-12-05",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-12-05",
+      "date_last": "2026-12-05",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-12-05",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "concerto-s-geraldo|2026-12",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:14.665784+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:9cf3f2cffd94d193",
+        "harmonized_at": "2026-03-26T15:28:47.176068+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:14.665784+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960226+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-12-glenn-miller-orchestra",
+      "source_id": "167168",
+      "source_url": "https://www.ccb.pt/evento/glenn-miller-orchestra-4/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Glenn Miller Orchestra",
+      "title_raw": "Glenn Miller Orchestra",
+      "subtitle": null,
+      "description": "Glenn Miller Orchestra regressa a Portugal para espetáculo especial de Natal.\n\nCaso de sucesso em Portugal, Glenn Miller Orchestra, conquistou o público, esgotando as salas onde se apresenta. Este caso de sucesso contínuo, deve-se à apresentação de um espetáculo de uma qualidade incomparável, Glenn Miller Orchestra, dirigida pelo Maestro Ray McVay, encanta o público com os grandes sucessos, “Moonlight Serenade”, “In The Mood”, “Tuxedo Junction” ou “Chattanooga Choo Choo”, e, para este concerto especial pode-se ainda contar com grandes êxitos emblemáticos da época Natalícia, como por exemplo: “Santa Claus is coming to town”, “Jingle Bells”, entre outros numa interpretação absolutamente estonteante.\n\nRay McVay dirige os 21 talentosos músicos e cantores desta magnifica Orquestra num espetáculo que, como num estalar de dedos, nos faz recuar até aos anos trinta.",
+      "description_short": "Glenn Miller Orchestra regressa a Portugal para espetáculo especial de Natal.\n\nCaso de sucesso em Portugal, Glenn Miller Orchestra, conquistou o público, esgotando as salas onde se apresenta. Este caso de sucesso contínuo, deve-se à apresentação de um espetáculo de uma qualidade incomparável, Glenn…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "Música"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Jazz",
+        "Música",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-12-12",
+          "time_start": "19:00",
+          "time_end": "20:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-12-12",
+      "date_last": "2026-12-12",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/04/GMO_XMAS3_2000x940-2.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "glenn-miller-orchestra|2026-12",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682893+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:acb632665e42f533",
+        "harmonized_at": "2026-03-27T07:45:57.247634+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-12-ctb-endgame-samuel-beckett",
+      "source_id": "ctb-endgame-samuel-beckett-3",
+      "source_url": "https://theatrocirco.com/event/ctb-endgame-samuel-beckett-3/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "CTB: Endgame - Samuel Beckett",
+      "title_raw": "CTB: Endgame - Samuel Beckett",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-12-17",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-12-17",
+      "date_last": "2026-12-17",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-12-17",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 10.0,
+        "price_max": 10.0,
+        "price_display": "10€",
+        "price_raw": "10€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ctb-endgame-samuel-beckett|2026-12",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:12.314784+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:855f6bb7cf6bee39",
+        "harmonized_at": "2026-03-26T15:28:47.175772+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:12.314784+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960220+00:00"
+      }
+    }
+  ]
+}

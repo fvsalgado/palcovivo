@@ -1,0 +1,957 @@
+{
+  "month": "2026-02",
+  "total": 7,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi",
+      "source_id": "genoma-urbano-o-futuro-das-cidades-joao-seixas",
+      "source_url": "https://www.culturgest.pt/pt/programacao/genoma-urbano-o-futuro-das-cidades-joao-seixas/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Genoma Urbano: Cidades Como Organismos Vivos",
+      "title_raw": "Genoma Urbano: Cidades Como Organismos Vivos",
+      "subtitle": "João Seixas",
+      "description": "As cidades estão a mudar de forma significativa, assim como as ciências que as estudam. Emergem contínuas transformações tecnológicas, económicas e socioculturais que reformulam a vida urbana. Por seu lado, temos vivido tempos de reorientação política e de crise quase permanente, que colocam em causa o próprio direito à cidade. Não obstante, parece claro que será através de novos entendimentos e na consequente transformação dos sistemas e metabolismos das cidades que se decidirá parte significativa das grandes questões contemporâneas.\nEm três momentos, o ciclo\nO Genoma Urbano\nobserva a cidade como um organismo vivo e pensante. Qual é, afinal, o seu material genético e que elementos definem a urbanidade e a vida urbana? Procurando interligar as ciências para as questões urbanas com campos aparentemente distantes, como a biotecnologia ou as neurociências, pensamos as possibilidades e necessidades de construção de futuros urbanos mais justos e mais sustentáveis.\nO ciclo de conferência conta com a curadoria e moderação de João Seixas, geógrafo e economista, professor universitário e investigador na NOVA FCSH nas áreas das políticas de cidades e do desenvolvimento urbano e territorial, autor de diversos livros, foi consultor da Comissão Europeia e Pró-Reitor da Universidade NOVA de Lisboa para as áreas de Inovação Social e Territorial.",
+      "description_short": "As cidades estão a mudar de forma significativa, assim como as ciências que as estudam. Emergem contínuas transformações tecnológicas, económicas e socioculturais que reformulam a vida urbana. Por seu lado, temos vivido tempos de reorientação política e de crise quase permanente, que colocam em…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-04",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-25",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-11",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-04",
+      "date_last": "2026-03-11",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": "2026-02-04",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Curadoria e moderação: João Seixas"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "genoma-urbano-cidades-como-organismos-vivos|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T08:15:37.225176+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:62d81b03d45aad99",
+        "harmonized_at": "2026-03-27T08:15:37.729061+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-civitas-os-fluxos-da-cidade",
+      "source_id": "fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade",
+      "source_url": "https://www.culturgest.pt/pt/programacao/fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Civitas: Os Fluxos da Cidade",
+      "title_raw": "Civitas: Os Fluxos da Cidade",
+      "subtitle": "Fátima Vieira, João Teixeira Lopes",
+      "description": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos que ocupam, mas sim por uma vasta trama de relações. A cidade é um forte conjunto de milhões de laços – laços frágeis, porque humanos.\nO que fortalece, ou por outro lado, o que enfraquece, os laços entre a população numa cidade? Que elementos e que condições permitem formar comunidades urbanas heterogéneas, dinâmicas e tolerantes, sobretudo, perante a atual crise do urbanismo e o desigual acesso à habitação e à própria cidade?\nConversam sobre este cruzamento Fátima Vieira, Vice-Reitora para a Cultura da Universidade do Porto e especialista em estudos sobre a utopia, e o sociólogo João Teixeira Lopes, coordenador do Observatório Social de Vila nova de Gaia e do Observatório da Arte e Cultura no Ensino Superior.",
+      "description_short": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-25",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-25",
+      "date_last": "2026-02-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_lp45n"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "civitas-os-fluxos-da-cidade|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T08:08:00.849141+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:f4cdb83a41e4de21",
+        "harmonized_at": "2026-03-27T08:15:37.621535+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-alexander-zeldin",
+      "source_id": "alexander-zeldin-prendre-soin-cuidar",
+      "source_url": "https://www.culturgest.pt/pt/programacao/alexander-zeldin-prendre-soin-cuidar/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Alexander Zeldin",
+      "title_raw": "Alexander Zeldin",
+      "subtitle": "Prendre soin / Cuidar",
+      "description": "Quatro trabalhadores encontram-se para o turno da noite numa fábrica de transformação de carnes. São auxiliares de limpeza de uma agência de trabalho temporário, com contratos precários. Todas as noites, limpam as instalações da fábrica. A cada quatro horas, fazem uma pausa. Bebem chá ou café. Leem revistas. Conversam. Quando o dia amanhece, voltam para casa ou seguem para outro trabalho. O ciclo repete-se, noite após noite. No início não se conhecem, mas lentamente algo muda...\nCuidar\né o primeiro capítulo da trilogia sobre as desigualdades, da qual a Culturgest já apresentou o inesquecível\nLove\n. Foi criado a partir de um período de imersão na vida profissional de pessoas que trabalham na limpeza contratadas em Inglaterra com os chamados contratos “Zero Hours”. Com uma sinceridade crua e humor negro, Alexander Zeldin oferece-nos as histórias de uma realidade invisível.",
+      "description_short": "Quatro trabalhadores encontram-se para o turno da noite numa fábrica de transformação de carnes. São auxiliares de limpeza de uma agência de trabalho temporário, com contratos precários. Todas as noites, limpam as instalações da fábrica. A cada quatro horas, fazem uma pausa. Bebem chá ou café. Leem…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-26",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-27",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-28",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-26",
+      "date_last": "2026-02-28",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": "2026-02-26",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 20.0,
+        "price_max": 20.0,
+        "price_display": "20€",
+        "price_raw": "20€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/99235"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": true,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Texto: Alexander Zeldin | Inspirado em: Beyond Caring de Alexander Zeldin | Encenação: Alexander Zeldin | Interpretação: Lamya Regragui, Juliette Speck, Charline Paul, Patrick d’Assumção, Nabil Berrehil, Bilal Slimani | Colaboração na encenação: Kenza Berrada | Cenografia e figurinos: Natasha Jenkins | Assistente de figurinos: Gaïssiry Sall | Iluminação: Marc Williams | Som: Josh Grigg | Assistência de som: Antoine Reibre | Movimentos: Marcin Rudy | Preparação vocal: Hippolyte Broud | Coordenação de intimidade: Claire Chauchat | Régie geral e iluminação: Léo Garnier / Erwan Emeury | Régie de palco: Vincent Rousselle | Régie de som: Victor Koeppel | Régie de figurinos: Noémie Reymond / Gaïssiry Sall | Construção do cenário: Théâtre National de Strasbourg | Direção de produção: Marko Rankov | Administração de produção: Emilie Oudet (Cyclorama) | Produção: Compagnie A Zeldin | Coprodução: Théâtre National de Strasbourg; Fondazione Teatro Metastasio, Prato; Célestins - Théâtre de Lyon, Le Volcan - Scène Nationale du Havre | Com a participação artística do: Jeune Théâtre National."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/aa/4c/aa4cca0e-8d2f-4f55-8eda-6e1d46a86da7/prendresoin1___jeanlouisfernandez_029.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "alexander-zeldin|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T08:08:04.296068+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:d6effd154cfc3365",
+        "harmonized_at": "2026-03-27T08:15:37.621988+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "tags ausentes",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.8
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-02-wonderlandi",
+      "source_id": "wonderlandi",
+      "source_url": "https://theatrocirco.com/event/wonderlandi/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "WonderLandi",
+      "title_raw": "WonderLandi",
+      "subtitle": "Lander Patrick",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-27",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": 120,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-27",
+      "date_last": "2026-02-27",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-27",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 12.0,
+        "price_max": 12.0,
+        "price_display": "12€",
+        "price_raw": "12€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/165905-wonderlandi_lander_patrick-theatro_circo/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção Artística, Conceção e Coreografia\nLander Patrick\nAssistência à Coreografia\nLewis Seivwright\nInterpretação\nCacá Otto Reuss, João Calado, Lander Patrick, Lewis Seivwright, Marti Forcada, Melissa Sousa, Nara Gonçalves e Suevia Rojo\nFigurinos\nFábio Rocha de Carvalho\nDesenho de Luz\nRui Daniel\nDesenho de Som\nMestre André\nAssistência técnica e de produção\nFábio Rocha de Carvalho\nCasa de Produção\nAssociação Cultural Sinistra\nGestão Administrativa e Financeira\nPatrícia Duarte\nProdução Executiva\nSara Alexandra e André Filipe Neto\nDifusão\nInês Le Gué | jardin&cour\nCoprodução\nCineteatro Curvo Semedo, Culturgest, One Dance Festival (BG), TANDEM Scène Nationale (FR), Theatro Circo, Teatro-Cine de Pombal, Teatro Municipal Baltazar Dias, Teatro Municipal do Porto\nResidência de coprodução\nO Espaço do Tempo\nApoio à criação\nCAMPUS, Casa Varela, Estúdios Victor Córdon / Opart, Pro.dança\nAgradecimentos\nPatrícia Soares\nA Sinistra é uma associação apoiada pela República Portuguesa – Ministério da Cultura | DGARTES –Direção-Geral das Artes\nDuração\n120 minutos\nNota\nEspetáculo com luzes estroboscópicas ou intensas"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "wonderlandi|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:26:57.023621+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:edcfa8fb350e7067",
+        "harmonized_at": "2026-03-26T15:28:47.162979+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:26:57.023621+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960003+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-02-luca-argel-convida-moreno-veloso",
+      "source_id": "luca-argel-convida-moreno-veloso",
+      "source_url": "https://theatrocirco.com/event/luca-argel-convida-moreno-veloso/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Luca Argel convida Moreno Veloso",
+      "title_raw": "Luca Argel convida Moreno Veloso",
+      "subtitle": "Luca Argel e Moreno Veloso",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-28",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-28",
+      "date_last": "2026-02-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-28",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 15.0,
+        "price_max": 15.0,
+        "price_display": "15€",
+        "price_raw": "15€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/166018-luca_argel_convida_moreno_veloso_o_homem_triste-theatro_circo/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Apoio à divulgação\nAntena 1"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "luca-argel-convida-moreno-veloso|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:26:52.476386+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:e4ff795296bd44f2",
+        "harmonized_at": "2026-03-26T15:28:47.162160+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:26:52.476386+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.959960+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-02-companhia-de-espectadores-da-leitura-a-e",
+      "source_id": "companhia-de-espectadores-fev2026",
+      "source_url": "https://theatrocirco.com/event/companhia-de-espectadores-fev2026/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Companhia de Espectadores - Da leitura à encenação (28/02/2026)",
+      "title_raw": "Companhia de Espectadores - Da leitura à encenação (28/02/2026)",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-28",
+          "time_start": "11:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-28",
+      "date_last": "2026-02-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-28",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "gratuito mediante inscrição para participacao@theatrocirco.com",
+        "price_raw": "gratuito mediante inscrição para participacao@theatrocirco.com",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Datas disponíveis\n31 janeiro – Fundamentos da análise dramatúrgica\n28 fevereiro – Da leitura à encenação\n28 março – Biografia e Autoficção\n11 abril – Teatro pós-dramático\nMediação\nBALA – Núcleo Dramatúrgico\nInscrição gratuita para\nparticipacao@theatrocirco.com\nA participação na Companhia de Espectadores garante um voucher de 50% de desconto para utilizar na aquisição de um bilhete para espetáculos de teatro ou dança da programação própria do Theatro Circo.\nO\ndst group\né mecenas do programa de Mediação e Participação."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "companhia-de-espectadores-da-leitura-a-encenacao-28022026|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:27:12.581468+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:c8b32180a3f3badd",
+        "harmonized_at": "2026-03-26T15:28:47.165572+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:27:12.581468+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960127+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-02-visita-guiada-ao-theatro-circo-28022026",
+      "source_id": "visita-guiada-ao-theatro-circo-fev2026",
+      "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-fev2026/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Visita Guiada ao Theatro Circo (28/02/2026)",
+      "title_raw": "Visita Guiada ao Theatro Circo (28/02/2026)",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-28",
+          "time_start": "11:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-28",
+          "time_start": "12:00",
+          "time_end": null,
+          "duration_minutes": 45,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-28",
+      "date_last": "2026-02-28",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-02-28",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 1.0,
+        "price_max": 18.0,
+        "price_display": "1€ – 18€",
+        "price_raw": "3,5€ adultos | Gratuito para crianças e jovens até aos 18 anos do concelho de Braga | 1€ Crianças e jovens até aos 18 anos fora do concelho",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Horários disponíveis\n11h visita em português\n12h visita em inglês\nPróximas datas\n28 março e 18 abril\nDuração\n45 minutos\nLimite máximo de participantes\n30\nO valor dedutível em espetáculos de programação própria do com valor superior a 3,50€.\nA compra de bilhetes para as visitas guiadas é feita na bilheteira do Theatro Circo por ordem de chegada no dia da visita e está sujeita à lotação (máximo 30 participantes por sessão).\n__\nO\ndst group\né mecenas do programa de Mediação e Participação."
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "visita-guiada-ao-theatro-circo-28022026|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:27:13.129997+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:f4fe4b70aa95e1b5",
+        "harmonized_at": "2026-03-26T15:28:47.165731+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:27:13.129997+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960133+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,933 @@
+{
+  "month": "2026-11",
+  "total": 7,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-11-marco-rodrigues-canta-carlos-do-carmo",
+      "source_id": "247583",
+      "source_url": "https://www.ccb.pt/evento/marco-rodrigues-canta-carlos-do-carmo/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Marco Rodrigues canta Carlos do Carmo",
+      "title_raw": "Marco Rodrigues canta Carlos do Carmo",
+      "subtitle": null,
+      "description": "Marco Rodrigues apresenta-se em palco com um espetáculo que evoca a memória e o legado de Carlos do Carmo – sua referência e figura maior do Fado. Com a solidez de uma carreira firmada no respeito pela tradição, o fadista revisita os temas do álbum Canta Carlos do Carmo, um registo profundamente pessoal e sentido, que foi distinguido nos IPMA Award e nomeado para os Play – Prémios da Música Portuguesa.\n\nNeste concerto, Marco Rodrigues interpreta também alguns dos temas mais marcantes do seu percurso, como “Tempo” e “A Minha Casa” – canção finalista do Festival da Canção 2024 –, revelando um repertório que se constrói entre a herança dos grandes nomes do Fado e a voz própria de um intérprete da sua geração. Uma homenagem sentida, num concerto que celebra o Fado e a memória de Carlos do Carmo.",
+      "description_short": "Marco Rodrigues apresenta-se em palco com um espetáculo que evoca a memória e o legado de Carlos do Carmo – sua referência e figura maior do Fado. Com a solidez de uma carreira firmada no respeito pela tradição, o fadista revisita os temas do álbum Canta Carlos do Carmo, um registo profundamente…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "Fado",
+        "Música"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Fado",
+        "Música",
+        "Fado",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-07",
+          "time_start": "19:00",
+          "time_end": "20:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-07",
+      "date_last": "2026-11-07",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": true,
+      "festival_name": "Festival Da Canção",
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/2000x940-marco-Rodrigues.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "marco-rodrigues-canta-carlos-do-carmo|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682786+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:0116523162d1a798",
+        "harmonized_at": "2026-03-27T07:45:57.245667+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-11-neil-beloufa",
+      "source_id": "260570",
+      "source_url": "https://www.ccb.pt/evento/exposicao-neil-beloufa/2026-11-12/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Neïl Beloufa",
+      "title_raw": "Neïl Beloufa",
+      "subtitle": null,
+      "description": "Em 2015, um inquérito dava conta que um terço dos norte-americanos apoiava o bombardeamento de Agrabah, a cidade imaginária de Aladino. Quinze por cento manifestaram incerteza. Uma piada, sim, mas também uma marca dos tempos: a confusão voluntária entre ficção e geopolítica. Naquela que é a sua primeira exposição em Portugal, o artista franco-argelino Neïl Beloufa cria no MAC/CCB um percurso no qual o público interage com objetos e experimenta capítulos de um jogo de computador ao vivo (um posto de interrogação, um cenário do filme em Agrabah, um arquivo, um karaoke, um quarto de dormir, quartéis militares, etc.). A cada interação do visitante, o seu percurso é registado através da ativação de sensores ou de um controlo algorítmico, transformando-o em agente ativo da narrativa ficcional.\n\n \n\nCuradoria Marta Mestre",
+      "description_short": "Em 2015, um inquérito dava conta que um terço dos norte-americanos apoiava o bombardeamento de Agrabah, a cidade imaginária de Aladino. Quinze por cento manifestaram incerteza. Uma piada, sim, mas também uma marca dos tempos: a confusão voluntária entre ficção e geopolítica. Naquela que é a sua…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-12",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-12",
+      "date_last": "2026-11-12",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/19_NeilBeloufacreditoAgostinoOsio.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "neil-beloufa|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682808+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:b8a01ffd8e120349",
+        "harmonized_at": "2026-03-27T07:45:57.246067+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-11-francisca-carvalho",
+      "source_id": "260558",
+      "source_url": "https://www.ccb.pt/evento/exposicao-francisca-carvalho/2026-11-12/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Francisca Carvalho",
+      "title_raw": "Francisca Carvalho",
+      "subtitle": null,
+      "description": "A obra de Francisca Carvalho assenta na manipulação de símbolos e sinais oriundos de geografias diversas — experiências que a artista assimilou e transformou em colagens, desenhos, padrões, textos, pinturas e têxteis. Esta exposição individual mostra as narrativas vertiginosas e complexas que, como uma mistura de múltiplas fontes, compõe um vocabulário rico e singular. Para lá de uma vasta seleção de obras em papel, a mostra explora a investigação que a artista levou a cabo na Índia — nas regiões de Rajastão e de Gujarat —, onde aprofundou técnicas tradicionais de padrões, corantes naturais, kalamkari e hand-block printing, assim como experiências com o vidro.\n\n \n\nCuradoria Sara De Chiara",
+      "description_short": "A obra de Francisca Carvalho assenta na manipulação de símbolos e sinais oriundos de geografias diversas — experiências que a artista assimilou e transformou em colagens, desenhos, padrões, textos, pinturas e têxteis. Esta exposição individual mostra as narrativas vertiginosas e complexas que, como…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-12",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-12",
+      "date_last": "2026-11-12",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/16_FranciscaCarvalhodreditoAJS2025-copiar-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "francisca-carvalho|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682829+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:c58823eff493fa06",
+        "harmonized_at": "2026-03-27T07:45:57.246418+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-11-bill-ryder-jones",
+      "source_id": "bill-ryder-jones-3",
+      "source_url": "https://theatrocirco.com/event/bill-ryder-jones-3/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Bill Ryder-Jones",
+      "title_raw": "Bill Ryder-Jones",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-15",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-15",
+      "date_last": "2026-11-15",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-11-15",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 12.0,
+        "price_max": 12.0,
+        "price_display": "12€",
+        "price_raw": "12€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "bill-ryder-jones|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:17.987021+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:1bdda310aeb8435a",
+        "harmonized_at": "2026-03-26T15:28:47.176547+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:17.987021+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960250+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-11-rubel",
+      "source_id": "rubel-3",
+      "source_url": "https://theatrocirco.com/event/rubel-3/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Rubel",
+      "title_raw": "Rubel",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-18",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-18",
+      "date_last": "2026-11-18",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-11-18",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 0.0,
+        "price_max": 30.0,
+        "price_display": "0€ – 30€",
+        "price_raw": "1ª Plateia - 30,00€ | 2ª Plateia - 25,00€ | Piso 0 - 17.50€ | 1ª Balcão - 22,50€ | 2ª Balcão - 20€ | 3ª Balcão -15,00€",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "rubel|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:17.320964+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:cde3b5a2c2b2191d",
+        "harmonized_at": "2026-03-26T15:28:47.176443+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:17.320964+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960244+00:00"
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-11-al-di-meola",
+      "source_id": "276596",
+      "source_url": "https://www.ccb.pt/evento/al-di-meola-misty-fest/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Al Di Meola",
+      "title_raw": "Al Di Meola ",
+      "subtitle": null,
+      "description": "Al Di Meola é um dos mais influentes guitarristas da história do jazz e da música contemporânea. Reconhecido pela sua técnica virtuosa e pelo lirismo das suas composições, construiu uma carreira de mais de quatro décadas — que inclui mais de 6 milhões de discos vendidos, inúmeros prémios internacionais e colaborações marcantes com artistas como Chick Corea, John McLaughlin e Paco de Lucia.\n\nNo âmbito do Misty Fest, o guitarrista norte-americano regressa a Portugal para um concerto muito especial. Entre composições icónicas e novas interpretações, o público português terá a oportunidade de assistir de perto ao talento de um músico que conquistou estatuto de referência entre os aficionados da guitarra e que continua a encantar legiões de fãs em todo o mundo com a emotividade da sua expressão musical. Uma noite única com um verdadeiro mestre do instrumento.",
+      "description_short": "Al Di Meola é um dos mais influentes guitarristas da história do jazz e da música contemporânea. Reconhecido pela sua técnica virtuosa e pelo lirismo das suas composições, construiu uma carreira de mais de quatro décadas — que inclui mais de 6 milhões de discos vendidos, inúmeros prémios…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "Música"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Jazz",
+        "Música",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-28",
+          "time_start": "21:00",
+          "time_end": "22:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-28",
+      "date_last": "2026-11-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/AlDiMeola_banner_fnac_1920x1080.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "al-di-meola|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T07:44:26.682851+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:05bd100b08e3782f",
+        "harmonized_at": "2026-03-27T07:45:57.246780+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-11-recita-1-dezembro",
+      "source_id": "recita-1o-dezembro-2",
+      "source_url": "https://theatrocirco.com/event/recita-1o-dezembro-2/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Récita 1º Dezembro",
+      "title_raw": "Récita 1º Dezembro",
+      "subtitle": null,
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-30",
+          "time_start": "21:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-30",
+      "date_last": "2026-11-30",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-11-30",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": ""
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "recita-1-dezembro|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-26T15:28:15.993877+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:196bbf68b3f93074",
+        "harmonized_at": "2026-03-26T15:28:47.176244+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "last_seen_at": "2026-03-26T15:28:15.993877+00:00",
+        "not_seen_since": "2026-03-27T07:42:23.960238+00:00"
+      }
+    }
+  ]
+}
