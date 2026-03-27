@@ -44,7 +44,7 @@ SCRAPERS_DIR = Path(__file__).parent / "scrapers"
 from pipeline.core.harmonizer import harmonize_event
 from pipeline.core.validator import validate_batch
 from pipeline.core.dedup import deduplicate
-from pipeline.core.cache import load_cache, save_cache, is_stale, get_cached_events
+from pipeline.core.cache import load_cache, save_cache, is_stale, get_cached_events, should_tombstone
 
 # Setup logging
 logging.basicConfig(
@@ -333,14 +333,26 @@ def process_venue(venue: dict, registry: dict, force_refresh: bool = False) -> d
         report["valid"] = len(valid)
         report["invalid"] = len(invalid)
 
-        # 4. Guardar eventos do venue
+        # 4. Aplicar tombstone imediato (eventos passados há > 90 dias)
+        final_valid = []
+        n_tombstoned = 0
+        for ev in valid:
+            if should_tombstone(ev):
+                ev.setdefault("pipeline", {})["is_active"] = False
+                n_tombstoned += 1
+            else:
+                final_valid.append(ev)
+        if n_tombstoned:
+            logger.info(f"{venue_id}: {n_tombstoned} evento(s) tombstoned (passados > 90 dias)")
+
+        # 5. Guardar eventos do venue
         EVENTS_DIR.mkdir(parents=True, exist_ok=True)
         out_path = EVENTS_DIR / f"{venue_id}.json"
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(valid, f, ensure_ascii=False, indent=2)
-        logger.info(f"{venue_id}: {len(valid)} eventos válidos guardados em {out_path}")
+            json.dump(final_valid, f, ensure_ascii=False, indent=2)
+        logger.info(f"{venue_id}: {len(final_valid)} eventos válidos guardados em {out_path}")
 
-        return {**report, "events": valid}
+        return {**report, "events": final_valid}
 
     except Exception as e:
         logger.error(f"{venue_id}: erro inesperado — {e}")
