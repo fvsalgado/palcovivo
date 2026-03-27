@@ -1,5 +1,4 @@
 name: Pipeline Diário
-
 # Nome dinâmico: distingue runs automáticos de manuais na listagem do GitHub
 run-name: >-
   ${{
@@ -9,7 +8,6 @@ run-name: >-
         github.event.inputs.reset_venues != '' && format(' ⚠️ RESET {0}', github.event.inputs.reset_venues) || '')
     || format('Pipeline Diário — {0}', github.event.schedule == '0 3 * * 0' && 'full rescan' || 'incremental')
   }}
-
 on:
   schedule:
     - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC  → run incremental normal
@@ -46,18 +44,14 @@ on:
         required: false
         default: ''
         type: string
-
 # Impede dois runs sobrepostos (ex: agendado + manual em simultâneo)
 # cancel-in-progress: false garante que o run em curso termina antes do próximo começar
 concurrency:
   group: pipeline
   cancel-in-progress: false
-
 permissions:
   contents: write
-
 jobs:
-
   # ─────────────────────────────────────────
   # JOB 1 — Descobrir venues e criar batches
   # ─────────────────────────────────────────
@@ -69,7 +63,6 @@ jobs:
       batches: ${{ steps.list.outputs.batches }}
     steps:
       - uses: actions/checkout@v4
-
       - id: list
         env:
           INPUT_VENUES: ${{ github.event.inputs.venues }}
@@ -78,9 +71,7 @@ jobs:
             | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
             | sort \
             | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))")
-
           SELECTED="$INPUT_VENUES"
-
           if [ -z "$SELECTED" ] || [ "$SELECTED" = "all" ]; then
             VENUES="$ALL"
             echo "A correr todos os venues: $ALL"
@@ -97,21 +88,22 @@ jobs:
           ")
             echo "A correr venues seleccionados: $VENUES"
           fi
-
           echo "venues=$VENUES" >> $GITHUB_OUTPUT
-
           # Criar batches de até 10 venues cada
-          BATCHES=$(python3 -c "
-          import os, json, math
+          BATCHES=$(ALL_VENUES="$VENUES" python3 -c "
+          import os, json
           venues = json.loads(os.environ.get('ALL_VENUES', '[]'))
           batch_size = 10
           batches = [venues[i:i+batch_size] for i in range(0, len(venues), batch_size)]
           print(json.dumps(batches))
-          " ALL_VENUES="$VENUES")
-
+          ")
+          # Protecção: se não há venues, usar batch vazio para evitar matrix inválida
+          if [ "$BATCHES" = "[]" ] || [ -z "$BATCHES" ]; then
+            echo "AVISO: Nenhum venue encontrado. A usar batch vazio de protecção."
+            BATCHES='[[]]'
+          fi
           echo "batches=$BATCHES" >> $GITHUB_OUTPUT
           echo "Batches criados: $(echo "$BATCHES" | python3 -c "import sys,json; b=json.load(sys.stdin); print(f'{len(b)} batches de até 10 venues')")"
-
   # ─────────────────────────────────────────
   # JOB 2 — Scrape em batches (um job por batch de até 10 venues)
   # ─────────────────────────────────────────
@@ -124,23 +116,18 @@ jobs:
       fail-fast: false
       matrix:
         batch: ${{ fromJson(needs.discover.outputs.batches) }}
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
-
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
-
       # Calcular semana para cache key (deve vir antes do restore)
       - name: Calcular semana (para cache key)
         id: date
         run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
-
       # Calcular índice do batch e verificar se algum venue do batch está em reset
       - name: Calcular batch index e reset flag
         id: batch_meta
@@ -151,31 +138,25 @@ jobs:
         run: |
           python3 << 'EOF'
           import os, json
-
           batch = json.loads(os.environ["BATCH_JSON"])
           all_batches = json.loads(os.environ["ALL_BATCHES_JSON"])
           reset_list = os.environ.get("RESET_LIST", "")
-
           # Encontrar índice deste batch
           batch_index = 0
           for i, b in enumerate(all_batches):
               if b == batch:
                   batch_index = i
                   break
-
           # Verificar se algum venue do batch está na lista de reset
           reset_venues = [v.strip() for v in reset_list.split(",") if v.strip()]
           batch_has_reset = any(v in reset_venues for v in batch)
-
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"batch_index={batch_index}\n")
               f.write(f"batch_has_reset={'true' if batch_has_reset else 'false'}\n")
               f.write(f"batch_venues={json.dumps(batch)}\n")
-
           print(f"Batch {batch_index}: {batch}")
           print(f"Tem reset: {batch_has_reset}")
           EOF
-
       # Cache HTTP por venue é gerida por venue individualmente dentro do batch
       # A cache key base usa o índice do batch e a semana
       # No reset, a cache key inclui o run_id para forçar cache miss em todo o batch
@@ -191,7 +172,6 @@ jobs:
           restore-keys: |
             http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-
         id: http-cache
-
       # Scrape sequencial de cada venue no batch
       - name: 🕷️ Scrape venues do batch
         env:
@@ -207,18 +187,14 @@ jobs:
         run: |
           python3 << 'EOF'
           import os, json, subprocess, sys, shutil
-
           batch_venues = json.loads(os.environ["BATCH_VENUES_JSON"])
           force_refresh = os.environ.get("INPUT_FORCE_REFRESH", "false") == "true"
           reset_list_raw = os.environ.get("INPUT_RESET_VENUES", "")
           reset_venues = [v.strip() for v in reset_list_raw.split(",") if v.strip()]
-
           print(f"A processar batch: {batch_venues}")
-
           for venue in batch_venues:
               print(f"\n{'='*60}")
               print(f"→ Venue: {venue}")
-
               # RESET: apagar histórico do venue se solicitado
               if venue in reset_venues:
                   print(f"⚠️  RESET: a apagar histórico de {venue}")
@@ -231,7 +207,6 @@ jobs:
                       shutil.rmtree(backup_dir)
                       print(f"   Apagado: {backup_dir}")
                   print(f"✓ Histórico de {venue} apagado — scrape do zero")
-
               # Determinar argumentos do scraper
               args = []
               if force_refresh:
@@ -239,18 +214,14 @@ jobs:
               if venue in reset_venues:
                   args = ["--force"]  # reset implica --force
                   print(f"→ {venue} resetado: a correr com --force")
-
               cmd = ["python", "pipeline/run_venue.py", venue] + args
               print(f"Comando: {' '.join(cmd)}")
-
               result = subprocess.run(cmd, capture_output=False)
               if result.returncode != 0:
                   print(f"⚠️  {venue} terminou com código {result.returncode}", file=sys.stderr)
-
           print(f"\n{'='*60}")
           print("Batch completo.")
           EOF
-
       - name: Upload artefacto do batch
         uses: actions/upload-artifact@v4
         with:
@@ -263,7 +234,6 @@ jobs:
             data/cache/
           if-no-files-found: warn
           retention-days: 1
-
   # ─────────────────────────────────────────
   # JOB 3 — Validação global (pré-publish)
   # ─────────────────────────────────────────
@@ -274,25 +244,20 @@ jobs:
     if: always()
     outputs:
       ok: ${{ steps.check.outputs.ok }}
-
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
-
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
-
       - name: Download artefactos dos batches
         uses: actions/download-artifact@v4
         with:
           pattern: batch-*
           merge-multiple: true
           path: data/
-
       - name: ✅ Verificar sanidade dos dados
         id: check
         env:
@@ -303,11 +268,9 @@ jobs:
           from pathlib import Path
           from datetime import datetime
           from pipeline.core.cache import credibility_score
-
           events_dir = Path("data/events")
           today = datetime.now().strftime("%Y-%m-%d")
           cutoff_future = str(int(today[:4]) + 2) + today[4:]  # hoje + 2 anos
-
           # Carregar counts do commit anterior (para detecção de regressões)
           prev_counts = {}
           for f in sorted(events_dir.glob("*.json")):
@@ -320,11 +283,9 @@ jobs:
                       prev_counts[f.stem] = len(json.loads(raw.stdout))
               except Exception:
                   pass
-
           errors = []
           warnings = []
           table_rows = []
-
           for f in sorted(events_dir.glob("*.json")):
               venue = f.stem
               try:
@@ -332,11 +293,9 @@ jobs:
               except Exception as e:
                   errors.append(f"{venue}: erro ao ler JSON — {e}")
                   continue
-
               n = len(events)
               if n == 0:
                   errors.append(f"{venue}: 0 eventos — possível falha de scraping")
-
               # Detecção de regressão: queda > 50% em relação ao commit anterior
               prev_n = prev_counts.get(venue, 0)
               if prev_n >= 10 and n < prev_n * 0.5:
@@ -344,7 +303,6 @@ jobs:
                       f"{venue}: queda abrupta de eventos ({prev_n} → {n}, "
                       f"-{round((1 - n/prev_n) * 100)}%) — verificar scraper"
                   )
-
               # Datas absurdas (> 2 anos no futuro)
               bad_dates = [
                   e.get("id", "?")
@@ -353,19 +311,16 @@ jobs:
               ]
               if bad_dates:
                   warnings.append(f"{venue}: {len(bad_dates)} evento(s) com data > 2 anos no futuro")
-
               # Score médio de credibilidade (usa a função canónica do pipeline)
               scores = [credibility_score(e) for e in events]
               avg = round(sum(scores)/len(scores), 2) if scores else 0.0
               if avg < 0.40:
                   warnings.append(f"{venue}: score médio baixo ({avg:.2f})")
-
               delta = ""
               if prev_n > 0:
                   diff = n - prev_n
                   delta = f" ({'+' if diff >= 0 else ''}{diff})"
               table_rows.append(f"| {venue} | {n}{delta} | {avg:.2f} | {'⚠️' if bad_dates else '✓'} |")
-
           # Escrever Step Summary (aparece directamente no ecrã do run no GitHub)
           summary_lines = [
               "## Resumo do Pipeline",
@@ -375,25 +330,20 @@ jobs:
               "| Venue | Eventos | Score médio | Datas |",
               "|-------|---------|-------------|-------|",
           ] + table_rows
-
           if warnings:
               summary_lines += ["", "### ⚠️ Avisos", ""] + [f"- {w}" for w in warnings]
           if errors:
               summary_lines += ["", "### ❌ Erros críticos", ""] + [f"- {e}" for e in errors]
           else:
               summary_lines += ["", "### ✅ Validação passou sem erros críticos"]
-
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
               f.write("\n".join(summary_lines) + "\n")
-
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"ok={'false' if errors else 'true'}\n")
-
           if errors:
               print("ERROS DE VALIDAÇÃO:", errors, file=sys.stderr)
               sys.exit(1)
           EOF
-
   # ─────────────────────────────────────────
   # JOB 4 — Agregar + publicar
   # ─────────────────────────────────────────
@@ -403,37 +353,30 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     if: always() && needs.validate.outputs.ok != 'false'
-
     steps:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip'
-
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
-
       - name: Download artefactos dos batches
         uses: actions/download-artifact@v4
         with:
           pattern: batch-*
           merge-multiple: true
           path: data/
-
       - name: Agregar e gerar master.json
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python pipeline/aggregate.py
-
       - name: Actualizar index.html com novos dados
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: python pipeline/scripts/update_index.py
-
       - name: 📬 Notificações
         if: ${{ github.event.inputs.notify != 'false' }}
         env:
@@ -443,7 +386,6 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
           NTFY_URL: ${{ secrets.NTFY_URL }}
         run: python pipeline/utils/notify.py
-
       - name: 💾 Commit e push
         if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
@@ -465,11 +407,9 @@ jobs:
             && git push \
             || (echo "❌ ERRO: commit/rebase/push falhou" && exit 1)
           )
-
       - name: ℹ️ Dry run — sem commit
         if: ${{ github.event.inputs.dry_run == 'true' }}
         run: echo "ℹ️ Dry run activo — dados gerados mas não commitados. Ver artefactos para inspecção."
-
       - name: Upload relatório
         if: always()
         uses: actions/upload-artifact@v4
