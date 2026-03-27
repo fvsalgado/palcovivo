@@ -1,10 +1,10 @@
 """
-Primeira Plateia — Agregador v2
-Melhorias:
-  - Score de credibilidade por venue no relatório
-  - Índice de qualidade por campo
-  - Suporte a eventos tombstoned (is_active: false) excluídos do master
-  - Estatísticas de merge_stats dos venues
+Primeira Plateia — Agregador v3
+Melhorias v3:
+  - master.json: apenas eventos activos com date_last >= hoje-30d
+  - data/archive/YYYY.json: eventos passados agrupados por ano
+  - Inclui quality_score do validator no relatório por venue
+  - Campos de qualidade do validator (quality_warnings) no relatório
 """
 
 import json
@@ -17,13 +17,15 @@ import sys as _sys
 import os as _os
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 
-ROOT       = Path(__file__).parent.parent
-DATA_DIR   = ROOT / "data"
-EVENTS_DIR = DATA_DIR / "events"
-LOGS_DIR   = DATA_DIR / "logs"
+ROOT        = Path(__file__).parent.parent
+DATA_DIR    = ROOT / "data"
+EVENTS_DIR  = DATA_DIR / "events"
+LOGS_DIR    = DATA_DIR / "logs"
+ARCHIVE_DIR = DATA_DIR / "archive"
 
-from pipeline.core.dedup  import deduplicate
-from pipeline.core.cache  import credibility_score
+from pipeline.core.dedup      import deduplicate
+from pipeline.core.cache      import credibility_score, should_tombstone
+from pipeline.core.validator  import field_quality_report, quality_score
 
 logging.basicConfig(
     level=logging.INFO,
@@ -80,6 +82,58 @@ def quality_stats(events: list[dict]) -> dict:
     }
 
 
+def _split_active_archive(events: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Separa eventos activos (master) de passados (archive).
+    Master: activos + passados há <= 30 dias.
+    Archive: passados há > 30 dias.
+    """
+    from datetime import datetime, timedelta
+    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    active, archive = [], []
+    for e in events:
+        # Tombstone imediato já deve ter sido aplicado pelo run_venue
+        # mas verificamos aqui também como safety net
+        if should_tombstone(e):
+            e.setdefault("pipeline", {})["is_active"] = False
+            archive.append(e)
+            continue
+        date_last = e.get("date_last") or e.get("date_first") or ""
+        if date_last and date_last < cutoff:
+            archive.append(e)
+        else:
+            active.append(e)
+    return active, archive
+
+
+def _write_archive(archive_events: list[dict]) -> None:
+    """Agrupa eventos de arquivo por ano e escreve data/archive/YYYY.json."""
+    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
+    by_year: dict[str, list] = {}
+    for e in archive_events:
+        year = (e.get("date_last") or e.get("date_first") or "0000")[:4]
+        by_year.setdefault(year, []).append(e)
+    for year, evs in by_year.items():
+        evs.sort(key=lambda e: e.get("date_first") or "")
+        path = ARCHIVE_DIR / f"{year}.json"
+        # Ler arquivo existente e fundir (não perder anos anteriores)
+        existing = {}
+        if path.exists():
+            try:
+                with open(path, encoding="utf-8") as f:
+                    existing_data = json.load(f)
+                existing = {e["id"]: e for e in existing_data.get("events", [])}
+            except Exception:
+                pass
+        for e in evs:
+            existing[e["id"]] = e
+        merged = sorted(existing.values(), key=lambda e: e.get("date_first") or "")
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump({"year": year, "total": len(merged), "events": merged},
+                      f, ensure_ascii=False, indent=2)
+        logger.info(f"Archive {year}: {len(merged)} eventos guardados em {path.name}")
+
+
 def generate_master(events: list[dict]) -> dict:
     events.sort(key=lambda e: (e.get("date_first") or "9999-99-99"))
     by_domain, by_venue, by_month = {}, {}, {}
@@ -131,21 +185,38 @@ def run():
     deduped = deduplicate(all_events)
     logger.info(f"Após dedup: {len(deduped)} eventos")
 
-    master = generate_master(deduped)
+    # Separar activos (master) de passados (archive)
+    active, archive = _split_active_archive(deduped)
+    logger.info(f"Master: {len(active)} activos | Archive: {len(archive)} passados")
+
+    # Escrever archive por ano
+    if archive:
+        _write_archive(archive)
+
+    master = generate_master(active)
     with open(DATA_DIR / "master.json", "w", encoding="utf-8") as f:
         json.dump(master, f, ensure_ascii=False, indent=2)
-    logger.info("master.json gerado")
+    logger.info(f"master.json gerado ({len(active)} eventos)")
 
-    # Qualidade por venue
+    # Qualidade por venue (credibilidade + quality_score do validator)
     venue_quality = {}
     for vid, ids in master["index"]["by_venue"].items():
-        id_set  = set(ids)
-        evs     = [e for e in deduped if e["id"] in id_set]
-        venue_quality[vid] = quality_stats(evs)
+        id_set = set(ids)
+        evs    = [e for e in active if e["id"] in id_set]
+        qs     = field_quality_report(evs) if evs else {}
+        venue_quality[vid] = {
+            **quality_stats(evs),
+            "avg_quality_score": qs.get("global", {}).get("avg_score", 0),
+            "field_pct": {
+                k: v["pct"]
+                for k, v in qs.get("global", {}).get("fields", {}).items()
+            },
+        }
         logger.info(
-            f"{vid}: credibilidade média = {venue_quality[vid]['avg_credibility']:.2f}, "
-            f"imagem {venue_quality[vid]['with_image']}%, "
-            f"preço {venue_quality[vid]['with_price']}%"
+            f"{vid}: credibilidade={venue_quality[vid]['avg_credibility']:.2f} "
+            f"quality_score={venue_quality[vid]['avg_quality_score']:.3f} "
+            f"imagem={venue_quality[vid]['with_image']}% "
+            f"preço={venue_quality[vid]['with_price']}%"
         )
 
     duration = (datetime.now(timezone.utc) - start).total_seconds()
