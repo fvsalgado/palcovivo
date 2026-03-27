@@ -9,7 +9,7 @@ import hashlib
 import json
 from datetime import datetime, date, timezone
 from typing import Optional
-from .taxonomy import ALIASES, AUDIENCE_MAP, SERIES_PREFIX_PATTERNS, CATEGORIES, DOMAINS, log_unknown_tag
+from .taxonomy import ALIASES, AUDIENCE_MAP, SERIES_PREFIX_PATTERNS, CATEGORIES, DOMAINS, log_unknown_tag, generate_tags
 
 
 # ---------------------------------------------------------------------------
@@ -502,7 +502,7 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     if re.search(r"sessão relaxada|sessao relaxada|relaxed performance", description, re.I):
         accessibility["is_relaxed_performance"] = True
 
-    return {
+    harmonized = {
         "schema_version": "1.0",
         "id": event_id,
         "source_id": str(raw_event.get("source_id", "")),
@@ -579,3 +579,5 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
             "extra_flags": pipeline_extra_flags or None,
         },
     }
+    harmonized["tags"] = generate_tags(harmonized)
+    return harmonized
