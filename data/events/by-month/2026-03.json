@@ -1,6 +1,6 @@
 {
   "month": "2026-03",
-  "total": 61,
+  "total": 54,
   "events": [
     {
       "schema_version": "1.0",
@@ -119,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:49.015045+00:00",
+        "scraped_at": "2026-03-27T12:26:35.057801+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:82f7c9069ea8e302",
-        "harmonized_at": "2026-03-27T12:08:50.070962+00:00",
+        "raw_data_hash": "sha256:ffb5ff21256906e3",
+        "harmonized_at": "2026-03-27T12:28:49.498742+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -311,7 +311,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:31:57.603575+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105459+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535078+00:00"
       }
     },
     {
@@ -439,10 +439,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:50.168487+00:00",
+        "scraped_at": "2026-03-27T12:26:36.432861+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9c7e3e650888879b",
-        "harmonized_at": "2026-03-27T12:08:50.071069+00:00",
+        "raw_data_hash": "sha256:69b4888622e10433",
+        "harmonized_at": "2026-03-27T12:28:49.498848+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -579,7 +579,7 @@
         "scraped_at": "2026-03-27T11:24:41.900596+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:b4e7501aed4fdc9e",
-        "harmonized_at": "2026-03-27T12:05:20.290103+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.982263+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -735,10 +735,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.742636+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077143+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:53d2dbe975055202",
-        "harmonized_at": "2026-03-27T12:05:13.777761+00:00",
+        "raw_data_hash": "sha256:932b3c3929ce6afa",
+        "harmonized_at": "2026-03-27T12:24:50.738738+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -874,7 +874,7 @@
         "scraped_at": "2026-03-27T11:00:20.758313+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ce5b973b581a3559",
-        "harmonized_at": "2026-03-27T12:05:19.963243+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.655560+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1009,10 +1009,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:50.818414+00:00",
+        "scraped_at": "2026-03-27T12:26:37.141990+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8895d444e5b5e017",
-        "harmonized_at": "2026-03-27T12:08:50.071184+00:00",
+        "raw_data_hash": "sha256:9805d1fc1ee85a5b",
+        "harmonized_at": "2026-03-27T12:28:49.498964+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1145,10 +1145,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:56.963184+00:00",
+        "scraped_at": "2026-03-27T12:26:44.095736+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c99c5fc4a57a7976",
-        "harmonized_at": "2026-03-27T12:08:50.072101+00:00",
+        "raw_data_hash": "sha256:27692b60253c7dd1",
+        "harmonized_at": "2026-03-27T12:28:49.499896+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1283,7 +1283,7 @@
         "scraped_at": "2026-03-27T11:24:43.876099+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d1436c709f442f2d",
-        "harmonized_at": "2026-03-27T12:05:20.290536+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.982696+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1421,7 +1421,7 @@
         "scraped_at": "2026-03-27T11:24:45.788807+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:97b1c1ec465a2995",
-        "harmonized_at": "2026-03-27T12:05:20.290959+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.983092+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1579,10 +1579,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:45.441163+00:00",
+        "scraped_at": "2026-03-27T12:26:31.019202+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:396a35e4e4b82097",
-        "harmonized_at": "2026-03-27T12:08:50.070789+00:00",
+        "raw_data_hash": "sha256:3fbbdd6ef6598d20",
+        "harmonized_at": "2026-03-27T12:28:49.498582+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1714,10 +1714,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:57.611985+00:00",
+        "scraped_at": "2026-03-27T12:26:44.805745+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7363a220deb8a9ae",
-        "harmonized_at": "2026-03-27T12:08:50.072206+00:00",
+        "raw_data_hash": "sha256:181e3558e7c3650a",
+        "harmonized_at": "2026-03-27T12:28:49.500004+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1869,7 +1869,7 @@
         "scraped_at": "2026-03-27T11:00:22.871279+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a8701821699fad",
-        "harmonized_at": "2026-03-27T12:05:19.963851+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.656141+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2004,7 +2004,7 @@
         "scraped_at": "2026-03-27T11:24:47.775521+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:938386c6a7ddad32",
-        "harmonized_at": "2026-03-27T12:05:20.291411+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.983557+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2135,10 +2135,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:34.413467+00:00",
+        "scraped_at": "2026-03-27T12:26:18.624961+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:31b4d980c60a3744",
-        "harmonized_at": "2026-03-27T12:08:50.070432+00:00",
+        "raw_data_hash": "sha256:6346cf899e4cdd71",
+        "harmonized_at": "2026-03-27T12:28:49.498242+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2273,10 +2273,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:43.036604+00:00",
+        "scraped_at": "2026-03-27T12:26:28.271683+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d0b04981b5191d61",
-        "harmonized_at": "2026-03-27T12:08:50.070547+00:00",
+        "raw_data_hash": "sha256:d87f6b60ad307274",
+        "harmonized_at": "2026-03-27T12:28:49.498361+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2409,10 +2409,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:19.999846+00:00",
+        "scraped_at": "2026-03-27T12:26:02.138555+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d4aac19bd85190db",
-        "harmonized_at": "2026-03-27T12:08:50.070287+00:00",
+        "raw_data_hash": "sha256:75fee67746195520",
+        "harmonized_at": "2026-03-27T12:28:49.498072+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2546,10 +2546,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:18.137694+00:00",
+        "scraped_at": "2026-03-27T12:25:59.799948+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8a039da38dbdca41",
-        "harmonized_at": "2026-03-27T12:08:50.066518+00:00",
+        "raw_data_hash": "sha256:298cbbb11d5d36a4",
+        "harmonized_at": "2026-03-27T12:28:49.494081+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2682,7 +2682,7 @@
         "scraped_at": "2026-03-27T11:24:49.796669+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d5e24a644293511b",
-        "harmonized_at": "2026-03-27T12:05:20.291748+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.983860+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2696,268 +2696,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.75
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-lee-ritenour-038-friends",
-      "source_id": "251945",
-      "source_url": "https://www.ccb.pt/evento/lee-ritenour-friends/",
-      "venue_id": "ccb",
-      "space_id": "grande-auditorio",
-      "title": "Lee Ritenour &#038; Friends",
-      "title_raw": "Lee Ritenour &#038; Friends",
-      "subtitle": null,
-      "description": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour foi um enfant terrible do fusion dos anos 70, uma estrela da pop dos anos 80, um expoente honorário do jazz brasileiro e um dos responsáveis pelo supergrupo dos anos 90, Fourplay. Os reconhecimentos de Ritenour incluem: 45 álbuns, 16 indicações ao Grammy, ex-aluno do ano na USC, homenageado pela Los Angeles&#8217; Jazz Society (2019), além de milhares de sessões com lendas como Frank Sinatra, Pink Floyd, B.B. King, Tony Bennett, entre outros.\n\n&nbsp;\n\nLee Ritenour apresenta-se em Portugal com o seu mais recente espetáculo, Lee Ritenour &amp; Friends, prometendo um momento inesquecível.",
-      "description_short": "Para Lee Ritenour, não há muitas «primeiras vezes» a serem alcançadas.\n\nAo longo da sua brilhante carreira de cinco décadas, o lendário guitarrista de Los Angeles levou sua música aos limites, entrando em todos os géneros e ocupando todas as posições no mundo do rock &#8216;n&#8217; roll. Ritenour…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "jazz-blues",
-      "subcategory": "jazz",
-      "tags": [
-        "Música"
-      ],
-      "categories_raw": [
-        "Espetáculos",
-        "Jazz",
-        "Música",
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-26",
-          "time_start": "20:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": "20:00"
-        }
-      ],
-      "date_first": "2026-03-26",
-      "date_last": "2026-03-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/164543-lee_ritenour_friends-fundacao_centro_cultural_de_belem/?lang=pt-PT"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/LeeRitenour_1920x1080_NOINFO-1.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "lee-ritenour-038-friends|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T01:17:59.297529+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c84f628a97d3e7f8",
-        "harmonized_at": "2026-03-26T16:05:41.047249+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T01:17:59.297529+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205859+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-sobre-a-verdade-da-mentira",
-      "source_id": "270368",
-      "source_url": "https://www.ccb.pt/evento/sobre-a-verdade-da-mentira/2026-03-26/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Sobre a verdade da mentira",
-      "title_raw": "Sobre a verdade da mentira",
-      "subtitle": null,
-      "description": "Não querer ser enganado com mentiras e descobrir a verdade é a situação em que cada ser humano se encontra. Há uma pressão contínua — 24 horas por dia, 7 dias na semana — para escapar à mentira e saber da verdade. Por norma, achamos que estamos na verdade e somos verdadeiros, mas não sucumbimos à mentira? O contexto contemporâneo levanta a questão da mentira de um modo pandémico. A proliferação da desinformação (deepfakes, algoritmos e bots) é uma necessidade que empresas como a Cambridge Analytica ou alguns estados vieram suprir. A desinformação pode influenciar eleições e minar a confiança na democracia. Este nosso percurso explora as relações entre verdade, mentira e perceção da realidade, analisando conceitos filosóficos clássicos e contemporâneos nos contextos complexos da nossa vida pessoal e coletiva. O esforço de compreensão da eficácia da mentira e desativação da verdade não é novo. É tão antigo como o acontecimento do ser humano. Anular o estado de negação em que nos encontramos a respeito de ilusões e autoenganos é condição de possibilidade da descoberta da verdade. Somos, às vezes, enganados com a mentira e também com a verdade. Mas não a propagamos também nós? E não acontece também ser um outro, muitas vezes, a dizer-nos verdades sobre nós?\n\n&nbsp;\n\n• Lançamento do livro Sobre os sentimentos de António Castro Caeiro\n\nquinta-feira, 25 fevereiro às 18:30, sala Sophia de Mello Breyner\n\nEntrada gratuita\n\nO Centro Cultural de Belém e a Tinta-da-china convidam para o lançamento do livro Sobre os sentimentos, de António de Castro Caeiro, que contará com uma conversa entre o autor e a editora Bárbara Bulhosa.",
-      "description_short": "Não querer ser enganado com mentiras e descobrir a verdade é a situação em que cada ser humano se encontra. Há uma pressão contínua — 24 horas por dia, 7 dias na semana — para escapar à mentira e saber da verdade. Por norma, achamos que estamos na verdade e somos verdadeiros, mas não sucumbimos à…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "pensamento",
-      "category": "conferencias-debates",
-      "subcategory": null,
-      "tags": [
-        "Conferências",
-        "Conversa",
-        "Podcast"
-      ],
-      "categories_raw": [
-        "Conferências e Conversas",
-        "Temporada 2025-26",
-        "Conferências",
-        "Conversa",
-        "Podcast"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-26",
-          "time_start": "19:00",
-          "time_end": "20:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-26",
-      "date_last": "2026-03-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/2000x940_AntoniodeCastroCaeiro_MatildeFieschi.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "sobre-a-verdade-da-mentira|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627152+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4626c4ec3dd241f1",
-        "harmonized_at": "2026-03-25T23:04:22.708680+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627152+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205908+00:00"
       }
     },
     {
@@ -3101,7 +2839,7 @@
         "scraped_at": "2026-03-27T10:59:24.082104+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:38188d39c9c512a9",
-        "harmonized_at": "2026-03-27T12:05:19.947509+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.639979+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3251,7 +2989,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:31:58.355619+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105486+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535094+00:00"
       }
     },
     {
@@ -3399,10 +3137,177 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.741640+00:00",
+        "scraped_at": "2026-03-27T12:23:17.076265+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c10c2a909765fe75",
-        "harmonized_at": "2026-03-27T12:05:13.758807+00:00",
+        "raw_data_hash": "sha256:cb182417531e6da4",
+        "harmonized_at": "2026-03-27T12:24:50.727255+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-uma-deriva-atlantica-1dfa",
+      "source_id": "266206",
+      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-27/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Uma deriva atlântica",
+      "title_raw": "Uma deriva atlântica",
+      "subtitle": "As artes do século XX a partir da Coleção Berardo",
+      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n…",
+      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições",
+        "Museu",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições",
+        "Museu"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-28",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-29",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-31",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-27",
+      "date_last": "2026-03-31",
+      "total_sessions": 4,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "uma-deriva-atlantica|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.076376+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:9986b9756c3b9a6c",
+        "harmonized_at": "2026-03-27T12:24:50.730922+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3552,10 +3457,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.742006+00:00",
+        "scraped_at": "2026-03-27T12:23:17.076605+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6409cc6221d84c68",
-        "harmonized_at": "2026-03-27T12:05:13.771779+00:00",
+        "raw_data_hash": "sha256:e238ebdc7109a8a0",
+        "harmonized_at": "2026-03-27T12:24:50.732710+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3708,7 +3613,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:31:59.106776+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105497+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535104+00:00"
       }
     },
     {
@@ -4059,10 +3964,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:09:03.633142+00:00",
+        "scraped_at": "2026-03-27T12:29:03.773120+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:0d7ae797ca9a8a93",
-        "harmonized_at": "2026-03-27T12:09:24.265224+00:00",
+        "raw_data_hash": "sha256:f331a0128dbcaf10",
+        "harmonized_at": "2026-03-27T12:29:25.229586+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4073,6 +3978,439 @@
           "subcategoria nao determinada"
         ],
         "quality_score": 0.95
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-alarve-359c",
+      "source_id": "277060",
+      "source_url": "https://www.ccb.pt/evento/performance-alarve/2026-03-27/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Alarve",
+      "title_raw": "Alarve",
+      "subtitle": "João dos Santos Martins | Museu Aberto",
+      "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n \n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nLadainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n \n\nProgramação do Museu Aberto.",
+      "description_short": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Performance",
+        "festival",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Espetáculos",
+        "MAC/CCB",
+        "Performance",
+        "Performance"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "18:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "18:00 no MAC/CCB"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": true,
+      "festival_name": "Festival Silvestre",
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Alarvemuseuaberto_DR.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "alarve|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.076669+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:569332ce2be5bc2d",
+        "harmonized_at": "2026-03-27T12:24:50.733188+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre-b80b",
+      "source_id": "273236",
+      "source_url": "https://www.ccb.pt/evento/aprender-a-brincar-para-a-brincar-aprender-projeto-ludico-mac-ccb/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Aprender a Brincar para a Brincar a Aprender",
+      "title_raw": "Aprender a Brincar para a Brincar a Aprender",
+      "subtitle": "Sala Lúdica",
+      "description": "Acreditamos que o museu também é um lugar para brincar, descobrir e aprender de forma livre. A Sala Lúdica, instalada no piso -1 do museu, nasce deste desejo: o de oferecer outras formas de estar e de pensar o museu. Trata-se de um espaço onde o jogo, a criação, a experimentação e a curiosidade se encontram, e onde se desenvolvem ateliers como «Aprender a brincar para a brincar aprender».\n\nCriando formas de mediação e relação com a arte e o espaço, objetos inspirados nas obras das coleções do MAC/CCB originam jogos e propostas, promovendo uma visita mais interativa e acessível. Uma «Folha de Sala Lúdica», com textos e sugestões de atividades adaptados às várias faixas etárias, acompanha a experiência.\n\nDe participação livre, a Sala conta com a presença de um membro da equipa de Educação e Mediação, disponível para apoiar, sugerir caminhos e acompanhar descobertas. Aberto a famílias — prova que a brincar também se aprende!",
+      "description_short": "Acreditamos que o museu também é um lugar para brincar, descobrir e aprender de forma livre. A Sala Lúdica, instalada no piso -1 do museu, nasce deste desejo: o de oferecer outras formas de estar e de pensar o museu. Trata-se de um espaço onde o jogo, a criação, a experimentação e a curiosidade se…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Museu",
+        "Oficina",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "Famílias",
+        "MAC/CCB",
+        "Museu",
+        "Oficina"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-29",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-29",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2888_ritacarmo-1-e1730983416520.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "aprender-a-brincar-para-a-brincar-a-aprender|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.076737+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:18bec9a9f488ed60",
+        "harmonized_at": "2026-03-27T12:24:50.734154+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-avenida-ludica-c841",
+      "source_id": "277144",
+      "source_url": "https://www.ccb.pt/evento/avenida-ludica/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Avenida Lúdica",
+      "title_raw": "Avenida Lúdica",
+      "subtitle": "Atelier — Um espaço para imaginar, jogar e criar | Museu Aberto",
+      "description": "Agora que nos despedimos de uma exposição marcante para a cidade, recebemos as crianças na Sala Lúdica com atividades inspiradas em Avenida 211: Um espaço de artistas em Lisboa. O jogo torna-se caminho para descobrir o museu em Atelier — Um espaço para imaginar, jogar e criar.\n\nNo piso -1, entre as 14:30 e as 19:00, convidamos os mais novos a explorar desafios que despertam a imaginação e transformam ideias em obras. É a prova de que a brincar também se aprende, enquanto os adultos espreitam o resto da programação.\n\n \n\nProgramação do Museu Aberto.",
+      "description_short": "Agora que nos despedimos de uma exposição marcante para a cidade, recebemos as crianças na Sala Lúdica com atividades inspiradas em Avenida 211: Um espaço de artistas em Lisboa. O jogo torna-se caminho para descobrir o museu em Atelier — Um espaço para imaginar, jogar e criar.\n\nNo piso -1, entre as…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "Famílias",
+        "MAC/CCB",
+        "Projetos de Mediação",
+        "Oficina"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "14:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "14:30 às 19:00"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2909_ritacarmo.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "avenida-ludica|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.077199+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:2feffdc81b467622",
+        "harmonized_at": "2026-03-27T12:24:50.739311+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -4192,10 +4530,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.742805+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077289+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c164258495b224db",
-        "harmonized_at": "2026-03-27T12:05:13.779122+00:00",
+        "raw_data_hash": "sha256:db935cba79bff64c",
+        "harmonized_at": "2026-03-27T12:24:50.740088+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4210,6 +4548,292 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-concertos-filho-unico-8323",
+      "source_id": "277122",
+      "source_url": "https://www.ccb.pt/evento/concerto-filho-unico/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Concertos Filho Único",
+      "title_raw": "Concertos Filho Único",
+      "subtitle": "Museu Aberto",
+      "description": "Vasco Alves e as Rochas da Ajuda\n\nFormação moldada pela pressão, fricção e movimento do ar, desde o verão de 2024, trabalha a polifonia numa perspetiva materialista, através de gaitas de fole em permanente transformação. Como uma trama de pequenas peças que exploram diferentes aspetos do instrumento — os seus limites físicos e a sua perceção auditiva —, os amigos gaiteiros Teresa Mendonça, André Pires e Carlos Santos juntam-se aqui a Vasco Alves.\n\nInês Tartaruga Água\n\nFazedora multidisciplinar, entusiasta da regeneração radical, escultora de situações sónicas e adepta da filosofia «DIY», a sua prática desdobra-se entre as artes plásticas e a performance. Participa em exposições coletivas e eventos públicos desde 2013. Água passou por várias casas, festivais, derivas institucionais e colabora frequentemente com Xavier Paes, sendo umas das mentes por detrás dos organismos REFLUXO e DIES LEXIC.\n\nSheila Ramirez\n\nSheila Ramirez (Santiago de Cuba, 2000) é artista, investigadora e designer cubano-angolana. Com base nas filosofias e imaginário do Oriente de Cuba, do Haiti e da memória ancestral Kongo, constrói gestos a partir de arquivos familiares, oralidades e musicalidades. A sua prática explora a renovação contínua, a transformação e as iniciações, abordando a violência colonial nas relações com as pessoas, os antepassados e o território.\n\nSa🎀ra\n\nServindo-se da plasticidade sonora do ciberespaço e seus arquivos, sara coleciona samples e field recordings. A partir da assemblagem lo-fi, constrói um léxico de sons e texturas que se desdobram, deixando-se inspirar pelo universo do dub e do hip-hop.\n\nVaiapraia\n…",
+      "description_short": "Vasco Alves e as Rochas da Ajuda\n\nFormação moldada pela pressão, fricção e movimento do ar, desde o verão de 2024, trabalha a polifonia numa perspetiva materialista, através de gaitas de fole em permanente transformação. Como uma trama de pequenas peças que exploram diferentes aspetos do…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Performance",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Espetáculos",
+        "MAC/CCB",
+        "Música",
+        "Performance"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "16:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "16:00 no MAC/CCB"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/2023_Vaiapraia.3_PhotocreditoJame_St_Findlay.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "concertos-filho-unico|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.077327+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:2a88d4f203749c66",
+        "harmonized_at": "2026-03-27T12:24:50.740776+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-programas-publicos-72b7",
+      "source_id": "268119",
+      "source_url": "https://www.ccb.pt/evento/programa-publico-mac-ccb/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Programas Públicos",
+      "title_raw": "Programas Públicos",
+      "subtitle": "No âmbito das exposições",
+      "description": "",
+      "description_short": "",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Conversa",
+        "Exposições",
+        "Museu",
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Centro de Arquitetura",
+        "MAC/CCB",
+        "Conversa",
+        "Exposições",
+        "Museu",
+        "Visita Guiada"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "18:00",
+          "time_end": "18:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/04/DiaMuseus3102┬®RitaCarmo.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "programas-publicos|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.077381+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:0b13e9a4eb761d0b",
+        "harmonized_at": "2026-03-27T12:24:50.741574+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "descricao ausente ou demasiado curta (< 30 chars)",
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.45
       }
     },
     {
@@ -4333,10 +4957,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.742959+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077436+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d9ae55c5285957dc",
-        "harmonized_at": "2026-03-27T12:05:13.781289+00:00",
+        "raw_data_hash": "sha256:a0ca354b1211ff1b",
+        "harmonized_at": "2026-03-27T12:24:50.742312+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4351,917 +4975,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.65
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-programas-publicos",
-      "source_id": "268119",
-      "source_url": "https://www.ccb.pt/evento/programa-publico-mac-ccb/2026-03-28/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Programas Públicos",
-      "title_raw": "Programas Públicos",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "pensamento",
-      "category": "conversas",
-      "subcategory": "conversa",
-      "tags": [
-        "Conversa",
-        "Exposições",
-        "Museu",
-        "Visita Guiada"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Centro de Arquitetura",
-        "MAC/CCB",
-        "Conversa",
-        "Exposições",
-        "Museu",
-        "Visita Guiada"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "18:00",
-          "time_end": "18:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/04/DiaMuseus3102┬®RitaCarmo.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "programas-publicos|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627972+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:448cc63991138480",
-        "harmonized_at": "2026-03-25T23:04:22.721809+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627972+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205901+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-alarve",
-      "source_id": "277069",
-      "source_url": "https://www.ccb.pt/evento/performance-alarve/2026-03-28/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Alarve",
-      "title_raw": "Alarve",
-      "subtitle": null,
-      "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n&nbsp;\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nLadainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n&nbsp;\n\nProgramação do Museu Aberto.",
-      "description_short": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "performance",
-      "subcategory": "performance-arte",
-      "tags": [
-        "Performance"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Espetáculos",
-        "MAC/CCB",
-        "Performance",
-        "Performance"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "18:00",
-          "time_end": "18:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": true,
-      "festival_name": "Festival Silvestre",
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Alarvemuseuaberto_DR.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "alarve|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627986+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a4325c35e3a1f39e",
-        "harmonized_at": "2026-03-25T23:04:22.721913+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627986+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205915+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-avenida-211",
-      "source_id": "204836",
-      "source_url": "https://www.ccb.pt/evento/avenida-211/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Avenida 211",
-      "title_raw": "Avenida 211",
-      "subtitle": null,
-      "description": "Será possível imaginar um edifício de uma das zonas mais valorizadas de Lisboa totalmente ocupado por artistas? Entre 2006 e 2014, esta singularidade teve lugar no n.º 211 da Avenida da Liberdade, que, segundo aqueles que foram os seus inquilinos-artistas, curadores e visitantes frequentes, albergou uma experiência irrepetível no panorama da arte contemporânea da cidade.\n\nDurante quase uma década, os quatro andares do edifício (propriedade do Banco Espírito Santo, fundado em 1869 e colapsado em 2014) acolheram várias dezenas de artistas, músicos e projetos curatoriais. A ocupação era gratuita e temporária, e assegurava condições de autonomia e flexibilidade que escapavam tanto aos modelos institucionais quanto às lógicas comerciais.\n\nA história desta ocupação simultaneamente vital e vulnerável permite compreender o contexto cultural português, mas também o ciclo de crises e transformações económicas e políticas que atravessou o país e a Europa no início do século XXI. A crise financeira global de 2008–2009 e a Troika formada para implementar assistência económica entre 2011 e 2014 tiveram um forte impacto na cena artística através da imposição de cortes severos, implicando uma reconfiguração da política cultural e um agravamento das condições de habitação e trabalho. No mesmo período, as dificuldades económicas alimentaram também o surgimento de movimentos sociais, gerando manifestações de protesto que passaram pela Avenida da Liberdade, em Lisboa.\n\nAo longo de um processo que culminou na atual «financeirização das cidades», redefiniu-se a própria possibilidade de existência de comunidades artísticas no coração dos centros metropolitanos. Neste contexto adverso, a Avenida 211 foi como que uma dobra: um espaço onde se geraram novas formas de ação, conhecimento e experiência coletiva. Quando chegou ao fim, a cidade não era mais a mesma.\n\nEsta exposição nasce da recolha e sistematização dos testemunhos e materiais dos artistas residentes. Construída como «arquivo vivo», reúne obras e fragmentos que remetem para exposições, colaborações e situações concretas. Não se propõe reconstituir vivências únicas, antes tornando visíveis os fluxos e conexões entre práticas, linguagens e artistas, assim como as colaborações entre gerações. A rede de confiança e de autogestão na base desta aventura teve um parceiro fundamental em António Bolota, engenheiro civil e artista já envolvido em projetos artísticos sem fins lucrativos.\n\nPor outro lado, esta investigação revelou que a experiência da Avenida 211 ocorreu durante um período de transição, mesmo do ponto de vista tecnológico: do papel para o digital. Se se preservou pouco material em papel, também foi difícil recuperar parte do material digital, armazenado em discos rígidos antigos. Este é outro elemento que atesta a natureza espontânea e genuína da experiência, desprovida de qualquer intenção de autocelebração.\n\nO percurso das salas é orientado por cinco possíveis sentidos da Avenida 211 que surgiram em diálogo com os artistas e na exploração do material: «Um espelho retrovisor», «Um atelier só para si», «Uma caixa de ressonância», «Um farol», «Do-It-Ourselves». Com esta organização, pretende-se apresentar não um passado congelado, mas sim uma rede viva de experiências, fluxos e intensidades que ainda inspira e interroga o presente.\n\n&nbsp;\n\nA investigação foi desenvolvida por Giorgia Casara e Sara De Chiara, e a curadoria foi realizada por Nuria Enguita e Marta Mestre. André Maranha assinou a arquitetura, e Sofia Gonçalves o design.\n\n&nbsp;\n\nPrograma Públicos\n\n◾ The Barber Shop apresenta Acid Communism de Mark Fisher\n\nSábado, 14 de março, das 15:30 às 18:00\n\nUm dos projetos curatoriais que encontrou o seu espaço no n.º 211 da Avenida da Liberdade traz-nos uma sessão dedicada à publicação Acid Communism, do pensador britânico e autor do blog k-punk Mark Fisher. A curadora Margarida Mendes e os seus convidados refletem sobre formas de convivialidade efémera e a imaginação de condições alternativas de sobrevivência sociopolítica. A conversa é seguida de uma performance sonora por Polido.\n\nConversa em língua inglesa.\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt.\n\n&nbsp;",
-      "description_short": "Será possível imaginar um edifício de uma das zonas mais valorizadas de Lisboa totalmente ocupado por artistas? Entre 2006 e 2014, esta singularidade teve lugar no n.º 211 da Avenida da Liberdade, que, segundo aqueles que foram os seus inquilinos-artistas, curadores e visitantes frequentes…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições"
-      ],
-      "categories_raw": [
-        "Exposições",
-        "MAC/CCB",
-        "Exposições"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2024/11/ExpoAvenida211_13creditoAntonioJorgeSsilva_MACCCB-3.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "avenida-211|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627532+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8bd16bab85bc0f87",
-        "harmonized_at": "2026-03-25T23:04:22.714592+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627532+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205928+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-lugar-de-estar",
-      "source_id": "204838",
-      "source_url": "https://www.ccb.pt/evento/lugar-de-estar-o-legado-burle-marx/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Lugar de estar",
-      "title_raw": "Lugar de estar",
-      "subtitle": null,
-      "description": "Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século XX, e uma figura de referência no desenvolvimento do panorama urbano brasileiro, Burle Marx está associado ao imaginário moderno de grandes cidades como Brasília e Rio de Janeiro.\n\n&nbsp;\n\nEnquanto paisagista atento às questões da botânica, aprofundou conhecimentos em torno da flora brasileira e identificou dezenas de espécies endémicas, alertando para a importância da preservação ambiental. A utilização dessas espécies nos seus projetos gerou uma linguagem moderna singular, subvertendo a geometria e organização dos jardins europeus. As linhas simbióticas e as formas orgânicas dos seus projetos evidenciam igualmente afinidades com a arte e a arquitetura moderna. Durante mais de quarenta anos, Burle Marx foi também um defensor acérrimo dos biomas brasileiros, principalmente da Mata Atlântica, da Amazónia e do Cerrado.\n\n&nbsp;\n\nIncluindo estudos de composição, croquis, desenhos, fotografias e materiais de imprensa, esta exposição desenvolve-se através de cinco eixos — «Construir cidade e espaço público», «Compromisso estético e ético», «Projeto moderno», «Ativismo ambiental» e «Património botânico» —, numa seleção que também estabelece diálogos com seis artistas que vivem e trabalham em Portugal. Através da pintura, Juan Araujo investiga criticamente a arquitetura moderna, especialmente no Brasil e na América Latina; Filipe Feijão aborda as noções de construção e ruína; Mónica de Miranda dá destaque aos jardins «invisíveis» dos arredores de Lisboa; Fernanda Fragateiro sublinha o direito à fruição estética nos jardins públicos; Lourdes Castro dialoga com o património botânico autóctone da ilha da Madeira; e, finalmente, João dos Santos Martins explora a relação entre a coreografia e o jardim. Em confronto com os eixos da exposição, cada um\n\ndestes artistas estabelece perspetivas inéditas sobre a obra de Burle Marx.\n\nDiálogos com Fernanda Fragateiro, Filipe Feijão, Mónica de Miranda, Juan Araujo, Lourdes Castro e João dos Santos Martins\n\n&nbsp;\n\nExposição desenvolvida em colaboração entre o Instituto Burle Marx, responsável pela salvaguarda e difusão do acervo paisagístico desenvolvido pelo Escritório Burle Marx, e o Museu de Arte Moderna do Rio de Janeiro, onde foi apresentada de janeiro a maio de 2024.\n\nAdaptação da exposição no MAC/CCB com curadoria de Nuria Enguita, Marta Mestre. Artistas convidados Juan Araujo, Fernanda Fragateiro, Mónica de Miranda, Filipe Feijão, Lourdes Castro, João dos Santos Martins.\n\nDesenho Expositivo Diogo Passarinho Studio + RAR.STUDIO\n\nO MAC/CCB agradece a Michael e Jessica Gailing pela sua contribuição para este projeto.\n\n&nbsp;\n\nPrograma Públicos\n\n&nbsp;\n\n◾ Jardins: Lugares de Olhar ESGOTADO\n\nSábado, 21 de março, às 11:00\n\nCom Ivo Meco\n\nEvocando um olhar contemplativo sobre as espécies botânicas e partilhando curiosidades sobre cada uma delas, Ivo Meco convida-nos a percorrer espaços verdes e jardins em redor do CCB. O professor de Botânica, Biologia e Geologia, e autor de Jardins de Lisboa: Histórias de espaços, plantas e pessoas, leva-nos num passeio-conversa, suscitando novos olhares sobre os jardins.\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt.\n\n&nbsp;\n\n◾ Performance Alarve\n\nSexta e sábado, 27 e 28 de março, às 18:00\n\nDuração 40 min.\n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust ​​\n\nLadainha Franz Schubert\n\nApoio vocal Joana Nascimento\n\nProdução executiva Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB Museu de Arte Contemporânea\n\nResidências Espaço Parasita, Lamia Santolino\n\nA Parasita é uma estrutura financiada pela República Portuguesa – Ministério da Cultura/Direcção-Geral das Artes.\n\nO corpo pode ser um campo de negociação entre a natureza e a construção. A partir desta premissa, João dos Santos Martins aborda a dança como prática de desaprendizagem e reinvenção. O bailarino e coreógrafo encontra na sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito —, um ponto de contacto com Roberto Burle Marx. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», também a migração revela um processo contínuo de ajuste de gestos.\n\nEntrada gratuita, sujeita ao número de lugares disponíveis.",
-      "description_short": "Lugar de estar: o legado Burle Marx é uma exposição que toma como ponto de partida vinte e dois projetos paisagísticos para áreas públicas desenvolvidos ao longo de sete décadas por Roberto Burle Marx (1909–1994) e pelos seus colaboradores. Considerado um dos mais inovadores paisagistas do século…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições"
-      ],
-      "categories_raw": [
-        "Exposições",
-        "MAC/CCB",
-        "Exposições"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/2BurleMarx_MACCCB_©Fabio-Cunha-1.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "lugar-de-estar|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627599+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0e331501a3d41749",
-        "harmonized_at": "2026-03-25T23:04:22.715893+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627599+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205934+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-habitar-portugal",
-      "source_id": "260397",
-      "source_url": "https://www.ccb.pt/evento/exposicao-habitar-portugal/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Habitar Portugal",
-      "title_raw": "Habitar Portugal",
-      "subtitle": null,
-      "description": "A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias.\n\nAssim se definiram três eixos que oferecem um novo olhar sobre o projeto da Ordem dos Arquitectos, na senda das Exposições Nacionais de Arquitectura, iniciadas na década de 1980 pela então denominada Associação dos Arquitectos Portugueses. Para a sétima edição de Habitar Portugal, foram selecionadas 100 obras, com distintos programas e escalas diferentes, orientadas pela representatividade nacional e internacional (incluindo a expressão portuguesa construída fora do país). Trata-se de um registo significativo e valioso que não só oferece um olhar panorâmico sobre o último quartel do século XX e o primeiro do século XXI, como também procura projetar o futuro da arquitetura contemporânea portuguesa, e consequentemente o desenvolvimento social, económico e territorial de Portugal no mundo.\n\n&nbsp;\n\nCuradoria Alexandra Saraiva, Célia Gomes e Rui Leão\n\nExposição organizada pela Ordem dos Arquitectos em parceria com o MAC/CCB\n\n&nbsp;\n\nVisitas guiadas à exposição\n\n&nbsp;\n\nProgramas Públicos\n\n◾ Debate\n\nquinta-feira, 26 março, às 17:00\n\nA Indústria e a Economia da Construção\n\nElad Kaspin – Cânhamor, Director Operacional\n\nSara Costa – Grupo DST, Gestora de Inovação\n\nNuno Maia – Secil, Director de Comunicação e Marketing\n\nCésar Nunes – Topeca, Director Comercial e Marketing\n\nModeração: César Lima Costa – Coordenação Habitar Portugal, Ordem dos Arquitectos\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt. Sujeita ao número de lugares disponíveis.\n\n&nbsp;\n\n◾ Debate\n\nsábado, 18 abril, às 15:00\n\nHabitar em Portugal\n\nDebate com Filipe Magalhães (MAC/CCB), seguido de visita guiada com os curadores\n\nModeração: Arqt.º Rui Florentino\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt. Sujeita ao número de lugares disponíveis.",
-      "description_short": "A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias.\n\nAssim se definiram três eixos que oferecem um novo olhar sobre o projeto da Ordem dos Arquitectos, na senda das Exposições Nacionais de Arquitectura, iniciadas na década de 1980 pela…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições"
-      ],
-      "categories_raw": [
-        "Centro de Arquitetura",
-        "Exposições",
-        "MAC/CCB",
-        "Exposições"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": true,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/Hotel-e-Casino-do-Funchal-de-1976-por-Oscar-Niemeyer-e-Alfredo-Viana-de-Lima-credito-Faculdade-de-Arquitectura-da-Universidade-do-Porto-CDUA.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "habitar-portugal|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627744+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:addacc516851fdb5",
-        "harmonized_at": "2026-03-25T23:04:22.718586+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627744+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205942+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-avenida-ludica",
-      "source_id": "277144",
-      "source_url": "https://www.ccb.pt/evento/avenida-ludica/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Avenida Lúdica",
-      "title_raw": "Avenida Lúdica",
-      "subtitle": null,
-      "description": "Agora que nos despedimos de uma exposição marcante para a cidade, recebemos as crianças na Sala Lúdica com atividades inspiradas em Avenida 211: Um espaço de artistas em Lisboa. O jogo torna-se caminho para descobrir o museu em Atelier — Um espaço para imaginar, jogar e criar.\n\nNo piso -1, entre as 14:30 e as 19:00, convidamos os mais novos a explorar desafios que despertam a imaginação e transformam ideias em obras. É a prova de que a brincar também se aprende, enquanto os adultos espreitam o resto da programação.\n\n&nbsp;\n\nProgramação do Museu Aberto.\n\n&nbsp;\n\n&nbsp;",
-      "description_short": "Agora que nos despedimos de uma exposição marcante para a cidade, recebemos as crianças na Sala Lúdica com atividades inspiradas em Avenida 211: Um espaço de artistas em Lisboa. O jogo torna-se caminho para descobrir o museu em Atelier — Um espaço para imaginar, jogar e criar.\n\nNo piso -1, entre as…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": "escolas",
-      "tags": [
-        "Oficina"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "Famílias",
-        "MAC/CCB",
-        "Projetos de Mediação",
-        "Oficina"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "14:30",
-          "time_end": "19:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": true,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2909_ritacarmo.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "avenida-ludica|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627822+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3157dd3bb9d1751f",
-        "harmonized_at": "2026-03-25T23:04:22.719719+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627822+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205949+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-concertos-filho-unico",
-      "source_id": "277122",
-      "source_url": "https://www.ccb.pt/evento/concerto-filho-unico/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Concertos Filho Único",
-      "title_raw": "Concertos Filho Único",
-      "subtitle": null,
-      "description": "Vasco Alves e as Rochas da Ajuda\n\nFormação moldada pela pressão, fricção e movimento do ar, desde o verão de 2024, trabalha a polifonia numa perspetiva materialista, através de gaitas de fole em permanente transformação. Como uma trama de pequenas peças que exploram diferentes aspetos do instrumento — os seus limites físicos e a sua perceção auditiva —, os amigos gaiteiros Teresa Mendonça, André Pires e Carlos Santos juntam-se aqui a Vasco Alves.\n\nInês Tartaruga Água\n\nFazedora multidisciplinar, entusiasta da regeneração radical, escultora de situações sónicas e adepta da filosofia «DIY», a sua prática desdobra-se entre as artes plásticas e a performance. Participa em exposições coletivas e eventos públicos desde 2013. Água passou por várias casas, festivais, derivas institucionais e colabora frequentemente com Xavier Paes, sendo umas das mentes por detrás dos organismos REFLUXO e DIES LEXIC.\n\nSheila Ramirez\n\nSheila Ramirez (Santiago de Cuba, 2000) é artista, investigadora e designer cubano-angolana. Com base nas filosofias e imaginário do Oriente de Cuba, do Haiti e da memória ancestral Kongo, constrói gestos a partir de arquivos familiares, oralidades e musicalidades. A sua prática explora a renovação contínua, a transformação e as iniciações, abordando a violência colonial nas relações com as pessoas, os antepassados e o território.\n\nSa🎀ra\n\nServindo-se da plasticidade sonora do ciberespaço e seus arquivos, sara coleciona samples e field recordings. A partir da assemblagem lo-fi, constrói um léxico de sons e texturas que se desdobram, deixando-se inspirar pelo universo do dub e do hip-hop.\n\nVaiapraia\n\nArtista transdisciplinar autodidata de Setúbal, Rodrigo Vaiapraia começou a tocar ao vivo em 2013. Criou o projeto Vaiapraia e As Rainhas do Baile, editando o LP 1755 (2016), influenciado por riot grrrl e queercore. Atua amplamente em festivais, salas e espaços independentes. É cofundador da Maternidade e do festival Rama em Flor. Em 2025 lançou o álbum Alegria Terminal.\n\n&nbsp;\n\nAmuleto Apotropaico\n\nA percussão de espetro completo oscila entre polirritmos elásticos e gestos pontilhistas fora de grid, para se desdobrar em modulação de ressonadores polifónicos. António Feiteira troca os instrumentos pela percussão eletrónica concreta, inspirada em Milford Graves. Samples substituem bateria e memórias musculares tornam-se automatizações MIDI, numa exploração derivada da tecno-gnose da hiper-realidade.\n\n&nbsp;\n\nProgramação do Museu Aberto.",
-      "description_short": "Vasco Alves e as Rochas da Ajuda\n\nFormação moldada pela pressão, fricção e movimento do ar, desde o verão de 2024, trabalha a polifonia numa perspetiva materialista, através de gaitas de fole em permanente transformação. Como uma trama de pequenas peças que exploram diferentes aspetos do…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "Performance"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Espetáculos",
-        "MAC/CCB",
-        "Música",
-        "Performance"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "16:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": true,
-      "festival_name": "Festival Rama Em Flor",
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/2023_Vaiapraia.3_PhotocreditoJame_St_Findlay.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "concertos-filho-unico|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.627923+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d6a61c32edb19102",
-        "harmonized_at": "2026-03-25T23:04:22.720934+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.627923+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205955+00:00"
       }
     },
     {
@@ -5399,7 +5112,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:01.271657+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105505+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535112+00:00"
       }
     },
     {
@@ -5544,7 +5257,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:32:02.215126+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105512+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535118+00:00"
       }
     },
     {
@@ -5682,7 +5395,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:03.160976+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105519+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535125+00:00"
       }
     },
     {
@@ -5915,10 +5628,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:09:05.536066+00:00",
+        "scraped_at": "2026-03-27T12:29:05.766653+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:5c956826d71396d7",
-        "harmonized_at": "2026-03-27T12:09:24.266247+00:00",
+        "raw_data_hash": "sha256:217b9dca1a779252",
+        "harmonized_at": "2026-03-27T12:29:25.230584+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6137,10 +5850,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:09:07.442682+00:00",
+        "scraped_at": "2026-03-27T12:29:07.910718+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:cc33050aed9799ae",
-        "harmonized_at": "2026-03-27T12:09:24.266891+00:00",
+        "raw_data_hash": "sha256:8d962aba8fe3c072",
+        "harmonized_at": "2026-03-27T12:29:25.231219+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6158,156 +5871,26 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre",
-      "source_id": "273237",
-      "source_url": "https://www.ccb.pt/evento/aprender-a-brincar-para-a-brincar-aprender-projeto-ludico-mac-ccb/2026-03-29/",
+      "id": "ccb-2026-03-visitas-as-exposicoes-c7b1",
+      "source_id": "272968",
+      "source_url": "https://www.ccb.pt/evento/visitas-guiadas-a-exposicao-2-museu-mac-ccb/2026-03-29/",
       "venue_id": "ccb",
-      "space_id": null,
-      "title": "Aprender a Brincar para a Brincar a Aprender",
-      "title_raw": "Aprender a Brincar para a Brincar a Aprender",
+      "space_id": "mac-ccb",
+      "title": "Visitas às Exposições",
+      "title_raw": "Visitas às Exposições",
       "subtitle": null,
-      "description": "Acreditamos que o museu também é um lugar para brincar, descobrir e aprender de forma livre. A Sala Lúdica, instalada no piso -1 do museu, nasce deste desejo: o de oferecer outras formas de estar e de pensar o museu. Trata-se de um espaço onde o jogo, a criação, a experimentação e a curiosidade se encontram, e onde se desenvolvem ateliers como «Aprender a brincar para a brincar aprender».\n\nCriando formas de mediação e relação com a arte e o espaço, objetos inspirados nas obras das coleções do MAC/CCB originam jogos e propostas, promovendo uma visita mais interativa e acessível. Uma «Folha de Sala Lúdica», com textos e sugestões de atividades adaptados às várias faixas etárias, acompanha a experiência.\n\nDe participação livre, a Sala conta com a presença de um membro da equipa de Educação e Mediação, disponível para apoiar, sugerir caminhos e acompanhar descobertas. Aberto a famílias — prova que a brincar também se aprende!\n\n&nbsp;\n\n&nbsp;",
-      "description_short": "Acreditamos que o museu também é um lugar para brincar, descobrir e aprender de forma livre. A Sala Lúdica, instalada no piso -1 do museu, nasce deste desejo: o de oferecer outras formas de estar e de pensar o museu. Trata-se de um espaço onde o jogo, a criação, a experimentação e a curiosidade se…",
+      "description": "Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação e Mediação do MAC/CCB assume o propósito de promover a fruição, reflexão e participação na discussão de temas da atualidade e da história da arquitetura e da arte moderna e contemporânea.\n\nPara proporcionar aos seus visitantes experiências que permitam a construção de novas aprendizagens e interesses, inclui na sua programação uma vasta oferta de atividades para público adulto, entre as quais visitas guiadas às exposições permanentes e temporárias que procuram contribuir para uma aproximação do público ao espólio que neste museu se conserva e apresenta; visitas temáticas que permitem diferentes leituras das obras, artistas e exposições; visitas orientadas por críticos e historiadores de arte – o ciclo «As escolhas dos críticos»; cursos, conversas e conferências.",
+      "description_short": "Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação e Mediação do MAC/CCB assume o propósito de promover a fruição, reflexão e participação na discussão de temas da…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
-      "tags": [
-        "Museu",
-        "Oficina"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "Famílias",
-        "MAC/CCB",
-        "Museu",
-        "Oficina"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-29",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-29",
-      "date_last": "2026-03-29",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": true,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2024/10/ServicoEducativo2888_ritacarmo-1-e1730983416520.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "aprender-a-brincar-para-a-brincar-a-aprender|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628058+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:296c80706c365a12",
-        "harmonized_at": "2026-03-25T23:04:22.723072+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628058+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205921+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-visitas-as-exposicoes",
-      "source_id": "272968",
-      "source_url": "https://www.ccb.pt/evento/visitas-guiadas-a-exposicao-2-museu-mac-ccb/2026-03-29/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Visitas às Exposições",
-      "title_raw": "Visitas às Exposições",
-      "subtitle": null,
-      "description": "Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação e Mediação do MAC/CCB assume o propósito de promover a fruição, reflexão e participação na discussão de temas da atualidade e da história da arquitetura e da arte moderna e contemporânea.\n\nPara proporcionar aos seus visitantes experiências que permitam a construção de novas aprendizagens e interesses, inclui na sua programação uma vasta oferta de atividades para público adulto, entre as quais visitas guiadas às exposições permanentes e temporárias que procuram contribuir para uma aproximação do público ao espólio que neste museu se conserva e apresenta; visitas temáticas que permitem diferentes leituras das obras, artistas e exposições; visitas orientadas por críticos e historiadores de arte &#8211; o ciclo «As escolhas dos críticos»; cursos, conversas e conferências.",
-      "description_short": "Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação e Mediação do MAC/CCB assume o propósito de promover a fruição, reflexão e participação na discussão de temas da…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
       "subcategory": null,
       "tags": [
         "Museu",
-        "Visita Guiada"
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -6406,38 +5989,48 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628202+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077673+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3ef1365615f76a4b",
-        "harmonized_at": "2026-03-25T23:04:22.725659+00:00Z",
+        "raw_data_hash": "sha256:875f605189332eef",
+        "harmonized_at": "2026-03-27T12:24:50.745302+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628202+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205962+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-programa-ludico",
+      "id": "ccb-2026-03-programa-ludico-7dea",
       "source_id": "237027",
       "source_url": "https://www.ccb.pt/evento/programa-ludico-servico-educativo-museu-macccb/",
       "venue_id": "ccb",
       "space_id": null,
       "title": "Programa Lúdico",
       "title_raw": "Programa Lúdico",
-      "subtitle": null,
+      "subtitle": "Serviço Educativo do Museu do MAC/CCB",
       "description": "O Serviço de Educação e Mediação do MAC/CCB desenvolveu um programa lúdico que promove, por um lado, a brincadeira livre e, por outro, uma relação mais aberta, criativa e sensível com o espaço do museu. Este programa, com dois projetos, integra uma abordagem expandida do conceito de «brincar», que se estende tanto ao espaço expositivo como ao exterior do museu.\n\nNo interior do museu, com o projeto «Aprender a brincar para a brincar aprender», foi criada uma Sala Lúdica constituída por diferentes objetos mediadores inspirados nas obras das coleções do MAC/CCB. Estes objetos originam jogos e propostas adaptadas a várias faixas etárias, promovendo uma visita mais interativa e acessível. Para acompanhar a experiência, foi também desenvolvida uma Folha de Sala Lúdica, com textos e sugestões de atividades adaptados aos mais novos, que convidam a um percurso lúdico pelo museu.\n\nA Sala inclui ainda propostas com desafios que dialogam com os conceitos ou obras das exposições temporárias. Os conteúdos da sala são atualizados regularmente, garantindo uma experiência renovada para quem nos visita.\n\nBrincar e aprender são princípios fundamentais do Serviço de Educação e Mediação do MAC/CCB, que procura, através deste programa, criar novas formas de mediação e de relação com a arte e com o espaço.",
       "description_short": "O Serviço de Educação e Mediação do MAC/CCB desenvolveu um programa lúdico que promove, por um lado, a brincadeira livre e, por outro, uma relação mais aberta, criativa e sensível com o espaço do museu. Este programa, com dois projetos, integra uma abordagem expandida do conceito de «brincar», que…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
-        "Oficina"
+        "Oficina",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -6481,7 +6074,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -6536,38 +6129,48 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628227+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077704+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:67adebc871e446e4",
-        "harmonized_at": "2026-03-25T23:04:22.726031+00:00Z",
+        "raw_data_hash": "sha256:7f8c855a6859c10d",
+        "harmonized_at": "2026-03-27T12:24:50.745749+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628227+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205969+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-james-webb-theres-no-place-called-home-b",
+      "id": "ccb-2026-03-james-webb-theres-no-place-called-home-b-61d6",
       "source_id": "238754",
       "source_url": "https://www.ccb.pt/evento/instalacao-james-webb/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "James Webb There’s No Place Called Home (Belém, Lisbon)",
       "title_raw": "James Webb <br>There’s No Place Called Home (Belém, Lisbon) </br>",
-      "subtitle": null,
-      "description": "tuuui trrrrrrrrrrrrrrrrrrr, de James Webb (1975, Kimberley, África do Sul), opera como dois capítulos da mesma história — There’s No Place Called Home (Belém, Lisboa) (2025) e Learning from Birds (2025). A maioria das histórias tem, pelo menos, uma personagem principal, um espaço e um tempo. A personagem principal desta história é o canto de um guarda-rios-da-floresta (Halcyon senegalensis), um pássaro nativo das regiões africanas a sul do Saara. O lugar de onde se ouve o canto do pássaro é uma magnólia nos jardins do MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, em Belém, Lisboa. O outro lugar da história é o espaço da Rádio-Galeria Antecâmara, no Bairro das Colónias, em Lisboa, de onde se ouve o mesmo canto do pássaro. O tempo da história é agora, 2025 e, simultaneamente, os tempos coloniais que permanecem nos espaços públicos até hoje.\n\nThere’s No Place Called Home (Belém, Lisboa) (2025) é a mais recente iteração da série There’s No Place Called Home (2004–). Esta intervenção, que começou há vinte anos e conta com aproximadamente sessenta versões únicas, segue sempre a mesma metodologia: uma vez selecionada uma árvore, é escolhido o canto de um pássaro estrangeiro — um pássaro que nunca poderia ser encontrado naquele local — para ser transmitido por altifalantes escondidos nessa árvore. As aves e as árvores têm uma relação simbiótica, cada uma beneficiando da outra: algumas aves ajudam a dispersar sementes, contribuindo para a reprodução e biodiversidade de árvores; as árvores, por sua vez, fornecem abrigo, locais de nidificação e alimento para as aves (Faustino et al., 2024). As espécies de árvores que podem ser encontradas em todo o planeta estão profundamente enraizadas em legados coloniais. Ao colocar (ou deslocar) o canto de um pássaro estrangeiro numa árvore, James Webb destaca estes legados coloniais.\n\nOs países europeus extraíram recursos dos seus ambientes naturais como forma de demonstrar o seu poder imperial, tanto para lucro económico como por razões estéticas, para mostrar plantas «exóticas» em ambientes onde nunca cresceriam. Ao mesmo tempo, as plantas europeias foram introduzidas intencionalmente em regiões colonizadas, principalmente para garantir produção de alimentos e sobrevivência, mas também por «razões estéticas e nostálgicas» (Crosby, 2004 em Lenzner et al., 2022:1724). Após o período colonial, a reorganização do comércio global intensificou e acelerou a introdução de espécies exóticas em todo o mundo (Lenzner et al., 2022:1723). A extração e a deslocação de árvores perturbam estes ecossistemas naturais, com efeitos para as populações de aves e de árvores e, em última análise, para os humanos. Quando uma árvore é colocada num local que lhe é estranho, atrai outras espécies de aves, que, por sua vez, respondem de forma diferente ao ambiente. Estas respostas, como a diminuição de espécies polinizadoras em determinadas zonas, têm efeitos múltiplos, nomeadamente na biodiversidade, crucial para a sobrevivência humana.\n\nO canto dos pássaros na versão lisboeta de There’s No Place Called Home pode ouvir-se em dois lugares carregados de legados coloniais. O bairro de Belém, onde se localiza o MAC/CCB, está repleto de monumentos que celebram os tempos colonial e imperial de Portugal: a Praça do Império; a Torre de Belém; o Mosteiro dos Jerónimos; o Padrão dos Descobrimentos; o Palácio de Belém; e o Monumento aos Combatentes do Ultramar. Por sua vez, as práticas do colonialismo inseridas na paisagem são visíveis não só nas espécies de plantas que se podem encontrar nas áreas públicas destes monumentos, mas também no Jardim Botânico Tropical (anteriormente denominado Jardim Colonial), com mais de 600 espécies não autóctones. No website, a descrição dos Jardins descreve: «Com uma forte vocação de formação, tendo em vista a exploração das antigas colónias, sobretudo em Africa, foi considerado base indispensável ao ensino» (2025). O uso do termo «exploração» é revelador nos contextos do colonialismo e do imperialismo.\n\nO segundo capítulo do projeto de James Webb, na Rádio-Galeria Antecâmara, situa-se no antigo Bairro das Colónias, composto pelas ruas Angola, Guiné, Ilha do Príncipe, Ilha de S. Tomé, Macau, Moçambique, Timor e Zaire, em homenagem às antigas colónias portuguesas. Ambos os espaços urbanos representam uma identidade nacional portuguesa idealizada após o fim do império colonial. Como lembra Ana Balona de Oliveira, estes lugares fazem eco «da grande narrativa dos chamados descobrimentos que continua a negar as histórias e as memórias violentas da escravatura e do colonialismo. Esta narrativa negacionista […] permanece profundamente enraizada nos monumentos comemorativos, muitos dos quais foram construídos sob a égide do regime ditatorial do Estado Novo (1926–1974), enquanto outros foram erguidos muito mais recentemente» (2022:229).\n\nAs vocalizações incongruentes do guarda-rios-da-floresta são transmitidas para a Rádio-Galeria Antecâmara. Os sons do pássaro confrontam, na Galeria, os sons gravados do ambiente natural onde esta espécie seria normalmente encontrada. De alguma forma, nesta sala, o pássaro estrangeiro é devolvido ao seu habitat. Webb não pretende que esta seja uma transição perfeita; está a chamar a atenção para a falha. Os pássaros são uma fonte de inspiração para os humanos, possivelmente porque simbolizam, acima de tudo, a liberdade, algo de que tanto os humanos como os não-humanos foram privados desde os tempos coloniais. Hoje, a zona onde se situa a Rádio-Galeria Antecâmara é habitada por mais de 45% dos residentes internacionais de Lisboa. Este bairro tem sido historicamente retratado como um território de migrantes, associado ao crime e à pobreza, um retrato que segrega e marginaliza os seus habitantes. Como tal, a zona incorpora muitos dos processos coloniais que continuam a marginalizar as comunidades da diáspora hoje, com os atuais e crescentes processos de gentrificação. No interior da galeria, o guarda-rios-da-floresta torna-se uma metáfora sonora para a noção de liberdade de Willem Flusser, um conceito que iguala a situação de sem-abrigo do migrante, daquele que não tem um lugar ao qual chamar de casa, a liberdade (2023). Como diz o título da série de James Webb, “There’s no place called home”.\n\nA acompanhar a instalação sonora, Learning from Birds (2025), exposto numa das paredes da galeria, consiste numa coleção de fotografias, citações, poemas, canções, desenhos e outras inspirações extraídas da forma como convivemos e aprendemos com os pássaros. Estes materiais, colecionados e remisturados, traduzem a curiosidade e a profunda abordagem de James Webb para procurar e recolher não só sons, mas também imagens, textos e, principalmente, questões de diferentes áreas e fontes disciplinares, reminiscentes dos métodos de investigação dos cientistas sociais, mas também da estranheza dos místicos.\n\nO vasto repertório de cantos de pássaros e dos seus lugares na série There’s No Place Called Home evoca complexas interligações entre espécies humanas e não humanas, bem como entre diferentes tempos e lugares. Os nossos antepassados ​​observavam os pássaros para adivinhar as alterações climáticas, entendiam os seus chamamentos como alarmes contra os predadores e — tal como nós — projetavam neles as suas fantasias de voo e liberdade. Em vez da visão de Rachel Carson de um mundo silencioso, sem cantos de pássaros e sem diversidade de espécies (1962), as mensagens poéticas e políticas contidas em There’s No Place Called Home deixam-nos a pensar sobre a coexistência do passado e do presente, bem como de humanos e não humanos, e como essa coexistência nos pode ajudar a especular sobre futuros plurais.\n\n&nbsp;\n\nTexto e curadoria de Luísa Santos\n\nProjeto em colaboração com a Galeria Antecâmara",
+      "subtitle": "Um guarda-rios-da-floresta em Lisboa, entre a época colonial e 2025",
+      "description": "tuuui trrrrrrrrrrrrrrrrrrr, de James Webb (1975, Kimberley, África do Sul), opera como dois capítulos da mesma história — There’s No Place Called Home (Belém, Lisboa) (2025) e Learning from Birds (2025). A maioria das histórias tem, pelo menos, uma personagem principal, um espaço e um tempo. A personagem principal desta história é o canto de um guarda-rios-da-floresta (Halcyon senegalensis), um pássaro nativo das regiões africanas a sul do Saara. O lugar de onde se ouve o canto do pássaro é uma magnólia nos jardins do MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, em Belém, Lisboa. O outro lugar da história é o espaço da Rádio-Galeria Antecâmara, no Bairro das Colónias, em Lisboa, de onde se ouve o mesmo canto do pássaro. O tempo da história é agora, 2025 e, simultaneamente, os tempos coloniais que permanecem nos espaços públicos até hoje.\n\nThere’s No Place Called Home (Belém, Lisboa) (2025) é a mais recente iteração da série There’s No Place Called Home (2004–). Esta intervenção, que começou há vinte anos e conta com aproximadamente sessenta versões únicas, segue sempre a mesma metodologia: uma vez selecionada uma árvore, é escolhido o canto de um pássaro estrangeiro — um pássaro que nunca poderia ser encontrado naquele local — para ser transmitido por altifalantes escondidos nessa árvore. As aves e as árvores têm uma relação simbiótica, cada uma beneficiando da outra: algumas aves ajudam a dispersar sementes, contribuindo para a reprodução e biodiversidade de árvores; as árvores, por sua vez, fornecem abrigo, locais de nidificação e alimento para as aves (Faustino et al., 2024). As espécies de árvores que podem ser encontradas em todo o planeta estão profundamente enraizadas em legados coloniais. Ao colocar (ou deslocar) o canto de um pássaro estrangeiro numa árvore, James Webb destaca estes legados coloniais.\n…",
       "description_short": "tuuui trrrrrrrrrrrrrrrrrrr, de James Webb (1975, Kimberley, África do Sul), opera como dois capítulos da mesma história — There’s No Place Called Home (Belém, Lisboa) (2025) e Learning from Birds (2025). A maioria das histórias tem, pelo menos, uma personagem principal, um espaço e um tempo. A…",
       "language_of_performance": null,
       "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "instalacao",
+      "domain": "formacao",
+      "category": "atividades-educativas",
       "subcategory": null,
       "tags": [
-        "Instalação"
+        "Instalação",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -6665,42 +6268,52 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628254+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077736+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d18f582b3c4d355e",
-        "harmonized_at": "2026-03-25T23:04:22.726469+00:00Z",
+        "raw_data_hash": "sha256:0b0f38bc76a55628",
+        "harmonized_at": "2026-03-27T12:24:50.746272+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628254+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205975+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-programa-vincular-8211-servico-de-educac",
+      "id": "ccb-2026-03-programa-vincular-servico-de-educacao-e--8922",
       "source_id": "265962",
       "source_url": "https://www.ccb.pt/evento/programa-de-educacao-e-mediacao-do-mac-ccb/2026-03-30/",
       "venue_id": "ccb",
-      "space_id": null,
-      "title": "Programa Vincular &#8211; Serviço de Educação e Mediação",
-      "title_raw": "Programa Vincular &#8211; Serviço de Educação e Mediação",
-      "subtitle": null,
-      "description": "O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade. A partir das coleções permanentes, das exposições temporárias e da arquitetura, propomos visitas e oficinas que são espaços de encontro e experimentação com as obras, com os outros e connosco mesmos.\n\nCada atividade é um convite à atenção, à escuta e ao pensamento crítico, permitindo descobrir novas formas de ver e compreender o mundo contemporâneo. Assim, a experiência direta com a arte produz aprendizagens vivas, uma curiosidade renovada e descobertas partilhadas.\n\n&nbsp;\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação do MAC/CCB",
+      "space_id": "mac-ccb",
+      "title": "Programa Vincular – Serviço de Educação e Mediação",
+      "title_raw": "Programa Vincular – Serviço de Educação e Mediação",
+      "subtitle": "2025-26 Escolas",
+      "description": "O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade. A partir das coleções permanentes, das exposições temporárias e da arquitetura, propomos visitas e oficinas que são espaços de encontro e experimentação com as obras, com os outros e connosco mesmos.\n\nCada atividade é um convite à atenção, à escuta e ao pensamento crítico, permitindo descobrir novas formas de ver e compreender o mundo contemporâneo. Assim, a experiência direta com a arte produz aprendizagens vivas, uma curiosidade renovada e descobertas partilhadas.\n\n \n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação do MAC/CCB",
       "description_short": "O Serviço de Educação e Mediação do MAC/CCB abre as portas às escolas, da primeira infância ao ensino secundário, com um programa educativo que cruza arte, educação e criatividade. A partir das coleções permanentes, das exposições temporárias e da arquitetura, propomos visitas e oficinas que são…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
         "Atividades de Férias",
         "Museu",
         "Música",
         "Oficina",
-        "Visita Guiada"
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -6747,7 +6360,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -6794,7 +6407,7 @@
         "gallery": []
       },
       "dedup": {
-        "fingerprint": "programa-vincular-8211-servico-de-educacao-e-mediacao|2026-03",
+        "fingerprint": "programa-vincular-servico-de-educacao-e-mediacao|2026-03",
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
@@ -6802,17 +6415,25 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628424+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077933+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b80fdccbb3ad46b4",
-        "harmonized_at": "2026-03-25T23:04:22.730229+00:00Z",
+        "raw_data_hash": "sha256:a0a879681298a317",
+        "harmonized_at": "2026-03-27T12:24:50.748237+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628424+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205988+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -6951,536 +6572,12 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:32:04.055241+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105525+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535131+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-segundo-ciclo",
-      "source_id": "133219",
-      "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-03-31/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Segundo Ciclo",
-      "title_raw": "Segundo Ciclo",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
-      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.\n\n&nbsp;",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": "escolas",
-      "tags": [
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-31",
-          "time_start": "13:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-31",
-      "date_last": "2026-03-31",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": true,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "segundo-ciclo|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:25:46.143210+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3b928b4151f726f7",
-        "harmonized_at": "2026-03-25T23:27:30.321710+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:25:46.143210+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205870+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-uma-deriva-atlantica",
-      "source_id": "266209",
-      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-31/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Uma deriva atlântica",
-      "title_raw": "Uma deriva atlântica",
-      "subtitle": null,
-      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n\nEnquanto exposição permanente em permanente transformação, Uma deriva atlântica apresenta de forma inédita as coleções em comodato no MAC/CCB — principalmente a Coleção Berardo, mas também a Coleção Holma/Ellipse, a Coleção Teixeira de Freitas e a Coleção de Arte Contemporânea do Estado —, integrando também empréstimos de coleções em Portugal que permitem também redesenhar o lugar da arte portuguesa nas artes do século XX.\n\nOs textos da exposição são redigidos por diferentes autores e autoras de disciplinas e contextos geográficos distintos. No caso do português do Brasil, mantém-se a grafia original. Respeitaram-se também as grafias pré- e pós-AO90.\n\n&nbsp;\n\nCuradoria de Nuria Enguita (diretora artística MAC/CCB) e Marta Mestre (curadora MAC/CCB)\n\nAssessoria científica de Mariana Pinto dos Santos\n\n&nbsp;\n\nVisitas às exposições\n\n◾ Percurso transversal: visita em inglês\n\nUma deriva atlântica. As artes do século XX a partir da Coleção Berardo  + «May I Help You? Posso ajudar?» Artes e artistas da década de 1970 em diante\n\nSábado, 13 junho, às 15:00\n\nParticipação gratuita mediante inscrição prévia através de formulário ou pelo e-mail servico.educativo.museu@ccb.pt, e aquisição do bilhete de entrada no Museu.\n\n&nbsp;",
-      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições",
-        "Museu"
-      ],
-      "categories_raw": [
-        "Exposições",
-        "MAC/CCB",
-        "Exposições",
-        "Museu"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-31",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-31",
-      "date_last": "2026-03-31",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "uma-deriva-atlantica|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628662+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0721d7fbf3ecf0e3",
-        "harmonized_at": "2026-03-25T23:04:22.734256+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628662+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205887+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-may-i-help-you-posso-ajudar",
-      "source_id": "265965",
-      "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-03-31/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "May I Help You? Posso Ajudar?",
-      "title_raw": "May I Help You? Posso Ajudar?",
-      "subtitle": null,
-      "description": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível esperar numa era de crescente fragmentação, dissonância e impermanência?\n\nA exposição toma como ponto de partida cinco décadas de produção artística, da década de 1970 em diante, e inclui obras de 90 artistas, por exemplo, Ad Minoliti (no hall do museu), Alberto Carneiro, Carla Filipe, Doris Salcedo, Helena Almeida, Gabriel Abrantes, Gilbert &amp; George, Jeff Koons, Júlia Ventura, Kara Walker e Richard Serra, entre muitos outros. As obras pertencem às coleções em depósito no MAC/CCB (Berardo, Coleção de Arte Contemporânea do Estado, Holma/ Ellipse e Teixeira de Freitas), contando também com novas encomendas a artistas portugueses.\n\n&nbsp;\n\nCuradoria Nuria Enguita e Marta Mestre\n\nAssessoria curatorial Raphael Fonseca (Denver Art Museum)\n\n&nbsp;\n\n&nbsp;\n\nA exposição «MAY I HELP YOU? POSSO AJUDAR?» Artes e artistas da década de 1970 em diante, inspirada pela performance homónima de Andrea Fraser, expõe a diversidade de representações, presenças e narrativas no campo artístico, questionando a ideia de uma direção única nas histórias da arte. Partindo de diálogos entre obras através das últimas cinco décadas, esta exposição investiga o que os artistas são e fazem, e os papéis sociais que imaginam para si. Desde as ruturas em relação à própria definição de arte, nos anos ‘70, até à acelerada digitalização do presente, a exposição coloca em ênfase formatos, funções e intensidades heteróclitas. &#8211; Nuria Enguita Curadora da exposição e diretora artística do MAC/CCB\n\n&nbsp;\n\nArtistas:\n\nGabriel Abrantes, Helena Almeida, Giovanni Anselmo, Robert Barry, Taysir Batniji, Lothar Baumgarten, Bernd &amp; Hilla Becher, Sara Bichão, Irma Blank, Alighiero Boetti, Christian Boltanski, Olaf Breuning, Daniel Buren, Alberto Carneiro, Gabriel Chaile, Adriano Costa, Jim Dine, Jimmie Durham, Carla Filipe, Fischli &amp; Weiss, Dan Flavin, Fernanda Fragateiro, Andrea Fraser, Gilbert &amp; George, Simryn Gill, Fernanda Gomes, Félix González-Torres, Dan Graham, Hans Haacke, David Hammons, Ana Hatherly, Mona Hatoum, Kiluanji Kia Henda, Thomas Hirschhorn, Jenny Holzer, Rebecca Horn, Sanja Iveković, Ana Jotta, Donald Judd, Mike Kelley, Yazan Khalili, Jeff Koons, Joseph Kosuth, Jannis Kounellis, Barbara Kruger, Louise Lawler, Sol LeWitt, Glenn Ligon, João Marçal, Agnes Martin, Cildo Meireles, Mario Merz, Ad Minoliti, Matt Mullican, Bruce Nauman, Senga Nengudi, Chris Ofili, Gabriel Orozco, Damián Ortega, Pino Pascali, Silvestre Pestana, Raymond Pettibon, Antonio Pichillá, Sandra Poulson, Robert Rauschenberg, Doris Salcedo, Alan Saret, Julião Sarmento, Allan Sekula, Richard Serra, Jim Shaw, Susana Solano, Haim Steinbach, Frank Stella, Wolfgang Tillmans, Rosemarie Trockel, João Pedro Vale + Nuno Alexandre Ferreira, Júlia Ventura, Vídeo nas Aldeias, Kara Walker, Franz West, Yonamine, Bruno Zhu.\n\n&nbsp;\n\n&nbsp;\n\nVisitas às exposições\n\n◾ domingo, 12 abril e 10 maio, às 11:00\n\nParticipação gratuita mediante inscrição prévia através de formulário ou pelo e-mail servico.educativo.museu@ccb.pt\n\n&nbsp;\n\n◾ Percurso transversal: visita em inglês\n\nUma deriva atlântica. As artes do século XX a partir da Coleção Berardo  + «May I Help You? Posso ajudar?» Artes e artistas da década de 1970 em diante\n\nSábado, 13 junho, às 15:00\n\nParticipação gratuita mediante inscrição prévia através de formulário ou pelo e-mail servico.educativo.museu@ccb.pt, e aquisição do bilhete de entrada no Museu.",
-      "description_short": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exhibition",
-        "Exposições"
-      ],
-      "categories_raw": [
-        "Exhibitions",
-        "Exposições",
-        "MAC/CCB",
-        "MAC/CCB",
-        "Exhibition",
-        "Exposições"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-31",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-31",
-      "date_last": "2026-03-31",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "may-i-help-you-posso-ajudar|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628715+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:261c982e1ec3195d",
-        "harmonized_at": "2026-03-25T23:04:22.735227+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628715+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205895+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-oficinas-de-ferias-de-pascoa-no-museu",
-      "source_id": "265963",
-      "source_url": "https://www.ccb.pt/evento/oficinas-de-ferias-de-pascoa-no-museu/2026-03-31/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Oficinas de Férias de Páscoa no Museu",
-      "title_raw": "Oficinas de Férias de Páscoa no Museu",
-      "subtitle": null,
-      "description": "📍 Entre formas e cores &#8211; A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? Um lugar para correr e saltar, ou para descansar e sonhar? Árvores muito altas e pontudas ou relva muito fofinha? A partir da exposição &#8220;Lugar de Estar: o legado de Burle Marx”, vamos descobrir como o olhar pode desenhar o espaço e transformar a nossa experiência do mundo. Inspiradas pelas cores, formas e ritmos dos jardins de Burle Marx — onde arte e natureza se misturam — vamos criar um objeto para ver e fazer florescer novos mundos à nossa volta.\n\n30 de março a 2 de abril das 9:30 às 17:30 | 4-6 anos | Conceção e orientação: Marília Pascoal e Daniella Figueiredo | 140€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.\n\n&nbsp;\n\n📍 O atelier do artista\n\nNa exposição Avenida 211 podemos ver obras finalizadas e outras por acabar, como se ainda estivessem no atelier. A avenida 211 foi um espaço onde muitos artistas de várias gerações trabalharam e conviveram, trocando ideias, técnicas e materiais.\n\nHabitar um atelier de um artista, é entrar num mundo imaginário onde as coisas se transformam noutras, onde uma cadeira não é bem uma cadeira e um grão de poeira pode fazer parte de uma obra dependendo de como olhamos para ele.\n\nNum lugar pronto para experimentações, vamos criar um espaço único.\n\n30 de março a 2 de abril das 9:30 às 17:30 | 7-13 anos | Conceção: Mariana Ramos e Lea Managil | Orientação: Mariana Ramos e Sara Zavala\n\n140€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.\n\n&nbsp;\n\n📍 Do ponto mais alto\n\nDo ponto mais alto, quase toco nas nuvens. Avisto o pôr do sol, algumas aves de rapina e… mais montanhas ao longe — cada uma com a sua forma e feitio. Umas são muito altas, outras mais arredondadas, há as que guardam neve no topo, outras por onde correm riachos, cascatas ou até trilhos que levam a pequenas aldeias. As montanhas podem ser lugares maravilhosos e muito inspiradores! Ao longo desta semana vamos deixar-nos levar por novos caminhos: da base ao cume, vamos construir a nossa própria cordilheira, inspirada nas obras de artistas que olharam para o mundo cheios de curiosidade. Entre pincéis, colagens, histórias, movimento e brincadeira, vamos criar tudo ao nosso gosto — as formas, as cores, se faz frio ou calor e que criaturas imaginárias ali habitam.\n\n6 a 10 de abril das 09:30 às 17:30 | 4-6 anos | Conceção: Francisca Valador e Teodora Boneva | Orientação: Ana Dias e Teodora Boneva | 175€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.\n\n \n\n📍  Casas para o nosso Futuro\n\nQuando estamos a dormir, a comer, a brincar, a vestir, a lavar, a dialogar… estamos também a habitar. Quando pensamos na palavra habitar, o que nos vem à cabeça? O que é preciso para pôr esse verbo em ação? Onde e como habitamos, e como é que vivemos em Portugal?\n\nA partir da exposição Habitar Portugal, vamos questionar os lugares onde vivemos. As nossas casas, as nossas ruas, cidades, país…. Viver em Portugal tem características diferentes de habitar outra parte do mundo? E dentro de Portugal o que é diferente por exemplo de ter casa no Norte ou no Sul, no litoral ou no interior? Ao observar como ocupamos o território, podemos desafiar-nos a conhecer o passado e o presente, mas também a imaginar o futuro.\n\nO que será habitar Portugal no próximo século? Vamos viajar na ideia de habitar, desenhar, construir e criar…\n\n6 a 10 de abril das 09:30 às 17:30 | 7-13 anos | Conceção: Fabrícia Valente e Thais Bressiani | Orientação: Fabrícia Valente e Márcia Saldanha | 175€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.",
-      "description_short": "📍 Entre formas e cores &#8211; A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? Um lugar para correr e saltar, ou para descansar e sonhar? Árvores muito altas e pontudas ou relva muito fofinha? A…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": "atividades-ferias",
-      "tags": [
-        "Atividades de Férias",
-        "Oficina"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Famílias",
-        "MAC/CCB",
-        "Atividades de Férias",
-        "Oficina"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-31",
-          "time_start": "09:30",
-          "time_end": "17:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-31",
-      "date_last": "2026-03-31",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": true,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/12/19MACcreditoRC_MACCCB-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "oficinas-de-ferias-de-pascoa-no-museu|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628499+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:29e651e688ca6e8a",
-        "harmonized_at": "2026-03-25T23:04:22.731299+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628499+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205981+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-visitas-guiadas",
+      "id": "ccb-2026-03-visitas-guiadas-d1fa",
       "source_id": "192530",
       "source_url": "https://www.ccb.pt/evento/visitas-guiadas-2/2026-03-31/",
       "venue_id": "ccb",
@@ -7492,13 +6589,15 @@
       "description_short": "Como espaço multidisciplinar e atentando à importância que os museus desempenham na educação ao longo da vida, na formação e aquisição de novos conhecimentos, o Serviço de Educação e Mediação do MAC/CCB assume o propósito de promover a fruição, reflexão e participação na discussão de temas da…",
       "language_of_performance": null,
       "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
+      "domain": "formacao",
+      "category": "atividades-educativas",
       "subcategory": null,
       "tags": [
         "Exposições",
         "Visita Guiada",
-        "Visita Temática"
+        "Visita Temática",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -7597,22 +6696,30 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628449+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077963+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:26f66562496b7e1e",
-        "harmonized_at": "2026-03-25T23:04:22.730550+00:00Z",
+        "raw_data_hash": "sha256:a267ed80010e6abe",
+        "harmonized_at": "2026-03-27T12:24:50.748646+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628449+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205995+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-visitas-guiadas-ao-edificio-centro-cultu",
+      "id": "ccb-2026-03-visitas-guiadas-ao-edificio-centro-cultu-4895",
       "source_id": "213189",
       "source_url": "https://www.ccb.pt/evento/visitas-guiadas-ao-edificio-centro-cultural-de-belem/",
       "venue_id": "ccb",
@@ -7626,9 +6733,11 @@
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
-        "Visita Guiada"
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -7671,7 +6780,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -7726,39 +6835,49 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628464+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077981+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:38eae3d9d801ef56",
-        "harmonized_at": "2026-03-25T23:04:22.730737+00:00Z",
+        "raw_data_hash": "sha256:6c822af7350c90b4",
+        "harmonized_at": "2026-03-27T12:24:50.748866+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628464+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206001+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-primeira-infancia",
+      "id": "ccb-2026-03-primeira-infancia-77ff",
       "source_id": "269403",
       "source_url": "https://www.ccb.pt/evento/primeira-infancia/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Primeira Infância",
       "title_raw": "Primeira Infância",
-      "subtitle": null,
+      "subtitle": "Programa Vincular - Escolas",
       "description": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
       "description_short": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
-      "category": "oficinas",
-      "subcategory": "oficina-criativa",
+      "category": "atividades-educativas",
+      "subcategory": null,
       "tags": [
         "Oficina",
-        "Visita-jogo"
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -7856,39 +6975,49 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628483+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078003+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7ecea9776e984009",
-        "harmonized_at": "2026-03-25T23:04:22.731143+00:00Z",
+        "raw_data_hash": "sha256:e03fa9d137f3c212",
+        "harmonized_at": "2026-03-27T12:24:50.749232+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628483+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206007+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-pre-escolar",
+      "id": "ccb-2026-03-pre-escolar-173c",
       "source_id": "132852",
       "source_url": "https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Pré-escolar",
       "title_raw": "Pré-escolar",
-      "subtitle": null,
+      "subtitle": "Programa Vincular - Escolas",
       "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
       "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
         "Oficina",
-        "Visita-jogo"
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -7932,7 +7061,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -7987,40 +7116,50 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628558+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078094+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f16397d6f7195f93",
-        "harmonized_at": "2026-03-25T23:04:22.732705+00:00Z",
+        "raw_data_hash": "sha256:79a067d591c55e55",
+        "harmonized_at": "2026-03-27T12:24:50.750318+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628558+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206013+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-terceiro-ciclo-e-secundario",
+      "id": "ccb-2026-03-terceiro-ciclo-e-secundario-d3d9",
       "source_id": "133283",
       "source_url": "https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Terceiro Ciclo e Secundário",
       "title_raw": "Terceiro Ciclo e Secundário",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.\n\n \n\n&nbsp;",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
       "description_short": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
         "Oficina",
         "Visita Temática",
-        "Visita-jogo"
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -8065,7 +7204,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -8120,39 +7259,49 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628571+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078111+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:46fa29f4d924e08a",
-        "harmonized_at": "2026-03-25T23:04:22.732877+00:00Z",
+        "raw_data_hash": "sha256:82e81b1c406d736f",
+        "harmonized_at": "2026-03-27T12:24:50.750485+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628571+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206020+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-educacao-inclusiva",
+      "id": "ccb-2026-03-educacao-inclusiva-5d96",
       "source_id": "133347",
       "source_url": "https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Educação Inclusiva",
       "title_raw": "Educação Inclusiva",
-      "subtitle": null,
-      "description": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e as aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.\n\n&nbsp;",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e as aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
       "description_short": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
         "Oficina",
-        "Visita-jogo"
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -8196,7 +7345,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -8251,39 +7400,49 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628593+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078135+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:299ecd1bbad55af9",
-        "harmonized_at": "2026-03-25T23:04:22.733147+00:00Z",
+        "raw_data_hash": "sha256:4fdeeb99596f52af",
+        "harmonized_at": "2026-03-27T12:24:50.750787+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628593+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206026+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-universitario",
+      "id": "ccb-2026-03-universitario-7c92",
       "source_id": "144706",
       "source_url": "https://www.ccb.pt/evento/universitario/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Universitário",
       "title_raw": "Universitário",
-      "subtitle": null,
+      "subtitle": "Programa Vincular - Universidades",
       "description": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público universitário, independentemente da sua área de estudos, promovendo o desenvolvimento pessoal e social.\n\nPara o ano letivo 2024-2025, o programa Vincular Universidades do Serviço de Educação e Mediação do MAC/CCB procura facilitar a compreensão e descodificação da informação que as obras de arte transportam e o debate e questionamento de temas atuais. Esta missão é cumprida através da mediação e de uma programação diversificada, ancorando-se nas exposições permanentes do museu, constituídas pela Coleção Berardo, CACE, Coleção Holma/Ellipse e Coleção Teixeira de Freitas.\n\nEstas coleções permitem, como nenhuma outra em Portugal, provocar novos olhares sobre a arte dos séculos XX e XXI através de uma revisitação da história da arte moderna e contemporânea e da partilha de experiências. A programação, por sua vez, contando com visitas orientadas, visitas temáticas, visitas-oficina, workshops e projetos de continuidade, também integra atividades em torno das exposições temporárias e visitas no âmbito da arquitetura.\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação",
       "description_short": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
       "category": "atividades-educativas",
-      "subcategory": "escolas",
+      "subcategory": null,
       "tags": [
         "Oficina",
-        "Visita Guiada"
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -8327,7 +7486,7 @@
         "age_min": null,
         "age_max": null,
         "is_family": false,
-        "is_educational": true,
+        "is_educational": false,
         "school_level": null,
         "notes": null
       },
@@ -8382,40 +7541,50 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628611+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078157+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:026ff4bfa4bc671c",
-        "harmonized_at": "2026-03-25T23:04:22.733409+00:00Z",
+        "raw_data_hash": "sha256:013bc226695969eb",
+        "harmonized_at": "2026-03-27T12:24:50.751213+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628611+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206033+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-visitas-orientadas-e-tematicas-oficinas",
+      "id": "ccb-2026-03-visitas-orientadas-e-tematicas-oficinas-07bf",
       "source_id": "191908",
       "source_url": "https://www.ccb.pt/evento/visitas-orientadas-e-tematicas-oficinas/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Visitas Orientadas e Temáticas / Oficinas",
       "title_raw": "Visitas Orientadas e Temáticas / Oficinas",
-      "subtitle": null,
-      "description": "Os museus têm um papel fundamental nas aprendizagens ao longo da vida e é esse um dos desígnios e a missão do Serviço de Educação e Mediação do MAC/CCB.\n\nCom esse objetivo criámos uma programação regular, tendo em consideração a heterogeneidade, a diversidade e os interesses dos seus públicos, procurando transmitir novos conhecimentos e/ou aprofundá-los, através de um programa de visitas orientadas, visitas temáticas, visitas ao edifício e workshops.\n\nA programação encontra-se ancorada nas exposições permanentes e temporárias, constituídas pela Coleção Berardo, CACE, Coleção Holma/Ellipse e Coleção Teixeira de Freitas, em torno das exposições temporárias e da temática da arquitetura.\n\nAlém desta programação regular criámos um programa paralelo constituído por conferências, cursos, oficinas e conversas, pois consideramos que o Museu, para lá de um espaço aberto às aprendizagens, é também um espaço de lazer, de encontros e de socialização.\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação\n\n \n\n&nbsp;",
+      "subtitle": "Programa Vincular - Adultos",
+      "description": "Os museus têm um papel fundamental nas aprendizagens ao longo da vida e é esse um dos desígnios e a missão do Serviço de Educação e Mediação do MAC/CCB.\n\nCom esse objetivo criámos uma programação regular, tendo em consideração a heterogeneidade, a diversidade e os interesses dos seus públicos, procurando transmitir novos conhecimentos e/ou aprofundá-los, através de um programa de visitas orientadas, visitas temáticas, visitas ao edifício e workshops.\n\nA programação encontra-se ancorada nas exposições permanentes e temporárias, constituídas pela Coleção Berardo, CACE, Coleção Holma/Ellipse e Coleção Teixeira de Freitas, em torno das exposições temporárias e da temática da arquitetura.\n\nAlém desta programação regular criámos um programa paralelo constituído por conferências, cursos, oficinas e conversas, pois consideramos que o Museu, para lá de um espaço aberto às aprendizagens, é também um espaço de lazer, de encontros e de socialização.\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação",
       "description_short": "Os museus têm um papel fundamental nas aprendizagens ao longo da vida e é esse um dos desígnios e a missão do Serviço de Educação e Mediação do MAC/CCB.\n\nCom esse objetivo criámos uma programação regular, tendo em consideração a heterogeneidade, a diversidade e os interesses dos seus públicos…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "formacao",
-      "category": "oficinas",
-      "subcategory": "oficina-criativa",
+      "category": "atividades-educativas",
+      "subcategory": null,
       "tags": [
         "Oficina",
         "Visita Guiada",
-        "Visita Temática"
+        "Visita Temática",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -8515,39 +7684,49 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628637+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078209+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:dd199b1e7ccbe409",
-        "harmonized_at": "2026-03-25T23:04:22.733863+00:00Z",
+        "raw_data_hash": "sha256:9d46fffcc9cea0da",
+        "harmonized_at": "2026-03-27T12:24:50.751737+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628637+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206039+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-festas-de-aniversario-no-museu",
+      "id": "ccb-2026-03-festas-de-aniversario-no-museu-39e0",
       "source_id": "121112",
       "source_url": "https://www.ccb.pt/evento/festas-de-aniversario-no-museu-mac-ccb/2026-03-31/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Festas de aniversário no Museu",
       "title_raw": "Festas de aniversário no Museu",
-      "subtitle": null,
-      "description": "Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de aniversário no museu, para crianças dos 4 aos 12 anos.\n\nConsulte o PDF para conhecer a nossa oferta.\n\n&nbsp;\n\n&nbsp;",
-      "description_short": "Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de aniversário no museu, para crianças dos 4 aos 12 anos.\n\nConsulte o PDF para conhecer a nossa oferta.\n\n&nbsp;\n\n&nbsp;",
+      "subtitle": "Para crianças dos 4 aos 12 anos",
+      "description": "Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de aniversário no museu, para crianças dos 4 aos 12 anos.\n\nConsulte o PDF para conhecer a nossa oferta.",
+      "description_short": "Celebra o teu aniversário no Museu.  Convida os teus amigos, traz o lanche e nós fazemos a festa!\n\nO MAC/CCB disponibiliza um programa de atividades para a realização de festas de aniversário no museu, para crianças dos 4 aos 12 anos.\n\nConsulte o PDF para conhecer a nossa oferta.",
       "language_of_performance": null,
       "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
+      "domain": "formacao",
+      "category": "atividades-educativas",
       "subcategory": null,
       "tags": [
         "Museu",
-        "Oficina"
+        "Oficina",
+        "formação & participação",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Atividades",
@@ -8646,17 +7825,166 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-25T23:04:22.628785+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078399+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4cf87f0fcfdb04f8",
-        "harmonized_at": "2026-03-25T23:04:22.736485+00:00Z",
+        "raw_data_hash": "sha256:8b1beea8a69d84c5",
+        "harmonized_at": "2026-03-27T12:24:50.753979+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
         "manually_edited_at": null,
         "is_active": true,
-        "last_seen_at": "2026-03-25T23:04:22.628785+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.206046+00:00"
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-segundo-ciclo-6f4e",
+      "source_id": "133219",
+      "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-03-31/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Segundo Ciclo",
+      "title_raw": "Segundo Ciclo",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.",
+      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-31",
+          "time_start": "13:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-31",
+      "date_last": "2026-03-31",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativosegundociclo-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "segundo-ciclo|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078427+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:fc45f6b526478dc3",
+        "harmonized_at": "2026-03-27T12:24:50.754237+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -8812,7 +8140,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:33:29.908250+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105854+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535454+00:00"
       }
     }
   ]

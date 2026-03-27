@@ -119,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772162+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107839+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:adb38abbf98cd102",
-        "harmonized_at": "2026-03-27T12:05:14.144021+00:00",
+        "raw_data_hash": "sha256:885d8c13ef966c99",
+        "harmonized_at": "2026-03-27T12:24:51.107983+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -257,10 +257,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:08:22.464872+00:00",
+        "scraped_at": "2026-03-27T12:28:21.200545+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:41967ca9e4aaafd3",
-        "harmonized_at": "2026-03-27T12:08:50.087165+00:00",
+        "raw_data_hash": "sha256:ce5f23d48b8d65e5",
+        "harmonized_at": "2026-03-27T12:28:49.514927+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -394,10 +394,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:46.812355+00:00",
+        "scraped_at": "2026-03-27T12:27:40.402433+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:63e8af6ec63b3d6f",
-        "harmonized_at": "2026-03-27T12:08:50.081046+00:00",
+        "raw_data_hash": "sha256:27cf74158b56c98c",
+        "harmonized_at": "2026-03-27T12:28:49.508873+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -540,10 +540,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:48.653049+00:00",
+        "scraped_at": "2026-03-27T12:27:42.560515+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:975014c50fe83e22",
-        "harmonized_at": "2026-03-27T12:08:50.081339+00:00",
+        "raw_data_hash": "sha256:54da5002d36f636d",
+        "harmonized_at": "2026-03-27T12:28:49.509156+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -676,10 +676,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772187+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107865+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b4178b057b43df0b",
-        "harmonized_at": "2026-03-27T12:05:14.144431+00:00",
+        "raw_data_hash": "sha256:acd126265cb9bdbf",
+        "harmonized_at": "2026-03-27T12:24:51.108415+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -814,10 +814,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:36.777652+00:00",
+        "scraped_at": "2026-03-27T12:27:28.921622+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:00dc6df7ddfa53e3",
-        "harmonized_at": "2026-03-27T12:08:50.079295+00:00",
+        "raw_data_hash": "sha256:c42ff48429925e80",
+        "harmonized_at": "2026-03-27T12:28:49.507115+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -949,10 +949,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:08:21.817590+00:00",
+        "scraped_at": "2026-03-27T12:28:20.481777+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:85952c8b9c2075cb",
-        "harmonized_at": "2026-03-27T12:08:50.087075+00:00",
+        "raw_data_hash": "sha256:46ad483fbbe262b2",
+        "harmonized_at": "2026-03-27T12:28:49.514838+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1089,10 +1089,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772210+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107888+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5cc91075ef18c5ee",
-        "harmonized_at": "2026-03-27T12:05:14.144826+00:00",
+        "raw_data_hash": "sha256:3ccd09f9267210bb",
+        "harmonized_at": "2026-03-27T12:24:51.108786+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

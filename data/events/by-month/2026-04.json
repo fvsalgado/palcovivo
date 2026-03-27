@@ -1,7 +1,2304 @@
 {
   "month": "2026-04",
-  "total": 63,
+  "total": 64,
   "events": [
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-programa-missao-democracia-e8ba",
+      "source_id": "256599",
+      "source_url": "https://www.ccb.pt/evento/programa-missao-democracia/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Programa Missão Democracia",
+      "title_raw": "Programa Missão Democracia",
+      "subtitle": "Concertos, oficinas, debates, teatro",
+      "description": "Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém/Fábrica das Artes transforma os 12 livros e temas da coleção Missão: Democracia, das Edições Assembleia da República, numa programação em artes performativas com novos desafios de participação lançados a cidadãos e cidadãs por vários artistas.\n\n \n\nEm parceria com a Assembleia da República.",
+      "description_short": "Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém/Fábrica das Artes transforma os 12 livros e temas da coleção Missão: Democracia, das Edições Assembleia da República, numa programação…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Fábrica das Artes",
+        "Temporada 2025-26"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-01",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/161273-missao_democracia_o_coro_concerto_multidisciplinar-ccb/Sessoes"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/10/Ilustracao-Missao-Democracia.png",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "programa-missao-democracia|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078446+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:2ee767ba129f9a27",
+        "harmonized_at": "2026-03-27T12:24:50.754408+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-primeira-infancia-8551",
+      "source_id": "269431",
+      "source_url": "https://www.ccb.pt/evento/primeira-infancia/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Primeira Infância",
+      "title_raw": "Primeira Infância",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
+      "description_short": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "MAC/CCB",
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 26,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "primeira-infancia|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078468+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:e43a837964704366",
+        "harmonized_at": "2026-03-27T12:24:50.754663+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-pre-escolar-4e2e",
+      "source_id": "265986",
+      "source_url": "https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Pré-escolar",
+      "title_raw": "Pré-escolar",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
+      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 26,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "pre-escolar|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078560+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:055186bcd5f0ad99",
+        "harmonized_at": "2026-03-27T12:24:50.755751+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-terceiro-ciclo-e-secundario-c7d7",
+      "source_id": "265984",
+      "source_url": "https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Terceiro Ciclo e Secundário",
+      "title_raw": "Terceiro Ciclo e Secundário",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
+      "description_short": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita Temática",
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita Temática",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 26,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "terceiro-ciclo-e-secundario|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078577+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:98a10d572d234f5e",
+        "harmonized_at": "2026-03-27T12:24:50.755915+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-educacao-inclusiva-e9ca",
+      "source_id": "273136",
+      "source_url": "https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Educação Inclusiva",
+      "title_raw": "Educação Inclusiva",
+      "subtitle": "Programa Vincular - Escolas",
+      "description": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e as aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
+      "description_short": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita-jogo",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita-jogo"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 22,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "educacao-inclusiva|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078600+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:75342f043dacdb17",
+        "harmonized_at": "2026-03-27T12:24:50.756240+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-universitario-421a",
+      "source_id": "273112",
+      "source_url": "https://www.ccb.pt/evento/universitario/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Universitário",
+      "title_raw": "Universitário",
+      "subtitle": "Programa Vincular - Universidades",
+      "description": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público universitário, independentemente da sua área de estudos, promovendo o desenvolvimento pessoal e social.\n\nPara o ano letivo 2024-2025, o programa Vincular Universidades do Serviço de Educação e Mediação do MAC/CCB procura facilitar a compreensão e descodificação da informação que as obras de arte transportam e o debate e questionamento de temas atuais. Esta missão é cumprida através da mediação e de uma programação diversificada, ancorando-se nas exposições permanentes do museu, constituídas pela Coleção Berardo, CACE, Coleção Holma/Ellipse e Coleção Teixeira de Freitas.\n\nEstas coleções permitem, como nenhuma outra em Portugal, provocar novos olhares sobre a arte dos séculos XX e XXI através de uma revisitação da história da arte moderna e contemporânea e da partilha de experiências. A programação, por sua vez, contando com visitas orientadas, visitas temáticas, visitas-oficina, workshops e projetos de continuidade, também integra atividades em torno das exposições temporárias e visitas no âmbito da arquitetura.\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação",
+      "description_short": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Oficina",
+        "Visita Guiada",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Escolas",
+        "MAC/CCB",
+        "Oficina",
+        "Visita Guiada"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 26,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "universitario|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078623+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:298ec4374c651a99",
+        "harmonized_at": "2026-03-27T12:24:50.756543+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-uma-deriva-atlantica-5cdb",
+      "source_id": "266210",
+      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-04-01/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Uma deriva atlântica",
+      "title_raw": "Uma deriva atlântica",
+      "subtitle": "As artes do século XX a partir da Coleção Berardo",
+      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n…",
+      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições",
+        "Museu",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições",
+        "Museu"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-01",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-01",
+      "date_last": "2026-04-30",
+      "total_sessions": 26,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "uma-deriva-atlantica|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.078652+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:92da74179c048be6",
+        "harmonized_at": "2026-03-27T12:24:50.757059+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
     {
       "schema_version": "1.0",
       "id": "ccb-2026-04-may-i-help-you-posso-ajudar-bc8d",
@@ -348,10 +2645,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744241+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078713+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:10dc471180bcbe07",
-        "harmonized_at": "2026-03-27T12:05:13.796598+00:00",
+        "raw_data_hash": "sha256:e8bca06899e7c551",
+        "harmonized_at": "2026-03-27T12:24:50.757847+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -489,10 +2786,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744334+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078805+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:249b4f44e4eb4b8e",
-        "harmonized_at": "2026-03-27T12:05:13.797510+00:00",
+        "raw_data_hash": "sha256:19991b0061ac1487",
+        "harmonized_at": "2026-03-27T12:24:50.758753+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -855,10 +3152,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744365+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078837+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:aa21f789fa45e8ff",
-        "harmonized_at": "2026-03-27T12:05:13.797971+00:00",
+        "raw_data_hash": "sha256:78f3b0e591c6ce66",
+        "harmonized_at": "2026-03-27T12:24:50.759215+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -915,20 +3212,11 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
-        },
-        {
-          "date": "2026-04-02",
-          "time_start": "20:00",
-          "time_end": "21:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
         }
       ],
       "date_first": "2026-04-01",
-      "date_last": "2026-04-02",
-      "total_sessions": 2,
+      "date_last": "2026-04-01",
+      "total_sessions": 1,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1005,10 +3293,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744384+00:00",
+        "scraped_at": "2026-03-27T12:23:17.078862+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e4773f48d0243dab",
-        "harmonized_at": "2026-03-27T12:05:13.798144+00:00",
+        "raw_data_hash": "sha256:aae0e53c056dd189",
+        "harmonized_at": "2026-03-27T12:24:50.759389+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1024,132 +3312,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-programa-missao-democracia",
-      "source_id": "256599",
-      "source_url": "https://www.ccb.pt/evento/programa-missao-democracia/2026-04-01/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Programa Missão Democracia",
-      "title_raw": "Programa Missão Democracia",
-      "subtitle": null,
-      "description": "Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém/Fábrica das Artes transforma os 12 livros e temas da coleção Missão: Democracia, das Edições Assembleia da República, numa programação em artes performativas com novos desafios de participação lançados a cidadãos e cidadãs por vários artistas.\n\n&nbsp;\n\nEm parceria com a Assembleia da República.",
-      "description_short": "Uma missão é uma tarefa especial que se confia a pessoas também elas especiais.\n\nPara fortalecer ainda mais a democracia e a liberdade, o Centro Cultural de Belém/Fábrica das Artes transforma os 12 livros e temas da coleção Missão: Democracia, das Edições Assembleia da República, numa programação…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "outros",
-      "category": "outros",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Espetáculos",
-        "Fábrica das Artes",
-        "Temporada 2025-26"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-01",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-01",
-      "date_last": "2026-04-01",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": "Fábrica das Artes",
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": true,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/10/Ilustracao-Missao-Democracia.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "programa-missao-democracia|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-25T23:25:46.143231+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:184071a802b6c106",
-        "harmonized_at": "2026-03-25T23:27:30.321875+00:00Z",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-25T23:25:46.143231+00:00",
-        "not_seen_since": "2026-03-27T12:05:14.205879+00:00"
       }
     },
     {
@@ -1270,7 +3432,7 @@
         "scraped_at": "2026-03-27T10:59:26.028234+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:6720610592e2b59e",
-        "harmonized_at": "2026-03-27T12:05:19.952407+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.644695+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1416,7 +3578,7 @@
         "scraped_at": "2026-03-27T10:59:27.964014+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:f709d38f1c126b5a",
-        "harmonized_at": "2026-03-27T12:05:19.952943+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.645223+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1433,370 +3595,14 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-04-primeira-infancia-214e",
-      "source_id": "269432",
-      "source_url": "https://www.ccb.pt/evento/primeira-infancia/2026-04-02/",
+      "id": "ccb-2026-04-oficinas-de-ferias-de-pascoa-no-museu-3c80",
+      "source_id": "264776",
+      "source_url": "https://www.ccb.pt/evento/oficinas-de-ferias-de-pascoa-no-museu/2026-03-30/",
       "venue_id": "ccb",
-      "space_id": null,
-      "title": "Primeira Infância",
-      "title_raw": "Primeira Infância",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
-      "description_short": "Esta programação está estruturada em visitas-jogo e assente em metodologias ativas e práticas inclusivas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Oficina",
-        "Visita-jogo",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "MAC/CCB",
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "08:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 25,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/ServicoEducativo3683primeira-infanciacreditoritacarmo-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "primeira-infancia|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744415+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e71ff46bf7b8a2be",
-        "harmonized_at": "2026-03-27T12:05:13.798528+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-oficinas-de-ferias-de-pascoa-no-museu-6176",
-      "source_id": "265989",
-      "source_url": "https://www.ccb.pt/evento/oficinas-de-ferias-de-pascoa-no-museu/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Oficinas de Férias de Páscoa no Museu",
       "title_raw": "Oficinas de Férias de Páscoa no Museu",
-      "subtitle": null,
+      "subtitle": "Famílias",
       "description": "📍 Entre formas e cores – A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? Um lugar para correr e saltar, ou para descansar e sonhar? Árvores muito altas e pontudas ou relva muito fofinha? A partir da exposição “Lugar de Estar: o legado de Burle Marx”, vamos descobrir como o olhar pode desenhar o espaço e transformar a nossa experiência do mundo. Inspiradas pelas cores, formas e ritmos dos jardins de Burle Marx — onde arte e natureza se misturam — vamos criar um objeto para ver e fazer florescer novos mundos à nossa volta.\n\n30 de março a 2 de abril das 9:30 às 17:30 | 4-6 anos | Conceção e orientação: Marília Pascoal e Daniella Figueiredo | 140€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.\n\n \n\n📍 O atelier do artista\n\nNa exposição Avenida 211 podemos ver obras finalizadas e outras por acabar, como se ainda estivessem no atelier. A avenida 211 foi um espaço onde muitos artistas de várias gerações trabalharam e conviveram, trocando ideias, técnicas e materiais.\n\nHabitar um atelier de um artista, é entrar num mundo imaginário onde as coisas se transformam noutras, onde uma cadeira não é bem uma cadeira e um grão de poeira pode fazer parte de uma obra dependendo de como olhamos para ele.\n\nNum lugar pronto para experimentações, vamos criar um espaço único.\n\n30 de março a 2 de abril das 9:30 às 17:30 | 7-13 anos | Conceção: Mariana Ramos e Lea Managil | Orientação: Mariana Ramos e Sara Zavala\n\n140€/semana (almoço e seguro incluídos) | Inscrições até 16 de março\n\nMarcações por e-mail: servico.educativo.museu@ccb.pt ou através do formulário.\n\n \n\n📍 Do ponto mais alto\n…",
       "description_short": "📍 Entre formas e cores – A paisagem está nos olhos de quem a vê\n\nE se o mundo mudasse a cada olhar? Como seria? Mais verde ou mais azul? Linhas orgânicas ou linhas direitas? Um lugar para correr e saltar, ou para descansar e sonhar? Árvores muito altas e pontudas ou relva muito fofinha? A partir da…",
       "language_of_performance": null,
@@ -1893,11 +3699,11 @@
         {
           "date": "2026-04-10",
           "time_start": "09:30",
-          "time_end": "17:30",
+          "time_end": null,
           "duration_minutes": null,
           "is_cancelled": false,
           "is_sold_out": false,
-          "notes": null
+          "notes": "9:30 às 17:30 ( inscrições até 16 março)"
         }
       ],
       "date_first": "2026-04-02",
@@ -1979,1760 +3785,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744431+00:00",
+        "scraped_at": "2026-03-27T12:23:17.077850+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a9abe33682aed6c1",
-        "harmonized_at": "2026-03-27T12:05:13.798694+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-pre-escolar-7ce9",
-      "source_id": "265997",
-      "source_url": "https://www.ccb.pt/evento/pre-escolar-escolas-museu-mac-ccb/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Pré-escolar",
-      "title_raw": "Pré-escolar",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
-      "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna e Contemporânea.",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Oficina",
-        "Visita-jogo",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 25,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativopreinfancia-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "pre-escolar|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744505+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:65f3018275f01a41",
-        "harmonized_at": "2026-03-27T12:05:13.799619+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-terceiro-ciclo-e-secundario-da00",
-      "source_id": "265995",
-      "source_url": "https://www.ccb.pt/evento/terceiro-ciclo-e-secundario-escolas-museu-mac-ccb/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Terceiro Ciclo e Secundário",
-      "title_raw": "Terceiro Ciclo e Secundário",
-      "subtitle": null,
-      "description": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
-      "description_short": "Esta programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e aprendizagens em…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Oficina",
-        "Visita Temática",
-        "Visita-jogo",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita Temática",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 25,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/servicoeducativoterceirociclo-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "terceiro-ciclo-e-secundario|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744522+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2a5d01ebf8381127",
-        "harmonized_at": "2026-03-27T12:05:13.799808+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-educacao-inclusiva-79b6",
-      "source_id": "273138",
-      "source_url": "https://www.ccb.pt/evento/educacao-inclusiva-escolas-museu-mac-ccb/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Educação Inclusiva",
-      "title_raw": "Educação Inclusiva",
-      "subtitle": null,
-      "description": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e as aprendizagens em contexto não formal têm como objetivo dar a conhecer diferentes olhares e interpretações das obras, bem como fazer uma abordagem à história da arte dos séculos XX e XXI, com passagem pelos principais movimentos artísticos (complementares às aprendizagens essenciais de diferentes disciplinas de educação formal), e ainda uma abordagem à Arquitetura.",
-      "description_short": "A programação está estruturada em visitas-jogo, visitas-jogo-oficina, visitas-oficina, visitas temáticas e visitas guiadas, e está assente em metodologias ativas e práticas inclusivas. A mediação no espaço expositivo potencia a compreensão, reflexão e a construção do conhecimento. As atividades e…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Oficina",
-        "Visita-jogo",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita-jogo"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 21,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/10/ensino-especialmuseumacccb-e1726737805568.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "educacao-inclusiva|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744545+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:96013968fda772c9",
-        "harmonized_at": "2026-03-27T12:05:13.800120+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-universitario-a75f",
-      "source_id": "273113",
-      "source_url": "https://www.ccb.pt/evento/universitario/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Universitário",
-      "title_raw": "Universitário",
-      "subtitle": null,
-      "description": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público universitário, independentemente da sua área de estudos, promovendo o desenvolvimento pessoal e social.\n\nPara o ano letivo 2024-2025, o programa Vincular Universidades do Serviço de Educação e Mediação do MAC/CCB procura facilitar a compreensão e descodificação da informação que as obras de arte transportam e o debate e questionamento de temas atuais. Esta missão é cumprida através da mediação e de uma programação diversificada, ancorando-se nas exposições permanentes do museu, constituídas pela Coleção Berardo, CACE, Coleção Holma/Ellipse e Coleção Teixeira de Freitas.\n\nEstas coleções permitem, como nenhuma outra em Portugal, provocar novos olhares sobre a arte dos séculos XX e XXI através de uma revisitação da história da arte moderna e contemporânea e da partilha de experiências. A programação, por sua vez, contando com visitas orientadas, visitas temáticas, visitas-oficina, workshops e projetos de continuidade, também integra atividades em torno das exposições temporárias e visitas no âmbito da arquitetura.\n\nCristina Gameiro\n\nCoordenadora do Serviço de Educação e Mediação",
-      "description_short": "Os museus fazem parte de uma importante e ampla teia educativa, cuja missão consiste em facilitar e promover diferentes formas de ver, estimular a criatividade e fomentar o pensamento crítico e a reflexão. A relação entre museu e universidade significa uma experiência enriquecedora para o público…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Oficina",
-        "Visita Guiada",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Escolas",
-        "MAC/CCB",
-        "Oficina",
-        "Visita Guiada"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": "17:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 25,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2023/11/Museu-MACCCB-2-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "universitario|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744569+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8243993cb19002e7",
-        "harmonized_at": "2026-03-27T12:05:13.800426+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-04-uma-deriva-atlantica-3bbd",
-      "source_id": "266211",
-      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-04-02/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Uma deriva atlântica",
-      "title_raw": "Uma deriva atlântica",
-      "subtitle": null,
-      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n…",
-      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições",
-        "Museu",
-        "artes visuais",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Exposições",
-        "MAC/CCB",
-        "Exposições",
-        "Museu"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-02",
-      "date_last": "2026-04-30",
-      "total_sessions": 25,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "uma-deriva-atlantica|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.744604+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1c1fd0aefc5b9266",
-        "harmonized_at": "2026-03-27T12:05:13.800970+00:00",
+        "raw_data_hash": "sha256:fc3b1ea25d9516f9",
+        "harmonized_at": "2026-03-27T12:24:50.747304+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3897,10 +3953,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.746306+00:00",
+        "scraped_at": "2026-03-27T12:23:17.080838+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8cc042b6fd32f3b9",
-        "harmonized_at": "2026-03-27T12:05:13.820546+00:00",
+        "raw_data_hash": "sha256:e7ad8556776e1444",
+        "harmonized_at": "2026-03-27T12:24:50.781691+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4071,7 +4127,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:32:04.965947+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105531+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535136+00:00"
       }
     },
     {
@@ -4197,10 +4253,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747384+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082011+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9593fe131b283bda",
-        "harmonized_at": "2026-03-27T12:05:13.833797+00:00",
+        "raw_data_hash": "sha256:fbe8453c3aeda6a4",
+        "harmonized_at": "2026-03-27T12:24:50.795007+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4340,10 +4396,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747438+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082063+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b5ee9b29c5ffbf33",
-        "harmonized_at": "2026-03-27T12:05:13.834427+00:00",
+        "raw_data_hash": "sha256:8f2469cab0241f90",
+        "harmonized_at": "2026-03-27T12:24:50.795664+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4503,10 +4559,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747746+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082400+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0b21ea663dcb01b3",
-        "harmonized_at": "2026-03-27T12:05:13.838388+00:00",
+        "raw_data_hash": "sha256:f72040e7228ccf98",
+        "harmonized_at": "2026-03-27T12:24:50.799670+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4642,10 +4698,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747797+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082454+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0dad14d4083167d",
-        "harmonized_at": "2026-03-27T12:05:13.839123+00:00",
+        "raw_data_hash": "sha256:cc714fa32f859f54",
+        "harmonized_at": "2026-03-27T12:24:50.800409+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4785,10 +4841,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747822+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082481+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b95928d19f8985f2",
-        "harmonized_at": "2026-03-27T12:05:13.839563+00:00",
+        "raw_data_hash": "sha256:4b4a112995ed71a3",
+        "harmonized_at": "2026-03-27T12:24:50.800853+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4927,10 +4983,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747856+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082515+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a5b8ef886d3db8e6",
-        "harmonized_at": "2026-03-27T12:05:13.840080+00:00",
+        "raw_data_hash": "sha256:53c973311fb9955a",
+        "harmonized_at": "2026-03-27T12:24:50.801372+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5066,10 +5122,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747906+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082570+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0a1ee58806e33882",
-        "harmonized_at": "2026-03-27T12:05:13.840868+00:00",
+        "raw_data_hash": "sha256:cbcdb36143fbe8ed",
+        "harmonized_at": "2026-03-27T12:24:50.802139+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5208,7 +5264,7 @@
         "scraped_at": "2026-03-27T10:59:29.925262+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:6e1bb0eace11c3e9",
-        "harmonized_at": "2026-03-27T12:05:19.953501+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.645777+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5359,7 +5415,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:09.967447+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105537+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535142+00:00"
       }
     },
     {
@@ -5497,7 +5553,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:10.741922+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105544+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535148+00:00"
       }
     },
     {
@@ -5611,10 +5667,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.747948+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082611+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e864fbd3991b5fea",
-        "harmonized_at": "2026-03-27T12:05:13.841247+00:00",
+        "raw_data_hash": "sha256:3701597a60b64067",
+        "harmonized_at": "2026-03-27T12:24:50.802542+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5762,10 +5818,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.748194+00:00",
+        "scraped_at": "2026-03-27T12:23:17.082881+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c612d7d31b13b8be",
-        "harmonized_at": "2026-03-27T12:05:13.844543+00:00",
+        "raw_data_hash": "sha256:a6c31a95e584c304",
+        "harmonized_at": "2026-03-27T12:24:50.805781+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5920,7 +5976,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:32:13.075914+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105550+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535154+00:00"
       }
     },
     {
@@ -6043,7 +6099,7 @@
         "scraped_at": "2026-03-27T10:59:31.811523+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:63ad437cf6cd87d6",
-        "harmonized_at": "2026-03-27T12:05:19.953931+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.646197+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6178,10 +6234,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.749275+00:00",
+        "scraped_at": "2026-03-27T12:23:17.084079+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8825b1a302e4a443",
-        "harmonized_at": "2026-03-27T12:05:13.858197+00:00",
+        "raw_data_hash": "sha256:4a76f861b9b3d610",
+        "harmonized_at": "2026-03-27T12:24:50.819384+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6333,7 +6389,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:32:16.189698+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105562+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535166+00:00"
       }
     },
     {
@@ -6460,10 +6516,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.749618+00:00",
+        "scraped_at": "2026-03-27T12:23:17.084446+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:13a8734cce011e9d",
-        "harmonized_at": "2026-03-27T12:05:13.862326+00:00",
+        "raw_data_hash": "sha256:bc8da803cabf2fa8",
+        "harmonized_at": "2026-03-27T12:24:50.823538+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6603,7 +6659,7 @@
         "scraped_at": "2026-03-27T10:59:34.205364+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:3d6c8a5fa736d9dd",
-        "harmonized_at": "2026-03-27T12:05:19.954424+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.646703+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6738,7 +6794,7 @@
         "scraped_at": "2026-03-27T10:59:36.696184+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:a534565ef4ebee30",
-        "harmonized_at": "2026-03-27T12:05:19.954856+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.647108+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6896,7 +6952,7 @@
         ],
         "quality_score": 0.65,
         "last_seen_at": "2026-03-27T11:32:16.940712+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105568+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535197+00:00"
       }
     },
     {
@@ -7041,7 +7097,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:32:19.024700+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105574+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535206+00:00"
       }
     },
     {
@@ -7178,7 +7234,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:32:19.779499+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105580+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535212+00:00"
       }
     },
     {
@@ -7302,10 +7358,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.749898+00:00",
+        "scraped_at": "2026-03-27T12:23:17.084734+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b22928b4c91b89a1",
-        "harmonized_at": "2026-03-27T12:05:13.865739+00:00",
+        "raw_data_hash": "sha256:75ed82afee0f42cf",
+        "harmonized_at": "2026-03-27T12:24:50.826919+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7447,7 +7503,7 @@
         "scraped_at": "2026-03-27T10:59:39.117167+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:a7aa1bdfbe965ec9",
-        "harmonized_at": "2026-03-27T12:05:19.955205+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.647463+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7598,7 +7654,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:32:24.297063+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105592+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535225+00:00"
       }
     },
     {
@@ -7738,10 +7794,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:09:09.361747+00:00",
+        "scraped_at": "2026-03-27T12:29:09.894810+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:4cc893f94313b3ad",
-        "harmonized_at": "2026-03-27T12:09:24.267398+00:00",
+        "raw_data_hash": "sha256:ae1cfb8e1105b4c7",
+        "harmonized_at": "2026-03-27T12:29:25.231719+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7892,7 +7948,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:25.049246+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105598+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535231+00:00"
       }
     },
     {
@@ -8029,7 +8085,7 @@
         ],
         "quality_score": 0.75,
         "last_seen_at": "2026-03-27T11:32:27.284657+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105604+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535237+00:00"
       }
     },
     {
@@ -8152,10 +8208,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.750445+00:00",
+        "scraped_at": "2026-03-27T12:23:17.085403+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2d0663d7fa5f8aaf",
-        "harmonized_at": "2026-03-27T12:05:13.872804+00:00",
+        "raw_data_hash": "sha256:aa03a93b9aee3e89",
+        "harmonized_at": "2026-03-27T12:24:50.833923+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8289,10 +8345,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.750501+00:00",
+        "scraped_at": "2026-03-27T12:23:17.085460+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:967a77b7dc4be493",
-        "harmonized_at": "2026-03-27T12:05:13.873255+00:00",
+        "raw_data_hash": "sha256:1dae6a92078590e2",
+        "harmonized_at": "2026-03-27T12:24:50.834393+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8449,10 +8505,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.750839+00:00",
+        "scraped_at": "2026-03-27T12:23:17.085805+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b24f0b79ae6324d5",
-        "harmonized_at": "2026-03-27T12:05:13.877632+00:00",
+        "raw_data_hash": "sha256:fb923263068e37b3",
+        "harmonized_at": "2026-03-27T12:24:50.838661+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8588,7 +8644,7 @@
         "scraped_at": "2026-03-27T10:59:40.993888+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:7421d4b7d14f65bc",
-        "harmonized_at": "2026-03-27T12:05:19.955626+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.647877+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8748,7 +8804,7 @@
         "scraped_at": "2026-03-27T10:59:42.917746+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:32fc9aa67e30048b",
-        "harmonized_at": "2026-03-27T12:05:19.956103+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.648399+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8878,10 +8934,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.751112+00:00",
+        "scraped_at": "2026-03-27T12:23:17.086105+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:67150822cd52f7db",
-        "harmonized_at": "2026-03-27T12:05:13.881213+00:00",
+        "raw_data_hash": "sha256:35fe6cefb846fe0b",
+        "harmonized_at": "2026-03-27T12:24:50.842195+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9033,7 +9089,7 @@
         ],
         "quality_score": 0.5,
         "last_seen_at": "2026-03-27T11:32:13.839234+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105556+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535160+00:00"
       }
     },
     {
@@ -9171,7 +9227,7 @@
         ],
         "quality_score": 0.7,
         "last_seen_at": "2026-03-27T11:32:28.052808+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105610+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535243+00:00"
       }
     },
     {
@@ -9293,10 +9349,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.751468+00:00",
+        "scraped_at": "2026-03-27T12:23:17.086507+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:26e8aed5d0553ed5",
-        "harmonized_at": "2026-03-27T12:05:13.886085+00:00",
+        "raw_data_hash": "sha256:5e798106e2af3f50",
+        "harmonized_at": "2026-03-27T12:24:50.847084+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9444,10 +9500,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.751563+00:00",
+        "scraped_at": "2026-03-27T12:23:17.086606+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5916581e75c7c40a",
-        "harmonized_at": "2026-03-27T12:05:13.887197+00:00",
+        "raw_data_hash": "sha256:f0f6e5e0ea27888c",
+        "harmonized_at": "2026-03-27T12:24:50.848231+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9462,6 +9518,145 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-habitar-portugal-b887",
+      "source_id": "260397",
+      "source_url": "https://www.ccb.pt/evento/exposicao-habitar-portugal/",
+      "venue_id": "ccb",
+      "space_id": "centro-arquitetura",
+      "title": "Habitar Portugal",
+      "title_raw": "Habitar Portugal",
+      "subtitle": null,
+      "description": "A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias.\n\nAssim se definiram três eixos que oferecem um novo olhar sobre o projeto da Ordem dos Arquitectos, na senda das Exposições Nacionais de Arquitectura, iniciadas na década de 1980 pela então denominada Associação dos Arquitectos Portugueses. Para a sétima edição de Habitar Portugal, foram selecionadas 100 obras, com distintos programas e escalas diferentes, orientadas pela representatividade nacional e internacional (incluindo a expressão portuguesa construída fora do país). Trata-se de um registo significativo e valioso que não só oferece um olhar panorâmico sobre o último quartel do século XX e o primeiro do século XXI, como também procura projetar o futuro da arquitetura contemporânea portuguesa, e consequentemente o desenvolvimento social, económico e territorial de Portugal no mundo.\n\n \n\nCuradoria Alexandra Saraiva, Célia Gomes e Rui Leão\n\nExposição organizada pela Ordem dos Arquitectos em parceria com o MAC/CCB\n\n \n\nVisitas guiadas à exposição\n\n \n\nProgramas Públicos\n\n◾ Debate\n\nquinta-feira, 26 março, às 17:00\n\nA Indústria e a Economia da Construção\n\nElad Kaspin – Cânhamor, Director Operacional\n\nSara Costa – Grupo DST, Gestora de Inovação\n\nNuno Maia – Secil, Director de Comunicação e Marketing\n\nCésar Nunes – Topeca, Director Comercial e Marketing\n\nModeração: César Lima Costa – Coordenação Habitar Portugal, Ordem dos Arquitectos\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt. Sujeita ao número de lugares disponíveis.\n\n \n\n◾ Debate\n\nsábado, 18 abril, às 15:00\n\nHabitar em Portugal\n\nDebate com Filipe Magalhães (MAC/CCB), seguido de visita guiada com os curadores\n\nModeração: Arqt.º Rui Florentino\n\nParticipação gratuita, mediante inscrição prévia através de formulário ou e-mail servico.educativo.museu@ccb.pt. Sujeita ao número de lugares disponíveis.",
+      "description_short": "A arquitetura enquanto gesto político; o evidenciar de posições de rutura; o potenciar da persistência de memórias.\n\nAssim se definiram três eixos que oferecem um novo olhar sobre o projeto da Ordem dos Arquitectos, na senda das Exposições Nacionais de Arquitectura, iniciadas na década de 1980 pela…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": "arquitetura",
+      "tags": [
+        "Exposições",
+        "arquitetura",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Centro de Arquitetura",
+        "Exposições",
+        "MAC/CCB",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "10:00 às 18:30"
+        }
+      ],
+      "date_first": "2026-04-26",
+      "date_last": "2026-04-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": true,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/Hotel-e-Casino-do-Funchal-de-1976-por-Oscar-Niemeyer-e-Alfredo-Viana-de-Lima-credito-Faculdade-de-Arquitectura-da-Universidade-do-Porto-CDUA.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "habitar-portugal|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.077091+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:9045c55be34e9b73",
+        "harmonized_at": "2026-03-27T12:24:50.737895+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
       }
     },
     {
@@ -9588,10 +9783,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.751889+00:00",
+        "scraped_at": "2026-03-27T12:23:17.086946+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e0f65ef12641ba4b",
-        "harmonized_at": "2026-03-27T12:05:13.892218+00:00",
+        "raw_data_hash": "sha256:44cb137839673325",
+        "harmonized_at": "2026-03-27T12:24:50.852349+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9729,10 +9924,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.751914+00:00",
+        "scraped_at": "2026-03-27T12:23:17.086971+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f3ea38e9d223c5e3",
-        "harmonized_at": "2026-03-27T12:05:13.892542+00:00",
+        "raw_data_hash": "sha256:6372e8bd38f8dd46",
+        "harmonized_at": "2026-03-27T12:24:50.852675+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9886,7 +10081,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:32:30.686415+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105616+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535249+00:00"
       }
     },
     {
@@ -10033,7 +10228,7 @@
         ],
         "quality_score": 0.6,
         "last_seen_at": "2026-03-27T11:33:46.174817+00:00",
-        "not_seen_since": "2026-03-27T12:08:50.105906+00:00"
+        "not_seen_since": "2026-03-27T12:28:49.535501+00:00"
       }
     },
     {
@@ -10153,10 +10348,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.752484+00:00",
+        "scraped_at": "2026-03-27T12:23:17.087601+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e095f7965ede4bbc",
-        "harmonized_at": "2026-03-27T12:05:13.899732+00:00",
+        "raw_data_hash": "sha256:1aa18e960b7fc217",
+        "harmonized_at": "2026-03-27T12:24:50.859829+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10302,10 +10497,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.752514+00:00",
+        "scraped_at": "2026-03-27T12:23:17.087633+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:50ab19271f65dc36",
-        "harmonized_at": "2026-03-27T12:05:13.900003+00:00",
+        "raw_data_hash": "sha256:4ab0dbe32bcc1b1d",
+        "harmonized_at": "2026-03-27T12:24:50.860092+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10440,10 +10635,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.752679+00:00",
+        "scraped_at": "2026-03-27T12:23:17.087808+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:730f354702b6b4ca",
-        "harmonized_at": "2026-03-27T12:05:13.902529+00:00",
+        "raw_data_hash": "sha256:ead26bb5dd86e45b",
+        "harmonized_at": "2026-03-27T12:24:50.862654+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10582,10 +10777,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.752836+00:00",
+        "scraped_at": "2026-03-27T12:23:17.087968+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8d5175284b93ef21",
-        "harmonized_at": "2026-03-27T12:05:13.904279+00:00",
+        "raw_data_hash": "sha256:3525ae70451787ed",
+        "harmonized_at": "2026-03-27T12:24:50.864425+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10726,7 +10921,7 @@
         "scraped_at": "2026-03-27T10:59:45.228628+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ac26764986bb6683",
-        "harmonized_at": "2026-03-27T12:05:19.956461+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.648770+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

@@ -1,6 +1,6 @@
 {
   "month": "2026-02",
-  "total": 7,
+  "total": 8,
   "events": [
     {
       "schema_version": "1.0",
@@ -136,7 +136,7 @@
         "scraped_at": "2026-03-27T11:31:50.890214+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-27T12:05:20.396295+00:00",
+        "harmonized_at": "2026-03-27T12:24:58.087501+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -271,7 +271,149 @@
         "scraped_at": "2026-03-27T11:24:37.879508+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:03a6981e50361a41",
-        "harmonized_at": "2026-03-27T12:05:20.289189+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.981348+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-02-may-i-help-you-posso-ajudar-2ce7",
+      "source_id": "265933",
+      "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-03-27/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "May I Help You? Posso Ajudar?",
+      "title_raw": "May I Help You? Posso Ajudar?",
+      "subtitle": "Artes e artistas da década de 1970 em diante",
+      "description": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível esperar numa era de crescente fragmentação, dissonância e impermanência?\n\nA exposição toma como ponto de partida cinco décadas de produção artística, da década de 1970 em diante, e inclui obras de 90 artistas, por exemplo, Ad Minoliti (no hall do museu), Alberto Carneiro, Carla Filipe, Doris Salcedo, Helena Almeida, Gabriel Abrantes, Gilbert & George, Jeff Koons, Júlia Ventura, Kara Walker e Richard Serra, entre muitos outros. As obras pertencem às coleções em depósito no MAC/CCB (Berardo, Coleção de Arte Contemporânea do Estado, Holma/ Ellipse e Teixeira de Freitas), contando também com novas encomendas a artistas portugueses.\n\n \n\nCuradoria Nuria Enguita e Marta Mestre\n\nAssessoria curatorial Raphael Fonseca (Denver Art Museum)\n\n \n\n \n\nA exposição «MAY I HELP YOU? POSSO AJUDAR?» Artes e artistas da década de 1970 em diante, inspirada pela performance homónima de Andrea Fraser, expõe a diversidade de representações, presenças e narrativas no campo artístico, questionando a ideia de uma direção única nas histórias da arte. Partindo de diálogos entre obras através das últimas cinco décadas, esta exposição investiga o que os artistas são e fazem, e os papéis sociais que imaginam para si. Desde as ruturas em relação à própria definição de arte, nos anos ‘70, até à acelerada digitalização do presente, a exposição coloca em ênfase formatos, funções e intensidades heteróclitas. – Nuria Enguita Curadora da exposição e diretora artística do MAC/CCB\n\n \n\nArtistas:\n…",
+      "description_short": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exhibition",
+        "Exposições",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Exhibitions",
+        "Exposições",
+        "MAC/CCB",
+        "MAC/CCB",
+        "Exhibition",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-26",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "10:00 às 18:30 no Piso -1"
+        }
+      ],
+      "date_first": "2026-02-26",
+      "date_last": "2026-02-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "may-i-help-you-posso-ajudar|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.076484+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:820be10500f05015",
+        "harmonized_at": "2026-03-27T12:24:50.731762+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -427,7 +569,7 @@
         "scraped_at": "2026-03-27T11:24:39.846466+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-27T12:05:20.289643+00:00",
+        "harmonized_at": "2026-03-27T12:24:57.981806+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -559,10 +701,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:00.203174+00:00",
+        "scraped_at": "2026-03-27T12:26:47.639588+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0912d25c32f29244",
-        "harmonized_at": "2026-03-27T12:08:50.072692+00:00",
+        "raw_data_hash": "sha256:f8d80a4c70b84112",
+        "harmonized_at": "2026-03-27T12:28:49.500531+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -694,10 +836,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:06:55.668622+00:00",
+        "scraped_at": "2026-03-27T12:26:42.680017+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0547da34430bcfa5",
-        "harmonized_at": "2026-03-27T12:08:50.071855+00:00",
+        "raw_data_hash": "sha256:4cfea0839d44d11d",
+        "harmonized_at": "2026-03-27T12:28:49.499650+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -830,10 +972,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:15.722758+00:00",
+        "scraped_at": "2026-03-27T12:27:05.336305+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1b685e092d09f13b",
-        "harmonized_at": "2026-03-27T12:08:50.075440+00:00",
+        "raw_data_hash": "sha256:cc8a9c5610e071df",
+        "harmonized_at": "2026-03-27T12:28:49.503229+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -974,10 +1116,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:07:16.265908+00:00",
+        "scraped_at": "2026-03-27T12:27:06.051931+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c906c59790b95149",
-        "harmonized_at": "2026-03-27T12:08:50.075579+00:00",
+        "raw_data_hash": "sha256:ba0a91fa72d95984",
+        "harmonized_at": "2026-03-27T12:28:49.503377+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

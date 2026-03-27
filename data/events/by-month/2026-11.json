@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "total": 7,
+  "total": 8,
   "events": [
     {
       "schema_version": "1.0",
@@ -123,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772234+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107910+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5c3e9f89bf3b05b2",
-        "harmonized_at": "2026-03-27T12:05:14.145053+00:00",
+        "raw_data_hash": "sha256:f0a0e889616cd681",
+        "harmonized_at": "2026-03-27T12:24:51.109012+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -261,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772255+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107932+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b94e3f62b3f93e83",
-        "harmonized_at": "2026-03-27T12:05:14.145456+00:00",
+        "raw_data_hash": "sha256:9ce55668464c0aea",
+        "harmonized_at": "2026-03-27T12:24:51.109448+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -399,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772277+00:00",
+        "scraped_at": "2026-03-27T12:23:17.107954+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cb236c05348f99e7",
-        "harmonized_at": "2026-03-27T12:05:14.145833+00:00",
+        "raw_data_hash": "sha256:2705c5bc4ddf0e10",
+        "harmonized_at": "2026-03-27T12:24:51.109808+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -537,10 +537,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:08:20.523656+00:00",
+        "scraped_at": "2026-03-27T12:28:19.045413+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7339cc93956d2c00",
-        "harmonized_at": "2026-03-27T12:08:50.086861+00:00",
+        "raw_data_hash": "sha256:297dd2f33b3d7c9a",
+        "harmonized_at": "2026-03-27T12:28:49.514626+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -674,10 +674,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:08:19.877046+00:00",
+        "scraped_at": "2026-03-27T12:28:18.326726+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:98c05eab3c75c9af",
-        "harmonized_at": "2026-03-27T12:08:50.086728+00:00",
+        "raw_data_hash": "sha256:5ac3884544dbb9de",
+        "harmonized_at": "2026-03-27T12:28:49.514520+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -686,6 +686,144 @@
         "extra_flags": null,
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-11-alan-stivell-65cd",
+      "source_id": "278996",
+      "source_url": "https://www.ccb.pt/evento/alan-stivell/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Alan Stivell",
+      "title_raw": "Alan Stivell",
+      "subtitle": null,
+      "description": "Mais do que um músico, Alan Stivell é um verdadeiro embaixador da cultura celta. A sua carreira, feita de concertos históricos, digressões internacionais e projetos inovadores, tem sido também um veículo de afirmação cultural, celebrando a diversidade, a liberdade de pensamento e o respeito pelas raízes. A sua música — simultaneamente contemporânea e intemporal — resgata uma herança ancestral e projeta-a no presente, mantendo viva uma identidade que continua a reinventar-se.\n\nA celebrar 60 anos de carreira, o artista apresenta agora uma formação totalmente renovada, com 10 músicos em palco, com a qual parte em digressão para partilhar este repertório com o público. Um grande acontecimento musical que cruza culturas em torno do arquipélago celta, revisitando temas emblemáticos de Stivell, com destaque para excertos da sua Sinfonia Celta N.º 2.",
+      "description_short": "Mais do que um músico, Alan Stivell é um verdadeiro embaixador da cultura celta. A sua carreira, feita de concertos históricos, digressões internacionais e projetos inovadores, tem sido também um veículo de afirmação cultural, celebrando a diversidade, a liberdade de pensamento e o respeito pelas…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "Música",
+        "artes de palco",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Música",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-11-21",
+          "time_start": "21:00",
+          "time_end": "22:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-11-21",
+      "date_last": "2026-11-21",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Alan_banner_fnac_1920x1080-1.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "alan-stivell|2026-11",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-27T12:23:17.107977+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:c8f6b989e3c8f2f2",
+        "harmonized_at": "2026-03-27T12:24:51.110162+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
@@ -812,10 +950,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:03:45.772301+00:00",
+        "scraped_at": "2026-03-27T12:23:17.108003+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fcb49234a44cd52b",
-        "harmonized_at": "2026-03-27T12:05:14.146186+00:00",
+        "raw_data_hash": "sha256:f1eecede437eadda",
+        "harmonized_at": "2026-03-27T12:24:51.110588+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -948,10 +1086,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:08:18.583596+00:00",
+        "scraped_at": "2026-03-27T12:28:16.889870+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0fcb39eda62e97bc",
-        "harmonized_at": "2026-03-27T12:08:50.086489+00:00",
+        "raw_data_hash": "sha256:5496bffdf58f80dc",
+        "harmonized_at": "2026-03-27T12:28:49.514308+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
