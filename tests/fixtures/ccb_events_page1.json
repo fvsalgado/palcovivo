@@ -1,0 +1,20 @@
+{
+  "events": [
+    {
+      "id": 12345,
+      "title": "Concerto de Primavera",
+      "description": "Um concerto especial...",
+      "start_date": "2026-04-15 21:00:00",
+      "end_date": "2026-04-15 23:00:00",
+      "url": "https://www.ccb.pt/pt/programa/concerto-primavera/",
+      "cost": "15€",
+      "image": {"url": "https://www.ccb.pt/img/concerto.jpg"},
+      "categories": [{"name": "Música"}],
+      "tags": [{"name": "Clássica"}],
+      "slug": "concerto-primavera",
+      "status": "publish"
+    }
+  ],
+  "total": 1,
+  "total_pages": 1
+}

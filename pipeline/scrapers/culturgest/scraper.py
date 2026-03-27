@@ -33,6 +33,8 @@ import requests
 import urllib3
 from bs4 import BeautifulSoup
 
+from pipeline.core.base_scraper import BaseScraper
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 warnings.filterwarnings("ignore", message="Unverified HTTPS request")
 
@@ -109,6 +111,7 @@ def _is_programacao_event(url: str) -> bool:
 
 
 def _make_session() -> requests.Session:
+    """Module-level helper kept for backwards compatibility."""
     s = requests.Session()
     s.verify = False
     s.headers.update(HEADERS)
@@ -116,6 +119,7 @@ def _make_session() -> requests.Session:
 
 
 def _get(session: requests.Session, url: str) -> Optional[requests.Response]:
+    """Module-level helper kept for backwards compatibility."""
     try:
         r = session.get(url, timeout=TIMEOUT)
         r.raise_for_status()
@@ -591,57 +595,111 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Entrada principal
+# CulturegestScraper — class-based wrapper
+# ---------------------------------------------------------------------------
+
+class CulturegestScraper(BaseScraper):
+    """
+    Culturgest scraper using sitemap.xml listing + per-event HTML parsing.
+
+    Inherits session management and retry logic from BaseScraper.
+    SSL verification is disabled (Culturgest returns a self-signed cert).
+    """
+
+    HEADERS = HEADERS
+    VERIFY_SSL = False
+    RATE_DELAY = REQUEST_DELAY
+    TIMEOUT = TIMEOUT
+
+    def fetch_event_list(self) -> list:
+        """
+        Returns the list of event URLs from the Culturgest sitemap,
+        filtered against known_ids when in incremental mode.
+        """
+        known_ids = getattr(self, "_known_ids", None)
+
+        if known_ids and not FULL_RESCAN:
+            logger.info(f"CULTURGEST v17 — modo incremental ({len(known_ids)} já conhecidos)")
+        else:
+            logger.info("CULTURGEST v17 — listing via sitemap.xml (run completo)")
+
+        event_urls = _get_event_urls_from_sitemap(self.session)
+
+        if not event_urls:
+            logger.error("Sem URLs de eventos. Verificar acesso ao sitemap.")
+            return []
+
+        if known_ids and not FULL_RESCAN:
+            new_urls = []
+            skipped = 0
+            for url in event_urls:
+                slug = _normalize_url(url).rstrip("/").split("/")[-1]
+                if slug in known_ids:
+                    skipped += 1
+                else:
+                    new_urls.append(url)
+            logger.info(
+                f"Sitemap: {len(event_urls)} total, {skipped} já conhecidos, "
+                f"{len(new_urls)} novos"
+            )
+            event_urls = new_urls
+        else:
+            logger.info(f"{len(event_urls)} URLs a processar")
+
+        return event_urls
+
+    def parse_event(self, raw) -> dict:
+        """
+        raw is a URL string (str) for Culturgest — fetch and parse the event page.
+        Returns the normalised event dict, or None if parsing fails.
+        """
+        return _parse_single_event(raw, self.session)
+
+    def run(
+        self,
+        known_ids=None,
+        rate_delay=None,
+        scraper_flags=None,
+    ) -> list:
+        """
+        Entry point. Accepts known_ids for incremental mode.
+        """
+        self._known_ids = known_ids
+
+        if rate_delay is not None:
+            self._rate_delay = rate_delay
+
+        event_urls = self.fetch_event_list()
+
+        all_events = []
+        seen = set()
+
+        for url in event_urls:
+            norm = _normalize_url(url)
+            if norm in seen:
+                continue
+            seen.add(norm)
+            time.sleep(self._rate_delay)
+            ev = self.parse_event(url)
+            if ev:
+                all_events.append(ev)
+
+        logger.info(f"Total recolhido: {len(all_events)} eventos")
+        return all_events
+
+
+# ---------------------------------------------------------------------------
+# Entrada principal — kept for backwards compatibility
 # ---------------------------------------------------------------------------
 
 def run(known_ids: Optional[set] = None) -> List[dict]:
     """
+    Backwards-compatible module-level entry point. Delegates to CulturegestScraper.
+
     known_ids: set de source_ids já em cache — skip automático em modo incremental.
                None ou conjunto vazio = processar tudo (primeiro run ou FULL_RESCAN).
     """
-    session = _make_session()
-
-    if known_ids and not FULL_RESCAN:
-        logger.info(f"CULTURGEST v17 — modo incremental ({len(known_ids)} já conhecidos)")
-    else:
-        logger.info("CULTURGEST v17 — listing via sitemap.xml (run completo)")
-
-    event_urls = _get_event_urls_from_sitemap(session)
-
-    if not event_urls:
-        logger.error("Sem URLs de eventos. Verificar acesso ao sitemap.")
-        return []
-
-    # Filtrar slugs já conhecidos (modo incremental)
-    if known_ids and not FULL_RESCAN:
-        new_urls = []
-        skipped = 0
-        for url in event_urls:
-            slug = _normalize_url(url).rstrip("/").split("/")[-1]
-            if slug in known_ids:
-                skipped += 1
-            else:
-                new_urls.append(url)
-        logger.info(f"Sitemap: {len(event_urls)} total, {skipped} já conhecidos, {len(new_urls)} novos")
-        event_urls = new_urls
-    else:
-        logger.info(f"{len(event_urls)} URLs a processar")
-
-    all_events = []
-    seen = set()
-
-    for url in event_urls:
-        norm = _normalize_url(url)
-        if norm in seen:
-            continue
-        seen.add(norm)
-        time.sleep(REQUEST_DELAY)
-        ev = _parse_single_event(url, session)
-        if ev:
-            all_events.append(ev)
-
-    logger.info(f"Total recolhido: {len(all_events)} eventos")
-    return all_events
+    return CulturegestScraper().run(known_ids=known_ids)
 
 
 if __name__ == "__main__":

@@ -59,13 +59,14 @@ permissions:
 jobs:
 
   # ─────────────────────────────────────────
-  # JOB 1 — Descobrir venues
+  # JOB 1 — Descobrir venues e criar batches
   # ─────────────────────────────────────────
   discover:
     name: 🔍 Descobrir venues
     runs-on: ubuntu-latest
     outputs:
       venues: ${{ steps.list.outputs.venues }}
+      batches: ${{ steps.list.outputs.batches }}
     steps:
       - uses: actions/checkout@v4
 
@@ -81,10 +82,10 @@ jobs:
           SELECTED="$INPUT_VENUES"
 
           if [ -z "$SELECTED" ] || [ "$SELECTED" = "all" ]; then
-            echo "venues=$ALL" >> $GITHUB_OUTPUT
+            VENUES="$ALL"
             echo "A correr todos os venues: $ALL"
           else
-            FILTERED=$(echo "$SELECTED" | python3 -c "
+            VENUES=$(echo "$SELECTED" | python3 -c "
           import sys, json
           selected = [s.strip() for s in sys.stdin.read().split(',') if s.strip()]
           available = json.loads('$ALL')
@@ -94,22 +95,35 @@ jobs:
               print(f'AVISO: venues desconhecidos ignorados: {unknown}', file=sys.stderr)
           print(json.dumps(result))
           ")
-            echo "venues=$FILTERED" >> $GITHUB_OUTPUT
-            echo "A correr venues seleccionados: $FILTERED"
+            echo "A correr venues seleccionados: $VENUES"
           fi
 
+          echo "venues=$VENUES" >> $GITHUB_OUTPUT
+
+          # Criar batches de até 10 venues cada
+          BATCHES=$(python3 -c "
+          import os, json, math
+          venues = json.loads(os.environ.get('ALL_VENUES', '[]'))
+          batch_size = 10
+          batches = [venues[i:i+batch_size] for i in range(0, len(venues), batch_size)]
+          print(json.dumps(batches))
+          " ALL_VENUES="$VENUES")
+
+          echo "batches=$BATCHES" >> $GITHUB_OUTPUT
+          echo "Batches criados: $(echo "$BATCHES" | python3 -c "import sys,json; b=json.load(sys.stdin); print(f'{len(b)} batches de até 10 venues')")"
+
   # ─────────────────────────────────────────
-  # JOB 2 — Scrape paralelo (um job por venue)
+  # JOB 2 — Scrape em batches (um job por batch de até 10 venues)
   # ─────────────────────────────────────────
   scrape:
-    name: 🕷️ Scrape ${{ matrix.venue }}
+    name: 🕷️ Scrape batch ${{ strategy.job-index }}
     needs: discover
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 120
     strategy:
       fail-fast: false
       matrix:
-        venue: ${{ fromJson(needs.discover.outputs.venues) }}
+        batch: ${{ fromJson(needs.discover.outputs.batches) }}
 
     steps:
       - uses: actions/checkout@v4
@@ -127,78 +141,126 @@ jobs:
         id: date
         run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
 
-      # Cache HTTP por semana — reutilizada entre runs diários
-      # No reset, a cache key inclui o run_id para forçar cache miss nesse venue
-      - name: Restaurar cache HTTP
+      # Calcular índice do batch e verificar se algum venue do batch está em reset
+      - name: Calcular batch index e reset flag
+        id: batch_meta
+        env:
+          BATCH_JSON: ${{ toJson(matrix.batch) }}
+          ALL_BATCHES_JSON: ${{ needs.discover.outputs.batches }}
+          RESET_LIST: ${{ github.event.inputs.reset_venues }}
+        run: |
+          python3 << 'EOF'
+          import os, json
+
+          batch = json.loads(os.environ["BATCH_JSON"])
+          all_batches = json.loads(os.environ["ALL_BATCHES_JSON"])
+          reset_list = os.environ.get("RESET_LIST", "")
+
+          # Encontrar índice deste batch
+          batch_index = 0
+          for i, b in enumerate(all_batches):
+              if b == batch:
+                  batch_index = i
+                  break
+
+          # Verificar se algum venue do batch está na lista de reset
+          reset_venues = [v.strip() for v in reset_list.split(",") if v.strip()]
+          batch_has_reset = any(v in reset_venues for v in batch)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"batch_index={batch_index}\n")
+              f.write(f"batch_has_reset={'true' if batch_has_reset else 'false'}\n")
+              f.write(f"batch_venues={json.dumps(batch)}\n")
+
+          print(f"Batch {batch_index}: {batch}")
+          print(f"Tem reset: {batch_has_reset}")
+          EOF
+
+      # Cache HTTP por venue é gerida por venue individualmente dentro do batch
+      # A cache key base usa o índice do batch e a semana
+      # No reset, a cache key inclui o run_id para forçar cache miss em todo o batch
+      - name: Restaurar cache HTTP do batch
         uses: actions/cache@v4
         with:
           path: data/cache
           key: >-
-            http-cache-${{ matrix.venue }}-${{ steps.date.outputs.week }}${{
-              github.event.inputs.reset_venues != '' && contains(github.event.inputs.reset_venues, matrix.venue)
+            http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-${{ steps.date.outputs.week }}${{
+              steps.batch_meta.outputs.batch_has_reset == 'true'
               && format('-reset-{0}', github.run_id) || ''
             }}
           restore-keys: |
-            http-cache-${{ matrix.venue }}-
+            http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-
         id: http-cache
 
-      # RESET: apagar histórico do venue antes de scraping (só se solicitado manualmente)
-      # Apaga data/events/{venue}.json, data/backups/{venue}/ e cache monolítica
-      - name: ⚠️ Reset histórico ${{ matrix.venue }}
-        if: ${{ github.event.inputs.reset_venues != '' }}
-        env:
-          RESET_LIST: ${{ github.event.inputs.reset_venues }}
-          VENUE: ${{ matrix.venue }}
-        run: |
-          if echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
-            echo "⚠️  RESET: a apagar histórico de $VENUE"
-            rm -f "data/events/$VENUE.json"
-            rm -rf "data/backups/$VENUE"
-            rm -f "data/cache/$VENUE.cache.json"
-            echo "✓ Histórico de $VENUE apagado — scrape do zero"
-          else
-            echo "— $VENUE não está na lista de reset, a continuar normalmente"
-          fi
-
-      # Modo de scraping: incremental (default) / full_rescan / force_refresh
-      # full_rescan também activa ao domingo via cron
-      # reset implica force_refresh automaticamente
-      - name: 🕷️ Scrape ${{ matrix.venue }}
+      # Scrape sequencial de cada venue no batch
+      - name: 🕷️ Scrape venues do batch
         env:
           PYTHONPATH: ${{ github.workspace }}
           INPUT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
           INPUT_RESET_VENUES: ${{ github.event.inputs.reset_venues }}
-          VENUE: ${{ matrix.venue }}
+          BATCH_VENUES_JSON: ${{ steps.batch_meta.outputs.batch_venues }}
           FULL_RESCAN: >-
             ${{
               github.event.inputs.full_rescan == 'true' ||
               (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0')
             }}
         run: |
-          ARGS=""
-          RESET_LIST="$INPUT_RESET_VENUES"
+          python3 << 'EOF'
+          import os, json, subprocess, sys, shutil
 
-          # force_refresh ou reset implicam --force
-          if [ "$INPUT_FORCE_REFRESH" = "true" ]; then
-            ARGS="--force"
-          fi
-          if [ -n "$RESET_LIST" ] && echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
-            ARGS="--force"
-            echo "→ $VENUE resetado: a correr com --force"
-          fi
+          batch_venues = json.loads(os.environ["BATCH_VENUES_JSON"])
+          force_refresh = os.environ.get("INPUT_FORCE_REFRESH", "false") == "true"
+          reset_list_raw = os.environ.get("INPUT_RESET_VENUES", "")
+          reset_venues = [v.strip() for v in reset_list_raw.split(",") if v.strip()]
 
-          python pipeline/run_venue.py "$VENUE" $ARGS
+          print(f"A processar batch: {batch_venues}")
 
-      - name: Upload artefacto
+          for venue in batch_venues:
+              print(f"\n{'='*60}")
+              print(f"→ Venue: {venue}")
+
+              # RESET: apagar histórico do venue se solicitado
+              if venue in reset_venues:
+                  print(f"⚠️  RESET: a apagar histórico de {venue}")
+                  for path in [f"data/events/{venue}.json", f"data/cache/{venue}.cache.json"]:
+                      if os.path.exists(path):
+                          os.remove(path)
+                          print(f"   Apagado: {path}")
+                  backup_dir = f"data/backups/{venue}"
+                  if os.path.exists(backup_dir):
+                      shutil.rmtree(backup_dir)
+                      print(f"   Apagado: {backup_dir}")
+                  print(f"✓ Histórico de {venue} apagado — scrape do zero")
+
+              # Determinar argumentos do scraper
+              args = []
+              if force_refresh:
+                  args.append("--force")
+              if venue in reset_venues:
+                  args = ["--force"]  # reset implica --force
+                  print(f"→ {venue} resetado: a correr com --force")
+
+              cmd = ["python", "pipeline/run_venue.py", venue] + args
+              print(f"Comando: {' '.join(cmd)}")
+
+              result = subprocess.run(cmd, capture_output=False)
+              if result.returncode != 0:
+                  print(f"⚠️  {venue} terminou com código {result.returncode}", file=sys.stderr)
+
+          print(f"\n{'='*60}")
+          print("Batch completo.")
+          EOF
+
+      - name: Upload artefacto do batch
         uses: actions/upload-artifact@v4
         with:
-          name: venue-${{ matrix.venue }}
+          name: batch-${{ steps.batch_meta.outputs.batch_index }}
           path: |
-            data/events/${{ matrix.venue }}.json
-            data/venues/${{ matrix.venue }}.json
-            data/logs/venue-${{ matrix.venue }}.json
-            data/backups/${{ matrix.venue }}/
-            data/cache/${{ matrix.venue }}/
+            data/events/
+            data/venues/
+            data/logs/
+            data/backups/
+            data/cache/
           if-no-files-found: warn
           retention-days: 1
 
@@ -224,10 +286,10 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      - name: Download artefactos dos venues
+      - name: Download artefactos dos batches
         uses: actions/download-artifact@v4
         with:
-          pattern: venue-*
+          pattern: batch-*
           merge-multiple: true
           path: data/
 
@@ -355,10 +417,10 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      - name: Download artefactos dos venues
+      - name: Download artefactos dos batches
         uses: actions/download-artifact@v4
         with:
-          pattern: venue-*
+          pattern: batch-*
           merge-multiple: true
           path: data/
 

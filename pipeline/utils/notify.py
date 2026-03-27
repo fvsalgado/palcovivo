@@ -15,14 +15,99 @@ from pathlib import Path
 
 logger = logging.getLogger(__name__)
 
+ROOT     = Path(__file__).parent.parent.parent
+DATA_DIR = ROOT / "data"
+
 # ---------------------------------------------------------------------------
 # CONFIG (via env vars / GitHub Secrets)
 # ---------------------------------------------------------------------------
-GMAIL_USER = os.environ.get("GMAIL_USER", "")           # fabio@...
+GMAIL_USER         = os.environ.get("GMAIL_USER", "")           # fabio@...
 GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "")
-NOTIFY_TO = os.environ.get("NOTIFY_EMAIL", "fabio@primeiraplateia.pt")
-NTFY_URL = os.environ.get("NTFY_URL", "")               # ex: https://ntfy.sh/primeira-plateia-xyz
-SITE_URL = "https://primeiraplateia.pt"
+NOTIFY_TO          = os.environ.get("NOTIFY_EMAIL", "fabio@primeiraplateia.pt")
+NTFY_URL           = os.environ.get("NTFY_URL", "")             # ex: https://ntfy.sh/primeira-plateia-xyz
+SITE_URL           = "https://primeiraplateia.pt"
+
+
+# ---------------------------------------------------------------------------
+# Helpers — circuit breaker + previous run delta
+# ---------------------------------------------------------------------------
+
+def _load_circuit_breaker() -> dict:
+    """Carrega data/cache/circuit_breaker.json; retorna {} se não existir."""
+    cb_path = DATA_DIR / "cache" / "circuit_breaker.json"
+    if cb_path.exists():
+        try:
+            with open(cb_path, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return {}
+
+
+def _load_previous_counts() -> dict[str, int]:
+    """
+    Lê data/logs/latest.json para extrair contagem de eventos por venue do
+    run anterior.  Retorna {venue_id: scraped_count}.
+    """
+    latest_path = DATA_DIR / "logs" / "latest.json"
+    if not latest_path.exists():
+        return {}
+    try:
+        with open(latest_path, encoding="utf-8") as f:
+            data = json.load(f)
+        return {
+            v.get("venue_id", ""): v.get("scraped", 0)
+            for v in data.get("venues", [])
+        }
+    except Exception:
+        return {}
+
+
+def _delta_str(current: int, previous: int | None) -> str:
+    """Formata a variação ex. '+12', '-5', '0', '—'."""
+    if previous is None:
+        return "—"
+    diff = current - previous
+    if diff > 0:
+        return f"+{diff}"
+    return str(diff)
+
+
+def _alert_venues(venues: list[dict], venue_quality: dict, cb: dict, prev_counts: dict) -> list[dict]:
+    """
+    Retorna lista de venues em alerta:
+      - 3+ consecutive_failures no circuit breaker
+      - queda de eventos > 20% face ao run anterior
+      - avg_credibility < 0.4
+    """
+    alerts = []
+    for v in venues:
+        vid    = v.get("venue_id", "")
+        name   = v.get("venue_name", vid)
+        reasons: list[str] = []
+
+        # Circuit breaker failures (campo "failures" conforme circuit_breaker.py)
+        failures = (cb.get(vid) or {}).get("failures", 0)
+        if failures >= 3:
+            reasons.append(f"{failures} falhas consecutivas")
+
+        # Event count drop > 20%
+        current  = v.get("scraped", 0)
+        previous = prev_counts.get(vid)
+        if previous and previous > 0:
+            drop_pct = (previous - current) / previous * 100
+            if drop_pct > 20:
+                reasons.append(f"queda de {drop_pct:.0f}% nos eventos")
+
+        # Low credibility
+        score = (venue_quality.get(vid) or {}).get("avg_credibility", 1.0)
+        if score and score < 0.4:
+            reasons.append(f"credibilidade baixa ({int(score * 100)}%)")
+
+        if reasons:
+            alerts.append({"name": name, "venue_id": vid, "reasons": reasons})
+
+    return alerts
 
 
 # ---------------------------------------------------------------------------
@@ -32,9 +117,14 @@ SITE_URL = "https://primeiraplateia.pt"
 def build_email_html(report: dict) -> str:
     """Gera o corpo HTML do email de relatório diário."""
     s = report.get("summary", {})
-    venues = report.get("venues", [])
-    run_at = report.get("run_at", "")
-    duration = report.get("duration_seconds", 0)
+    venues        = report.get("venues", [])
+    venue_quality = report.get("venue_quality", {})
+    run_at        = report.get("run_at", "")
+    duration      = report.get("duration_seconds", 0)
+
+    # Dados externos
+    cb          = _load_circuit_breaker()
+    prev_counts = _load_previous_counts()
 
     # Formatar data
     try:
@@ -44,35 +134,61 @@ def build_email_html(report: dict) -> str:
         date_str = run_at
 
     # Cor do status global
-    has_errors = s.get("total_errors", 0) > 0
+    has_errors   = s.get("total_errors", 0) > 0
     status_color = "#E63946" if has_errors else "#2A9D8F"
     status_label = "⚠️ Com erros" if has_errors else "✅ Sem erros"
 
+    # Venues em alerta
+    alert_list = _alert_venues(venues, venue_quality, cb, prev_counts)
+
     # Linhas de venues
-    venue_quality = report.get("venue_quality", {})
     venue_rows = ""
     for v in venues:
-        vid = v.get("venue_id", "")
+        vid      = v.get("venue_id", "")
+        current  = v.get("scraped", 0)
+        previous = prev_counts.get(vid)
+
+        # Status badge
         err_badge = ""
         if v.get("errors"):
-            n_err = len(v["errors"])
+            n_err     = len(v["errors"])
             err_badge = f'<span style="color:#E63946;font-size:11px;">⚠️ {n_err} erro(s)</span>'
         elif v.get("cache_hit"):
             err_badge = '<span style="color:#888;font-size:11px;">📦 cache</span>'
-        vq = venue_quality.get(vid, {})
+        else:
+            err_badge = '<span style="color:#2A9D8F;font-size:11px;">✅ ok</span>'
+
+        # Score
+        vq    = venue_quality.get(vid, {})
         score = vq.get("avg_credibility", 0)
         if score:
-            sc = "#2A9D8F" if score >= 0.7 else "#E9C46A" if score >= 0.5 else "#E63946"
+            sc         = "#2A9D8F" if score >= 0.7 else "#E9C46A" if score >= 0.5 else "#E63946"
             score_cell = f'<span style="color:{sc};font-weight:600;">{int(score*100)}%</span>'
         else:
             score_cell = "—"
+
+        # Delta
+        delta    = _delta_str(current, previous)
+        dc       = "#2A9D8F" if delta.startswith("+") else "#E63946" if delta.startswith("-") else "#888"
+        delta_cell = f'<span style="color:{dc};font-weight:600;">{delta}</span>'
+
+        # Consecutive failures (campo "failures" conforme circuit_breaker.py)
+        failures      = (cb.get(vid) or {}).get("failures", 0)
+        failures_cell = (
+            f'<span style="color:#E63946;font-weight:600;">{failures}</span>'
+            if failures >= 3
+            else (f'<span style="color:#E9C46A;">{failures}</span>' if failures > 0 else "—")
+        )
+
         venue_rows += (
             "<tr>"
             f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;font-weight:600;">{v["venue_name"]}</td>'
-            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{v["scraped"]}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{current}</td>'
             f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#2A9D8F;">{v["valid"]}</td>'
             f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;color:#E63946;">{v["invalid"]}</td>'
             f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{score_cell}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{delta_cell}</td>'
+            f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;text-align:center;">{failures_cell}</td>'
             f'<td style="padding:8px 12px;border-bottom:1px solid #f0f0f0;">{err_badge}</td>'
             "</tr>"
         )
@@ -91,11 +207,29 @@ def build_email_html(report: dict) -> str:
           <ul style="margin:8px 0 0 0;padding-left:20px;color:#555;">{error_items}</ul>
         </div>"""
 
+    # Venues em alerta section
+    alert_section = ""
+    if alert_list:
+        alert_items = "".join(
+            f'<li style="margin-bottom:6px;">'
+            f'<strong style="color:#1a1a2e;">{a["name"]}</strong>: '
+            + "; ".join(a["reasons"])
+            + "</li>"
+            for a in alert_list
+        )
+        alert_section = f"""
+    <div style="padding:0 32px 24px 32px;">
+      <div style="background:#fff8e1;border-left:4px solid #E9C46A;padding:16px;border-radius:4px;">
+        <strong style="color:#b5770d;font-size:14px;">⚠️ Venues em Alerta ({len(alert_list)})</strong>
+        <ul style="margin:8px 0 0 0;padding-left:20px;color:#555;font-size:13px;">{alert_items}</ul>
+      </div>
+    </div>"""
+
     return f"""<!DOCTYPE html>
 <html lang="pt">
 <head><meta charset="UTF-8"><title>Primeira Plateia — Relatório Diário</title></head>
 <body style="margin:0;padding:0;background:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
-  <div style="max-width:600px;margin:32px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);">
+  <div style="max-width:640px;margin:32px auto;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.08);">
 
     <!-- Header -->
     <div style="background:#1a1a2e;padding:24px 32px;">
@@ -132,6 +266,9 @@ def build_email_html(report: dict) -> str:
       </div>
     </div>
 
+    <!-- Venues em Alerta (condicional) -->
+    {alert_section}
+
     <!-- Venues table -->
     <div style="padding:24px 32px;">
       <h3 style="margin:0 0 16px 0;font-size:15px;color:#1a1a2e;">Detalhe por Venue</h3>
@@ -143,6 +280,8 @@ def build_email_html(report: dict) -> str:
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Válidos</th>
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Inválidos</th>
             <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Score</th>
+            <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Delta</th>
+            <th style="padding:8px 12px;text-align:center;color:#666;font-weight:600;border-bottom:2px solid #eee;">Falhas</th>
             <th style="padding:8px 12px;text-align:left;color:#666;font-weight:600;border-bottom:2px solid #eee;">Estado</th>
           </tr>
         </thead>
@@ -172,7 +311,7 @@ def send_email(report: dict) -> bool:
         return False
 
     s = report.get("summary", {})
-    has_errors = s.get("total_errors", 0) > 0
+    has_errors    = s.get("total_errors", 0) > 0
     subject_prefix = "⚠️" if has_errors else "✅"
     subject = (
         f"{subject_prefix} Primeira Plateia — "
@@ -183,8 +322,8 @@ def send_email(report: dict) -> bool:
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = f"Primeira Plateia Pipeline <{GMAIL_USER}>"
-    msg["To"] = NOTIFY_TO
+    msg["From"]    = f"Primeira Plateia Pipeline <{GMAIL_USER}>"
+    msg["To"]      = NOTIFY_TO
 
     # Plain text fallback
     plain = (
@@ -219,25 +358,46 @@ def send_ntfy(report: dict) -> bool:
         logger.warning("Ntfy: NTFY_URL não configurado")
         return False
 
-    s = report.get("summary", {})
+    s          = report.get("summary", {})
+    venues     = report.get("venues", [])
     has_errors = s.get("total_errors", 0) > 0
 
-    title = "Primeira Plateia - OK" if not has_errors else "Primeira Plateia - ERRO"
-    message = (
-        f"{s.get('total_after_dedup', 0)} eventos · "
+    # Compute total delta vs previous run
+    prev_counts   = _load_previous_counts()
+    prev_total    = sum(prev_counts.values()) if prev_counts else None
+    current_total = s.get("total_after_dedup", 0)
+    delta_part    = ""
+    if prev_total is not None:
+        diff       = current_total - prev_total
+        delta_part = f" (+{diff})" if diff >= 0 else f" ({diff})"
+
+    # Alert lines (circuit breaker)
+    cb          = _load_circuit_breaker()
+    venue_quality = report.get("venue_quality", {})
+    alert_list  = _alert_venues(venues, venue_quality, cb, prev_counts)
+
+    first_line = (
+        f"{current_total} eventos{delta_part} · "
         f"{s.get('venues_processed', 0)} venues · "
         f"{s.get('total_errors', 0)} erros"
     )
+    alert_lines = [
+        f"⚠️ {a['name']}: {'; '.join(a['reasons'])}"
+        for a in alert_list
+    ]
+    message = "\n".join([first_line] + alert_lines)
+
+    title = "Primeira Plateia - OK" if not has_errors else "Primeira Plateia - ERRO"
 
     try:
         resp = requests.post(
             NTFY_URL,
             data=message.encode("utf-8"),
             headers={
-                "Title": title,
-                "Priority": "high" if has_errors else "default",
-                "Tags": "warning" if has_errors else "white_check_mark",
-                "Click": SITE_URL,
+                "Title":    title,
+                "Priority": "high" if has_errors or alert_list else "default",
+                "Tags":     "warning" if has_errors or alert_list else "white_check_mark",
+                "Click":    SITE_URL,
             },
             timeout=10,
         )
@@ -263,7 +423,7 @@ if __name__ == "__main__":
     import sys
     logging.basicConfig(level=logging.INFO)
     logs_dir = Path(__file__).parent.parent.parent / "data" / "logs"
-    latest = logs_dir / "latest.json"
+    latest   = logs_dir / "latest.json"
     if latest.exists():
         with open(latest) as f:
             report = json.load(f)

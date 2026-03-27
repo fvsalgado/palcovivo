@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /c/Users/f/OneDrive/Documents/GitHub/palcovivo/pipeline/scrapers/*/scraper.py)",
+      "Bash(git -C /c/Users/f/OneDrive/Documents/GitHub/palcovivo log --oneline -20)",
+      "Bash(du -sh /c/Users/f/OneDrive/Documents/GitHub/palcovivo/data/*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/ -v --tb=short)",
+      "Bash(python3 -m pip install pytest requests beautifulsoup4 lxml -q)",
+      "Bash(python3 -m pytest tests/ -v --tb=short)",
+      "Bash(python3 -c \"from pipeline.core.taxonomy import ALIASES; print\\(type\\(ALIASES\\)\\); print\\(list\\(ALIASES.items\\(\\)\\)[:5]\\)\")",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\(''pipeline/taxonomy_aliases.json''\\)\\); print\\(list\\(data[''aliases''].items\\(\\)\\)[:3]\\); print\\(''música clássica'' in data[''aliases'']\\)\")",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\(''pipeline/taxonomy_aliases.json''\\)\\); keys = list\\(data[''aliases''].keys\\(\\)\\); print\\([k for k in keys if ''cl'' in k.lower\\(\\) or ''class'' in k.lower\\(\\)][:10]\\)\")",
+      "Bash(python3 -c \"from pipeline.core.taxonomy import ALIASES; print\\(''música clássica'' in ALIASES\\); print\\([k for k in ALIASES if ''cl'' in k][:5]\\)\")",
+      "Bash(python3 -c \"from pipeline.core.taxonomy import _ALIASES_HARDCODED; print\\(''musica-classica'' in _ALIASES_HARDCODED\\)\")",
+      "Bash(python3:*)"
+    ]
+  }
+}

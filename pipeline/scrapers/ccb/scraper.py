@@ -14,6 +14,8 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from bs4 import BeautifulSoup
 
+from pipeline.core.base_scraper import BaseScraper, WordPressEventsScraper
+
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -575,35 +577,142 @@ def ccb_event_to_raw(event: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# ENTRY POINT
+# CCBScraper — class-based wrapper around existing module functions
+# ---------------------------------------------------------------------------
+
+class CCBScraper(WordPressEventsScraper):
+    """
+    CCB scraper using the WP Events Calendar REST API with HTML detail enrichment.
+
+    Inherits session management, retry logic, and pagination from
+    WordPressEventsScraper / BaseScraper.
+    """
+
+    API_BASE = API_BASE
+    PER_PAGE = PER_PAGE
+    MAX_PAGES = MAX_PAGES
+    HEADERS = {
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "pt-PT,pt;q=0.9,en;q=0.8",
+        "Referer": "https://www.ccb.pt/",
+    }
+    TIMEOUT = TIMEOUT
+    RATE_DELAY = REQUEST_DELAY
+
+    def fetch_event_list(self) -> list:
+        """
+        Fetches all CCB events from the WP Events API, using start_date if set.
+        Delegates to the module-level fetch_all_events() for backwards compatibility.
+        """
+        start_date = getattr(self, "_start_date", None)
+        now = datetime.now(timezone.utc)
+        if start_date is None:
+            start_date = now.strftime("%Y-%m-%d 00:00:00")
+
+        logger.info(f"CCB: a iniciar recolha a partir de {start_date}")
+        all_events = []
+        page = 1
+
+        while page <= self.MAX_PAGES:
+            logger.info(f"CCB: página {page}...")
+            params = {
+                "page": page,
+                "per_page": self.PER_PAGE,
+                "status": "publish",
+                "start_date": start_date,
+            }
+            resp = self._get(self.API_BASE, params=params)
+            if resp is None:
+                logger.info(f"CCB: sem resposta na página {page}")
+                break
+
+            try:
+                data = resp.json()
+            except ValueError as exc:
+                logger.error(f"CCB JSON decode error página {page}: {exc}")
+                break
+
+            if not data or "events" not in data:
+                logger.info(f"CCB: sem mais eventos na página {page}")
+                break
+
+            events = data.get("events", [])
+            if not events:
+                break
+
+            all_events.extend(events)
+            logger.info(f"CCB: {len(events)} eventos na página {page} (total: {len(all_events)})")
+
+            total_pages = data.get("total_pages", 1)
+            if page >= total_pages:
+                break
+
+            page += 1
+            time.sleep(self._rate_delay)
+
+        logger.info(f"CCB: recolha completa — {len(all_events)} eventos raw")
+        return all_events
+
+    def parse_event(self, raw: dict) -> dict:
+        """Convert a raw WP Events API dict to a normalised event record."""
+        return ccb_event_to_raw(raw)
+
+    def run(
+        self,
+        known_ids=None,
+        rate_delay=None,
+        scraper_flags=None,
+        start_date: Optional[str] = None,
+    ) -> list:
+        """
+        Entry point.  start_date is forwarded to the API fetch.
+        scraper_flags may include {'start_date': '...'} as an alternative.
+        """
+        if start_date is None and scraper_flags:
+            start_date = scraper_flags.get("start_date")
+        self._start_date = start_date
+
+        if rate_delay is not None:
+            self._rate_delay = rate_delay
+
+        raw_events = self.fetch_event_list()
+        normalized = [self.parse_event(e) for e in raw_events]
+
+        if not ENRICH_DETAIL_PAGES:
+            logger.info("CCB: enriquecimento HTML desativado")
+            return normalized
+
+        # Enriquecimento via páginas de detalhe
+        to_enrich = normalized
+        if DETAIL_BATCH_SIZE:
+            to_enrich = normalized[:DETAIL_BATCH_SIZE]
+
+        logger.info(f"CCB: a enriquecer {len(to_enrich)} eventos via HTML...")
+
+        for i, event in enumerate(to_enrich):
+            url = event.get("source_url", "")
+            if not url:
+                continue
+            logger.debug(f"CCB: enrich {i+1}/{len(to_enrich)} — {url}")
+            enrich_from_detail(event, self.session)
+            time.sleep(DETAIL_DELAY)
+
+        logger.info("CCB: enriquecimento completo")
+        return normalized
+
+
+# ---------------------------------------------------------------------------
+# ENTRY POINT — module-level function kept for backwards compatibility
 # ---------------------------------------------------------------------------
 
 def run(start_date: Optional[str] = None) -> list[dict]:
-    raw_events = fetch_all_events(start_date)
-    normalized = [ccb_event_to_raw(e) for e in raw_events]
-
-    if not ENRICH_DETAIL_PAGES:
-        logger.info("CCB: enriquecimento HTML desativado")
-        return normalized
-
-    # Enriquecimento via páginas de detalhe
-    to_enrich = normalized
-    if DETAIL_BATCH_SIZE:
-        to_enrich = normalized[:DETAIL_BATCH_SIZE]
-
-    session = _make_session()
-    logger.info(f"CCB: a enriquecer {len(to_enrich)} eventos via HTML...")
-
-    for i, event in enumerate(to_enrich):
-        url = event.get("source_url", "")
-        if not url:
-            continue
-        logger.debug(f"CCB: enrich {i+1}/{len(to_enrich)} — {url}")
-        enrich_from_detail(event, session)
-        time.sleep(DETAIL_DELAY)
-
-    logger.info("CCB: enriquecimento completo")
-    return normalized
+    """Backwards-compatible module-level entry point. Delegates to CCBScraper."""
+    return CCBScraper().run(start_date=start_date)
 
 
 if __name__ == "__main__":
