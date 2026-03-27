@@ -1,19 +1,19 @@
 {
   "venue_id": "ccb",
-  "scraped": 808,
-  "valid": 765,
-  "invalid": 43,
+  "scraped": 812,
+  "valid": 770,
+  "invalid": 42,
   "errors": [],
-  "cache_hit": true,
+  "cache_hit": false,
   "merge_stats": {
-    "substituted": 754,
+    "substituted": 760,
     "kept_existing": 0,
-    "new": 11,
-    "tombstoned": 0,
+    "new": 10,
+    "tombstoned": 1,
     "gaps_filled": 0,
     "skipped_old": 0,
-    "source_id_dupes_resolved": 11
+    "source_id_dupes_resolved": 10
   },
   "venue_name": "Centro Cultural de Belém",
-  "avg_credibility_score": 0.841
+  "avg_credibility_score": 0.84
 }

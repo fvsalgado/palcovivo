@@ -4,16 +4,8 @@
   "valid": 896,
   "invalid": 56,
   "errors": [],
-  "cache_hit": true,
-  "merge_stats": {
-    "substituted": 765,
-    "kept_existing": 1,
-    "new": 115,
-    "tombstoned": 0,
-    "gaps_filled": 0,
-    "skipped_old": 15,
-    "source_id_dupes_resolved": 106
-  },
+  "cache_hit": false,
+  "merge_stats": {},
   "venue_name": "Culturgest",
   "avg_credibility_score": 0.876
 }

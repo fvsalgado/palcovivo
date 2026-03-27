@@ -1,0 +1,175 @@
+{
+  "run_at": "2026-03-27T00:44:46.399220+00:00Z",
+  "duration_seconds": 0.3,
+  "summary": {
+    "venues_processed": 4,
+    "total_scraped": 1844,
+    "total_valid": 1746,
+    "total_invalid": 98,
+    "total_after_dedup": 1182,
+    "total_errors": 0,
+    "avg_credibility": 0.825
+  },
+  "venue_quality": {
+    "culturgest": {
+      "total": 30,
+      "with_image": 100.0,
+      "with_price": 53.3,
+      "with_description": 100.0,
+      "with_category": 100.0,
+      "avg_credibility": 0.892,
+      "avg_quality_score": 0.712,
+      "field_pct": {
+        "description": 100.0,
+        "cover_image": 100.0,
+        "domain_not_outros": 100.0,
+        "subcategory": 0.0,
+        "tags": 0.0,
+        "price_display": 53.3,
+        "ticketing_url": 76.7,
+        "credits_any": 70.0,
+        "audience_age": 0.0,
+        "duration_minutes": 0.0,
+        "accessibility": 100.0,
+        "source_url_valid": 100.0
+      }
+    },
+    "theatro-circo": {
+      "total": 130,
+      "with_image": 100.0,
+      "with_price": 91.5,
+      "with_description": 0.0,
+      "with_category": 94.6,
+      "avg_credibility": 0.792,
+      "avg_quality_score": 0.594,
+      "field_pct": {
+        "description": 0.0,
+        "cover_image": 100.0,
+        "domain_not_outros": 94.6,
+        "subcategory": 0.8,
+        "tags": 0.0,
+        "price_display": 91.5,
+        "ticketing_url": 100.0,
+        "credits_any": 47.7,
+        "audience_age": 0.0,
+        "duration_minutes": 20.0,
+        "accessibility": 100.0,
+        "source_url_valid": 100.0
+      }
+    },
+    "ccb": {
+      "total": 135,
+      "with_image": 100.0,
+      "with_price": 0.0,
+      "with_description": 97.0,
+      "with_category": 94.1,
+      "avg_credibility": 0.84,
+      "avg_quality_score": 0.593,
+      "field_pct": {
+        "description": 97.0,
+        "cover_image": 100.0,
+        "domain_not_outros": 94.1,
+        "subcategory": 17.8,
+        "tags": 87.4,
+        "price_display": 0.0,
+        "ticketing_url": 2.2,
+        "credits_any": 0.0,
+        "audience_age": 0.0,
+        "duration_minutes": 0.0,
+        "accessibility": 100.0,
+        "source_url_valid": 100.0
+      }
+    },
+    "tndm": {
+      "total": 11,
+      "with_image": 100.0,
+      "with_price": 18.2,
+      "with_description": 100.0,
+      "with_category": 72.7,
+      "avg_credibility": 0.868,
+      "avg_quality_score": 0.709,
+      "field_pct": {
+        "description": 100.0,
+        "cover_image": 100.0,
+        "domain_not_outros": 72.7,
+        "subcategory": 0.0,
+        "tags": 0.0,
+        "price_display": 18.2,
+        "ticketing_url": 100.0,
+        "credits_any": 90.9,
+        "audience_age": 36.4,
+        "duration_minutes": 18.2,
+        "accessibility": 100.0,
+        "source_url_valid": 100.0
+      }
+    }
+  },
+  "venues": [
+    {
+      "venue_id": "ccb",
+      "scraped": 812,
+      "valid": 770,
+      "invalid": 42,
+      "errors": [],
+      "cache_hit": false,
+      "merge_stats": {
+        "substituted": 760,
+        "kept_existing": 0,
+        "new": 10,
+        "tombstoned": 1,
+        "gaps_filled": 0,
+        "skipped_old": 0,
+        "source_id_dupes_resolved": 10
+      },
+      "venue_name": "Centro Cultural de Belém",
+      "avg_credibility_score": 0.84
+    },
+    {
+      "venue_id": "culturgest",
+      "scraped": 952,
+      "valid": 896,
+      "invalid": 56,
+      "errors": [],
+      "cache_hit": false,
+      "merge_stats": {},
+      "venue_name": "Culturgest",
+      "avg_credibility_score": 0.876
+    },
+    {
+      "venue_id": "theatro-circo",
+      "scraped": 68,
+      "valid": 68,
+      "invalid": 0,
+      "errors": [],
+      "cache_hit": false,
+      "merge_stats": {
+        "substituted": 67,
+        "kept_existing": 0,
+        "new": 0,
+        "tombstoned": 78,
+        "gaps_filled": 0,
+        "skipped_old": 1
+      },
+      "venue_name": "Theatro Circo",
+      "avg_credibility_score": 0.793
+    },
+    {
+      "venue_id": "tndm",
+      "scraped": 12,
+      "valid": 12,
+      "invalid": 0,
+      "errors": [],
+      "cache_hit": false,
+      "merge_stats": {
+        "substituted": 12,
+        "kept_existing": 0,
+        "new": 0,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
+      "venue_name": "Teatro Nacional D. Maria II",
+      "avg_credibility_score": 0.867
+    }
+  ]
+}
