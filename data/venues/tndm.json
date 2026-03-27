@@ -13,12 +13,19 @@
     "coordinates": {
       "lat": 38.7139,
       "lon": -9.1388
-    }
+    },
+    "number": null,
+    "parish": "Santa Maria Maior",
+    "district": "Lisboa",
+    "postal_code": "1200-200",
+    "nuts2": "area-metropolitana-de-lisboa",
+    "nuts3": "grande-lisboa"
   },
   "contact": {
     "website": "https://www.tndm.pt",
-    "email": null,
-    "phone": null
+    "email": "tndm@tndm.pt",
+    "phone": null,
+    "box_office_url": "https://www.tndm.pt/bilheteira"
   },
   "data_source": {
     "scraper_id": "tndm",
@@ -32,5 +39,64 @@
     "created_at": "2026-03-25",
     "created_by": "pipeline-auto",
     "verified": false
+  },
+  "short_name": "D. Maria II",
+  "legal_name": "Teatro Nacional D. Maria II, E.P.E.",
+  "acronym": "TNDM II",
+  "geo": {
+    "lat": 38.7141,
+    "lng": -9.1395,
+    "google_place_id": "ChIJm14aBFczGQ0RdMXJXgGbDgY"
+  },
+  "spaces": [
+    {
+      "id": "sala-garrett",
+      "name": "Sala Garrett",
+      "capacity": 596,
+      "type": "auditorio"
+    },
+    {
+      "id": "sala-estudio",
+      "name": "Sala Estúdio",
+      "capacity": 99,
+      "type": "sala"
+    }
+  ],
+  "transport": {
+    "metro": [
+      "Rossio (linha verde)",
+      "Restauradores (linha azul)"
+    ],
+    "bus": [
+      "711",
+      "736",
+      "759"
+    ],
+    "tram": [
+      "15E"
+    ],
+    "train": [
+      "Rossio"
+    ],
+    "parking": false,
+    "bike_parking": true,
+    "notes": "Centro histórico; parques nas imediações (Parking Garrett, Praça dos Restauradores)"
+  },
+  "ticketing": {
+    "primary_system": "ticketline",
+    "ticketing_url": "https://www.ticketline.sapo.pt",
+    "has_online_sales": true,
+    "has_box_office": true,
+    "accepts_lisboa_card": true
+  },
+  "accessibility": {
+    "wheelchair": true,
+    "hearing_loop": true,
+    "audio_description": false,
+    "sign_language_regular": false,
+    "sign_language_occasional": true,
+    "relaxed_performances": false,
+    "accessible_toilets": true,
+    "accessible_parking": false
   }
 }
