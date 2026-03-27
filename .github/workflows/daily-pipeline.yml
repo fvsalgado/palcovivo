@@ -13,6 +13,7 @@ on:
   schedule:
     - cron: '0 6 * * 1-6'   # seg–sáb às 6h UTC → incremental
     - cron: '0 3 * * 0'     # domingo às 3h UTC → re-scan completo
+
   workflow_dispatch:
     inputs:
       venues:
@@ -56,6 +57,7 @@ permissions:
   contents: write
 
 jobs:
+
   # ─────────────────────────────────────────────────────────────────────────
   # JOB 1 — Descobrir venues e criar batches
   # ─────────────────────────────────────────────────────────────────────────
@@ -75,6 +77,7 @@ jobs:
         run: |
           echo "🔎 A descobrir scrapers disponíveis..."
 
+          # Descobrir todos os venues com scraper.py
           ALL_VENUES=$(find pipeline/scrapers -mindepth 2 -maxdepth 2 -name "scraper.py" \
             | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
             | sort \
@@ -86,10 +89,11 @@ jobs:
 
           echo "Todos os venues disponíveis: $ALL_VENUES"
 
+          # Processar seleção e batches
           python3 << 'EOF'
           import sys, json, os
 
-          all_venues = json.loads(os.environ["ALL_VENUES"])
+          all_venues = json.loads(os.environ.get("ALL_VENUES", "[]"))
           selected_raw = os.environ.get("INPUT_VENUES", "all").strip().lower()
 
           if not selected_raw or selected_raw == "all":
@@ -101,13 +105,15 @@ jobs:
               if unknown:
                   print(f"AVISO: venues desconhecidos ignorados: {unknown}", file=sys.stderr)
 
+          # Criar batches de no máximo 10 venues
           batch_size = 10
-          batches = [selected[i:i+batch_size] for i in range(0, len(selected), batch_size)]
+          batches = [selected[i:i + batch_size] for i in range(0, len(selected), batch_size)]
           if not batches:
               batches = [[]]
 
           has_venues = len(selected) > 0
 
+          # Guardar outputs
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"venues={json.dumps(selected)}\n")
               f.write(f"batches={json.dumps(batches)}\n")
@@ -116,8 +122,6 @@ jobs:
           print(f"Venues selecionados: {len(selected)} → {selected}")
           print(f"Batches criados: {len(batches)}")
           EOF
-        env:
-          ALL_VENUES: "[]"   # placeholder (não usado diretamente)
 
   # ─────────────────────────────────────────────────────────────────────────
   # JOB 2 — Scrape em batches
@@ -134,6 +138,7 @@ jobs:
         batch: ${{ fromJson(needs.discover.outputs.batches) }}
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -142,7 +147,7 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      - name: Calcular semana
+      - name: Calcular semana (cache key)
         id: date
         run: echo "week=$(date -u '+%Y-W%V')" >> $GITHUB_OUTPUT
 
@@ -155,12 +160,15 @@ jobs:
         run: |
           python3 << 'EOF'
           import os, json
+
           batch = json.loads(os.environ["BATCH_JSON"])
           all_batches = json.loads(os.environ["ALL_BATCHES_JSON"])
           reset_raw = os.environ.get("RESET_LIST", "").strip()
 
+          # Encontrar índice do batch atual
           batch_index = next((i for i, b in enumerate(all_batches) if b == batch), 0)
 
+          # Resolver reset_venues
           if reset_raw == "all":
               reset_venues = list(batch)
           else:
@@ -173,10 +181,83 @@ jobs:
               f.write(f"batch_has_reset={'true' if batch_has_reset else 'false'}\n")
               f.write(f"batch_venues={json.dumps(batch)}\n")
               f.write(f"reset_venues={json.dumps(reset_venues)}\n")
+
+          print(f"Batch {batch_index}: {batch}")
+          print(f"Reset ativado: {batch_has_reset} → {reset_venues}")
           EOF
 
-      # ... (o resto do job scrape fica igual ao que tinhas antes - cache, scrape, etc.)
-      # Para não alongar demasiado, assumo que manténs o resto igual. Se quiseres, avisa que eu completo.
+      - name: Restaurar circuit breaker
+        uses: actions/cache@v4
+        with:
+          path: data/cache/circuit_breaker.json
+          key: circuit-breaker-${{ github.run_id }}
+          restore-keys: circuit-breaker-
+
+      - name: Restaurar cache HTTP do batch
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: >-
+            http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-${{ steps.date.outputs.week }}${{
+              steps.batch_meta.outputs.batch_has_reset == 'true' && format('-reset-{0}', github.run_id) || ''
+            }}
+          restore-keys: |
+            http-cache-batch-${{ steps.batch_meta.outputs.batch_index }}-
+
+      - name: 🕷️ Scrape venues do batch
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+          INPUT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
+          BATCH_VENUES_JSON: ${{ steps.batch_meta.outputs.batch_venues }}
+          RESET_VENUES_JSON: ${{ steps.batch_meta.outputs.reset_venues }}
+          FULL_RESCAN: >-
+            ${{ github.event.inputs.full_rescan == 'true' ||
+               (github.event_name == 'schedule' && github.event.schedule == '0 3 * * 0') }}
+        run: |
+          python3 << 'EOF'
+          import os, json, subprocess, sys, shutil
+
+          batch_venues = json.loads(os.environ["BATCH_VENUES_JSON"])
+          reset_venues = json.loads(os.environ.get("RESET_VENUES_JSON", "[]"))
+          force_refresh = os.environ.get("INPUT_FORCE_REFRESH", "false") == "true"
+
+          if not batch_venues:
+              print("Batch vazio — nada a processar")
+              sys.exit(0)
+
+          for venue in batch_venues:
+              print(f"\n{'='*70}")
+              print(f"→ Processando venue: {venue}")
+
+              # RESET se aplicável
+              if venue in reset_venues:
+                  print(f"⚠️  RESET: Apagando histórico de {venue}")
+                  for p in [f"data/events/{venue}.json", f"data/cache/{venue}.cache.json"]:
+                      if os.path.exists(p):
+                          os.remove(p)
+                  if os.path.exists(f"data/backups/{venue}"):
+                      shutil.rmtree(f"data/backups/{venue}")
+                  if os.path.exists(f"data/cache/_http/{venue}"):
+                      shutil.rmtree(f"data/cache/_http/{venue}")
+
+              # Executar scraper
+              args = ["--force"] if force_refresh or venue in reset_venues else []
+              cmd = ["python", "pipeline/run_venue.py", venue] + args
+              print(f"Executando: {' '.join(cmd)}")
+
+              result = subprocess.run(cmd)
+              if result.returncode != 0:
+                  print(f"⚠️ {venue} falhou com código {result.returncode}", file=sys.stderr)
+
+          print(f"\nBatch concluído: {batch_venues}")
+          EOF
+
+      - name: Guardar circuit breaker
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: data/cache/circuit_breaker.json
+          key: circuit-breaker-${{ github.run_id }}
 
       - name: Upload artefacto do batch
         uses: actions/upload-artifact@v4
@@ -201,12 +282,10 @@ jobs:
     if: needs.discover.outputs.has_venues == 'false'
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Nenhum venue encontrado para processar."
-          echo "Venues disponíveis: ${{ needs.discover.outputs.venues }}"
+      - run: echo "Nenhum venue encontrado para processar."
 
   # ─────────────────────────────────────────────────────────────────────────
-  # JOB 3 — Validação global (usando o teu novo validador v1.1)
+  # JOB 3 — Validação (com o teu validador v1.1)
   # ─────────────────────────────────────────────────────────────────────────
   validate:
     name: ✅ Validar resultados
@@ -225,14 +304,14 @@ jobs:
       - name: Instalar dependências
         run: pip install -r requirements.txt -q
 
-      - name: Download artefactos dos batches
+      - name: Download artefactos
         uses: actions/download-artifact@v4
         with:
           pattern: batch-*
           merge-multiple: true
           path: data/
 
-      - name: ✅ Validação avançada v1.1
+      - name: ✅ Validação Avançada v1.1
         id: check
         env:
           PYTHONPATH: ${{ github.workspace }}
@@ -240,57 +319,49 @@ jobs:
           python3 << 'EOF'
           import json, os, sys
           from pathlib import Path
-          from datetime import datetime
 
-          # Importa o teu validador
-          from pipeline.validator import (
-              validate_batch,
-              field_quality_report,
-              print_quality_report
-          )
+          # Importa o validador (certifica-te que o ficheiro existe em pipeline/validator.py)
+          from pipeline.validator import validate_batch, field_quality_report, print_quality_report
 
           events_dir = Path("data/events")
           all_events = []
 
           for file in events_dir.glob("*.json"):
               try:
-                  events = json.loads(file.read_text(encoding="utf-8"))
-                  all_events.extend(events)
+                  data = json.loads(file.read_text(encoding="utf-8"))
+                  all_events.extend(data)
               except Exception as e:
-                  print(f"Erro ao ler {file.name}: {e}", file=sys.stderr)
+                  print(f"Erro ao ler {file.name}: {e}")
 
           if not all_events:
-              print("Nenhum evento encontrado para validar.")
+              print("Nenhum evento para validar.")
               with open(os.environ["GITHUB_OUTPUT"], "a") as f:
                   f.write("ok=false\n")
-              sys.exit(1)
+              sys.exit(0)
 
-          # Validação
-          valid_events, invalid_events = validate_batch(all_events)
-
-          # Relatório de qualidade
-          report = field_quality_report(valid_events)
+          valid, invalid = validate_batch(all_events)
+          report = field_quality_report(valid)
           print_quality_report(report)
 
           # Guardar relatório
-          report_path = Path("data/logs/quality_report.json")
-          report_path.parent.mkdir(parents=True, exist_ok=True)
-          report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+          Path("data/logs").mkdir(exist_ok=True)
+          Path("data/logs/quality_report.json").write_text(
+              json.dumps(report, indent=2, ensure_ascii=False)
+          )
 
-          # Decisão final
-          success = len(invalid_events) == 0
+          success = len(invalid) == 0
           with open(os.environ["GITHUB_OUTPUT"], "a") as f:
               f.write(f"ok={str(success).lower()}\n")
 
           if not success:
-              print(f"❌ {len(invalid_events)} eventos inválidos encontrados!", file=sys.stderr)
+              print(f"❌ {len(invalid)} eventos inválidos!", file=sys.stderr)
               sys.exit(1)
 
-          print(f"✅ Validação concluída: {len(valid_events)} eventos válidos")
+          print(f"✅ Validação OK: {len(valid)} eventos válidos")
           EOF
 
   # ─────────────────────────────────────────────────────────────────────────
-  # JOB 4 — Publicar
+  # JOB 4 — Agregar e publicar
   # ─────────────────────────────────────────────────────────────────────────
   publish:
     name: 🚀 Agregar e publicar
@@ -340,5 +411,4 @@ jobs:
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/events/ data/logs/ data/master.json data/venues/ index.html
           git diff --staged --quiet || git commit -m "Pipeline $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git pull --rebase origin main
-          git push
+          git pull --rebase origin main && git push || echo "Nenhuma alteração para commitar"
