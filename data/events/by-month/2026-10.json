@@ -122,7 +122,7 @@
         "scraped_at": "2026-03-27T10:57:30.037742+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:d8816931de7a3428",
-        "harmonized_at": "2026-03-27T10:59:15.642164+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.437748+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -264,7 +264,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:19.985522+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692366+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709877+00:00"
       }
     },
     {
@@ -391,7 +391,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:43.289857+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692282+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709767+00:00"
       }
     },
     {
@@ -518,7 +518,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:10.982566+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692289+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709793+00:00"
       }
     },
     {
@@ -641,7 +641,7 @@
         "scraped_at": "2026-03-27T10:57:30.037767+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:e6de8b83b53b8382",
-        "harmonized_at": "2026-03-27T10:59:15.642614+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.438186+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -783,7 +783,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:33.180095+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692277+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709761+00:00"
       }
     },
     {
@@ -908,7 +908,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:19.317667+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692360+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709871+00:00"
       }
     },
     {
@@ -1033,7 +1033,7 @@
         "scraped_at": "2026-03-27T10:57:30.037789+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:9a3d3a5a8e3a0e34",
-        "harmonized_at": "2026-03-27T10:59:15.642993+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.438555+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

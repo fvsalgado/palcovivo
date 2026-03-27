@@ -4,15 +4,14 @@
   "valid": 68,
   "invalid": 0,
   "errors": [],
-  "cache_hit": false,
+  "cache_hit": true,
   "merge_stats": {
-    "substituted": 0,
+    "substituted": 66,
     "kept_existing": 0,
-    "new": 66,
+    "new": 0,
     "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 2,
-    "source_id_dupes_resolved": 66
+    "skipped_old": 2
   },
   "venue_name": "Theatro Circo",
   "avg_credibility_score": 0.813

@@ -126,7 +126,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:44.178020+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692574+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710071+00:00"
       }
     },
     {
@@ -251,7 +251,7 @@
         "scraped_at": "2026-03-27T10:57:30.037561+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:09499a2e146e190b",
-        "harmonized_at": "2026-03-27T10:59:15.638862+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.434424+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -390,7 +390,7 @@
         "scraped_at": "2026-03-27T10:57:30.037614+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:eb14c689d0d3bd48",
-        "harmonized_at": "2026-03-27T10:59:15.639709+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.435274+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -532,7 +532,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:42.261008+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692562+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710058+00:00"
       }
     },
     {
@@ -659,7 +659,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:41.597856+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692555+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710052+00:00"
       }
     },
     {
@@ -786,7 +786,7 @@
         "scraped_at": "2026-03-27T10:57:30.037639+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:248ba4f3d7e1783e",
-        "harmonized_at": "2026-03-27T10:59:15.640244+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.435829+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -929,7 +929,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:40.907752+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692530+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710047+00:00"
       }
     },
     {
@@ -1056,7 +1056,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:40.210983+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692524+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710041+00:00"
       }
     },
     {
@@ -1180,7 +1180,7 @@
         "scraped_at": "2026-03-27T10:57:30.037666+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:e99ff305697ca26c",
-        "harmonized_at": "2026-03-27T10:59:15.640667+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.436235+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1322,7 +1322,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:39.547448+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692519+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710036+00:00"
       }
     },
     {
@@ -1447,7 +1447,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:43.512873+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692568+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710065+00:00"
       }
     },
     {
@@ -1578,7 +1578,7 @@
         "scraped_at": "2026-03-27T11:33:18.084233+00:00",
         "scraper_id": "theatro-circo",
         "raw_data_hash": "sha256:dde9cab555f91f67",
-        "harmonized_at": "2026-03-27T11:33:48.678618+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.695410+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1713,7 +1713,7 @@
         "scraped_at": "2026-03-27T11:33:20.472508+00:00",
         "scraper_id": "theatro-circo",
         "raw_data_hash": "sha256:ca06762882e86521",
-        "harmonized_at": "2026-03-27T11:33:48.678832+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.695565+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1852,7 +1852,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:38.991433+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692513+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710030+00:00"
       }
     },
     {
@@ -1979,7 +1979,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:37.770559+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692501+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710019+00:00"
       }
     },
     {
@@ -2106,7 +2106,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:38.325159+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692507+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710025+00:00"
       }
     },
     {
@@ -2233,7 +2233,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:37.207346+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692495+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710013+00:00"
       }
     },
     {
@@ -2357,7 +2357,7 @@
         "scraped_at": "2026-03-27T10:57:30.037687+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:3467ac092c574b7a",
-        "harmonized_at": "2026-03-27T10:59:15.641107+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.436678+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2499,7 +2499,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:36.542472+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692489+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.710006+00:00"
       }
     },
     {
@@ -2626,7 +2626,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:35.986829+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692483+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709997+00:00"
       }
     },
     {
@@ -2785,7 +2785,7 @@
         "scraped_at": "2026-03-27T11:34:23.661924+00:00",
         "scraper_id": "tndm",
         "raw_data_hash": "sha256:03580ba8aa0dd75e",
-        "harmonized_at": "2026-03-27T11:34:25.175441+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.981554+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2924,7 +2924,7 @@
         "scraped_at": "2026-03-27T10:57:30.037716+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:38b568aa09b0ab3b",
-        "harmonized_at": "2026-03-27T10:59:15.641746+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.437328+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3066,7 +3066,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:34.765406+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692477+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709992+00:00"
       }
     },
     {
@@ -3193,7 +3193,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:33.542683+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692466+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709981+00:00"
       }
     },
     {
@@ -3320,7 +3320,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:34.100848+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692471+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709986+00:00"
       }
     },
     {
@@ -3447,7 +3447,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:32.877734+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692460+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709975+00:00"
       }
     },
     {
@@ -3574,7 +3574,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:32.212710+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692454+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709970+00:00"
       }
     },
     {
@@ -3701,7 +3701,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:31.655767+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692448+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709964+00:00"
       }
     },
     {
@@ -3828,7 +3828,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:30.991286+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692443+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709959+00:00"
       }
     },
     {
@@ -3949,7 +3949,7 @@
         "scraped_at": "2026-03-27T11:33:41.252869+00:00",
         "scraper_id": "theatro-circo",
         "raw_data_hash": "sha256:d2044faa8a8e39fb",
-        "harmonized_at": "2026-03-27T11:33:48.680522+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.697367+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4091,7 +4091,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:30.432957+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692437+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709953+00:00"
       }
     },
     {
@@ -4218,7 +4218,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:29.767276+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692431+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709947+00:00"
       }
     },
     {
@@ -4349,7 +4349,7 @@
         "scraped_at": "2026-03-27T11:33:43.149945+00:00",
         "scraper_id": "theatro-circo",
         "raw_data_hash": "sha256:e4cfe36101922ebb",
-        "harmonized_at": "2026-03-27T11:33:48.680678+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.697501+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4489,7 +4489,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:29.102168+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692425+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709939+00:00"
       }
     },
     {
@@ -4620,7 +4620,7 @@
         "scraped_at": "2026-03-27T11:33:45.423763+00:00",
         "scraper_id": "theatro-circo",
         "raw_data_hash": "sha256:6045feef93eb013a",
-        "harmonized_at": "2026-03-27T11:33:48.680787+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.697606+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

@@ -122,7 +122,7 @@
         "scraped_at": "2026-03-27T10:57:30.037898+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:8f1ac0f5cab5eaf6",
-        "harmonized_at": "2026-03-27T10:59:15.644778+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.440410+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -264,7 +264,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:15.330610+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692336+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709846+00:00"
       }
     },
     {
@@ -387,7 +387,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:14.665784+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692330+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709840+00:00"
       }
     },
     {
@@ -511,7 +511,7 @@
         "scraped_at": "2026-03-27T10:57:30.037924+00:00",
         "scraper_id": "ccb",
         "raw_data_hash": "sha256:a3d129ccd450a18b",
-        "harmonized_at": "2026-03-27T10:59:15.645231+00:00",
+        "harmonized_at": "2026-03-27T11:38:30.440898+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -653,7 +653,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:12.314784+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692324+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709834+00:00"
       }
     }
   ]

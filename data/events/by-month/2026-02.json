@@ -136,7 +136,7 @@
         "scraped_at": "2026-03-27T11:31:50.890214+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-27T11:31:51.397214+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.407157+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -271,7 +271,7 @@
         "scraped_at": "2026-03-27T11:24:37.879508+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:03a6981e50361a41",
-        "harmonized_at": "2026-03-27T11:31:51.289379+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.300705+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -427,7 +427,7 @@
         "scraped_at": "2026-03-27T11:24:39.846466+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-27T11:31:51.289874+00:00",
+        "harmonized_at": "2026-03-27T11:38:31.301185+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -566,7 +566,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:57.023621+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692110+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709595+00:00"
       }
     },
     {
@@ -693,7 +693,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:52.476386+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692070+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709550+00:00"
       }
     },
     {
@@ -820,7 +820,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:12.581468+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692235+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709719+00:00"
       }
     },
     {
@@ -956,7 +956,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:13.129997+00:00",
-        "not_seen_since": "2026-03-27T11:33:48.692241+00:00"
+        "not_seen_since": "2026-03-27T11:38:31.709725+00:00"
       }
     }
   ]
