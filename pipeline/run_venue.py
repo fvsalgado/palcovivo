@@ -34,13 +34,19 @@ BACKUPS_DIR = DATA_DIR / "backups"
 import time as _time
 
 _REGISTRY_PATH = Path(__file__).parent / "venues.config.json"
+_REGISTRY_CACHE: dict | None = None
 
 def _load_registry() -> dict:
+    """Lê venues.config.json uma única vez por processo e reutiliza em memória."""
+    global _REGISTRY_CACHE
+    if _REGISTRY_CACHE is not None:
+        return _REGISTRY_CACHE
     try:
         with open(_REGISTRY_PATH, encoding="utf-8") as f:
-            return json.load(f)
+            _REGISTRY_CACHE = json.load(f)
     except Exception:
-        return {"venues": {}, "defaults": {}}
+        _REGISTRY_CACHE = {"venues": {}, "defaults": {}}
+    return _REGISTRY_CACHE
 
 def _venue_config(venue_id: str) -> dict:
     """Devolve config do venue fundido com defaults."""
