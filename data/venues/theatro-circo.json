@@ -5,20 +5,27 @@
   "venue_type": "teatro",
   "is_permanent": true,
   "address": {
-    "street": "Av. da Liberdade, 697",
+    "street": "Avenida da Liberdade",
     "postcode": "4710-251",
     "municipality": "Braga",
-    "region": "Braga",
+    "region": "Norte",
     "country": "PT",
     "coordinates": {
       "lat": 41.5503,
       "lon": -8.4266
-    }
+    },
+    "number": "697",
+    "parish": "Maximinos",
+    "district": "Braga",
+    "postal_code": "4710-251",
+    "nuts2": "norte",
+    "nuts3": "cavado"
   },
   "contact": {
-    "website": "https://theatrocirco.com",
-    "email": "theatrocirco@theatrocirco.com",
-    "phone": "253 203 800"
+    "website": "https://www.theatro-circo.com",
+    "email": "geral@theatro-circo.com",
+    "phone": "253 203 800",
+    "box_office_url": "https://www.bol.pt"
   },
   "data_source": {
     "scraper_id": "theatro-circo",
@@ -32,5 +39,57 @@
     "created_at": "2026-03-25",
     "created_by": "pipeline-auto",
     "verified": false
+  },
+  "short_name": "Theatro Circo",
+  "legal_name": "Theatro Circo — Empresa de Espectáculos S.A.",
+  "acronym": "TC",
+  "geo": {
+    "lat": 41.5474,
+    "lng": -8.4266,
+    "google_place_id": "ChIJLRqrT1pFHg0R3i5QHcSwcNg"
+  },
+  "spaces": [
+    {
+      "id": "grande-sala",
+      "name": "Grande Sala",
+      "capacity": 1200,
+      "type": "auditorio"
+    },
+    {
+      "id": "sala-estudio",
+      "name": "Sala Estúdio",
+      "capacity": 120,
+      "type": "sala"
+    }
+  ],
+  "transport": {
+    "metro": [],
+    "bus": [
+      "Linha urbana de Braga — paragem Av. Liberdade"
+    ],
+    "tram": [],
+    "train": [
+      "Braga (1,5 km)"
+    ],
+    "parking": true,
+    "bike_parking": false,
+    "notes": "Parques de estacionamento nas imediações da Av. da Liberdade"
+  },
+  "ticketing": {
+    "primary_system": "bol",
+    "ticketing_url": "https://www.bol.pt",
+    "has_online_sales": true,
+    "has_box_office": true,
+    "accepts_lisboa_card": false
+  },
+  "accessibility": {
+    "wheelchair": true,
+    "hearing_loop": false,
+    "audio_description": false,
+    "sign_language_regular": false,
+    "sign_language_occasional": true,
+    "relaxed_performances": false,
+    "accessible_toilets": true,
+    "accessible_parking": false
   }
 }
