@@ -6,13 +6,12 @@
   "errors": [],
   "cache_hit": false,
   "merge_stats": {
-    "substituted": 760,
+    "substituted": 770,
     "kept_existing": 0,
-    "new": 10,
-    "tombstoned": 1,
+    "new": 0,
+    "tombstoned": 0,
     "gaps_filled": 0,
-    "skipped_old": 0,
-    "source_id_dupes_resolved": 10
+    "skipped_old": 0
   },
   "venue_name": "Centro Cultural de Belém",
   "avg_credibility_score": 0.84

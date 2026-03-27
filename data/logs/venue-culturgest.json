@@ -5,7 +5,14 @@
   "invalid": 56,
   "errors": [],
   "cache_hit": false,
-  "merge_stats": {},
+  "merge_stats": {
+    "substituted": 895,
+    "kept_existing": 1,
+    "new": 0,
+    "tombstoned": 0,
+    "gaps_filled": 0,
+    "skipped_old": 0
+  },
   "venue_name": "Culturgest",
   "avg_credibility_score": 0.876
 }

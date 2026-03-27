@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-03-27T00:44:46.399220+00:00Z",
-  "duration_seconds": 0.3,
+  "run_at": "2026-03-27T08:16:07.495329+00:00Z",
+  "duration_seconds": 0.2,
   "summary": {
     "venues_processed": 4,
     "total_scraped": 1844,
@@ -113,13 +113,12 @@
       "errors": [],
       "cache_hit": false,
       "merge_stats": {
-        "substituted": 760,
+        "substituted": 770,
         "kept_existing": 0,
-        "new": 10,
-        "tombstoned": 1,
+        "new": 0,
+        "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 0,
-        "source_id_dupes_resolved": 10
+        "skipped_old": 0
       },
       "venue_name": "Centro Cultural de Belém",
       "avg_credibility_score": 0.84
@@ -131,7 +130,14 @@
       "invalid": 56,
       "errors": [],
       "cache_hit": false,
-      "merge_stats": {},
+      "merge_stats": {
+        "substituted": 895,
+        "kept_existing": 1,
+        "new": 0,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
       "venue_name": "Culturgest",
       "avg_credibility_score": 0.876
     },
@@ -146,7 +152,7 @@
         "substituted": 67,
         "kept_existing": 0,
         "new": 0,
-        "tombstoned": 78,
+        "tombstoned": 0,
         "gaps_filled": 0,
         "skipped_old": 1
       },
@@ -160,14 +166,7 @@
       "invalid": 0,
       "errors": [],
       "cache_hit": false,
-      "merge_stats": {
-        "substituted": 12,
-        "kept_existing": 0,
-        "new": 0,
-        "tombstoned": 0,
-        "gaps_filled": 0,
-        "skipped_old": 0
-      },
+      "merge_stats": {},
       "venue_name": "Teatro Nacional D. Maria II",
       "avg_credibility_score": 0.867
     }
