@@ -23,7 +23,8 @@ primeira-plateia/
 │   │   └── cache.py            # Cache local (TTL 23h)
 │   ├── utils/
 │   │   └── notify.py           # Email HTML + Ntfy
-│   └── run.py                  # Orquestrador
+│   ├── run_venue.py             # Scrape de venue único
+│   └── aggregate.py             # Agregação + master.json
 ├── data/
 │   ├── venues/                 # {venue-id}.json — 1 ficheiro por venue
 │   ├── events/                 # {venue-id}.json — eventos por venue
@@ -31,8 +32,8 @@ primeira-plateia/
 │   ├── logs/                   # Relatórios de execução
 │   └── master.json             # Output final para o site
 ├── schemas/
-│   ├── venue.schema.json       # JSON Schema formal de venue
-│   └── event.schema.json       # JSON Schema formal de evento
+│   ├── venue.schema.json       # JSON Schema de venue (referência/documentação)
+│   └── event.schema.json       # JSON Schema de evento (referência/documentação)
 ├── site/                       # Frontend Astro (a construir)
 ├── admin/
 │   └── index.html              # Interface de gestão local
@@ -77,8 +78,7 @@ primeira-plateia/
 
 1. Criar `data/venues/{venue-id}.json` com dados do venue
 2. Criar `pipeline/scrapers/{venue-id}/scraper.py` com função `run() → list[dict]`
-3. Registar em `pipeline/run.py` no dict `SCRAPER_REGISTRY`
-4. Testar: `python -m pipeline.run --force`
+3. Testar: `PYTHONPATH=. python pipeline/run_venue.py <venue-id> --force`
 
 Consulta `pipeline/scrapers/ccb/scraper.py` como template.
 
@@ -101,14 +101,14 @@ Consulta `pipeline/scrapers/ccb/scraper.py` como template.
 # Instalar dependências
 pip install -r requirements.txt
 
-# Pipeline completo
-python -m pipeline.run
+# Scrape de um venue
+PYTHONPATH=. python pipeline/run_venue.py ccb
 
 # Forçar refresh sem cache
-python -m pipeline.run --force
+PYTHONPATH=. python pipeline/run_venue.py ccb --force
 
-# Só o scraper do CCB
-python -m pipeline.scrapers.ccb.scraper
+# Agregar todos os venues + gerar master.json
+PYTHONPATH=. python pipeline/aggregate.py
 
 # Enviar notificações com o último relatório
 python -m pipeline.utils.notify

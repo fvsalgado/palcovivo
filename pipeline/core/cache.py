@@ -15,7 +15,7 @@ import hashlib
 import json
 import logging
 import re
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -98,8 +98,9 @@ def credibility_score(event: dict) -> float:
 
 def _event_ttl_hours(event: dict) -> int:
     """Determina TTL em horas com base no estado do evento."""
-    today = datetime.now().strftime("%Y-%m-%d")
-    in_2w = (datetime.now() + timedelta(days=14)).strftime("%Y-%m-%d")
+    now = datetime.now(timezone.utc)
+    today = now.strftime("%Y-%m-%d")
+    in_2w = (now + timedelta(days=14)).strftime("%Y-%m-%d")
 
     date_first = event.get("date_first") or (event.get("dates") or [{}])[0].get("date")
     date_close = event.get("date_close")
@@ -117,7 +118,7 @@ def _event_ttl_hours(event: dict) -> int:
 
     # Passou
     try:
-        past_days = (datetime.now() - datetime.fromisoformat(date_first)).days
+        past_days = (now.date() - date.fromisoformat(date_first[:10])).days
         return TTL["past_recent"] if past_days <= 30 else TTL["past_old"]
     except Exception:
         return TTL["past_recent"]
@@ -289,7 +290,7 @@ def should_tombstone(event: dict) -> bool:
     date_last = event.get("date_last") or event.get("date_first")
     if date_last:
         try:
-            past_days = (datetime.now() - datetime.fromisoformat(date_last)).days
+            past_days = (datetime.now(timezone.utc).date() - date.fromisoformat(date_last[:10])).days
             if past_days > TOMBSTONE_PAST_DAYS:
                 return True
         except Exception:

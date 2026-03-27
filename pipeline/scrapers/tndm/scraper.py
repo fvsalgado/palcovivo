@@ -344,6 +344,8 @@ def _expand_date_range_with_schedule(
     except ValueError:
         return []
 
+    MAX_SESSIONS = 365  # limite de segurança para evitar expansões absurdas
+
     results = []
     current = d_start
     while current <= d_end:
@@ -353,6 +355,8 @@ def _expand_date_range_with_schedule(
         elif wd in weekday_schedule:
             results.append((current.isoformat(), weekday_schedule[wd]))
         current += timedelta(days=1)
+        if len(results) >= MAX_SESSIONS:
+            break
 
     return results
 

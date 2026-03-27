@@ -70,13 +70,15 @@ jobs:
       - uses: actions/checkout@v4
 
       - id: list
+        env:
+          INPUT_VENUES: ${{ github.event.inputs.venues }}
         run: |
           ALL=$(find pipeline/scrapers -name "scraper.py" \
             | sed 's|pipeline/scrapers/||;s|/scraper.py||' \
             | sort \
             | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin]))")
 
-          SELECTED="${{ github.event.inputs.venues }}"
+          SELECTED="$INPUT_VENUES"
 
           if [ -z "$SELECTED" ] || [ "$SELECTED" = "all" ]; then
             echo "venues=$ALL" >> $GITHUB_OUTPUT
@@ -144,9 +146,10 @@ jobs:
       # Apaga data/events/{venue}.json, data/backups/{venue}/ e cache monolítica
       - name: ⚠️ Reset histórico ${{ matrix.venue }}
         if: ${{ github.event.inputs.reset_venues != '' }}
+        env:
+          RESET_LIST: ${{ github.event.inputs.reset_venues }}
+          VENUE: ${{ matrix.venue }}
         run: |
-          RESET_LIST="${{ github.event.inputs.reset_venues }}"
-          VENUE="${{ matrix.venue }}"
           if echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
             echo "⚠️  RESET: a apagar histórico de $VENUE"
             rm -f "data/events/$VENUE.json"
@@ -163,6 +166,9 @@ jobs:
       - name: 🕷️ Scrape ${{ matrix.venue }}
         env:
           PYTHONPATH: ${{ github.workspace }}
+          INPUT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
+          INPUT_RESET_VENUES: ${{ github.event.inputs.reset_venues }}
+          VENUE: ${{ matrix.venue }}
           FULL_RESCAN: >-
             ${{
               github.event.inputs.full_rescan == 'true' ||
@@ -170,11 +176,10 @@ jobs:
             }}
         run: |
           ARGS=""
-          RESET_LIST="${{ github.event.inputs.reset_venues }}"
-          VENUE="${{ matrix.venue }}"
+          RESET_LIST="$INPUT_RESET_VENUES"
 
           # force_refresh ou reset implicam --force
-          if [ "${{ github.event.inputs.force_refresh }}" = "true" ]; then
+          if [ "$INPUT_FORCE_REFRESH" = "true" ]; then
             ARGS="--force"
           fi
           if [ -n "$RESET_LIST" ] && echo "$RESET_LIST" | tr ',' '\n' | grep -qx "$VENUE"; then
@@ -182,7 +187,7 @@ jobs:
             echo "→ $VENUE resetado: a correr com --force"
           fi
 
-          python pipeline/run_venue.py $VENUE $ARGS
+          python pipeline/run_venue.py "$VENUE" $ARGS
 
       - name: Upload artefacto
         uses: actions/upload-artifact@v4
@@ -228,15 +233,31 @@ jobs:
 
       - name: ✅ Verificar sanidade dos dados
         id: check
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
           python3 << 'EOF'
-          import json, os, sys
+          import json, os, sys, subprocess
           from pathlib import Path
           from datetime import datetime
+          from pipeline.core.cache import credibility_score
 
           events_dir = Path("data/events")
           today = datetime.now().strftime("%Y-%m-%d")
           cutoff_future = str(int(today[:4]) + 2) + today[4:]  # hoje + 2 anos
+
+          # Carregar counts do commit anterior (para detecção de regressões)
+          prev_counts = {}
+          for f in sorted(events_dir.glob("*.json")):
+              try:
+                  raw = subprocess.run(
+                      ["git", "show", f"HEAD:data/events/{f.name}"],
+                      capture_output=True, text=True, timeout=10
+                  )
+                  if raw.returncode == 0:
+                      prev_counts[f.stem] = len(json.loads(raw.stdout))
+              except Exception:
+                  pass
 
           errors = []
           warnings = []
@@ -254,6 +275,14 @@ jobs:
               if n == 0:
                   errors.append(f"{venue}: 0 eventos — possível falha de scraping")
 
+              # Detecção de regressão: queda > 50% em relação ao commit anterior
+              prev_n = prev_counts.get(venue, 0)
+              if prev_n >= 10 and n < prev_n * 0.5:
+                  warnings.append(
+                      f"{venue}: queda abrupta de eventos ({prev_n} → {n}, "
+                      f"-{round((1 - n/prev_n) * 100)}%) — verificar scraper"
+                  )
+
               # Datas absurdas (> 2 anos no futuro)
               bad_dates = [
                   e.get("id", "?")
@@ -263,22 +292,17 @@ jobs:
               if bad_dates:
                   warnings.append(f"{venue}: {len(bad_dates)} evento(s) com data > 2 anos no futuro")
 
-              # Score médio de credibilidade
-              scores = []
-              for e in events:
-                  s = 0.0
-                  if e.get("title") and len(e.get("title","")) > 2: s += 0.20
-                  if e.get("description") and len(e.get("description","")) > 30: s += 0.15
-                  if e.get("dates") and any(d.get("date") for d in e.get("dates",[])): s += 0.20
-                  if (e.get("media") or {}).get("cover_image"): s += 0.15
-                  if (e.get("price") or {}).get("price_display") or (e.get("price") or {}).get("is_free"): s += 0.10
-                  if e.get("source_url","").startswith("http"): s += 0.10
-                  scores.append(round(s, 2))
+              # Score médio de credibilidade (usa a função canónica do pipeline)
+              scores = [credibility_score(e) for e in events]
               avg = round(sum(scores)/len(scores), 2) if scores else 0.0
               if avg < 0.40:
                   warnings.append(f"{venue}: score médio baixo ({avg:.2f})")
 
-              table_rows.append(f"| {venue} | {n} | {avg:.2f} | {'⚠️' if bad_dates else '✓'} |")
+              delta = ""
+              if prev_n > 0:
+                  diff = n - prev_n
+                  delta = f" ({'+' if diff >= 0 else ''}{diff})"
+              table_rows.append(f"| {venue} | {n}{delta} | {avg:.2f} | {'⚠️' if bad_dates else '✓'} |")
 
           # Escrever Step Summary (aparece directamente no ecrã do run no GitHub)
           summary_lines = [
@@ -360,19 +384,24 @@ jobs:
 
       - name: 💾 Commit e push
         if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          INPUT_VENUES: ${{ github.event.inputs.venues || 'all' }}
+          INPUT_RESET_VENUES: ${{ github.event.inputs.reset_venues }}
+          INPUT_FULL_RESCAN: ${{ github.event.inputs.full_rescan }}
+          INPUT_FORCE_REFRESH: ${{ github.event.inputs.force_refresh }}
         run: |
           git config --local user.email "pipeline@primeiraplateia.pt"
           git config --local user.name "Primeira Plateia Pipeline"
           git add data/events/ data/logs/ data/master.json data/venues/ data/backups/ index.html
-          COMMIT_MSG="Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — ${{ github.event.inputs.venues || 'all' }}"
-          [ -n "${{ github.event.inputs.reset_venues }}" ] && COMMIT_MSG="$COMMIT_MSG [RESET: ${{ github.event.inputs.reset_venues }}]"
-          [ "${{ github.event.inputs.full_rescan }}" = "true" ] && COMMIT_MSG="$COMMIT_MSG [re-scan completo]"
-          [ "${{ github.event.inputs.force_refresh }}" = "true" ] && COMMIT_MSG="$COMMIT_MSG [refresh HTTP]"
+          COMMIT_MSG="Pipeline $(date -u '+%Y-%m-%d %H:%M UTC') — $INPUT_VENUES"
+          [ -n "$INPUT_RESET_VENUES" ] && COMMIT_MSG="$COMMIT_MSG [RESET: $INPUT_RESET_VENUES]"
+          [ "$INPUT_FULL_RESCAN" = "true" ] && COMMIT_MSG="$COMMIT_MSG [re-scan completo]"
+          [ "$INPUT_FORCE_REFRESH" = "true" ] && COMMIT_MSG="$COMMIT_MSG [refresh HTTP]"
           git diff --staged --quiet || (
             git commit -m "$COMMIT_MSG" \
             && git pull --rebase origin main \
-            || (echo "❌ ERRO: conflito no rebase — push cancelado" && exit 1)
-            git push
+            && git push \
+            || (echo "❌ ERRO: commit/rebase/push falhou" && exit 1)
           )
 
       - name: ℹ️ Dry run — sem commit
