@@ -16,6 +16,10 @@
         "incremental": true,
         "two_pass": true,
         "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
       }
     },
     "culturgest": {
@@ -33,6 +37,10 @@
         "incremental": true,
         "two_pass": true,
         "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
       }
     },
     "theatro-circo": {
@@ -50,6 +58,10 @@
         "incremental": true,
         "two_pass": true,
         "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
       }
     },
     "tndm": {
@@ -67,6 +79,10 @@
         "incremental": true,
         "two_pass": true,
         "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
       }
     }
   },
@@ -82,6 +98,10 @@
       "incremental": true,
       "two_pass": false,
       "fetch_detail_html": false
+    },
+    "circuit_breaker": {
+      "max_consecutive_failures": 5,
+      "alert_after_failures": 3
     }
   }
 }

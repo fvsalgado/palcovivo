@@ -30,7 +30,7 @@ class TestSlugify:
         assert slugify("São João da Música") == "sao-joao-da-musica"
 
     def test_special_chars(self):
-        assert slugify("Concerto #1 — Beethoven!") == "concerto-1--beethoven"
+        assert slugify("Concerto #1 — Beethoven!") == "concerto-1-beethoven"
 
     def test_multiple_spaces(self):
         assert slugify("  muitos   espaços  ") == "muitos-espacos"

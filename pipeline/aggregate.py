@@ -5,8 +5,13 @@ Melhorias v3:
   - data/archive/YYYY.json: eventos passados agrupados por ano
   - Inclui quality_score do validator no relatório por venue
   - Campos de qualidade do validator (quality_warnings) no relatório
+Melhorias v4:
+  - Manifest system: skip re-agregação quando nada mudou (--force para forçar)
+  - Fragmentação do master.json: data/index.json + data/events/by-month/YYYY-MM.json
 """
 
+import argparse
+import hashlib
 import json
 import logging
 import sys
@@ -22,6 +27,8 @@ DATA_DIR    = ROOT / "data"
 EVENTS_DIR  = DATA_DIR / "events"
 LOGS_DIR    = DATA_DIR / "logs"
 ARCHIVE_DIR = DATA_DIR / "archive"
+CACHE_DIR   = DATA_DIR / "cache"
+MANIFEST_PATH = CACHE_DIR / ".agg_manifest.json"
 
 from pipeline.core.dedup      import deduplicate
 from pipeline.core.cache      import credibility_score, should_tombstone
@@ -34,6 +41,43 @@ logging.basicConfig(
 )
 logger = logging.getLogger("pipeline.aggregate")
 
+
+# ---------------------------------------------------------------------------
+# Manifest helpers
+# ---------------------------------------------------------------------------
+
+def _compute_manifest() -> dict:
+    """Computa {venue_id: md5_hash} para todos os ficheiros de eventos."""
+    manifest = {}
+    for path in sorted(EVENTS_DIR.glob("*.json")):
+        if path.name == ".gitkeep":
+            continue
+        manifest[path.stem] = hashlib.md5(path.read_bytes()).hexdigest()
+    return manifest
+
+
+def _load_manifest() -> dict:
+    """Carrega o manifesto salvo, retorna {} se não existir."""
+    if MANIFEST_PATH.exists():
+        try:
+            with open(MANIFEST_PATH, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def _save_manifest(manifest: dict) -> None:
+    """Guarda o manifesto em data/cache/.agg_manifest.json."""
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    logger.info(f"Manifesto salvo em {MANIFEST_PATH}")
+
+
+# ---------------------------------------------------------------------------
+# Load + quality
+# ---------------------------------------------------------------------------
 
 def load_all() -> tuple[list[dict], list[dict]]:
     all_events, venue_reports = [], []
@@ -134,6 +178,10 @@ def _write_archive(archive_events: list[dict]) -> None:
         logger.info(f"Archive {year}: {len(merged)} eventos guardados em {path.name}")
 
 
+# ---------------------------------------------------------------------------
+# Master + fragments
+# ---------------------------------------------------------------------------
+
 def generate_master(events: list[dict]) -> dict:
     events.sort(key=lambda e: (e.get("date_first") or "9999-99-99"))
     by_domain, by_venue, by_month = {}, {}, {}
@@ -173,11 +221,76 @@ def generate_master(events: list[dict]) -> dict:
     }
 
 
-def run():
+def write_fragments(master: dict) -> None:
+    """
+    Gera fragmentos a partir do master.json:
+      1. data/index.json  — estrutura completa sem "events"
+      2. data/events/by-month/YYYY-MM.json — eventos por mês
+    """
+    # 1. index.json (lightweight — sem events array)
+    index_doc = {
+        "generated_at": master["generated_at"],
+        "total_events": master["total_events"],
+        "total_venues": master["total_venues"],
+        "quality":      master["quality"],
+        "index":        master["index"],
+    }
+    index_path = DATA_DIR / "index.json"
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(index_doc, f, ensure_ascii=False, indent=2)
+    logger.info(f"index.json gerado ({index_path})")
+
+    # 2. by-month files
+    by_month_dir = EVENTS_DIR / "by-month"
+    by_month_dir.mkdir(parents=True, exist_ok=True)
+
+    # Build lookup: id -> event
+    events_by_id = {e["id"]: e for e in master["events"]}
+    by_month_index = master["index"]["by_month"]
+
+    files_written = 0
+    for month, ids in sorted(by_month_index.items()):
+        month_events = [events_by_id[eid] for eid in ids if eid in events_by_id]
+        month_doc = {
+            "month":  month,
+            "total":  len(month_events),
+            "events": month_events,
+        }
+        month_path = by_month_dir / f"{month}.json"
+        with open(month_path, "w", encoding="utf-8") as f:
+            json.dump(month_doc, f, ensure_ascii=False, indent=2)
+        files_written += 1
+
+    logger.info(f"by-month: {files_written} ficheiro(s) criado(s) em {by_month_dir}")
+
+
+# ---------------------------------------------------------------------------
+# Main run
+# ---------------------------------------------------------------------------
+
+def run(force: bool = False) -> None:
     start = datetime.now(timezone.utc)
     logger.info("=" * 60)
     logger.info("Primeira Plateia — Agregador iniciado")
     logger.info("=" * 60)
+
+    # --- Manifest check ---
+    current_manifest = _compute_manifest()
+    saved_manifest   = _load_manifest()
+
+    if current_manifest == saved_manifest and not force:
+        logger.info("Manifesto idêntico ao anterior — nada mudou. A saltar agregação. (use --force para forçar)")
+        return
+
+    if force:
+        logger.info("--force: a forçar re-agregação mesmo sem alterações")
+    else:
+        changed = [k for k in current_manifest if current_manifest.get(k) != saved_manifest.get(k)]
+        new_venues = [k for k in current_manifest if k not in saved_manifest]
+        logger.info(
+            f"Manifesto alterado: {len(changed)} venue(s) modificado(s)"
+            + (f", {len(new_venues)} novo(s)" if new_venues else "")
+        )
 
     all_events, venue_reports = load_all()
     logger.info(f"Total: {len(all_events)} eventos de {len(venue_reports)} venues")
@@ -197,6 +310,9 @@ def run():
     with open(DATA_DIR / "master.json", "w", encoding="utf-8") as f:
         json.dump(master, f, ensure_ascii=False, indent=2)
     logger.info(f"master.json gerado ({len(active)} eventos)")
+
+    # Fragmentos: index.json + by-month
+    write_fragments(master)
 
     # Qualidade por venue (credibilidade + quality_score do validator)
     venue_quality = {}
@@ -242,8 +358,18 @@ def run():
         with open(p, "w", encoding="utf-8") as f:
             json.dump(report, f, ensure_ascii=False, indent=2)
 
+    # Guardar manifesto actualizado
+    _save_manifest(current_manifest)
+
     logger.info(f"Concluído em {duration:.1f}s — {len(deduped)} eventos únicos")
 
 
 if __name__ == "__main__":
-    run()
+    parser = argparse.ArgumentParser(description="Primeira Plateia — Agregador")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Forçar re-agregação mesmo sem alterações",
+    )
+    args = parser.parse_args()
+    run(force=args.force)

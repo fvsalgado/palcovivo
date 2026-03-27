@@ -54,6 +54,7 @@ def _venue_config(venue_id: str) -> dict:
         merged[key] = {**defaults.get(key, {}), **specific.get(key, {})}
     return merged
 
+from pipeline.core.circuit_breaker import record_success, record_failure, is_suspended, get_status
 from pipeline.core.harmonizer import harmonize_event
 from pipeline.core.validator  import validate_batch
 from pipeline.core.cache      import (
@@ -257,6 +258,20 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
 
     # Carregar config do venue (frequência, timeout, flags, rate limiting)
     vcfg        = _venue_config(venue_id)
+
+    # ── Circuit breaker — verificar se venue está suspenso ──
+    if not force and is_suspended(venue_id):
+        cb_status = get_status(venue_id)
+        next_retry = cb_status.get("next_retry", "desconhecido")
+        logger.warning(
+            f"{venue_id}: venue suspenso pelo circuit breaker — "
+            f"próxima tentativa: {next_retry}"
+        )
+        report["cache_hit"] = True
+        report["errors"].append(
+            f"venue suspenso pelo circuit breaker — próxima tentativa: {next_retry}"
+        )
+        return report
     rate_delay  = vcfg.get("rate_limit", {}).get("delay_between_requests_ms", 500) / 1000.0
     timeout_s   = vcfg.get("timeout_seconds", 60)
     scraper_flags = vcfg.get("flags", {})
@@ -340,6 +355,10 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
                 with open(venue_path, "w", encoding="utf-8") as f:
                     json.dump(venue, f, ensure_ascii=False, indent=2)
 
+            # Circuit breaker — sucesso se obtivemos eventos sem erros
+            if len(raw) > 0 and not report["errors"]:
+                record_success(venue_id)
+
         except Exception as e:
             logger.error(f"{venue_id}: erro no scraper — {e}")
             logger.debug(traceback.format_exc())
@@ -348,6 +367,8 @@ def run_venue(venue_id: str, force: bool = False) -> dict:
                 logger.warning(f"{venue_id}: a usar cache expirada ({len(raw)} eventos)")
                 report["cache_hit"] = True
             report["errors"].append(str(e))
+            # Circuit breaker — registar falha
+            record_failure(venue_id, max_failures=vcfg.get("circuit_breaker", {}).get("max_consecutive_failures", 5))
 
     report["scraped"] = len(raw)
 

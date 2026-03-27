@@ -1,6 +1,10 @@
 """
 Primeira Plateia — Taxonomia Canónica
-Versão: 2.0 | 2026-03-26
+Versão: 2.1 | 2026-03-27
+
+Melhorias v2.1:
+  - ALIASES carregados de pipeline/taxonomy_aliases.json (com fallback ao dict hardcoded)
+  - log_unknown_tag() para registar tags desconhecidas em data/logs/unknown_tags.json
 
 Melhorias v2.0:
   - Cobertura completa de aliases (0 categorias a cair em 'outros' com dados actuais)
@@ -10,6 +14,18 @@ Melhorias v2.0:
   - SERIES_PREFIX_PATTERNS expandido
   - NUTS2/NUTS3 para filtro geográfico
 """
+
+import json
+import logging
+from datetime import date, datetime, timezone
+from pathlib import Path
+
+_logger = logging.getLogger(__name__)
+
+# Raiz do projecto (dois níveis acima de pipeline/core/taxonomy.py)
+_ROOT = Path(__file__).parent.parent.parent
+_ALIASES_JSON = Path(__file__).parent.parent / "taxonomy_aliases.json"
+_UNKNOWN_TAGS_LOG = _ROOT / "data" / "logs" / "unknown_tags.json"
 
 # ---------------------------------------------------------------------------
 # DOMÍNIOS (Nível 1)
@@ -378,12 +394,34 @@ CATEGORIES = {
 
 # ---------------------------------------------------------------------------
 # DICIONÁRIO DE ALIASES → categoria canónica
+# Carregado de pipeline/taxonomy_aliases.json; hardcoded dict é o fallback.
 # ---------------------------------------------------------------------------
-ALIASES: dict[str, dict] = {
+
+def _load_aliases_from_json() -> dict | None:
+    """Carrega aliases de taxonomy_aliases.json. Retorna None se falhar."""
+    try:
+        with open(_ALIASES_JSON, encoding="utf-8") as _f:
+            _data = json.load(_f)
+        _aliases = _data.get("aliases", {})
+        if _aliases:
+            _logger.debug("taxonomy: aliases carregados de %s (%d entradas)", _ALIASES_JSON, len(_aliases))
+            return _aliases
+    except FileNotFoundError:
+        _logger.warning("taxonomy: %s não encontrado — a usar aliases hardcoded", _ALIASES_JSON)
+    except Exception as _e:
+        _logger.warning("taxonomy: erro ao ler %s (%s) — a usar aliases hardcoded", _ALIASES_JSON, _e)
+    return None
+
+
+# Hardcoded fallback — mantido em sincronismo com taxonomy_aliases.json
+_ALIASES_HARDCODED: dict[str, dict] = {
 
     # ── Música ────────────────────────────────────────────────────────────────
     "musica": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "música": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
+    "música clássica": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
+    "musica classica": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
+    "musica-classica": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "music": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "concerto": {"domain": "musica", "category": "musica-classica", "subcategory": None, "flags": {}},
     "concerto sinfónico": {"domain": "musica", "category": "musica-classica", "subcategory": "sinfonica", "flags": {}},
@@ -548,6 +586,57 @@ ALIASES: dict[str, dict] = {
     "fabrica-das-artes": {"domain": None, "category": None, "subcategory": None, "flags": {"series_name": "Fábrica das Artes", "is_family": True}},
     "laboratório lipa": {"domain": None, "category": None, "subcategory": None, "flags": {"series_name": "Laboratório LIPA"}},
 }
+
+# Carregar do JSON; se falhar, usar dict hardcoded
+# Merge: hardcoded é a base completa; JSON pode adicionar aliases de novos venues
+# sem tocar no código Python. Resultado: todos os aliases hardcoded + overrides do JSON.
+ALIASES: dict[str, dict] = {**_ALIASES_HARDCODED, **(_load_aliases_from_json() or {})}
+
+
+# ---------------------------------------------------------------------------
+# LOG DE TAGS DESCONHECIDAS
+# ---------------------------------------------------------------------------
+
+def log_unknown_tag(tag: str, venue_id: str) -> None:
+    """
+    Regista uma tag desconhecida em data/logs/unknown_tags.json.
+    Formato: {"tag": "...", "venue_id": "...", "first_seen": "YYYY-MM-DD", "count": N}
+    De-duplica por (tag, venue_id) — incrementa count se já existir.
+    """
+    log_path = _UNKNOWN_TAGS_LOG
+    try:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Ler registo existente
+        entries: list[dict] = []
+        if log_path.exists():
+            try:
+                with open(log_path, encoding="utf-8") as _f:
+                    entries = json.load(_f)
+                if not isinstance(entries, list):
+                    entries = []
+            except Exception:
+                entries = []
+
+        today = date.today().isoformat()
+
+        # Procurar entrada existente
+        for entry in entries:
+            if entry.get("tag") == tag and entry.get("venue_id") == venue_id:
+                entry["count"] = entry.get("count", 1) + 1
+                break
+        else:
+            entries.append({"tag": tag, "venue_id": venue_id, "first_seen": today, "count": 1})
+
+        # Guardar atomicamente
+        tmp_path = log_path.with_suffix(".tmp")
+        with open(tmp_path, "w", encoding="utf-8") as _f:
+            json.dump(entries, _f, ensure_ascii=False, indent=2)
+        tmp_path.replace(log_path)
+
+    except Exception as _e:
+        _logger.warning("taxonomy: erro ao registar tag desconhecida %r — %s", tag, _e)
+
 
 # ---------------------------------------------------------------------------
 # CLASSIFICADOR POR TEXTO (fallback quando alias não encontrado)

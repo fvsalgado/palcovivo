@@ -9,7 +9,7 @@ import hashlib
 import json
 from datetime import datetime, date, timezone
 from typing import Optional
-from .taxonomy import ALIASES, AUDIENCE_MAP, SERIES_PREFIX_PATTERNS, CATEGORIES, DOMAINS
+from .taxonomy import ALIASES, AUDIENCE_MAP, SERIES_PREFIX_PATTERNS, CATEGORIES, DOMAINS, log_unknown_tag
 
 
 # ---------------------------------------------------------------------------
@@ -248,10 +248,11 @@ def parse_price(raw: str) -> dict:
 # CATEGORIAS
 # ---------------------------------------------------------------------------
 
-def harmonize_category(raw_categories: list[str]) -> dict:
+def harmonize_category(raw_categories: list[str], venue_id: str = "") -> dict:
     """
     Recebe lista de categorias raw (como vieram do venue).
     Devolve {domain, category, subcategory, flags_extras}.
+    venue_id é opcional — usado para log_unknown_tag quando nenhum alias é encontrado.
     """
     result = {"domain": "outros", "category": "outros", "subcategory": None, "flags": {}}
 
@@ -277,6 +278,13 @@ def harmonize_category(raw_categories: list[str]) -> dict:
                 result["subcategory"] = entry["subcategory"]
             result["flags"].update(entry.get("flags", {}))
             return result
+
+    # Nenhum alias encontrado — registar tags desconhecidas que caem em "outros"
+    if result["domain"] == "outros" and raw_categories:
+        for raw in raw_categories:
+            tag = raw.strip()
+            if tag:
+                log_unknown_tag(tag, venue_id or "unknown")
 
     return result
 
@@ -439,7 +447,7 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
 
     # Categorias
     raw_cats = raw_event.get("categories", [])
-    cat_result = harmonize_category(raw_cats)
+    cat_result = harmonize_category(raw_cats, venue_id=venue_id)
     extra_flags = cat_result.pop("flags", {})
 
     # Série / Festival
