@@ -45,15 +45,21 @@ def normalize_title(title: str) -> str:
     return title
 
 
+# Limite máximo de caracteres de descrição — protege o master.json de descrições gigantes
+_MAX_DESCRIPTION_CHARS = 2000
+
 def clean_description(text: str) -> str:
-    """Remove HTML tags mantendo parágrafos."""
+    """Remove HTML tags mantendo parágrafos. Aplica limite hard de 2000 chars."""
     if not text:
         return ""
     text = re.sub(r"<br\s*/?>", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"</p>", "\n\n", text, flags=re.IGNORECASE)
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
-    return text.strip()
+    text = text.strip()
+    if len(text) > _MAX_DESCRIPTION_CHARS:
+        text = text[:_MAX_DESCRIPTION_CHARS].rsplit("\n", 1)[0].rstrip(".,;: ") + "…"
+    return text
 
 
 def truncate_description(text: str, max_chars: int = 300) -> str:
@@ -390,11 +396,20 @@ def generate_fingerprint(title: str, venue_id: str, date_first: str) -> str:
     return raw
 
 
-def generate_event_id(venue_id: str, title: str, date_first: str) -> str:
-    """Gera ID único canónico para o evento."""
+def generate_event_id(venue_id: str, title: str, date_first: str, source_id: str = "") -> str:
+    """
+    Gera ID único canónico para o evento.
+    Inclui um sufixo derivado do source_id para evitar colisões entre eventos
+    com títulos semelhantes no mesmo mês e venue (comum ao escalar para 80+ scrapers).
+    """
     title_slug = slugify(normalize_title(title))[:40]
     date_part = date_first or "0000-00-00"
-    return f"{venue_id}-{date_part[:7]}-{title_slug}"
+    base = f"{venue_id}-{date_part[:7]}-{title_slug}"
+    if source_id:
+        # Sufixo curto (4 chars) derivado do source_id — evita colisões sem tornar o ID ilegível
+        suffix = hashlib.sha256(str(source_id).encode()).hexdigest()[:4]
+        return f"{base}-{suffix}"
+    return base
 
 
 def hash_raw(data: dict) -> str:
@@ -478,7 +493,7 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     event_status = detect_event_status(title, description, len(harmonized_dates))
 
     # IDs e dedup
-    event_id = generate_event_id(venue_id, title, date_first)
+    event_id = generate_event_id(venue_id, title, date_first, source_id=str(raw_event.get("source_id", "")))
     fingerprint = generate_fingerprint(title, venue_id, date_first)
 
     # Acessibilidade (do raw, se disponível)
