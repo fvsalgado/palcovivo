@@ -126,12 +126,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:44.178020+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960652+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692574+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-raiz",
+      "id": "ccb-2026-07-raiz-3466",
       "source_id": "244196",
       "source_url": "https://www.ccb.pt/evento/raiz-andre-rosinha-trio/",
       "venue_id": "ccb",
@@ -139,7 +139,7 @@
       "title": "Raiz",
       "title_raw": "Raiz",
       "subtitle": null,
-      "description": "André Rosinha apresenta-nos o novo álbum Raiz (2025), explorando uma fusão entre os mundos do jazz, da música tradicional portuguesa e do improviso. Tendo de uma forma orgânica já plantado algumas sementes no passado, o músico dedica-se agora à ligação entre esses universos a nível composicional, nunca perdendo a liberdade do improviso, tão característica da expressão jazzística.\n\nPara este projeto, conta com a banda que já o tem vindo a acompanhar nos últimos dois álbuns: João Paulo Esteves da Silva no piano, Marcos Cavaleiro na bateria e o próprio André Rosinha no contrabaixo. É um trio que bem se compreende e complementa, que reconhece o melhor dos demais e que deixa espaço para que cada elemento se expresse — algo, aliás, reconhecido e aplaudido pelas críticas feitas a Árvore (2019) e Triskel (2022). Os temas foram, assim, compostos a pensar nestes intérpretes e na união destes universos musicais, procurando enaltecer os traços que caracterizam estas expressões artísticas e, ainda assim, criando uma nova identidade.\n\nO trio já se apresentou no CCB, no Jazz2020 organizado pela Fundação Calouste Gulbenkian, Seixal Jazz, Jazz na Ordem dos Médicos do Porto, Palmela Wine Jazz, Noites Azuladas de Castelo Branco, JazzMATAzz, Grândola Vila Jazz, entre outros.\n\nNum mundo cada vez com mais pressa, que aposta num massificado prazer imediato que rapidamente se torna descartável, urge mais do que nunca acreditarmos na valorização e regresso às nossas raízes.\n\n \n\n \n\nCrítica jazz.pt de Rui Eduardo Paes sobre Árvore (5*):\n\n«Está aqui o melhor de João Paulo Esteves da Silva e o facto de Rosinha ter conseguido tal feito é de exaltar e aplaudir.»\n\n«Rosinha terá escrito estas peças pensando especificamente nele [João Paulo Esteves da Silva] (e em Cavaleiro, baterista sempre oportuno e excelente) e o resultado mostra como entendeu tão bem a sua linguagem e, mais do que isso, a sua “alma”.»\n\n \n\nCrítica jazz.pt de António Branco sobre Triskel (4*):\n\n«Pleno de sobriedade e elegância, Triskel certamente guindará André Rosinha a um outro patamar de reconhecimento como contrabaixista e compositor a ter em conta.»\n\n \n\nCrítica Ípsilon (Público) de Nuno Catarino sobre Árvore (4*):\n\n«Os três articulam uma música que é dialogante e precisa. O brilhantismo de Esteves da Silva no piano destaca-se, o contrabaixo de Rosinha exibe o seu som claro e melódico, a percussão de Cavaleiro é irrepreensível.»",
+      "description": "André Rosinha apresenta-nos o novo álbum Raiz (2025), explorando uma fusão entre os mundos do jazz, da música tradicional portuguesa e do improviso. Tendo de uma forma orgânica já plantado algumas sementes no passado, o músico dedica-se agora à ligação entre esses universos a nível composicional, nunca perdendo a liberdade do improviso, tão característica da expressão jazzística.\n\nPara este projeto, conta com a banda que já o tem vindo a acompanhar nos últimos dois álbuns: João Paulo Esteves da Silva no piano, Marcos Cavaleiro na bateria e o próprio André Rosinha no contrabaixo. É um trio que bem se compreende e complementa, que reconhece o melhor dos demais e que deixa espaço para que cada elemento se expresse — algo, aliás, reconhecido e aplaudido pelas críticas feitas a Árvore (2019) e Triskel (2022). Os temas foram, assim, compostos a pensar nestes intérpretes e na união destes universos musicais, procurando enaltecer os traços que caracterizam estas expressões artísticas e, ainda assim, criando uma nova identidade.\n\nO trio já se apresentou no CCB, no Jazz2020 organizado pela Fundação Calouste Gulbenkian, Seixal Jazz, Jazz na Ordem dos Médicos do Porto, Palmela Wine Jazz, Noites Azuladas de Castelo Branco, JazzMATAzz, Grândola Vila Jazz, entre outros.\n\nNum mundo cada vez com mais pressa, que aposta num massificado prazer imediato que rapidamente se torna descartável, urge mais do que nunca acreditarmos na valorização e regresso às nossas raízes.\n\n \n\n \n\nCrítica jazz.pt de Rui Eduardo Paes sobre Árvore (5*):\n\n«Está aqui o melhor de João Paulo Esteves da Silva e o facto de Rosinha ter conseguido tal feito é de exaltar e aplaudir.»\n\n«Rosinha terá escrito estas peças pensando especificamente nele [João Paulo Esteves da Silva] (e em Cavaleiro, baterista sempre oportuno e excelente) e o resultado mostra como entendeu tão bem a sua linguagem e, mais do que isso, a sua “alma”.»\n\n \n\nCrítica jazz.pt de António Branco sobre Triskel (4*):\n…",
       "description_short": "André Rosinha apresenta-nos o novo álbum Raiz (2025), explorando uma fusão entre os mundos do jazz, da música tradicional portuguesa e do improviso. Tendo de uma forma orgânica já plantado algumas sementes no passado, o músico dedica-se agora à ligação entre esses universos a nível composicional…",
       "language_of_performance": null,
       "language_notes": null,
@@ -147,7 +147,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Música"
+        "Música",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -246,10 +248,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682522+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037561+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4e973a8476fa9f96",
-        "harmonized_at": "2026-03-27T07:45:57.241182+00:00",
+        "raw_data_hash": "sha256:09499a2e146e190b",
+        "harmonized_at": "2026-03-27T10:59:15.638862+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -269,7 +271,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-um-julgamento",
+      "id": "ccb-2026-07-um-julgamento-98c1",
       "source_id": "261244",
       "source_url": "https://www.ccb.pt/evento/um-julgamento/2026-07-03/",
       "venue_id": "ccb",
@@ -285,7 +287,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Teatro"
+        "Teatro",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -383,10 +387,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682568+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037614+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3186fd998b01c3d9",
-        "harmonized_at": "2026-03-27T07:45:57.242189+00:00",
+        "raw_data_hash": "sha256:eb14c689d0d3bd48",
+        "harmonized_at": "2026-03-27T10:59:15.639709+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -528,7 +532,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:42.261008+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960631+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692562+00:00"
       }
     },
     {
@@ -655,12 +659,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:41.597856+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960622+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692555+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-e-se-fossemos-a-votos",
+      "id": "ccb-2026-07-e-se-fossemos-a-votos-4046",
       "source_id": "235831",
       "source_url": "https://www.ccb.pt/evento/e-se-fossemos-a-votos/",
       "venue_id": "ccb",
@@ -677,7 +681,10 @@
       "subcategory": null,
       "tags": [
         "Atividades de Férias",
-        "Oficina"
+        "Oficina",
+        "ciclo",
+        "familia",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Fábrica das Artes",
@@ -776,10 +783,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682596+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037639+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9a79f36951059c79",
-        "harmonized_at": "2026-03-27T07:45:57.242734+00:00",
+        "raw_data_hash": "sha256:248ba4f3d7e1783e",
+        "harmonized_at": "2026-03-27T10:59:15.640244+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -922,7 +929,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:40.907752+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960611+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692530+00:00"
       }
     },
     {
@@ -1049,12 +1056,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:40.210983+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960601+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692524+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-quem-tem-medo-de-virginia-woolf-de-edwar",
+      "id": "ccb-2026-07-quem-tem-medo-de-virginia-woolf-de-edwar-8b4b",
       "source_id": "244251",
       "source_url": "https://www.ccb.pt/evento/quem-tem-medo-de-virginia-woolf-de-edward-albee/2026-07-09/",
       "venue_id": "ccb",
@@ -1070,7 +1077,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Teatro"
+        "Teatro",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -1168,10 +1177,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682635+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037666+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7229e463b251763b",
-        "harmonized_at": "2026-03-27T07:45:57.243136+00:00",
+        "raw_data_hash": "sha256:e99ff305697ca26c",
+        "harmonized_at": "2026-03-27T10:59:15.640667+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1313,7 +1322,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:39.547448+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960589+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692519+00:00"
       }
     },
     {
@@ -1438,12 +1447,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:43.512873+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960642+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692568+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026",
+      "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026-2295",
       "source_id": "visita-guiada-ao-theatro-circo-jul2026",
       "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-jul2026/",
       "venue_id": "theatro-circo",
@@ -1458,7 +1467,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1564,10 +1575,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:46.943547+00:00",
+        "scraped_at": "2026-03-27T11:33:18.084233+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d31420aac83ba338",
-        "harmonized_at": "2026-03-27T07:42:23.945937+00:00",
+        "raw_data_hash": "sha256:dde9cab555f91f67",
+        "harmonized_at": "2026-03-27T11:33:48.678618+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1577,15 +1588,14 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-cinema-play-possivel-e-impossivel",
+      "id": "theatro-circo-2026-07-cinema-play-possivel-e-impossivel-eec7",
       "source_id": "cinema-play-possivel-e-impossivel",
       "source_url": "https://theatrocirco.com/event/cinema-play-possivel-e-impossivel/",
       "venue_id": "theatro-circo",
@@ -1600,7 +1610,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1697,10 +1710,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:48.715453+00:00",
+        "scraped_at": "2026-03-27T11:33:20.472508+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4d6440f47d74c176",
-        "harmonized_at": "2026-03-27T07:42:23.946078+00:00",
+        "raw_data_hash": "sha256:ca06762882e86521",
+        "harmonized_at": "2026-03-27T11:33:48.678832+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1710,10 +1723,9 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
@@ -1840,7 +1852,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:38.991433+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960578+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692513+00:00"
       }
     },
     {
@@ -1967,7 +1979,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:37.770559+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960550+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692501+00:00"
       }
     },
     {
@@ -2094,7 +2106,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:38.325159+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960561+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692507+00:00"
       }
     },
     {
@@ -2221,12 +2233,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:37.207346+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960539+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692495+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-jason-moran",
+      "id": "ccb-2026-07-jason-moran-c71f",
       "source_id": "268314",
       "source_url": "https://www.ccb.pt/evento/jason-moran/",
       "venue_id": "ccb",
@@ -2242,7 +2254,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Música"
+        "Música",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -2340,10 +2354,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682659+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037687+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:40f185bb988b5e5e",
-        "harmonized_at": "2026-03-27T07:45:57.243577+00:00",
+        "raw_data_hash": "sha256:3467ac092c574b7a",
+        "harmonized_at": "2026-03-27T10:59:15.641107+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2485,7 +2499,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:36.542472+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960528+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692489+00:00"
       }
     },
     {
@@ -2612,12 +2626,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:35.986829+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960513+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692483+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "tndm-2026-07-o-cume",
+      "id": "tndm-2026-07-o-cume-1887",
       "source_id": "o-cume",
       "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/o-cume/",
       "venue_id": "tndm",
@@ -2632,7 +2646,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Espetáculos",
         "Infância e Juventude",
@@ -2766,10 +2782,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:08.036024+00:00",
+        "scraped_at": "2026-03-27T11:34:23.661924+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:55ee705949f8c7c9",
-        "harmonized_at": "2026-03-27T07:41:09.555483+00:00",
+        "raw_data_hash": "sha256:03580ba8aa0dd75e",
+        "harmonized_at": "2026-03-27T11:34:25.175441+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2779,16 +2795,15 @@
         "quality_warnings": [
           "preco nao determinado (nem entrada livre nem valor)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-07-sinfonia-n-9-novo-mundo-de-dvorak",
+      "id": "ccb-2026-07-sinfonia-n-9-novo-mundo-de-dvorak-a11d",
       "source_id": "244257",
       "source_url": "https://www.ccb.pt/evento/sinfonia-n-9-novo-mundo-de-dvorak/",
       "venue_id": "ccb",
@@ -2805,7 +2820,9 @@
       "subcategory": null,
       "tags": [
         "Música",
-        "Orquestra"
+        "Orquestra",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -2904,10 +2921,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682686+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037716+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5542fb82b81f9e93",
-        "harmonized_at": "2026-03-27T07:45:57.244222+00:00",
+        "raw_data_hash": "sha256:38b568aa09b0ab3b",
+        "harmonized_at": "2026-03-27T10:59:15.641746+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3049,7 +3066,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:34.765406+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960476+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692477+00:00"
       }
     },
     {
@@ -3176,7 +3193,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:33.542683+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960455+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692466+00:00"
       }
     },
     {
@@ -3303,7 +3320,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:34.100848+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960465+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692471+00:00"
       }
     },
     {
@@ -3430,7 +3447,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:32.877734+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960445+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692460+00:00"
       }
     },
     {
@@ -3557,7 +3574,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:32.212710+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960435+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692454+00:00"
       }
     },
     {
@@ -3684,7 +3701,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:31.655767+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960424+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692448+00:00"
       }
     },
     {
@@ -3811,12 +3828,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:30.991286+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960410+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692443+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem",
+      "id": "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem-aa48",
       "source_id": "v-mit-mostra-internacional-de-teatro-sem-fronteiras",
       "source_url": "https://theatrocirco.com/event/v-mit-mostra-internacional-de-teatro-sem-fronteiras/",
       "venue_id": "theatro-circo",
@@ -3831,7 +3848,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3926,10 +3946,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:42:17.214426+00:00",
+        "scraped_at": "2026-03-27T11:33:41.252869+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:52a2cce00ab8e25f",
-        "harmonized_at": "2026-03-27T07:42:23.947691+00:00",
+        "raw_data_hash": "sha256:d2044faa8a8e39fb",
+        "harmonized_at": "2026-03-27T11:33:48.680522+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3941,11 +3961,10 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.45
+        "quality_score": 0.5
       }
     },
     {
@@ -4072,7 +4091,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:30.432957+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960400+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692437+00:00"
       }
     },
     {
@@ -4199,12 +4218,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:29.767276+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960389+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692431+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-hamlet",
+      "id": "theatro-circo-2026-07-hamlet-7dec",
       "source_id": "hamlet-jul2026",
       "source_url": "https://theatrocirco.com/event/hamlet-jul2026/",
       "venue_id": "theatro-circo",
@@ -4219,7 +4238,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -4325,10 +4346,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:42:18.985124+00:00",
+        "scraped_at": "2026-03-27T11:33:43.149945+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:77c1bb6b16959603",
-        "harmonized_at": "2026-03-27T07:42:23.947812+00:00",
+        "raw_data_hash": "sha256:e4cfe36101922ebb",
+        "harmonized_at": "2026-03-27T11:33:48.680678+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4338,11 +4359,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -4469,12 +4489,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:29.102168+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960379+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692425+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-07-romeu-julieta-ctb",
+      "id": "theatro-circo-2026-07-romeu-julieta-ctb-0baa",
       "source_id": "romeuejulieta-jul2026",
       "source_url": "https://theatrocirco.com/event/romeuejulieta-jul2026/",
       "venue_id": "theatro-circo",
@@ -4489,7 +4509,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -4595,10 +4617,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:42:21.031611+00:00",
+        "scraped_at": "2026-03-27T11:33:45.423763+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:05ef99fe21c182fc",
-        "harmonized_at": "2026-03-27T07:42:23.947906+00:00",
+        "raw_data_hash": "sha256:6045feef93eb013a",
+        "harmonized_at": "2026-03-27T11:33:48.680787+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4608,11 +4630,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     }
   ]

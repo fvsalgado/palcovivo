@@ -1,141 +1,7 @@
 [
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-01-tres-tempos",
-    "source_id": "tres-tempos-2026",
-    "source_url": "https://theatrocirco.com/event/tres-tempos-2026/",
-    "venue_id": "theatro-circo",
-    "space_id": null,
-    "title": "Três Tempos",
-    "title_raw": "Três Tempos",
-    "subtitle": "Xullaji e Tiago Sampaio",
-    "description": "",
-    "description_short": "",
-    "language_of_performance": null,
-    "language_notes": null,
-    "domain": "musica",
-    "category": "musica-classica",
-    "subcategory": null,
-    "tags": [],
-    "categories_raw": [
-      "Música"
-    ],
-    "dates": [
-      {
-        "date": "2026-01-12",
-        "time_start": "18:45",
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2026-01-12",
-    "date_last": "2026-01-12",
-    "total_sessions": 1,
-    "is_ongoing": true,
-    "date_open": "2026-01-12",
-    "date_close": "2026-04-18",
-    "event_status": "unica-sessao",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": null,
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": null,
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": null,
-      "price_max": null,
-      "price_display": "Gratuito mediante inscrição para participacao@theatrocirco.com",
-      "price_raw": "Gratuito mediante inscrição para participacao@theatrocirco.com",
-      "has_discounts": false,
-      "discount_notes": null,
-      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "Coprodução\nTheatro Circo (Braga), Culturgest (Lisboa) e Teatro Viriato (Viseu)\nQueres fazer parte deste projeto? Escreve-nos para\nparticipacao@theatrocirco.com"
-    },
-    "work": {
-      "original_title": null,
-      "composer": null,
-      "playwright": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://theatrocirco.com/wp-content/uploads/2025/11/251025_theatro_circo_tres_tempos_sessao_um_fotografia_lais_pereira-3.jpg",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "tres-tempos|2026-01",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "theatro-circo"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-27T07:40:35.498190+00:00",
-      "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:eeb95eeace190f59",
-      "harmonized_at": "2026-03-27T07:42:23.933890+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true,
-      "extra_flags": null,
-      "quality_warnings": [
-        "descricao ausente ou demasiado curta (< 30 chars)",
-        "subcategoria nao determinada",
-        "tags ausentes",
-        "faixa etaria nao determinada",
-        "duration_minutes nao preenchida"
-      ],
-      "quality_score": 0.65
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m",
+    "id": "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
     "source_id": "ciclo-musica-de-camara-universidade-do-minho",
     "source_url": "https://theatrocirco.com/event/ciclo-musica-de-camara-universidade-do-minho/",
     "venue_id": "theatro-circo",
@@ -150,7 +16,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "entrada-livre",
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -283,10 +152,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:36.170789+00:00",
+      "scraped_at": "2026-03-27T11:31:57.603575+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:4a695360874061dd",
-      "harmonized_at": "2026-03-27T07:42:23.937580+00:00",
+      "raw_data_hash": "sha256:2920864959ae86eb",
+      "harmonized_at": "2026-03-27T11:33:48.669848+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -297,16 +166,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante",
+    "id": "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
     "source_id": "conversa-jantar-sara-ines-gigante",
     "source_url": "https://theatrocirco.com/event/conversa-jantar-sara-ines-gigante/",
     "venue_id": "theatro-circo",
@@ -321,7 +189,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -418,10 +289,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:36.821750+00:00",
+      "scraped_at": "2026-03-27T11:31:58.355619+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:d112a42073a0c1d1",
-      "harmonized_at": "2026-03-27T07:42:23.937760+00:00",
+      "raw_data_hash": "sha256:4d7d204f8ed8780f",
+      "harmonized_at": "2026-03-27T11:33:48.670038+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -431,16 +302,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-popular",
+    "id": "theatro-circo-2026-03-popular-2c81",
     "source_id": "popular",
     "source_url": "https://theatrocirco.com/event/popular/",
     "venue_id": "theatro-circo",
@@ -455,7 +325,12 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "audiodescricao",
+      "lgp",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -552,10 +427,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:37.539902+00:00",
+      "scraped_at": "2026-03-27T11:31:59.106776+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:fbf2d26ea427165e",
-      "harmonized_at": "2026-03-27T07:42:23.937889+00:00",
+      "raw_data_hash": "sha256:b731e8aba778f7db",
+      "harmonized_at": "2026-03-27T11:33:48.670176+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -565,15 +440,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au",
+    "id": "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au-c0cb",
     "source_id": "companhia-de-espectadores-mar2026",
     "source_url": "https://theatrocirco.com/event/companhia-de-espectadores-mar2026/",
     "venue_id": "theatro-circo",
@@ -588,7 +462,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -685,10 +562,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:38.237400+00:00",
+      "scraped_at": "2026-03-27T11:32:01.271657+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:0d6b094b2aa3cc62",
-      "harmonized_at": "2026-03-27T07:42:23.938107+00:00",
+      "raw_data_hash": "sha256:825e7bfdb81df64f",
+      "harmonized_at": "2026-03-27T11:33:48.670401+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -698,16 +575,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026",
+    "id": "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026-5646",
     "source_id": "visita-guiada-ao-theatro-circo-mar2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-mar2026/",
     "venue_id": "theatro-circo",
@@ -722,7 +598,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -828,10 +706,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:40.067706+00:00",
+      "scraped_at": "2026-03-27T11:32:02.215126+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:ed98916f58b3e323",
-      "harmonized_at": "2026-03-27T07:42:23.938260+00:00",
+      "raw_data_hash": "sha256:2524465df9488a2a",
+      "harmonized_at": "2026-03-27T11:33:48.670587+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -841,15 +719,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-dora-morelenbaum",
+    "id": "theatro-circo-2026-03-dora-morelenbaum-eb40",
     "source_id": "dora-morelenbaum",
     "source_url": "https://theatrocirco.com/event/dora-morelenbaum/",
     "venue_id": "theatro-circo",
@@ -864,7 +741,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -961,10 +841,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:40.718834+00:00",
+      "scraped_at": "2026-03-27T11:32:03.160976+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:5cff4fe1e4cd1472",
-      "harmonized_at": "2026-03-27T07:42:23.938417+00:00",
+      "raw_data_hash": "sha256:c72cb1491fa128df",
+      "harmonized_at": "2026-03-27T11:33:48.670768+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -974,16 +854,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-blue-moon",
+    "id": "theatro-circo-2026-03-blue-moon-55e3",
     "source_id": "blue-moon",
     "source_url": "https://theatrocirco.com/event/blue-moon/",
     "venue_id": "theatro-circo",
@@ -998,7 +877,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -1095,10 +977,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:41.373348+00:00",
+      "scraped_at": "2026-03-27T11:32:04.055241+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:61b50769b5ded258",
-      "harmonized_at": "2026-03-27T07:42:23.938548+00:00",
+      "raw_data_hash": "sha256:30b67b00e11d82ac",
+      "harmonized_at": "2026-03-27T11:33:48.670883+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1109,16 +991,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-supracasa-open-call-laboratorio-assimetr",
+    "id": "theatro-circo-2026-04-supracasa-open-call-laboratorio-assimetr-7d7b",
     "source_id": "supracasa-open-call-laboratorio-assimetrico",
     "source_url": "https://theatrocirco.com/event/supracasa-open-call-laboratorio-assimetrico/",
     "venue_id": "theatro-circo",
@@ -1133,7 +1014,9 @@
     "domain": "artes-palco",
     "category": "danca",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Dança"
     ],
@@ -1248,10 +1131,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:42.026047+00:00",
+      "scraped_at": "2026-03-27T11:32:04.965947+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:937dba297bbad13a",
-      "harmonized_at": "2026-03-27T07:42:23.938650+00:00",
+      "raw_data_hash": "sha256:a9dacbdb51251ea4",
+      "harmonized_at": "2026-03-27T11:33:48.670986+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1262,16 +1145,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-companhia-de-espectadores-teatro-pos-dra",
+    "id": "theatro-circo-2026-04-companhia-de-espectadores-teatro-pos-dra-2d21",
     "source_id": "companhia-de-espectadores-abr2026",
     "source_url": "https://theatrocirco.com/event/companhia-de-espectadores-abr2026/",
     "venue_id": "theatro-circo",
@@ -1286,7 +1168,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -1383,10 +1268,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:42.676884+00:00",
+      "scraped_at": "2026-03-27T11:32:09.967447+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:d42ab718944ce1c9",
-      "harmonized_at": "2026-03-27T07:42:23.938798+00:00",
+      "raw_data_hash": "sha256:2bf1b807c2df78e6",
+      "harmonized_at": "2026-03-27T11:33:48.671139+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1396,16 +1281,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-contraponto-gorecki-e-adams",
+    "id": "theatro-circo-2026-04-contraponto-gorecki-e-adams-93c6",
     "source_id": "contraponto-gorecki-adams",
     "source_url": "https://theatrocirco.com/event/contraponto-gorecki-adams/",
     "venue_id": "theatro-circo",
@@ -1420,7 +1304,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -1517,10 +1404,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:43.331961+00:00",
+      "scraped_at": "2026-03-27T11:32:10.741922+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:c793f7aeb8f9f474",
-      "harmonized_at": "2026-03-27T07:42:23.938935+00:00",
+      "raw_data_hash": "sha256:9b9d6683d881dfc7",
+      "harmonized_at": "2026-03-27T11:33:48.671285+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1530,16 +1417,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-entroncamento",
+    "id": "theatro-circo-2026-04-entroncamento-1501",
     "source_id": "entroncamento",
     "source_url": "https://theatrocirco.com/event/entroncamento/",
     "venue_id": "theatro-circo",
@@ -1554,7 +1440,10 @@
     "domain": "cinema",
     "category": "cinema-ficcao",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "cinema",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Cinema"
     ],
@@ -1651,10 +1540,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:43.986308+00:00",
+      "scraped_at": "2026-03-27T11:32:13.075914+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:0da058723b6f5ff1",
-      "harmonized_at": "2026-03-27T07:42:23.939051+00:00",
+      "raw_data_hash": "sha256:648238fbc742599a",
+      "harmonized_at": "2026-03-27T11:33:48.671408+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1665,16 +1554,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-111-aniversario-do-theatro-circo",
+    "id": "theatro-circo-2026-04-111-aniversario-do-theatro-circo-8124",
     "source_id": "111-aniversario-theatro-circo",
     "source_url": "https://theatrocirco.com/event/111-aniversario-theatro-circo/",
     "venue_id": "theatro-circo",
@@ -1689,7 +1577,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -1784,10 +1675,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:44.648739+00:00",
+      "scraped_at": "2026-03-27T11:32:13.839234+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:386b3d770c832a8f",
-      "harmonized_at": "2026-03-27T07:42:23.939148+00:00",
+      "raw_data_hash": "sha256:bbef912b26d4f29b",
+      "harmonized_at": "2026-03-27T11:33:48.671512+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1799,16 +1690,15 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-capra-or-how-to-say-hello-to-fear",
+    "id": "theatro-circo-2026-04-capra-or-how-to-say-hello-to-fear-c6cd",
     "source_id": "capra",
     "source_url": "https://theatrocirco.com/event/capra/",
     "venue_id": "theatro-circo",
@@ -1823,7 +1713,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -1920,10 +1813,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:45.301397+00:00",
+      "scraped_at": "2026-03-27T11:32:16.189698+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:0919275de5221d89",
-      "harmonized_at": "2026-03-27T07:42:23.939253+00:00",
+      "raw_data_hash": "sha256:410d31997ce057f1",
+      "harmonized_at": "2026-03-27T11:33:48.671672+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1933,15 +1826,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-historias-de-sonho",
+    "id": "theatro-circo-2026-04-historias-de-sonho-0d83",
     "source_id": "historias-de-sonho",
     "source_url": "https://theatrocirco.com/event/historias-de-sonho/",
     "venue_id": "theatro-circo",
@@ -1956,7 +1848,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -2060,10 +1954,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:47.134731+00:00",
+      "scraped_at": "2026-03-27T11:32:16.940712+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:6e1cc3a70f57d47e",
-      "harmonized_at": "2026-03-27T07:42:23.939381+00:00",
+      "raw_data_hash": "sha256:86f186fd565ee3ed",
+      "harmonized_at": "2026-03-27T11:33:48.671825+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2074,15 +1968,14 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.6
+      "quality_score": 0.65
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-visita-guiada-ao-theatro-circo-18042026",
+    "id": "theatro-circo-2026-04-visita-guiada-ao-theatro-circo-18042026-420e",
     "source_id": "visita-guiada-ao-theatro-circo-abr2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-abr2026/",
     "venue_id": "theatro-circo",
@@ -2097,7 +1990,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -2203,10 +2098,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:47.781819+00:00",
+      "scraped_at": "2026-03-27T11:32:19.024700+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:f8e4362438330113",
-      "harmonized_at": "2026-03-27T07:42:23.939506+00:00",
+      "raw_data_hash": "sha256:67b71e6e1d128976",
+      "harmonized_at": "2026-03-27T11:33:48.671936+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2216,15 +2111,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro-",
+    "id": "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro--57cd",
     "source_id": "elisabete-matos-maciej-pikulski-pedro-ribeiro",
     "source_url": "https://theatrocirco.com/event/elisabete-matos-maciej-pikulski-pedro-ribeiro/",
     "venue_id": "theatro-circo",
@@ -2239,7 +2133,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -2336,10 +2233,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:49.577345+00:00",
+      "scraped_at": "2026-03-27T11:32:19.779499+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:4f03327e0c72139d",
-      "harmonized_at": "2026-03-27T07:42:23.939671+00:00",
+      "raw_data_hash": "sha256:370ec6e8311afa8b",
+      "harmonized_at": "2026-03-27T11:33:48.672093+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2349,15 +2246,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-tortoise",
+    "id": "theatro-circo-2026-04-tortoise-224e",
     "source_id": "tortoise",
     "source_url": "https://theatrocirco.com/event/tortoise/",
     "venue_id": "theatro-circo",
@@ -2372,7 +2268,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -2469,10 +2368,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:51.427526+00:00",
+      "scraped_at": "2026-03-27T11:32:22.028760+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:fdd14122fae84962",
-      "harmonized_at": "2026-03-27T07:42:23.939819+00:00",
+      "raw_data_hash": "sha256:a37a3fb85cbec65c",
+      "harmonized_at": "2026-03-27T11:33:48.672246+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2482,16 +2381,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-o-barqueiro",
+    "id": "theatro-circo-2026-04-o-barqueiro-d56e",
     "source_id": "o-barqueiro",
     "source_url": "https://theatrocirco.com/event/o-barqueiro/",
     "venue_id": "theatro-circo",
@@ -2506,7 +2404,10 @@
     "domain": "cinema",
     "category": "cinema-ficcao",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "cinema",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Cinema"
     ],
@@ -2603,10 +2504,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:53.277616+00:00",
+      "scraped_at": "2026-03-27T11:32:24.297063+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:2bc5fd6eccdb090a",
-      "harmonized_at": "2026-03-27T07:42:23.939912+00:00",
+      "raw_data_hash": "sha256:ae23e6f1a70e93f1",
+      "harmonized_at": "2026-03-27T11:33:48.672348+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2617,16 +2518,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-a-garota-nao",
+    "id": "theatro-circo-2026-04-a-garota-nao-0d08",
     "source_id": "a-garota-nao",
     "source_url": "https://theatrocirco.com/event/a-garota-nao/",
     "venue_id": "theatro-circo",
@@ -2641,7 +2541,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -2738,10 +2641,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:53.928539+00:00",
+      "scraped_at": "2026-03-27T11:32:25.049246+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:d7f6babc62f6ceff",
-      "harmonized_at": "2026-03-27T07:42:23.940007+00:00",
+      "raw_data_hash": "sha256:b7a67c258e0bf41b",
+      "harmonized_at": "2026-03-27T11:33:48.672449+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2751,16 +2654,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-formas-de-fazer-na-sombra-dos-relatos-of",
+    "id": "theatro-circo-2026-04-formas-de-fazer-na-sombra-dos-relatos-of-d748",
     "source_id": "formas-de-fazer-nina-laisne",
     "source_url": "https://theatrocirco.com/event/formas-de-fazer-nina-laisne/",
     "venue_id": "theatro-circo",
@@ -2775,7 +2677,10 @@
     "domain": "cinema",
     "category": "cinema-ficcao",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "cinema",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Cinema"
     ],
@@ -2872,10 +2777,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:55.748051+00:00",
+      "scraped_at": "2026-03-27T11:32:27.284657+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:1f1ac80caa8cb39c",
-      "harmonized_at": "2026-03-27T07:42:23.940107+00:00",
+      "raw_data_hash": "sha256:a381427bf5acc36d",
+      "harmonized_at": "2026-03-27T11:33:48.672583+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2885,15 +2790,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u",
+    "id": "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u-b75c",
     "source_id": "nina-laisne-nestor-pastorive",
     "source_url": "https://theatrocirco.com/event/nina-laisne-nestor-pastorive/",
     "venue_id": "theatro-circo",
@@ -2908,7 +2812,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -3005,10 +2912,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:57.599735+00:00",
+      "scraped_at": "2026-03-27T11:32:28.052808+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:ab94feb28fd2750d",
-      "harmonized_at": "2026-03-27T07:42:23.940243+00:00",
+      "raw_data_hash": "sha256:4a51927233797be1",
+      "harmonized_at": "2026-03-27T11:33:48.672738+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3018,16 +2925,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-dj-ahmet",
+    "id": "theatro-circo-2026-04-dj-ahmet-7c74",
     "source_id": "dj-ahmet",
     "source_url": "https://theatrocirco.com/event/dj-ahmet/",
     "venue_id": "theatro-circo",
@@ -3042,7 +2948,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -3139,10 +3048,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:59.603160+00:00",
+      "scraped_at": "2026-03-27T11:32:30.686415+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:004b8e17a3211dc8",
-      "harmonized_at": "2026-03-27T07:42:23.940395+00:00",
+      "raw_data_hash": "sha256:0634b618f39ce1d2",
+      "harmonized_at": "2026-03-27T11:33:48.672903+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3153,16 +3062,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-bienal-de-arte-e-tecnologia",
+    "id": "theatro-circo-2026-05-index-2026-bienal-de-arte-e-tecnologia-e4a4",
     "source_id": "index-2026",
     "source_url": "https://theatrocirco.com/event/index-2026/",
     "venue_id": "theatro-circo",
@@ -3177,7 +3085,11 @@
     "domain": "artes-palco",
     "category": "performance",
     "subcategory": "multidisciplinar",
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "multidisciplinar",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Multidisciplinar"
     ],
@@ -3272,10 +3184,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:01.511858+00:00",
+      "scraped_at": "2026-03-27T11:32:33.334905+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:5a50ded6e5bf72c8",
-      "harmonized_at": "2026-03-27T07:42:23.940512+00:00",
+      "raw_data_hash": "sha256:8b056fc758ef2054",
+      "harmonized_at": "2026-03-27T11:33:48.673005+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3286,16 +3198,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "preco nao determinado (nem entrada livre nem valor)",
         "creditos ausentes (director, companhia ou texto raw)",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.5
+      "quality_score": 0.55
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-fanfictional-politics-pedro-g",
+    "id": "theatro-circo-2026-05-index-2026-fanfictional-politics-pedro-g-fd50",
     "source_id": "index-fanfictional-politics-pedro-gossler",
     "source_url": "https://theatrocirco.com/event/index-fanfictional-politics-pedro-gossler/",
     "venue_id": "theatro-circo",
@@ -3310,7 +3221,10 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "entrada-livre",
+      "sessao-unica"
+    ],
     "categories_raw": [],
     "dates": [
       {
@@ -3405,10 +3319,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:05.638596+00:00",
+      "scraped_at": "2026-03-27T11:32:35.645559+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:a0c423d5c66aa378",
-      "harmonized_at": "2026-03-27T07:42:23.940638+00:00",
+      "raw_data_hash": "sha256:c739fff5e6c4f245",
+      "harmonized_at": "2026-03-27T11:33:48.673127+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3420,16 +3334,15 @@
         "creditos ausentes (director, companhia ou texto raw)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-ther-poor-objects-shuang-li",
+    "id": "theatro-circo-2026-05-index-2026-ther-poor-objects-shuang-li-1caf",
     "source_id": "index-aether-poor-objects",
     "source_url": "https://theatrocirco.com/event/index-aether-poor-objects/",
     "venue_id": "theatro-circo",
@@ -3444,7 +3357,10 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "entrada-livre",
+      "sessao-unica"
+    ],
     "categories_raw": [],
     "dates": [
       {
@@ -3539,10 +3455,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:07.621690+00:00",
+      "scraped_at": "2026-03-27T11:32:37.897360+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:757520f3c8afcdd8",
-      "harmonized_at": "2026-03-27T07:42:23.940749+00:00",
+      "raw_data_hash": "sha256:d703e72a5ba277a3",
+      "harmonized_at": "2026-03-27T11:33:48.673243+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3554,16 +3470,15 @@
         "creditos ausentes (director, companhia ou texto raw)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr",
+    "id": "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr-4f98",
     "source_id": "index-forensis-bill-kouligas",
     "source_url": "https://theatrocirco.com/event/index-forensis-bill-kouligas/",
     "venue_id": "theatro-circo",
@@ -3578,7 +3493,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -3675,10 +3593,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:09.381847+00:00",
+      "scraped_at": "2026-03-27T11:32:40.058425+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:a9dbf62d10e440ca",
-      "harmonized_at": "2026-03-27T07:42:23.940860+00:00",
+      "raw_data_hash": "sha256:017d94a868eba213",
+      "harmonized_at": "2026-03-27T11:33:48.673362+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3689,16 +3607,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-supersilent-lawrence-abu-hamd",
+    "id": "theatro-circo-2026-05-index-2026-supersilent-lawrence-abu-hamd-404d",
     "source_id": "index-supersilent-lawrence-abu-hamdan",
     "source_url": "https://theatrocirco.com/event/index-supersilent-lawrence-abu-hamdan/",
     "venue_id": "theatro-circo",
@@ -3713,7 +3630,9 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "sessao-unica"
+    ],
     "categories_raw": [],
     "dates": [
       {
@@ -3808,10 +3727,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:11.331747+00:00",
+      "scraped_at": "2026-03-27T11:32:42.338918+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:bfcc4117aae51ba4",
-      "harmonized_at": "2026-03-27T07:42:23.940989+00:00",
+      "raw_data_hash": "sha256:6979c4061141c980",
+      "harmonized_at": "2026-03-27T11:33:48.673500+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3823,16 +3742,15 @@
         "creditos ausentes (director, companhia ou texto raw)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-index-2026-arkadi-zaides-talos",
+    "id": "theatro-circo-2026-05-index-2026-arkadi-zaides-talos-8a65",
     "source_id": "index-arkadi-zaides",
     "source_url": "https://theatrocirco.com/event/index-arkadi-zaides/",
     "venue_id": "theatro-circo",
@@ -3847,7 +3765,9 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "sessao-unica"
+    ],
     "categories_raw": [],
     "dates": [
       {
@@ -3942,10 +3862,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:13.252051+00:00",
+      "scraped_at": "2026-03-27T11:32:44.482447+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:8193b7e782f3a5a5",
-      "harmonized_at": "2026-03-27T07:42:23.941105+00:00",
+      "raw_data_hash": "sha256:f5cdc1065e209c06",
+      "harmonized_at": "2026-03-27T11:33:48.673649+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -3957,16 +3877,15 @@
         "creditos ausentes (director, companhia ou texto raw)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-saber-ir-ao-fundo",
+    "id": "theatro-circo-2026-05-saber-ir-ao-fundo-2a31",
     "source_id": "saber-ir-ao-fundo",
     "source_url": "https://theatrocirco.com/event/saber-ir-ao-fundo/",
     "venue_id": "theatro-circo",
@@ -3981,7 +3900,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -4087,10 +4008,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:15.144898+00:00",
+      "scraped_at": "2026-03-27T11:32:45.237934+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:5fd0a8c48bb335bf",
-      "harmonized_at": "2026-03-27T07:42:23.941212+00:00",
+      "raw_data_hash": "sha256:e9015273600daf77",
+      "harmonized_at": "2026-03-27T11:33:48.673767+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4100,15 +4021,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-habitar-hotel-europa",
+    "id": "theatro-circo-2026-05-habitar-hotel-europa-eff4",
     "source_id": "habitar-hotel-europa",
     "source_url": "https://theatrocirco.com/event/habitar-hotel-europa/",
     "venue_id": "theatro-circo",
@@ -4123,7 +4043,11 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "lgp",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -4220,10 +4144,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:17.062171+00:00",
+      "scraped_at": "2026-03-27T11:32:45.990583+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:9abf11597f0ac013",
-      "harmonized_at": "2026-03-27T07:42:23.941343+00:00",
+      "raw_data_hash": "sha256:a4149ed80bca6de3",
+      "harmonized_at": "2026-03-27T11:33:48.673904+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4233,16 +4157,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-visita-guiada-ao-theatro-circo-30052026",
+    "id": "theatro-circo-2026-05-visita-guiada-ao-theatro-circo-30052026-573a",
     "source_id": "visita-guiada-ao-theatro-circo-mai2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-mai2026/",
     "venue_id": "theatro-circo",
@@ -4257,7 +4180,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -4363,10 +4288,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:18.886937+00:00",
+      "scraped_at": "2026-03-27T11:32:48.100623+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:7450c54ab1ff9cb5",
-      "harmonized_at": "2026-03-27T07:42:23.941459+00:00",
+      "raw_data_hash": "sha256:3116d2cf5a06dc5b",
+      "harmonized_at": "2026-03-27T11:33:48.674028+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4376,15 +4301,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-contexto-antonio-brito-guterres-e-maria-",
+    "id": "theatro-circo-2026-05-contexto-antonio-brito-guterres-e-maria--38c1",
     "source_id": "contexto-antoniobritoguterres-mariamanueloliveira",
     "source_url": "https://theatrocirco.com/event/contexto-antoniobritoguterres-mariamanueloliveira/",
     "venue_id": "theatro-circo",
@@ -4399,7 +4323,11 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "entrada-livre",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -4496,10 +4424,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:20.873422+00:00",
+      "scraped_at": "2026-03-27T11:32:50.559423+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:1ba18030f49b4341",
-      "harmonized_at": "2026-03-27T07:42:23.941637+00:00",
+      "raw_data_hash": "sha256:fe8a2d0e4b1c440e",
+      "harmonized_at": "2026-03-27T11:33:48.674187+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4509,16 +4437,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla",
+    "id": "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla-c528",
     "source_id": "contraponto-orquestra-do-algarve",
     "source_url": "https://theatrocirco.com/event/contraponto-orquestra-do-algarve/",
     "venue_id": "theatro-circo",
@@ -4533,7 +4460,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -4630,10 +4560,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:21.552786+00:00",
+      "scraped_at": "2026-03-27T11:32:51.340895+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:67397baead3434d8",
-      "harmonized_at": "2026-03-27T07:42:23.941761+00:00",
+      "raw_data_hash": "sha256:f07ee09232358de9",
+      "harmonized_at": "2026-03-27T11:33:48.674317+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4643,16 +4573,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-a-winged-victory-for-the-sullen",
+    "id": "theatro-circo-2026-05-a-winged-victory-for-the-sullen-d21b",
     "source_id": "a-winged-victory-for-the-sullen",
     "source_url": "https://theatrocirco.com/event/a-winged-victory-for-the-sullen/",
     "venue_id": "theatro-circo",
@@ -4667,7 +4596,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -4764,10 +4696,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:22.207917+00:00",
+      "scraped_at": "2026-03-27T11:32:52.097151+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:7211e29e75342f46",
-      "harmonized_at": "2026-03-27T07:42:23.941899+00:00",
+      "raw_data_hash": "sha256:3c987599f4cf588a",
+      "harmonized_at": "2026-03-27T11:33:48.674465+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4777,16 +4709,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-oru-kami-garibambi-jun-2026",
+    "id": "theatro-circo-2026-06-oru-kami-garibambi-jun-2026-57da",
     "source_id": "oru-kami-garibambi",
     "source_url": "https://theatrocirco.com/event/oru-kami-garibambi/",
     "venue_id": "theatro-circo",
@@ -4801,7 +4732,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -4943,10 +4876,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:24.010557+00:00",
+      "scraped_at": "2026-03-27T11:32:54.441894+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:be74d7eeab05a14d",
-      "harmonized_at": "2026-03-27T07:42:23.942007+00:00",
+      "raw_data_hash": "sha256:1519db76670e558b",
+      "harmonized_at": "2026-03-27T11:33:48.674606+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -4956,15 +4889,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-chamada-aberta-ao-publico-do-theatro-cir",
+    "id": "theatro-circo-2026-06-chamada-aberta-ao-publico-do-theatro-cir-2cb9",
     "source_id": "chamada-aberta-ao-publico-do-theatro-circo",
     "source_url": "https://theatrocirco.com/event/chamada-aberta-ao-publico-do-theatro-circo/",
     "venue_id": "theatro-circo",
@@ -4979,7 +4911,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -5074,10 +5009,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:25.996959+00:00",
+      "scraped_at": "2026-03-27T11:32:56.687722+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:2ef10c21251150b8",
-      "harmonized_at": "2026-03-27T07:42:23.942158+00:00",
+      "raw_data_hash": "sha256:9ffad5769e06ec80",
+      "harmonized_at": "2026-03-27T11:33:48.676915+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5088,16 +5023,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-laurie-anderson-com-sexmob",
+    "id": "theatro-circo-2026-06-laurie-anderson-com-sexmob-7d63",
     "source_id": "laurie-anderson",
     "source_url": "https://theatrocirco.com/event/laurie-anderson/",
     "venue_id": "theatro-circo",
@@ -5112,7 +5046,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -5209,10 +5146,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:26.650903+00:00",
+      "scraped_at": "2026-03-27T11:32:57.447249+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:820c9575a6ab0cef",
-      "harmonized_at": "2026-03-27T07:42:23.942273+00:00",
+      "raw_data_hash": "sha256:bd1aa10e280733f5",
+      "harmonized_at": "2026-03-27T11:33:48.677053+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5222,16 +5159,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-buluku",
+    "id": "theatro-circo-2026-06-buluku-640c",
     "source_id": "buluku",
     "source_url": "https://theatrocirco.com/event/buluku/",
     "venue_id": "theatro-circo",
@@ -5246,7 +5182,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -5361,10 +5299,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:28.831479+00:00",
+      "scraped_at": "2026-03-27T11:32:59.642519+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:273895c075741475",
-      "harmonized_at": "2026-03-27T07:42:23.942381+00:00",
+      "raw_data_hash": "sha256:cce21d675f91961e",
+      "harmonized_at": "2026-03-27T11:33:48.677175+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5374,15 +5312,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202",
+    "id": "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202-87a4",
     "source_id": "oru-kami-garibambi-criancas-ao-poder-2026",
     "source_url": "https://theatrocirco.com/event/oru-kami-garibambi-criancas-ao-poder-2026/",
     "venue_id": "theatro-circo",
@@ -5397,7 +5334,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -5503,10 +5442,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:30.667855+00:00",
+      "scraped_at": "2026-03-27T11:33:02.040047+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:2c41f344cc1c3205",
-      "harmonized_at": "2026-03-27T07:42:23.944663+00:00",
+      "raw_data_hash": "sha256:b414bac95eac59fd",
+      "harmonized_at": "2026-03-27T11:33:48.677302+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5516,15 +5455,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-o-meu-astronauta-e-o-metaverso-djam-negu",
+    "id": "theatro-circo-2026-06-o-meu-astronauta-e-o-metaverso-djam-negu-fcf2",
     "source_id": "o-meu-astronauta-e-o-metaverso",
     "source_url": "https://theatrocirco.com/event/o-meu-astronauta-e-o-metaverso/",
     "venue_id": "theatro-circo",
@@ -5539,7 +5477,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -5636,10 +5577,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:32.576278+00:00",
+      "scraped_at": "2026-03-27T11:33:05.929682+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:210fa0f998a40690",
-      "harmonized_at": "2026-03-27T07:42:23.944843+00:00",
+      "raw_data_hash": "sha256:7619710c687d49d3",
+      "harmonized_at": "2026-03-27T11:33:48.677461+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5649,15 +5590,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-the-legendary-tigerman-curtas-metragens-",
+    "id": "theatro-circo-2026-06-the-legendary-tigerman-curtas-metragens--2eee",
     "source_id": "the-legendary-tigerman-curtas-metragens",
     "source_url": "https://theatrocirco.com/event/the-legendary-tigerman-curtas-metragens/",
     "venue_id": "theatro-circo",
@@ -5672,7 +5612,11 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "legendas",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -5769,10 +5713,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:34.571602+00:00",
+      "scraped_at": "2026-03-27T11:33:08.080182+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:7a511d601df65ddb",
-      "harmonized_at": "2026-03-27T07:42:23.944982+00:00",
+      "raw_data_hash": "sha256:ece1cb507e775219",
+      "harmonized_at": "2026-03-27T11:33:48.677634+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5782,16 +5726,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves",
+    "id": "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves-dadc",
     "source_id": "lucrecia-dalt",
     "source_url": "https://theatrocirco.com/event/lucrecia-dalt/",
     "venue_id": "theatro-circo",
@@ -5806,7 +5749,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -5903,10 +5849,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:36.617749+00:00",
+      "scraped_at": "2026-03-27T11:33:08.836097+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:421e34dc8948f560",
-      "harmonized_at": "2026-03-27T07:42:23.945111+00:00",
+      "raw_data_hash": "sha256:5458d56b2af02693",
+      "harmonized_at": "2026-03-27T11:33:48.677769+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -5916,16 +5862,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go",
+    "id": "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go-c37f",
     "source_id": "jose-afonso-ao-vivo-nos-coliseus-1983",
     "source_url": "https://theatrocirco.com/event/jose-afonso-ao-vivo-nos-coliseus-1983/",
     "venue_id": "theatro-circo",
@@ -5940,7 +5885,12 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "audiodescricao",
+      "lgp",
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -6037,10 +5987,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:38.733951+00:00",
+      "scraped_at": "2026-03-27T11:33:09.592001+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:f90f3b256bd8ffce",
-      "harmonized_at": "2026-03-27T07:42:23.945225+00:00",
+      "raw_data_hash": "sha256:c354dd3e9e2deb08",
+      "harmonized_at": "2026-03-27T11:33:48.677885+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6050,15 +6000,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist",
+    "id": "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist-a1c9",
     "source_id": "carminho-eu-vou-morrer-de-amor-ou-resistir",
     "source_url": "https://theatrocirco.com/event/carminho-eu-vou-morrer-de-amor-ou-resistir/",
     "venue_id": "theatro-circo",
@@ -6073,7 +6022,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -6170,10 +6122,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:39.387558+00:00",
+      "scraped_at": "2026-03-27T11:33:10.367044+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:5203c1f74fda7d76",
-      "harmonized_at": "2026-03-27T07:42:23.945390+00:00",
+      "raw_data_hash": "sha256:7f07fdae23fa5015",
+      "harmonized_at": "2026-03-27T11:33:48.678056+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6183,16 +6135,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca",
+    "id": "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca-7fc8",
     "source_id": "formas-de-fazer-pedro-melo-alves",
     "source_url": "https://theatrocirco.com/event/formas-de-fazer-pedro-melo-alves/",
     "venue_id": "theatro-circo",
@@ -6207,7 +6158,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -6313,10 +6266,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:41.253358+00:00",
+      "scraped_at": "2026-03-27T11:33:12.583317+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:9ce85393f9239fee",
-      "harmonized_at": "2026-03-27T07:42:23.945531+00:00",
+      "raw_data_hash": "sha256:c94ad8d929d6cc9d",
+      "harmonized_at": "2026-03-27T11:33:48.678178+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6326,15 +6279,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-indigo-quintet",
+    "id": "theatro-circo-2026-06-indigo-quintet-965b",
     "source_id": "indigo-quintet",
     "source_url": "https://theatrocirco.com/event/indigo-quintet/",
     "venue_id": "theatro-circo",
@@ -6349,7 +6301,10 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -6446,10 +6401,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:43.199560+00:00",
+      "scraped_at": "2026-03-27T11:33:13.337487+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:abc4a6c146e209d7",
-      "harmonized_at": "2026-03-27T07:42:23.945695+00:00",
+      "raw_data_hash": "sha256:52fbf72b5005d23f",
+      "harmonized_at": "2026-03-27T11:33:48.678343+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6459,16 +6414,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-visita-guiada-ao-theatro-circo-27062026",
+    "id": "theatro-circo-2026-06-visita-guiada-ao-theatro-circo-27062026-2112",
     "source_id": "visita-guiada-ao-theatro-circo-jun2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-jun2026/",
     "venue_id": "theatro-circo",
@@ -6483,7 +6437,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -6589,10 +6545,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:45.128805+00:00",
+      "scraped_at": "2026-03-27T11:33:15.759702+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:1c3eb8823a3257f7",
-      "harmonized_at": "2026-03-27T07:42:23.945790+00:00",
+      "raw_data_hash": "sha256:61d2f5cd10ed2c1e",
+      "harmonized_at": "2026-03-27T11:33:48.678443+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6602,15 +6558,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026",
+    "id": "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026-2295",
     "source_id": "visita-guiada-ao-theatro-circo-jul2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-jul2026/",
     "venue_id": "theatro-circo",
@@ -6625,7 +6580,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -6731,10 +6688,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:46.943547+00:00",
+      "scraped_at": "2026-03-27T11:33:18.084233+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:d31420aac83ba338",
-      "harmonized_at": "2026-03-27T07:42:23.945937+00:00",
+      "raw_data_hash": "sha256:dde9cab555f91f67",
+      "harmonized_at": "2026-03-27T11:33:48.678618+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6744,15 +6701,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-07-cinema-play-possivel-e-impossivel",
+    "id": "theatro-circo-2026-07-cinema-play-possivel-e-impossivel-eec7",
     "source_id": "cinema-play-possivel-e-impossivel",
     "source_url": "https://theatrocirco.com/event/cinema-play-possivel-e-impossivel/",
     "venue_id": "theatro-circo",
@@ -6767,7 +6723,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -6864,10 +6823,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:48.715453+00:00",
+      "scraped_at": "2026-03-27T11:33:20.472508+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:4d6440f47d74c176",
-      "harmonized_at": "2026-03-27T07:42:23.946078+00:00",
+      "raw_data_hash": "sha256:ca06762882e86521",
+      "harmonized_at": "2026-03-27T11:33:48.678832+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -6877,15 +6836,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce",
+    "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce-2cf6",
     "source_id": "as-correntes-de-joao-cesar-monteiro",
     "source_url": "https://theatrocirco.com/event/as-correntes-de-joao-cesar-monteiro/",
     "venue_id": "theatro-circo",
@@ -6900,7 +6858,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7033,10 +6993,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:50.581707+00:00",
+      "scraped_at": "2026-03-27T11:33:21.225095+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:76d5306fc4e46d9c",
-      "harmonized_at": "2026-03-27T07:42:23.946199+00:00",
+      "raw_data_hash": "sha256:4263a5a1b94537fd",
+      "harmonized_at": "2026-03-27T11:33:48.678982+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7046,16 +7006,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-veredas",
+    "id": "theatro-circo-2026-08-veredas-8d5c",
     "source_id": "veredas",
     "source_url": "https://theatrocirco.com/event/veredas/",
     "venue_id": "theatro-circo",
@@ -7070,7 +7029,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7167,10 +7129,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:52.258897+00:00",
+      "scraped_at": "2026-03-27T11:33:21.978707+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:1f9c05b812a09dc8",
-      "harmonized_at": "2026-03-27T07:42:23.946348+00:00",
+      "raw_data_hash": "sha256:189e64ae07c1f601",
+      "harmonized_at": "2026-03-27T11:33:48.679143+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7180,16 +7142,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-silvestre",
+    "id": "theatro-circo-2026-08-silvestre-d7c7",
     "source_id": "silvestre",
     "source_url": "https://theatrocirco.com/event/silvestre/",
     "venue_id": "theatro-circo",
@@ -7204,7 +7165,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7301,10 +7265,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:53.976303+00:00",
+      "scraped_at": "2026-03-27T11:33:22.730811+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:7d050f60d3fcd4dd",
-      "harmonized_at": "2026-03-27T07:42:23.946435+00:00",
+      "raw_data_hash": "sha256:3947a3b4e6d402f8",
+      "harmonized_at": "2026-03-27T11:33:48.679239+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7314,16 +7278,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-a-flor-do-mar",
+    "id": "theatro-circo-2026-08-a-flor-do-mar-653a",
     "source_id": "a-flor-do-mar",
     "source_url": "https://theatrocirco.com/event/a-flor-do-mar/",
     "venue_id": "theatro-circo",
@@ -7338,7 +7301,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7435,10 +7401,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:55.673871+00:00",
+      "scraped_at": "2026-03-27T11:33:23.481820+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:1a6b8cd304413ff3",
-      "harmonized_at": "2026-03-27T07:42:23.946549+00:00",
+      "raw_data_hash": "sha256:f15837a6fa31b18c",
+      "harmonized_at": "2026-03-27T11:33:48.679332+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7448,16 +7414,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-o-ultimo-mergulho",
+    "id": "theatro-circo-2026-08-o-ultimo-mergulho-5c83",
     "source_id": "o-ultimo-mergulho",
     "source_url": "https://theatrocirco.com/event/o-ultimo-mergulho/",
     "venue_id": "theatro-circo",
@@ -7472,7 +7437,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7569,10 +7537,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:57.402400+00:00",
+      "scraped_at": "2026-03-27T11:33:24.239509+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:842dfb743b6e10b5",
-      "harmonized_at": "2026-03-27T07:42:23.946652+00:00",
+      "raw_data_hash": "sha256:5b8877f0f9587a75",
+      "harmonized_at": "2026-03-27T11:33:48.679436+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7582,16 +7550,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708",
+    "id": "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708-8ea1",
     "source_id": "visita-guiada-ao-theatro-circo-ago2026",
     "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-ago2026/",
     "venue_id": "theatro-circo",
@@ -7606,7 +7573,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7730,10 +7699,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:59.492313+00:00",
+      "scraped_at": "2026-03-27T11:33:26.861666+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:8469132933a4e3ae",
-      "harmonized_at": "2026-03-27T07:42:23.946751+00:00",
+      "raw_data_hash": "sha256:006e2911c8383559",
+      "harmonized_at": "2026-03-27T11:33:48.679561+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7743,15 +7712,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-08-as-bodas-de-deus",
+    "id": "theatro-circo-2026-08-as-bodas-de-deus-745b",
     "source_id": "as-bodas-de-deus",
     "source_url": "https://theatrocirco.com/event/as-bodas-de-deus/",
     "venue_id": "theatro-circo",
@@ -7766,7 +7734,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -7863,10 +7834,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:01.280725+00:00",
+      "scraped_at": "2026-03-27T11:33:29.152621+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:3b8460b561f66a18",
-      "harmonized_at": "2026-03-27T07:42:23.946907+00:00",
+      "raw_data_hash": "sha256:13743ecc2ddfee38",
+      "harmonized_at": "2026-03-27T11:33:48.679734+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -7876,16 +7847,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-03-porta-do-ceu-ctb",
+    "id": "theatro-circo-2026-03-porta-do-ceu-ctb-2fb7",
     "source_id": "porta-do-ceu-2026",
     "source_url": "https://theatrocirco.com/event/porta-do-ceu-2026/",
     "venue_id": "theatro-circo",
@@ -7900,7 +7870,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8015,10 +7987,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:06.136719+00:00",
+      "scraped_at": "2026-03-27T11:33:29.908250+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:b28922a2a3e0e147",
-      "harmonized_at": "2026-03-27T07:42:23.947004+00:00",
+      "raw_data_hash": "sha256:a2f9da44628366ec",
+      "harmonized_at": "2026-03-27T11:33:48.679837+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8029,16 +8001,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-os-transparentes-ctb",
+    "id": "theatro-circo-2026-05-os-transparentes-ctb-c29b",
     "source_id": "os-transparentes",
     "source_url": "https://theatrocirco.com/event/os-transparentes/",
     "venue_id": "theatro-circo",
@@ -8053,7 +8024,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8159,10 +8132,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:09.671617+00:00",
+      "scraped_at": "2026-03-27T11:33:32.725642+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:f2da62f7834b69de",
-      "harmonized_at": "2026-03-27T07:42:23.947210+00:00",
+      "raw_data_hash": "sha256:68abc238574a1e42",
+      "harmonized_at": "2026-03-27T11:33:48.680058+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8172,15 +8145,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-american-blues-mai-2026-ctb",
+    "id": "theatro-circo-2026-05-american-blues-mai-2026-ctb-45bf",
     "source_id": "american-blues-mai",
     "source_url": "https://theatrocirco.com/event/american-blues-mai/",
     "venue_id": "theatro-circo",
@@ -8195,7 +8167,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8310,10 +8284,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:11.707814+00:00",
+      "scraped_at": "2026-03-27T11:33:34.955151+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:e87e7b38bf807141",
-      "harmonized_at": "2026-03-27T07:42:23.947318+00:00",
+      "raw_data_hash": "sha256:80e7b9ce054b580e",
+      "harmonized_at": "2026-03-27T11:33:48.680170+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8323,16 +8297,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-mulheres-estrangeiras-ctb",
+    "id": "theatro-circo-2026-05-mulheres-estrangeiras-ctb-b262",
     "source_id": "mulheres-estrangeiras",
     "source_url": "https://theatrocirco.com/event/mulheres-estrangeiras/",
     "venue_id": "theatro-circo",
@@ -8347,7 +8320,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8444,10 +8420,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:13.560211+00:00",
+      "scraped_at": "2026-03-27T11:33:37.066492+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:e52b9f85cb283821",
-      "harmonized_at": "2026-03-27T07:42:23.947437+00:00",
+      "raw_data_hash": "sha256:ff2f7c203edc3bb2",
+      "harmonized_at": "2026-03-27T11:33:48.680296+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8457,15 +8433,14 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-06-american-blues-jun-2026-ctb",
+    "id": "theatro-circo-2026-06-american-blues-jun-2026-ctb-cf63",
     "source_id": "american-blues-jun",
     "source_url": "https://theatrocirco.com/event/american-blues-jun/",
     "venue_id": "theatro-circo",
@@ -8480,7 +8455,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8595,10 +8572,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:15.441808+00:00",
+      "scraped_at": "2026-03-27T11:33:39.260363+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:e30cf5500b31b56a",
-      "harmonized_at": "2026-03-27T07:42:23.947570+00:00",
+      "raw_data_hash": "sha256:f78cd5082e739016",
+      "harmonized_at": "2026-03-27T11:33:48.680402+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8608,16 +8585,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem",
+    "id": "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem-aa48",
     "source_id": "v-mit-mostra-internacional-de-teatro-sem-fronteiras",
     "source_url": "https://theatrocirco.com/event/v-mit-mostra-internacional-de-teatro-sem-fronteiras/",
     "venue_id": "theatro-circo",
@@ -8632,7 +8608,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8727,10 +8706,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:17.214426+00:00",
+      "scraped_at": "2026-03-27T11:33:41.252869+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:52a2cce00ab8e25f",
-      "harmonized_at": "2026-03-27T07:42:23.947691+00:00",
+      "raw_data_hash": "sha256:d2044faa8a8e39fb",
+      "harmonized_at": "2026-03-27T11:33:48.680522+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8742,16 +8721,15 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.5
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-07-hamlet",
+    "id": "theatro-circo-2026-07-hamlet-7dec",
     "source_id": "hamlet-jul2026",
     "source_url": "https://theatrocirco.com/event/hamlet-jul2026/",
     "venue_id": "theatro-circo",
@@ -8766,7 +8744,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -8872,10 +8852,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:18.985124+00:00",
+      "scraped_at": "2026-03-27T11:33:43.149945+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:77c1bb6b16959603",
-      "harmonized_at": "2026-03-27T07:42:23.947812+00:00",
+      "raw_data_hash": "sha256:e4cfe36101922ebb",
+      "harmonized_at": "2026-03-27T11:33:48.680678+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -8885,16 +8865,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-07-romeu-julieta-ctb",
+    "id": "theatro-circo-2026-07-romeu-julieta-ctb-0baa",
     "source_id": "romeuejulieta-jul2026",
     "source_url": "https://theatrocirco.com/event/romeuejulieta-jul2026/",
     "venue_id": "theatro-circo",
@@ -8909,7 +8888,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Teatro"
     ],
@@ -9015,10 +8996,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:21.031611+00:00",
+      "scraped_at": "2026-03-27T11:33:45.423763+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:05ef99fe21c182fc",
-      "harmonized_at": "2026-03-27T07:42:23.947906+00:00",
+      "raw_data_hash": "sha256:6045feef93eb013a",
+      "harmonized_at": "2026-03-27T11:33:48.680787+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9028,16 +9009,15 @@
       "quality_warnings": [
         "descricao ausente ou demasiado curta (< 30 chars)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-04-miguel-araujo",
+    "id": "theatro-circo-2026-04-miguel-araujo-5c00",
     "source_id": "miguel-araujo",
     "source_url": "https://theatrocirco.com/event/miguel-araujo/",
     "venue_id": "theatro-circo",
@@ -9052,7 +9032,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -9158,10 +9140,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:22.873642+00:00",
+      "scraped_at": "2026-03-27T11:33:46.174817+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:fc13937b6025f6ce",
-      "harmonized_at": "2026-03-27T07:42:23.948012+00:00",
+      "raw_data_hash": "sha256:4ce7c09e56799859",
+      "harmonized_at": "2026-03-27T11:33:48.680900+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9172,16 +9154,15 @@
         "descricao ausente ou demasiado curta (< 30 chars)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.55
+      "quality_score": 0.6
     }
   },
   {
     "schema_version": "1.0",
-    "id": "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta",
+    "id": "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta-46a6",
     "source_id": "xxxv-fitu-bracara-avgvsta",
     "source_url": "https://theatrocirco.com/event/xxxv-fitu-bracara-avgvsta/",
     "venue_id": "theatro-circo",
@@ -9196,7 +9177,9 @@
     "domain": "musica",
     "category": "musica-classica",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "música"
+    ],
     "categories_raw": [
       "Música"
     ],
@@ -9300,10 +9283,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:42:23.526740+00:00",
+      "scraped_at": "2026-03-27T11:33:48.259019+00:00",
       "scraper_id": "theatro-circo",
-      "raw_data_hash": "sha256:0fd9f12824e33124",
-      "harmonized_at": "2026-03-27T07:42:23.948113+00:00",
+      "raw_data_hash": "sha256:a1f9680ebd64b8a2",
+      "harmonized_at": "2026-03-27T11:33:48.681006+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -9315,11 +9298,146 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
+        "faixa etaria nao determinada",
+        "duration_minutes nao preenchida"
+      ],
+      "quality_score": 0.5
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "theatro-circo-2026-01-tres-tempos",
+    "source_id": "tres-tempos-2026",
+    "source_url": "https://theatrocirco.com/event/tres-tempos-2026/",
+    "venue_id": "theatro-circo",
+    "space_id": null,
+    "title": "Três Tempos",
+    "title_raw": "Três Tempos",
+    "subtitle": "Xullaji e Tiago Sampaio",
+    "description": "",
+    "description_short": "",
+    "language_of_performance": null,
+    "language_notes": null,
+    "domain": "musica",
+    "category": "musica-classica",
+    "subcategory": null,
+    "tags": [],
+    "categories_raw": [
+      "Música"
+    ],
+    "dates": [
+      {
+        "date": "2026-01-12",
+        "time_start": "18:45",
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2026-01-12",
+    "date_last": "2026-01-12",
+    "total_sessions": 1,
+    "is_ongoing": true,
+    "date_open": "2026-01-12",
+    "date_close": "2026-04-18",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": null,
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": null,
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+      "price_raw": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+      "has_discounts": false,
+      "discount_notes": null,
+      "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "Coprodução\nTheatro Circo (Braga), Culturgest (Lisboa) e Teatro Viriato (Viseu)\nQueres fazer parte deste projeto? Escreve-nos para\nparticipacao@theatrocirco.com"
+    },
+    "work": {
+      "original_title": null,
+      "composer": null,
+      "playwright": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://theatrocirco.com/wp-content/uploads/2025/11/251025_theatro_circo_tres_tempos_sessao_um_fotografia_lais_pereira-3.jpg",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "tres-tempos|2026-01",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "theatro-circo"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-27T07:40:35.498190+00:00",
+      "scraper_id": "theatro-circo",
+      "raw_data_hash": "sha256:eeb95eeace190f59",
+      "harmonized_at": "2026-03-27T07:42:23.933890+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true,
+      "extra_flags": null,
+      "quality_warnings": [
+        "descricao ausente ou demasiado curta (< 30 chars)",
+        "subcategoria nao determinada",
         "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.45
+      "quality_score": 0.65,
+      "last_seen_at": "2026-03-27T07:40:35.498190+00:00",
+      "not_seen_since": "2026-03-27T11:33:48.691392+00:00"
     }
   },
   {
@@ -9446,7 +9564,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T01:13:39.331862+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959867+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692000+00:00"
     }
   },
   {
@@ -9573,7 +9691,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:17.962336+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959886+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692006+00:00"
     }
   },
   {
@@ -9698,7 +9816,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:31.071066+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959896+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692012+00:00"
     }
   },
   {
@@ -9825,7 +9943,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:39.530280+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959904+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692018+00:00"
     }
   },
   {
@@ -9979,7 +10097,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:42.110884+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959910+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692024+00:00"
     }
   },
   {
@@ -10106,7 +10224,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:45.556004+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959917+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692029+00:00"
     }
   },
   {
@@ -10242,7 +10360,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:46.840836+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959924+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692035+00:00"
     }
   },
   {
@@ -10369,7 +10487,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:47.508986+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959929+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692041+00:00"
     }
   },
   {
@@ -10505,7 +10623,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:48.684701+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959936+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692047+00:00"
     }
   },
   {
@@ -10632,7 +10750,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:49.861341+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959941+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692053+00:00"
     }
   },
   {
@@ -10759,7 +10877,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:51.146075+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959948+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692058+00:00"
     }
   },
   {
@@ -10913,7 +11031,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:51.813300+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959954+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692064+00:00"
     }
   },
   {
@@ -11040,7 +11158,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:52.476386+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959960+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692070+00:00"
     }
   },
   {
@@ -11167,7 +11285,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:53.138905+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959966+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692075+00:00"
     }
   },
   {
@@ -11294,7 +11412,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:53.803069+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959972+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692081+00:00"
     }
   },
   {
@@ -11421,7 +11539,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:54.472151+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959978+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692087+00:00"
     }
   },
   {
@@ -11548,7 +11666,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:55.137833+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959984+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692093+00:00"
     }
   },
   {
@@ -11675,7 +11793,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:55.801541+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959990+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692099+00:00"
     }
   },
   {
@@ -11820,7 +11938,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:56.359132+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.959996+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692105+00:00"
     }
   },
   {
@@ -11947,7 +12065,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:57.023621+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960003+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692110+00:00"
     }
   },
   {
@@ -12074,7 +12192,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:57.580138+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960009+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692116+00:00"
     }
   },
   {
@@ -12201,7 +12319,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:58.129868+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960015+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692122+00:00"
     }
   },
   {
@@ -12328,7 +12446,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:58.794334+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960021+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692128+00:00"
     }
   },
   {
@@ -12482,7 +12600,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:26:59.455152+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960027+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692134+00:00"
     }
   },
   {
@@ -12636,7 +12754,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:00.116466+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960034+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692140+00:00"
     }
   },
   {
@@ -12763,7 +12881,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:00.667853+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960040+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692146+00:00"
     }
   },
   {
@@ -12890,7 +13008,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:01.329876+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960046+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692152+00:00"
     }
   },
   {
@@ -13026,7 +13144,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:02.204300+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960052+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692158+00:00"
     }
   },
   {
@@ -13162,7 +13280,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:02.891716+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960058+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692163+00:00"
     }
   },
   {
@@ -13289,7 +13407,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:03.623947+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960064+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692169+00:00"
     }
   },
   {
@@ -13416,7 +13534,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:04.312656+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960070+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692174+00:00"
     }
   },
   {
@@ -13543,7 +13661,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:04.996072+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960075+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692180+00:00"
     }
   },
   {
@@ -13688,7 +13806,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:06.172231+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960081+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692187+00:00"
     }
   },
   {
@@ -13815,7 +13933,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:06.834713+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960087+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692192+00:00"
     }
   },
   {
@@ -13942,7 +14060,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:07.496064+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960093+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692198+00:00"
     }
   },
   {
@@ -14069,7 +14187,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:08.611650+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960098+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692204+00:00"
     }
   },
   {
@@ -14196,7 +14314,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:09.944813+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960104+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692210+00:00"
     }
   },
   {
@@ -14368,7 +14486,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:10.604810+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960110+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692215+00:00"
     }
   },
   {
@@ -14504,7 +14622,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:11.261083+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960116+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692223+00:00"
     }
   },
   {
@@ -14647,7 +14765,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:11.921079+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960121+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692229+00:00"
     }
   },
   {
@@ -14774,7 +14892,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:12.581468+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960127+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692235+00:00"
     }
   },
   {
@@ -14910,7 +15028,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:13.129997+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960133+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692241+00:00"
     }
   },
   {
@@ -15073,7 +15191,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:15.533298+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960139+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692247+00:00"
     }
   },
   {
@@ -15200,7 +15318,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:16.193554+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960145+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692253+00:00"
     }
   },
   {
@@ -15327,7 +15445,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:16.853287+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960151+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692259+00:00"
     }
   },
   {
@@ -15454,7 +15572,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:17.513951+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960157+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692265+00:00"
     }
   },
   {
@@ -15581,7 +15699,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:18.172577+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960163+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692271+00:00"
     }
   },
   {
@@ -15708,7 +15826,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:33.180095+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960169+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692277+00:00"
     }
   },
   {
@@ -15835,7 +15953,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:43.289857+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960176+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692282+00:00"
     }
   },
   {
@@ -15962,7 +16080,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:10.982566+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960182+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692289+00:00"
     }
   },
   {
@@ -16089,7 +16207,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:27:59.294429+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960188+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692295+00:00"
     }
   },
   {
@@ -16216,7 +16334,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:01.296423+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960195+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692301+00:00"
     }
   },
   {
@@ -16343,7 +16461,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:05.160424+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960201+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692306+00:00"
     }
   },
   {
@@ -16470,7 +16588,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:09.110427+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960208+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692312+00:00"
     }
   },
   {
@@ -16597,7 +16715,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:10.323207+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960214+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692318+00:00"
     }
   },
   {
@@ -16724,7 +16842,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:12.314784+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960220+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692324+00:00"
     }
   },
   {
@@ -16847,7 +16965,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:14.665784+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960226+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692330+00:00"
     }
   },
   {
@@ -16974,7 +17092,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:15.330610+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960232+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692336+00:00"
     }
   },
   {
@@ -17099,7 +17217,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:15.993877+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960238+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692343+00:00"
     }
   },
   {
@@ -17226,7 +17344,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:17.320964+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960244+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692348+00:00"
     }
   },
   {
@@ -17353,7 +17471,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:17.987021+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960250+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692354+00:00"
     }
   },
   {
@@ -17478,7 +17596,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:19.317667+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960257+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692360+00:00"
     }
   },
   {
@@ -17605,7 +17723,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:19.985522+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960262+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692366+00:00"
     }
   },
   {
@@ -17732,7 +17850,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:20.650056+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960276+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692372+00:00"
     }
   },
   {
@@ -17859,7 +17977,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:21.979770+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960290+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692378+00:00"
     }
   },
   {
@@ -17986,7 +18104,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:22.534549+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960302+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692384+00:00"
     }
   },
   {
@@ -18113,7 +18231,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:24.557828+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960316+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692390+00:00"
     }
   },
   {
@@ -18240,7 +18358,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:25.114689+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960328+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692396+00:00"
     }
   },
   {
@@ -18367,7 +18485,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:25.778916+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960338+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692402+00:00"
     }
   },
   {
@@ -18494,7 +18612,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:26.443117+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960349+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692408+00:00"
     }
   },
   {
@@ -18621,7 +18739,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:27.109623+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960359+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692413+00:00"
     }
   },
   {
@@ -18748,7 +18866,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:27.773297+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960369+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692419+00:00"
     }
   },
   {
@@ -18875,7 +18993,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:29.102168+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960379+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692425+00:00"
     }
   },
   {
@@ -19002,7 +19120,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:29.767276+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960389+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692431+00:00"
     }
   },
   {
@@ -19129,7 +19247,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:30.432957+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960400+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692437+00:00"
     }
   },
   {
@@ -19256,7 +19374,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:30.991286+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960410+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692443+00:00"
     }
   },
   {
@@ -19383,7 +19501,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:31.655767+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960424+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692448+00:00"
     }
   },
   {
@@ -19510,7 +19628,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:32.212710+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960435+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692454+00:00"
     }
   },
   {
@@ -19637,7 +19755,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:32.877734+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960445+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692460+00:00"
     }
   },
   {
@@ -19764,7 +19882,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:33.542683+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960455+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692466+00:00"
     }
   },
   {
@@ -19891,7 +20009,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:34.100848+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960465+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692471+00:00"
     }
   },
   {
@@ -20018,7 +20136,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:34.765406+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960476+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692477+00:00"
     }
   },
   {
@@ -20145,7 +20263,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:35.986829+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960513+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692483+00:00"
     }
   },
   {
@@ -20272,7 +20390,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:36.542472+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960528+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692489+00:00"
     }
   },
   {
@@ -20399,7 +20517,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:37.207346+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960539+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692495+00:00"
     }
   },
   {
@@ -20526,7 +20644,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:37.770559+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960550+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692501+00:00"
     }
   },
   {
@@ -20653,7 +20771,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:38.325159+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960561+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692507+00:00"
     }
   },
   {
@@ -20780,7 +20898,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:38.991433+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960578+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692513+00:00"
     }
   },
   {
@@ -20907,7 +21025,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:39.547448+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960589+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692519+00:00"
     }
   },
   {
@@ -21034,7 +21152,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:40.210983+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960601+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692524+00:00"
     }
   },
   {
@@ -21161,7 +21279,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:40.907752+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960611+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692530+00:00"
     }
   },
   {
@@ -21288,7 +21406,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:41.597856+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960622+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692555+00:00"
     }
   },
   {
@@ -21415,7 +21533,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:42.261008+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960631+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692562+00:00"
     }
   },
   {
@@ -21540,7 +21658,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:43.512873+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960642+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692568+00:00"
     }
   },
   {
@@ -21667,7 +21785,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:44.178020+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960652+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692574+00:00"
     }
   },
   {
@@ -21794,7 +21912,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:44.841603+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960662+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692580+00:00"
     }
   },
   {
@@ -21921,7 +22039,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:45.504115+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960672+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692586+00:00"
     }
   },
   {
@@ -22048,7 +22166,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:46.182144+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960682+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692592+00:00"
     }
   },
   {
@@ -22175,7 +22293,7 @@
       "manually_edited_at": null,
       "is_active": true,
       "last_seen_at": "2026-03-26T15:28:46.737044+00:00",
-      "not_seen_since": "2026-03-27T07:42:23.960692+00:00"
+      "not_seen_since": "2026-03-27T11:33:48.692598+00:00"
     }
   }
 ]

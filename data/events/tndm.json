@@ -1,138 +1,7 @@
 [
   {
     "schema_version": "1.0",
-    "id": "tndm-2025-09-oficinas-de-teatro",
-    "source_id": "oficinas-de-teatro",
-    "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/oficinas-de-teatro/",
-    "venue_id": "tndm",
-    "space_id": null,
-    "title": "Oficinas de Teatro",
-    "title_raw": "Oficinas de Teatro",
-    "subtitle": null,
-    "description": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de envolvimento de alunas e alunos a partir das suas linguagens artísticas e das referências culturais locais.\nPara os jovens participantes, este projeto tem proporcionado um espaço e um tempo em que o teatro se transforma em pertença e liberdade, intrinsecamente conectado com as suas vidas.\nAs oficinas permitem ainda fomentar as relações entre jovens, entre jovens e artista, e também com a comunidade escolar. No final do processo de trabalho, em cada localidade, realiza-se uma partilha informal na escola e/ou no teatro.\nAo longo do ano letivo, em cada município, serão ainda desenhadas atividades de envolvimento com a comunidade escolar e no território, como workshops, visitas e assistências a espetáculos.",
-    "description_short": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de…",
-    "language_of_performance": "pt",
-    "language_notes": null,
-    "domain": "formacao",
-    "category": "oficinas",
-    "subcategory": "oficina-criativa",
-    "tags": [],
-    "categories_raw": [
-      "Oficina"
-    ],
-    "dates": [
-      {
-        "date": "2025-09-01",
-        "time_start": null,
-        "time_end": null,
-        "duration_minutes": null,
-        "is_cancelled": false,
-        "is_sold_out": false,
-        "notes": null
-      }
-    ],
-    "date_first": "2025-09-01",
-    "date_last": "2025-09-01",
-    "total_sessions": 1,
-    "is_ongoing": false,
-    "date_open": "2025-09-01",
-    "date_close": "2025-09-01",
-    "event_status": "unica-sessao",
-    "is_premiere": false,
-    "is_national_premiere": false,
-    "is_reprise": false,
-    "production_origin": "nacional",
-    "is_festival": false,
-    "festival_name": null,
-    "festival_id": null,
-    "is_multi_venue": false,
-    "multi_venue_ids": [],
-    "series_name": null,
-    "series_edition": null,
-    "audience": {
-      "label": null,
-      "label_raw": "",
-      "age_min": null,
-      "age_max": null,
-      "is_family": false,
-      "is_educational": false,
-      "school_level": null,
-      "notes": null
-    },
-    "price": {
-      "is_free": false,
-      "price_min": null,
-      "price_max": null,
-      "price_display": null,
-      "price_raw": null,
-      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
-    },
-    "accessibility": {
-      "has_sign_language": false,
-      "has_audio_description": false,
-      "has_subtitles": false,
-      "subtitle_language": null,
-      "is_relaxed_performance": false,
-      "wheelchair_accessible": true,
-      "notes": null
-    },
-    "credits": {
-      "company": null,
-      "director": null,
-      "conductor": null,
-      "choreographer": null,
-      "cast": [],
-      "creative_team": [],
-      "musicians": [],
-      "credits_raw": "ARRAIOLOS\nartista\nInês Leite (TEatroensaio)\nTORRÃO, ALCÁCER DO SAL\nartista\nMiguel Magalhães\nparceria com\nPlano Nacional das Artes\nparceiros locais\nCâmara Municipal de Alcácer do Sal e Convento da Terra; Câmara Municipal de Arraiolos\ndirigido a\nalunos dos 2.º e 3.º ciclos"
-    },
-    "work": {
-      "original_title": null,
-      "playwright": null,
-      "composer": null,
-      "choreographer": null,
-      "year_created": null,
-      "country_of_origin": null,
-      "genre_original": null
-    },
-    "media": {
-      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/oficinas_de_teatro_2026_1920_4122637269309b060312a.png",
-      "cover_image_local": null,
-      "thumbnail": null,
-      "trailer_url": null,
-      "gallery": []
-    },
-    "dedup": {
-      "fingerprint": "oficinas-de-teatro|2025-09",
-      "duplicate_of": null,
-      "is_canonical": true,
-      "seen_at_venues": [
-        "tndm"
-      ]
-    },
-    "pipeline": {
-      "scraped_at": "2026-03-27T07:40:47.358534+00:00",
-      "scraper_id": "tndm",
-      "raw_data_hash": "sha256:4ccc6740eb73e749",
-      "harmonized_at": "2026-03-27T07:41:09.540142+00:00",
-      "validated": true,
-      "validation_errors": [],
-      "manually_edited": false,
-      "manually_edited_at": null,
-      "is_active": true,
-      "extra_flags": null,
-      "quality_warnings": [
-        "preco nao determinado (nem entrada livre nem valor)",
-        "tags ausentes",
-        "faixa etaria nao determinada",
-        "duration_minutes nao preenchida"
-      ],
-      "quality_score": 0.75
-    }
-  },
-  {
-    "schema_version": "1.0",
-    "id": "tndm-2026-03-filodemo",
+    "id": "tndm-2026-03-filodemo-8869",
     "source_id": "filodemo",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/filodemo/",
     "venue_id": "tndm",
@@ -147,7 +16,12 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "entrada-livre",
+      "jovens",
+      "lgp"
+    ],
     "categories_raw": [
       "Espetáculos",
       "Infância e Juventude",
@@ -473,10 +347,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:49.216278+00:00",
+      "scraped_at": "2026-03-27T11:34:03.581002+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:95a4a51bd76d32b0",
-      "harmonized_at": "2026-03-27T07:41:09.549717+00:00",
+      "raw_data_hash": "sha256:76b1c0e6d5847d71",
+      "harmonized_at": "2026-03-27T11:34:25.169974+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -484,15 +358,14 @@
       "is_active": true,
       "extra_flags": null,
       "quality_warnings": [
-        "subcategoria nao determinada",
-        "tags ausentes"
+        "subcategoria nao determinada"
       ],
-      "quality_score": 0.9
+      "quality_score": 0.95
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-03-nao-se-pode-nao-se-pode",
+    "id": "tndm-2026-03-nao-se-pode-nao-se-pode-c93a",
     "source_id": "nao-se-pode-nao-se-pode",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/nao-se-pode-nao-se-pode/",
     "venue_id": "tndm",
@@ -507,7 +380,12 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "adultos",
+      "audiodescricao",
+      "familia",
+      "lgp"
+    ],
     "categories_raw": [
       "Infância e Juventude",
       "Público em geral"
@@ -715,10 +593,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:51.136833+00:00",
+      "scraped_at": "2026-03-27T11:34:05.638386+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:305446f03b379e20",
-      "harmonized_at": "2026-03-27T07:41:09.550728+00:00",
+      "raw_data_hash": "sha256:84b20bd3218520d2",
+      "harmonized_at": "2026-03-27T11:34:25.171068+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -729,15 +607,14 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-03-cabe-mais-um",
+    "id": "tndm-2026-03-cabe-mais-um-330c",
     "source_id": "cabe-mais-um",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/cabe-mais-um/",
     "venue_id": "tndm",
@@ -752,7 +629,12 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "adultos",
+      "audiodescricao",
+      "familia",
+      "lgp"
+    ],
     "categories_raw": [
       "Infância e Juventude",
       "Público em geral"
@@ -933,10 +815,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:53.067848+00:00",
+      "scraped_at": "2026-03-27T11:34:07.638199+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:9c0d85f4c565c7ff",
-      "harmonized_at": "2026-03-27T07:41:09.551657+00:00",
+      "raw_data_hash": "sha256:949dc62b78b281b8",
+      "harmonized_at": "2026-03-27T11:34:25.171715+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -947,15 +829,14 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-04-ciclo-de-formacao",
+    "id": "tndm-2026-04-ciclo-de-formacao-3cf1",
     "source_id": "ciclo-de-formacao",
     "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/ciclo-de-formacao/",
     "venue_id": "tndm",
@@ -970,7 +851,9 @@
     "domain": "formacao",
     "category": "oficinas",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "formação & participação"
+    ],
     "categories_raw": [
       "Oficinas e Formação",
       "Espetáculos",
@@ -1088,10 +971,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:54.933978+00:00",
+      "scraped_at": "2026-03-27T11:34:09.644495+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:f7c24287cde906f9",
-      "harmonized_at": "2026-03-27T07:41:09.552198+00:00",
+      "raw_data_hash": "sha256:86e3bd29730209ee",
+      "harmonized_at": "2026-03-27T11:34:25.172216+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1101,16 +984,15 @@
       "quality_warnings": [
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-05-festival-panos",
+    "id": "tndm-2026-05-festival-panos-8a0f",
     "source_id": "festivalpanos2026",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/festivalpanos2026/",
     "venue_id": "tndm",
@@ -1125,7 +1007,12 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "festival",
+      "jovens",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Espetáculos",
       "Infância e Juventude",
@@ -1225,10 +1112,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:56.794521+00:00",
+      "scraped_at": "2026-03-27T11:34:11.590322+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:015a9e3972b9903b",
-      "harmonized_at": "2026-03-27T07:41:09.552550+00:00",
+      "raw_data_hash": "sha256:c825d2c16843527c",
+      "harmonized_at": "2026-03-27T11:34:25.172594+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1238,15 +1125,14 @@
       "quality_warnings": [
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.75
+      "quality_score": 0.8
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-05-panos-palcos-novos-palavras-novas",
+    "id": "tndm-2026-05-panos-palcos-novos-palavras-novas-ed42",
     "source_id": "panos-palcos-novos-palavras-novas-2-2",
     "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/panos-palcos-novos-palavras-novas-2-2/",
     "venue_id": "tndm",
@@ -1261,7 +1147,10 @@
     "domain": "pensamento",
     "category": "literatura-poesia",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "pensamento & palavra",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Livros e Pensamento",
       "Espetáculos",
@@ -1361,10 +1250,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:40:58.676196+00:00",
+      "scraped_at": "2026-03-27T11:34:13.546779+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:306f97424e3e9503",
-      "harmonized_at": "2026-03-27T07:41:09.552972+00:00",
+      "raw_data_hash": "sha256:d6facad741a0b1c4",
+      "harmonized_at": "2026-03-27T11:34:25.173010+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1374,16 +1263,15 @@
       "quality_warnings": [
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-05-toshiib4",
+    "id": "tndm-2026-05-toshiib4-e676",
     "source_id": "toshiib4",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/toshiib4/",
     "venue_id": "tndm",
@@ -1398,7 +1286,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "lgp"
+    ],
     "categories_raw": [
       "Espetáculos",
       "Infância e Juventude",
@@ -1578,10 +1469,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:00.580645+00:00",
+      "scraped_at": "2026-03-27T11:34:15.556282+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:50c6a0feb050bfb2",
-      "harmonized_at": "2026-03-27T07:41:09.553774+00:00",
+      "raw_data_hash": "sha256:5d9caa6351870032",
+      "harmonized_at": "2026-03-27T11:34:25.173808+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1591,16 +1482,15 @@
       "quality_warnings": [
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-05-crime-e-castigo",
+    "id": "tndm-2026-05-crime-e-castigo-6a3a",
     "source_id": "crime-e-castigo",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/crime-e-castigo/",
     "venue_id": "tndm",
@@ -1615,7 +1505,10 @@
     "domain": "outros",
     "category": "outros",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "legendas",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Público em geral"
     ],
@@ -1719,10 +1612,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:02.434289+00:00",
+      "scraped_at": "2026-03-27T11:34:17.611934+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:49f751155aaba70b",
-      "harmonized_at": "2026-03-27T07:41:09.554220+00:00",
+      "raw_data_hash": "sha256:dc75c9c01a8d6d9d",
+      "harmonized_at": "2026-03-27T11:34:25.174249+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1733,15 +1626,14 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "evento em dominio outros — verificar categories_raw",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada"
       ],
-      "quality_score": 0.65
+      "quality_score": 0.7
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-05-terra-nullius",
+    "id": "tndm-2026-05-terra-nullius-1722",
     "source_id": "terra-nullius",
     "source_url": "https://www.tndm.pt/pt/programacao/livros-e-pensamento/terra-nullius/",
     "venue_id": "tndm",
@@ -1756,7 +1648,11 @@
     "domain": "pensamento",
     "category": "literatura-poesia",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "entrada-livre",
+      "pensamento & palavra",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Livros e Pensamento",
       "Espetáculos",
@@ -1863,10 +1759,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:04.300018+00:00",
+      "scraped_at": "2026-03-27T11:34:19.666742+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:ef479dc19a86dd66",
-      "harmonized_at": "2026-03-27T07:41:09.554657+00:00",
+      "raw_data_hash": "sha256:23089dc6f6756fb0",
+      "harmonized_at": "2026-03-27T11:34:25.174715+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1875,16 +1771,15 @@
       "extra_flags": null,
       "quality_warnings": [
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.8
+      "quality_score": 0.85
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-06-prologo",
+    "id": "tndm-2026-06-prologo-ff4d",
     "source_id": "prologo",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/prologo/",
     "venue_id": "tndm",
@@ -1899,7 +1794,10 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco",
+      "sessao-unica"
+    ],
     "categories_raw": [
       "Espetáculos",
       "Infância e Juventude",
@@ -1999,10 +1897,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:06.171321+00:00",
+      "scraped_at": "2026-03-27T11:34:21.678749+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:8db05572c8b4d859",
-      "harmonized_at": "2026-03-27T07:41:09.555078+00:00",
+      "raw_data_hash": "sha256:fb0279ee1a38707f",
+      "harmonized_at": "2026-03-27T11:34:25.175128+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2013,16 +1911,15 @@
         "preco nao determinado (nem entrada livre nem valor)",
         "creditos ausentes (director, companhia ou texto raw)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.6
+      "quality_score": 0.65
     }
   },
   {
     "schema_version": "1.0",
-    "id": "tndm-2026-07-o-cume",
+    "id": "tndm-2026-07-o-cume-1887",
     "source_id": "o-cume",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/o-cume/",
     "venue_id": "tndm",
@@ -2037,7 +1934,9 @@
     "domain": "artes-palco",
     "category": "teatro",
     "subcategory": null,
-    "tags": [],
+    "tags": [
+      "artes de palco"
+    ],
     "categories_raw": [
       "Espetáculos",
       "Infância e Juventude",
@@ -2171,10 +2070,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-27T07:41:08.036024+00:00",
+      "scraped_at": "2026-03-27T11:34:23.661924+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:55ee705949f8c7c9",
-      "harmonized_at": "2026-03-27T07:41:09.555483+00:00",
+      "raw_data_hash": "sha256:03580ba8aa0dd75e",
+      "harmonized_at": "2026-03-27T11:34:25.175441+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2184,11 +2083,10 @@
       "quality_warnings": [
         "preco nao determinado (nem entrada livre nem valor)",
         "subcategoria nao determinada",
-        "tags ausentes",
         "faixa etaria nao determinada",
         "duration_minutes nao preenchida"
       ],
-      "quality_score": 0.7
+      "quality_score": 0.75
     }
   }
 ]

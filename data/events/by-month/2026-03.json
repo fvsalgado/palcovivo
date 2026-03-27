@@ -126,12 +126,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:45.556004+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959917+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692029+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m",
+      "id": "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
       "source_id": "ciclo-musica-de-camara-universidade-do-minho",
       "source_url": "https://theatrocirco.com/event/ciclo-musica-de-camara-universidade-do-minho/",
       "venue_id": "theatro-circo",
@@ -146,7 +146,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "entrada-livre",
+        "música"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -279,10 +282,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:36.170789+00:00",
+        "scraped_at": "2026-03-27T11:31:57.603575+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4a695360874061dd",
-        "harmonized_at": "2026-03-27T07:42:23.937580+00:00",
+        "raw_data_hash": "sha256:2920864959ae86eb",
+        "harmonized_at": "2026-03-27T11:33:48.669848+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -293,11 +296,10 @@
           "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.55
+        "quality_score": 0.6
       }
     },
     {
@@ -433,12 +435,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:46.840836+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959924+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692035+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-cara-de-espelho",
+      "id": "culturgest-2026-03-cara-de-espelho-baab",
       "source_id": "cara-de-espelho-b",
       "source_url": "https://www.culturgest.pt/pt/programacao/cara-de-espelho-b/",
       "venue_id": "culturgest",
@@ -453,7 +455,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "descontos",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -550,10 +556,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:06.295526+00:00",
+        "scraped_at": "2026-03-27T11:24:41.900596+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:1bd1ff64ad35d948",
-        "harmonized_at": "2026-03-27T08:15:37.622435+00:00",
+        "raw_data_hash": "sha256:b4e7501aed4fdc9e",
+        "harmonized_at": "2026-03-27T11:31:51.290320+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -562,16 +568,15 @@
         "extra_flags": null,
         "quality_warnings": [
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.8
+        "quality_score": 0.85
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-revisitar-experimentar-e-aprender",
+      "id": "ccb-2026-03-revisitar-experimentar-e-aprender-9828",
       "source_id": "266951",
       "source_url": "https://www.ccb.pt/evento/curso-e-formacao-revisitar-experimentar-e-aprender/2026-03-28/",
       "venue_id": "ccb",
@@ -589,7 +594,8 @@
       "tags": [
         "Curso",
         "Formação",
-        "Museu"
+        "Museu",
+        "formação & participação"
       ],
       "categories_raw": [
         "Atividades",
@@ -709,10 +715,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.653291+00:00",
+        "scraped_at": "2026-03-27T10:57:30.007436+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:414f3404a00950db",
-        "harmonized_at": "2026-03-27T07:45:56.803685+00:00",
+        "raw_data_hash": "sha256:7432f7b7604c9837",
+        "harmonized_at": "2026-03-27T10:59:15.276374+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -732,7 +738,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-um-silabario-por-reconstruir-iv",
+      "id": "culturgest-2026-03-um-silabario-por-reconstruir-iv-f1cb",
       "source_id": "um-silabario-por-reconstruir-iv",
       "source_url": "https://www.culturgest.pt/pt/programacao/um-silabario-por-reconstruir-iv/",
       "venue_id": "culturgest",
@@ -747,7 +753,10 @@
       "domain": "artes-visuais",
       "category": "exposicoes",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes visuais",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Artes Visuais",
         "Porto"
@@ -842,10 +851,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:34.261570+00:00",
+        "scraped_at": "2026-03-27T11:00:20.758313+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a97698d2eeed03a1",
-        "harmonized_at": "2026-03-27T08:15:37.292778+00:00",
+        "raw_data_hash": "sha256:ce5b973b581a3559",
+        "harmonized_at": "2026-03-27T11:31:50.959123+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -856,11 +865,10 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "url de bilheteira ausente",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -987,7 +995,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:47.508986+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959929+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692041+00:00"
       }
     },
     {
@@ -1114,12 +1122,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:53.803069+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959972+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692081+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-polis-a-politica-da-cidade",
+      "id": "culturgest-2026-03-polis-a-politica-da-cidade-011d",
       "source_id": "paola-vigano-joao-ferrao-polis-politica-da-cidade",
       "source_url": "https://www.culturgest.pt/pt/programacao/paola-vigano-joao-ferrao-polis-politica-da-cidade/",
       "venue_id": "culturgest",
@@ -1134,7 +1142,10 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -1229,10 +1240,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:08.207631+00:00",
+        "scraped_at": "2026-03-27T11:24:43.876099+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d3d53ee964a64717",
-        "harmonized_at": "2026-03-27T08:15:37.622853+00:00",
+        "raw_data_hash": "sha256:d1436c709f442f2d",
+        "harmonized_at": "2026-03-27T11:31:51.290770+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1243,16 +1254,15 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.65
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-lavoisier",
+      "id": "culturgest-2026-03-lavoisier-06e3",
       "source_id": "lavoisier-era-com-h",
       "source_url": "https://www.culturgest.pt/pt/programacao/lavoisier-era-com-h/",
       "venue_id": "culturgest",
@@ -1267,7 +1277,11 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "descontos",
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -1364,10 +1378,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:10.068727+00:00",
+        "scraped_at": "2026-03-27T11:24:45.788807+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6f8ab3e54068f7cd",
-        "harmonized_at": "2026-03-27T08:15:37.623257+00:00",
+        "raw_data_hash": "sha256:97b1c1ec465a2995",
+        "harmonized_at": "2026-03-27T11:31:51.291170+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1376,11 +1390,10 @@
         "extra_flags": null,
         "quality_warnings": [
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.8
+        "quality_score": 0.85
       }
     },
     {
@@ -1534,7 +1547,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:42.110884+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959910+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692024+00:00"
       }
     },
     {
@@ -1661,12 +1674,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:54.472151+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959978+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692087+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-formiga-atomica",
+      "id": "culturgest-2026-03-formiga-atomica-fcf0",
       "source_id": "formiga-atomica-no-melhor-cha-cai-mosca",
       "source_url": "https://www.culturgest.pt/pt/programacao/formiga-atomica-no-melhor-cha-cai-mosca/",
       "venue_id": "culturgest",
@@ -1681,7 +1694,10 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "estreia",
+        "pensamento & palavra"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -1793,10 +1809,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:36.263722+00:00",
+        "scraped_at": "2026-03-27T11:00:22.871279+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:1b83a827893443e7",
-        "harmonized_at": "2026-03-27T08:15:37.293310+00:00",
+        "raw_data_hash": "sha256:e3a8701821699fad",
+        "harmonized_at": "2026-03-27T11:31:50.959663+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1807,16 +1823,15 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "url de bilheteira ausente",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-cha-tisana-e-kombucha-humor-e-diferencas",
+      "id": "culturgest-2026-03-cha-tisana-e-kombucha-humor-e-diferencas-b592",
       "source_id": "cha-tisana-e-kombucha-humor-e-diferencas-culturais",
       "source_url": "https://www.culturgest.pt/pt/programacao/cha-tisana-e-kombucha-humor-e-diferencas-culturais/",
       "venue_id": "culturgest",
@@ -1831,7 +1846,10 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -1926,10 +1944,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:12.040795+00:00",
+        "scraped_at": "2026-03-27T11:24:47.775521+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:035695b70c98cbf2",
-        "harmonized_at": "2026-03-27T08:15:37.623688+00:00",
+        "raw_data_hash": "sha256:938386c6a7ddad32",
+        "harmonized_at": "2026-03-27T11:31:51.291636+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1939,11 +1957,10 @@
         "quality_warnings": [
           "preco nao determinado (nem entrada livre nem valor)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
@@ -2068,7 +2085,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:31.071066+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959896+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692012+00:00"
       }
     },
     {
@@ -2195,7 +2212,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:39.530280+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959904+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692018+00:00"
       }
     },
     {
@@ -2322,7 +2339,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:17.962336+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959886+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692006+00:00"
       }
     },
     {
@@ -2449,12 +2466,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T01:13:39.331862+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959867+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692000+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-falta-de-cha-humor-tabus-e-censura",
+      "id": "culturgest-2026-03-falta-de-cha-humor-tabus-e-censura-887a",
       "source_id": "falta-de-cha-humor-tabus-censura",
       "source_url": "https://www.culturgest.pt/pt/programacao/falta-de-cha-humor-tabus-censura/",
       "venue_id": "culturgest",
@@ -2469,7 +2486,10 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -2564,10 +2584,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:13.928394+00:00",
+        "scraped_at": "2026-03-27T11:24:49.796669+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:1a0bbd588efb7c5c",
-        "harmonized_at": "2026-03-27T08:15:37.623982+00:00",
+        "raw_data_hash": "sha256:d5e24a644293511b",
+        "harmonized_at": "2026-03-27T11:31:51.291947+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2577,11 +2597,10 @@
         "quality_warnings": [
           "preco nao determinado (nem entrada livre nem valor)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
@@ -2711,7 +2730,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T01:17:59.297529+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277689+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667059+00:00"
       }
     },
     {
@@ -2843,12 +2862,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627152+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277747+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667095+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-03-diana-niepce",
+      "id": "culturgest-2026-03-diana-niepce-ddb0",
       "source_id": "diana-niepce-hornfuckers",
       "source_url": "https://www.culturgest.pt/pt/programacao/diana-niepce-hornfuckers/",
       "venue_id": "culturgest",
@@ -2863,7 +2882,12 @@
       "domain": "artes-palco",
       "category": "danca",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "audiodescricao",
+        "descontos",
+        "lgp"
+      ],
       "categories_raw": [
         "Dança",
         "Performance"
@@ -2979,10 +3003,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:44.055093+00:00",
+        "scraped_at": "2026-03-27T10:59:24.082104+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a0567a5c1c0be3e7",
-        "harmonized_at": "2026-03-27T08:15:37.277329+00:00",
+        "raw_data_hash": "sha256:38188d39c9c512a9",
+        "harmonized_at": "2026-03-27T11:31:50.943608+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2991,16 +3015,15 @@
         "extra_flags": null,
         "quality_warnings": [
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.8
+        "quality_score": 0.85
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante",
+      "id": "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
       "source_id": "conversa-jantar-sara-ines-gigante",
       "source_url": "https://theatrocirco.com/event/conversa-jantar-sara-ines-gigante/",
       "venue_id": "theatro-circo",
@@ -3015,7 +3038,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3112,10 +3138,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:36.821750+00:00",
+        "scraped_at": "2026-03-27T11:31:58.355619+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d112a42073a0c1d1",
-        "harmonized_at": "2026-03-27T07:42:23.937760+00:00",
+        "raw_data_hash": "sha256:4d7d204f8ed8780f",
+        "harmonized_at": "2026-03-27T11:33:48.670038+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3125,18 +3151,17 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas",
-      "source_id": "265960",
-      "source_url": "https://www.ccb.pt/evento/a-valentina-e-a-valeria-nao-estao-mortas/2026-03-29/",
+      "id": "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas-740c",
+      "source_id": "265940",
+      "source_url": "https://www.ccb.pt/evento/a-valentina-e-a-valeria-nao-estao-mortas/2026-03-27/",
       "venue_id": "ccb",
       "space_id": "black-box",
       "title": "A Valentina e a Valeria não estão mortas",
@@ -3150,7 +3175,8 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Teatro"
+        "Teatro",
+        "artes de palco"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -3161,21 +3187,21 @@
       "dates": [
         {
           "date": "2026-03-27",
-          "time_start": "20:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": "20:00"
-        },
-        {
-          "date": "2026-03-27",
           "time_start": "17:00",
           "time_end": null,
           "duration_minutes": null,
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": "17:00 e 20:00 - Dia Mundial do Teatro (Entrada livre. Os bilhetes deverão ser levantados no próprio dia, a partir das 13:00, na Bilheteira CCB)"
+        },
+        {
+          "date": "2026-03-27",
+          "time_start": "20:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "20:00"
         },
         {
           "date": "2026-03-28",
@@ -3276,10 +3302,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.653592+00:00",
+        "scraped_at": "2026-03-27T10:57:30.006525+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:27d198b634bc51d9",
-        "harmonized_at": "2026-03-27T07:45:56.807892+00:00",
+        "raw_data_hash": "sha256:a6bdffcdfa008031",
+        "harmonized_at": "2026-03-27T10:59:15.265022+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3298,9 +3324,9 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-museu-aberto",
-      "source_id": "277042",
-      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-28/",
+      "id": "ccb-2026-03-museu-aberto-3d72",
+      "source_id": "273504",
+      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-27/",
       "venue_id": "ccb",
       "space_id": "mac-ccb",
       "title": "Museu Aberto",
@@ -3316,7 +3342,10 @@
       "tags": [
         "Museu",
         "Música",
-        "Performance"
+        "Performance",
+        "apresentação de livro",
+        "estreia",
+        "pensamento & palavra"
       ],
       "categories_raw": [
         "Apresentação",
@@ -3426,10 +3455,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.653356+00:00",
+        "scraped_at": "2026-03-27T10:57:30.006877+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:82ac68017c7158e7",
-        "harmonized_at": "2026-03-27T07:45:56.804558+00:00",
+        "raw_data_hash": "sha256:ec9fea0bd4ecb1ff",
+        "harmonized_at": "2026-03-27T10:59:15.270420+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3448,7 +3477,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-popular",
+      "id": "theatro-circo-2026-03-popular-2c81",
       "source_id": "popular",
       "source_url": "https://theatrocirco.com/event/popular/",
       "venue_id": "theatro-circo",
@@ -3463,7 +3492,12 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "audiodescricao",
+        "lgp",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -3560,10 +3594,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:37.539902+00:00",
+        "scraped_at": "2026-03-27T11:31:59.106776+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:fbf2d26ea427165e",
-        "harmonized_at": "2026-03-27T07:42:23.937889+00:00",
+        "raw_data_hash": "sha256:b731e8aba778f7db",
+        "harmonized_at": "2026-03-27T11:33:48.670176+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3573,15 +3607,14 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "tndm-2026-03-filodemo",
+      "id": "tndm-2026-03-filodemo-8869",
       "source_id": "filodemo",
       "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/filodemo/",
       "venue_id": "tndm",
@@ -3596,7 +3629,12 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "entrada-livre",
+        "jovens",
+        "lgp"
+      ],
       "categories_raw": [
         "Espetáculos",
         "Infância e Juventude",
@@ -3922,10 +3960,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:49.216278+00:00",
+        "scraped_at": "2026-03-27T11:34:03.581002+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:95a4a51bd76d32b0",
-        "harmonized_at": "2026-03-27T07:41:09.549717+00:00",
+        "raw_data_hash": "sha256:76b1c0e6d5847d71",
+        "harmonized_at": "2026-03-27T11:34:25.169974+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3933,15 +3971,14 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "subcategoria nao determinada",
-          "tags ausentes"
+          "subcategoria nao determinada"
         ],
-        "quality_score": 0.9
+        "quality_score": 0.95
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es",
+      "id": "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es-f093",
       "source_id": "277364",
       "source_url": "https://www.ccb.pt/evento/lancamento-do-catalogo-avenida-211-um-espaco-de-artistas-em-lisboa/",
       "venue_id": "ccb",
@@ -3956,7 +3993,11 @@
       "domain": "pensamento",
       "category": "literatura-poesia",
       "subcategory": "apresentacao-livro",
-      "tags": [],
+      "tags": [
+        "apresentação de livro",
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Apresentação",
         "Atividades",
@@ -4052,10 +4093,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.653409+00:00",
+        "scraped_at": "2026-03-27T10:57:30.007582+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cbd817faf3191062",
-        "harmonized_at": "2026-03-27T07:45:56.805008+00:00",
+        "raw_data_hash": "sha256:1e9e73989c6f3cb0",
+        "harmonized_at": "2026-03-27T10:59:15.277740+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4066,16 +4107,15 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "url de bilheteira ausente",
           "creditos ausentes (director, companhia ou texto raw)",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.65
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-ana-sofia-varela",
+      "id": "ccb-2026-03-ana-sofia-varela-2b65",
       "source_id": "240705",
       "source_url": "https://www.ccb.pt/evento/ana-sofia-varela-2/",
       "venue_id": "ccb",
@@ -4092,7 +4132,9 @@
       "subcategory": null,
       "tags": [
         "Fado",
-        "Música"
+        "Música",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -4192,10 +4234,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.653565+00:00",
+        "scraped_at": "2026-03-27T10:57:30.007740+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:edebacf071bf7f14",
-        "harmonized_at": "2026-03-27T07:45:56.807417+00:00",
+        "raw_data_hash": "sha256:0a768e48f3125213",
+        "harmonized_at": "2026-03-27T10:59:15.279918+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4344,7 +4386,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627972+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277741+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667089+00:00"
       }
     },
     {
@@ -4474,7 +4516,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627986+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277752+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667101+00:00"
       }
     },
     {
@@ -4602,7 +4644,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627532+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277764+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667112+00:00"
       }
     },
     {
@@ -4730,7 +4772,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627599+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277770+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667118+00:00"
       }
     },
     {
@@ -4859,7 +4901,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627744+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277777+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667123+00:00"
       }
     },
     {
@@ -4990,7 +5032,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627822+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277783+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667129+00:00"
       }
     },
     {
@@ -5120,12 +5162,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.627923+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277789+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667135+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au",
+      "id": "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au-c0cb",
       "source_id": "companhia-de-espectadores-mar2026",
       "source_url": "https://theatrocirco.com/event/companhia-de-espectadores-mar2026/",
       "venue_id": "theatro-circo",
@@ -5140,7 +5182,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -5237,10 +5282,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:38.237400+00:00",
+        "scraped_at": "2026-03-27T11:32:01.271657+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0d6b094b2aa3cc62",
-        "harmonized_at": "2026-03-27T07:42:23.938107+00:00",
+        "raw_data_hash": "sha256:825e7bfdb81df64f",
+        "harmonized_at": "2026-03-27T11:33:48.670401+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5250,16 +5295,15 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026",
+      "id": "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026-5646",
       "source_id": "visita-guiada-ao-theatro-circo-mar2026",
       "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-mar2026/",
       "venue_id": "theatro-circo",
@@ -5274,7 +5318,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -5380,10 +5426,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:40.067706+00:00",
+        "scraped_at": "2026-03-27T11:32:02.215126+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ed98916f58b3e323",
-        "harmonized_at": "2026-03-27T07:42:23.938260+00:00",
+        "raw_data_hash": "sha256:2524465df9488a2a",
+        "harmonized_at": "2026-03-27T11:33:48.670587+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5393,15 +5439,14 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-dora-morelenbaum",
+      "id": "theatro-circo-2026-03-dora-morelenbaum-eb40",
       "source_id": "dora-morelenbaum",
       "source_url": "https://theatrocirco.com/event/dora-morelenbaum/",
       "venue_id": "theatro-circo",
@@ -5416,7 +5461,10 @@
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Música"
       ],
@@ -5513,10 +5561,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:40.718834+00:00",
+        "scraped_at": "2026-03-27T11:32:03.160976+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5cff4fe1e4cd1472",
-        "harmonized_at": "2026-03-27T07:42:23.938417+00:00",
+        "raw_data_hash": "sha256:c72cb1491fa128df",
+        "harmonized_at": "2026-03-27T11:33:48.670768+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5526,16 +5574,15 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "tndm-2026-03-nao-se-pode-nao-se-pode",
+      "id": "tndm-2026-03-nao-se-pode-nao-se-pode-c93a",
       "source_id": "nao-se-pode-nao-se-pode",
       "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/nao-se-pode-nao-se-pode/",
       "venue_id": "tndm",
@@ -5550,7 +5597,12 @@
       "domain": "outros",
       "category": "outros",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "adultos",
+        "audiodescricao",
+        "familia",
+        "lgp"
+      ],
       "categories_raw": [
         "Infância e Juventude",
         "Público em geral"
@@ -5758,10 +5810,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:51.136833+00:00",
+        "scraped_at": "2026-03-27T11:34:05.638386+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:305446f03b379e20",
-        "harmonized_at": "2026-03-27T07:41:09.550728+00:00",
+        "raw_data_hash": "sha256:84b20bd3218520d2",
+        "harmonized_at": "2026-03-27T11:34:25.171068+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5772,15 +5824,14 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
-          "tags ausentes",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "tndm-2026-03-cabe-mais-um",
+      "id": "tndm-2026-03-cabe-mais-um-330c",
       "source_id": "cabe-mais-um",
       "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/cabe-mais-um/",
       "venue_id": "tndm",
@@ -5795,7 +5846,12 @@
       "domain": "outros",
       "category": "outros",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "adultos",
+        "audiodescricao",
+        "familia",
+        "lgp"
+      ],
       "categories_raw": [
         "Infância e Juventude",
         "Público em geral"
@@ -5976,10 +6032,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:53.067848+00:00",
+        "scraped_at": "2026-03-27T11:34:07.638199+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:9c0d85f4c565c7ff",
-        "harmonized_at": "2026-03-27T07:41:09.551657+00:00",
+        "raw_data_hash": "sha256:949dc62b78b281b8",
+        "harmonized_at": "2026-03-27T11:34:25.171715+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5990,10 +6046,9 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
-          "tags ausentes",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -6125,7 +6180,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628058+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277758+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667106+00:00"
       }
     },
     {
@@ -6256,7 +6311,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628202+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277795+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667141+00:00"
       }
     },
     {
@@ -6386,7 +6441,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628227+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277801+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667147+00:00"
       }
     },
     {
@@ -6515,7 +6570,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628254+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277807+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667153+00:00"
       }
     },
     {
@@ -6652,12 +6707,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628424+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277818+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667165+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-blue-moon",
+      "id": "theatro-circo-2026-03-blue-moon-55e3",
       "source_id": "blue-moon",
       "source_url": "https://theatrocirco.com/event/blue-moon/",
       "venue_id": "theatro-circo",
@@ -6672,7 +6727,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -6769,10 +6827,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:40:41.373348+00:00",
+        "scraped_at": "2026-03-27T11:32:04.055241+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:61b50769b5ded258",
-        "harmonized_at": "2026-03-27T07:42:23.938548+00:00",
+        "raw_data_hash": "sha256:30b67b00e11d82ac",
+        "harmonized_at": "2026-03-27T11:33:48.670883+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6783,11 +6841,10 @@
           "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.55
+        "quality_score": 0.6
       }
     },
     {
@@ -6918,7 +6975,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:25:46.143210+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277709+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667066+00:00"
       }
     },
     {
@@ -7048,7 +7105,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628662+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277727+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667077+00:00"
       }
     },
     {
@@ -7180,7 +7237,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628715+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277734+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667083+00:00"
       }
     },
     {
@@ -7311,7 +7368,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628499+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277812+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667159+00:00"
       }
     },
     {
@@ -7443,7 +7500,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628449+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277824+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667170+00:00"
       }
     },
     {
@@ -7572,7 +7629,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628464+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277830+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667176+00:00"
       }
     },
     {
@@ -7702,7 +7759,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628483+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277836+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667182+00:00"
       }
     },
     {
@@ -7833,7 +7890,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628558+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277841+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667188+00:00"
       }
     },
     {
@@ -7966,7 +8023,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628571+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277847+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667193+00:00"
       }
     },
     {
@@ -8097,7 +8154,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628593+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277853+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667199+00:00"
       }
     },
     {
@@ -8228,7 +8285,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628611+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277858+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667205+00:00"
       }
     },
     {
@@ -8361,7 +8418,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628637+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277864+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667211+00:00"
       }
     },
     {
@@ -8492,12 +8549,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-25T23:04:22.628785+00:00",
-        "not_seen_since": "2026-03-27T07:45:57.277870+00:00"
+        "not_seen_since": "2026-03-27T10:59:15.667217+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-porta-do-ceu-ctb",
+      "id": "theatro-circo-2026-03-porta-do-ceu-ctb-2fb7",
       "source_id": "porta-do-ceu-2026",
       "source_url": "https://theatrocirco.com/event/porta-do-ceu-2026/",
       "venue_id": "theatro-circo",
@@ -8512,7 +8569,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -8627,10 +8686,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:42:06.136719+00:00",
+        "scraped_at": "2026-03-27T11:33:29.908250+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b28922a2a3e0e147",
-        "harmonized_at": "2026-03-27T07:42:23.947004+00:00",
+        "raw_data_hash": "sha256:a2f9da44628366ec",
+        "harmonized_at": "2026-03-27T11:33:48.679837+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8641,11 +8700,10 @@
           "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.55
+        "quality_score": 0.6
       }
     }
   ]

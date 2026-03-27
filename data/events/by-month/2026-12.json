@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-12-marisol",
+      "id": "ccb-2026-12-marisol-b2d3",
       "source_id": "260579",
       "source_url": "https://www.ccb.pt/evento/exposicao-marisol/2026-12-03/",
       "venue_id": "ccb",
@@ -20,7 +20,9 @@
       "category": "exposicoes",
       "subcategory": null,
       "tags": [
-        "Exposições"
+        "Exposições",
+        "artes visuais",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Exposições",
@@ -117,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682868+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037898+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d525c538bb26ae0f",
-        "harmonized_at": "2026-03-27T07:45:57.247174+00:00",
+        "raw_data_hash": "sha256:8f1ac0f5cab5eaf6",
+        "harmonized_at": "2026-03-27T10:59:15.644778+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -262,7 +264,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:15.330610+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960232+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692336+00:00"
       }
     },
     {
@@ -385,12 +387,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:14.665784+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960226+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692330+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-12-glenn-miller-orchestra",
+      "id": "ccb-2026-12-glenn-miller-orchestra-edfe",
       "source_id": "167168",
       "source_url": "https://www.ccb.pt/evento/glenn-miller-orchestra-4/",
       "venue_id": "ccb",
@@ -406,7 +408,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Música"
+        "Música",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -504,10 +508,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682893+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037924+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:acb632665e42f533",
-        "harmonized_at": "2026-03-27T07:45:57.247634+00:00",
+        "raw_data_hash": "sha256:a3d129ccd450a18b",
+        "harmonized_at": "2026-03-27T10:59:15.645231+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -649,7 +653,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:12.314784+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960220+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692324+00:00"
       }
     }
   ]

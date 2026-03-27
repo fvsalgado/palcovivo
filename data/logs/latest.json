@@ -1,14 +1,14 @@
 {
-  "run_at": "2026-03-27T10:44:32.990933+00:00Z",
-  "duration_seconds": 0.3,
+  "run_at": "2026-03-27T11:34:55.229609+00:00Z",
+  "duration_seconds": 0.2,
   "summary": {
     "venues_processed": 4,
-    "total_scraped": 1844,
-    "total_valid": 1746,
+    "total_scraped": 1843,
+    "total_valid": 1745,
     "total_invalid": 98,
-    "total_after_dedup": 1182,
+    "total_after_dedup": 351,
     "total_errors": 0,
-    "avg_credibility": 0.825
+    "avg_credibility": 0.845
   },
   "venue_quality": {
     "culturgest": {
@@ -17,14 +17,14 @@
       "with_price": 53.3,
       "with_description": 100.0,
       "with_category": 100.0,
-      "avg_credibility": 0.892,
-      "avg_quality_score": 0.712,
+      "avg_credibility": 0.942,
+      "avg_quality_score": 0.762,
       "field_pct": {
         "description": 100.0,
         "cover_image": 100.0,
         "domain_not_outros": 100.0,
         "subcategory": 0.0,
-        "tags": 0.0,
+        "tags": 100.0,
         "price_display": 53.3,
         "ticketing_url": 76.7,
         "credits_any": 70.0,
@@ -40,14 +40,14 @@
       "with_price": 91.5,
       "with_description": 0.0,
       "with_category": 94.6,
-      "avg_credibility": 0.792,
-      "avg_quality_score": 0.594,
+      "avg_credibility": 0.816,
+      "avg_quality_score": 0.619,
       "field_pct": {
         "description": 0.0,
         "cover_image": 100.0,
         "domain_not_outros": 94.6,
         "subcategory": 0.8,
-        "tags": 0.0,
+        "tags": 49.2,
         "price_display": 91.5,
         "ticketing_url": 100.0,
         "credits_any": 47.7,
@@ -63,14 +63,14 @@
       "with_price": 0.0,
       "with_description": 97.0,
       "with_category": 94.1,
-      "avg_credibility": 0.84,
-      "avg_quality_score": 0.593,
+      "avg_credibility": 0.846,
+      "avg_quality_score": 0.599,
       "field_pct": {
         "description": 97.0,
         "cover_image": 100.0,
         "domain_not_outros": 94.1,
         "subcategory": 17.8,
-        "tags": 87.4,
+        "tags": 99.3,
         "price_display": 0.0,
         "ticketing_url": 2.2,
         "credits_any": 0.0,
@@ -86,14 +86,14 @@
       "with_price": 18.2,
       "with_description": 100.0,
       "with_category": 72.7,
-      "avg_credibility": 0.868,
-      "avg_quality_score": 0.709,
+      "avg_credibility": 0.918,
+      "avg_quality_score": 0.759,
       "field_pct": {
         "description": 100.0,
         "cover_image": 100.0,
         "domain_not_outros": 72.7,
         "subcategory": 0.0,
-        "tags": 0.0,
+        "tags": 100.0,
         "price_display": 18.2,
         "ticketing_url": 100.0,
         "credits_any": 90.9,
@@ -107,21 +107,22 @@
   "venues": [
     {
       "venue_id": "ccb",
-      "scraped": 812,
-      "valid": 770,
+      "scraped": 811,
+      "valid": 769,
       "invalid": 42,
       "errors": [],
       "cache_hit": false,
       "merge_stats": {
-        "substituted": 770,
+        "substituted": 0,
         "kept_existing": 0,
-        "new": 0,
+        "new": 769,
         "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 0
+        "skipped_old": 0,
+        "source_id_dupes_resolved": 106
       },
       "venue_name": "Centro Cultural de Belém",
-      "avg_credibility_score": 0.84
+      "avg_credibility_score": 0.849
     },
     {
       "venue_id": "culturgest",
@@ -131,15 +132,16 @@
       "errors": [],
       "cache_hit": false,
       "merge_stats": {
-        "substituted": 895,
-        "kept_existing": 1,
-        "new": 0,
-        "tombstoned": 0,
+        "substituted": 0,
+        "kept_existing": 0,
+        "new": 30,
+        "tombstoned": 830,
         "gaps_filled": 0,
-        "skipped_old": 0
+        "skipped_old": 866,
+        "source_id_dupes_resolved": 30
       },
       "venue_name": "Culturgest",
-      "avg_credibility_score": 0.876
+      "avg_credibility_score": 0.935
     },
     {
       "venue_id": "theatro-circo",
@@ -149,15 +151,16 @@
       "errors": [],
       "cache_hit": false,
       "merge_stats": {
-        "substituted": 67,
+        "substituted": 0,
         "kept_existing": 0,
-        "new": 0,
+        "new": 66,
         "tombstoned": 0,
         "gaps_filled": 0,
-        "skipped_old": 1
+        "skipped_old": 2,
+        "source_id_dupes_resolved": 66
       },
       "venue_name": "Theatro Circo",
-      "avg_credibility_score": 0.793
+      "avg_credibility_score": 0.813
     },
     {
       "venue_id": "tndm",
@@ -166,9 +169,17 @@
       "invalid": 0,
       "errors": [],
       "cache_hit": false,
-      "merge_stats": {},
+      "merge_stats": {
+        "substituted": 0,
+        "kept_existing": 0,
+        "new": 11,
+        "tombstoned": 1,
+        "gaps_filled": 0,
+        "skipped_old": 1,
+        "source_id_dupes_resolved": 11
+      },
       "venue_name": "Teatro Nacional D. Maria II",
-      "avg_credibility_score": 0.867
+      "avg_credibility_score": 0.918
     }
   ]
 }

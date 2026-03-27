@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-11-marco-rodrigues-canta-carlos-do-carmo",
+      "id": "ccb-2026-11-marco-rodrigues-canta-carlos-do-carmo-a29f",
       "source_id": "247583",
       "source_url": "https://www.ccb.pt/evento/marco-rodrigues-canta-carlos-do-carmo/",
       "venue_id": "ccb",
@@ -21,7 +21,10 @@
       "subcategory": null,
       "tags": [
         "Fado",
-        "Música"
+        "Música",
+        "artes de palco",
+        "festival",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -120,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682786+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037812+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0116523162d1a798",
-        "harmonized_at": "2026-03-27T07:45:57.245667+00:00",
+        "raw_data_hash": "sha256:72cdf04ddb44e78b",
+        "harmonized_at": "2026-03-27T10:59:15.643223+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -143,7 +146,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-11-neil-beloufa",
+      "id": "ccb-2026-11-neil-beloufa-8baf",
       "source_id": "260570",
       "source_url": "https://www.ccb.pt/evento/exposicao-neil-beloufa/2026-11-12/",
       "venue_id": "ccb",
@@ -159,7 +162,9 @@
       "category": "exposicoes",
       "subcategory": null,
       "tags": [
-        "Exposições"
+        "Exposições",
+        "artes visuais",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Exposições",
@@ -256,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682808+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037835+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b8a01ffd8e120349",
-        "harmonized_at": "2026-03-27T07:45:57.246067+00:00",
+        "raw_data_hash": "sha256:0fe28d06637d222a",
+        "harmonized_at": "2026-03-27T10:59:15.643651+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -279,7 +284,7 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-11-francisca-carvalho",
+      "id": "ccb-2026-11-francisca-carvalho-045f",
       "source_id": "260558",
       "source_url": "https://www.ccb.pt/evento/exposicao-francisca-carvalho/2026-11-12/",
       "venue_id": "ccb",
@@ -295,7 +300,9 @@
       "category": "exposicoes",
       "subcategory": null,
       "tags": [
-        "Exposições"
+        "Exposições",
+        "artes visuais",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Exposições",
@@ -392,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682829+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037858+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c58823eff493fa06",
-        "harmonized_at": "2026-03-27T07:45:57.246418+00:00",
+        "raw_data_hash": "sha256:56b7bc51a4dae418",
+        "harmonized_at": "2026-03-27T10:59:15.644010+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -537,7 +544,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:17.987021+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960250+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692354+00:00"
       }
     },
     {
@@ -664,12 +671,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:17.320964+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960244+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692348+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-11-al-di-meola",
+      "id": "ccb-2026-11-al-di-meola-6679",
       "source_id": "276596",
       "source_url": "https://www.ccb.pt/evento/al-di-meola-misty-fest/",
       "venue_id": "ccb",
@@ -685,7 +692,9 @@
       "category": "teatro",
       "subcategory": null,
       "tags": [
-        "Música"
+        "Música",
+        "artes de palco",
+        "sessao-unica"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -783,10 +792,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:44:26.682851+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037880+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:05bd100b08e3782f",
-        "harmonized_at": "2026-03-27T07:45:57.246780+00:00",
+        "raw_data_hash": "sha256:29261b9c62dc55cd",
+        "harmonized_at": "2026-03-27T10:59:15.644356+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -926,7 +935,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:15.993877+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960238+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692343+00:00"
       }
     }
   ]

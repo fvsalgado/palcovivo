@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi",
+      "id": "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
       "source_id": "genoma-urbano-o-futuro-das-cidades-joao-seixas",
       "source_url": "https://www.culturgest.pt/pt/programacao/genoma-urbano-o-futuro-das-cidades-joao-seixas/",
       "venue_id": "culturgest",
@@ -19,7 +19,9 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "pensamento & palavra"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -131,10 +133,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:15:37.225176+00:00",
+        "scraped_at": "2026-03-27T11:31:50.890214+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:62d81b03d45aad99",
-        "harmonized_at": "2026-03-27T08:15:37.729061+00:00",
+        "raw_data_hash": "sha256:ac6bb8e2226b7700",
+        "harmonized_at": "2026-03-27T11:31:51.397214+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -145,16 +147,15 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "url de bilheteira ausente",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-02-civitas-os-fluxos-da-cidade",
+      "id": "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
       "source_id": "fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade",
       "source_url": "https://www.culturgest.pt/pt/programacao/fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade/",
       "venue_id": "culturgest",
@@ -169,7 +170,10 @@
       "domain": "pensamento",
       "category": "conferencias-debates",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Conferências e Debates"
       ],
@@ -264,10 +268,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:00.849141+00:00",
+        "scraped_at": "2026-03-27T11:24:37.879508+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f4cdb83a41e4de21",
-        "harmonized_at": "2026-03-27T08:15:37.621535+00:00",
+        "raw_data_hash": "sha256:03a6981e50361a41",
+        "harmonized_at": "2026-03-27T11:31:51.289379+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -278,16 +282,15 @@
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.65
       }
     },
     {
       "schema_version": "1.0",
-      "id": "culturgest-2026-02-alexander-zeldin",
+      "id": "culturgest-2026-02-alexander-zeldin-735d",
       "source_id": "alexander-zeldin-prendre-soin-cuidar",
       "source_url": "https://www.culturgest.pt/pt/programacao/alexander-zeldin-prendre-soin-cuidar/",
       "venue_id": "culturgest",
@@ -302,7 +305,11 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "descontos",
+        "legendas"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -417,10 +424,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T08:08:04.296068+00:00",
+        "scraped_at": "2026-03-27T11:24:39.846466+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d6effd154cfc3365",
-        "harmonized_at": "2026-03-27T08:15:37.621988+00:00",
+        "raw_data_hash": "sha256:e3a80007aee468c6",
+        "harmonized_at": "2026-03-27T11:31:51.289874+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -429,11 +436,10 @@
         "extra_flags": null,
         "quality_warnings": [
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.8
+        "quality_score": 0.85
       }
     },
     {
@@ -560,7 +566,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:57.023621+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960003+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692110+00:00"
       }
     },
     {
@@ -687,7 +693,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:26:52.476386+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.959960+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692070+00:00"
       }
     },
     {
@@ -814,7 +820,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:12.581468+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960127+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692235+00:00"
       }
     },
     {
@@ -950,7 +956,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:27:13.129997+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960133+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692241+00:00"
       }
     }
   ]

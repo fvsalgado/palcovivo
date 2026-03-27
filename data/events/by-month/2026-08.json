@@ -4,7 +4,7 @@
   "events": [
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce",
+      "id": "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce-2cf6",
       "source_id": "as-correntes-de-joao-cesar-monteiro",
       "source_url": "https://theatrocirco.com/event/as-correntes-de-joao-cesar-monteiro/",
       "venue_id": "theatro-circo",
@@ -19,7 +19,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -152,10 +154,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:50.581707+00:00",
+        "scraped_at": "2026-03-27T11:33:21.225095+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:76d5306fc4e46d9c",
-        "harmonized_at": "2026-03-27T07:42:23.946199+00:00",
+        "raw_data_hash": "sha256:4263a5a1b94537fd",
+        "harmonized_at": "2026-03-27T11:33:48.678982+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -165,16 +167,15 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-veredas",
+      "id": "theatro-circo-2026-08-veredas-8d5c",
       "source_id": "veredas",
       "source_url": "https://theatrocirco.com/event/veredas/",
       "venue_id": "theatro-circo",
@@ -189,7 +190,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -286,10 +290,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:52.258897+00:00",
+        "scraped_at": "2026-03-27T11:33:21.978707+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1f9c05b812a09dc8",
-        "harmonized_at": "2026-03-27T07:42:23.946348+00:00",
+        "raw_data_hash": "sha256:189e64ae07c1f601",
+        "harmonized_at": "2026-03-27T11:33:48.679143+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -299,11 +303,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -430,7 +433,7 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:27.109623+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960359+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692413+00:00"
       }
     },
     {
@@ -557,12 +560,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:27.773297+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960369+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692419+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-silvestre",
+      "id": "theatro-circo-2026-08-silvestre-d7c7",
       "source_id": "silvestre",
       "source_url": "https://theatrocirco.com/event/silvestre/",
       "venue_id": "theatro-circo",
@@ -577,7 +580,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -674,10 +680,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:53.976303+00:00",
+        "scraped_at": "2026-03-27T11:33:22.730811+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7d050f60d3fcd4dd",
-        "harmonized_at": "2026-03-27T07:42:23.946435+00:00",
+        "raw_data_hash": "sha256:3947a3b4e6d402f8",
+        "harmonized_at": "2026-03-27T11:33:48.679239+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -687,11 +693,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -818,12 +823,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:26.443117+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960349+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692408+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-a-flor-do-mar",
+      "id": "theatro-circo-2026-08-a-flor-do-mar-653a",
       "source_id": "a-flor-do-mar",
       "source_url": "https://theatrocirco.com/event/a-flor-do-mar/",
       "venue_id": "theatro-circo",
@@ -838,7 +843,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -935,10 +943,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:55.673871+00:00",
+        "scraped_at": "2026-03-27T11:33:23.481820+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1a6b8cd304413ff3",
-        "harmonized_at": "2026-03-27T07:42:23.946549+00:00",
+        "raw_data_hash": "sha256:f15837a6fa31b18c",
+        "harmonized_at": "2026-03-27T11:33:48.679332+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -948,11 +956,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -1079,12 +1086,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:25.778916+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960338+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692402+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-o-ultimo-mergulho",
+      "id": "theatro-circo-2026-08-o-ultimo-mergulho-5c83",
       "source_id": "o-ultimo-mergulho",
       "source_url": "https://theatrocirco.com/event/o-ultimo-mergulho/",
       "venue_id": "theatro-circo",
@@ -1099,7 +1106,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1196,10 +1206,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:57.402400+00:00",
+        "scraped_at": "2026-03-27T11:33:24.239509+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:842dfb743b6e10b5",
-        "harmonized_at": "2026-03-27T07:42:23.946652+00:00",
+        "raw_data_hash": "sha256:5b8877f0f9587a75",
+        "harmonized_at": "2026-03-27T11:33:48.679436+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1209,11 +1219,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     },
     {
@@ -1340,12 +1349,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:25.114689+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960328+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692396+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708",
+      "id": "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708-8ea1",
       "source_id": "visita-guiada-ao-theatro-circo-ago2026",
       "source_url": "https://theatrocirco.com/event/visita-guiada-ao-theatro-circo-ago2026/",
       "venue_id": "theatro-circo",
@@ -1360,7 +1369,9 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1484,10 +1495,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:41:59.492313+00:00",
+        "scraped_at": "2026-03-27T11:33:26.861666+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8469132933a4e3ae",
-        "harmonized_at": "2026-03-27T07:42:23.946751+00:00",
+        "raw_data_hash": "sha256:006e2911c8383559",
+        "harmonized_at": "2026-03-27T11:33:48.679561+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1497,10 +1508,9 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
@@ -1627,12 +1637,12 @@
         "manually_edited_at": null,
         "is_active": true,
         "last_seen_at": "2026-03-26T15:28:24.557828+00:00",
-        "not_seen_since": "2026-03-27T07:42:23.960316+00:00"
+        "not_seen_since": "2026-03-27T11:33:48.692390+00:00"
       }
     },
     {
       "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-as-bodas-de-deus",
+      "id": "theatro-circo-2026-08-as-bodas-de-deus-745b",
       "source_id": "as-bodas-de-deus",
       "source_url": "https://theatrocirco.com/event/as-bodas-de-deus/",
       "venue_id": "theatro-circo",
@@ -1647,7 +1657,10 @@
       "domain": "artes-palco",
       "category": "teatro",
       "subcategory": null,
-      "tags": [],
+      "tags": [
+        "artes de palco",
+        "sessao-unica"
+      ],
       "categories_raw": [
         "Teatro"
       ],
@@ -1744,10 +1757,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T07:42:01.280725+00:00",
+        "scraped_at": "2026-03-27T11:33:29.152621+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3b8460b561f66a18",
-        "harmonized_at": "2026-03-27T07:42:23.946907+00:00",
+        "raw_data_hash": "sha256:13743ecc2ddfee38",
+        "harmonized_at": "2026-03-27T11:33:48.679734+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1757,11 +1770,10 @@
         "quality_warnings": [
           "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
-          "tags ausentes",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.65
+        "quality_score": 0.7
       }
     }
   ]
