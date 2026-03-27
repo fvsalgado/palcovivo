@@ -1,0 +1,87 @@
+{
+  "_comment": "Registry central de venues — fonte de verdade para frequência, timeout e flags de scraping",
+  "venues": {
+    "ccb": {
+      "name": "Centro Cultural de Belém",
+      "enabled": true,
+      "scrape_frequency_hours": 12,
+      "timeout_seconds": 60,
+      "scraping_mode": "wp_api",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 500,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": true,
+        "two_pass": true,
+        "fetch_detail_html": true
+      }
+    },
+    "culturgest": {
+      "name": "Culturgest",
+      "enabled": true,
+      "scrape_frequency_hours": 24,
+      "timeout_seconds": 60,
+      "scraping_mode": "html_static",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 800,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": true,
+        "two_pass": true,
+        "fetch_detail_html": true
+      }
+    },
+    "theatro-circo": {
+      "name": "Theatro Circo",
+      "enabled": true,
+      "scrape_frequency_hours": 12,
+      "timeout_seconds": 60,
+      "scraping_mode": "wp_api",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 500,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": true,
+        "two_pass": true,
+        "fetch_detail_html": true
+      }
+    },
+    "tndm": {
+      "name": "Teatro Nacional D. Maria II",
+      "enabled": true,
+      "scrape_frequency_hours": 24,
+      "timeout_seconds": 90,
+      "scraping_mode": "html_static",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 1000,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": true,
+        "two_pass": true,
+        "fetch_detail_html": true
+      }
+    }
+  },
+  "defaults": {
+    "scrape_frequency_hours": 24,
+    "timeout_seconds": 60,
+    "use_playwright": false,
+    "rate_limit": {
+      "delay_between_requests_ms": 500,
+      "max_concurrent": 1
+    },
+    "flags": {
+      "incremental": true,
+      "two_pass": false,
+      "fetch_detail_html": false
+    }
+  }
+}
