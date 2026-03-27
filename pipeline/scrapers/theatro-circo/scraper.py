@@ -703,47 +703,55 @@ def _parse_event_page(
     cat_hint: str = None,
     cond_session=None,
 ) -> Optional[dict]:
-    # ETag/304: se página não mudou e temos hints suficientes, usar hints
+    # ETag/304: se página não mudou e temos hints suficientes, usar hints mínimos.
+    # ATENÇÃO: se resp é None (304 ou erro) mas não temos date_hint com data válida,
+    # forçamos um GET directo — evita o deadlock pós-reset (http-cache presente mas
+    # event-cache apagado).
     if cond_session is not None:
         resp = cond_session.get_conditional(url)
-        if resp is None and title_hint and date_hint:
-            d1, d2 = _parse_tc_date(date_hint)
-            if d1:
-                return {
-                    "source_id":    url.rstrip("/").split("/")[-1],
-                    "source_url":   url,
-                    "title":        title_hint,
-                    "subtitle":     None,
-                    "description":  "",
-                    "categories":   [cat_hint] if cat_hint else [],
-                    "tags":         [],
-                    "event_tags":   [],
-                    "dates":        [_make_date(d1)],
-                    "date_open":    d1,
-                    "date_close":   d2,
-                    "is_ongoing":   bool(d2),
-                    "price_raw":    "",
-                    "age_rating":   None,
-                    "room":         None,
-                    "duration_minutes": None,
-                    "ticketing_url": None,
-                    "audience":     None,
-                    "cover_image":  cover_hint,
-                    "space_id":     None,
-                    "credits_raw":  None,
-                    "accessibility": {
-                        "has_sign_language":      False,
-                        "has_audio_description":  False,
-                        "has_subtitles":          False,
-                        "is_relaxed_performance": False,
-                        "wheelchair_accessible":  True,
-                        "notes":                  None,
-                    },
-                    "scraped_at": datetime.now(timezone.utc).isoformat(),
-                    "_method":    "tc-304",
-                }
         if resp is None:
-            return None
+            # Tentar usar hints (caminho rápido — sem novo pedido HTTP)
+            if title_hint and date_hint:
+                d1, d2 = _parse_tc_date(date_hint)
+                if d1:
+                    return {
+                        "source_id":    url.rstrip("/").split("/")[-1],
+                        "source_url":   url,
+                        "title":        title_hint,
+                        "subtitle":     None,
+                        "description":  "",
+                        "categories":   [cat_hint] if cat_hint else [],
+                        "tags":         [],
+                        "event_tags":   [],
+                        "dates":        [_make_date(d1)],
+                        "date_open":    d1,
+                        "date_close":   d2,
+                        "is_ongoing":   bool(d2),
+                        "price_raw":    "",
+                        "age_rating":   None,
+                        "room":         None,
+                        "duration_minutes": None,
+                        "ticketing_url": None,
+                        "audience":     None,
+                        "cover_image":  cover_hint,
+                        "space_id":     None,
+                        "credits_raw":  None,
+                        "accessibility": {
+                            "has_sign_language":      False,
+                            "has_audio_description":  False,
+                            "has_subtitles":          False,
+                            "is_relaxed_performance": False,
+                            "wheelchair_accessible":  True,
+                            "notes":                  None,
+                        },
+                        "scraped_at": datetime.now(timezone.utc).isoformat(),
+                        "_method":    "tc-304",
+                    }
+            # Sem hints suficientes para confiar no 304 → forçar GET completo.
+            # Isto acontece tipicamente após um reset do venue (http-cache presente
+            # mas event-cache apagado) ou quando o evento não tinha data na listagem.
+            logger.debug(f"TC: 304 sem hints suficientes — a forçar GET: {url}")
+            resp = _get(session, url)
     else:
         resp = _get(session, url)
     if not resp:
