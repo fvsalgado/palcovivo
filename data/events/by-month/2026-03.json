@@ -451,10 +451,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064590+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301502+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cb25843a74026d54",
-        "harmonized_at": "2026-03-28T00:19:37.333448+00:00",
+        "raw_data_hash": "sha256:d989a352d42f8544",
+        "harmonized_at": "2026-03-28T01:23:58.658139+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1734,177 +1734,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.063832+00:00",
+        "scraped_at": "2026-03-28T01:22:09.300740+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5a9ee4964bbddd45",
-        "harmonized_at": "2026-03-28T00:19:37.325295+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.65
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-uma-deriva-atlantica-9686",
-      "source_id": "266207",
-      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-28/",
-      "venue_id": "ccb",
-      "space_id": "mac-ccb",
-      "title": "Uma deriva atlântica",
-      "title_raw": "Uma deriva atlântica",
-      "subtitle": "As artes do século XX a partir da Coleção Berardo",
-      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n…",
-      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exposições",
-        "Museu",
-        "artes visuais",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Exposições",
-        "MAC/CCB",
-        "Exposições",
-        "Museu"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-27",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-28",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-29",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-31",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-27",
-      "date_last": "2026-03-31",
-      "total_sessions": 4,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "uma-deriva-atlantica|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064014+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:87fafdb138b63fdc",
-        "harmonized_at": "2026-03-28T00:19:37.329195+00:00",
+        "raw_data_hash": "sha256:9e1ea4ce8678b585",
+        "harmonized_at": "2026-03-28T01:23:58.649822+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2054,10 +1887,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064669+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301575+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:158b37e115805c4e",
-        "harmonized_at": "2026-03-28T00:19:37.334373+00:00",
+        "raw_data_hash": "sha256:bc9e6e8bd0f1fddb",
+        "harmonized_at": "2026-03-28T01:23:58.659088+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2704,10 +2537,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.063945+00:00",
+        "scraped_at": "2026-03-28T01:22:09.300847+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:92d2cd6f210a2a45",
-        "harmonized_at": "2026-03-28T00:19:37.328683+00:00",
+        "raw_data_hash": "sha256:cd2a5906e8ab5958",
+        "harmonized_at": "2026-03-28T01:23:58.653476+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2723,6 +2556,164 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-uma-deriva-atlantica-9686",
+      "source_id": "266207",
+      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Uma deriva atlântica",
+      "title_raw": "Uma deriva atlântica",
+      "subtitle": "As artes do século XX a partir da Coleção Berardo",
+      "description": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia inconstante, com desvios e saltos temporais, mostrando ligações e confrontos entre as margens europeia e americana para indicar possíveis relações e derivas por vezes esquecidas ou ausentes da história da arte.\n\nO Atlântico, sobretudo a partir de meados do século XX, torna-se um espaço fundamental de trânsitos e exílios, suscitando novas afinidades geopolíticas que moldam as subjetividades modernas com repercussões até ao presente. Enquanto remontagem da coleção permanente, Uma deriva atlântica apresenta uma seleção de artistas portugueses e internacionais, entre pintura, escultura, desenho, instalação e artes gráficas, que desenham a arte na história do mundo e mostram a modernidade enquanto eclosão múltipla de importantes transformações sociais, artísticas e tecnológicas.\n\nDe Pablo Picasso a Amadeo de Souza-Cardoso, de Lourdes de Castro a Marcel Duchamp, de Andy Warhol a Wifredo Lam, de Maria Helena Vieira da Silva a Joaquín Torres-García, de Jackson Pollock a Malangatana, e de Lucio Fontana a Ana Hatherly, num total de cerca de 160 artistas, a exposição apresenta uma série de capítulos que revelam as complexidades do desenvolvimento histórico e artístico no século XX. Marcado por duas Guerras Mundiais na Europa e pelas suas consequências até aos processos de revoluções e descolonização da década de setenta, este arco temporal mostra-se também permeável à transformação, podendo ser repensado em novos percursos.\n…",
+      "description_short": "Uma deriva atlântica faz e desfaz caminhos pelas artes do século XX, enquadradas mais especificamente no arco temporal de 1909 a 1977, procurando desarrumar ideias feitas e cânones estabelecidos através da convocação de referências e formas artísticas habitualmente dissociadas. Segue uma cronologia…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exposições",
+        "Museu",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Exposições",
+        "MAC/CCB",
+        "Exposições",
+        "Museu"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-29",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-03-31",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-31",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://www.bol.pt/Comprar/Pesquisa?ces=147009,164398"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/03/Antonio-JorgeSilvaUma-Deriva-Atlantida-L-CCB-4K.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "uma-deriva-atlantica|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T01:22:09.300919+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:cb22bd39000694c3",
+        "harmonized_at": "2026-03-28T01:23:58.654011+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
       }
     },
     {
@@ -2845,10 +2836,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064635+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301540+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4b97bb0687a20e53",
-        "harmonized_at": "2026-03-28T00:19:37.334016+00:00",
+        "raw_data_hash": "sha256:8e3a03b3163392c5",
+        "harmonized_at": "2026-03-28T01:23:58.658713+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2983,10 +2974,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064739+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301646+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6ca289de32009d77",
-        "harmonized_at": "2026-03-28T00:19:37.334831+00:00",
+        "raw_data_hash": "sha256:d0aa3bc5f1fb23fc",
+        "harmonized_at": "2026-03-28T01:23:58.659542+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3122,10 +3113,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064781+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301686+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:59a7a94fa7f6ae10",
-        "harmonized_at": "2026-03-28T00:19:37.335537+00:00",
+        "raw_data_hash": "sha256:80a6373efe66d8a1",
+        "harmonized_at": "2026-03-28T01:23:58.660221+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3267,10 +3258,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064844+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301741+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:dfe363f4a8a78ba2",
-        "harmonized_at": "2026-03-28T00:19:37.336327+00:00",
+        "raw_data_hash": "sha256:0ad03a0b36f3e58a",
+        "harmonized_at": "2026-03-28T01:23:58.661008+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3409,10 +3400,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064860+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301761+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f621c234f09ede5b",
-        "harmonized_at": "2026-03-28T00:19:37.336429+00:00",
+        "raw_data_hash": "sha256:a7147ea10a72bb22",
+        "harmonized_at": "2026-03-28T01:23:58.661122+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3551,10 +3542,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.064903+00:00",
+        "scraped_at": "2026-03-28T01:22:09.301802+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5dd6dea24738a856",
-        "harmonized_at": "2026-03-28T00:19:37.337055+00:00",
+        "raw_data_hash": "sha256:fa1071cf330bc171",
+        "harmonized_at": "2026-03-28T01:23:58.661720+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4574,10 +4565,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065167+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302091+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:798827d9146923bf",
-        "harmonized_at": "2026-03-28T00:19:37.340126+00:00",
+        "raw_data_hash": "sha256:912465b212a2ccf1",
+        "harmonized_at": "2026-03-28T01:23:58.664684+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4714,10 +4705,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065210+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302131+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:29038e1c946ad83f",
-        "harmonized_at": "2026-03-28T00:19:37.340602+00:00",
+        "raw_data_hash": "sha256:5bf4bcf5e4a1418a",
+        "harmonized_at": "2026-03-28T01:23:58.665143+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4853,10 +4844,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065243+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302164+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:43fe6940ae8b5938",
-        "harmonized_at": "2026-03-28T00:19:37.341125+00:00",
+        "raw_data_hash": "sha256:f6bf8e2b104842ed",
+        "harmonized_at": "2026-03-28T01:23:58.665663+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5000,10 +4991,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065474+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302364+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:866a6623376d7ce5",
-        "harmonized_at": "2026-03-28T00:19:37.343089+00:00",
+        "raw_data_hash": "sha256:1d9a49d03ef27728",
+        "harmonized_at": "2026-03-28T01:23:58.667603+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5278,10 +5269,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065550+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302443+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d3b4176dbcc2b10c",
-        "harmonized_at": "2026-03-28T00:19:37.343499+00:00",
+        "raw_data_hash": "sha256:79a55205e896c807",
+        "harmonized_at": "2026-03-28T01:23:58.668020+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5417,10 +5408,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065570+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302464+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4f523dc37edf5ada",
-        "harmonized_at": "2026-03-28T00:19:37.343714+00:00",
+        "raw_data_hash": "sha256:adcc90dfd0c17f77",
+        "harmonized_at": "2026-03-28T01:23:58.668241+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5557,10 +5548,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065593+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302488+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bee7b8529611ae1d",
-        "harmonized_at": "2026-03-28T00:19:37.344058+00:00",
+        "raw_data_hash": "sha256:4794469385c194a8",
+        "harmonized_at": "2026-03-28T01:23:58.668586+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5698,10 +5689,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065686+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302589+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e750c76d2708bfcd",
-        "harmonized_at": "2026-03-28T00:19:37.345119+00:00",
+        "raw_data_hash": "sha256:f42afd89da40f91e",
+        "harmonized_at": "2026-03-28T01:23:58.669656+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5841,10 +5832,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065704+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302607+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:42c1e7acc82926d7",
-        "harmonized_at": "2026-03-28T00:19:37.345286+00:00",
+        "raw_data_hash": "sha256:9fde6eb59567dd8d",
+        "harmonized_at": "2026-03-28T01:23:58.669822+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5982,10 +5973,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065730+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302632+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9cda3bf46828705d",
-        "harmonized_at": "2026-03-28T00:19:37.345592+00:00",
+        "raw_data_hash": "sha256:604739dd84f6414f",
+        "harmonized_at": "2026-03-28T01:23:58.670176+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6123,10 +6114,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065753+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302656+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:94111275f7758b12",
-        "harmonized_at": "2026-03-28T00:19:37.345958+00:00",
+        "raw_data_hash": "sha256:8b3db441191a6559",
+        "harmonized_at": "2026-03-28T01:23:58.670485+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6266,10 +6257,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065785+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302686+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6b2222debcb4b52e",
-        "harmonized_at": "2026-03-28T00:19:37.346518+00:00",
+        "raw_data_hash": "sha256:14edd51404183886",
+        "harmonized_at": "2026-03-28T01:23:58.671034+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6407,10 +6398,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.065989+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302876+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:538dd74ffbf69196",
-        "harmonized_at": "2026-03-28T00:19:37.348703+00:00",
+        "raw_data_hash": "sha256:d69f317c5a794903",
+        "harmonized_at": "2026-03-28T01:23:58.673192+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6548,10 +6539,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:18:16.066018+00:00",
+        "scraped_at": "2026-03-28T01:22:09.302905+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:dfe41bf33483d7e0",
-        "harmonized_at": "2026-03-28T00:19:37.350343+00:00",
+        "raw_data_hash": "sha256:f9fe26f522b2b1ee",
+        "harmonized_at": "2026-03-28T01:23:58.674846+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
