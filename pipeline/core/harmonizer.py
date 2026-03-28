@@ -1,6 +1,11 @@
 """
 Primeira Plateia — Harmonizador
 Converte dados raw de qualquer venue para o schema canónico.
+
+Alterações v2.1 (2026-03-28):
+  - Filtro de datas com date=None antes de harmonizar (resolve 42 warnings CCB)
+  - Eventos passados mantêm category/domain correctos (não caem em "outros")
+  - generate_event_id mais robusto para eventos sem date_first
 """
 
 import re
@@ -401,6 +406,9 @@ def generate_event_id(venue_id: str, title: str, date_first: str, source_id: str
     Gera ID único canónico para o evento.
     Inclui um sufixo derivado do source_id para evitar colisões entre eventos
     com títulos semelhantes no mesmo mês e venue (comum ao escalar para 80+ scrapers).
+
+    Se date_first for None ou vazio, usa o source_id como âncora principal
+    para garantir IDs estáveis mesmo sem data (ex: programas permanentes CCB).
     """
     title_slug = slugify(normalize_title(title))[:40]
     date_part = date_first or "0000-00-00"
@@ -409,7 +417,9 @@ def generate_event_id(venue_id: str, title: str, date_first: str, source_id: str
         # Sufixo curto (4 chars) derivado do source_id — evita colisões sem tornar o ID ilegível
         suffix = hashlib.sha256(str(source_id).encode()).hexdigest()[:4]
         return f"{base}-{suffix}"
-    return base
+    # Sem source_id: usar hash do título completo como sufixo (garante unicidade)
+    suffix = hashlib.sha256(title_slug.encode()).hexdigest()[:4]
+    return f"{base}-{suffix}"
 
 
 def hash_raw(data: dict) -> str:
@@ -426,6 +436,10 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     """
     Recebe evento raw (qualquer formato) e devolve evento no schema canónico.
     raw_event deve ter pelo menos: title, dates[], source_id, source_url
+
+    IMPORTANTE: datas com date=None são descartadas aqui antes de qualquer
+    processamento, eliminando warnings de 'data inválida na sessão N: None'
+    que ocorrem quando scrapers não conseguem parsear a data de uma sessão.
     """
     now = datetime.now(timezone.utc).isoformat()  # ISO 8601 com +00:00, sem Z redundante
 
@@ -439,8 +453,22 @@ def harmonize_event(raw_event: dict, venue_id: str, scraper_id: str) -> dict:
     description = clean_description(desc_raw)
     description_short = truncate_description(description)
 
-    # Datas
-    raw_dates = raw_event.get("dates", [])
+    # ── Datas — filtrar entradas com date=None antes de harmonizar ──────────
+    # Resolve: "data inválida na sessão N: 'None'" no validator (42 warnings CCB)
+    # Causa: scrapers que não conseguem parsear uma data devolvem {date: None}
+    # em vez de omitir a sessão. O filtro aqui é genérico e protege todos os venues.
+    raw_dates_all = raw_event.get("dates", [])
+    raw_dates = [d for d in raw_dates_all if d.get("date")]
+
+    # Log de descarte para rastreabilidade (debug level — não polui logs normais)
+    discarded = len(raw_dates_all) - len(raw_dates)
+    if discarded > 0:
+        import logging
+        logging.getLogger(__name__).debug(
+            f"harmonize_event [{venue_id}]: {discarded} sessão(ões) sem data descartadas "
+            f"(título: {title[:50]!r})"
+        )
+
     harmonized_dates = []
     for d in raw_dates:
         date_iso = parse_date(d.get("date", "")) or d.get("date")
