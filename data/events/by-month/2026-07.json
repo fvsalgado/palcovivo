@@ -121,10 +121,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037561+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323405+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:09499a2e146e190b",
-        "harmonized_at": "2026-03-28T07:58:51.024334+00:00",
+        "raw_data_hash": "sha256:c92cb9b007bd2b26",
+        "harmonized_at": "2026-03-28T15:58:17.687038+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -260,10 +260,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037614+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323458+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:eb14c689d0d3bd48",
-        "harmonized_at": "2026-03-28T07:58:51.025214+00:00",
+        "raw_data_hash": "sha256:fb480a92a3c2d5c9",
+        "harmonized_at": "2026-03-28T15:58:17.687878+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -402,10 +402,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037639+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323487+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:248ba4f3d7e1783e",
-        "harmonized_at": "2026-03-28T07:58:51.025757+00:00",
+        "raw_data_hash": "sha256:0b13859b6f5c65ac",
+        "harmonized_at": "2026-03-28T15:58:17.688411+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -542,10 +542,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037666+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323520+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e99ff305697ca26c",
-        "harmonized_at": "2026-03-28T07:58:51.026183+00:00",
+        "raw_data_hash": "sha256:096e3412a4c08fd0",
+        "harmonized_at": "2026-03-28T15:58:17.688840+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -688,10 +688,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:19.423289+00:00",
+        "scraped_at": "2026-03-28T16:29:20.139966+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5a3e2f25459fdeec",
-        "harmonized_at": "2026-03-28T01:30:33.950266+00:00",
+        "raw_data_hash": "sha256:0c67a01c51e52724",
+        "harmonized_at": "2026-03-28T16:29:38.781766+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -822,10 +822,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:20.164441+00:00",
+        "scraped_at": "2026-03-28T16:29:21.200465+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7660df134ec0a63a",
-        "harmonized_at": "2026-03-28T01:30:33.950595+00:00",
+        "raw_data_hash": "sha256:d1da358a2a702a55",
+        "harmonized_at": "2026-03-28T16:29:38.782074+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -957,10 +957,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037687+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323549+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3467ac092c574b7a",
-        "harmonized_at": "2026-03-28T07:58:51.026638+00:00",
+        "raw_data_hash": "sha256:b54a7ad6ee19e862",
+        "harmonized_at": "2026-03-28T15:58:17.689289+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1131,10 +1131,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:23.661924+00:00",
+        "scraped_at": "2026-03-28T16:30:10.277973+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:03580ba8aa0dd75e",
-        "harmonized_at": "2026-03-28T07:58:53.009998+00:00",
+        "raw_data_hash": "sha256:dc0a74ac105ff9c8",
+        "harmonized_at": "2026-03-28T16:30:11.791935+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1270,10 +1270,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037716+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323581+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:38b568aa09b0ab3b",
-        "harmonized_at": "2026-03-28T07:58:51.027297+00:00",
+        "raw_data_hash": "sha256:8cde6eb410d3cfdd",
+        "harmonized_at": "2026-03-28T15:58:17.689964+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1406,10 +1406,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:30.549733+00:00",
+        "scraped_at": "2026-03-28T16:29:34.206657+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:eb8177bb26b6804f",
-        "harmonized_at": "2026-03-28T01:30:33.955989+00:00",
+        "raw_data_hash": "sha256:0f3572a1d8145e96",
+        "harmonized_at": "2026-03-28T16:29:38.787639+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1551,10 +1551,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:31.289934+00:00",
+        "scraped_at": "2026-03-28T16:29:35.267424+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:52367a2a7b0b7d97",
-        "harmonized_at": "2026-03-28T01:30:33.956502+00:00",
+        "raw_data_hash": "sha256:46aad6a9d3968108",
+        "harmonized_at": "2026-03-28T16:29:38.788170+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1694,10 +1694,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:32.032822+00:00",
+        "scraped_at": "2026-03-28T16:29:36.328196+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:76df45a86a88216a",
-        "harmonized_at": "2026-03-28T01:30:33.956918+00:00",
+        "raw_data_hash": "sha256:e4e126c5e507d0e6",
+        "harmonized_at": "2026-03-28T16:29:38.788559+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

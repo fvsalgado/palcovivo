@@ -118,10 +118,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028002+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314855+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e202b83a09085844",
-        "harmonized_at": "2026-03-28T07:58:50.920230+00:00",
+        "raw_data_hash": "sha256:bbab31e146c4075e",
+        "harmonized_at": "2026-03-28T15:58:17.571475+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -300,10 +300,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:09.769275+00:00",
+        "scraped_at": "2026-03-28T16:29:07.296403+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b155cdca339785bd",
-        "harmonized_at": "2026-03-28T01:30:33.944759+00:00",
+        "raw_data_hash": "sha256:c689996af21df81e",
+        "harmonized_at": "2026-03-28T16:29:38.776165+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -544,11 +544,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -625,10 +634,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028022+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314874+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:61ec59ac69344c63",
-        "harmonized_at": "2026-03-28T07:58:50.920480+00:00",
+        "raw_data_hash": "sha256:fe39f005ce588626",
+        "harmonized_at": "2026-03-28T15:58:17.571752+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -874,11 +883,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -955,10 +973,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028037+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314888+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:998d4826275b7a5a",
-        "harmonized_at": "2026-03-28T07:58:50.920644+00:00",
+        "raw_data_hash": "sha256:8780958734e27e9d",
+        "harmonized_at": "2026-03-28T15:58:17.571914+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1206,11 +1224,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1287,10 +1314,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028054+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314901+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0218314696ce4f39",
-        "harmonized_at": "2026-03-28T07:58:50.920801+00:00",
+        "raw_data_hash": "sha256:a2c5c4a876093361",
+        "harmonized_at": "2026-03-28T15:58:17.572070+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1536,11 +1563,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1617,10 +1653,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028075+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314921+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:327c5215e1ec2925",
-        "harmonized_at": "2026-03-28T07:58:50.921121+00:00",
+        "raw_data_hash": "sha256:7d69f3a80269317c",
+        "harmonized_at": "2026-03-28T15:58:17.572374+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1864,11 +1900,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1945,10 +1990,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028101+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314946+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0bc985d69cfe0d7",
-        "harmonized_at": "2026-03-28T07:58:50.921636+00:00",
+        "raw_data_hash": "sha256:4f353f9d6e435957",
+        "harmonized_at": "2026-03-28T15:58:17.572913+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2195,11 +2240,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2276,10 +2330,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028145+00:00",
+        "scraped_at": "2026-03-28T15:56:34.314994+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6922d7a7edd21628",
-        "harmonized_at": "2026-03-28T07:58:50.922465+00:00",
+        "raw_data_hash": "sha256:6ecf80cc13a5925f",
+        "harmonized_at": "2026-03-28T15:58:17.573694+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2526,11 +2580,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2607,10 +2670,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028184+00:00",
+        "scraped_at": "2026-03-28T15:56:34.315032+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a4a86a7885b9211c",
-        "harmonized_at": "2026-03-28T07:58:50.923137+00:00",
+        "raw_data_hash": "sha256:44c5f6ae8240156d",
+        "harmonized_at": "2026-03-28T15:58:17.574338+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2856,11 +2919,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "13:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-26",
-      "total_sessions": 22,
+      "date_last": "2026-06-27",
+      "total_sessions": 23,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2937,10 +3009,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028278+00:00",
+        "scraped_at": "2026-03-28T15:56:34.315126+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:143943f9d82b6662",
-        "harmonized_at": "2026-03-28T07:58:50.924046+00:00",
+        "raw_data_hash": "sha256:6516da83ef5cc350",
+        "harmonized_at": "2026-03-28T15:58:17.575239+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3084,10 +3156,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T14:57:55.592177+00:00",
+        "scraped_at": "2026-03-28T15:58:59.215790+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:21e7a8f476b6011c",
-        "harmonized_at": "2026-03-28T15:27:43.334735+00:00",
+        "raw_data_hash": "sha256:71d656bc206e206c",
+        "harmonized_at": "2026-03-28T16:28:29.543282+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3217,10 +3289,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:10.518737+00:00",
+        "scraped_at": "2026-03-28T16:29:08.359933+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0f69938ab3d672ef",
-        "harmonized_at": "2026-03-28T01:30:33.945252+00:00",
+        "raw_data_hash": "sha256:7076b32df23db432",
+        "harmonized_at": "2026-03-28T16:29:38.776708+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3354,10 +3426,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:11.268086+00:00",
+        "scraped_at": "2026-03-28T16:29:09.213783+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:26dcf8dcdd939aad",
-        "harmonized_at": "2026-03-28T01:30:33.945688+00:00",
+        "raw_data_hash": "sha256:1af2c52e5cd4fdc9",
+        "harmonized_at": "2026-03-28T16:29:38.777152+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3564,11 +3636,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-03",
-      "date_last": "2026-06-26",
-      "total_sessions": 18,
+      "date_last": "2026-06-27",
+      "total_sessions": 19,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -3645,10 +3726,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028347+00:00",
+        "scraped_at": "2026-03-28T15:56:34.315198+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:731856b9c74d2119",
-        "harmonized_at": "2026-03-28T07:58:50.924855+00:00",
+        "raw_data_hash": "sha256:f92ce8708d58af2b",
+        "harmonized_at": "2026-03-28T15:58:17.576058+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3873,11 +3954,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-04",
-      "date_last": "2026-06-26",
-      "total_sessions": 20,
+      "date_last": "2026-06-27",
+      "total_sessions": 21,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -3954,10 +4044,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.028709+00:00",
+        "scraped_at": "2026-03-28T15:56:34.315560+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:046e7964c3bd617b",
-        "harmonized_at": "2026-03-28T07:58:50.929757+00:00",
+        "raw_data_hash": "sha256:04eb1baae9dcf8b8",
+        "harmonized_at": "2026-03-28T15:58:17.580876+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4109,10 +4199,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:12.012855+00:00",
+        "scraped_at": "2026-03-28T16:29:10.375070+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d3feed63e9132a3a",
-        "harmonized_at": "2026-03-28T01:30:33.946104+00:00",
+        "raw_data_hash": "sha256:7d4cfe4995eaa0d7",
+        "harmonized_at": "2026-03-28T16:29:38.777566+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4250,10 +4340,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029626+00:00",
+        "scraped_at": "2026-03-28T15:56:34.316519+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2b8aaff1bef28dba",
-        "harmonized_at": "2026-03-28T07:58:50.941939+00:00",
+        "raw_data_hash": "sha256:708140eef90d40a8",
+        "harmonized_at": "2026-03-28T15:58:17.593430+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4396,10 +4486,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:12.752515+00:00",
+        "scraped_at": "2026-03-28T16:29:11.434978+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:068c0ad8f7274d4f",
-        "harmonized_at": "2026-03-28T01:30:33.946355+00:00",
+        "raw_data_hash": "sha256:47c28abe2e7e02c2",
+        "harmonized_at": "2026-03-28T16:29:38.777848+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4530,10 +4620,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:13.496776+00:00",
+        "scraped_at": "2026-03-28T16:29:12.492243+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:37173ddef234cd6d",
-        "harmonized_at": "2026-03-28T01:30:33.946886+00:00",
+        "raw_data_hash": "sha256:a9766a2e985347dc",
+        "harmonized_at": "2026-03-28T16:29:38.778345+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4665,10 +4755,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:14.239787+00:00",
+        "scraped_at": "2026-03-28T16:29:13.554526+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:714f8b7f236e859d",
-        "harmonized_at": "2026-03-28T01:30:33.947224+00:00",
+        "raw_data_hash": "sha256:90954d03a0ec5c2d",
+        "harmonized_at": "2026-03-28T16:29:38.778708+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4794,10 +4884,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029667+00:00",
+        "scraped_at": "2026-03-28T15:56:34.316553+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:046325c0cd19a902",
-        "harmonized_at": "2026-03-28T07:58:50.942487+00:00",
+        "raw_data_hash": "sha256:9c3d738e04592f78",
+        "harmonized_at": "2026-03-28T15:58:17.593952+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4936,10 +5026,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.029992+00:00",
+        "scraped_at": "2026-03-28T15:56:34.316901+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:caaf3bcfb27d6b1f",
-        "harmonized_at": "2026-03-28T07:58:50.947083+00:00",
+        "raw_data_hash": "sha256:a2018c3ffc74735c",
+        "harmonized_at": "2026-03-28T15:58:17.598582+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5074,10 +5164,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:14.983776+00:00",
+        "scraped_at": "2026-03-28T16:29:14.409324+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:edf96948b5d3be73",
-        "harmonized_at": "2026-03-28T01:30:33.947637+00:00",
+        "raw_data_hash": "sha256:c85fbe7a73c711fb",
+        "harmonized_at": "2026-03-28T16:29:38.779090+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5211,10 +5301,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:15.725759+00:00",
+        "scraped_at": "2026-03-28T16:29:15.259709+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ff906c022655a911",
-        "harmonized_at": "2026-03-28T01:30:33.948116+00:00",
+        "raw_data_hash": "sha256:85af0c6b6690a257",
+        "harmonized_at": "2026-03-28T16:29:38.779570+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5362,10 +5452,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:29.807702+00:00",
+        "scraped_at": "2026-03-28T16:29:33.209128+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6150ec715c744a91",
-        "harmonized_at": "2026-03-28T01:30:33.955525+00:00",
+        "raw_data_hash": "sha256:4a1c7c6d6690f2f5",
+        "harmonized_at": "2026-03-28T16:29:38.787169+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5490,11 +5580,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-17",
-      "date_last": "2026-06-26",
-      "total_sessions": 9,
+      "date_last": "2026-06-27",
+      "total_sessions": 10,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -5571,10 +5670,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.034651+00:00",
+        "scraped_at": "2026-03-28T15:56:34.319323+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7c7bf79c8e618490",
-        "harmonized_at": "2026-03-28T07:58:50.980674+00:00",
+        "raw_data_hash": "sha256:66bb03e5d34f7971",
+        "harmonized_at": "2026-03-28T15:58:17.632431+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5710,10 +5809,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.035235+00:00",
+        "scraped_at": "2026-03-28T15:56:34.320018+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:089e36d23edfde7a",
-        "harmonized_at": "2026-03-28T07:58:50.989442+00:00",
+        "raw_data_hash": "sha256:ed81936a983f2dee",
+        "harmonized_at": "2026-03-28T15:58:17.641134+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5848,10 +5947,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:16.468851+00:00",
+        "scraped_at": "2026-03-28T16:29:16.011428+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:051f025f542c0ed8",
-        "harmonized_at": "2026-03-28T01:30:33.948660+00:00",
+        "raw_data_hash": "sha256:d125ac13e8ba32be",
+        "harmonized_at": "2026-03-28T16:29:38.780114+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5986,10 +6085,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:34:21.678749+00:00",
+        "scraped_at": "2026-03-28T16:30:08.424152+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:fb0279ee1a38707f",
-        "harmonized_at": "2026-03-28T07:58:53.009666+00:00",
+        "raw_data_hash": "sha256:1c5635bc90180d14",
+        "harmonized_at": "2026-03-28T16:30:11.791590+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6123,10 +6222,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.036292+00:00",
+        "scraped_at": "2026-03-28T15:56:34.321219+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4ad538a3bdfdf796",
-        "harmonized_at": "2026-03-28T07:58:51.006117+00:00",
+        "raw_data_hash": "sha256:6444da07bccdc8c9",
+        "harmonized_at": "2026-03-28T15:58:17.657533+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6259,10 +6358,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037078+00:00",
+        "scraped_at": "2026-03-28T15:56:34.322009+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:08cfedd94193933c",
-        "harmonized_at": "2026-03-28T07:58:51.016836+00:00",
+        "raw_data_hash": "sha256:6f7e77bf73c49a1b",
+        "harmonized_at": "2026-03-28T15:58:17.668260+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6404,10 +6503,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:17.206037+00:00",
+        "scraped_at": "2026-03-28T16:29:17.172543+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8551126324d31cb2",
-        "harmonized_at": "2026-03-28T01:30:33.949089+00:00",
+        "raw_data_hash": "sha256:6a5ef6118d9a31df",
+        "harmonized_at": "2026-03-28T16:29:38.780546+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6419,290 +6518,6 @@
           "faixa etaria nao determinada"
         ],
         "quality_score": 0.9
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca-3b03",
-      "source_id": "240111",
-      "source_url": "https://www.ccb.pt/evento/conferencia-o-mesmo-nada-em-tudo-a-torcao-barroca-do-olhar-e-o-desengano-do-mundo/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Conferência – O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo",
-      "title_raw": "Conferência – O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo",
-      "subtitle": null,
-      "description": "Ciclo de Conferências\n\nComo pensar o nada no excesso que associamos, habitualmente, ao barroco?\n\nRetomando uma operação comum nos séculos XVII e XVIII, proponho um desvio por torção, para nos aproximarmos do que se esconde diante de nós — em anamorfose — nas obras engenhosas desse período. Como escreveu Monteverdi, «há um outro ponto de vista a considerar» e a estratégia alegórica barroca revela que tudo é, sempre, outra coisa.\n\nAqui, o barroco não será entendido como formalismo superficial e decorativo; aproximar-me-ei da mundivisão e da «alma barroca»; do estilo enquanto modo de estar, de percecionar e de se orientar na cena do mundo; da tensão que aí se revela entre sedução corporal e persuasão espiritual, entre sensualidade e transcendência, entre poder dirigista e fulgor imaginativo, entre folia e lamento, entre atenção à realidade efémera e desejo de infinito. Ou seja, do desequilibrismo no intenso confronto com o tempo, esse labirinto feito de dobras.\n\nPoderá a retórica barroca, enquanto rebelião e recusa da ordem e serenidade clássicas, servir-nos para comentar o presente?\n\n \n\nEsta conferência realiza-se no âmbito do concerto Da Desordem das Paixões, de Os Músicos do Tejo e Sofia Dias & Vítor Roriz, nos dias 26 e 27 de junho, às 20h e 19h respetivamente.",
-      "description_short": "Ciclo de Conferências\n\nComo pensar o nada no excesso que associamos, habitualmente, ao barroco?\n\nRetomando uma operação comum nos séculos XVII e XVIII, proponho um desvio por torção, para nos aproximarmos do que se esconde diante de nós — em anamorfose — nas obras engenhosas desse período. Como…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "pensamento",
-      "category": "conferencias-debates",
-      "subcategory": null,
-      "tags": [
-        "Conferências",
-        "Música",
-        "Notas de Música",
-        "pensamento & palavra",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Conferências e Conversas",
-        "Música",
-        "Projetos de Mediação",
-        "Conferências",
-        "Música",
-        "Notas de Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-26",
-          "time_start": "18:30",
-          "time_end": "19:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-26",
-      "date_last": "2026-06-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/Paulo-Pires-do-Vale-destaque.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "conferencia-o-mesmo-nada-em-tudo-a-torcao-barroca-do-olhar-e-o-desengano-do-mundo|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037463+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a21d85c53ecc63ec",
-        "harmonized_at": "2026-03-28T07:58:51.022801+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-06-da-desordem-das-paixoes-1333",
-      "source_id": "247687",
-      "source_url": "https://www.ccb.pt/evento/da-desordem-das-paixoes/2026-06-26/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "Da Desordem das Paixões",
-      "title_raw": "Da Desordem das Paixões",
-      "subtitle": null,
-      "description": "Música Renascentista\n\nOs Músicos do Tejo e Sofia Dias & Vítor Roriz, unidos pelo seu amor ao barroco, ao século XVII e XVIII, à dança, à música de dança, aos pássaros, aos textos sobre dança, aos textos que falam de danças maravilhosas, aos professores de dança que tocam violino e que compõem melodias de danças para os seus alunos, aos rituais onde ministros e embaixadores tinham de dançar corretamente no mínimo, e elegantemente no máximo, mas sem por assim mesmo poderem ter que vir a comparar-se ao rei com letra grande que esse sim tinha o passo mais elegante, o comportamento perfeito sobre o qual tudo se modelava, aos tratados em que o não gravado era quase tão belo como o relevo queimado gravura no papel nervurado, aos labirintos textuais, ao texto tornado imagem, à repetição ritmada das palavras, ao excesso das formas onde tudo é vento, chama, movimento e os corpos se contorcem em êxtases místicos numa metamorfose capturada a meio num eterno contínuo, desejam construir um traçado que se veja como se de fora, que se sinta no odor se é certo ou errado, que provoque uma agitação ao mesmo tempo interior e exterior, profunda e superficial, conjugar uma música e uma dança em homenagem aos que dançaram para se manterem em vida, relevantes no estado do estado-nação, decisivos na arte da metafísica de corte, sós diante dos olhos de todos.\n\n \n\nNo âmbito deste recital, terá lugar na Sala Lopes-Graça, no dia 26 de junho, às 18h30, a conferência O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo, por Paulo Pires do Vale.\n\n \n\nPasse Concerto + Conferência (25% desconto) ⇒ COMPRAR\n\n \n\nO El Corte Inglés apoia o Programa de Mediação de Música Erudita do CCB.",
-      "description_short": "Música Renascentista\n\nOs Músicos do Tejo e Sofia Dias & Vítor Roriz, unidos pelo seu amor ao barroco, ao século XVII e XVIII, à dança, à música de dança, aos pássaros, aos textos sobre dança, aos textos que falam de danças maravilhosas, aos professores de dança que tocam violino e que compõem…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "Música",
-        "Sexta Maior",
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Espetáculos",
-        "Música",
-        "Temporada 2025-26",
-        "Música",
-        "Sexta Maior"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-26",
-          "time_start": "20:00",
-          "time_end": "21:00",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-26",
-      "date_last": "2026-06-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/2000x940__SofiaDiasVtorRuizcomMusicosdoTejo_brunosimao-1.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "da-desordem-das-paixoes|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037504+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c00228ff31593137",
-        "harmonized_at": "2026-03-28T07:58:51.023482+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
       }
     },
     {
@@ -6829,10 +6644,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.332594+00:00",
+        "scraped_at": "2026-03-28T15:56:34.322825+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2b3fd163500bacd9",
-        "harmonized_at": "2026-03-28T01:23:59.023045+00:00",
+        "raw_data_hash": "sha256:1d077865f7803e7e",
+        "harmonized_at": "2026-03-28T15:58:17.679315+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6847,9 +6662,300 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-28T01:22:09.332594+00:00",
-        "not_seen_since": "2026-03-28T07:58:51.086593+00:00"
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca-3b03",
+      "source_id": "240111",
+      "source_url": "https://www.ccb.pt/evento/conferencia-o-mesmo-nada-em-tudo-a-torcao-barroca-do-olhar-e-o-desengano-do-mundo/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Conferência – O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo",
+      "title_raw": "Conferência – O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo",
+      "subtitle": null,
+      "description": "Ciclo de Conferências\n\nComo pensar o nada no excesso que associamos, habitualmente, ao barroco?\n\nRetomando uma operação comum nos séculos XVII e XVIII, proponho um desvio por torção, para nos aproximarmos do que se esconde diante de nós — em anamorfose — nas obras engenhosas desse período. Como escreveu Monteverdi, «há um outro ponto de vista a considerar» e a estratégia alegórica barroca revela que tudo é, sempre, outra coisa.\n\nAqui, o barroco não será entendido como formalismo superficial e decorativo; aproximar-me-ei da mundivisão e da «alma barroca»; do estilo enquanto modo de estar, de percecionar e de se orientar na cena do mundo; da tensão que aí se revela entre sedução corporal e persuasão espiritual, entre sensualidade e transcendência, entre poder dirigista e fulgor imaginativo, entre folia e lamento, entre atenção à realidade efémera e desejo de infinito. Ou seja, do desequilibrismo no intenso confronto com o tempo, esse labirinto feito de dobras.\n\nPoderá a retórica barroca, enquanto rebelião e recusa da ordem e serenidade clássicas, servir-nos para comentar o presente?\n\n \n\nEsta conferência realiza-se no âmbito do concerto Da Desordem das Paixões, de Os Músicos do Tejo e Sofia Dias & Vítor Roriz, nos dias 26 e 27 de junho, às 20h e 19h respetivamente.",
+      "description_short": "Ciclo de Conferências\n\nComo pensar o nada no excesso que associamos, habitualmente, ao barroco?\n\nRetomando uma operação comum nos séculos XVII e XVIII, proponho um desvio por torção, para nos aproximarmos do que se esconde diante de nós — em anamorfose — nas obras engenhosas desse período. Como…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "Conferências",
+        "Música",
+        "Notas de Música",
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Conversas",
+        "Música",
+        "Projetos de Mediação",
+        "Conferências",
+        "Música",
+        "Notas de Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-06-26",
+          "time_start": "18:30",
+          "time_end": "19:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-06-26",
+      "date_last": "2026-06-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/Paulo-Pires-do-Vale-destaque.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "conferencia-o-mesmo-nada-em-tudo-a-torcao-barroca-do-olhar-e-o-desengano-do-mundo|2026-06",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:56:34.322850+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:24bf091d07c2c0eb",
+        "harmonized_at": "2026-03-28T15:58:17.679656+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-06-da-desordem-das-paixoes-1333",
+      "source_id": "247687",
+      "source_url": "https://www.ccb.pt/evento/da-desordem-das-paixoes/2026-06-26/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Da Desordem das Paixões",
+      "title_raw": "Da Desordem das Paixões",
+      "subtitle": null,
+      "description": "Música Renascentista\n\nOs Músicos do Tejo e Sofia Dias & Vítor Roriz, unidos pelo seu amor ao barroco, ao século XVII e XVIII, à dança, à música de dança, aos pássaros, aos textos sobre dança, aos textos que falam de danças maravilhosas, aos professores de dança que tocam violino e que compõem melodias de danças para os seus alunos, aos rituais onde ministros e embaixadores tinham de dançar corretamente no mínimo, e elegantemente no máximo, mas sem por assim mesmo poderem ter que vir a comparar-se ao rei com letra grande que esse sim tinha o passo mais elegante, o comportamento perfeito sobre o qual tudo se modelava, aos tratados em que o não gravado era quase tão belo como o relevo queimado gravura no papel nervurado, aos labirintos textuais, ao texto tornado imagem, à repetição ritmada das palavras, ao excesso das formas onde tudo é vento, chama, movimento e os corpos se contorcem em êxtases místicos numa metamorfose capturada a meio num eterno contínuo, desejam construir um traçado que se veja como se de fora, que se sinta no odor se é certo ou errado, que provoque uma agitação ao mesmo tempo interior e exterior, profunda e superficial, conjugar uma música e uma dança em homenagem aos que dançaram para se manterem em vida, relevantes no estado do estado-nação, decisivos na arte da metafísica de corte, sós diante dos olhos de todos.\n\n \n\nNo âmbito deste recital, terá lugar na Sala Lopes-Graça, no dia 26 de junho, às 18h30, a conferência O mesmo nada em tudo: a torção barroca do olhar e o desengano do mundo, por Paulo Pires do Vale.\n\n \n\nPasse Concerto + Conferência (25% desconto) ⇒ COMPRAR\n\n \n\nO El Corte Inglés apoia o Programa de Mediação de Música Erudita do CCB.",
+      "description_short": "Música Renascentista\n\nOs Músicos do Tejo e Sofia Dias & Vítor Roriz, unidos pelo seu amor ao barroco, ao século XVII e XVIII, à dança, à música de dança, aos pássaros, aos textos sobre dança, aos textos que falam de danças maravilhosas, aos professores de dança que tocam violino e que compõem…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "Música",
+        "Sexta Maior",
+        "artes de palco",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Espetáculos",
+        "Música",
+        "Temporada 2025-26",
+        "Música",
+        "Sexta Maior"
+      ],
+      "dates": [
+        {
+          "date": "2026-06-26",
+          "time_start": "20:00",
+          "time_end": "21:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-06-27",
+          "time_start": "20:00",
+          "time_end": "21:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-06-26",
+      "date_last": "2026-06-27",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/09/2000x940__SofiaDiasVtorRuizcomMusicosdoTejo_brunosimao-1.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "da-desordem-das-paixoes|2026-06",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:56:34.322891+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:35d840ecabe9874d",
+        "harmonized_at": "2026-03-28T15:58:17.680318+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -7026,10 +7132,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T14:57:59.429588+00:00",
+        "scraped_at": "2026-03-28T15:59:03.876387+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:79a19a784cb35918",
-        "harmonized_at": "2026-03-28T15:27:43.335624+00:00",
+        "raw_data_hash": "sha256:58e49bde8d70edb2",
+        "harmonized_at": "2026-03-28T16:28:29.544179+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7161,10 +7267,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:17.947936+00:00",
+        "scraped_at": "2026-03-28T16:29:18.022928+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:245ecef8fe116b62",
-        "harmonized_at": "2026-03-28T01:30:33.949670+00:00",
+        "raw_data_hash": "sha256:4f7f9b04bfbbf879",
+        "harmonized_at": "2026-03-28T16:29:38.781130+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7304,10 +7410,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:30:18.685632+00:00",
+        "scraped_at": "2026-03-28T16:29:19.082133+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7a1b31613e6045d2",
-        "harmonized_at": "2026-03-28T01:30:33.949952+00:00",
+        "raw_data_hash": "sha256:c8e7cb3991680620",
+        "harmonized_at": "2026-03-28T16:29:38.781413+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

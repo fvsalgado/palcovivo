@@ -123,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037812+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323761+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:72cdf04ddb44e78b",
-        "harmonized_at": "2026-03-28T07:58:51.028760+00:00",
+        "raw_data_hash": "sha256:fad817bdabe82f5a",
+        "harmonized_at": "2026-03-28T15:58:17.691433+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -261,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037835+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323803+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0fe28d06637d222a",
-        "harmonized_at": "2026-03-28T07:58:51.029199+00:00",
+        "raw_data_hash": "sha256:668b61902f8703d4",
+        "harmonized_at": "2026-03-28T15:58:17.691872+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -399,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037858+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323842+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:56b7bc51a4dae418",
-        "harmonized_at": "2026-03-28T07:58:51.029559+00:00",
+        "raw_data_hash": "sha256:61a1acb075ce1321",
+        "harmonized_at": "2026-03-28T15:58:17.692226+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -537,10 +537,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.333055+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323874+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ed3558050e3a16af",
-        "harmonized_at": "2026-03-28T01:23:59.030231+00:00",
+        "raw_data_hash": "sha256:fbaa83bae85b32fd",
+        "harmonized_at": "2026-03-28T15:58:17.692576+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -555,9 +555,7 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-28T01:22:09.333055+00:00",
-        "not_seen_since": "2026-03-28T07:58:51.086601+00:00"
+        "quality_score": 0.6
       }
     },
     {
@@ -678,10 +676,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:57:30.037880+00:00",
+        "scraped_at": "2026-03-28T15:56:34.323900+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:29261b9c62dc55cd",
-        "harmonized_at": "2026-03-28T07:58:51.029916+00:00",
+        "raw_data_hash": "sha256:f516c189a49a446e",
+        "harmonized_at": "2026-03-28T15:58:17.692991+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
