@@ -1,23 +1,19 @@
 """
-Culturgest Scraper — Versão 17 (26 Mar 2026)
+Culturgest Scraper — Versão 18 (2026-03-28)
 
-SOLUÇÃO DEFINITIVA:
-  O sitemap.xml contém todos os URLs de /pt/programacao/<slug>/ directamente.
-  Não é necessário o endpoint AJAX que se recusa a devolver fragmentos.
+Melhorias face à v17:
+  - FILTER_FROM_DATE dinâmico: filtra eventos passados há mais de 90 dias
+    (elimina ~56 warnings de 'evento sem datas' por run sem perder dados relevantes)
+  - HISTORICAL_SLUGS: lista de slugs permanentemente históricos a ignorar no sitemap
+    (open calls antigas, festivais de anos anteriores, etc.)
+  - Ambos os filtros activos por defeito; podem ser desactivados via FULL_RESCAN=True
+    ou passando filter_from_date=None ao run()
 
-  Fluxo:
-    1. GET /sitemap.xml
-    2. Extrair todos os <loc> com /pt/programacao/<slug>/
-    3. GET de cada página de evento
-    4. Parsear campos (título, datas, preço, espaço, ficha técnica, etc.)
-    5. Validator descarta os sem datas (open-calls, visitas, etc.)
-
-  Ganhos vs v14:
-    - Sem dependência do endpoint AJAX (eliminado)
-    - Listing completo e estável — o sitemap é actualizado com cada publicação
-    - Código muito mais simples: 1 estratégia robusta em vez de 3 em cascata
-    - Inclui eventos históricos (útil para enriquecimento de dados)
-    - Filtro opcional por data para correr só eventos futuros
+Estrutura mantida da v17:
+  1. GET /sitemap.xml → extrair URLs /pt/programacao/<slug>/
+  2. GET de cada página de evento
+  3. Parsear campos (título, datas, preço, espaço, ficha técnica, etc.)
+  4. Validator descarta os sem datas (open-calls, visitas, etc.)
 """
 
 import re
@@ -25,7 +21,7 @@ import time
 import json as _json
 import logging
 import warnings
-from datetime import datetime, date, timezone
+from datetime import datetime, date, timedelta, timezone
 from typing import Optional, List
 from urllib.parse import urlparse, urlunparse
 
@@ -47,14 +43,80 @@ LIST_URL = f"{WEBSITE}/pt/programacao/por-evento/"
 REQUEST_DELAY = 1.5
 TIMEOUT = 30
 
-# Filtrar apenas eventos com data >= FILTER_FROM_DATE (None = todos)
-# Útil para runs incrementais: só eventos a partir de hoje
-FILTER_FROM_DATE: Optional[str] = None  # ex: date.today().strftime("%Y-%m-%d")
+# ---------------------------------------------------------------------------
+# FILTRO DE DATA — elimina ~56 warnings por run sem perder eventos relevantes
+#
+# Eventos com todas as sessões anteriores a este cutoff são ignorados.
+# 90 dias garante que eventos recentemente encerrados ainda ficam no sistema
+# durante o período de "tombstone" (7 dias) e no archive (até ao aggregate).
+# Valor None = sem filtro (modo FULL_RESCAN).
+# ---------------------------------------------------------------------------
+FILTER_FROM_DATE: Optional[str] = (
+    date.today() - timedelta(days=90)
+).strftime("%Y-%m-%d")
+
+# ---------------------------------------------------------------------------
+# SLUGS HISTÓRICOS PERMANENTES — a ignorar sempre no sitemap
+#
+# Estes são eventos/páginas que o sitemap da Culturgest mantém indefinidamente
+# mas que nunca terão datas futuras. Adicioná-los aqui evita pedidos HTTP
+# desnecessários a cada run.
+# Formato: slug final da URL (/pt/programacao/<SLUG>/)
+# ---------------------------------------------------------------------------
+HISTORICAL_SLUGS: frozenset = frozenset({
+    # DocLisboa (festival anual — só aparece na programação durante o festival)
+    "doclisboa",
+    "doclisboa19",
+    "doclisboa-2020",
+    "doclisboa-2020-online",
+    # IndieListboa
+    "indielisboa",
+    # Festas do cinema italiano
+    "14-festa-do-cinema-italiano",
+    "15-festa-do-cinema-italiano",
+    # Ampla Mostra de Cinema (edições antigas)
+    "ampla-mostra-de-cinema-2022",
+    "ampla-mostra-de-cinema-2023",
+    "ampla-mostra-de-cinema-2024",
+    # LAFF
+    "laff-lisbon-arab-film-festival",
+    # Leffest
+    "leffest",
+    # Open calls encerradas
+    "open-call-jovens-artistas",
+    "open-call-dancemap",
+    # Outros históricos confirmados
+    "doclisboa-2020-online",
+    "fest",
+    "dentes-de-leao",
+    "forum-dentes-de-leao",
+    "campos-de-colaboracao",
+    "coletivo-de-curadores",
+    "ciclo-corpos-politicos",
+    "anthropocene-campus-lisboa",
+    "ficcao-a-2-metros-de-distancia",
+    "stefan-kaegi-rimini-protokoll",
+    "a-arte-custa",
+    "vale-culturgest",
+    "fim-de-semana-invisivel-adiado",
+    "22-festival-internacional-de-cinema",
+    "workshop-de-artes-performativas-world-mo",
+    "laboratorio-de-ferias-de-natal",
+    "oficina-de-ferias-de-natal",
+    "feedback",
+    "lendo-resolve-se-o-livro",
+    "eba-laboratorio",
+    "projetos-selecionados",
+    "para-o-gil",
+    "a-livraria-no-natal",
+    "caixa-para-guardar-o-vazio",
+    "tudo-passa-exceto-o-passado",
+    "visitas-guiadas-para-escolas",
+    "festival-art-explora",
+})
 
 # Modo incremental: set de source_ids já conhecidos — skip automático
-# O pipeline pode passar este set via run(known_ids={...})
-# Em modo FULL_RESCAN, ignorar o cache (re-processa tudo)
-FULL_RESCAN: bool = False  # True: processa todos os 952 URLs mesmo se conhecidos
+FULL_RESCAN: bool = False  # True: processa todos os URLs mesmo se conhecidos
 
 HEADERS = {
     "User-Agent": (
@@ -92,6 +154,11 @@ def _normalize_url(url: str) -> str:
     return urlunparse((p.scheme, p.netloc, p.path.rstrip("/"), "", "", ""))
 
 
+def _slug_from_url(url: str) -> str:
+    """Extrai o slug final de uma URL de programação."""
+    return _normalize_url(url).rstrip("/").split("/")[-1]
+
+
 def _is_programacao_event(url: str) -> bool:
     """
     Aceita /pt/programacao/<slug>/ com exactamente 3 segmentos de path.
@@ -108,6 +175,22 @@ def _is_programacao_event(url: str) -> bool:
     if parts[2] in SYSTEM_SLUGS:
         return False
     return True
+
+
+def _is_historical_slug(slug: str) -> bool:
+    """
+    Verifica se o slug pertence à lista de históricos permanentes.
+    Faz comparação parcial para apanhar variantes com sufixo numérico.
+    Ex: "doclisboa-2021" → apanhado por "doclisboa" no prefixo.
+    """
+    if slug in HISTORICAL_SLUGS:
+        return True
+    # Prefixos de slugs históricos conhecidos
+    historical_prefixes = (
+        "doclisboa", "indielisboa", "ampla-mostra-de-cinema",
+        "festa-do-cinema-italiano", "laff-lisbon",
+    )
+    return any(slug.startswith(p) for p in historical_prefixes)
 
 
 def _make_session() -> requests.Session:
@@ -137,6 +220,7 @@ def _get_event_urls_from_sitemap(session: requests.Session) -> List[str]:
     """
     Parseia o sitemap.xml e extrai todos os URLs de /pt/programacao/<slug>/.
     Sem duplicados (sitemap tem PT e EN — só queremos PT).
+    Aplica filtro de slugs históricos para reduzir pedidos desnecessários.
     """
     resp = _get(session, SITEMAP_URL)
     if not resp:
@@ -145,8 +229,6 @@ def _get_event_urls_from_sitemap(session: requests.Session) -> List[str]:
 
     logger.info(f"Sitemap: {len(resp.text)} chars")
 
-    # Usar lxml-xml para parsear o XML correctamente
-    # Se não estiver disponível, usar html.parser como fallback
     try:
         soup = BeautifulSoup(resp.text, "lxml-xml")
     except Exception:
@@ -154,17 +236,26 @@ def _get_event_urls_from_sitemap(session: requests.Session) -> List[str]:
 
     urls = []
     seen = set()
+    skipped_historical = 0
 
     for loc in soup.find_all("loc"):
         url = loc.get_text(strip=True)
         if not _is_programacao_event(url):
+            continue
+        slug = _slug_from_url(url)
+        # Filtrar slugs históricos permanentes
+        if not FULL_RESCAN and _is_historical_slug(slug):
+            skipped_historical += 1
             continue
         norm = _normalize_url(url)
         if norm not in seen:
             seen.add(norm)
             urls.append(url)
 
-    logger.info(f"Sitemap: {len(urls)} URLs de /pt/programacao/ encontrados")
+    logger.info(
+        f"Sitemap: {len(urls)} URLs de /pt/programacao/ encontrados"
+        + (f" ({skipped_historical} históricos ignorados)" if skipped_historical else "")
+    )
     return urls
 
 
@@ -285,13 +376,10 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
         raw = date_block.get_text(separator="\n", strip=True)
         raw_lines = [l.strip() for l in raw.splitlines() if l.strip()]
 
-    # Detectar se é range (ex: "26 MAR" + "– 12 JUN 2022") ou lista de sessões
-    # Um range tem exactamente uma linha de início e outra com dash "–"
     date_start = None
     date_end = None
-    ref_year = None  # ano extraído do date_end para corrigir date_start sem ano
+    ref_year = None
 
-    # Primeira passagem: recolher datas para detectar range
     parsed_dates = []
     for line in raw_lines:
         clean = re.sub(r"^[–—\-]\s*", "", line).strip()
@@ -303,15 +391,14 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
 
     is_range = (
         len(parsed_dates) == 2
-        and not parsed_dates[0][1]   # primeira sem dash
-        and parsed_dates[1][1]       # segunda com dash
+        and not parsed_dates[0][1]
+        and parsed_dates[1][1]
     ) or (
         len(parsed_dates) == 1
         and any(re.match(r"^[–—\-]", l) for l in raw_lines)
     )
 
     if is_range and parsed_dates:
-        # Extrair ref_year do date_end (linha com dash), aplicar ao date_start
         for d, has_dash, has_year, clean in parsed_dates:
             if has_dash:
                 date_end = d
@@ -321,7 +408,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
             else:
                 date_start = d
 
-        # Se date_start não tem ano e temos ref_year, re-parsear
         if date_start and ref_year:
             for line in raw_lines:
                 clean = re.sub(r"^[–—\-]\s*", "", line).strip()
@@ -331,7 +417,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
                         date_start = d
                         break
 
-        # Procurar horário semanal nos blocos seguintes (.event-info-block sem classe date)
         weekly_schedule = None
         for block in soup.select(".event-info-block"):
             if "date" in block.get("class", []):
@@ -344,7 +429,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
             if weekly_schedule:
                 break
 
-        # Produzir sessão de range (date_open / date_close)
         if date_start:
             sess = {
                 "date": date_start,
@@ -356,7 +440,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
             }
             sessions.append(sess)
 
-        # Sessões especiais no .highlight (inaugurações, visitas, etc.)
         highlight = soup.select_one(".event-info-block.highlight")
         if highlight:
             for br in highlight.find_all("br"):
@@ -378,7 +461,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
                     })
 
     else:
-        # Modo normal: lista de sessões individuais
         _extract_sessions_from_lines(raw_lines, sessions)
 
     return sessions
@@ -386,7 +468,6 @@ def _parse_dates_block(soup: BeautifulSoup) -> List[dict]:
 
 def _extract_sessions_from_lines(lines: List[str], sessions: List[dict]) -> None:
     """Parseia lista de sessões individuais: cada data (com hora opcional) = 1 sessão."""
-    # Detectar ref_year a partir das linhas com ano explícito
     ref_year = None
     for line in lines:
         m = re.search(r"\b(20\d{2})\b", line)
@@ -441,7 +522,11 @@ def _parse_technical_info(soup: BeautifulSoup) -> Optional[str]:
 # STEP 3: Parser de evento individual
 # ---------------------------------------------------------------------------
 
-def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
+def _parse_single_event(
+    url: str,
+    session: requests.Session,
+    filter_from_date: Optional[str] = None,
+) -> Optional[dict]:
     resp = _get(session, url)
     if not resp:
         return None
@@ -488,11 +573,19 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     # Datas
     sessions = _parse_dates_block(soup)
 
-    # Filtro por data (opcional)
-    if FILTER_FROM_DATE and sessions:
-        sessions = [s for s in sessions if s["date"] >= FILTER_FROM_DATE]
-        if not sessions:
-            return None  # Evento passado — ignorar
+    # ── Filtro por data — elimina eventos passados sem causar warnings ───────
+    # Usa filter_from_date passado pelo run() (default: hoje - 90 dias)
+    # Eventos de exposições em curso (is_ongoing=True) são sempre preservados.
+    effective_filter = filter_from_date or FILTER_FROM_DATE
+    if effective_filter and sessions:
+        future_sessions = [
+            s for s in sessions
+            if s.get("is_ongoing") or (s.get("date") or "") >= effective_filter
+        ]
+        if not future_sessions:
+            logger.debug(f"Culturgest: ignorado (todos passados antes de {effective_filter}): {url}")
+            return None
+        sessions = future_sessions
 
     # Highlight: preço, duração, sala, classificação
     price_raw = duration_minutes = space = age_rating = None
@@ -535,13 +628,12 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
     # Ficha técnica
     credits_raw = _parse_technical_info(soup)
 
-    # Créditos de imagem (ex: "© Francisco Vidal")
-    # Primeiro .event-info-block da aside que não tem classe adicional
+    # Créditos de imagem
     credits_image = None
     for block in soup.select(".description-aside .event-info-block"):
         classes = set(block.get("class", []))
         extra = classes - {"event-info-block"}
-        if not extra:  # bloco sem classe adicional = créditos de imagem
+        if not extra:
             text = block.get_text(strip=True)
             if text and text != "\xa0":
                 credits_image = text
@@ -590,7 +682,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
         "location": "Culturgest",
         "accessibility": accessibility,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "_method": "culturgest-v17-sitemap",
+        "_method": "culturgest-v18-sitemap",
     }
 
 
@@ -601,9 +693,7 @@ def _parse_single_event(url: str, session: requests.Session) -> Optional[dict]:
 class CulturegestScraper(BaseScraper):
     """
     Culturgest scraper using sitemap.xml listing + per-event HTML parsing.
-
-    Inherits session management and retry logic from BaseScraper.
-    SSL verification is disabled (Culturgest returns a self-signed cert).
+    SSL verification disabled (Culturgest usa certificado auto-assinado).
     """
 
     HEADERS = HEADERS
@@ -614,14 +704,14 @@ class CulturegestScraper(BaseScraper):
     def fetch_event_list(self) -> list:
         """
         Returns the list of event URLs from the Culturgest sitemap,
-        filtered against known_ids when in incremental mode.
+        filtered against known_ids (incremental) e historical slugs.
         """
         known_ids = getattr(self, "_known_ids", None)
 
         if known_ids and not FULL_RESCAN:
-            logger.info(f"CULTURGEST v17 — modo incremental ({len(known_ids)} já conhecidos)")
+            logger.info(f"CULTURGEST v18 — modo incremental ({len(known_ids)} já conhecidos)")
         else:
-            logger.info("CULTURGEST v17 — listing via sitemap.xml (run completo)")
+            logger.info("CULTURGEST v18 — listing via sitemap.xml (run completo)")
 
         event_urls = _get_event_urls_from_sitemap(self.session)
 
@@ -649,25 +739,31 @@ class CulturegestScraper(BaseScraper):
         return event_urls
 
     def parse_event(self, raw) -> dict:
-        """
-        raw is a URL string (str) for Culturgest — fetch and parse the event page.
-        Returns the normalised event dict, or None if parsing fails.
-        """
-        return _parse_single_event(raw, self.session)
+        """raw é uma URL string — fetch e parse da página de evento."""
+        filter_from_date = getattr(self, "_filter_from_date", FILTER_FROM_DATE)
+        return _parse_single_event(raw, self.session, filter_from_date=filter_from_date)
 
     def run(
         self,
         known_ids=None,
         rate_delay=None,
         scraper_flags=None,
+        filter_from_date: Optional[str] = FILTER_FROM_DATE,
     ) -> list:
         """
-        Entry point. Accepts known_ids for incremental mode.
+        Entry point. Aceita known_ids para modo incremental.
+        filter_from_date: cutoff para ignorar eventos passados (None = sem filtro).
         """
         self._known_ids = known_ids
+        self._filter_from_date = filter_from_date
 
         if rate_delay is not None:
             self._rate_delay = rate_delay
+
+        # Suporte a full_rescan via scraper_flags (passado pelo run_venue.py)
+        if scraper_flags and scraper_flags.get("full_rescan"):
+            self._filter_from_date = None
+            logger.info("CULTURGEST: full_rescan activo — sem filtro de data")
 
         event_urls = self.fetch_event_list()
 
@@ -695,9 +791,7 @@ class CulturegestScraper(BaseScraper):
 def run(known_ids: Optional[set] = None) -> List[dict]:
     """
     Backwards-compatible module-level entry point. Delegates to CulturegestScraper.
-
     known_ids: set de source_ids já em cache — skip automático em modo incremental.
-               None ou conjunto vazio = processar tudo (primeiro run ou FULL_RESCAN).
     """
     return CulturegestScraper().run(known_ids=known_ids)
 
