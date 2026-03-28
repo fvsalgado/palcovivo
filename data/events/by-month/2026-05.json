@@ -5040,10 +5040,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:47.641160+00:00",
+        "scraped_at": "2026-03-28T01:35:24.510585+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:4fa1ba758c819286",
-        "harmonized_at": "2026-03-28T00:19:43.737674+00:00",
+        "raw_data_hash": "sha256:724083c18154779c",
+        "harmonized_at": "2026-03-28T02:06:37.225342+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5452,10 +5452,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:50.058010+00:00",
+        "scraped_at": "2026-03-28T01:35:26.353456+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ef8ac9352c8b5266",
-        "harmonized_at": "2026-03-28T00:19:43.738088+00:00",
+        "raw_data_hash": "sha256:1ce9a5037ff56b42",
+        "harmonized_at": "2026-03-28T02:06:37.225677+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6417,10 +6417,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:51.964944+00:00",
+        "scraped_at": "2026-03-28T01:35:28.216135+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:400b7a61e5d577ca",
-        "harmonized_at": "2026-03-28T00:19:43.738630+00:00",
+        "raw_data_hash": "sha256:49d209e8a21b348e",
+        "harmonized_at": "2026-03-28T02:06:37.226127+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6706,10 +6706,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:54.019571+00:00",
+        "scraped_at": "2026-03-28T01:35:30.104302+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:be2bb2a7a5e6b43b",
-        "harmonized_at": "2026-03-28T00:19:43.739110+00:00",
+        "raw_data_hash": "sha256:79fe23fe5fde2e7b",
+        "harmonized_at": "2026-03-28T02:06:37.226508+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8387,10 +8387,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:55.928024+00:00",
+        "scraped_at": "2026-03-28T01:35:31.970485+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a91adc616e25967e",
-        "harmonized_at": "2026-03-28T00:19:43.739538+00:00",
+        "raw_data_hash": "sha256:77b011680297023d",
+        "harmonized_at": "2026-03-28T02:06:37.226852+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8963,8 +8963,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -9028,15 +9028,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:57.823097+00:00",
+        "scraped_at": "2026-03-28T01:35:33.822956+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f7028f0cd0c8d353",
-        "harmonized_at": "2026-03-28T00:19:43.739935+00:00",
+        "raw_data_hash": "sha256:21c732265508cdfd",
+        "harmonized_at": "2026-03-28T02:06:37.227191+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9449,10 +9449,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:59.726844+00:00",
+        "scraped_at": "2026-03-28T01:35:35.691950+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:feb76cf41c4234e6",
-        "harmonized_at": "2026-03-28T00:19:43.740426+00:00",
+        "raw_data_hash": "sha256:dd56caeaae12ceff",
+        "harmonized_at": "2026-03-28T02:06:37.227573+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

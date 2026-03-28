@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T01:33:48.714543+00:00Z",
+  "generated_at": "2026-03-28T02:07:19.534160+00:00Z",
   "total_events": 236,
   "total_venues": 4,
   "quality": {
@@ -142,10 +142,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:50.890214+00:00",
+        "scraped_at": "2026-03-28T02:06:37.169754+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-28T00:19:44.184677+00:00",
+        "raw_data_hash": "sha256:704888718c22837f",
+        "harmonized_at": "2026-03-28T02:06:37.591381+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -440,10 +440,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:39.846466+00:00",
+        "scraped_at": "2026-03-28T01:59:36.902847+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-28T00:19:44.076235+00:00",
+        "raw_data_hash": "sha256:f7e9316be2839de4",
+        "harmonized_at": "2026-03-28T02:06:37.502796+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -748,10 +748,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:41.900596+00:00",
+        "scraped_at": "2026-03-28T01:59:38.783387+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:b4e7501aed4fdc9e",
-        "harmonized_at": "2026-03-28T00:19:44.076686+00:00",
+        "raw_data_hash": "sha256:6791f4c5138dad60",
+        "harmonized_at": "2026-03-28T02:06:37.503162+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1043,10 +1043,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:20.758313+00:00",
+        "scraped_at": "2026-03-28T01:35:50.733942+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ce5b973b581a3559",
-        "harmonized_at": "2026-03-28T00:19:43.744347+00:00",
+        "raw_data_hash": "sha256:4d409df4aedc65dc",
+        "harmonized_at": "2026-03-28T02:06:37.230742+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1178,10 +1178,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:43.876099+00:00",
+        "scraped_at": "2026-03-28T01:59:40.669339+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d1436c709f442f2d",
-        "harmonized_at": "2026-03-28T00:19:44.077110+00:00",
+        "raw_data_hash": "sha256:fc41a5b19c305bf4",
+        "harmonized_at": "2026-03-28T02:06:37.503522+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1316,10 +1316,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:45.788807+00:00",
+        "scraped_at": "2026-03-28T01:59:42.550959+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:97b1c1ec465a2995",
-        "harmonized_at": "2026-03-28T00:19:44.077527+00:00",
+        "raw_data_hash": "sha256:ba95aed0d0f3d57c",
+        "harmonized_at": "2026-03-28T02:06:37.503853+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1466,10 +1466,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:22.871279+00:00",
+        "scraped_at": "2026-03-28T01:35:52.773089+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:e3a8701821699fad",
-        "harmonized_at": "2026-03-28T00:19:43.744969+00:00",
+        "raw_data_hash": "sha256:9b6e61c6a5013e70",
+        "harmonized_at": "2026-03-28T02:06:37.231188+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1601,10 +1601,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:47.775521+00:00",
+        "scraped_at": "2026-03-28T01:59:44.446478+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:938386c6a7ddad32",
-        "harmonized_at": "2026-03-28T00:19:44.077976+00:00",
+        "raw_data_hash": "sha256:137c27a5ae6797fb",
+        "harmonized_at": "2026-03-28T02:06:37.504235+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1735,10 +1735,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:49.796669+00:00",
+        "scraped_at": "2026-03-28T01:59:46.366952+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d5e24a644293511b",
-        "harmonized_at": "2026-03-28T00:19:44.078284+00:00",
+        "raw_data_hash": "sha256:2f94e21b176b758c",
+        "harmonized_at": "2026-03-28T02:06:37.504494+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1892,10 +1892,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:24.082104+00:00",
+        "scraped_at": "2026-03-28T01:35:00.714618+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:38188d39c9c512a9",
-        "harmonized_at": "2026-03-28T00:19:43.728923+00:00",
+        "raw_data_hash": "sha256:17ba1efe55e20ecf",
+        "harmonized_at": "2026-03-28T02:06:37.217792+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10237,10 +10237,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:26.028234+00:00",
+        "scraped_at": "2026-03-28T01:35:05.645247+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6720610592e2b59e",
-        "harmonized_at": "2026-03-28T00:19:43.733037+00:00",
+        "raw_data_hash": "sha256:9a9065561caac73e",
+        "harmonized_at": "2026-03-28T02:06:37.221659+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10383,10 +10383,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:27.964014+00:00",
+        "scraped_at": "2026-03-28T01:35:07.600340+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f709d38f1c126b5a",
-        "harmonized_at": "2026-03-28T00:19:43.733587+00:00",
+        "raw_data_hash": "sha256:8c7288fcce7c8c47",
+        "harmonized_at": "2026-03-28T02:06:37.222128+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12424,10 +12424,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:29.925262+00:00",
+        "scraped_at": "2026-03-28T01:35:09.525799+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6e1bb0eace11c3e9",
-        "harmonized_at": "2026-03-28T00:19:43.734159+00:00",
+        "raw_data_hash": "sha256:bceb0442e63479f0",
+        "harmonized_at": "2026-03-28T02:06:37.222599+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13251,10 +13251,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:31.811523+00:00",
+        "scraped_at": "2026-03-28T01:35:11.427475+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:63ad437cf6cd87d6",
-        "harmonized_at": "2026-03-28T00:19:43.734594+00:00",
+        "raw_data_hash": "sha256:2ca4a60858b06252",
+        "harmonized_at": "2026-03-28T02:06:37.222963+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13808,10 +13808,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:34.205364+00:00",
+        "scraped_at": "2026-03-28T01:35:13.249004+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:3d6c8a5fa736d9dd",
-        "harmonized_at": "2026-03-28T00:19:43.735181+00:00",
+        "raw_data_hash": "sha256:0e6f8862b3d37ff8",
+        "harmonized_at": "2026-03-28T02:06:37.223367+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13943,10 +13943,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:36.696184+00:00",
+        "scraped_at": "2026-03-28T01:35:15.157605+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a534565ef4ebee30",
-        "harmonized_at": "2026-03-28T00:19:43.735631+00:00",
+        "raw_data_hash": "sha256:c877889a370816e4",
+        "harmonized_at": "2026-03-28T02:06:37.223701+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14573,8 +14573,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -14638,15 +14638,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:39.117167+00:00",
+        "scraped_at": "2026-03-28T01:35:17.011375+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a7aa1bdfbe965ec9",
-        "harmonized_at": "2026-03-28T00:19:43.735978+00:00",
+        "raw_data_hash": "sha256:e21f79b410d43585",
+        "harmonized_at": "2026-03-28T02:06:37.224001+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15775,10 +15775,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:40.993888+00:00",
+        "scraped_at": "2026-03-28T01:35:18.914144+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:7421d4b7d14f65bc",
-        "harmonized_at": "2026-03-28T00:19:43.736475+00:00",
+        "raw_data_hash": "sha256:d3f3fe74f2383287",
+        "harmonized_at": "2026-03-28T02:06:37.224360+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15935,10 +15935,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:42.917746+00:00",
+        "scraped_at": "2026-03-28T01:35:20.805280+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:32fc9aa67e30048b",
-        "harmonized_at": "2026-03-28T00:19:43.736960+00:00",
+        "raw_data_hash": "sha256:e0276d9aac3df0a7",
+        "harmonized_at": "2026-03-28T02:06:37.224754+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -18040,10 +18040,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:45.228628+00:00",
+        "scraped_at": "2026-03-28T01:35:22.634900+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac26764986bb6683",
-        "harmonized_at": "2026-03-28T00:19:43.737353+00:00",
+        "raw_data_hash": "sha256:c48d8f67e9b9a0d2",
+        "harmonized_at": "2026-03-28T02:06:37.225066+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23097,10 +23097,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:47.641160+00:00",
+        "scraped_at": "2026-03-28T01:35:24.510585+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:4fa1ba758c819286",
-        "harmonized_at": "2026-03-28T00:19:43.737674+00:00",
+        "raw_data_hash": "sha256:724083c18154779c",
+        "harmonized_at": "2026-03-28T02:06:37.225342+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23509,10 +23509,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:50.058010+00:00",
+        "scraped_at": "2026-03-28T01:35:26.353456+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ef8ac9352c8b5266",
-        "harmonized_at": "2026-03-28T00:19:43.738088+00:00",
+        "raw_data_hash": "sha256:1ce9a5037ff56b42",
+        "harmonized_at": "2026-03-28T02:06:37.225677+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24474,10 +24474,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:51.964944+00:00",
+        "scraped_at": "2026-03-28T01:35:28.216135+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:400b7a61e5d577ca",
-        "harmonized_at": "2026-03-28T00:19:43.738630+00:00",
+        "raw_data_hash": "sha256:49d209e8a21b348e",
+        "harmonized_at": "2026-03-28T02:06:37.226127+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24763,10 +24763,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:54.019571+00:00",
+        "scraped_at": "2026-03-28T01:35:30.104302+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:be2bb2a7a5e6b43b",
-        "harmonized_at": "2026-03-28T00:19:43.739110+00:00",
+        "raw_data_hash": "sha256:79fe23fe5fde2e7b",
+        "harmonized_at": "2026-03-28T02:06:37.226508+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26444,10 +26444,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:55.928024+00:00",
+        "scraped_at": "2026-03-28T01:35:31.970485+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a91adc616e25967e",
-        "harmonized_at": "2026-03-28T00:19:43.739538+00:00",
+        "raw_data_hash": "sha256:77b011680297023d",
+        "harmonized_at": "2026-03-28T02:06:37.226852+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27020,8 +27020,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -27085,15 +27085,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:57.823097+00:00",
+        "scraped_at": "2026-03-28T01:35:33.822956+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f7028f0cd0c8d353",
-        "harmonized_at": "2026-03-28T00:19:43.739935+00:00",
+        "raw_data_hash": "sha256:21c732265508cdfd",
+        "harmonized_at": "2026-03-28T02:06:37.227191+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27506,10 +27506,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:59.726844+00:00",
+        "scraped_at": "2026-03-28T01:35:35.691950+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:feb76cf41c4234e6",
-        "harmonized_at": "2026-03-28T00:19:43.740426+00:00",
+        "raw_data_hash": "sha256:dd56caeaae12ceff",
+        "harmonized_at": "2026-03-28T02:06:37.227573+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -31588,10 +31588,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:01.591103+00:00",
+        "scraped_at": "2026-03-28T01:35:37.538444+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:02c86cbcd5e08ce7",
-        "harmonized_at": "2026-03-28T00:19:43.740835+00:00",
+        "raw_data_hash": "sha256:7af0ff14e3456492",
+        "harmonized_at": "2026-03-28T02:06:37.227922+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -35528,10 +35528,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:10.875771+00:00",
+        "scraped_at": "2026-03-28T01:35:41.351737+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:acc169478d0650d5",
-        "harmonized_at": "2026-03-28T00:19:43.741744+00:00",
+        "raw_data_hash": "sha256:c76ed8ffba0d8844",
+        "harmonized_at": "2026-03-28T02:06:37.228653+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
