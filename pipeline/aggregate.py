@@ -1,11 +1,17 @@
 """
-Primeira Plateia — Agregador v3
-Melhorias v3:
-  - master.json: apenas eventos activos com date_last >= hoje-30d
-  - data/archive/YYYY.json: eventos passados agrupados por ano
-  - Inclui quality_score do validator no relatório por venue
-  - Campos de qualidade do validator (quality_warnings) no relatório
-Melhorias v4:
+Primeira Plateia — Agregador v4.1 (2026-03-28)
+
+Melhorias v4.1 face à v4:
+  - Cutoff do archive alinhado com FILTER_FROM_DATE da Culturgest (90 dias)
+    → eventos passados há 31-90 dias ficam no master.json em vez de irem
+      directamente para archive, permitindo que o frontend os mostre como
+      "recentemente encerrado" e que o tombstone actue correctamente
+  - _split_active_archive() respeita is_ongoing=True (exposições não vão para archive)
+  - generate_master() inclui índice "recently_closed" (eventos passados até 90 dias)
+    para facilitar filtragem no frontend
+  - Manifest system mantido: skip re-agregação quando nada mudou
+
+Melhorias v4 (anteriores):
   - Manifest system: skip re-agregação quando nada mudou (--force para forçar)
   - Fragmentação do master.json: data/index.json + data/events/by-month/YYYY-MM.json
 """
@@ -15,7 +21,7 @@ import hashlib
 import json
 import logging
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import sys as _sys
@@ -40,6 +46,19 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(sys.stdout)],
 )
 logger = logging.getLogger("pipeline.aggregate")
+
+# ---------------------------------------------------------------------------
+# Cutoffs de arquivo
+# ---------------------------------------------------------------------------
+# Eventos passados há mais de ARCHIVE_CUTOFF_DAYS vão para archive/YYYY.json
+# e saem do master.json. Alinhado com FILTER_FROM_DATE da Culturgest.
+# Anteriormente era 30 dias — aumentado para 90 para manter eventos
+# recentemente encerrados acessíveis no frontend.
+ARCHIVE_CUTOFF_DAYS = 90
+
+# Eventos passados há menos de RECENTLY_CLOSED_DAYS são indexados em "recently_closed"
+# para fácil acesso no frontend ("o que acabou recentemente")
+RECENTLY_CLOSED_DAYS = 30
 
 
 # ---------------------------------------------------------------------------
@@ -97,7 +116,6 @@ def load_all() -> tuple[list[dict], list[dict]]:
                 + (f" ({inactive} tombstoned excluídos)" if inactive else "")
             )
 
-            # Ler relatório parcial do run_venue
             log_path = LOGS_DIR / f"venue-{venue_id}.json"
             if log_path.exists():
                 with open(log_path, encoding="utf-8") as f:
@@ -129,19 +147,28 @@ def quality_stats(events: list[dict]) -> dict:
 def _split_active_archive(events: list[dict]) -> tuple[list[dict], list[dict]]:
     """
     Separa eventos activos (master) de passados (archive).
-    Master: activos + passados há <= 30 dias.
-    Archive: passados há > 30 dias.
+
+    Master: activos + passados há <= ARCHIVE_CUTOFF_DAYS (90 dias).
+    Archive: passados há > ARCHIVE_CUTOFF_DAYS.
+
+    Excepções que ficam sempre no master:
+      - is_ongoing=True (exposições em curso com date_open/date_close)
+      - Tombstone imediato por cache.should_tombstone() é aplicado como safety net
     """
-    from datetime import datetime, timedelta
-    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    cutoff = (datetime.now() - timedelta(days=ARCHIVE_CUTOFF_DAYS)).strftime("%Y-%m-%d")
     active, archive = [], []
     for e in events:
-        # Tombstone imediato já deve ter sido aplicado pelo run_venue
-        # mas verificamos aqui também como safety net
+        # Safety net: tombstone imediato para eventos muito antigos
         if should_tombstone(e):
             e.setdefault("pipeline", {})["is_active"] = False
             archive.append(e)
             continue
+
+        # Exposições em curso: preservar sempre no master
+        if e.get("is_ongoing"):
+            active.append(e)
+            continue
+
         date_last = e.get("date_last") or e.get("date_first") or ""
         if date_last and date_last < cutoff:
             archive.append(e)
@@ -160,7 +187,6 @@ def _write_archive(archive_events: list[dict]) -> None:
     for year, evs in by_year.items():
         evs.sort(key=lambda e: e.get("date_first") or "")
         path = ARCHIVE_DIR / f"{year}.json"
-        # Ler arquivo existente e fundir (não perder anos anteriores)
         existing = {}
         if path.exists():
             try:
@@ -185,8 +211,9 @@ def _write_archive(archive_events: list[dict]) -> None:
 def generate_master(events: list[dict]) -> dict:
     events.sort(key=lambda e: (e.get("date_first") or "9999-99-99"))
     by_domain, by_venue, by_month = {}, {}, {}
-    today_ids, free_ids, family_ids = [], [], []
+    today_ids, free_ids, family_ids, recently_closed_ids = [], [], [], []
     today = datetime.now().strftime("%Y-%m-%d")
+    recently_closed_cutoff = (datetime.now() - timedelta(days=RECENTLY_CLOSED_DAYS)).strftime("%Y-%m-%d")
 
     for e in events:
         eid = e["id"]
@@ -203,20 +230,26 @@ def generate_master(events: list[dict]) -> dict:
             free_ids.append(eid)
         if (e.get("audience") or {}).get("is_family"):
             family_ids.append(eid)
+        # Eventos recentemente encerrados (passados há <= 30 dias)
+        date_last = e.get("date_last") or e.get("date_first") or ""
+        if date_last and recently_closed_cutoff <= date_last < today:
+            recently_closed_ids.append(eid)
 
     return {
         "generated_at":  datetime.now(timezone.utc).isoformat() + "Z",
         "total_events":  len(events),
         "total_venues":  len(by_venue),
+        "archive_cutoff_days": ARCHIVE_CUTOFF_DAYS,
         "quality":       quality_stats(events),
         "events":        events,
         "index": {
-            "by_domain": by_domain,
-            "by_venue":  by_venue,
-            "by_month":  by_month,
-            "today":     today_ids,
-            "free":      free_ids,
-            "family":    family_ids,
+            "by_domain":        by_domain,
+            "by_venue":         by_venue,
+            "by_month":         by_month,
+            "today":            today_ids,
+            "free":             free_ids,
+            "family":           family_ids,
+            "recently_closed":  recently_closed_ids,  # novo: eventos encerrados há <= 30 dias
         },
     }
 
@@ -229,11 +262,12 @@ def write_fragments(master: dict) -> None:
     """
     # 1. index.json (lightweight — sem events array)
     index_doc = {
-        "generated_at": master["generated_at"],
-        "total_events": master["total_events"],
-        "total_venues": master["total_venues"],
-        "quality":      master["quality"],
-        "index":        master["index"],
+        "generated_at":        master["generated_at"],
+        "total_events":        master["total_events"],
+        "total_venues":        master["total_venues"],
+        "archive_cutoff_days": master["archive_cutoff_days"],
+        "quality":             master["quality"],
+        "index":               master["index"],
     }
     index_path = DATA_DIR / "index.json"
     with open(index_path, "w", encoding="utf-8") as f:
@@ -244,7 +278,6 @@ def write_fragments(master: dict) -> None:
     by_month_dir = EVENTS_DIR / "by-month"
     by_month_dir.mkdir(parents=True, exist_ok=True)
 
-    # Build lookup: id -> event
     events_by_id = {e["id"]: e for e in master["events"]}
     by_month_index = master["index"]["by_month"]
 
@@ -252,7 +285,7 @@ def write_fragments(master: dict) -> None:
     for month, ids in sorted(by_month_index.items()):
         missing = [eid for eid in ids if eid not in events_by_id]
         if missing:
-            logger.warning(f"write_fragments: {len(missing)} evento(s) no índice by_month/{month} mas ausentes de events — possível inconsistência")
+            logger.warning(f"write_fragments: {len(missing)} evento(s) no índice by_month/{month} mas ausentes de events")
         month_events = [events_by_id[eid] for eid in ids if eid in events_by_id]
         month_doc = {
             "month":  month,
@@ -275,6 +308,7 @@ def run(force: bool = False) -> None:
     start = datetime.now(timezone.utc)
     logger.info("=" * 60)
     logger.info("Primeira Plateia — Agregador iniciado")
+    logger.info(f"Archive cutoff: {ARCHIVE_CUTOFF_DAYS} dias")
     logger.info("=" * 60)
 
     # --- Manifest check ---
@@ -303,7 +337,7 @@ def run(force: bool = False) -> None:
 
     # Separar activos (master) de passados (archive)
     active, archive = _split_active_archive(deduped)
-    logger.info(f"Master: {len(active)} activos | Archive: {len(archive)} passados")
+    logger.info(f"Master: {len(active)} activos (cutoff: {ARCHIVE_CUTOFF_DAYS}d) | Archive: {len(archive)} passados")
 
     # Escrever archive por ano
     if archive:
@@ -317,7 +351,7 @@ def run(force: bool = False) -> None:
     # Fragmentos: index.json + by-month
     write_fragments(master)
 
-    # Qualidade por venue (credibilidade + quality_score do validator)
+    # Qualidade por venue
     venue_quality = {}
     for vid, ids in master["index"]["by_venue"].items():
         id_set = set(ids)
@@ -343,13 +377,16 @@ def run(force: bool = False) -> None:
         "run_at":           datetime.now(timezone.utc).isoformat() + "Z",
         "duration_seconds": round(duration, 1),
         "summary": {
-            "venues_processed":  len(venue_reports),
-            "total_scraped":     sum(r.get("scraped", 0) for r in venue_reports),
-            "total_valid":       sum(r.get("valid", 0)   for r in venue_reports),
-            "total_invalid":     sum(r.get("invalid", 0) for r in venue_reports),
-            "total_after_dedup": len(deduped),
-            "total_errors":      sum(len(r.get("errors", [])) for r in venue_reports),
-            "avg_credibility":   master["quality"]["avg_credibility"],
+            "venues_processed":      len(venue_reports),
+            "total_scraped":         sum(r.get("scraped", 0) for r in venue_reports),
+            "total_valid":           sum(r.get("valid", 0)   for r in venue_reports),
+            "total_invalid":         sum(r.get("invalid", 0) for r in venue_reports),
+            "total_after_dedup":     len(deduped),
+            "total_in_master":       len(active),
+            "total_in_archive":      len(archive),
+            "total_errors":          sum(len(r.get("errors", [])) for r in venue_reports),
+            "avg_credibility":       master["quality"]["avg_credibility"],
+            "archive_cutoff_days":   ARCHIVE_CUTOFF_DAYS,
         },
         "venue_quality": venue_quality,
         "venues":        venue_reports,
@@ -364,7 +401,7 @@ def run(force: bool = False) -> None:
     # Guardar manifesto actualizado
     _save_manifest(current_manifest)
 
-    logger.info(f"Concluído em {duration:.1f}s — {len(deduped)} eventos únicos")
+    logger.info(f"Concluído em {duration:.1f}s — {len(deduped)} eventos únicos ({len(active)} no master, {len(archive)} no archive)")
 
 
 if __name__ == "__main__":
