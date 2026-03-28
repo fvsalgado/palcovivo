@@ -1,6 +1,6 @@
 {
   "month": "2026-11",
-  "total": 8,
+  "total": 5,
   "events": [
     {
       "schema_version": "1.0",
@@ -123,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107910+00:00",
+        "scraped_at": "2026-03-28T00:10:04.892203+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0a0e889616cd681",
-        "harmonized_at": "2026-03-27T12:24:51.109012+00:00",
+        "raw_data_hash": "sha256:9eac447ce2e0c34c",
+        "harmonized_at": "2026-03-28T00:11:32.508620+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -261,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107932+00:00",
+        "scraped_at": "2026-03-28T00:10:04.892225+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9ce55668464c0aea",
-        "harmonized_at": "2026-03-27T12:24:51.109448+00:00",
+        "raw_data_hash": "sha256:8fecd0f425d2483e",
+        "harmonized_at": "2026-03-28T00:11:32.509032+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -399,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107954+00:00",
+        "scraped_at": "2026-03-28T00:10:04.892247+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2705c5bc4ddf0e10",
-        "harmonized_at": "2026-03-27T12:24:51.109808+00:00",
+        "raw_data_hash": "sha256:e1290cffa13e485c",
+        "harmonized_at": "2026-03-28T00:11:32.509381+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -412,280 +412,6 @@
         "quality_warnings": [
           "preco nao determinado (nem entrada livre nem valor)",
           "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-bill-ryder-jones-b087",
-      "source_id": "bill-ryder-jones-3",
-      "source_url": "https://theatrocirco.com/event/bill-ryder-jones-3/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Bill Ryder-Jones",
-      "title_raw": "Bill Ryder-Jones",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-11-15",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-11-15",
-      "date_last": "2026-11-15",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-11-15",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 12.0,
-        "price_max": 12.0,
-        "price_display": "12€",
-        "price_raw": "12€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "bill-ryder-jones|2026-11",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:19.045413+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:297dd2f33b3d7c9a",
-        "harmonized_at": "2026-03-27T12:28:49.514626+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-rubel-29a4",
-      "source_id": "rubel-3",
-      "source_url": "https://theatrocirco.com/event/rubel-3/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Rubel",
-      "title_raw": "Rubel",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-11-18",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-11-18",
-      "date_last": "2026-11-18",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-11-18",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 0.0,
-        "price_max": 30.0,
-        "price_display": "0€ – 30€",
-        "price_raw": "1ª Plateia - 30,00€ | 2ª Plateia - 25,00€ | Piso 0 - 17.50€ | 1ª Balcão - 22,50€ | 2ª Balcão - 20€ | 3ª Balcão -15,00€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "rubel|2026-11",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:18.326726+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5ac3884544dbb9de",
-        "harmonized_at": "2026-03-27T12:28:49.514520+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
@@ -811,10 +537,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107977+00:00",
+        "scraped_at": "2026-03-28T00:10:04.892272+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c8f6b989e3c8f2f2",
-        "harmonized_at": "2026-03-27T12:24:51.110162+00:00",
+        "raw_data_hash": "sha256:a7f09081eb550db5",
+        "harmonized_at": "2026-03-28T00:11:32.509755+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -950,10 +676,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.108003+00:00",
+        "scraped_at": "2026-03-28T00:10:04.892299+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f1eecede437eadda",
-        "harmonized_at": "2026-03-27T12:24:51.110588+00:00",
+        "raw_data_hash": "sha256:058eab2df4a6c726",
+        "harmonized_at": "2026-03-28T00:11:32.510157+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -969,142 +695,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-11-recita-1-dezembro-69d7",
-      "source_id": "recita-1o-dezembro-2",
-      "source_url": "https://theatrocirco.com/event/recita-1o-dezembro-2/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Récita 1º Dezembro",
-      "title_raw": "Récita 1º Dezembro",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-11-30",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-11-30",
-      "date_last": "2026-11-30",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-11-30",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "recita-1-dezembro|2026-11",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:16.889870+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5496bffdf58f80dc",
-        "harmonized_at": "2026-03-27T12:28:49.514308+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "preco nao determinado (nem entrada livre nem valor)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.5
       }
     }
   ]

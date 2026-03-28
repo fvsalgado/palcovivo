@@ -118,10 +118,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088007+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872076+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2d398c6c3b54146d",
-        "harmonized_at": "2026-03-27T12:24:50.865117+00:00",
+        "raw_data_hash": "sha256:d910a338de4125e2",
+        "harmonized_at": "2026-03-28T00:11:32.263888+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -492,10 +492,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088033+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872100+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2dd9aabed6a69a50",
-        "harmonized_at": "2026-03-27T12:24:50.866147+00:00",
+        "raw_data_hash": "sha256:38dd0f4904175873",
+        "harmonized_at": "2026-03-28T00:11:32.264168+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -867,10 +867,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088049+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872115+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a81416c50f2a318d",
-        "harmonized_at": "2026-03-27T12:24:50.866336+00:00",
+        "raw_data_hash": "sha256:d0384459d069c29e",
+        "harmonized_at": "2026-03-28T00:11:32.264331+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1244,10 +1244,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088067+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872131+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3eae3cd388bccb25",
-        "harmonized_at": "2026-03-27T12:24:50.866495+00:00",
+        "raw_data_hash": "sha256:aeff6053d2a553e9",
+        "harmonized_at": "2026-03-28T00:11:32.264512+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1583,10 +1583,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088119+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872152+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bbaaad7da70f3464",
-        "harmonized_at": "2026-03-27T12:24:50.866798+00:00",
+        "raw_data_hash": "sha256:4d58a1ebdad16abb",
+        "harmonized_at": "2026-03-28T00:11:32.264817+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1958,10 +1958,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088144+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872175+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:51e674343f7e5fbc",
-        "harmonized_at": "2026-03-27T12:24:50.867094+00:00",
+        "raw_data_hash": "sha256:04a70f30f223c203",
+        "harmonized_at": "2026-03-28T00:11:32.265117+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2338,10 +2338,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088191+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872201+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d828d708bd67cce4",
-        "harmonized_at": "2026-03-27T12:24:50.867625+00:00",
+        "raw_data_hash": "sha256:5eac97611989a703",
+        "harmonized_at": "2026-03-28T00:11:32.265657+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2710,10 +2710,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088257+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872259+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:49441c9a48b062f0",
-        "harmonized_at": "2026-03-27T12:24:50.868424+00:00",
+        "raw_data_hash": "sha256:be07006fa64763e2",
+        "harmonized_at": "2026-03-28T00:11:32.266439+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3086,10 +3086,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088301+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872303+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6484bc246ae8439a",
-        "harmonized_at": "2026-03-27T12:24:50.869076+00:00",
+        "raw_data_hash": "sha256:c0f533ff9f786f6a",
+        "harmonized_at": "2026-03-28T00:11:32.267089+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3461,10 +3461,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088398+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872398+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:600075ab4027df81",
-        "harmonized_at": "2026-03-27T12:24:50.869983+00:00",
+        "raw_data_hash": "sha256:58bab01d49e8f586",
+        "harmonized_at": "2026-03-28T00:11:32.268001+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3605,10 +3605,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088740+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872777+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:88c55fe96fb67407",
-        "harmonized_at": "2026-03-27T12:24:50.874164+00:00",
+        "raw_data_hash": "sha256:68703a81559a3752",
+        "harmonized_at": "2026-03-28T00:11:32.272180+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3737,10 +3737,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.088790+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872822+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d6404499b598363d",
-        "harmonized_at": "2026-03-27T12:24:50.874899+00:00",
+        "raw_data_hash": "sha256:1358d810d8f67cbc",
+        "harmonized_at": "2026-03-28T00:11:32.272910+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3906,10 +3906,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.089404+00:00",
+        "scraped_at": "2026-03-28T00:10:04.873437+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5875f22f51d53a49",
-        "harmonized_at": "2026-03-27T12:24:50.882552+00:00",
+        "raw_data_hash": "sha256:831ce2e29814233d",
+        "harmonized_at": "2026-03-28T00:11:32.280571+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3937,8 +3937,8 @@
       "title": "Os Transparentes (CTB)",
       "title_raw": "Os Transparentes (CTB)",
       "subtitle": "Ondjaki/Companhia Cegada",
-      "description": "",
-      "description_short": "",
+      "description": "Esta é a história do homem que se torna transparente, do prédio onde vive, da sua cidade pujante, poluída, desordenada e bela. Feita das histórias de tantas outras personagens que vivem no mesmo prédio e na cidade de contrastes que é Luanda, a obra escrita por Ondjaki em 2012, Prémio José Saramago, surge agora no palco do Theatro Circo, pela Companhia Cegada, testemunhando a intemporalidade do seu retrato humanista e a acutilância da sua crítica política. Parábola que nos fala de desigualdade e abusos de poder, de amor e companheirismo, ganância e tenacidade,\nOs Transparentes\nfaz-nos questionar o nosso futuro em comum, com humor, lirismo e sarcasmo.",
+      "description_short": "Esta é a história do homem que se torna transparente, do prédio onde vive, da sua cidade pujante, poluída, desordenada e bela. Feita das histórias de tantas outras personagens que vivem no mesmo prédio e na cidade de contrastes que é Luanda, a obra escrita por Ondjaki em 2012, Prémio José Saramago…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4052,10 +4052,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:32.725642+00:00",
+        "scraped_at": "2026-03-28T00:12:17.909894+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:68abc238574a1e42",
-        "harmonized_at": "2026-03-27T11:38:31.696868+00:00",
+        "raw_data_hash": "sha256:a699f9e51a54a2bb",
+        "harmonized_at": "2026-03-28T00:12:23.474912+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4063,13 +4063,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:32.725642+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535460+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -4082,8 +4079,8 @@
       "title": "INDEX 2026: Forensis & Bill Kouligas - The Drum and the Bird",
       "title_raw": "INDEX 2026: Forensis & Bill Kouligas - The Drum and the Bird",
       "subtitle": "Forensis & Bill Kouligas",
-      "description": "",
-      "description_short": "",
+      "description": "Que tipo de perda é transmutável a elementos como a fauna, a flora e a geologia num país altamente colonizado?\nThe Drum and the Bird\njunta o artista, designer e músico Bill Kouligas à organização Forensis num exercício multisensorial, partindo da investigação levada a cabo pelo coletivo Forensic Architecture a propósito do colonialismo germânico na Namíbia.\nAtravés de uma detalhada análise dos ecossistemas ecológicos que se perdem perante uma exploração colonial desenfreada, esta performance combina música, vivências em forma de testemunho e modelagem espacial-visual para destacar as vozes e os sons que foram apagados pelo tempo. Apesar de transcender, muitas vezes, o mundo físico, a peça apresentada no INDEX 2026 procura dar voz aos elementos naturais da Namíbia e questionar a amnésia colonial coletiva vivida atualmente, mas parte fulcral da história dos territórios.\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "Que tipo de perda é transmutável a elementos como a fauna, a flora e a geologia num país altamente colonizado?\nThe Drum and the Bird\njunta o artista, designer e músico Bill Kouligas à organização Forensis num exercício multisensorial, partindo da investigação levada a cabo pelo…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -4189,10 +4186,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:40.058425+00:00",
+        "scraped_at": "2026-03-28T00:11:56.640925+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:017d94a868eba213",
-        "harmonized_at": "2026-03-27T11:38:31.692205+00:00",
+        "raw_data_hash": "sha256:d5889442f8d76ede",
+        "harmonized_at": "2026-03-28T00:12:23.459326+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4200,15 +4197,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:40.058425+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535272+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -4221,14 +4215,15 @@
       "title": "INDEX 2026: Supersilent + Lawrence Abu Hamdan",
       "title_raw": "INDEX 2026: Supersilent + Lawrence Abu Hamdan",
       "subtitle": "Supersilent e Lawrence Abu Hamdan",
-      "description": "",
-      "description_short": "",
+      "description": "Resultado de uma encomenda do INDEX e do festival neerlandês Rewire, o artista visual e investigador sonoro Lawrence Abu Hamdan e o coletivo norueguês Supersilent juntam-se em volta do trabalho desenvolvido pela Earshot — a primeira organização sem fins lucrativos dedicada ao estudo do áudio para a defesa dos direitos humanos e do ambiente criada por Hamdan.\nCom foco particular na Palestina e na investigação da Earshot aos ataques a jornalistas e transmissões ao vivo pelas forças israelitas, a matéria-prima desta performance são as últimas imagens captadas pelas câmaras antes ou durante a sua destruição.\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "Resultado de uma encomenda do INDEX e do festival neerlandês Rewire, o artista visual e investigador sonoro Lawrence Abu Hamdan e o coletivo norueguês Supersilent juntam-se em volta do trabalho desenvolvido pela Earshot — a primeira organização sem fins lucrativos dedicada ao estudo do áudio para a…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "outros",
       "category": "outros",
       "subcategory": null,
       "tags": [
+        "festival",
         "sessao-unica"
       ],
       "categories_raw": [],
@@ -4254,8 +4249,8 @@
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
+      "is_festival": true,
+      "festival_name": "Festival Neerlandês Rewire",
       "festival_id": null,
       "is_multi_venue": false,
       "multi_venue_ids": [],
@@ -4325,10 +4320,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:42.338918+00:00",
+        "scraped_at": "2026-03-28T00:11:57.276714+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6979c4061141c980",
-        "harmonized_at": "2026-03-27T11:38:31.692349+00:00",
+        "raw_data_hash": "sha256:f7e8cca867b19234",
+        "harmonized_at": "2026-03-28T00:12:23.459823+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4336,16 +4331,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:32:42.338918+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535278+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -4486,10 +4478,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.090429+00:00",
+        "scraped_at": "2026-03-28T00:10:04.874455+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fc843968d58fd80f",
-        "harmonized_at": "2026-03-27T12:24:50.894942+00:00",
+        "raw_data_hash": "sha256:33cfc508d4f97c12",
+        "harmonized_at": "2026-03-28T00:11:32.292890+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4625,10 +4617,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.090775+00:00",
+        "scraped_at": "2026-03-28T00:10:04.874809+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:b2e1c0f63e1d840e",
-        "harmonized_at": "2026-03-27T12:24:50.899448+00:00",
+        "raw_data_hash": "sha256:4290c367f60bbad7",
+        "harmonized_at": "2026-03-28T00:11:32.297377+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4656,8 +4648,8 @@
       "title": "INDEX 2026: Arkadi Zaides - Talos",
       "title_raw": "INDEX 2026: Arkadi Zaides - Talos",
       "subtitle": "Arkadi Zaides",
-      "description": "",
-      "description_short": "",
+      "description": "TALOS\né o nome de um programa piloto colaborativo desenvolvido pela União Europeia que juntou catorze instituições para a conceção de um sistema de vigilância capaz de ser disparado de imediato para qualquer localização comunitária. O programa, desenvolvido entre 2008 e 2013, previa a deslocação de robôs semi-autónomos que pudessem ocupar espaço físico e além-fronteiras. Mas\nTALOS\nnunca saiu do papel — foi apenas um teste do esforço tecnológico dos agentes envolvidos.\nDesde 2016, o artista Arkadi Zaides junta coreógrafos, dramaturgos e artistas audiovisuais para um projeto homónimo que questiona a relação entre movimento, tecnologias de ponta e o futuro das fronteiras geográficas, assente em dinâmicas de ação-reação, limites e transgressão, paralisia e mobilidade.\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "TALOS\né o nome de um programa piloto colaborativo desenvolvido pela União Europeia que juntou catorze instituições para a conceção de um sistema de vigilância capaz de ser disparado de imediato para qualquer localização comunitária. O programa, desenvolvido entre 2008 e 2013, previa a deslocação de…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "outros",
@@ -4760,10 +4752,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:44.482447+00:00",
+        "scraped_at": "2026-03-28T00:11:57.915482+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f5cdc1065e209c06",
-        "harmonized_at": "2026-03-27T11:38:31.692471+00:00",
+        "raw_data_hash": "sha256:ada5837c9e782ce5",
+        "harmonized_at": "2026-03-28T00:12:23.460192+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4771,16 +4763,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:32:44.482447+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535285+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -4793,8 +4782,8 @@
       "title": "American Blues (mai 2026) (CTB)",
       "title_raw": "American Blues (mai 2026) (CTB)",
       "subtitle": "CTB",
-      "description": "",
-      "description_short": "",
+      "description": "Quem não conhece Nova Orleães? A cidade onde, nas infames casas de Basin Street, nasceu o jazz; onde músicos negros, tão famosos como campeões de basebol, embriagados de fumo e vida, sopravam espasmos congestionados nas trompetes e saxofones, arrancando das notas um tilintar de existências queimadas. Uma cidade na qual imigrantes europeus, flibusteiros e aventureiros se linchavam uns aos outros, no meio das suas águas lamacentas lançadas do Delta do Mississippi. Pitoresca, claro. Mas este pitoresco não é o que interessa a Tennessee Williams. O seu olhar, claro e febril, repousa no Médio Oeste, na linha móvel da fronteira, no profundo Sul, nos portos onde civilizações e raças se tocam e colidem. As personagens de Williams, e ainda mais frequentemente os seus protagonistas, são criaturas forçadas a compensar as cruéis insuficiências da realidade com um recurso desesperado à imaginação. São histórias dos subúrbios, não das metrópoles. Histórias marginais de uma sociedade perdida, onde a fragilidade humana vibra mais exposta.",
+      "description_short": "Quem não conhece Nova Orleães? A cidade onde, nas infames casas de Basin Street, nasceu o jazz; onde músicos negros, tão famosos como campeões de basebol, embriagados de fumo e vida, sopravam espasmos congestionados nas trompetes e saxofones, arrancando das notas um tilintar de existências…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4917,10 +4906,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:34.955151+00:00",
+        "scraped_at": "2026-03-28T00:12:18.545434+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:80e7b9ce054b580e",
-        "harmonized_at": "2026-03-27T11:38:31.696994+00:00",
+        "raw_data_hash": "sha256:4070ef0839df4ef4",
+        "harmonized_at": "2026-03-28T00:12:23.475226+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4928,14 +4917,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:34.955151+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535466+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5057,7 +5043,7 @@
         "scraped_at": "2026-03-27T10:59:47.641160+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:4fa1ba758c819286",
-        "harmonized_at": "2026-03-27T12:24:57.649092+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.267796+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5326,10 +5312,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.091927+00:00",
+        "scraped_at": "2026-03-28T00:10:04.876001+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:88c5e837ecca0d12",
-        "harmonized_at": "2026-03-27T12:24:50.913975+00:00",
+        "raw_data_hash": "sha256:d1239cf8dd37dd49",
+        "harmonized_at": "2026-03-28T00:11:32.311951+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5469,7 +5455,7 @@
         "scraped_at": "2026-03-27T10:59:50.058010+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ef8ac9352c8b5266",
-        "harmonized_at": "2026-03-27T12:24:57.649512+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.268197+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5494,8 +5480,8 @@
       "title": "Saber ir ao fundo",
       "title_raw": "Saber ir ao fundo",
       "subtitle": "Frenesim",
-      "description": "",
-      "description_short": "",
+      "description": "Um espetáculo para toda a família, onde som, imagem e movimento se fundem numa criação que combina eletrónica, voz e desenho. Aqui, descobre-se que é quando se vai ao fundo que se encontram as respostas que são perguntas. Deparamo-nos com diferentes caminhos e formas de mergulhar, aprendemos a respirar e a ver o fundo do mar. Voltamos à superfície com ainda mais perguntas e mais fôlego de procurar.\nSaber ir ao fundo convoca a imaginação sábia das crianças – essa capacidade de transformar o mundo através do jogo e do faz de conta – para enfrentar em conjunto, com leveza e coragem, as complexas marés da existência.",
+      "description_short": "Um espetáculo para toda a família, onde som, imagem e movimento se fundem numa criação que combina eletrónica, voz e desenho. Aqui, descobre-se que é quando se vai ao fundo que se encontram as respostas que são perguntas. Deparamo-nos com diferentes caminhos e formas de mergulhar, aprendemos a…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -5609,10 +5595,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:45.237934+00:00",
+        "scraped_at": "2026-03-28T00:11:58.552483+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e9015273600daf77",
-        "harmonized_at": "2026-03-27T11:38:31.692593+00:00",
+        "raw_data_hash": "sha256:eb4ce8ec89e6f806",
+        "harmonized_at": "2026-03-28T00:12:23.460645+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5620,13 +5606,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:45.237934+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535291+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -5749,10 +5732,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.093063+00:00",
+        "scraped_at": "2026-03-28T00:10:04.877125+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6490eb583e5a7cee",
-        "harmonized_at": "2026-03-27T12:24:50.928031+00:00",
+        "raw_data_hash": "sha256:fcf52f7016b1f7b2",
+        "harmonized_at": "2026-03-28T00:11:32.325982+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5893,10 +5876,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.093408+00:00",
+        "scraped_at": "2026-03-28T00:10:04.877469+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:425599be4a535b85",
-        "harmonized_at": "2026-03-27T12:24:50.932106+00:00",
+        "raw_data_hash": "sha256:60e14f9be4c5a3ee",
+        "harmonized_at": "2026-03-28T00:11:32.329997+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5924,8 +5907,8 @@
       "title": "INDEX 2026 – Bienal de Arte e Tecnologia",
       "title_raw": "INDEX 2026 – Bienal de Arte e Tecnologia",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "A par de um desenvolvimento ímpar, os exponenciais avanços tecnológicos levados a cabo nas últimas décadas têm também conduzido a uma maior fragmentação política e social, ao florescer de extremismos e desigualdade económica, a uma massiva vigilância algorítmica e, inevitavelmente, à progressiva redefinição das relações de poder, reconfigurando o conceito de soberania, agora refém das omnipresentes gigantes tecnológicas.\nSerá esta a matéria para o regresso da bienal INDEX a Braga, de 7 a 17 de maio de 2026, propondo uma reflexão alargada sobre as múltiplas relações entre Poder, Arte e Tecnologia, manifestadas através de um programa diverso, composto por espetáculos, conferências, uma exposição e ações de cariz educativo, que ocuparão diferentes locais da cidade.\nO INDEX é uma iniciativa da Braga Media Arts que visa explorar as relações entre arte e tecnologia, promovendo o diálogo e a reflexão sobre as questões emergentes nestas áreas. Insere-se no âmbito do plano de ação de Braga enquanto Cidade Criativa da UNESCO para as Media Arts, contando com o apoio do Município de Braga e promovido pela empresa Faz Cultura Empresa Municipal.\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "A par de um desenvolvimento ímpar, os exponenciais avanços tecnológicos levados a cabo nas últimas décadas têm também conduzido a uma maior fragmentação política e social, ao florescer de extremismos e desigualdade económica, a uma massiva vigilância algorítmica e, inevitavelmente, à progressiva…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -6030,10 +6013,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:33.334905+00:00",
+        "scraped_at": "2026-03-28T00:11:54.723524+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:8b056fc758ef2054",
-        "harmonized_at": "2026-03-27T11:38:31.691827+00:00",
+        "raw_data_hash": "sha256:d88bbc64272ad6c0",
+        "harmonized_at": "2026-03-28T00:12:23.457786+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6041,15 +6024,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.55,
-        "last_seen_at": "2026-03-27T11:32:33.334905+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535255+00:00"
+        "quality_score": 0.7
       }
     },
     {
@@ -6062,8 +6042,8 @@
       "title": "INDEX 2026: Fanfictional Politics - Pedro Gossler",
       "title_raw": "INDEX 2026: Fanfictional Politics - Pedro Gossler",
       "subtitle": "Pedro Gossler",
-      "description": "",
-      "description_short": "",
+      "description": "Descobre mais sobre a operação de exploração de mão-de-obra de Steve Bannon no\nWorld of Warcraft\ne como isso contribuiu para a vitória de Donald Trump nas eleições presidenciais. Reflete sobre o significado simbólico e literal da mesa nas lutas pelo poder político e como tudo isso pode estar ligado a Vladislav Surkov, conselheiro pessoal de Putin até fevereiro de 2020.\nFanfictional Politics\n, de Pedro Gossler, utiliza teorias da conspiração online e factos objetivos para mostrar como as narrativas políticas são construídas e manipuladas a partir de opiniões, ambições, oportunidades, ilusões, memórias e algumas certezas. Num cenário de desconfiança generalizada em relação aos meios de comunicação, os próprios conceitos de bem e mal, direita e esquerda, humano e desumano, perderam o seu significado. Neste deserto metafísico, questionamo-nos sobre o sombrio absurdo do que é apresentado como facto.\nE se forem os fãs que sabem o que realmente se passa, melhor do que os detractores e aqueles a quem realmente não importa?\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "Descobre mais sobre a operação de exploração de mão-de-obra de Steve Bannon no\nWorld of Warcraft\ne como isso contribuiu para a vitória de Donald Trump nas eleições presidenciais. Reflete sobre o significado simbólico e literal da mesa nas lutas pelo poder político e como tudo isso pode estar ligado…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "outros",
@@ -6167,10 +6147,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:35.645559+00:00",
+        "scraped_at": "2026-03-28T00:11:55.364985+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c739fff5e6c4f245",
-        "harmonized_at": "2026-03-27T11:38:31.691964+00:00",
+        "raw_data_hash": "sha256:922d140e6bb2cf14",
+        "harmonized_at": "2026-03-28T00:12:23.458333+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6178,16 +6158,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:32:35.645559+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535261+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -6200,8 +6177,8 @@
       "title": "INDEX 2026: ÆTHER (Poor Objects) - Shuang Li",
       "title_raw": "INDEX 2026: ÆTHER (Poor Objects) - Shuang Li",
       "subtitle": "Shuang Li",
-      "description": "",
-      "description_short": "",
+      "description": "Através do uso de uma ring light — um dispositivo de iluminação comumente usado por criadores de conteúdo — e de modelos, em\nÆTHER\n, Shuang Li reflete sobre a subjetividade do ser humano no envolvimento constante na cultura online cada vez mais omnipresente. Neste exercício, a artista pretende ligar o conceito de transmissão imperfeita subjacente aos corpos da sociedade de hoje a um eclipse anular solar. A relação invertida entre o corpo e a sua representação no ecrã, assim como o conceito de perda, são temas que fazem parte da narrativa da peça, que visa incentivar uma inversão da desmaterialização dos corpos físicos nas nossas circunstâncias atuais.\nShuang Li vive e trabalha em Berlim e Wuyi, na China. Fez o mestrado em Media Studies pela Universidade de Nova Iorque. Trabalha com vários géneros artísticos — performance, websites interativos, escultura e imagens em movimento. Na sua prática, estuda vários meios que compõem o panorama digital contemporâneo, as vidas materiais que o sustentam e, acima de tudo, as fissuras entre eles.\n_\nPrograma completo e mais informações sobre o INDEX 2026 disponíveis em\nwww.indexmediaarts.com",
+      "description_short": "Através do uso de uma ring light — um dispositivo de iluminação comumente usado por criadores de conteúdo — e de modelos, em\nÆTHER\n, Shuang Li reflete sobre a subjetividade do ser humano no envolvimento constante na cultura online cada vez mais omnipresente. Neste exercício, a artista pretende…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "outros",
@@ -6305,10 +6282,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:37.897360+00:00",
+        "scraped_at": "2026-03-28T00:11:56.002989+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d703e72a5ba277a3",
-        "harmonized_at": "2026-03-27T11:38:31.692082+00:00",
+        "raw_data_hash": "sha256:bc4d757f1f34eebd",
+        "harmonized_at": "2026-03-28T00:12:23.458817+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6316,16 +6293,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "evento em dominio outros — verificar categories_raw",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:32:37.897360+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535267+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -6446,7 +6420,7 @@
         "scraped_at": "2026-03-27T10:59:51.964944+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:400b7a61e5d577ca",
-        "harmonized_at": "2026-03-27T12:24:57.650011+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.268728+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6473,8 +6447,8 @@
       "title": "Mulheres Estrangeiras (CTB)",
       "title_raw": "Mulheres Estrangeiras (CTB)",
       "subtitle": "Olga Kozakou-Tsiara / Roi Theatre – Chipre",
-      "description": "",
-      "description_short": "",
+      "description": "Trata-se de uma obra fragmentada, tecida a partir de histórias reais de mulheres que, obrigadas pela guerra, pela pobreza e pela violência, tiveram de abandonar o lugar familiar — a casa, a terra natal — em busca de uma vida mais segura para si e para os seus filhos.\nMulheres arrancadas das suas raízes contra a sua vontade, transformadas pela vida em números numa lista de refugiados — vivos ou mortos.\nA nossa obra, o nosso teatro, é dedicado a todas essas mulheres, espalhadas pelos quatro cantos do mundo, que já não têm nome nem pátria, que não cabem em nenhum território, que continuam a sofrer, a ser perseguidas, a ser marcadas. É por elas que levantamos esta voz. Pelas mulheres sem lugar — mas nunca sem história.",
+      "description_short": "Trata-se de uma obra fragmentada, tecida a partir de histórias reais de mulheres que, obrigadas pela guerra, pela pobreza e pela violência, tiveram de abandonar o lugar familiar — a casa, a terra natal — em busca de uma vida mais segura para si e para os seus filhos.\nMulheres arrancadas das suas…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -6580,10 +6554,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:37.066492+00:00",
+        "scraped_at": "2026-03-28T00:12:19.177634+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ff2f7c203edc3bb2",
-        "harmonized_at": "2026-03-27T11:38:31.697127+00:00",
+        "raw_data_hash": "sha256:65ee6335405d9892",
+        "harmonized_at": "2026-03-28T00:12:23.475674+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6591,13 +6565,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:37.066492+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535471+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -6738,7 +6709,7 @@
         "scraped_at": "2026-03-27T10:59:54.019571+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:be2bb2a7a5e6b43b",
-        "harmonized_at": "2026-03-27T12:24:57.650495+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.269175+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6876,10 +6847,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.094990+00:00",
+        "scraped_at": "2026-03-28T00:10:04.879059+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:de0c3d2d1c8fd231",
-        "harmonized_at": "2026-03-27T12:24:50.952201+00:00",
+        "raw_data_hash": "sha256:c57a94916f55de6c",
+        "harmonized_at": "2026-03-28T00:11:32.349921+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7019,10 +6990,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.095032+00:00",
+        "scraped_at": "2026-03-28T00:10:04.879101+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:693c6b6f74e1c984",
-        "harmonized_at": "2026-03-27T12:24:50.952659+00:00",
+        "raw_data_hash": "sha256:f473a93e91d36e57",
+        "harmonized_at": "2026-03-28T00:11:32.350358+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7050,14 +7021,15 @@
       "title": "XXXV FITU Bracara Avgvsta",
       "title_raw": "XXXV FITU Bracara Avgvsta",
       "subtitle": "Tuna Universitária do Minho",
-      "description": "",
-      "description_short": "",
+      "description": "A Tuna Universitária do Minho apresenta o\nXXXV FITU Bracara Avgvsta\n– Festival Internacional de Tunas Universitárias\n. Evento premiado em 2009 com o Galardão “A Nossa Terra”, o\nFITU Bracara Avgvsta\nconta com 34 edições realizadas anualmente, sendo já um marco na agenda cultural da cidade de Braga. Conta com a participação das melhores tunas no panorama nacional e internacional, em 5 dias de festa, contando com uma noite de serenatas e duas noites de espetáculo, onde se espalham pelas ruas de Braga a tradição e o espírito boémio e académico, através da presença dos cerca de 300 participantes integrados neste festival, cuja animação ultrapassa a fronteira do palco.",
+      "description_short": "A Tuna Universitária do Minho apresenta o\nXXXV FITU Bracara Avgvsta\n– Festival Internacional de Tunas Universitárias\n. Evento premiado em 2009 com o Galardão “A Nossa Terra”, o\nFITU Bracara Avgvsta\nconta com 34 edições realizadas anualmente, sendo já um marco na agenda cultural da cidade de Braga…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
       "tags": [
+        "festival",
         "música"
       ],
       "categories_raw": [
@@ -7091,11 +7063,11 @@
       "date_close": null,
       "event_status": "em-cartaz",
       "is_premiere": false,
-      "is_national_premiere": false,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
+      "is_festival": true,
+      "festival_name": "Festival Internacional De Tunas Universitárias",
       "festival_id": null,
       "is_multi_venue": false,
       "multi_venue_ids": [],
@@ -7163,10 +7135,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:48.259019+00:00",
+        "scraped_at": "2026-03-28T00:12:23.035773+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a1f9680ebd64b8a2",
-        "harmonized_at": "2026-03-27T11:38:31.697873+00:00",
+        "raw_data_hash": "sha256:52a7908c7bb2975f",
+        "harmonized_at": "2026-03-28T00:12:23.478239+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7174,16 +7146,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:33:48.259019+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535507+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -7308,10 +7277,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:11.869928+00:00",
+        "scraped_at": "2026-03-28T00:12:44.121466+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:85cedc93ebb6be7a",
-        "harmonized_at": "2026-03-27T12:29:25.232067+00:00",
+        "raw_data_hash": "sha256:757799f42fdf5e1b",
+        "harmonized_at": "2026-03-28T00:12:56.771167+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7443,10 +7412,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.095105+00:00",
+        "scraped_at": "2026-03-28T00:10:04.879177+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9236abc3ac4f1df2",
-        "harmonized_at": "2026-03-27T12:24:50.953926+00:00",
+        "raw_data_hash": "sha256:c84c180a9e37554c",
+        "harmonized_at": "2026-03-28T00:11:32.351613+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7582,10 +7551,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.095578+00:00",
+        "scraped_at": "2026-03-28T00:10:04.879644+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bc27b1bb90858cb2",
-        "harmonized_at": "2026-03-27T12:24:50.959759+00:00",
+        "raw_data_hash": "sha256:2b792d6e03826975",
+        "harmonized_at": "2026-03-28T00:11:32.357963+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7723,10 +7692,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:13.828044+00:00",
+        "scraped_at": "2026-03-28T00:12:45.949350+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:df81f90ff6b3917d",
-        "harmonized_at": "2026-03-27T12:29:25.232504+00:00",
+        "raw_data_hash": "sha256:f346a168acc1545b",
+        "harmonized_at": "2026-03-28T00:12:56.771599+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7857,10 +7826,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.095967+00:00",
+        "scraped_at": "2026-03-28T00:10:04.881581+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fb81e1ad733b0f8a",
-        "harmonized_at": "2026-03-27T12:24:50.964823+00:00",
+        "raw_data_hash": "sha256:ed62a4d492cf02b9",
+        "harmonized_at": "2026-03-28T00:11:32.363042+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7996,10 +7965,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.096004+00:00",
+        "scraped_at": "2026-03-28T00:10:04.881619+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:abd5b319952fd456",
-        "harmonized_at": "2026-03-27T12:24:50.965472+00:00",
+        "raw_data_hash": "sha256:ab67a5cac55fbd76",
+        "harmonized_at": "2026-03-28T00:11:32.363687+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8137,10 +8106,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.096060+00:00",
+        "scraped_at": "2026-03-28T00:10:04.881673+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:57a3c9ae88ec9822",
-        "harmonized_at": "2026-03-27T12:24:50.965968+00:00",
+        "raw_data_hash": "sha256:33746247d4641a3c",
+        "harmonized_at": "2026-03-28T00:11:32.364188+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8282,10 +8251,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.096548+00:00",
+        "scraped_at": "2026-03-28T00:10:04.882063+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a45da221e42757c3",
-        "harmonized_at": "2026-03-27T12:24:50.971149+00:00",
+        "raw_data_hash": "sha256:e7666af237365f17",
+        "harmonized_at": "2026-03-28T00:11:32.369402+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8421,7 +8390,7 @@
         "scraped_at": "2026-03-27T10:59:55.928024+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:a91adc616e25967e",
-        "harmonized_at": "2026-03-27T12:24:57.650893+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.269597+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8638,10 +8607,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:15.792929+00:00",
+        "scraped_at": "2026-03-28T00:12:47.794841+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:7686774f4e246a1c",
-        "harmonized_at": "2026-03-27T12:29:25.233320+00:00",
+        "raw_data_hash": "sha256:4ae7cadc15fdb528",
+        "harmonized_at": "2026-03-28T00:12:56.772393+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8778,10 +8747,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.097410+00:00",
+        "scraped_at": "2026-03-28T00:10:04.882831+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1b422193d8bc44b2",
-        "harmonized_at": "2026-03-27T12:24:50.981020+00:00",
+        "raw_data_hash": "sha256:23a2166e136262e2",
+        "harmonized_at": "2026-03-28T00:11:32.379349+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8923,10 +8892,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:17.781325+00:00",
+        "scraped_at": "2026-03-28T00:12:49.670578+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:387ae3b800313cbf",
-        "harmonized_at": "2026-03-27T12:29:25.233867+00:00",
+        "raw_data_hash": "sha256:e271d121ce3d744c",
+        "harmonized_at": "2026-03-28T00:12:56.772870+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9067,7 +9036,7 @@
         "scraped_at": "2026-03-27T10:59:57.823097+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:f7028f0cd0c8d353",
-        "harmonized_at": "2026-03-27T12:24:57.651296+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.269974+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9092,8 +9061,8 @@
       "title": "Habitar – Hotel Europa",
       "title_raw": "Habitar – Hotel Europa",
       "subtitle": "Hotel Europa",
-      "description": "",
-      "description_short": "",
+      "description": "Depois de a companhia Hotel Europa estar em janeiro de 2026 em Braga para recolher vários testemunhos e perspetivas sobre o tema da Habitação, regressam para apresentar o resultado desta residência artística no espetáculo\nHabitar\n.\nEm\nHabitar\npretende-se retratar o problema da habitação em Portugal e na Europa, seguindo as histórias de pessoas reais: pessoas que vivem em tendas porque não conseguem pagar a renda; idosos expulsos da casa onde viviam há 30 anos; famílias que não conseguem alugar um apartamento; pessoas que partilham casa com outras 30; especialistas do mercado da habitação; agentes imobiliários e ativistas pela habitação. Habitar é um espetáculo de teatro documental que procura entender as razões e soluções para a questão mais urgente que atravessa a sociedade portuguesa na atualidade.",
+      "description_short": "Depois de a companhia Hotel Europa estar em janeiro de 2026 em Braga para recolher vários testemunhos e perspetivas sobre o tema da Habitação, regressam para apresentar o resultado desta residência artística no espetáculo\nHabitar\n.\nEm\nHabitar\npretende-se retratar o problema da habitação em Portugal…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -9200,10 +9169,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:45.990583+00:00",
+        "scraped_at": "2026-03-28T00:11:59.087564+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a4149ed80bca6de3",
-        "harmonized_at": "2026-03-27T11:38:31.692730+00:00",
+        "raw_data_hash": "sha256:38eb417c882a2157",
+        "harmonized_at": "2026-03-28T00:12:23.461016+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9211,14 +9180,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:45.990583+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535297+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -9347,10 +9313,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.097844+00:00",
+        "scraped_at": "2026-03-28T00:10:04.883244+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cb473c06238492b8",
-        "harmonized_at": "2026-03-27T12:24:50.986680+00:00",
+        "raw_data_hash": "sha256:6debf234bc4dbdda",
+        "harmonized_at": "2026-03-28T00:11:32.384964+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9486,7 +9452,7 @@
         "scraped_at": "2026-03-27T10:59:59.726844+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:feb76cf41c4234e6",
-        "harmonized_at": "2026-03-27T12:24:57.651774+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.270448+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9514,8 +9480,8 @@
       "title": "Visita Guiada ao Theatro Circo (30/05/2026)",
       "title_raw": "Visita Guiada ao Theatro Circo (30/05/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma estreita à vida cultural de Braga, o Theatro Circo reflete momentos marcantes da história da cidade e do país, sendo hoje um centro de referência na programação artística e cultural.",
+      "description_short": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -9629,10 +9595,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:48.100623+00:00",
+        "scraped_at": "2026-03-28T00:11:59.620900+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3116d2cf5a06dc5b",
-        "harmonized_at": "2026-03-27T11:38:31.692892+00:00",
+        "raw_data_hash": "sha256:2f30eb10fdf2108e",
+        "harmonized_at": "2026-03-28T00:12:23.461411+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9640,13 +9606,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:48.100623+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535303+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -9659,8 +9622,8 @@
       "title": "Contexto - António Brito Guterres e Maria Manuel Oliveira",
       "title_raw": "Contexto - António Brito Guterres e Maria Manuel Oliveira",
       "subtitle": "António Brito Guterres e Maria Manuel Oliveira",
-      "description": "",
-      "description_short": "",
+      "description": "No ciclo Contexto, propomos uma série de conversas mediadas entre dois convidados cujo percurso académico, político ou ativista se cruza com temas abordados num espetáculo da programação do Theatro Circo.\nEsta sessão parte do espetáculo documental\nHabitar\n, da companhia Hotel Europa, que retrata o problema habitacional, seguindo histórias de pessoas reais. Nesta conversa, iremos refletir, juntamente com António Brito Guterres e Maria Manuel Oliveira, sobre as origens desta grave crise – as suas implicações políticas, económicas e sociais na vida das pessoas – e pensar políticas públicas que nos permitam recuperar as cidades como malhas de espaços coletivos e acessíveis, assim como de habitação garantida e universal.\nAntónio Brito Guterres\né assistente social, doutorando em Estudos Urbanos e conta com um percurso marcado pela coordenação de vários projetos territoriais e de desenvolvimento cultural e urbano.\nMaria Manuel Oliveira\né arquiteta, formada pela Faculdade de Belas Artes da Universidade do Porto e lecionou na Escola de Arquitetura da Universidade do Minho, onde desenvolveu projetos e pesquisa na área do urbanismo.",
+      "description_short": "No ciclo Contexto, propomos uma série de conversas mediadas entre dois convidados cujo percurso académico, político ou ativista se cruza com temas abordados num espetáculo da programação do Theatro Circo.\nEsta sessão parte do espetáculo documental\nHabitar\n, da companhia Hotel Europa, que retrata o…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -9767,10 +9730,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:50.559423+00:00",
+        "scraped_at": "2026-03-28T00:12:00.256286+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:fe8a2d0e4b1c440e",
-        "harmonized_at": "2026-03-27T11:38:31.693062+00:00",
+        "raw_data_hash": "sha256:1858ad040ffc7c97",
+        "harmonized_at": "2026-03-28T00:12:23.461758+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9778,14 +9741,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:50.559423+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535308+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -9798,16 +9758,16 @@
       "title": "Contraponto: John Luther Adams & Philip Glass - Por Orquestra do Algarve",
       "title_raw": "Contraponto: John Luther Adams & Philip Glass - Por Orquestra do Algarve",
       "subtitle": "Orquestra do Algarve",
-      "description": "",
-      "description_short": "",
+      "description": "Com direção e apresentação de Martim Sousa Tavares, a Orquestra do Algarve apresenta um espetáculo que estreará em solo nacional duas obras de dois dos maiores compositores do nosso tempo.\nDe John Luther Adams, compositor e ecologista vencedor de um Pulitzer e autor de um catálogo onde música e natureza se fundem na mesma paleta, dá-se a ouvir a estreia nacional de\nBecome River\n, parte da trilogia\nBecome\n, compostas também pelas obras\nBecome Ocean\ne\nBecome Desert\n.\nDe Philip Glass, mestre do minimalismo, a Orquestra do Algarve dará a ouvir a fascinante partitura de\nÁguas da Amazónia\n. Os primeiros oito andamentos representam oito rios que atravessam a maior floresta do mundo. O nono e último representa o rio Amazonas, gloriosa fonte de vida no planeta e núcleo de inspiração para o compositor.\nO Contraponto é um ciclo dedicado à composição dos séculos XX e XXI, onde convidamos ensembles e compositores locais, nacionais e internacionais para nos guiarem pela música de um dos períodos mais férteis em novas ideias e formas.",
+      "description_short": "Com direção e apresentação de Martim Sousa Tavares, a Orquestra do Algarve apresenta um espetáculo que estreará em solo nacional duas obras de dois dos maiores compositores do nosso tempo.\nDe John Luther Adams, compositor e ecologista vencedor de um Pulitzer e autor de um catálogo onde música e…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
       "tags": [
-        "música",
-        "sessao-unica"
+        "estreia",
+        "música"
       ],
       "categories_raw": [
         "Música"
@@ -9829,9 +9789,9 @@
       "is_ongoing": false,
       "date_open": "2026-05-30",
       "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
+      "event_status": "estreia",
+      "is_premiere": true,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
       "is_festival": false,
@@ -9905,10 +9865,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:51.340895+00:00",
+        "scraped_at": "2026-03-28T00:12:00.895928+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f07ee09232358de9",
-        "harmonized_at": "2026-03-27T11:38:31.693197+00:00",
+        "raw_data_hash": "sha256:13d0c4db291ad30f",
+        "harmonized_at": "2026-03-28T00:12:23.462277+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9916,14 +9876,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:51.340895+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535314+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -10054,10 +10011,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:19.700769+00:00",
+        "scraped_at": "2026-03-28T00:12:51.528980+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:aba3d35d1da95f0c",
-        "harmonized_at": "2026-03-27T12:29:25.234356+00:00",
+        "raw_data_hash": "sha256:8d9c6f86a1b9e09b",
+        "harmonized_at": "2026-03-28T00:12:56.773319+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10193,10 +10150,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098261+00:00",
+        "scraped_at": "2026-03-28T00:10:04.883640+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1aa2ef74283338bb",
-        "harmonized_at": "2026-03-27T12:24:50.991758+00:00",
+        "raw_data_hash": "sha256:3c8f33014c5422e5",
+        "harmonized_at": "2026-03-28T00:11:32.389937+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10332,10 +10289,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098386+00:00",
+        "scraped_at": "2026-03-28T00:10:04.883750+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:c0adc54e480ed17b",
-        "harmonized_at": "2026-03-27T12:24:50.993437+00:00",
+        "raw_data_hash": "sha256:bc33f7a91d781537",
+        "harmonized_at": "2026-03-28T00:11:32.391659+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10471,10 +10428,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098687+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884036+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:54d2b8ea87b3ee94",
-        "harmonized_at": "2026-03-27T12:24:50.997082+00:00",
+        "raw_data_hash": "sha256:05b2c8ee19024f25",
+        "harmonized_at": "2026-03-28T00:11:32.395327+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

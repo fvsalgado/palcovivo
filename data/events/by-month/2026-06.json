@@ -1,6 +1,6 @@
 {
   "month": "2026-06",
-  "total": 41,
+  "total": 38,
   "events": [
     {
       "schema_version": "1.0",
@@ -118,10 +118,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098716+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884062+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d13a8ab3fa98ee38",
-        "harmonized_at": "2026-03-27T12:24:50.997544+00:00",
+        "raw_data_hash": "sha256:399d77a1554aea86",
+        "harmonized_at": "2026-03-28T00:11:32.395784+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -149,8 +149,8 @@
       "title": "Oru Kami – GariBambi (jun 2026)",
       "title_raw": "Oru Kami – GariBambi (jun 2026)",
       "subtitle": "GariBambi",
-      "description": "",
-      "description_short": "",
+      "description": "ORU KAMI\nparte do papel que se dobra, do gesto que ganha corpo, do som que o papel produz e da imagem que se manipula. Inspirado na arte japonesa do origami, este espetáculo oferece um universo em que o mais simples se percebe essencial, onde cada vinco guarda um segredo, cada forma um significado e cada folha uma mensagem por desvendar.\nEm\nORU KAMI\n, a música surge como uma linha que une o visível ao invisível; partindo do silêncio, tece paisagens sonoras numa estética intimista que, tal como o papel, se desdobra entre a linguagem verbal e não-verbal. Cada origami guarda em si a possibilidade de ser oferecido, feito para dar, e por isso,\nORU KAMI\noferece, simultaneamente, um espaço de partilha intergeracional em que as pequenas figuras de papel carregam grandes presentes invisíveis, entregues com a delicadeza de quem sabe que o essencial não se diz – dobra-se, partilha-se, sente-se.\nEstas sessões destinam-se exclusivamente ao público escolar.",
+      "description_short": "ORU KAMI\nparte do papel que se dobra, do gesto que ganha corpo, do som que o papel produz e da imagem que se manipula. Inspirado na arte japonesa do origami, este espetáculo oferece um universo em que o mais simples se percebe essencial, onde cada vinco guarda um segredo, cada forma um significado…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -300,10 +300,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:54.441894+00:00",
+        "scraped_at": "2026-03-28T00:12:02.276756+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:1519db76670e558b",
-        "harmonized_at": "2026-03-27T11:38:31.693474+00:00",
+        "raw_data_hash": "sha256:ea9e48419ab981e4",
+        "harmonized_at": "2026-03-28T00:12:23.465311+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -311,13 +311,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:54.441894+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535326+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -538,11 +535,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "08:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -619,10 +625,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098737+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884081+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a8431f98d71e8ca2",
-        "harmonized_at": "2026-03-27T12:24:50.997802+00:00",
+        "raw_data_hash": "sha256:83dbc43e963e8712",
+        "harmonized_at": "2026-03-28T00:11:32.396041+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -859,11 +865,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -940,10 +955,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098753+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884095+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:d34c6a73e27938e1",
-        "harmonized_at": "2026-03-27T12:24:50.997967+00:00",
+        "raw_data_hash": "sha256:22ffc587dea3a0ca",
+        "harmonized_at": "2026-03-28T00:11:32.396200+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1182,11 +1197,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1263,10 +1287,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098770+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884110+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9e671647b638bc5b",
-        "harmonized_at": "2026-03-27T12:24:50.998123+00:00",
+        "raw_data_hash": "sha256:a10165651f5d5f82",
+        "harmonized_at": "2026-03-28T00:11:32.396356+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1503,11 +1527,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1584,10 +1617,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098793+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884130+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:90ae1d1139da4bbb",
-        "harmonized_at": "2026-03-27T12:24:50.998443+00:00",
+        "raw_data_hash": "sha256:d1933248b331f9f1",
+        "harmonized_at": "2026-03-28T00:11:32.396681+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1822,11 +1855,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -1903,10 +1945,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098819+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884154+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8639b63e7b6764b9",
-        "harmonized_at": "2026-03-27T12:24:50.998950+00:00",
+        "raw_data_hash": "sha256:519dbc27781bde69",
+        "harmonized_at": "2026-03-28T00:11:32.397200+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2144,11 +2186,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2225,10 +2276,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098864+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884197+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6640fb0d6046b8b6",
-        "harmonized_at": "2026-03-27T12:24:50.999726+00:00",
+        "raw_data_hash": "sha256:6f99882042931843",
+        "harmonized_at": "2026-03-28T00:11:32.398043+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2466,11 +2517,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2547,10 +2607,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.098905+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884245+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:92314e2a27432b1d",
-        "harmonized_at": "2026-03-27T12:24:51.000387+00:00",
+        "raw_data_hash": "sha256:24c35e0b4507df64",
+        "harmonized_at": "2026-03-28T00:11:32.398720+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2787,11 +2847,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "13:30",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-02",
-      "date_last": "2026-06-25",
-      "total_sessions": 21,
+      "date_last": "2026-06-26",
+      "total_sessions": 22,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -2868,10 +2937,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.099005+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884342+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4559ebfc1bdca3d5",
-        "harmonized_at": "2026-03-27T12:24:51.001302+00:00",
+        "raw_data_hash": "sha256:dd99a615815d89dc",
+        "harmonized_at": "2026-03-28T00:11:32.399633+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3018,7 +3087,7 @@
         "scraped_at": "2026-03-27T11:00:01.591103+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:02c86cbcd5e08ce7",
-        "harmonized_at": "2026-03-27T12:24:57.652166+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.270852+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3043,8 +3112,8 @@
       "title": "Chamada aberta ao público do Theatro Circo",
       "title_raw": "Chamada aberta ao público do Theatro Circo",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Em 2026 assinalam-se os vinte anos da reabertura do Theatro Circo. Para celebrar esta data, a artista, criadora e performer Raquel André concebe um espetáculo de homenagem dedicado a este lugar e às histórias que nele habitam. Para a construção desta criação, procuramos pessoas que queiram partilhar as suas memórias enquanto espectadoras e testemunhas de acontecimentos artísticos do Theatro Circo, e que contem as múltiplas histórias deste lugar. Deseja-se que o palco seja ocupado pelo público: pelas suas histórias, desejos, vontades e sonhos.\nEsta chamada dirige-se a todas as pessoas maiores de 18 anos, com disponibilidade e vontade de partilhar histórias sobre a sua relação com o Theatro Circo.\nO grupo de participantes será convidado a fazer parte do espetáculo de celebração dos vinte anos de reabertura do Theatro Circo, com apresentação única a 31 de outubro.",
+      "description_short": "Em 2026 assinalam-se os vinte anos da reabertura do Theatro Circo. Para celebrar esta data, a artista, criadora e performer Raquel André concebe um espetáculo de homenagem dedicado a este lugar e às histórias que nele habitam. Para a construção desta criação, procuramos pessoas que queiram…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -3148,10 +3217,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:56.687722+00:00",
+        "scraped_at": "2026-03-28T00:12:03.010349+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9ffad5769e06ec80",
-        "harmonized_at": "2026-03-27T11:38:31.693666+00:00",
+        "raw_data_hash": "sha256:eec4f4406c05c7de",
+        "harmonized_at": "2026-03-28T00:12:23.465844+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3159,15 +3228,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "preco nao determinado (nem entrada livre nem valor)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:56.687722+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535332+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -3180,14 +3246,15 @@
       "title": "Laurie Anderson com Sexmob",
       "title_raw": "Laurie Anderson com Sexmob",
       "subtitle": "Laurie Anderson",
-      "description": "",
-      "description_short": "",
+      "description": "Passados quase 20 anos, Laurie Anderson regressa ao Theatro Circo com\nRepublic of Love\n, espetáculo que surge de um convite para um festival em Vienado Vienna Festival focado na ascensão do fascismo na Europa. Desafiada a explorar a relação entre governo e amor, Laurie Anderson criou uma performance que cruza narrativa e música. Acompanhada pelo ensemble de jazz nova iorquino Sexmob, a artista reinventa temas como\nBig Science\ne\nLanguage Is A Virus\n, que ganham novos contextos em 2026. Integrando pensamentos de figuras como Allen Ginsberg e Bob Dylan, a obra afirma-se como uma celebração da liberdade.\nDesde o êxito de\nO Superman\n(1981), o percurso de Laurie Anderson tem sido marcado por uma discografia repleta de colaborações com artistas como Brian Eno e Lou Reed. Primeira artista residente da NASA e distinguida com o prémio de Carreira nos Grammys de 2024, Anderson permanece uma das mais vitais contadoras de histórias da atualidade.",
+      "description_short": "Passados quase 20 anos, Laurie Anderson regressa ao Theatro Circo com\nRepublic of Love\n, espetáculo que surge de um convite para um festival em Vienado Vienna Festival focado na ascensão do fascismo na Europa. Desafiada a explorar a relação entre governo e amor, Laurie Anderson criou uma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
       "tags": [
+        "festival",
         "música",
         "sessao-unica"
       ],
@@ -3216,8 +3283,8 @@
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
+      "is_festival": true,
+      "festival_name": "Festival Em Vienado Vienna Festival Focado Na Ascensão Do Fascismo Na Europa",
       "festival_id": null,
       "is_multi_venue": false,
       "multi_venue_ids": [],
@@ -3287,10 +3354,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:57.447249+00:00",
+        "scraped_at": "2026-03-28T00:12:03.763005+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bd1aa10e280733f5",
-        "harmonized_at": "2026-03-27T11:38:31.693817+00:00",
+        "raw_data_hash": "sha256:2d45166636644426",
+        "harmonized_at": "2026-03-28T00:12:23.466277+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3298,14 +3365,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:57.447249+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535337+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -3491,11 +3555,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "17:00",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-03",
-      "date_last": "2026-06-25",
-      "total_sessions": 17,
+      "date_last": "2026-06-26",
+      "total_sessions": 18,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -3572,10 +3645,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.099075+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884405+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:598d84f707a5acfd",
-        "harmonized_at": "2026-03-27T12:24:51.002089+00:00",
+        "raw_data_hash": "sha256:227aca8f355a1bd1",
+        "harmonized_at": "2026-03-28T00:11:32.400460+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3791,11 +3864,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-04",
-      "date_last": "2026-06-25",
-      "total_sessions": 19,
+      "date_last": "2026-06-26",
+      "total_sessions": 20,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -3872,10 +3954,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.099456+00:00",
+        "scraped_at": "2026-03-28T00:10:04.884753+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a2337dc197ac4dd3",
-        "harmonized_at": "2026-03-27T12:24:51.007034+00:00",
+        "raw_data_hash": "sha256:ff9530c255d2b29d",
+        "harmonized_at": "2026-03-28T00:11:32.405286+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3903,8 +3985,8 @@
       "title": "Buluku",
       "title_raw": "Buluku",
       "subtitle": "Djam Neguin",
-      "description": "",
-      "description_short": "",
+      "description": "Buluku\né um afronauta curioso que viaja pelo espaço-tempo para partilhar aventuras sobre a criação do Universo, transformando conhecimentos ancestrais africanos em experiências contemporâneas. Ao lado dos seus inseparáveis androides Kandjila e Zuri, visita planetas desconhecidos e celebra o poder da imaginação, da diversidade e da convivência entre mundos.",
+      "description_short": "Buluku\né um afronauta curioso que viaja pelo espaço-tempo para partilhar aventuras sobre a criação do Universo, transformando conhecimentos ancestrais africanos em experiências contemporâneas. Ao lado dos seus inseparáveis androides Kandjila e Zuri, visita planetas desconhecidos e celebra o poder…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4027,10 +4109,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:59.642519+00:00",
+        "scraped_at": "2026-03-28T00:12:04.456303+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:cce21d675f91961e",
-        "harmonized_at": "2026-03-27T11:38:31.693940+00:00",
+        "raw_data_hash": "sha256:dd9930f46af8a444",
+        "harmonized_at": "2026-03-28T00:12:23.466705+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4038,13 +4120,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:59.642519+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535343+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -4171,10 +4250,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.100419+00:00",
+        "scraped_at": "2026-03-28T00:10:04.885733+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6750518356f79b90",
-        "harmonized_at": "2026-03-27T12:24:51.022264+00:00",
+        "raw_data_hash": "sha256:a434a4ca77dd94dc",
+        "harmonized_at": "2026-03-28T00:11:32.417454+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4202,8 +4281,8 @@
       "title": "Oru Kami – GariBambi (Crianças ao Poder 2026)",
       "title_raw": "Oru Kami – GariBambi (Crianças ao Poder 2026)",
       "subtitle": "GariBambi",
-      "description": "",
-      "description_short": "",
+      "description": "ORU KAMI\nparte do papel que se dobra, do gesto que ganha corpo, do som que o papel produz e da imagem que se manipula. Inspirado na arte japonesa do origami, este espetáculo oferece um universo em que o mais simples se percebe essencial, onde cada vinco guarda um segredo, cada forma um significado e cada folha uma mensagem por desvendar.\nEm\nORU KAMI\n, a música surge como uma linha que une o visível ao invisível; partindo do silêncio, tece paisagens sonoras numa estética intimista que, tal como o papel, se desdobra entre a linguagem verbal e não-verbal. Cada origami guarda em si a possibilidade de ser oferecido, feito para dar, e por isso,\nORU KAMI\noferece, simultaneamente, um espaço de partilha intergeracional em que as pequenas figuras de papel carregam grandes presentes invisíveis, entregues com a delicadeza de quem sabe que o essencial não se diz – dobra-se, partilha-se, sente-se.\nEsta sessão integra a programação do Crianças ao Poder 2026.",
+      "description_short": "ORU KAMI\nparte do papel que se dobra, do gesto que ganha corpo, do som que o papel produz e da imagem que se manipula. Inspirado na arte japonesa do origami, este espetáculo oferece um universo em que o mais simples se percebe essencial, onde cada vinco guarda um segredo, cada forma um significado…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -4317,10 +4396,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:02.040047+00:00",
+        "scraped_at": "2026-03-28T00:12:05.141617+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b414bac95eac59fd",
-        "harmonized_at": "2026-03-27T11:38:31.694076+00:00",
+        "raw_data_hash": "sha256:a5b9c92b62b3b9d7",
+        "harmonized_at": "2026-03-28T00:12:23.466960+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4328,13 +4407,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:02.040047+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535349+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -4347,8 +4423,8 @@
       "title": "O meu astronauta e o metaverso - Djam Neguin",
       "title_raw": "O meu astronauta e o metaverso - Djam Neguin",
       "subtitle": "Djam Neguin",
-      "description": "",
-      "description_short": "",
+      "description": "Neste workshop orientado por Djam Neguin, criador e intérprete do espetáculo\nBuluku\n, os participantes vão criar a sua própria versão do astronauta, incorporando elementos presentes no espetáculo apresentado na manhã do mesmo dia, bem como referências ao universo espacial e à cultura africana.\nDjam Neguin é um artista multidisciplinar originário de Cabo Verde que navega entre as artes cénicas e visuais. As suas criações exploram perspetivas afrofuturistas e a cultura cabo-verdiana, atuando como diretor criativo, produtor, curador, formador e artivista em diversas produções.",
+      "description_short": "Neste workshop orientado por Djam Neguin, criador e intérprete do espetáculo\nBuluku\n, os participantes vão criar a sua própria versão do astronauta, incorporando elementos presentes no espetáculo apresentado na manhã do mesmo dia, bem como referências ao universo espacial e à cultura…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4454,10 +4530,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:05.929682+00:00",
+        "scraped_at": "2026-03-28T00:12:05.820748+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7619710c687d49d3",
-        "harmonized_at": "2026-03-27T11:38:31.694235+00:00",
+        "raw_data_hash": "sha256:cb9448d3063ab127",
+        "harmonized_at": "2026-03-28T00:12:23.467474+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4465,13 +4541,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:05.929682+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535355+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -4484,8 +4557,8 @@
       "title": "The Legendary Tigerman - Curtas-metragens de Charley Bowers",
       "title_raw": "The Legendary Tigerman - Curtas-metragens de Charley Bowers",
       "subtitle": "The Legendary Tigerman",
-      "description": "",
-      "description_short": "",
+      "description": "Neste cineconcerto integrado no programa Crianças ao Poder, o Theatro Circo promove o encontro entre o génio surrealista de Charley Bowers e a versatilidade composicional de The Legendary Tigerman. Bowers, figura redescoberta na década de 1960, destacou-se por uma estética única na comédia americana, fundindo o live-action com sequências elaboradas de stop-motion criadas a partir de engrenagens e objetos quotidianos.\nO músico Paulo Furtado, reconhecido pelo seu vasto percurso na criação de bandas sonoras, assume a interpretação ao vivo para duas curtas-metragens fundamentais:\nUma Escorregadela\n(1927) e\nAí Está\n(1928). Fugindo ao registo puramente rock, Tigerman explora aqui uma sonoridade híbrida, onde a guitarra dialoga com sintetizadores modulares e texturas orgânicas, adaptando-se ao humor bizarro e à opulência visual de Bowers.",
+      "description_short": "Neste cineconcerto integrado no programa Crianças ao Poder, o Theatro Circo promove o encontro entre o génio surrealista de Charley Bowers e a versatilidade composicional de The Legendary Tigerman. Bowers, figura redescoberta na década de 1960, destacou-se por uma estética única na comédia…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4592,10 +4665,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:08.080182+00:00",
+        "scraped_at": "2026-03-28T00:12:06.459168+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ece1cb507e775219",
-        "harmonized_at": "2026-03-27T11:38:31.694375+00:00",
+        "raw_data_hash": "sha256:993d9674fe8ec726",
+        "harmonized_at": "2026-03-28T00:12:23.467822+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4603,14 +4676,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:08.080182+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535360+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -4724,10 +4794,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.100456+00:00",
+        "scraped_at": "2026-03-28T00:10:04.885765+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4f49e0947d518b61",
-        "harmonized_at": "2026-03-27T12:24:51.022771+00:00",
+        "raw_data_hash": "sha256:30a95463d5490a09",
+        "harmonized_at": "2026-03-28T00:11:32.417950+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4866,10 +4936,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.100802+00:00",
+        "scraped_at": "2026-03-28T00:10:04.886089+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:dbb82caecf18e3bb",
-        "harmonized_at": "2026-03-27T12:24:51.027427+00:00",
+        "raw_data_hash": "sha256:403ad0bb559ac422",
+        "harmonized_at": "2026-03-28T00:11:32.422543+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4897,8 +4967,8 @@
       "title": "Lucrecia Dalt - A Danger to Ourselves",
       "title_raw": "Lucrecia Dalt - A Danger to Ourselves",
       "subtitle": "Lucrecia Dalt",
-      "description": "",
-      "description_short": "",
+      "description": "O regresso de Lucrecia Dalt a Braga marca o encontro com uma das mentes mais fascinantes da música da atualidade. A artista colombiana, radicada em Berlim, consolidou o seu prestígio internacional com o aclamado\n¡Ay!\n(2022), considerado disco do ano pela ‘The Wire’, e com a composição de algumas bandas sonoras para a série\nThe Baby\n(2022) e o filme\nRabbit Trap\n(2025).\nNeste concerto, Lucrecia Dalt apresenta o seu trabalho mais ambicioso e pessoal:\nA Danger to Ourselves\n(2025), criado em colaboração com David Sylvian e com participações de Juana Molina, Camille Mandoki, do baixista Cyrus Campbell e do percussionista Alex Lázaro. Ao contrário dos discos anteriores como\n¡Ay!\nou\nNo era sólida\n(2020) em que Lucrecia evocava histórias de personagens imaginárias ou literárias, neste novo álbum a colombiana afasta-se das narrativas fantásticas para explorar um lado mais pessoal. O ‘The Quietus’ elogiou a transição para um território mais íntimo e cinematográfico, descrevendo o disco como uma exploração corajosa da psique humana.",
+      "description_short": "O regresso de Lucrecia Dalt a Braga marca o encontro com uma das mentes mais fascinantes da música da atualidade. A artista colombiana, radicada em Berlim, consolidou o seu prestígio internacional com o aclamado\n¡Ay!\n(2022), considerado disco do ano pela ‘The Wire’, e com a composição de algumas…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -4930,7 +5000,7 @@
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
-      "is_national_premiere": false,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
       "is_festival": false,
@@ -5004,10 +5074,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:08.836097+00:00",
+        "scraped_at": "2026-03-28T00:12:07.098007+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5458d56b2af02693",
-        "harmonized_at": "2026-03-27T11:38:31.694516+00:00",
+        "raw_data_hash": "sha256:56ae4e464ffc5ef7",
+        "harmonized_at": "2026-03-28T00:12:23.468206+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5015,14 +5085,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:08.836097+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535366+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5035,8 +5102,8 @@
       "title": "José Afonso, ao vivo nos Coliseus, 1983 - Gonçalo Amorim/Teatro Experimental do Porto",
       "title_raw": "José Afonso, ao vivo nos Coliseus, 1983 - Gonçalo Amorim/Teatro Experimental do Porto",
       "subtitle": "Gonçalo Amorim/Teatro Experimental do Porto",
-      "description": "",
-      "description_short": "",
+      "description": "Inspirado nos históricos concertos de despedida de José Afonso em 1983, este espetáculo multidisciplinar cruza música, teatro e poesia para celebrar o legado de um dos grandes da música de intervenção portuguesa. Com direção artística de Gonçalo Amorim, a peça não procura a reconstituição histórica, mas uma reinvenção contemporânea sob a estética do\nGig Theatre\n– um formato híbrido que funde a energia do concerto ao vivo com a narrativa teatral.\nO espetáculo parte do adeus simbólico de Zeca, para refletir sobre o fim de uma era e a transformação da utopia de Abril. Através de textos originais de autores como Lígia Soares e Miguel Cardoso, evoca-se a coragem e a melancolia de um país em mudança. Mais do que uma homenagem, é uma experiência imersiva que reinterpreta o património de José Afonso com liberdade criativa, reafirmando a ressonância emocional e política da sua voz na democracia atual. Um tributo à persistência da memória e ao eco eterno de um artista fundamental.",
+      "description_short": "Inspirado nos históricos concertos de despedida de José Afonso em 1983, este espetáculo multidisciplinar cruza música, teatro e poesia para celebrar o legado de um dos grandes da música de intervenção portuguesa. Com direção artística de Gonçalo Amorim, a peça não procura a reconstituição…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -5144,10 +5211,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:09.592001+00:00",
+        "scraped_at": "2026-03-28T00:12:07.735562+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c354dd3e9e2deb08",
-        "harmonized_at": "2026-03-27T11:38:31.694635+00:00",
+        "raw_data_hash": "sha256:0b0a728992bd4d1f",
+        "harmonized_at": "2026-03-28T00:12:23.468707+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5155,13 +5222,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:09.592001+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535372+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -5174,8 +5238,8 @@
       "title": "American Blues (jun 2026) (CTB)",
       "title_raw": "American Blues (jun 2026) (CTB)",
       "subtitle": "CTB",
-      "description": "",
-      "description_short": "",
+      "description": "Quem não conhece Nova Orleães? A cidade onde, nas infames casas de Basin Street, nasceu o jazz; onde músicos negros, tão famosos como campeões de basebol, embriagados de fumo e vida, sopravam espasmos congestionados nas trompetes e saxofones, arrancando das notas um tilintar de existências queimadas. Uma cidade na qual imigrantes europeus, flibusteiros e aventureiros se linchavam uns aos outros, no meio das suas águas lamacentas lançadas do Delta do Mississippi. Pitoresca, claro. Mas este pitoresco não é o que interessa a Tennessee Williams. O seu olhar, claro e febril, repousa no Médio Oeste, na linha móvel da fronteira, no profundo Sul, nos portos onde civilizações e raças se tocam e colidem. As personagens de Williams, e ainda mais frequentemente os seus protagonistas, são criaturas forçadas a compensar as cruéis insuficiências da realidade com um recurso desesperado à imaginação. São histórias dos subúrbios, não das metrópoles. Histórias marginais de uma sociedade perdida, onde a fragilidade humana vibra mais exposta.",
+      "description_short": "Quem não conhece Nova Orleães? A cidade onde, nas infames casas de Basin Street, nasceu o jazz; onde músicos negros, tão famosos como campeões de basebol, embriagados de fumo e vida, sopravam espasmos congestionados nas trompetes e saxofones, arrancando das notas um tilintar de existências…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -5298,10 +5362,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:39.260363+00:00",
+        "scraped_at": "2026-03-28T00:12:19.833022+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f78cd5082e739016",
-        "harmonized_at": "2026-03-27T11:38:31.697240+00:00",
+        "raw_data_hash": "sha256:386e0e854d322dc1",
+        "harmonized_at": "2026-03-28T00:12:23.476045+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5309,14 +5373,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:39.260363+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535478+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5420,11 +5481,20 @@
           "is_cancelled": false,
           "is_sold_out": false,
           "notes": null
+        },
+        {
+          "date": "2026-06-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
         }
       ],
       "date_first": "2026-06-17",
-      "date_last": "2026-06-25",
-      "total_sessions": 8,
+      "date_last": "2026-06-26",
+      "total_sessions": 9,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
@@ -5501,10 +5571,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.104546+00:00",
+        "scraped_at": "2026-03-28T00:10:04.888470+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6492980a0c3908a7",
-        "harmonized_at": "2026-03-27T12:24:51.060903+00:00",
+        "raw_data_hash": "sha256:3bed6c036988ceb6",
+        "harmonized_at": "2026-03-28T00:11:32.456068+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5640,10 +5710,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.105188+00:00",
+        "scraped_at": "2026-03-28T00:10:04.889084+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3d629f9a77352924",
-        "harmonized_at": "2026-03-27T12:24:51.069607+00:00",
+        "raw_data_hash": "sha256:5f723c8f94c7f1a1",
+        "harmonized_at": "2026-03-28T00:11:32.464938+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5671,8 +5741,8 @@
       "title": "Carminho - Eu vou morrer de amor ou resistir",
       "title_raw": "Carminho - Eu vou morrer de amor ou resistir",
       "subtitle": "Carminho",
-      "description": "",
-      "description_short": "",
+      "description": "A voz incontornável de Carminho regressa ao Theatro Circo para apresentar o seu sétimo álbum,\nEu vou Morrer de Amor ou Resistir\n(2025), um trabalho de profunda dedicação no qual a artista explora a plasticidade do género, no seu disco mais experimental até à data. Com onze faixas – oito das quais de sua autoria – Carminho é acompanhada neste disco por Laurie Anderson, Mário Laginha, e pela poesia de de Ana Hatherly.\nDa aclamação pela crítica à colaboração com ícones como Rosalía, Carminho tem quebrado barreiras geográficas e estilísticas. No cinema, destaca-se a participação na banda sonora do filme galardoado\nPoor Things\n, de Yorgos Lanthimos.\nCarminho é, indiscutivelmente, uma das vozes portuguesas mais relevantes da atualidade. Em Braga, mostrará o novo trabalho que lhe valeu a condecoração de Melhor Álbum de 2025, pela Blitz/Expresso.",
+      "description_short": "A voz incontornável de Carminho regressa ao Theatro Circo para apresentar o seu sétimo álbum,\nEu vou Morrer de Amor ou Resistir\n(2025), um trabalho de profunda dedicação no qual a artista explora a plasticidade do género, no seu disco mais experimental até à data. Com onze faixas – oito das quais…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -5778,10 +5848,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:10.367044+00:00",
+        "scraped_at": "2026-03-28T00:12:08.373904+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7f07fdae23fa5015",
-        "harmonized_at": "2026-03-27T11:38:31.694835+00:00",
+        "raw_data_hash": "sha256:469a80bf461f381f",
+        "harmonized_at": "2026-03-28T00:12:23.469223+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5789,14 +5859,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:10.367044+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535378+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5919,10 +5986,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:21.647802+00:00",
+        "scraped_at": "2026-03-28T00:12:53.417057+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:23987d79f82f36b2",
-        "harmonized_at": "2026-03-27T12:29:25.234781+00:00",
+        "raw_data_hash": "sha256:b63e3d1a7daebade",
+        "harmonized_at": "2026-03-28T00:12:56.773764+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6056,10 +6123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.106357+00:00",
+        "scraped_at": "2026-03-28T00:10:04.890269+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f41e1a958774e6f5",
-        "harmonized_at": "2026-03-27T12:24:51.086552+00:00",
+        "raw_data_hash": "sha256:848184ccaf1940de",
+        "harmonized_at": "2026-03-28T00:11:32.480977+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6192,10 +6259,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107143+00:00",
+        "scraped_at": "2026-03-28T00:10:04.891048+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:493bea2bf60a9f61",
-        "harmonized_at": "2026-03-27T12:24:51.097221+00:00",
+        "raw_data_hash": "sha256:3eb269bfbd952fc7",
+        "harmonized_at": "2026-03-28T00:11:32.491537+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6222,8 +6289,8 @@
       "title": "Formas de Fazer: Composição e Improvisação na Música Contemporânea, com Pedro Melo Alves",
       "title_raw": "Formas de Fazer: Composição e Improvisação na Música Contemporânea, com Pedro Melo Alves",
       "subtitle": "Pedro Melo Alves",
-      "description": "",
-      "description_short": "",
+      "description": "Oficina dedicada à exploração de técnicas contemporâneas de composição e improvisação presentes na génese dos dois repertórios de Pedro Melo Alves ‘Omniae Large Ensemble’ (2020, 2026). A partir da intersecção entre jazz moderno, música erudita contemporânea e práticas exploratórias de improvisação, serão abordados conceitos como organização formal aberta, sistemas rítmicos expandidos, investigação tímbrica e integração entre material composto e improvisado. Dirigida a alunos de composição, jazz e instrumento, a sessão pode combinar exposição analítica com experimentação prática em tempo real.\nO ciclo Formas de Fazer propõe um conjunto de atividades paralelas aos espetáculos, com o objetivo de criar um espaço de partilha de práticas, metodologias e formas de trabalho de artistas e coletivos que visitam o Theatro Circo.\nPedro Melo Alves\né um compositor e baterista português que explora o som como forma de expressão contemporânea. Trabalha entre a música acústica e eletrónica, criando para diferentes formações, palco e cinema, com foco na experimentação e nas possibilidades livres da percussão.",
+      "description_short": "Oficina dedicada à exploração de técnicas contemporâneas de composição e improvisação presentes na génese dos dois repertórios de Pedro Melo Alves ‘Omniae Large Ensemble’ (2020, 2026). A partir da intersecção entre jazz moderno, música erudita contemporânea e práticas exploratórias de improvisação…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -6337,10 +6404,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:12.583317+00:00",
+        "scraped_at": "2026-03-28T00:12:09.006658+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c94ad8d929d6cc9d",
-        "harmonized_at": "2026-03-27T11:38:31.694976+00:00",
+        "raw_data_hash": "sha256:aa0f09271d1ab5f5",
+        "harmonized_at": "2026-03-28T00:12:23.469669+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6348,13 +6415,155 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:12.583317+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535384+00:00"
+        "quality_score": 0.9
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-06-ciclo-de-conferencias-71c6",
+      "source_id": "279020",
+      "source_url": "https://www.ccb.pt/evento/notas-de-musica-ciclo-de-conferencias/2026-06-26/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "Ciclo de Conferências",
+      "title_raw": "Notas de Música – Ciclo de Conferências",
+      "subtitle": null,
+      "description": "O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em torno da música. Os concertos programados oferecem ao público uma experiência direta da escuta e as conferências procuram explorar caminhos de leitura, contexto e reflexão, enriquecendo a fruição artística e alargando o horizonte interpretativo das obras apresentadas. Cada conferência é pensada como um ponto de encontro entre músicos, investigadores e público, onde se cruzam perspetivas históricas, analíticas e performativas, tendo sempre em consideração o prazer da escuta e a emoção da música ao vivo.",
+      "description_short": "O ciclo de conferências Notas de Música foi pensado como uma extensão do ciclo de concertos Sexta Maior, propondo-se como um espaço privilegiado para o pensamento e a partilha em torno da música. Os concertos programados oferecem ao público uma experiência direta da escuta e as conferências…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "Conferências",
+        "Música",
+        "Notas de Música",
+        "ciclo",
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Conversas",
+        "Música",
+        "Projetos de Mediação",
+        "Temporada 2025-26",
+        "Conferências",
+        "Música",
+        "Notas de Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-06-26",
+          "time_start": "18:30",
+          "time_end": "19:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-06-26",
+      "date_last": "2026-06-26",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": "Notas de Música",
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/07/2000x940ciclonotasdemusicaI.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "ciclo-de-conferencias|2026-06",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T00:10:04.891837+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:2cd53c960cd847c3",
+        "harmonized_at": "2026-03-28T00:11:32.502562+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -6479,10 +6688,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107578+00:00",
+        "scraped_at": "2026-03-28T00:10:04.891861+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:20eada6a986219fe",
-        "harmonized_at": "2026-03-27T12:24:51.103156+00:00",
+        "raw_data_hash": "sha256:2c1073de076be019",
+        "harmonized_at": "2026-03-28T00:11:32.502886+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6620,10 +6829,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.107615+00:00",
+        "scraped_at": "2026-03-28T00:10:04.891899+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fe708687b9cf99e5",
-        "harmonized_at": "2026-03-27T12:24:51.103841+00:00",
+        "raw_data_hash": "sha256:3654f5e3ad1eb932",
+        "harmonized_at": "2026-03-28T00:11:32.503558+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6818,7 +7027,7 @@
         "scraped_at": "2026-03-27T11:00:10.875771+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:acc169478d0650d5",
-        "harmonized_at": "2026-03-27T12:24:57.653052+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.271776+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6843,16 +7052,16 @@
       "title": "Indigo Quintet",
       "title_raw": "Indigo Quintet",
       "subtitle": "Indigo Quintet",
-      "description": "",
-      "description_short": "",
+      "description": "Criado em 2018, o Indigo Quintet, formado por Pedro Teixeira (saxofone soprano/oboé/corne inglês/duduk), Tiago Machado (guitarra), Ricardo Januário (violoncelo), Jorge Castro (contrabaixo) e Pedro Gonçalves de Oliveira (bateria) em 2018, tem-se afirmado como um dos projetos mais singulares da nova cena musical instrumental portuguesa, explorando sonoridades onde a música erudita contemporânea, o jazz e a improvisação se entrelaçam. O quinteto tem vindo a consolidar o seu percurso através de concertos, projetos e residências artísticas que privilegiam a criação conjunta e colaborativa em diálogo entre diferentes linguagens musicais.\nNeste concerto, o Indigo Quintet apresenta em estreia absoluta um conjunto de novas obras que integrarão o seu próximo álbum, depois de\nIndigo Session\n(2018) e\nLabirinto\n(2022), atualmente em fase de gravação. Estes novos temas aprofundam o universo sonoro do grupo, explorando texturas e ambientes, espaços de improvisação e formas abertas de construção musical.",
+      "description_short": "Criado em 2018, o Indigo Quintet, formado por Pedro Teixeira (saxofone soprano/oboé/corne inglês/duduk), Tiago Machado (guitarra), Ricardo Januário (violoncelo), Jorge Castro (contrabaixo) e Pedro Gonçalves de Oliveira (bateria) em 2018, tem-se afirmado como um dos projetos mais singulares da nova…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
       "tags": [
-        "música",
-        "sessao-unica"
+        "estreia",
+        "música"
       ],
       "categories_raw": [
         "Música"
@@ -6874,8 +7083,8 @@
       "is_ongoing": false,
       "date_open": "2026-06-26",
       "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
+      "event_status": "estreia",
+      "is_premiere": true,
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
@@ -6950,10 +7159,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:13.337487+00:00",
+        "scraped_at": "2026-03-28T00:12:09.643535+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:52fbf72b5005d23f",
-        "harmonized_at": "2026-03-27T11:38:31.695149+00:00",
+        "raw_data_hash": "sha256:975c722b262d1b0a",
+        "harmonized_at": "2026-03-28T00:12:23.470222+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6961,278 +7170,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:13.337487+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535390+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-ctb-voces-viram-o-meu-cao",
-      "source_id": "ctb-voces-viram-o-meu-cao",
-      "source_url": "https://theatrocirco.com/event/ctb-voces-viram-o-meu-cao/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "CTB: Vocês Viram o Meu Cão?",
-      "title_raw": "CTB: Vocês Viram o Meu Cão?",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-26",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-26",
-      "date_last": "2026-06-26",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-06-26",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 10.0,
-        "price_max": 10.0,
-        "price_display": "10€",
-        "price_raw": "10€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "ctb-voces-viram-o-meu-cao|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-26T15:28:46.737044+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:e7e68da187e4612e",
-        "harmonized_at": "2026-03-26T15:28:47.181759+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "last_seen_at": "2026-03-26T15:28:46.737044+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535710+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-silvia-perez-cruz-e-salvador-sobral-103b",
-      "source_id": "silvia-perez-cruz-e-salvador-sobral",
-      "source_url": "https://theatrocirco.com/event/silvia-perez-cruz-e-salvador-sobral/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Sílvia Pérez Cruz e Salvador Sobral",
-      "title_raw": "Sílvia Pérez Cruz e Salvador Sobral",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-27",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-27",
-      "date_last": "2026-06-27",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-06-27",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 25.0,
-        "price_max": 25.0,
-        "price_display": "25€",
-        "price_raw": "25€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "silvia-perez-cruz-e-salvador-sobral|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:49.081889+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9d3c1cc9c838e64e",
-        "harmonized_at": "2026-03-27T12:28:49.521434+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.85
       }
     },
     {
@@ -7245,8 +7187,8 @@
       "title": "Visita Guiada ao Theatro Circo (27/06/2026)",
       "title_raw": "Visita Guiada ao Theatro Circo (27/06/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma estreita à vida cultural de Braga, o Theatro Circo reflete momentos marcantes da história da cidade e do país, sendo hoje um centro de referência na programação artística e cultural.",
+      "description_short": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -7360,10 +7302,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:15.759702+00:00",
+        "scraped_at": "2026-03-28T00:12:10.280682+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:61d2f5cd10ed2c1e",
-        "harmonized_at": "2026-03-27T11:38:31.695256+00:00",
+        "raw_data_hash": "sha256:12162fa85bcc91b9",
+        "harmonized_at": "2026-03-28T00:12:23.470521+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7371,288 +7313,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:15.759702+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535396+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-30-grande-premio-de-literatura-dst-b5ed",
-      "source_id": "30-o-grande-premio-de-literatura-dst",
-      "source_url": "https://theatrocirco.com/event/30-o-grande-premio-de-literatura-dst/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "30.º Grande Prémio de Literatura dst",
-      "title_raw": "30.º Grande Prémio de Literatura dst",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "performance",
-      "subcategory": "multidisciplinar",
-      "tags": [
-        "artes de palco",
-        "entrada-livre",
-        "multidisciplinar",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Multidisciplinar"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-28",
-          "time_start": "21:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-28",
-      "date_last": "2026-06-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-06-28",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": true,
-        "price_min": null,
-        "price_max": null,
-        "price_display": "Entrada livre",
-        "price_raw": "Gratuito",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "30-grande-premio-de-literatura-dst|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:48.363360+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f6749c02125e8cab",
-        "harmonized_at": "2026-03-27T12:28:49.521324+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.65
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-06-tardes-de-solidao-de-albert-serra-85bc",
-      "source_id": "tardes-de-solidao-de-albert-serra",
-      "source_url": "https://theatrocirco.com/event/tardes-de-solidao-de-albert-serra/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Tardes de Solidão de Albert Serra",
-      "title_raw": "Tardes de Solidão de Albert Serra",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-06-30",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-06-30",
-      "date_last": "2026-06-30",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-06-30",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "tardes-de-solidao-de-albert-serra|2026-06",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:47.644984+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:7c469b3ed7462f59",
-        "harmonized_at": "2026-03-27T12:28:49.521207+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.9
       }
     }
   ]

@@ -31,7 +31,7 @@
     "scraper_id": "ccb",
     "api_url": "https://ccb.pt/wp-json/tribe/events/v1/events",
     "is_active": true,
-    "last_scraped": "2026-03-27T12:24:50.726589+00:00",
+    "last_scraped": "2026-03-28T00:11:32.126681+00:00",
     "scrape_frequency_hours": 12,
     "notes": "API REST The Events Calendar. ~800 eventos, 16 páginas."
   },

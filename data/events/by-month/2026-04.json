@@ -119,10 +119,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078446+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862863+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2ee767ba129f9a27",
-        "harmonized_at": "2026-03-27T12:24:50.754408+00:00",
+        "raw_data_hash": "sha256:6a2f0ed1667d4870",
+        "harmonized_at": "2026-03-28T00:11:32.152730+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -483,10 +483,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078468+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862888+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e43a837964704366",
-        "harmonized_at": "2026-03-27T12:24:50.754663+00:00",
+        "raw_data_hash": "sha256:235e899705aedd6b",
+        "harmonized_at": "2026-03-28T00:11:32.152995+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -849,10 +849,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078560+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862983+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:055186bcd5f0ad99",
-        "harmonized_at": "2026-03-27T12:24:50.755751+00:00",
+        "raw_data_hash": "sha256:dc82f51f868fc84c",
+        "harmonized_at": "2026-03-28T00:11:32.154089+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1217,10 +1217,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078577+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863000+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:98a10d572d234f5e",
-        "harmonized_at": "2026-03-27T12:24:50.755915+00:00",
+        "raw_data_hash": "sha256:70071c7124807d1e",
+        "harmonized_at": "2026-03-28T00:11:32.154260+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1547,10 +1547,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078600+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863023+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:75342f043dacdb17",
-        "harmonized_at": "2026-03-27T12:24:50.756240+00:00",
+        "raw_data_hash": "sha256:7859d5d2b4f4514c",
+        "harmonized_at": "2026-03-28T00:11:32.154592+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1913,10 +1913,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078623+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863045+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:298ec4374c651a99",
-        "harmonized_at": "2026-03-27T12:24:50.756543+00:00",
+        "raw_data_hash": "sha256:e9148dd3958bed6f",
+        "harmonized_at": "2026-03-28T00:11:32.154899+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2279,10 +2279,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078652+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863074+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:92da74179c048be6",
-        "harmonized_at": "2026-03-27T12:24:50.757059+00:00",
+        "raw_data_hash": "sha256:b6d7bed7aa6d7288",
+        "harmonized_at": "2026-03-28T00:11:32.155446+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2301,378 +2301,11 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-04-may-i-help-you-posso-ajudar-bc8d",
-      "source_id": "265980",
-      "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-04-01/",
-      "venue_id": "ccb",
-      "space_id": null,
-      "title": "May I Help You? Posso Ajudar?",
-      "title_raw": "May I Help You? Posso Ajudar?",
-      "subtitle": null,
-      "description": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível esperar numa era de crescente fragmentação, dissonância e impermanência?\n\nA exposição toma como ponto de partida cinco décadas de produção artística, da década de 1970 em diante, e inclui obras de 90 artistas, por exemplo, Ad Minoliti (no hall do museu), Alberto Carneiro, Carla Filipe, Doris Salcedo, Helena Almeida, Gabriel Abrantes, Gilbert & George, Jeff Koons, Júlia Ventura, Kara Walker e Richard Serra, entre muitos outros. As obras pertencem às coleções em depósito no MAC/CCB (Berardo, Coleção de Arte Contemporânea do Estado, Holma/ Ellipse e Teixeira de Freitas), contando também com novas encomendas a artistas portugueses.\n\n \n\nCuradoria Nuria Enguita e Marta Mestre\n\nAssessoria curatorial Raphael Fonseca (Denver Art Museum)\n\n \n\n \n\nA exposição «MAY I HELP YOU? POSSO AJUDAR?» Artes e artistas da década de 1970 em diante, inspirada pela performance homónima de Andrea Fraser, expõe a diversidade de representações, presenças e narrativas no campo artístico, questionando a ideia de uma direção única nas histórias da arte. Partindo de diálogos entre obras através das últimas cinco décadas, esta exposição investiga o que os artistas são e fazem, e os papéis sociais que imaginam para si. Desde as ruturas em relação à própria definição de arte, nos anos ‘70, até à acelerada digitalização do presente, a exposição coloca em ênfase formatos, funções e intensidades heteróclitas. – Nuria Enguita Curadora da exposição e diretora artística do MAC/CCB\n\n \n\nArtistas:\n…",
-      "description_short": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-visuais",
-      "category": "exposicoes",
-      "subcategory": null,
-      "tags": [
-        "Exhibition",
-        "Exposições",
-        "artes visuais",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Exhibitions",
-        "Exposições",
-        "MAC/CCB",
-        "MAC/CCB",
-        "Exhibition",
-        "Exposições"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-01",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-02",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-03",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-04",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-05",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-07",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-08",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-09",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-10",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-11",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-12",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-14",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-15",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-16",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-17",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-18",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-19",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-21",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-22",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-23",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-24",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-25",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-26",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-28",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-29",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-04-30",
-          "time_start": "10:00",
-          "time_end": "18:30",
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-01",
-      "date_last": "2026-04-30",
-      "total_sessions": 26,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "may-i-help-you-posso-ajudar|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078713+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e8bca06899e7c551",
-        "harmonized_at": "2026-03-27T12:24:50.757847+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
       "id": "ccb-2026-04-visitas-as-exposicoes-590b",
       "source_id": "272969",
       "source_url": "https://www.ccb.pt/evento/visitas-guiadas-a-exposicao-2-museu-mac-ccb/2026-04-01/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Visitas às Exposições",
       "title_raw": "Visitas às Exposições",
       "subtitle": null,
@@ -2786,10 +2419,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078805+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863226+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:19991b0061ac1487",
-        "harmonized_at": "2026-03-27T12:24:50.758753+00:00",
+        "raw_data_hash": "sha256:56e4bb10f421d4b6",
+        "harmonized_at": "2026-03-28T00:11:32.157126+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2813,10 +2446,10 @@
       "source_id": "265983",
       "source_url": "https://www.ccb.pt/evento/segundo-ciclo-escolas-museu-mac-ccb/2026-04-01/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "mac-ccb",
       "title": "Segundo Ciclo",
       "title_raw": "Segundo Ciclo",
-      "subtitle": null,
+      "subtitle": "Programa Vincular - Escolas",
       "description": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.",
       "description_short": "Esta programação está estruturada em visitas-jogo e visitas-jogo-oficina, e assente em metodologias ativas e práticas que facilitem e suscitem a curiosidade das crianças pela Arte Moderna, Contemporânea e Arquitetura.",
       "language_of_performance": null,
@@ -3152,10 +2785,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078837+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863257+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:78f3b0e591c6ce66",
-        "harmonized_at": "2026-03-27T12:24:50.759215+00:00",
+        "raw_data_hash": "sha256:2da077ba4b77374e",
+        "harmonized_at": "2026-03-28T00:11:32.157588+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3179,10 +2812,10 @@
       "source_id": "240156",
       "source_url": "https://www.ccb.pt/evento/concerto-de-pascoa-requiem-de-mozart/",
       "venue_id": "ccb",
-      "space_id": null,
+      "space_id": "grande-auditorio",
       "title": "Concerto de Páscoa – Requiem de Mozart",
       "title_raw": "Concerto de Páscoa – Requiem de Mozart",
-      "subtitle": null,
+      "subtitle": "Orquestra Metropolitana de Lisboa e Coro Sinfónico Lisboa Cantat",
       "description": "O Requiem de Mozart é um monumento à condição humana. Por um lado, tem na sua origem os ingredientes essenciais de um romance best-seller, tais como a entrega incondicional do génio à causa artística, identidades omissas, conspiração, morte… e neste caso por intermédio do género musical que lhe está mais diretamente associado. Mas é também música sublime que emociona. Em toda a sua beleza, atravessa com passos firmes os limiares do nosso entendimento. Resulta então numa reflexão sobre a existência, a esperança, a superação, o mistério e o sentido da vida.\n\n \n\nConversa pré-concerto por Rui Campos Leitão, às 19:30.\n\n[Atividade exclusiva para portadores de bilhete para o concerto].",
       "description_short": "O Requiem de Mozart é um monumento à condição humana. Por um lado, tem na sua origem os ingredientes essenciais de um romance best-seller, tais como a entrega incondicional do génio à causa artística, identidades omissas, conspiração, morte… e neste caso por intermédio do género musical que lhe…",
       "language_of_performance": null,
@@ -3193,8 +2826,7 @@
       "tags": [
         "Música",
         "Orquestra",
-        "artes de palco",
-        "sessao-unica"
+        "artes de palco"
       ],
       "categories_raw": [
         "Espetáculos",
@@ -3207,20 +2839,29 @@
         {
           "date": "2026-04-01",
           "time_start": "20:00",
-          "time_end": "21:00",
+          "time_end": null,
           "duration_minutes": null,
           "is_cancelled": false,
           "is_sold_out": false,
-          "notes": null
+          "notes": "20:00  DATA EXTRA"
+        },
+        {
+          "date": "2026-04-02",
+          "time_start": "20:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "20:00"
         }
       ],
       "date_first": "2026-04-01",
-      "date_last": "2026-04-01",
-      "total_sessions": 1,
+      "date_last": "2026-04-02",
+      "total_sessions": 2,
       "is_ongoing": false,
       "date_open": null,
       "date_close": null,
-      "event_status": "unica-sessao",
+      "event_status": "em-cartaz",
       "is_premiere": false,
       "is_national_premiere": false,
       "is_reprise": false,
@@ -3247,7 +2888,8 @@
         "price_min": null,
         "price_max": null,
         "price_display": null,
-        "price_raw": null
+        "price_raw": null,
+        "ticketing_url": "https://ccb.bol.pt/Comprar/Bilhetes/160826-concerto_de_pascoa_requiem_de_mozart_oml-fundacao_centro_cultural_de_belem/Sessoes"
       },
       "accessibility": {
         "has_sign_language": false,
@@ -3293,10 +2935,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078862+00:00",
+        "scraped_at": "2026-03-28T00:10:04.863276+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:aae0e53c056dd189",
-        "harmonized_at": "2026-03-27T12:24:50.759389+00:00",
+        "raw_data_hash": "sha256:f59abfd9a38dd0f4",
+        "harmonized_at": "2026-03-28T00:11:32.157762+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3305,13 +2947,12 @@
         "extra_flags": null,
         "quality_warnings": [
           "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.65
       }
     },
     {
@@ -3432,7 +3073,7 @@
         "scraped_at": "2026-03-27T10:59:26.028234+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:6720610592e2b59e",
-        "harmonized_at": "2026-03-27T12:24:57.644695+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.263296+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3578,7 +3219,7 @@
         "scraped_at": "2026-03-27T10:59:27.964014+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:f709d38f1c126b5a",
-        "harmonized_at": "2026-03-27T12:24:57.645223+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.263847+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3785,10 +3426,368 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077850+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862198+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fc3b1ea25d9516f9",
-        "harmonized_at": "2026-03-27T12:24:50.747304+00:00",
+        "raw_data_hash": "sha256:aac49a721fb9996a",
+        "harmonized_at": "2026-03-28T00:11:32.144298+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-04-may-i-help-you-posso-ajudar-df3e",
+      "source_id": "265991",
+      "source_url": "https://www.ccb.pt/evento/exposicao-may-i-help-you-posso-ajudar/2026-04-02/",
+      "venue_id": "ccb",
+      "space_id": null,
+      "title": "May I Help You? Posso Ajudar?",
+      "title_raw": "May I Help You? Posso Ajudar?",
+      "subtitle": null,
+      "description": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível esperar numa era de crescente fragmentação, dissonância e impermanência?\n\nA exposição toma como ponto de partida cinco décadas de produção artística, da década de 1970 em diante, e inclui obras de 90 artistas, por exemplo, Ad Minoliti (no hall do museu), Alberto Carneiro, Carla Filipe, Doris Salcedo, Helena Almeida, Gabriel Abrantes, Gilbert & George, Jeff Koons, Júlia Ventura, Kara Walker e Richard Serra, entre muitos outros. As obras pertencem às coleções em depósito no MAC/CCB (Berardo, Coleção de Arte Contemporânea do Estado, Holma/ Ellipse e Teixeira de Freitas), contando também com novas encomendas a artistas portugueses.\n\n \n\nCuradoria Nuria Enguita e Marta Mestre\n\nAssessoria curatorial Raphael Fonseca (Denver Art Museum)\n\n \n\n \n\nA exposição «MAY I HELP YOU? POSSO AJUDAR?» Artes e artistas da década de 1970 em diante, inspirada pela performance homónima de Andrea Fraser, expõe a diversidade de representações, presenças e narrativas no campo artístico, questionando a ideia de uma direção única nas histórias da arte. Partindo de diálogos entre obras através das últimas cinco décadas, esta exposição investiga o que os artistas são e fazem, e os papéis sociais que imaginam para si. Desde as ruturas em relação à própria definição de arte, nos anos ‘70, até à acelerada digitalização do presente, a exposição coloca em ênfase formatos, funções e intensidades heteróclitas. – Nuria Enguita Curadora da exposição e diretora artística do MAC/CCB\n\n \n\nArtistas:\n…",
+      "description_short": "A questão quotidiana «Posso ajudar?» foi usada pela artista Andrea Fraser numa performance que abordava as complexas relações institucionais no mundo da arte.\n\nA pergunta dirige também um questionamento ao próprio museu: que tipo de ajuda é realmente oferecida e que tipo de conexão ainda é possível…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "Exhibition",
+        "Exposições",
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Exhibitions",
+        "Exposições",
+        "MAC/CCB",
+        "MAC/CCB",
+        "Exhibition",
+        "Exposições"
+      ],
+      "dates": [
+        {
+          "date": "2026-04-02",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-03",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-04",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-05",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-07",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-08",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-09",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-10",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-11",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-12",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-14",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-15",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-16",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-17",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-18",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-19",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-21",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-22",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-23",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-24",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-25",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-26",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-28",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-29",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-04-30",
+          "time_start": "10:00",
+          "time_end": "18:30",
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-04-02",
+      "date_last": "2026-04-30",
+      "total_sessions": 25,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2025/11/May-I-Help-You_MAC_CCB2-creditoAntonioJorgeSilva-scaled.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "may-i-help-you-posso-ajudar|2026-04",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T00:10:04.863588+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:29760056f8cc7cfb",
+        "harmonized_at": "2026-03-28T00:11:32.161385+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3953,10 +3952,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.080838+00:00",
+        "scraped_at": "2026-03-28T00:10:04.865144+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e7ad8556776e1444",
-        "harmonized_at": "2026-03-27T12:24:50.781691+00:00",
+        "raw_data_hash": "sha256:77c4f8225602bfdc",
+        "harmonized_at": "2026-03-28T00:11:32.180409+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3984,8 +3983,8 @@
       "title": "Supracasa: OPEN CALL — Laboratório Assimétrico",
       "title_raw": "Supracasa: OPEN CALL — Laboratório Assimétrico",
       "subtitle": "Beatriz Valentim",
-      "description": "",
-      "description_short": "",
+      "description": "O Theatro Circo abre uma convocatória para jovens interessados em investigar a relação entre corpo, ritmo e som como forma de pesquisa e criação.\nDurante três dias, sob a orientação da bailarina e coreógrafa Beatriz Valentim, será desenvolvido um laboratório prático que integra o processo de criação da peça Assimétrico, a estrear em outubro de 2026. Este é um espaço de experimentação, observação e escuta — um lugar onde o corpo pensa, sente e compõe.\nNão é necessária experiência prévia, apenas curiosidade, disponibilidade e abertura para o movimento.\nDatas\n7 abril · 11h00 às 13h00 e 14h30 às 17h30\n8 e 9 abril · 11h00 às 13h00\nDestinatários\njovens dos 15 aos 20 anos\nGratuito, mediante inscrição para\nparticipacao@theatrocirco.com\n*\n*caso o número de inscritos seja superior ao número máximo de participantes, a seleção será feita por ordem de inscrição, respeitando critérios de representatividade e inclusão.",
+      "description_short": "O Theatro Circo abre uma convocatória para jovens interessados em investigar a relação entre corpo, ritmo e som como forma de pesquisa e criação.\nDurante três dias, sob a orientação da bailarina e coreógrafa Beatriz Valentim, será desenvolvido um laboratório prático que integra o processo de…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -4108,10 +4107,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:04.965947+00:00",
+        "scraped_at": "2026-03-28T00:11:45.653683+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a9dacbdb51251ea4",
-        "harmonized_at": "2026-03-27T11:38:31.689746+00:00",
+        "raw_data_hash": "sha256:0733d40330e71b6e",
+        "harmonized_at": "2026-03-28T00:12:23.450790+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4119,15 +4118,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:04.965947+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535136+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -4253,10 +4249,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082011+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866294+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fbe8453c3aeda6a4",
-        "harmonized_at": "2026-03-27T12:24:50.795007+00:00",
+        "raw_data_hash": "sha256:c537404fcadbd18b",
+        "harmonized_at": "2026-03-28T00:11:32.193624+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4396,10 +4392,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082063+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866345+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8f2469cab0241f90",
-        "harmonized_at": "2026-03-27T12:24:50.795664+00:00",
+        "raw_data_hash": "sha256:f41664bfde549326",
+        "harmonized_at": "2026-03-28T00:11:32.194257+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4559,10 +4555,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082400+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866672+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f72040e7228ccf98",
-        "harmonized_at": "2026-03-27T12:24:50.799670+00:00",
+        "raw_data_hash": "sha256:d54744ac97b71216",
+        "harmonized_at": "2026-03-28T00:11:32.198283+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4698,10 +4694,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082454+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866722+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cc714fa32f859f54",
-        "harmonized_at": "2026-03-27T12:24:50.800409+00:00",
+        "raw_data_hash": "sha256:bf01ae4d8b46af6f",
+        "harmonized_at": "2026-03-28T00:11:32.199028+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4841,10 +4837,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082481+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866752+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4b4a112995ed71a3",
-        "harmonized_at": "2026-03-27T12:24:50.800853+00:00",
+        "raw_data_hash": "sha256:d5d6a9f3e3fad0ca",
+        "harmonized_at": "2026-03-28T00:11:32.199510+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4983,10 +4979,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082515+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866786+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:53c973311fb9955a",
-        "harmonized_at": "2026-03-27T12:24:50.801372+00:00",
+        "raw_data_hash": "sha256:96adccdbd495662a",
+        "harmonized_at": "2026-03-28T00:11:32.200010+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5122,10 +5118,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082570+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866838+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cbcdb36143fbe8ed",
-        "harmonized_at": "2026-03-27T12:24:50.802139+00:00",
+        "raw_data_hash": "sha256:0316d6ea684fe2ae",
+        "harmonized_at": "2026-03-28T00:11:32.200794+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5264,7 +5260,7 @@
         "scraped_at": "2026-03-27T10:59:29.925262+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:6e1bb0eace11c3e9",
-        "harmonized_at": "2026-03-27T12:24:57.645777+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.264395+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5290,8 +5286,8 @@
       "title": "Companhia de Espectadores - Teatro pós-dramático (11/04/2026)",
       "title_raw": "Companhia de Espectadores - Teatro pós-dramático (11/04/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Em 2026, a Companhia de Espectadores entra numa nova fase. Depois de várias temporadas a mergulhar em obras e espetáculos específicos, o projeto amplia agora o seu horizonte e transforma-se numa escola informal de análise dramatúrgica.\nMais do que um espaço de debate sobre peças concretas, a Companhia de Espectadores propõe-se como um laboratório de pensamento sobre as artes performativas, onde se experimenta, se questiona e se aprende a ler a cena nas suas múltiplas dimensões — corpo, texto, imagem, som, espaço, tempo e relação com o público. Entre encontros e conversas, o grupo investiga os mecanismos que fazem uma criação acontecer: como se constrói uma dramaturgia, que escolhas sustentam uma composição, de que forma o espectador participa no sentido do espetáculo.\nContinuamos a ver, ouvir e discutir — mas também a pensar as artes performativas como linguagem e como gesto vivo. Mais do que uma formação académica, pretende ser uma comunidade de aprendizagem crítica — um lugar de encontro entre quem faz e quem vê, entre teoria e prática, entre análise e criação — aberto a todos os que desejem olhar a cena de dentro para fora.",
+      "description_short": "Em 2026, a Companhia de Espectadores entra numa nova fase. Depois de várias temporadas a mergulhar em obras e espetáculos específicos, o projeto amplia agora o seu horizonte e transforma-se numa escola informal de análise dramatúrgica.\nMais do que um espaço de debate sobre peças concretas, a…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -5397,10 +5393,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:09.967447+00:00",
+        "scraped_at": "2026-03-28T00:11:46.204151+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:2bf1b807c2df78e6",
-        "harmonized_at": "2026-03-27T11:38:31.689930+00:00",
+        "raw_data_hash": "sha256:83740b26e7aa80b4",
+        "harmonized_at": "2026-03-28T00:12:23.451265+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5408,14 +5404,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:09.967447+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535142+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5428,8 +5421,8 @@
       "title": "Contraponto: Górecki e Adams",
       "title_raw": "Contraponto: Górecki e Adams",
       "subtitle": "Rakhi Singh e Sinfonietta de Braga",
-      "description": "",
-      "description_short": "",
+      "description": "A violinista e diretora artística Rakhi Singh, uma das vozes mais originais da cena musical britânica e cofundadora do Manchester Collective, chega ao Theatro Circo para se juntar à Sinfonietta de Braga num programa do ciclo Contraponto que une contemplação, intensidade e espiritualidade.\nNeste concerto, as cordas tornam-se veículo de paisagem e transcendência. Em\nCanticles of the Sky\n, de John Luther Adams, camadas sonoras em lenta transformação evocam o respirar do céu e a vastidão cósmica. Na sua recriação do hino latino\nVeni Creator Spiritus\n, Singh transforma a voz ancestral em textura viva, dissolvendo a melodia em ecos e ressonâncias de poderosa força litúrgica. Já no Quarteto de Cordas n.º 2\nQuasi una fantasia\n, de Henryk Górecki, ouvimos uma viagem interior, onde energia rítmica e silêncio se entrelaçam num arco de solenidade quase ritual.\nTrês visões distintas — cósmica, litúrgica e introspetiva — cruzam-se neste encontro, onde tradição e criação contemporânea dialogam em busca de luz, memória e transcendência.\nO Contraponto é um ciclo dedicado à composição dos séculos XX e XXI, onde convidamos ensembles e compositores locais, nacionais e internacionais para nos guiarem pela música de um dos períodos mais férteis em novas ideias e formas.",
+      "description_short": "A violinista e diretora artística Rakhi Singh, uma das vozes mais originais da cena musical britânica e cofundadora do Manchester Collective, chega ao Theatro Circo para se juntar à Sinfonietta de Braga num programa do ciclo Contraponto que une contemplação, intensidade e espiritualidade.\nNeste…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -5535,10 +5528,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:10.741922+00:00",
+        "scraped_at": "2026-03-28T00:11:46.841833+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9b9d6683d881dfc7",
-        "harmonized_at": "2026-03-27T11:38:31.690077+00:00",
+        "raw_data_hash": "sha256:e32704c8306bf0a3",
+        "harmonized_at": "2026-03-28T00:12:23.451836+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5546,14 +5539,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:10.741922+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535148+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5667,10 +5657,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082611+00:00",
+        "scraped_at": "2026-03-28T00:10:04.866877+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3701597a60b64067",
-        "harmonized_at": "2026-03-27T12:24:50.802542+00:00",
+        "raw_data_hash": "sha256:15fdb81e0517ad07",
+        "harmonized_at": "2026-03-28T00:11:32.201167+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5818,10 +5808,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.082881+00:00",
+        "scraped_at": "2026-03-28T00:10:04.867160+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a6c31a95e584c304",
-        "harmonized_at": "2026-03-27T12:24:50.805781+00:00",
+        "raw_data_hash": "sha256:a76fe8637f4ddbe8",
+        "harmonized_at": "2026-03-28T00:11:32.204529+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5850,8 +5840,8 @@
       "title": "Entroncamento",
       "title_raw": "Entroncamento",
       "subtitle": "Pedro Cabeleira",
-      "description": "",
-      "description_short": "",
+      "description": "Entroncamento\nde Pedro Cabeleira\n2025 | Portugal | Drama | 2h11\nEm fuga de um passado turbulento, Laura refugia-se no Entroncamento para reconstruir a sua vida. Dividida entre um emprego honesto e os esquemas do pequeno crime, cruza-se com uma juventude desencantada não muito diferente de si. Nas ruas da cidade ferroviária sobressaem as lealdades, a ganância, a violência e a má sorte – onde toda a gente só quer uma vida melhor.\nFilmado na terra natal do realizador Pedro Cabeleira,\nEntroncamento\n(2025) é a sua mais recente longa-metragem, com estreia no Festival de Cannes (secção ACID). Em Portugal, apresenta-se na Seleção Oficial em Competição do LEFFEST.\ncom Ana Vilaça, Cleo Diára, Rafael Morais, Tiago Costa, Sérgio Coragem, André Simões, Henrique Barbosa",
+      "description_short": "Entroncamento\nde Pedro Cabeleira\n2025 | Portugal | Drama | 2h11\nEm fuga de um passado turbulento, Laura refugia-se no Entroncamento para reconstruir a sua vida. Dividida entre um emprego honesto e os esquemas do pequeno crime, cruza-se com uma juventude desencantada não muito diferente de si. Nas…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "cinema",
@@ -5859,7 +5849,8 @@
       "subcategory": null,
       "tags": [
         "cinema",
-        "sessao-unica"
+        "estreia",
+        "festival"
       ],
       "categories_raw": [
         "Cinema"
@@ -5881,13 +5872,13 @@
       "is_ongoing": false,
       "date_open": "2026-04-13",
       "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
+      "event_status": "estreia",
+      "is_premiere": true,
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
+      "is_festival": true,
+      "festival_name": "Festival De Cannes",
       "festival_id": null,
       "is_multi_venue": false,
       "multi_venue_ids": [],
@@ -5957,10 +5948,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:13.075914+00:00",
+        "scraped_at": "2026-03-28T00:11:47.479573+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:648238fbc742599a",
-        "harmonized_at": "2026-03-27T11:38:31.690211+00:00",
+        "raw_data_hash": "sha256:4db9701d4e018904",
+        "harmonized_at": "2026-03-28T00:12:23.452404+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5968,15 +5959,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:13.075914+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535154+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -6099,7 +6087,7 @@
         "scraped_at": "2026-03-27T10:59:31.811523+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:63ad437cf6cd87d6",
-        "harmonized_at": "2026-03-27T12:24:57.646197+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.264829+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6234,10 +6222,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.084079+00:00",
+        "scraped_at": "2026-03-28T00:10:04.868277+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4a76f861b9b3d610",
-        "harmonized_at": "2026-03-27T12:24:50.819384+00:00",
+        "raw_data_hash": "sha256:59bf4750ae4b2ee6",
+        "harmonized_at": "2026-03-28T00:11:32.218130+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6265,8 +6253,8 @@
       "title": "Capra – or how to say hello to fear",
       "title_raw": "Capra – or how to say hello to fear",
       "subtitle": "Roxana Ionesco",
-      "description": "",
-      "description_short": "",
+      "description": "Um espetáculo criado a partir de uma tradição ancestral pagã da memória coletiva romena e moldava — a cabra do Ano Novo — um ritual de renovação. Uma CAPRA que procura espelhar as nossas entranhas — aquelas que, de tão desconhecidas, nos metem medo. Fear blocks me, the unknown blocks me, mas não aqui. CAPRA é a conexão entre o passado e o futuro, uma “CAPRA–ponte” que nos permite, coletivamente, questionar o que existe para além do Medo. — Roxana Ionesco\nCapra – or how to say hello to fear\né a mais recente criação de Roxana Ionesco, integrada no\nSupracasa\n, programa de apoio à criação artística nas artes performativas.\nRoxana Ionesco é uma artista e encenadora licenciada pela ESTC e cofundadora da BUBURUZA. Criou obras como\nDEUS É TRANSCENDÊNCIA ATRAVÉS DO CORPO\n(2022),\n10. Abandona o medo – escolhe amar\n(2024) e\nMorte às Fantasmas\n(2024), e trabalhou com Mónica Calle, Tiago Vieira, Ana Borralho & João Galante, entre outros.",
+      "description_short": "Um espetáculo criado a partir de uma tradição ancestral pagã da memória coletiva romena e moldava — a cabra do Ano Novo — um ritual de renovação. Uma CAPRA que procura espelhar as nossas entranhas — aquelas que, de tão desconhecidas, nos metem medo. Fear blocks me, the unknown blocks me, mas não…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -6372,10 +6360,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:16.189698+00:00",
+        "scraped_at": "2026-03-28T00:11:48.759656+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:410d31997ce057f1",
-        "harmonized_at": "2026-03-27T11:38:31.690437+00:00",
+        "raw_data_hash": "sha256:4da0b52309e4e408",
+        "harmonized_at": "2026-03-28T00:12:23.453232+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6383,13 +6371,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:16.189698+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535166+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -6516,10 +6501,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.084446+00:00",
+        "scraped_at": "2026-03-28T00:10:04.868619+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:bc8da803cabf2fa8",
-        "harmonized_at": "2026-03-27T12:24:50.823538+00:00",
+        "raw_data_hash": "sha256:529b21b2c76f8dd6",
+        "harmonized_at": "2026-03-28T00:11:32.222294+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6659,7 +6644,7 @@
         "scraped_at": "2026-03-27T10:59:34.205364+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:3d6c8a5fa736d9dd",
-        "harmonized_at": "2026-03-27T12:24:57.646703+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.265313+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6794,7 +6779,7 @@
         "scraped_at": "2026-03-27T10:59:36.696184+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:a534565ef4ebee30",
-        "harmonized_at": "2026-03-27T12:24:57.647108+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.265733+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6821,8 +6806,8 @@
       "title": "Histórias de Sonho",
       "title_raw": "Histórias de Sonho",
       "subtitle": "Livraria Aqui há Gato",
-      "description": "",
-      "description_short": "",
+      "description": "Histórias contadas com emoção. O Aqui Há Gato escolhe as melhores: as mais divertidas, as que fazem pensar, as que fazem sentir e as que fazem crescer lendo!\nUma história? Duas histórias? Três histórias? Queremos mais! Pois muito bem, muitas histórias iremos contar e os teus sonhos embalar. Curiosos? Humm…Aqui há Gato!\nNesta sessão de leitura de histórias, a atriz Sofia Vieira contará com o apoio de técnicas de leitura encenada para encantar o público mais jovem. Desde 2007, é promotora do projeto Aqui há Gato, uma livraria infantil com um plano educativo e artístico dinamizado em jardins de infância, escolas, bibliotecas e teatros, com várias valências, entre as quais livraria infantil, companhia de teatro, e oficinas de arte para bebés e crianças.",
+      "description_short": "Histórias contadas com emoção. O Aqui Há Gato escolhe as melhores: as mais divertidas, as que fazem pensar, as que fazem sentir e as que fazem crescer lendo!\nUma história? Duas histórias? Três histórias? Queremos mais! Pois muito bem, muitas histórias iremos contar e os teus sonhos embalar…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -6934,10 +6919,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:16.940712+00:00",
+        "scraped_at": "2026-03-28T00:11:49.392174+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:86f186fd565ee3ed",
-        "harmonized_at": "2026-03-27T11:38:31.690577+00:00",
+        "raw_data_hash": "sha256:baea5e858cb15c54",
+        "harmonized_at": "2026-03-28T00:12:23.453737+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6945,14 +6930,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "preco nao determinado (nem entrada livre nem valor)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.65,
-        "last_seen_at": "2026-03-27T11:32:16.940712+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535197+00:00"
+        "quality_score": 0.8
       }
     },
     {
@@ -6965,8 +6947,8 @@
       "title": "Visita Guiada ao Theatro Circo (18/04/2026)",
       "title_raw": "Visita Guiada ao Theatro Circo (18/04/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma estreita à vida cultural de Braga, o Theatro Circo reflete momentos marcantes da história da cidade e do país, sendo hoje um centro de referência na programação artística e cultural.",
+      "description_short": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -7080,10 +7062,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:19.024700+00:00",
+        "scraped_at": "2026-03-28T00:11:49.923835+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:67b71e6e1d128976",
-        "harmonized_at": "2026-03-27T11:38:31.690692+00:00",
+        "raw_data_hash": "sha256:863da01a375b58bf",
+        "harmonized_at": "2026-03-28T00:12:23.454118+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7091,13 +7073,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:19.024700+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535206+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -7110,8 +7089,8 @@
       "title": "Elisabete Matos, Maciej Pikulski e Pedro Ribeiro",
       "title_raw": "Elisabete Matos, Maciej Pikulski e Pedro Ribeiro",
       "subtitle": "Elisabete Matos, Maciej Pikulski e Pedro Ribeiro",
-      "description": "",
-      "description_short": "",
+      "description": "Este encontro entre música e palavra, entre sonho e presença, é uma celebração do universo feminino visto através dos olhos do outro. Três renomados artistas: a soprano Elisabete Matos, o pianista Maciej Pikulski e o encenador Pedro Ribeiro, colaboram num programa que propõe refletir sobre o imaginário da canção através de obras que atravessam mais de um século de criação musical, entre o romantismo e o século XX. Do poema\nO amor e a vida das mulheres\nde Adelbert von Chamisso, que inspirou o célebre ciclo de Robert Schumann, até Berta Alves de Sousa, Fernando Lopes-Graça ou Astor Piazzolla, o reportório desenha um caminho entre diferentes épocas e culturas que definem o onírico feminino.\nElisabete Matos, cuja carreira internacional a levou aos mais prestigiados palcos do mundo, empresta a sua poderosa voz a Maciej Pikulski, pianista de renome internacional e de talento ímpar, para juntos criarem a base perfeita para que a voz encontre eco. Completando este triângulo artístico está Pedro Ribeiro, encenador de ópera com uma visão inovadora e um talento indiscutível para criar ambientes cénicos que elevam a experiência musical a novos patamares.\nComo o meu coração está ansioso e feliz!\nSe soubesse exprimi-lo por palavras;\nVem e esconde o rosto aqui no meu peito,\nPara te sussurrar ao ouvido a minha alegria.\n– A. von Chamisso",
+      "description_short": "Este encontro entre música e palavra, entre sonho e presença, é uma celebração do universo feminino visto através dos olhos do outro. Três renomados artistas: a soprano Elisabete Matos, o pianista Maciej Pikulski e o encenador Pedro Ribeiro, colaboram num programa que propõe refletir sobre o…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -7143,7 +7122,7 @@
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
-      "is_national_premiere": false,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
       "is_festival": false,
@@ -7217,10 +7196,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:19.779499+00:00",
+        "scraped_at": "2026-03-28T00:11:50.560722+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:370ec6e8311afa8b",
-        "harmonized_at": "2026-03-27T11:38:31.690889+00:00",
+        "raw_data_hash": "sha256:9983926d0d4d6866",
+        "harmonized_at": "2026-03-28T00:12:23.454450+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7228,13 +7207,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:19.779499+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535212+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -7358,10 +7334,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.084734+00:00",
+        "scraped_at": "2026-03-28T00:10:04.868883+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:75ed82afee0f42cf",
-        "harmonized_at": "2026-03-27T12:24:50.826919+00:00",
+        "raw_data_hash": "sha256:c74d9621fd1b0db0",
+        "harmonized_at": "2026-03-28T00:11:32.225724+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7503,7 +7479,7 @@
         "scraped_at": "2026-03-27T10:59:39.117167+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:a7aa1bdfbe965ec9",
-        "harmonized_at": "2026-03-27T12:24:57.647463+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.266075+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7528,8 +7504,8 @@
       "title": "O Barqueiro",
       "title_raw": "O Barqueiro",
       "subtitle": "Simão Cayatte",
-      "description": "",
-      "description_short": "",
+      "description": "O Barqueiro\nde Simão Cayatte\n2025 | Portugal | Drama | 1h46\nJoaquim sai em liberdade condicional antes do fim da pena de dezasseis anos mas não conta à família. Aceita trabalhar como barqueiro clandestino no Tejo transportando apanhadores de amêijoa ilegais de forma a cumprir a promessa que fez à filha de lhe oferecer um piano.\ncom Romeu Runa, Miguel Borges, Jani Zhao, Madalena Aragão, Sandra Faleiro\n__\nA sessão contará com a presença do realizador e do elenco.",
+      "description_short": "O Barqueiro\nde Simão Cayatte\n2025 | Portugal | Drama | 1h46\nJoaquim sai em liberdade condicional antes do fim da pena de dezasseis anos mas não conta à família. Aceita trabalhar como barqueiro clandestino no Tejo transportando apanhadores de amêijoa ilegais de forma a cumprir a promessa que fez à…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "cinema",
@@ -7635,10 +7611,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:24.297063+00:00",
+        "scraped_at": "2026-03-28T00:11:51.738001+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ae23e6f1a70e93f1",
-        "harmonized_at": "2026-03-27T11:38:31.691152+00:00",
+        "raw_data_hash": "sha256:b6111e8b14dbbdf8",
+        "harmonized_at": "2026-03-28T00:12:23.455704+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7646,15 +7622,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:24.297063+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535225+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -7794,10 +7767,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:09.894810+00:00",
+        "scraped_at": "2026-03-28T00:12:42.235909+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:ae1cfb8e1105b4c7",
-        "harmonized_at": "2026-03-27T12:29:25.231719+00:00",
+        "raw_data_hash": "sha256:96f5029c22ee270e",
+        "harmonized_at": "2026-03-28T00:12:56.770811+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7823,8 +7796,8 @@
       "title": "A Garota Não",
       "title_raw": "A Garota Não",
       "subtitle": "A Garota Não",
-      "description": "",
-      "description_short": "",
+      "description": "A Vulgar Mulher Extraordinária\n, é um espetáculo de A Garota Não, que terá apenas duas apresentações ao vivo – uma no Theatro Circo e outra no Centro Cultural de Belém.\nEm noite de aniversário dos 111 anos do Theatro Circo, A Garota Não desvendará\nA Vulgar Mulher Extraordinária\n, uma criação que é uma profunda homenagem ao universo feminino. A Garota Não parte de uma figura singular — a sua mãe — para construir uma biografia coletiva que atravessa as vidas de mulheres anónimas, amigas e familiares. É uma ode que questiona dogmas sociais e o peso injusto que o feminino carrega, celebrando a força e a resiliência daquelas que “revolvem os dias a cuidar mais dos outros do que de si”.\nMais do que um concerto, este é um ensaio poético e político sobre medos, batalhas internas e a necessidade primária de fazer viver a memória destas mulheres extraordinárias.",
+      "description_short": "A Vulgar Mulher Extraordinária\n, é um espetáculo de A Garota Não, que terá apenas duas apresentações ao vivo – uma no Theatro Circo e outra no Centro Cultural de Belém.\nEm noite de aniversário dos 111 anos do Theatro Circo, A Garota Não desvendará\nA Vulgar Mulher Extraordinária\n, uma criação que é…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -7930,10 +7903,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:25.049246+00:00",
+        "scraped_at": "2026-03-28T00:11:52.373197+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b7a67c258e0bf41b",
-        "harmonized_at": "2026-03-27T11:38:31.691263+00:00",
+        "raw_data_hash": "sha256:14ba8ce40fc45151",
+        "harmonized_at": "2026-03-28T00:12:23.455958+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7941,14 +7914,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:25.049246+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535231+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -7961,8 +7931,8 @@
       "title": "Formas de Fazer: Na sombra dos relatos oficiais, com Nina Laisné",
       "title_raw": "Formas de Fazer: Na sombra dos relatos oficiais, com Nina Laisné",
       "subtitle": "Nina Laisné",
-      "description": "",
-      "description_short": "",
+      "description": "Porquê abordar os arquivos históricos sob a ótica do nosso mundo contemporâneo? O que nos dizem as identidades marginais e resistentes que permaneceram na sombra dos relatos oficiais? Como prolongar um gesto tradicional num contexto que não é o da sua origem, sem se desconectar das raízes? Estas são algumas das questões que orientam as pesquisas de Nina Laisné, artista multidisciplinar francesa. Através do seu conhecimento profundo das culturas hispânicas, Laisné coloca as tradições orais e as histórias ancestrais no centro da sua arte, criando um espaço cénico que acolhe tanto formas de utopias como feridas coletivas. Nesta masterclass que antecede o seu espetáculo\nComo una baguala oscura\n, Nina Laisné partilhará alguns aspetos do seu processo criativo, entre espetáculo ao vivo, cinema e artes visuais.\nO ciclo\nFormas de Fazer\npropõe um conjunto de atividades paralelas aos espetáculos, com o objetivo de criar um espaço de partilha de práticas, metodologias e formas de trabalho de artistas e coletivos que visitam o Theatro. Direcionado a estudantes, profissionais e amadores das artes performativas, o projeto promove workshops, masterclasses e sessões expositivas, proporcionando um ambiente de partilha de experiências e novas aprendizagens.",
+      "description_short": "Porquê abordar os arquivos históricos sob a ótica do nosso mundo contemporâneo? O que nos dizem as identidades marginais e resistentes que permaneceram na sombra dos relatos oficiais? Como prolongar um gesto tradicional num contexto que não é o da sua origem, sem se desconectar das raízes? Estas…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "cinema",
@@ -8068,10 +8038,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:27.284657+00:00",
+        "scraped_at": "2026-03-28T00:11:53.006107+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a381427bf5acc36d",
-        "harmonized_at": "2026-03-27T11:38:31.691375+00:00",
+        "raw_data_hash": "sha256:885de4b473a6625b",
+        "harmonized_at": "2026-03-28T00:12:23.456366+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8079,13 +8049,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:27.284657+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535237+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -8208,10 +8175,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.085403+00:00",
+        "scraped_at": "2026-03-28T00:10:04.869485+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:aa03a93b9aee3e89",
-        "harmonized_at": "2026-03-27T12:24:50.833923+00:00",
+        "raw_data_hash": "sha256:c8210810d91566ef",
+        "harmonized_at": "2026-03-28T00:11:32.232703+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8345,10 +8312,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.085460+00:00",
+        "scraped_at": "2026-03-28T00:10:04.869548+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1dae6a92078590e2",
-        "harmonized_at": "2026-03-27T12:24:50.834393+00:00",
+        "raw_data_hash": "sha256:87ea4ec405a3e5c8",
+        "harmonized_at": "2026-03-28T00:11:32.233146+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8505,10 +8472,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.085805+00:00",
+        "scraped_at": "2026-03-28T00:10:04.869888+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fb923263068e37b3",
-        "harmonized_at": "2026-03-27T12:24:50.838661+00:00",
+        "raw_data_hash": "sha256:30578c932caf7510",
+        "harmonized_at": "2026-03-28T00:11:32.237458+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8644,7 +8611,7 @@
         "scraped_at": "2026-03-27T10:59:40.993888+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:7421d4b7d14f65bc",
-        "harmonized_at": "2026-03-27T12:24:57.647877+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.266591+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8804,7 +8771,7 @@
         "scraped_at": "2026-03-27T10:59:42.917746+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:32fc9aa67e30048b",
-        "harmonized_at": "2026-03-27T12:24:57.648399+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.267054+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8934,10 +8901,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.086105+00:00",
+        "scraped_at": "2026-03-28T00:10:04.870172+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:35fe6cefb846fe0b",
-        "harmonized_at": "2026-03-27T12:24:50.842195+00:00",
+        "raw_data_hash": "sha256:24d1a83547d7e820",
+        "harmonized_at": "2026-03-28T00:11:32.241008+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8964,8 +8931,8 @@
       "title": "111º Aniversário do Theatro Circo",
       "title_raw": "111º Aniversário do Theatro Circo",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Em 2026, o Theatro Circo celebra 111 anos.\nSonhado por um grupo de bracarenses em 1906, abriu as portas a 21 de abril de 1915, tornando-se o ponto de encontro da população — entre si, com a arte e com o mundo. Hoje, o Theatro Circo é mais do que um edifício — é uma plataforma viva de criação, experimentação e celebração.\nPara assinalar esta festividade, entre os dias 17 e 24 de abril passarão por esta casa de espetáculos centenária um conjunto de propostas artísticas que vão da música, ao teatro, à dança e ainda atividades para o público infantojuvenil.\nPrograma completo\nCapra – or how to say hello to fear\n· Roxana Ionesco\n17 abr · 21h30 · Pequeno Auditório\nHistórias de Sonho\n· Livraria Aqui há Gato\n18 abr · 10h e 11h30 · Salão Nobre\nVisita Guiada ao Theatro Circo\n18 abr · 11h (português) e 12h (inglês)\nElisabete Matos, Maciej Pikulski e Pedro Ribeiro ·\nOnírico Feminino: O teu olhar sobre mim\n18 abr · 21h30 · Sala Principal\nTortoise\n19 abr · 21h30 · Sala Principal\nA Garota Não ·\nA Vulgar Mulher Extraordinária\n21 abr · 21h30 · Sala Principal\nNa sombra dos relatos oficiais\n· Nina Laisné\n22 abr · 18h30 · Pequeno Auditório\nComo una baguala oscura\n· Nina Laisné\n24 abr · 21h30 · Sala Principal",
+      "description_short": "Em 2026, o Theatro Circo celebra 111 anos.\nSonhado por um grupo de bracarenses em 1906, abriu as portas a 21 de abril de 1915, tornando-se o ponto de encontro da população — entre si, com a arte e com o mundo. Hoje, o Theatro Circo é mais do que um edifício — é uma plataforma viva de criação…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -9069,10 +9036,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:13.839234+00:00",
+        "scraped_at": "2026-03-28T00:11:48.123608+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bbef912b26d4f29b",
-        "harmonized_at": "2026-03-27T11:38:31.690320+00:00",
+        "raw_data_hash": "sha256:f32f728c6a9137d0",
+        "harmonized_at": "2026-03-28T00:12:23.452685+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9080,16 +9047,13 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "preco nao determinado (nem entrada livre nem valor)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.5,
-        "last_seen_at": "2026-03-27T11:32:13.839234+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535160+00:00"
+        "quality_score": 0.65
       }
     },
     {
@@ -9102,8 +9066,8 @@
       "title": "Nina Laisné & Néstor Pola Pastorive - Como una baguala oscura",
       "title_raw": "Nina Laisné & Néstor Pola Pastorive - Como una baguala oscura",
       "subtitle": "Nina Laisné e Néstor Pola Pastorive",
-      "description": "",
-      "description_short": "",
+      "description": "Como una baguala oscura\nmarca o regresso da artista multidisciplinar Nina Laisné ao Theatro Circo, onde em 2022 apresentou o impressionante\nArca Ostinata\n. Em\nComo una baguala oscura\n, Nina Laisné une-se a Néstor Pola Pastorive para desvendar um espetáculo que cruza a dança e a música numa celebração da pianista e compositora argentina Hilda Herrera, uma figura seminal do folclore do seu país.\nCom encenação de Nina Laisné e coreografia e interpretação do virtuoso bailarino Néstor Pola Pastorive, estes criadores criam um encontro entre a obra de Herrera (presente virtualmente) e o movimento singular de Pastorive. O espetáculo destaca a relevância de Herrera, que abriu caminho para o piano no folclore argentino e cujas composições foram censuradas por regimes políticos.\nNéstor Pastorive apresenta uma forma de dança extraordinariamente livre, distanciando-se de visões viris e fundindo o zapateo argentino com influências do flamenco e da dança clássica.\nComo una baguala oscura\nquestiona a redução destas formas artísticas ao mero folclore, celebrando a sua intensidade e apelo universal através do corpo e de um arquivo de documentos e vídeos.",
+      "description_short": "Como una baguala oscura\nmarca o regresso da artista multidisciplinar Nina Laisné ao Theatro Circo, onde em 2022 apresentou o impressionante\nArca Ostinata\n. Em\nComo una baguala oscura\n, Nina Laisné une-se a Néstor Pola Pastorive para desvendar um espetáculo que cruza a dança e a música numa…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -9209,10 +9173,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:28.052808+00:00",
+        "scraped_at": "2026-03-28T00:11:53.646605+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4a51927233797be1",
-        "harmonized_at": "2026-03-27T11:38:31.691527+00:00",
+        "raw_data_hash": "sha256:c0e7f25ec712f8b0",
+        "harmonized_at": "2026-03-28T00:12:23.456927+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9220,14 +9184,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:28.052808+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535243+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -9349,10 +9310,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.086507+00:00",
+        "scraped_at": "2026-03-28T00:10:04.870563+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:5e798106e2af3f50",
-        "harmonized_at": "2026-03-27T12:24:50.847084+00:00",
+        "raw_data_hash": "sha256:bd30b68820842b69",
+        "harmonized_at": "2026-03-28T00:11:32.245892+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9500,10 +9461,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.086606+00:00",
+        "scraped_at": "2026-03-28T00:10:04.870653+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:f0f6e5e0ea27888c",
-        "harmonized_at": "2026-03-27T12:24:50.848231+00:00",
+        "raw_data_hash": "sha256:c56261371fcd30b5",
+        "harmonized_at": "2026-03-28T00:11:32.247006+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9640,10 +9601,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077091+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861373+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9045c55be34e9b73",
-        "harmonized_at": "2026-03-27T12:24:50.737895+00:00",
+        "raw_data_hash": "sha256:8847daa916373b9b",
+        "harmonized_at": "2026-03-28T00:11:32.134939+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9783,10 +9744,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.086946+00:00",
+        "scraped_at": "2026-03-28T00:10:04.871019+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:44cb137839673325",
-        "harmonized_at": "2026-03-27T12:24:50.852349+00:00",
+        "raw_data_hash": "sha256:2b263f59621d2c18",
+        "harmonized_at": "2026-03-28T00:11:32.251048+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9924,10 +9885,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.086971+00:00",
+        "scraped_at": "2026-03-28T00:10:04.871048+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6372e8bd38f8dd46",
-        "harmonized_at": "2026-03-27T12:24:50.852675+00:00",
+        "raw_data_hash": "sha256:18562c440f35b2da",
+        "harmonized_at": "2026-03-28T00:11:32.251368+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -9955,8 +9916,8 @@
       "title": "DJ Ahmet",
       "title_raw": "DJ Ahmet",
       "subtitle": "Georgi M. Unkovski",
-      "description": "",
-      "description_short": "",
+      "description": "DJ Ahmet\nde Georgi M. Unkovski\n2025 | Macedónia do Norte | Drama, comédia | 1h39\nComo muitos rapazes de 15 anos, Ahmet sonha com algo mais. A viver numa aldeia remota da Macedónia do Norte, cabe-lhe a tarefa de guardar o rebanho da família, enquanto o pai procura tratamento para o irmão mais novo, Naim, de cinco anos, que não fala desde a morte da mãe. Ahmet encontra refúgio na música e pede ajuda ao irmão para deslumbrar Aya, a rapariga por quem se apaixonou, já prometida a outro. DJ Ahmet retrata o choque entre a tradição e a modernidade, numa ode ao poder da música.\ncom Arif Jakup, Agush Agushev, Dora Akan Zlatanova, Aksel Mehmet",
+      "description_short": "DJ Ahmet\nde Georgi M. Unkovski\n2025 | Macedónia do Norte | Drama, comédia | 1h39\nComo muitos rapazes de 15 anos, Ahmet sonha com algo mais. A viver numa aldeia remota da Macedónia do Norte, cabe-lhe a tarefa de guardar o rebanho da família, enquanto o pai procura tratamento para o irmão mais novo…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -10062,10 +10023,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:30.686415+00:00",
+        "scraped_at": "2026-03-28T00:11:54.185343+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:0634b618f39ce1d2",
-        "harmonized_at": "2026-03-27T11:38:31.691692+00:00",
+        "raw_data_hash": "sha256:ac91cc6477daf94d",
+        "harmonized_at": "2026-03-28T00:12:23.457474+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10073,15 +10034,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:30.686415+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535249+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -10094,8 +10052,8 @@
       "title": "Miguel Araújo",
       "title_raw": "Miguel Araújo",
       "subtitle": "Miguel Araújo",
-      "description": "",
-      "description_short": "",
+      "description": "Miguel Araújo regressa ao Theatro Circo para apresentar o novo disco de originais,\nPor Fora Ninguém Diria\n, que chega “ao cantar do galo do primeiro dia do próximo ano (2026)”, como descreve o artista. O disco retoma o processo criativo de trabalhos como\nCinco Dias e Meio\ne\nPeixe Azul\n, canções que se foram produzindo a si próprias, nascidas de maquetes que acabaram por se transformar, quase intactas, nas versões finais. Gravado ao longo de 2023, 2024 e 2025, no Estúdio Chiu, no Porto, o álbum reúne músicas que “não sabiam ainda que seriam editadas”, preservando a espontaneidade e a verdade do momento em que foram criadas. Miguel Araújo tocou todos os instrumentos, assinando igualmente letras, produção e vozes. O trabalho visual do álbum conta com fotografias captadas no Parque do Rio, em Ofir, lugar de infância e memória afetiva do artista.",
+      "description_short": "Miguel Araújo regressa ao Theatro Circo para apresentar o novo disco de originais,\nPor Fora Ninguém Diria\n, que chega “ao cantar do galo do primeiro dia do próximo ano (2026)”, como descreve o artista. O disco retoma o processo criativo de trabalhos como\nCinco Dias e Meio\ne\nPeixe Azul\n, canções que…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -10209,10 +10167,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:46.174817+00:00",
+        "scraped_at": "2026-03-28T00:12:22.398447+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4ce7c09e56799859",
-        "harmonized_at": "2026-03-27T11:38:31.697729+00:00",
+        "raw_data_hash": "sha256:11f0f56eb4581737",
+        "harmonized_at": "2026-03-28T00:12:23.477830+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10220,15 +10178,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:33:46.174817+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535501+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -10348,10 +10303,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.087601+00:00",
+        "scraped_at": "2026-03-28T00:10:04.871666+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:1aa18e960b7fc217",
-        "harmonized_at": "2026-03-27T12:24:50.859829+00:00",
+        "raw_data_hash": "sha256:795e99f82616cb41",
+        "harmonized_at": "2026-03-28T00:11:32.258612+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10497,10 +10452,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.087633+00:00",
+        "scraped_at": "2026-03-28T00:10:04.871695+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4ab0dbe32bcc1b1d",
-        "harmonized_at": "2026-03-27T12:24:50.860092+00:00",
+        "raw_data_hash": "sha256:309cbaec2bd074a4",
+        "harmonized_at": "2026-03-28T00:11:32.258873+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10635,10 +10590,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.087808+00:00",
+        "scraped_at": "2026-03-28T00:10:04.871870+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ead26bb5dd86e45b",
-        "harmonized_at": "2026-03-27T12:24:50.862654+00:00",
+        "raw_data_hash": "sha256:1da34258d680bf60",
+        "harmonized_at": "2026-03-28T00:11:32.261347+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10777,10 +10732,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.087968+00:00",
+        "scraped_at": "2026-03-28T00:10:04.872036+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:3525ae70451787ed",
-        "harmonized_at": "2026-03-27T12:24:50.864425+00:00",
+        "raw_data_hash": "sha256:7f2b28359f30c09f",
+        "harmonized_at": "2026-03-28T00:11:32.263139+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10921,7 +10876,7 @@
         "scraped_at": "2026-03-27T10:59:45.228628+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ac26764986bb6683",
-        "harmonized_at": "2026-03-27T12:24:57.648770+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.267414+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

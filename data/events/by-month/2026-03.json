@@ -1,144 +1,7 @@
 {
   "month": "2026-03",
-  "total": 54,
+  "total": 44,
   "events": [
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-valor-sentimental-b61a",
-      "source_id": "valor-sentimental",
-      "source_url": "https://theatrocirco.com/event/valor-sentimental/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Valor Sentimental",
-      "title_raw": "Valor Sentimental",
-      "subtitle": "Joachim Trier",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-02",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-02",
-      "date_last": "2026-03-02",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-02",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.bol.pt/Comprar/Bilhetes/172890-cinema_valor_sentimental-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "valor-sentimental|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:35.057801+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:ffb5ff21256906e3",
-        "harmonized_at": "2026-03-27T12:28:49.498742+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
     {
       "schema_version": "1.0",
       "id": "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
@@ -149,8 +12,8 @@
       "title": "Ciclo Música de Câmara Universidade do Minho",
       "title_raw": "Ciclo Música de Câmara Universidade do Minho",
       "subtitle": "Departamento de Música da Universidade do Minho",
-      "description": "",
-      "description_short": "",
+      "description": "Na sequência da edição de 2025, o Departamento de Música da Universidade do Minho traz ao Salão Nobre obras de referência do repertório da música erudita através do\nCiclo de Música de Câmara\n.\nAo longo das terças-feiras 3, 10, 17, 24 e 31 de março de 2026, sempre às 18 horas, jovens intérpretes em formações diversificadas darão voz a composições maiores, representativas dos diversos períodos e estilos da história da música.\nExplorando espaços menos habituais do icónico Theatro Circo, procura-se com a iniciativa promover, na intimidade informal de uma escuta mais distendida, uma maior proximidade entre o público e os intérpretes, a descoberta de repertório, e a promoção dos jovens artistas.\nPrograma\n3 de março · Trio Augusta\nFilipa Dias – Violino\nGonçalo Pires – Violoncelo\nMáximo Klyetsun – Piano\nA interpretar:\nFranz Schubert: Trio com piano nº 2, Op. 100 –\nII. Andante com moto\nFelix Mendelssohn: Trio com piano nº 1, Op. 49 –\nMolto allegro agitato\n;\nAndante con moto tranquillo\n;\nScherzo. Leggiero e vivace\n; e\nFinale. Allegro assai appassionato\n___\n10 de março · Grupo de Percussão da Universidade do Minho\nHugo Silva – Percussão\nMicael Ferreira – Percussão\nFábio Saraiva – Percussão\nFilipe Abreu – Percussão\nPedro Arrieche – Percussão\nSimão Veiga – Percussão\nA interpretar:\nA. Pinho Vargas:\nEstudos e Interlúdios\nTim Ferchen:\nMallet Quartet\nSteve Reich:\nMusic for Pieces of Wood\nThierry De Mey:\nMusique de Tables\n___\n17 de março · Quinteto Excelsius · Quarteto Concordia\nQuinteto Excelsius\nInês Esteves – Clarinete\nJoão Inácio – Violino\nDiogo Prestes – Violino\nFrancisco Machado – Viola\nCatarina Coelho – Violoncelo\nA interpretar:\nWolfgang Amadeus Mozart: Quinteto em Lá maior, K.581 –\nAllegro\n;\nLarghetto\n;\nMenuetto\n; e\nAllegretto con variazioni\nQuarteto Concordia\nFrancisca Vaz – Flauta\nTelma Amante – Clarinete\nRui Nogueira – Fagote\nRui Brás – Trompa\nA interpretar:\nGioacchino Rossini: Seis quartetos para flauta, clarinete, trompa e fagote\nQuarteto n. 1, em Fá maior –…",
+      "description_short": "Na sequência da edição de 2025, o Departamento de Música da Universidade do Minho traz ao Salão Nobre obras de referência do repertório da música erudita através do\nCiclo de Música de Câmara\n.\nAo longo das terças-feiras 3, 10, 17, 24 e 31 de março de 2026, sempre às 18 horas, jovens intérpretes em…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
@@ -292,10 +155,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:57.603575+00:00",
+        "scraped_at": "2026-03-28T00:11:41.366830+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:2920864959ae86eb",
-        "harmonized_at": "2026-03-27T11:38:31.688592+00:00",
+        "raw_data_hash": "sha256:733e994b530d2bda",
+        "harmonized_at": "2026-03-28T00:12:23.447547+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -303,159 +166,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:31:57.603575+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535078+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-romeu-julieta-67c1",
-      "source_id": "romeu-julieta-mar",
-      "source_url": "https://theatrocirco.com/event/romeu-julieta-mar/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Romeu & Julieta",
-      "title_raw": "Romeu & Julieta",
-      "subtitle": "Alexej Schipenko",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-04",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-05",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-04",
-      "date_last": "2026-03-05",
-      "total_sessions": 2,
-      "is_ongoing": false,
-      "date_open": "2026-03-04",
-      "date_close": null,
-      "event_status": "em-cartaz",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 10.0,
-        "price_max": 10.0,
-        "price_display": "10€",
-        "price_raw": "10€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/166602-companhia_de_teatro_de_braga_romeu_e_julieta-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Encenação e dramaturgia\nAlexej Schipenko\nA partir da obra de\nWilliam Shakespeare\nCenografia e figurinos\nLesja Chernish\nVídeo e som\nSepehr Mousavi\nDesenho de luz\nAlexej Schipenko e Sérgio Lajas\nConstrução de cenário e montagem\nFernando Gomes\nAssistente de encenação\nPinelopi Koerner Gerovasiliou\nApoio à comunicação e criação de conteúdo\nLeonor Pereira\nElenco\nAndré Laires, Carlos Feio, Dinis Lapyuk, Eduarda Filipa, Jaime Monsanto, Rogério Boane, Rui Madeira, Sílvia Brito e Solange Sá\nProdução\nPaula Fonseca\nAgradecimentos\nBia Magano"
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "romeu-julieta|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:36.432861+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:69b4888622e10433",
-        "harmonized_at": "2026-03-27T12:28:49.498848+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.7
+        "quality_score": 0.75
       }
     },
     {
@@ -579,7 +295,7 @@
         "scraped_at": "2026-03-27T11:24:41.900596+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:b4e7501aed4fdc9e",
-        "harmonized_at": "2026-03-27T12:24:57.982263+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.599661+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -735,10 +451,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077143+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861453+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:932b3c3929ce6afa",
-        "harmonized_at": "2026-03-27T12:24:50.738738+00:00",
+        "raw_data_hash": "sha256:a74ca9d940b2f730",
+        "harmonized_at": "2026-03-28T00:11:32.135776+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -874,7 +590,7 @@
         "scraped_at": "2026-03-27T11:00:20.758313+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:ce5b973b581a3559",
-        "harmonized_at": "2026-03-27T12:24:57.655560+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.274277+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -889,280 +605,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.7
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-contraponto-pierrot-lunaire-de-arnold-sc-511c",
-      "source_id": "pierrot-lunaire-arnold-schoenberg-ars-ad-hoc",
-      "source_url": "https://theatrocirco.com/event/pierrot-lunaire-arnold-schoenberg-ars-ad-hoc/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Contraponto: Pierrot Lunaire de Arnold Schoenberg, por Ars ad Hoc",
-      "title_raw": "Contraponto: Pierrot Lunaire de Arnold Schoenberg, por Ars ad Hoc",
-      "subtitle": "Ars ad Hoc",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "legendas",
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-07",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-07",
-      "date_last": "2026-03-07",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-07",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 12.0,
-        "price_max": 12.0,
-        "price_display": "12€",
-        "price_raw": "12€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/166058-contraponto_pierrot_lunaire_de_arnold_schoenberg_por_ars_ad_hoc-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": true,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Ficha técnica\nAna Caseiro soprano\nRicardo Carvalho flautas\nHorácio Ferreira clarinetes\nDiogo Coelho violino/viola\nGonçalo Lélis violoncelo\nJoão Casimiro Almeida piano\nDiana Ferreira legendagem e programação\nO\ndst group\né mecenas do ciclo Contraponto.\nApoio à divulgação\nAntena 2\n__\nA soprano\nAna Caseiro\nespecializa-se na interpretação de música contemporânea. Em 2022, estreou-se em Viena e Budapeste no papel de “Justine”, nas estreias nacionais da ópera\nDas Gesicht im Spiegel\n, de J. Widmann e tem vindo a realizar estreias de óperas a nível mundial. Estudou canto no Koninklijk Conservatorium Brussel e na Kunstuniversität Graz, com Ulf Bästlein, e foi bolseira da Fundação Calouste Gulbenkian e da Fundação GDA. Atualmente, frequenta o último ano do mestrado em Práticas Performativas em Música Contemporânea com o barítono Holger Falk e o ensemble Klangforum Wien.\nEm atividade desde 2018, o\nars ad hoc\né o grupo de música de câmara da Arte no Tempo (AnT). Com foco na música contemporânea, tem desenvolvido residências artísticas e realizado concertos regulares na Fundação de Serralves, para além de outras apresentações em que combina a interpretação de música contemporânea com obras do grande repertório clássico / romântico / modernista."
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "contraponto-pierrot-lunaire-de-arnold-schoenberg-por-ars-ad-hoc|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:37.141990+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:9805d1fc1ee85a5b",
-        "harmonized_at": "2026-03-27T12:28:49.498964+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.7
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-a-voz-de-hind-rajab-529c",
-      "source_id": "a-voz-de-hind-rajab",
-      "source_url": "https://theatrocirco.com/event/a-voz-de-hind-rajab/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "A Voz de Hind Rajab",
-      "title_raw": "A Voz de Hind Rajab",
-      "subtitle": "Kaouther Ben Hania",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-09",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-09",
-      "date_last": "2026-03-09",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-09",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/172892-cinema_a_voz_de_hind_rajab-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "a-voz-de-hind-rajab|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:44.095736+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:27692b60253c7dd1",
-        "harmonized_at": "2026-03-27T12:28:49.499896+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
       }
     },
     {
@@ -1283,7 +725,7 @@
         "scraped_at": "2026-03-27T11:24:43.876099+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d1436c709f442f2d",
-        "harmonized_at": "2026-03-27T12:24:57.982696+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.600098+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1421,7 +863,7 @@
         "scraped_at": "2026-03-27T11:24:45.788807+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:97b1c1ec465a2995",
-        "harmonized_at": "2026-03-27T12:24:57.983092+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.600580+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1434,304 +876,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.85
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-lenda-de-miragayaum-teatro-de-fingir-e511",
-      "source_id": "lenda-de-miragaya-um-teatro-de-fingir",
-      "source_url": "https://theatrocirco.com/event/lenda-de-miragaya-um-teatro-de-fingir/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Lenda de Miragaya…um teatro de fingir",
-      "title_raw": "Lenda de Miragaya…um teatro de fingir",
-      "subtitle": "Confederação – coletivo de investigação teatral",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-12",
-          "time_start": "14:30",
-          "time_end": null,
-          "duration_minutes": 50,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-13",
-          "time_start": "10:30",
-          "time_end": null,
-          "duration_minutes": 50,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-13",
-          "time_start": "14:30",
-          "time_end": null,
-          "duration_minutes": 50,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-03-14",
-          "time_start": "11:00",
-          "time_end": null,
-          "duration_minutes": 50,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-12",
-      "date_last": "2026-03-14",
-      "total_sessions": 4,
-      "is_ongoing": false,
-      "date_open": "2026-03-12",
-      "date_close": null,
-      "event_status": "em-cartaz",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 2.5,
-        "price_max": 2.5,
-        "price_display": "2.50€",
-        "price_raw": "2,5€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/174043-lenda_de_miragaya_um_teatro_de_fingir-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Ficha técnica\nUm espetáculo da\nConfederação – colectivo de investigação teatral\nInterpretação\nLuiz Ferraz e Rosário Melo\nDramaturgia e Encenação\nMiguel Ramos\nDesenhos\nVon Calhau!\nDesign\nMacedo Cannatà\nCenografia e Marionetas\nMaria Manada e Miguel Ramos\nFigurinos e Caracterização\nMónica Samões\nCostureira\nZita Aires\nCostureira demissionária\nAndreia Sarmento\nSonoplastia\nTiago Candal\nVídeo\nLuís Ferraz\nIluminação e pirotecnia\nMiguel Ângelo Carneiro\nDJ\nAlfredo Maravilha\nTécnico Arcade\nAugusto Fonseca\nCoordenação editorial do Caderno\nRui Manuel Amaral\nFotografia\nRenato Cruz Santos\nTeaser (montagem)\nLuís Ferraz\nTeaser (bufões)\nAmadeu, Amélia, Artur, Clarinha, Dinis, Diogo, Julinha, Mássimo e Tomás\nComunicação\nAna Coelho\nDona Branca\nRosa Guimarães\nCoprodução\nTheatro Circo, Teatro Municipal de Vila do Conde & Teatro Municipal de Matosinhos Constantino Nery\nDatas disponíveis\n12 mar · qui · 14h30 (escolas)\n13 mar · sex · 10h30 e 14h30 (escolas)\n14 mar · sáb · 11h00 (público geral)\nGratuito para escolas mediante inscrição para\nparticipacao@theatrocirco.com\nDuração\n50 minutos\nApoio\nRepública Portuguesa – Cultura, Juventude e Desporto / Direção-Geral das Artes / Rede Portuguesa de Teatros e Cineteatros Portugueses (RTCP)"
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "lenda-de-miragayaum-teatro-de-fingir|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:31.019202+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3fbbdd6ef6598d20",
-        "harmonized_at": "2026-03-27T12:28:49.498582+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada"
-        ],
-        "quality_score": 0.75
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-batalha-atras-de-batalha-mar-2026-b379",
-      "source_id": "batalha-atras-de-batalha-2026",
-      "source_url": "https://theatrocirco.com/event/batalha-atras-de-batalha-2026/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Batalha Atrás de Batalha (mar 2026)",
-      "title_raw": "Batalha Atrás de Batalha (mar 2026)",
-      "subtitle": "Paul Thomas Anderson",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-16",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-16",
-      "date_last": "2026-03-16",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-16",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.bol.pt/Comprar/Bilhetes/164210-cinema_batalha_atras_de_batalha-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "batalha-atras-de-batalha-mar-2026|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:44.805745+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:181e3558e7c3650a",
-        "harmonized_at": "2026-03-27T12:28:49.500004+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
       }
     },
     {
@@ -1869,7 +1013,7 @@
         "scraped_at": "2026-03-27T11:00:22.871279+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:e3a8701821699fad",
-        "harmonized_at": "2026-03-27T12:24:57.656141+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.274881+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2004,7 +1148,7 @@
         "scraped_at": "2026-03-27T11:24:47.775521+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:938386c6a7ddad32",
-        "harmonized_at": "2026-03-27T12:24:57.983557+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.601036+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2016,550 +1160,6 @@
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.75
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-apresentacao-tres-tempos-010a",
-      "source_id": "apresentacao-tres-tempos",
-      "source_url": "https://theatrocirco.com/event/apresentacao-tres-tempos/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Apresentação Três Tempos",
-      "title_raw": "Apresentação Três Tempos",
-      "subtitle": "Três Tempos",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-21",
-          "time_start": "15:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-21",
-      "date_last": "2026-03-21",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-21",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "apresentacao-tres-tempos|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:18.624961+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6346cf899e4cdd71",
-        "harmonized_at": "2026-03-27T12:28:49.498242+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "preco nao determinado (nem entrada livre nem valor)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.5
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-yerai-cortes-85f0",
-      "source_id": "yerai-cortes",
-      "source_url": "https://theatrocirco.com/event/yerai-cortes/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Yerai Cortés",
-      "title_raw": "Yerai Cortés",
-      "subtitle": "Yerai Cortés",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-21",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-21",
-      "date_last": "2026-03-21",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-21",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 12.0,
-        "price_max": 12.0,
-        "price_display": "12€",
-        "price_raw": "12€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://www.bol.pt/Comprar/Bilhetes/166061-yerai_cortes_guitarra_coral-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Apoio à divulgação\nAntena 3"
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "yerai-cortes|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:28.271683+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:d87f6b60ad307274",
-        "harmonized_at": "2026-03-27T12:28:49.498361+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.7
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-maria-vitoria-9c01",
-      "source_id": "maria-vitoria",
-      "source_url": "https://theatrocirco.com/event/maria-vitoria/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Maria Vitória",
-      "title_raw": "Maria Vitória",
-      "subtitle": "Mário Patrocínio",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-23",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-23",
-      "date_last": "2026-03-23",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-23",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.bol.pt/Comprar/Bilhetes/172894-cinema_maria_vitoria-theatro_circo/Sessoes"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "A sessão conta com a presença do realizador Mário Patrocínio e os atores Mariana Cardoso, Miguel Borges e Bárbara Albuquerque para uma breve apresentação no início e uma conversa no final da exibição."
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "maria-vitoria|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:26:02.138555+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:75fee67746195520",
-        "harmonized_at": "2026-03-27T12:28:49.498072+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.7
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-03-la-guitarra-flamenca-de-yerai-cortes-f3aa",
-      "source_id": "la-guitarra-flamenca-de-yerai-cortes",
-      "source_url": "https://theatrocirco.com/event/la-guitarra-flamenca-de-yerai-cortes/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "La guitarra flamenca de Yerai Cortés",
-      "title_raw": "La guitarra flamenca de Yerai Cortés",
-      "subtitle": "Antón Álvarez",
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "musica",
-      "category": "musica-classica",
-      "subcategory": null,
-      "tags": [
-        "legendas",
-        "música",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Música"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-24",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": 95,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-03-24",
-      "date_last": "2026-03-24",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-03-24",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.bol.pt/Comprar/Bilhetes/175360-la_guitarra_flamenca_de_yerai_cortes-theatro_circo/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": true,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": "Legendagem\nCortesia do festival IndieLisboa\nDuração\n95 minutos"
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "la-guitarra-flamenca-de-yerai-cortes|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:25:59.799948+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:298cbbb11d5d36a4",
-        "harmonized_at": "2026-03-27T12:28:49.494081+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada"
         ],
         "quality_score": 0.75
       }
@@ -2682,7 +1282,7 @@
         "scraped_at": "2026-03-27T11:24:49.796669+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:d5e24a644293511b",
-        "harmonized_at": "2026-03-27T12:24:57.983860+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.601342+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2839,7 +1439,7 @@
         "scraped_at": "2026-03-27T10:59:24.082104+00:00",
         "scraper_id": "culturgest",
         "raw_data_hash": "sha256:38188d39c9c512a9",
-        "harmonized_at": "2026-03-27T12:24:57.639979+00:00",
+        "harmonized_at": "2026-03-28T00:11:38.258607+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2864,8 +1464,8 @@
       "title": "Conversa-Jantar com Sara Inês Gigante",
       "title_raw": "Conversa-Jantar com Sara Inês Gigante",
       "subtitle": "Sara Inês Gigante",
-      "description": "",
-      "description_short": "",
+      "description": "Na véspera do Dia Mundial do Teatro, a 27 de março, convidamos o público para uma conversa entre a atriz e criadora Sara Inês Gigante, que nos visita com o seu solo POPULAR, e Maria Inês Marques, programadora de Artes Performativas do Theatro Circo. Este encontro informal propõe um olhar reflexivo, a partir do trabalho da artista, sobre o lugar do teatro e a sua relação com os espectadores no atual contexto sociopolítico.\nE porque as conversas e as celebrações também se fazem à volta da mesa, este encontro será acompanhado por um jantar volante, num ambiente descontraído, acolhedor e propício ao diálogo.",
+      "description_short": "Na véspera do Dia Mundial do Teatro, a 27 de março, convidamos o público para uma conversa entre a atriz e criadora Sara Inês Gigante, que nos visita com o seu solo POPULAR, e Maria Inês Marques, programadora de Artes Performativas do Theatro Circo. Este encontro informal propõe um olhar reflexivo…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -2971,10 +1571,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:58.355619+00:00",
+        "scraped_at": "2026-03-28T00:11:42.002047+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4d7d204f8ed8780f",
-        "harmonized_at": "2026-03-27T11:38:31.688816+00:00",
+        "raw_data_hash": "sha256:c4667f22c5d68424",
+        "harmonized_at": "2026-03-28T00:12:23.448478+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -2982,21 +1582,18 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:31:58.355619+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535094+00:00"
+        "quality_score": 0.85
       }
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas-740c",
-      "source_id": "265940",
-      "source_url": "https://www.ccb.pt/evento/a-valentina-e-a-valeria-nao-estao-mortas/2026-03-27/",
+      "id": "ccb-2026-03-a-valentina-e-a-valeria-nao-estao-mortas-ae00",
+      "source_id": "265950",
+      "source_url": "https://www.ccb.pt/evento/a-valentina-e-a-valeria-nao-estao-mortas/2026-03-28/",
       "venue_id": "ccb",
       "space_id": "black-box",
       "title": "A Valentina e a Valeria não estão mortas",
@@ -3137,10 +1734,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.076265+00:00",
+        "scraped_at": "2026-03-28T00:10:04.860807+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:cb182417531e6da4",
-        "harmonized_at": "2026-03-27T12:24:50.727255+00:00",
+        "raw_data_hash": "sha256:6d8215b1a32c70c6",
+        "harmonized_at": "2026-03-28T00:11:32.127320+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3159,9 +1756,9 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-uma-deriva-atlantica-1dfa",
-      "source_id": "266206",
-      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-27/",
+      "id": "ccb-2026-03-uma-deriva-atlantica-9686",
+      "source_id": "266207",
+      "source_url": "https://www.ccb.pt/evento/uma-deriva-atlantica-as-artes-do-seculo-xx-a-partir-da-colecao-berardo/2026-03-28/",
       "venue_id": "ccb",
       "space_id": "mac-ccb",
       "title": "Uma deriva atlântica",
@@ -3304,10 +1901,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.076376+00:00",
+        "scraped_at": "2026-03-28T00:10:04.860987+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9986b9756c3b9a6c",
-        "harmonized_at": "2026-03-27T12:24:50.730922+00:00",
+        "raw_data_hash": "sha256:cc2eb93d00e9bcee",
+        "harmonized_at": "2026-03-28T00:11:32.131644+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3326,9 +1923,9 @@
     },
     {
       "schema_version": "1.0",
-      "id": "ccb-2026-03-museu-aberto-3d72",
-      "source_id": "273504",
-      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-27/",
+      "id": "ccb-2026-03-museu-aberto-3760",
+      "source_id": "277042",
+      "source_url": "https://www.ccb.pt/evento/museu-aberto/2026-03-28/",
       "venue_id": "ccb",
       "space_id": "mac-ccb",
       "title": "Museu Aberto",
@@ -3457,10 +2054,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.076605+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861552+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e238ebdc7109a8a0",
-        "harmonized_at": "2026-03-27T12:24:50.732710+00:00",
+        "raw_data_hash": "sha256:4d4d780773080639",
+        "harmonized_at": "2026-03-28T00:11:32.136682+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3487,8 +2084,8 @@
       "title": "POPULAR",
       "title_raw": "POPULAR",
       "subtitle": "Sara Inês Gigante",
-      "description": "",
-      "description_short": "",
+      "description": "POPULAR\né um espetáculo-desafio que parte da autoficção de que a criadora e intérprete pretende ser uma artista popular, desafiando os padrões do panorama cultural e do universo popular através de uma fusão entre os dois. A proposta serve-se da fricção existente entre a cultura de elite e a cultura de massas para pensar o público enquanto coletivo e as divisões sociais que esta tensão pode refletir.\nEntre a biografia e a pesquisa, esta criação conduz a um questionamento sobre outros conceitos que pertencem à mesma família lexical da palavra “popular”, como popularidade, pop e populismo. POPULAR acabará sempre por se questionar se poderá ter sido, ou não, popular.\n— Sara Inês Gigante\nNo Dia Mundial do Teatro, Braga recebe\nPOPULAR\n, o projeto vencedor da 6ª edição da Bolsa Amélia Rey Colaço, uma iniciativa d´O Espaço do Tempo, do Teatro Nacional D. Maria II, A Oficina, e Teatro Viriato.",
+      "description_short": "POPULAR\né um espetáculo-desafio que parte da autoficção de que a criadora e intérprete pretende ser uma artista popular, desafiando os padrões do panorama cultural e do universo popular através de uma fusão entre os dois. A proposta serve-se da fricção existente entre a cultura de elite e a cultura…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -3522,7 +2119,7 @@
       "date_close": null,
       "event_status": "unica-sessao",
       "is_premiere": false,
-      "is_national_premiere": false,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
       "is_festival": false,
@@ -3596,10 +2193,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:59.106776+00:00",
+        "scraped_at": "2026-03-28T00:11:42.636133+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:b731e8aba778f7db",
-        "harmonized_at": "2026-03-27T11:38:31.688960+00:00",
+        "raw_data_hash": "sha256:6abea61fef2a188d",
+        "harmonized_at": "2026-03-28T00:12:23.448815+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3607,13 +2204,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:31:59.106776+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535104+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -3626,7 +2220,7 @@
       "title": "Filodemo",
       "title_raw": "Filodemo",
       "subtitle": null,
-      "description": "Filodemo\né uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um retrato distante, quase anacrónico, das convenções e dos modos de amar de outro tempo. Mas é precisamente nessa distância que se abre um espaço fértil para a invenção: olhar de novo para o que nos é estranho para compreender o que em nós permanece igual. Pedro Penim parte dessa dissonância temporal para propor uma encenação que confronta a inocência do texto com as urgências do presente. Num tempo em que certos discursos procuram cristalizar o passado e transformá-lo em instrumento de exclusão, o diálogo com os clássicos torna-se um gesto de resistência. Reencenar\nFilodemo\né, assim, mais do que celebrar o génio de Camões: é afirmar que o teatro continua a ser um lugar de disputa simbólica, de reapropriação e de liberdade. Entre a poesia e o jogo cénico,\nFilodemo\ncelebra o reencontro entre a palavra de Camões e o palco contemporâneo, um diálogo entre a distância e a presença, entre o passado que nos funda e o presente que o reinscreve.\nConversa com artistas após o espetáculo\n4 de abril\n— As sessões de 27, 28 e 29 de março são de\nentrada livre\n,\nmediante o levantamento de bilhetes, na Bilheteira do D. Maria II\n— Jardins do Bombarda, a partir das 13h do próprio dia, exclusivamente para a sessão desse dia.\nLimite de 2 bilhetes por pessoa, sujeito à lotação disponível.",
+      "description": "Filodemo\né uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um retrato distante, quase anacrónico, das convenções e dos modos de amar de outro tempo. Mas é precisamente nessa distância que se abre um espaço fértil para a invenção: olhar de novo para o que nos é estranho para compreender o que em nós permanece igual. Pedro Penim parte dessa dissonância temporal para propor uma encenação que confronta a inocência do texto com as urgências do presente. Num tempo em que certos discursos procuram cristalizar o passado e transformá-lo em instrumento de exclusão, o diálogo com os clássicos torna-se um gesto de resistência. Reencenar\nFilodemo\né, assim, mais do que celebrar o génio de Camões: é afirmar que o teatro continua a ser um lugar de disputa simbólica, de reapropriação e de liberdade. Entre a poesia e o jogo cénico,\nFilodemo\ncelebra o reencontro entre a palavra de Camões e o palco contemporâneo, um diálogo entre a distância e a presença, entre o passado que nos funda e o presente que o reinscreve.\nConversa com artistas após o espetáculo\n4 de abril\n— As sessões de 27, 28 e 29 de março são de\nentrada livre\n,\nmediante o levantamento de bilhetes, na Bilheteira do D. Maria\nII localizada nos Jardins do Bombarda\n, a partir das 13h do próprio dia, exclusivamente para a sessão desse dia. Limite de 2 bilhetes por pessoa, sujeito à lotação disponível.",
       "description_short": "Filodemo\né uma das raras incursões de Luís de Camões no teatro. Escrita provavelmente na juventude do autor, é uma comédia pastoril situada num mundo rural idealizado, habitado por pastores e ninfas que vivem amores ingénuos, feitos de enganos e revelações. O seu universo é tudo menos atual, um…",
       "language_of_performance": "pt",
       "language_notes": null,
@@ -3964,10 +2558,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:03.773120+00:00",
+        "scraped_at": "2026-03-28T00:12:36.547333+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:f331a0128dbcaf10",
-        "harmonized_at": "2026-03-27T12:29:25.229586+00:00",
+        "raw_data_hash": "sha256:08a97a556a8111e4",
+        "harmonized_at": "2026-03-28T00:12:56.768556+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3978,147 +2572,6 @@
           "subcategoria nao determinada"
         ],
         "quality_score": 0.95
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "ccb-2026-03-alarve-359c",
-      "source_id": "277060",
-      "source_url": "https://www.ccb.pt/evento/performance-alarve/2026-03-27/",
-      "venue_id": "ccb",
-      "space_id": "mac-ccb",
-      "title": "Alarve",
-      "title_raw": "Alarve",
-      "subtitle": "João dos Santos Martins | Museu Aberto",
-      "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n \n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nLadainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n \n\nProgramação do Museu Aberto.",
-      "description_short": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "formacao",
-      "category": "atividades-educativas",
-      "subcategory": null,
-      "tags": [
-        "Performance",
-        "festival",
-        "formação & participação",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Atividades",
-        "Espetáculos",
-        "MAC/CCB",
-        "Performance",
-        "Performance"
-      ],
-      "dates": [
-        {
-          "date": "2026-03-28",
-          "time_start": "18:00",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": "18:00 no MAC/CCB"
-        }
-      ],
-      "date_first": "2026-03-28",
-      "date_last": "2026-03-28",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": null,
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": true,
-      "festival_name": "Festival Silvestre",
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": null,
-        "price_max": null,
-        "price_display": null,
-        "price_raw": null
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Alarvemuseuaberto_DR.jpg",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "alarve|2026-03",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "ccb"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.076669+00:00",
-        "scraper_id": "ccb",
-        "raw_data_hash": "sha256:569332ce2be5bc2d",
-        "harmonized_at": "2026-03-27T12:24:50.733188+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "preco nao determinado (nem entrada livre nem valor)",
-          "url de bilheteira ausente",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
       }
     },
     {
@@ -4251,10 +2704,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.076737+00:00",
+        "scraped_at": "2026-03-28T00:10:04.860913+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:18bec9a9f488ed60",
-        "harmonized_at": "2026-03-27T12:24:50.734154+00:00",
+        "raw_data_hash": "sha256:a600ddbe2f74f3d0",
+        "harmonized_at": "2026-03-28T00:11:32.131122+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4392,10 +2845,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077199+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861509+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2feffdc81b467622",
-        "harmonized_at": "2026-03-27T12:24:50.739311+00:00",
+        "raw_data_hash": "sha256:94b4d15a11878164",
+        "harmonized_at": "2026-03-28T00:11:32.136327+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4530,10 +2983,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077289+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861616+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:db935cba79bff64c",
-        "harmonized_at": "2026-03-27T12:24:50.740088+00:00",
+        "raw_data_hash": "sha256:b16a5a954e15aef1",
+        "harmonized_at": "2026-03-28T00:11:32.137132+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4669,10 +3122,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077327+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861656+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2a88d4f203749c66",
-        "harmonized_at": "2026-03-27T12:24:50.740776+00:00",
+        "raw_data_hash": "sha256:1dff249122dbfc5d",
+        "harmonized_at": "2026-03-28T00:11:32.137815+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4814,10 +3267,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077381+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861711+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0b13e9a4eb761d0b",
-        "harmonized_at": "2026-03-27T12:24:50.741574+00:00",
+        "raw_data_hash": "sha256:f86f72ddfa91f5fd",
+        "harmonized_at": "2026-03-28T00:11:32.138601+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4834,6 +3287,147 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.45
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "ccb-2026-03-alarve-868a",
+      "source_id": "277069",
+      "source_url": "https://www.ccb.pt/evento/performance-alarve/2026-03-28/",
+      "venue_id": "ccb",
+      "space_id": "mac-ccb",
+      "title": "Alarve",
+      "title_raw": "Alarve",
+      "subtitle": "João dos Santos Martins | Museu Aberto",
+      "description": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua experiência pessoal de migração do meio rural para o urbano, e da ideia de adaptação — do corpo e do sujeito. Tal como o paisagista brasileiro entendia o jardim como uma «adequação do meio ecológico às exigências da civilização», a migração revela um processo contínuo de ajustar gestos.\n\nA dança é abordada como prática de desaprendizagem e de reinvenção: um exercício de reconhecimento das camadas sociais e corporais que se acumulam na tentativa de adequar hábitos vistos como estranhos, brutos e selvagens. Mais do que representar uma identidade, o trabalho apresenta um campo de fricção entre natureza, ruralidade e cultura. O corpo torna-se matéria em processo, na qual o dentro e o fora dialogam propondo formas de escuta.\n\n \n\nDe e com João dos Santos Martins\n\nFigurino Darius Dolatyari-Dolatdoust\n\nLadainha Franz Schubert\n\nProdução Maria Monteiro | Associação Parasita, Association Mi-Maï\n\nCoprodução Associação Parasita, MAC/CCB — Museu de Arte Contemporânea e Centro de Arquitetura, Festival Silvestre, Sismógrafo\n\nResidências Espaço Parasita, Lamia Santolino\n\n \n\nProgramação do Museu Aberto.",
+      "description_short": "O trabalho de João dos Santos Martins explora relações entre dança, linguagem e transmissão. Para esta performance, integrada na exposição Lugar de estar: o legado Burle Marx, o bailarino e coreógrafo toma o corpo como campo de negociação entre natureza e construção. O trabalho dialoga com a sua…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "atividades-educativas",
+      "subcategory": null,
+      "tags": [
+        "Performance",
+        "festival",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Atividades",
+        "Espetáculos",
+        "MAC/CCB",
+        "Performance",
+        "Performance"
+      ],
+      "dates": [
+        {
+          "date": "2026-03-28",
+          "time_start": "18:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": "18:00 no MAC/CCB"
+        }
+      ],
+      "date_first": "2026-03-28",
+      "date_last": "2026-03-28",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": null,
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": true,
+      "festival_name": "Festival Silvestre",
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.ccb.pt/wp-content/uploads/2026/03/Alarvemuseuaberto_DR.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "alarve|2026-03",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "ccb"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T00:10:04.861728+00:00",
+        "scraper_id": "ccb",
+        "raw_data_hash": "sha256:21a98a2e6036bdcf",
+        "harmonized_at": "2026-03-28T00:11:32.138713+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.6
       }
     },
     {
@@ -4957,10 +3551,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077436+00:00",
+        "scraped_at": "2026-03-28T00:10:04.861768+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a0ca354b1211ff1b",
-        "harmonized_at": "2026-03-27T12:24:50.742312+00:00",
+        "raw_data_hash": "sha256:d5d49c7d809c16f9",
+        "harmonized_at": "2026-03-28T00:11:32.139308+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -4987,8 +3581,8 @@
       "title": "Companhia de Espectadores - Biografia e Autoficção (28/03/2026)",
       "title_raw": "Companhia de Espectadores - Biografia e Autoficção (28/03/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Em 2026, a Companhia de Espectadores entra numa nova fase. Depois de várias temporadas a mergulhar em obras e espetáculos específicos, o projeto amplia agora o seu horizonte e transforma-se numa escola informal de análise dramatúrgica.\nMais do que um espaço de debate sobre peças concretas, a Companhia de Espectadores propõe-se como um laboratório de pensamento sobre as artes performativas, onde se experimenta, se questiona e se aprende a ler a cena nas suas múltiplas dimensões — corpo, texto, imagem, som, espaço, tempo e relação com o público. Entre encontros e conversas, o grupo investiga os mecanismos que fazem uma criação acontecer: como se constrói uma dramaturgia, que escolhas sustentam uma composição, de que forma o espectador participa no sentido do espetáculo.\nContinuamos a ver, ouvir e discutir — mas também a pensar as artes performativas como linguagem e como gesto vivo. Mais do que uma formação académica, pretende ser uma comunidade de aprendizagem crítica — um lugar de encontro entre quem faz e quem vê, entre teoria e prática, entre análise e criação — aberto a todos os que desejem olhar a cena de dentro para fora.",
+      "description_short": "Em 2026, a Companhia de Espectadores entra numa nova fase. Depois de várias temporadas a mergulhar em obras e espetáculos específicos, o projeto amplia agora o seu horizonte e transforma-se numa escola informal de análise dramatúrgica.\nMais do que um espaço de debate sobre peças concretas, a…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -5094,10 +3688,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:01.271657+00:00",
+        "scraped_at": "2026-03-28T00:11:43.271852+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:825e7bfdb81df64f",
-        "harmonized_at": "2026-03-27T11:38:31.689194+00:00",
+        "raw_data_hash": "sha256:0bcd1f49297e2661",
+        "harmonized_at": "2026-03-28T00:12:23.449363+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5105,14 +3699,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:01.271657+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535112+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5125,8 +3716,8 @@
       "title": "Visita Guiada ao Theatro Circo (28/03/2026)",
       "title_raw": "Visita Guiada ao Theatro Circo (28/03/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma estreita à vida cultural de Braga, o Theatro Circo reflete momentos marcantes da história da cidade e do país, sendo hoje um centro de referência na programação artística e cultural.",
+      "description_short": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -5240,10 +3831,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:02.215126+00:00",
+        "scraped_at": "2026-03-28T00:11:43.813555+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:2524465df9488a2a",
-        "harmonized_at": "2026-03-27T11:38:31.689351+00:00",
+        "raw_data_hash": "sha256:b95b86f0058d6fcd",
+        "harmonized_at": "2026-03-28T00:12:23.449943+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5251,13 +3842,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:32:02.215126+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535118+00:00"
+        "quality_score": 0.9
       }
     },
     {
@@ -5270,16 +3858,16 @@
       "title": "Dora Morelenbaum",
       "title_raw": "Dora Morelenbaum",
       "subtitle": "Dora Morelenbaum",
-      "description": "",
-      "description_short": "",
+      "description": "A artista carioca Dora Morelenbaum apresenta no Theatro Circo o seu primeiro álbum a solo,\nPique\n(2024), uma obra que reflete uma musicalidade rica, forjada entre as suas influências (de Ryuichi Sakamoto a Milton Nascimento) e a sua notável herança familiar.\nFilha dos conceituados músicos Paula e Jaques Morelenbaum (arranjador da Banda Nova de Tom Jobim), Dora Morelenbaum consolidou a sua identidade como membro do aclamado coletivo Bala Desejo. Com a banda, venceu um Grammy Latino em 2022 na categoria de Melhor Álbum de Pop Contemporâneo em Língua Portuguesa com\nSim Sim Sim\n(2022), e esgotou concertos em digressões internacionais.\nLançado em 2024 e nomeado para o Latin Grammy na categoria de Melhor Álbum de Música Popular Brasileira, o disco\nPique\né uma estreia que a crítica descreve como “luxuoso, complexo e criativo sem deixar de ser pop”. Elogiado como “um dos melhores álbuns de estreia das últimas duas décadas”, a obra coproduzida por Ana Frango Elétrico é um mergulho em ritmos que misturam MPB, jazz, soul e R&B.",
+      "description_short": "A artista carioca Dora Morelenbaum apresenta no Theatro Circo o seu primeiro álbum a solo,\nPique\n(2024), uma obra que reflete uma musicalidade rica, forjada entre as suas influências (de Ryuichi Sakamoto a Milton Nascimento) e a sua notável herança familiar.\nFilha dos conceituados músicos Paula e…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "musica",
       "category": "musica-classica",
       "subcategory": null,
       "tags": [
-        "música",
-        "sessao-unica"
+        "estreia",
+        "música"
       ],
       "categories_raw": [
         "Música"
@@ -5301,8 +3889,8 @@
       "is_ongoing": false,
       "date_open": "2026-03-28",
       "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
+      "event_status": "estreia",
+      "is_premiere": true,
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
@@ -5377,10 +3965,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:03.160976+00:00",
+        "scraped_at": "2026-03-28T00:11:44.369459+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:c72cb1491fa128df",
-        "harmonized_at": "2026-03-27T11:38:31.689524+00:00",
+        "raw_data_hash": "sha256:ca505e39c1528538",
+        "harmonized_at": "2026-03-28T00:12:23.450263+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5388,14 +3976,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:32:03.160976+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535125+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -5628,10 +4213,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:05.766653+00:00",
+        "scraped_at": "2026-03-28T00:12:38.474716+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:217b9dca1a779252",
-        "harmonized_at": "2026-03-27T12:29:25.230584+00:00",
+        "raw_data_hash": "sha256:7d58c2b25318ce6a",
+        "harmonized_at": "2026-03-28T00:12:56.769664+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5850,10 +4435,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:29:07.910718+00:00",
+        "scraped_at": "2026-03-28T00:12:40.376891+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:8d962aba8fe3c072",
-        "harmonized_at": "2026-03-27T12:29:25.231219+00:00",
+        "raw_data_hash": "sha256:58fb4b258bd280ee",
+        "harmonized_at": "2026-03-28T00:12:56.770288+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5989,10 +4574,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077673+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862020+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:875f605189332eef",
-        "harmonized_at": "2026-03-27T12:24:50.745302+00:00",
+        "raw_data_hash": "sha256:c46c4d1ecaff410b",
+        "harmonized_at": "2026-03-28T00:11:32.142289+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6129,10 +4714,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077704+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862055+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:7f8c855a6859c10d",
-        "harmonized_at": "2026-03-27T12:24:50.745749+00:00",
+        "raw_data_hash": "sha256:a5be2c5e94c90527",
+        "harmonized_at": "2026-03-28T00:11:32.142757+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6268,10 +4853,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077736+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862087+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:0b0f38bc76a55628",
-        "harmonized_at": "2026-03-27T12:24:50.746272+00:00",
+        "raw_data_hash": "sha256:8ea600fcb87787ce",
+        "harmonized_at": "2026-03-28T00:11:32.143272+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6415,10 +5000,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077933+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862287+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a0a879681298a317",
-        "harmonized_at": "2026-03-27T12:24:50.748237+00:00",
+        "raw_data_hash": "sha256:8e1c134ea9e649bc",
+        "harmonized_at": "2026-03-28T00:11:32.145227+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6446,8 +5031,8 @@
       "title": "Blue Moon",
       "title_raw": "Blue Moon",
       "subtitle": "Richard Linklater",
-      "description": "",
-      "description_short": "",
+      "description": "Blue Moon\nde Richard Linklater\n2025 | EUA | Drama | 1h40\nO lendário letrista da Broadway Lorenz Hart sai de um teatro e dirige-se ao Sardi’s. O dia é 31 de Março de 1943, noite de estreia do musical\nOklahoma!\n, do seu antigo parceiro de escrita Richard Rodgers e Oscar Hammerstein II. Na festa dessa noite, Hart vê-se confrontado com o declínio da carreira…\nCaptando este momento singular,\nBlue Moon\né uma meditação sobre o amor, a amizade e a arte no tom típico de Richard Linklater, entre a leveza e a melancolia.\ncom Ethan Hawke, Margaret Qualley, Bobby Cannavale, Andrew Scott",
+      "description_short": "Blue Moon\nde Richard Linklater\n2025 | EUA | Drama | 1h40\nO lendário letrista da Broadway Lorenz Hart sai de um teatro e dirige-se ao Sardi’s. O dia é 31 de Março de 1943, noite de estreia do musical\nOklahoma!\n, do seu antigo parceiro de escrita Richard Rodgers e Oscar Hammerstein II. Na festa dessa…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -6455,7 +5040,7 @@
       "subcategory": null,
       "tags": [
         "artes de palco",
-        "sessao-unica"
+        "estreia"
       ],
       "categories_raw": [
         "Teatro"
@@ -6477,8 +5062,8 @@
       "is_ongoing": false,
       "date_open": "2026-03-30",
       "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
+      "event_status": "estreia",
+      "is_premiere": true,
       "is_national_premiere": false,
       "is_reprise": false,
       "production_origin": null,
@@ -6553,10 +5138,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:32:04.055241+00:00",
+        "scraped_at": "2026-03-28T00:11:45.009264+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:30b67b00e11d82ac",
-        "harmonized_at": "2026-03-27T11:38:31.689639+00:00",
+        "raw_data_hash": "sha256:ea06417820ec2483",
+        "harmonized_at": "2026-03-28T00:12:23.450581+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6564,15 +5149,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:32:04.055241+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535131+00:00"
+        "quality_score": 0.75
       }
     },
     {
@@ -6696,10 +5278,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077963+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862362+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:a267ed80010e6abe",
-        "harmonized_at": "2026-03-27T12:24:50.748646+00:00",
+        "raw_data_hash": "sha256:8acf71e97c7b5316",
+        "harmonized_at": "2026-03-28T00:11:32.145652+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6835,10 +5417,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.077981+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862382+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:6c822af7350c90b4",
-        "harmonized_at": "2026-03-27T12:24:50.748866+00:00",
+        "raw_data_hash": "sha256:921968a4cc5b3467",
+        "harmonized_at": "2026-03-28T00:11:32.145875+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6975,10 +5557,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078003+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862405+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:e03fa9d137f3c212",
-        "harmonized_at": "2026-03-27T12:24:50.749232+00:00",
+        "raw_data_hash": "sha256:5148338e123627c6",
+        "harmonized_at": "2026-03-28T00:11:32.146224+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7116,10 +5698,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078094+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862529+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:79a067d591c55e55",
-        "harmonized_at": "2026-03-27T12:24:50.750318+00:00",
+        "raw_data_hash": "sha256:2379b85019515e1b",
+        "harmonized_at": "2026-03-28T00:11:32.147309+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7259,10 +5841,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078111+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862548+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:82e81b1c406d736f",
-        "harmonized_at": "2026-03-27T12:24:50.750485+00:00",
+        "raw_data_hash": "sha256:7f842e5b65c04dab",
+        "harmonized_at": "2026-03-28T00:11:32.147498+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7400,10 +5982,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078135+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862574+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:4fdeeb99596f52af",
-        "harmonized_at": "2026-03-27T12:24:50.750787+00:00",
+        "raw_data_hash": "sha256:3c2d891cb2c59070",
+        "harmonized_at": "2026-03-28T00:11:32.147813+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7541,10 +6123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078157+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862601+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:013bc226695969eb",
-        "harmonized_at": "2026-03-27T12:24:50.751213+00:00",
+        "raw_data_hash": "sha256:32fa5090669039e3",
+        "harmonized_at": "2026-03-28T00:11:32.148117+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7684,10 +6266,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078209+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862631+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:9d46fffcc9cea0da",
-        "harmonized_at": "2026-03-27T12:24:50.751737+00:00",
+        "raw_data_hash": "sha256:9ad29286af876cce",
+        "harmonized_at": "2026-03-28T00:11:32.148667+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7825,10 +6407,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078399+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862816+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:8b1beea8a69d84c5",
-        "harmonized_at": "2026-03-27T12:24:50.753979+00:00",
+        "raw_data_hash": "sha256:3bfcad1b163eeb99",
+        "harmonized_at": "2026-03-28T00:11:32.150815+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7966,10 +6548,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T12:23:17.078427+00:00",
+        "scraped_at": "2026-03-28T00:10:04.862845+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:fc45f6b526478dc3",
-        "harmonized_at": "2026-03-27T12:24:50.754237+00:00",
+        "raw_data_hash": "sha256:a70415921ca18e2f",
+        "harmonized_at": "2026-03-28T00:11:32.152544+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7997,8 +6579,8 @@
       "title": "Porta do Céu (CTB)",
       "title_raw": "Porta do Céu (CTB)",
       "subtitle": "Companhia de Teatro de Braga",
-      "description": "",
-      "description_short": "",
+      "description": "Texto dedicado à vida e obra do grande escritor humanista georgiano Nodar Dumbadze. O jogo de marioneta torna o espectáculo particularmente emotivo. A linha autobiográfica transmite uma sensação de magia, de realidade. A escassez de texto e a sua componente visual impactante torna a peça acessível a todas as gerações.",
+      "description_short": "Texto dedicado à vida e obra do grande escritor humanista georgiano Nodar Dumbadze. O jogo de marioneta torna o espectáculo particularmente emotivo. A linha autobiográfica transmite uma sensação de magia, de realidade. A escassez de texto e a sua componente visual impactante torna a peça acessível…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -8121,10 +6703,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:29.908250+00:00",
+        "scraped_at": "2026-03-28T00:12:16.644940+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:a2f9da44628366ec",
-        "harmonized_at": "2026-03-27T11:38:31.696613+00:00",
+        "raw_data_hash": "sha256:c13a6de880d37654",
+        "harmonized_at": "2026-03-28T00:12:23.474223+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8132,15 +6714,12 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "creditos ausentes (director, companhia ou texto raw)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6,
-        "last_seen_at": "2026-03-27T11:33:29.908250+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535454+00:00"
+        "quality_score": 0.75
       }
     }
   ]

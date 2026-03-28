@@ -1,6 +1,6 @@
 {
   "month": "2026-08",
-  "total": 13,
+  "total": 7,
   "events": [
     {
       "schema_version": "1.0",
@@ -12,8 +12,8 @@
       "title": "Cinema de agosto: As correntes de João César Monteiro",
       "title_raw": "Cinema de agosto: As correntes de João César Monteiro",
       "subtitle": "Lucky Star",
-      "description": "",
-      "description_short": "",
+      "description": "Para o mês de agosto, o Lucky Star – Cineclube de Braga programou quatro filmes dedicados a João César Monteiro (1939–2003), um dos mais singulares e irreverentes cineastas portugueses. Este ciclo propõe revisitar algumas obras do cineasta, unidas pelo elemento comum da água, de cujas margens e funduras emergem narrativas e simbolismos que marcam a história do cinema português.\nFigura central do cinema de autor em Portugal, iniciou o seu percurso nos anos 1960, afirmando-se nas décadas seguintes com uma obra marcada pela provocação e por um humor mordaz. Entre os seus filmes mais emblemáticos contam-se\nRecordações da Casa Amarela\n(1989),\nA Comédia de Deus\n(1995) e\nAs Bodas de Deus\n(1999), obras que lhe valeram reconhecimento internacional e a consagração como uma das vozes mais originais do cinema europeu.\nPrograma:\n3 agosto (seg) · 21h30 · Pequeno Auditório\nVeredas\n1978 | Portugal | Cópia digital restaurada | 2h03\n10 agosto (seg) · 21h30 · Pequeno Auditório\nSilvestre\n1981 | Portugal | Cópia digital restaurada | 1h58\n17 agosto (seg) · 21h30 · Pequeno Auditório\nÀ Flor do Mar\n1986 | Portugal | Cópia digital restaurada | 2h23\n24 agosto (seg) · 21h30 · Pequeno Auditório\nO Último Mergulho\n1992 | Portugal | Cópia digital restaurada | 1h28\n31 agosto (seg) · 21h30 · Pequeno Auditório\nAs Bodas de Deus\n1999 | Portugal | Cópia digital restaurada | 2h30",
+      "description_short": "Para o mês de agosto, o Lucky Star – Cineclube de Braga programou quatro filmes dedicados a João César Monteiro (1939–2003), um dos mais singulares e irreverentes cineastas portugueses. Este ciclo propõe revisitar algumas obras do cineasta, unidas pelo elemento comum da água, de cujas margens e…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -80,7 +80,7 @@
       "date_close": null,
       "event_status": "em-cartaz",
       "is_premiere": false,
-      "is_national_premiere": false,
+      "is_national_premiere": true,
       "is_reprise": false,
       "production_origin": null,
       "is_festival": false,
@@ -154,10 +154,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:21.225095+00:00",
+        "scraped_at": "2026-03-28T00:12:12.186692+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:4263a5a1b94537fd",
-        "harmonized_at": "2026-03-27T11:38:31.695699+00:00",
+        "raw_data_hash": "sha256:e739d032e7cd7cae",
+        "harmonized_at": "2026-03-28T00:12:23.471385+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -165,14 +165,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:21.225095+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535413+00:00"
+        "quality_score": 0.85
       }
     },
     {
@@ -185,8 +182,8 @@
       "title": "Veredas",
       "title_raw": "Veredas",
       "subtitle": "João César Monteiro",
-      "description": "",
-      "description_short": "",
+      "description": "Veredas\nde João César Monteiro\n1978 | Portugal | Cópia digital restaurada | 2h03\nObra marcante do cinema português, Veredas inspira-se numa série de lendas, mitos e canções populares para explorar as raízes culturais do nosso país. Com um enredo pouco convencional, o filme narra uma jornada alegórica ao coração de Portugal, evocando uma busca espiritual e existencial. A história segue dois peregrinos que se encontram e descem Trás-os-Montes até ao mar por entre caminhos desconhecidos. Ao longo do percurso, deparam-se com figuras simbólicas e diferentes obstáculos que os confrontam com os mistérios da vida, do amor e da morte. O filme combina humor subtil e um olhar crítico à sociedade — marcas autorais do cinema de João César Monteiro.\ncom Adília Martins, Alexandra Barbosa, António José Dias, António Matos, António Mendes II",
+      "description_short": "Veredas\nde João César Monteiro\n1978 | Portugal | Cópia digital restaurada | 2h03\nObra marcante do cinema português, Veredas inspira-se numa série de lendas, mitos e canções populares para explorar as raízes culturais do nosso país. Com um enredo pouco convencional, o filme narra uma jornada…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -292,10 +289,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:21.978707+00:00",
+        "scraped_at": "2026-03-28T00:12:12.824534+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:189e64ae07c1f601",
-        "harmonized_at": "2026-03-27T11:38:31.695897+00:00",
+        "raw_data_hash": "sha256:e574240f4029a859",
+        "harmonized_at": "2026-03-28T00:12:23.472018+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -303,288 +300,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:21.978707+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535419+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-paulo-rocha-e-os-paroxismos-fc30",
-      "source_id": "paulo-rocha-e-os-paroxismos",
-      "source_url": "https://theatrocirco.com/event/paulo-rocha-e-os-paroxismos/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Paulo Rocha e os Paroxismos",
-      "title_raw": "Paulo Rocha e os Paroxismos",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Cinema"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-04",
-          "time_start": null,
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-04",
-      "date_last": "2026-08-04",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-08-04",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "paulo-rocha-e-os-paroxismos|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:28.576011+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:eb6371fe47353ac7",
-        "harmonized_at": "2026-03-27T12:28:49.517914+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-o-desejado-ou-as-montanhas-da-lua-paulo--36c7",
-      "source_id": "o-desejado-ou-as-montanhas-da-lua-paulo-rocha",
-      "source_url": "https://theatrocirco.com/event/o-desejado-ou-as-montanhas-da-lua-paulo-rocha/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "O Desejado ou As Montanhas da Lua - Paulo Rocha",
-      "title_raw": "O Desejado ou As Montanhas da Lua - Paulo Rocha",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-04",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-04",
-      "date_last": "2026-08-04",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-08-04",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "o-desejado-ou-as-montanhas-da-lua-paulo-rocha|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:29.160031+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:37e1cc191328dd47",
-        "harmonized_at": "2026-03-27T12:28:49.518017+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.85
       }
     },
     {
@@ -597,8 +317,8 @@
       "title": "Silvestre",
       "title_raw": "Silvestre",
       "subtitle": "João César Monteiro",
-      "description": "",
-      "description_short": "",
+      "description": "Silvestre\nde João César Monteiro\n1981 | Portugal | Cópia digital restaurada | 1h58\nA história do filme é tirada de dois romances portugueses tradicionais:\nA Donzela que Vai à Guerra\n(Séc XV?), de origem judaica peninsular e uma novela,\nA Mão do Finado\n, transmitida pela tradição oral que faz parte do ciclo do\nBarba Azul\n.\nD. Rodrigo tem duas filhas, uma legítima e outra bastarda, Sílvia e Susana. Sentindo-se velho e sem herdeiro varão, D. Rodrigo decide casar Sílvia com um nobre rico, D. Paio, seu vizinho, com o propósito de assegurar o alargamento dos seus domínios. Depois de uma visita rápida do noivo, que é um comilão de saias, D. Rodrigo parte para a corte, a fim de convidar o Rei para a boda. À despedida, recomenda às filhas que não abram a ninguém as portas do solar. Um dia, aparece um peregrino que pede guarida e Sílvia, desobedecendo às ordens do pai, acaba por abrir-lhe a porta…\ncom Maria de Medeiros, Teresa Madruga, Luis Miguel Cintra, Jorge Silva Melo",
+      "description_short": "Silvestre\nde João César Monteiro\n1981 | Portugal | Cópia digital restaurada | 1h58\nA história do filme é tirada de dois romances portugueses tradicionais:\nA Donzela que Vai à Guerra\n(Séc XV?), de origem judaica peninsular e uma novela,\nA Mão do Finado\n, transmitida pela tradição oral que faz parte…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -704,10 +424,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:22.730811+00:00",
+        "scraped_at": "2026-03-28T00:12:13.461454+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:3947a3b4e6d402f8",
-        "harmonized_at": "2026-03-27T11:38:31.696014+00:00",
+        "raw_data_hash": "sha256:1505f9f9877d8e20",
+        "harmonized_at": "2026-03-28T00:12:23.472393+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -715,151 +435,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:22.730811+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535424+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-mascara-de-aco-contra-abismo-azul-paulo--448a",
-      "source_id": "mascara-de-aco-contra-abismo-azul-paulo-rocha",
-      "source_url": "https://theatrocirco.com/event/mascara-de-aco-contra-abismo-azul-paulo-rocha/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Máscara de Aço Contra Abismo Azul - Paulo Rocha",
-      "title_raw": "Máscara de Aço Contra Abismo Azul - Paulo Rocha",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-11",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-11",
-      "date_last": "2026-08-11",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-08-11",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "mascara-de-aco-contra-abismo-azul-paulo-rocha|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:27.856559+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:136fabfe3079c33d",
-        "harmonized_at": "2026-03-27T12:28:49.517792+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.85
       }
     },
     {
@@ -872,8 +452,8 @@
       "title": "À Flor do Mar",
       "title_raw": "À Flor do Mar",
       "subtitle": "João César Monteiro",
-      "description": "",
-      "description_short": "",
+      "description": "À Flor do Mar\nde João César Monteiro\n1986 | Portugal | Cópia digital restaurada | 2h23\nQuando Laura Rossellini decidiu, bruscamente, partir para Roma, levando consigo os filhos, estava por certo convencida que não mais voltaria a Portugal, que atrás de si deixara, para todo o sempre, “um país morto”. Todavia, cerca de um ano volvido, Laura regressa à casa junto da orla do mar e, num ameno clima de férias, reencontra o que resta da família e algo de muito inesperado… O filme “aperfeiçoa o estilo contemplativo e melancólico de Monteiro, com algum do seu sarcasmo”.\ncom Laura Morante, Philip Spinelli, Manuela de Freitas, João César Monteiro",
+      "description_short": "À Flor do Mar\nde João César Monteiro\n1986 | Portugal | Cópia digital restaurada | 2h23\nQuando Laura Rossellini decidiu, bruscamente, partir para Roma, levando consigo os filhos, estava por certo convencida que não mais voltaria a Portugal, que atrás de si deixara, para todo o sempre, “um país…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -979,10 +559,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:23.481820+00:00",
+        "scraped_at": "2026-03-28T00:12:14.098699+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:f15837a6fa31b18c",
-        "harmonized_at": "2026-03-27T11:38:31.696112+00:00",
+        "raw_data_hash": "sha256:655959908f4da349",
+        "harmonized_at": "2026-03-28T00:12:23.472846+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -990,151 +570,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:23.481820+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535430+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-a-raiz-do-coracao-paulo-rocha-186f",
-      "source_id": "a-raiz-do-coracao-paulo-rocha",
-      "source_url": "https://theatrocirco.com/event/a-raiz-do-coracao-paulo-rocha/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "A Raiz do Coração - Paulo Rocha",
-      "title_raw": "A Raiz do Coração - Paulo Rocha",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-18",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-18",
-      "date_last": "2026-08-18",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-08-18",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "a-raiz-do-coracao-paulo-rocha|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:27.275081+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:6ce6a3333302edff",
-        "harmonized_at": "2026-03-27T12:28:49.517680+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.85
       }
     },
     {
@@ -1147,8 +587,8 @@
       "title": "O Último Mergulho",
       "title_raw": "O Último Mergulho",
       "subtitle": "João César Monteiro",
-      "description": "",
-      "description_short": "",
+      "description": "O Último Mergulho\nde João César Monteiro\n1992| Portugal | Cópia digital restaurada | 1h28\nO jovem Samuel contempla uma noite as águas do Tejo num cais deserto. É abordado por Eloi, um velho marinheiro reformado, que percebendo as intenções suicidas do jovem consegue impedi-lo de saltar para a água e leva-o a dar uma volta pela cidade. Lisboa vive os dias festivos de Junho e num\nnight club\nde má nota encontram Esperança, uma prostituta muda que é filha de Eloi, e duas outras “colegas da vida”, Rosa Bianca e Ivone. Os três estabelecem entre eles uma curiosa amizade e durante duas longas noites erram por Lisboa.\nProduzido por Paulo Branco,\nO Último Mergulho\né um dos episódios da série televisiva ‘Os Quatro Elementos’ em cuja produção participou a RTP. Subordinando-se ao elemento “água”, João César Monteiro assinou em 1992 esta deliciosa e mordaz história sobre uma inesperada amizade entre um jovem suicida, um velho marinheiro e três prostitutas.\ncom Fabienne Babe, Canto e Castro, Francesca Prandi, Rita Blanco",
+      "description_short": "O Último Mergulho\nde João César Monteiro\n1992| Portugal | Cópia digital restaurada | 1h28\nO jovem Samuel contempla uma noite as águas do Tejo num cais deserto. É abordado por Eloi, um velho marinheiro reformado, que percebendo as intenções suicidas do jovem consegue impedi-lo de saltar para a água…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -1254,10 +694,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:24.239509+00:00",
+        "scraped_at": "2026-03-28T00:12:14.738528+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:5b8877f0f9587a75",
-        "harmonized_at": "2026-03-27T11:38:31.696223+00:00",
+        "raw_data_hash": "sha256:49241dbeb5526ff9",
+        "harmonized_at": "2026-03-28T00:12:23.473177+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1265,151 +705,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:24.239509+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535436+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-vanitas-ou-o-outro-mundo-paulo-rocha-62cf",
-      "source_id": "vanitas-ou-o-outro-mundo-paulo-rocha",
-      "source_url": "https://theatrocirco.com/event/vanitas-ou-o-outro-mundo-paulo-rocha/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Vanitas ou O Outro Mundo - Paulo Rocha",
-      "title_raw": "Vanitas ou O Outro Mundo - Paulo Rocha",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-25",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-25",
-      "date_last": "2026-08-25",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-08-25",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 4.0,
-        "price_max": 4.0,
-        "price_display": "4€",
-        "price_raw": "4€",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "vanitas-ou-o-outro-mundo-paulo-rocha|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:26.555625+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:cd2afcd0b98bdf2e",
-        "harmonized_at": "2026-03-27T12:28:49.517566+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.85
       }
     },
     {
@@ -1422,8 +722,8 @@
       "title": "Visita Guiada ao Theatro Circo (26 e 27/08/2026)",
       "title_raw": "Visita Guiada ao Theatro Circo (26 e 27/08/2026)",
       "subtitle": null,
-      "description": "",
-      "description_short": "",
+      "description": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma estreita à vida cultural de Braga, o Theatro Circo reflete momentos marcantes da história da cidade e do país, sendo hoje um centro de referência na programação artística e cultural.",
+      "description_short": "Com mais de um século de história, o Theatro Circo é um dos teatros mais emblemáticos e majestosos de Portugal. Nesta visita guiada, revelam-se os bastidores e as histórias que deram forma a este espaço, oferecendo uma perspetiva única sobre o seu valor patrimonial e simbólico. Ligado de forma…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -1555,10 +855,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:26.861666+00:00",
+        "scraped_at": "2026-03-28T00:12:15.370771+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:006e2911c8383559",
-        "harmonized_at": "2026-03-27T11:38:31.696335+00:00",
+        "raw_data_hash": "sha256:d86b17a48f6ce6af",
+        "harmonized_at": "2026-03-28T00:12:23.473658+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1566,160 +866,10 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada"
         ],
-        "quality_score": 0.75,
-        "last_seen_at": "2026-03-27T11:33:26.861666+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535442+00:00"
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "theatro-circo-2026-08-visita-noturna-ao-theatro-circo-1d17",
-      "source_id": "visita-noturna-ao-theatro-circo-2",
-      "source_url": "https://theatrocirco.com/event/visita-noturna-ao-theatro-circo-2/",
-      "venue_id": "theatro-circo",
-      "space_id": null,
-      "title": "Visita Noturna ao Theatro Circo",
-      "title_raw": "Visita Noturna ao Theatro Circo",
-      "subtitle": null,
-      "description": "",
-      "description_short": "",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "artes-palco",
-      "category": "teatro",
-      "subcategory": null,
-      "tags": [
-        "artes de palco",
-        "lgp",
-        "sessao-unica"
-      ],
-      "categories_raw": [
-        "Teatro"
-      ],
-      "dates": [
-        {
-          "date": "2026-08-27",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        },
-        {
-          "date": "2026-08-28",
-          "time_start": "21:30",
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-08-27",
-      "date_last": "2026-08-28",
-      "total_sessions": 2,
-      "is_ongoing": false,
-      "date_open": "2026-08-28",
-      "date_close": null,
-      "event_status": "unica-sessao",
-      "is_premiere": false,
-      "is_national_premiere": false,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": false,
-      "festival_name": null,
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": null,
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 1.0,
-        "price_max": 18.0,
-        "price_display": "1€ – 18€",
-        "price_raw": "3,5€ adultos | Gratuito/1€ menores 18 anos",
-        "has_discounts": false,
-        "discount_notes": null,
-        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
-      },
-      "accessibility": {
-        "has_sign_language": true,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": ""
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://theatrocirco.com/wp-content/themes/theatrocirco/share-image.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "visita-noturna-ao-theatro-circo|2026-08",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "theatro-circo"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T12:28:25.117718+00:00",
-        "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:bc44be8137f1fd52",
-        "harmonized_at": "2026-03-27T12:28:49.517336+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.6
+        "quality_score": 0.9
       }
     },
     {
@@ -1732,8 +882,8 @@
       "title": "As Bodas de Deus",
       "title_raw": "As Bodas de Deus",
       "subtitle": "João César Monteiro",
-      "description": "",
-      "description_short": "",
+      "description": "As Bodas de Deus\nde João César Monteiro\n1999 | Portugal | Cópia digital restaurada | 2h30\nLonga-metragem que encerra a trilogia de João César Monteiro dedicada a João de Deus, figura central de\nRecordações da Casa Amarela\n(1989) e\nA Comédia de Deus\n(1995). Uma comédia de humor satírico e provocante onde são contadas as peripécias do marginal João de Deus, após um encontro afortunado com um enviado de Deus.\ncom João César Monteiro, Joana Azevedo, Rita Durão, Manuela de Freitas",
+      "description_short": "As Bodas de Deus\nde João César Monteiro\n1999 | Portugal | Cópia digital restaurada | 2h30\nLonga-metragem que encerra a trilogia de João César Monteiro dedicada a João de Deus, figura central de\nRecordações da Casa Amarela\n(1989) e\nA Comédia de Deus\n(1995). Uma comédia de humor satírico e provocante…",
       "language_of_performance": null,
       "language_notes": null,
       "domain": "artes-palco",
@@ -1839,10 +989,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:33:29.152621+00:00",
+        "scraped_at": "2026-03-28T00:12:16.006852+00:00",
         "scraper_id": "theatro-circo",
-        "raw_data_hash": "sha256:13743ecc2ddfee38",
-        "harmonized_at": "2026-03-27T11:38:31.696505+00:00",
+        "raw_data_hash": "sha256:0e93a082848b9ac6",
+        "harmonized_at": "2026-03-28T00:12:23.473971+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1850,14 +1000,11 @@
         "is_active": true,
         "extra_flags": null,
         "quality_warnings": [
-          "descricao ausente ou demasiado curta (< 30 chars)",
           "subcategoria nao determinada",
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.7,
-        "last_seen_at": "2026-03-27T11:33:29.152621+00:00",
-        "not_seen_since": "2026-03-27T12:28:49.535448+00:00"
+        "quality_score": 0.85
       }
     }
   ]
