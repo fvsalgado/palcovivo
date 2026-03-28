@@ -7767,10 +7767,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T00:21:16.480856+00:00",
+        "scraped_at": "2026-03-28T01:33:00.560487+00:00",
         "scraper_id": "tndm",
-        "raw_data_hash": "sha256:dd276f1926abb831",
-        "harmonized_at": "2026-03-28T00:21:31.303577+00:00",
+        "raw_data_hash": "sha256:611d0b6942f87596",
+        "harmonized_at": "2026-03-28T01:33:15.848188+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

@@ -1,6 +1,140 @@
 [
   {
     "schema_version": "1.0",
+    "id": "tndm-2025-09-oficinas-de-teatro-aa76",
+    "source_id": "oficinas-de-teatro",
+    "source_url": "https://www.tndm.pt/pt/programacao/oficinas-e-formacao/oficinas-de-teatro/",
+    "venue_id": "tndm",
+    "space_id": null,
+    "title": "Oficinas de Teatro",
+    "title_raw": "Oficinas de Teatro",
+    "subtitle": null,
+    "description": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de envolvimento de alunas e alunos a partir das suas linguagens artísticas e das referências culturais locais.\nPara os jovens participantes, este projeto tem proporcionado um espaço e um tempo em que o teatro se transforma em pertença e liberdade, intrinsecamente conectado com as suas vidas.\nAs oficinas permitem ainda fomentar as relações entre jovens, entre jovens e artista, e também com a comunidade escolar. No final do processo de trabalho, em cada localidade, realiza-se uma partilha informal na escola e/ou no teatro.\nAo longo do ano letivo, em cada município, serão ainda desenhadas atividades de envolvimento com a comunidade escolar e no território, como workshops, visitas e assistências a espetáculos.",
+    "description_short": "Como se cria um grupo de teatro na escola?\nEsse é o mote do projeto Oficinas de Teatro, que desde 2023 pretende fomentar relações entre a escola, os equipamentos culturais e as práticas artísticas de cada local.\nO foco é o teatro escolar. Cada artista dinamiza, de forma regular, atividades de…",
+    "language_of_performance": "pt",
+    "language_notes": null,
+    "domain": "formacao",
+    "category": "oficinas",
+    "subcategory": "oficina-criativa",
+    "tags": [
+      "formação & participação",
+      "oficina criativa",
+      "sessao-unica"
+    ],
+    "categories_raw": [
+      "Oficina"
+    ],
+    "dates": [
+      {
+        "date": "2025-09-01",
+        "time_start": null,
+        "time_end": null,
+        "duration_minutes": null,
+        "is_cancelled": false,
+        "is_sold_out": false,
+        "notes": null
+      }
+    ],
+    "date_first": "2025-09-01",
+    "date_last": "2025-09-01",
+    "total_sessions": 1,
+    "is_ongoing": false,
+    "date_open": "2025-09-01",
+    "date_close": "2025-09-01",
+    "event_status": "unica-sessao",
+    "is_premiere": false,
+    "is_national_premiere": false,
+    "is_reprise": false,
+    "production_origin": "nacional",
+    "is_festival": false,
+    "festival_name": null,
+    "festival_id": null,
+    "is_multi_venue": false,
+    "multi_venue_ids": [],
+    "series_name": null,
+    "series_edition": null,
+    "audience": {
+      "label": null,
+      "label_raw": "",
+      "age_min": null,
+      "age_max": null,
+      "is_family": false,
+      "is_educational": false,
+      "school_level": null,
+      "notes": null
+    },
+    "price": {
+      "is_free": false,
+      "price_min": null,
+      "price_max": null,
+      "price_display": null,
+      "price_raw": null,
+      "ticketing_url": "https://tndm.bol.pt/Projecto/EntidadesAderentes/3-teatro_nacional_d_mariaii"
+    },
+    "accessibility": {
+      "has_sign_language": false,
+      "has_audio_description": false,
+      "has_subtitles": false,
+      "subtitle_language": null,
+      "is_relaxed_performance": false,
+      "wheelchair_accessible": true,
+      "notes": null
+    },
+    "credits": {
+      "company": null,
+      "director": null,
+      "conductor": null,
+      "choreographer": null,
+      "cast": [],
+      "creative_team": [],
+      "musicians": [],
+      "credits_raw": "ARRAIOLOS\nartista\nInês Leite (TEatroensaio)\nTORRÃO, ALCÁCER DO SAL\nartista\nMiguel Magalhães\nparceria com\nPlano Nacional das Artes\nparceiros locais\nCâmara Municipal de Alcácer do Sal e Convento da Terra; Câmara Municipal de Arraiolos\ndirigido a\nalunos dos 2.º e 3.º ciclos"
+    },
+    "work": {
+      "original_title": null,
+      "playwright": null,
+      "composer": null,
+      "choreographer": null,
+      "year_created": null,
+      "country_of_origin": null,
+      "genre_original": null
+    },
+    "media": {
+      "cover_image": "https://www.tndm.pt/fotos/programacao/eventos/oficinas_de_teatro_2026_1920_4122637269309b060312a.png",
+      "cover_image_local": null,
+      "thumbnail": null,
+      "trailer_url": null,
+      "gallery": []
+    },
+    "dedup": {
+      "fingerprint": "oficinas-de-teatro|2025-09",
+      "duplicate_of": null,
+      "is_canonical": true,
+      "seen_at_venues": [
+        "tndm"
+      ]
+    },
+    "pipeline": {
+      "scraped_at": "2026-03-28T01:32:52.403813+00:00",
+      "scraper_id": "tndm",
+      "raw_data_hash": "sha256:058323042e30679d",
+      "harmonized_at": "2026-03-28T01:33:15.841807+00:00",
+      "validated": true,
+      "validation_errors": [],
+      "manually_edited": false,
+      "manually_edited_at": null,
+      "is_active": true,
+      "extra_flags": null,
+      "quality_warnings": [
+        "preco nao determinado (nem entrada livre nem valor)",
+        "faixa etaria nao determinada",
+        "duration_minutes nao preenchida"
+      ],
+      "quality_score": 0.8
+    }
+  },
+  {
+    "schema_version": "1.0",
     "id": "tndm-2026-03-filodemo-8869",
     "source_id": "filodemo",
     "source_url": "https://www.tndm.pt/pt/programacao/espetaculos/filodemo/",
@@ -347,10 +481,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:10.813775+00:00",
+      "scraped_at": "2026-03-28T01:32:54.446710+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:4f8b7a3eaf7b1f94",
-      "harmonized_at": "2026-03-28T00:21:31.301413+00:00",
+      "raw_data_hash": "sha256:386be614ff763245",
+      "harmonized_at": "2026-03-28T01:33:15.845859+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -593,10 +727,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:12.695053+00:00",
+      "scraped_at": "2026-03-28T01:32:56.471014+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:06fd1225f6ea57fb",
-      "harmonized_at": "2026-03-28T00:21:31.302413+00:00",
+      "raw_data_hash": "sha256:6286073811809750",
+      "harmonized_at": "2026-03-28T01:33:15.846997+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -815,10 +949,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:14.599910+00:00",
+      "scraped_at": "2026-03-28T01:32:58.496594+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:5610327d09951405",
-      "harmonized_at": "2026-03-28T00:21:31.303041+00:00",
+      "raw_data_hash": "sha256:e2b25ab70d21e95b",
+      "harmonized_at": "2026-03-28T01:33:15.847655+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -971,10 +1105,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:16.480856+00:00",
+      "scraped_at": "2026-03-28T01:33:00.560487+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:dd276f1926abb831",
-      "harmonized_at": "2026-03-28T00:21:31.303577+00:00",
+      "raw_data_hash": "sha256:611d0b6942f87596",
+      "harmonized_at": "2026-03-28T01:33:15.848188+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1112,10 +1246,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:18.390728+00:00",
+      "scraped_at": "2026-03-28T01:33:02.621980+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:4180cb989ea2aa84",
-      "harmonized_at": "2026-03-28T00:21:31.303946+00:00",
+      "raw_data_hash": "sha256:7df135c686ea203a",
+      "harmonized_at": "2026-03-28T01:33:15.848548+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1250,10 +1384,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:20.260869+00:00",
+      "scraped_at": "2026-03-28T01:33:04.599977+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:b494ca6168198506",
-      "harmonized_at": "2026-03-28T00:21:31.304373+00:00",
+      "raw_data_hash": "sha256:a1c68ec81673d58d",
+      "harmonized_at": "2026-03-28T01:33:15.848966+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1469,10 +1603,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:22.149290+00:00",
+      "scraped_at": "2026-03-28T01:33:06.505088+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:7799b5652fed0a10",
-      "harmonized_at": "2026-03-28T00:21:31.305182+00:00",
+      "raw_data_hash": "sha256:82532dada8bdf189",
+      "harmonized_at": "2026-03-28T01:33:15.849793+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1612,10 +1746,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:24.002137+00:00",
+      "scraped_at": "2026-03-28T01:33:08.465271+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:c9005377b67aed1d",
-      "harmonized_at": "2026-03-28T00:21:31.305755+00:00",
+      "raw_data_hash": "sha256:c757521eb02763df",
+      "harmonized_at": "2026-03-28T01:33:15.850266+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1759,10 +1893,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:25.882351+00:00",
+      "scraped_at": "2026-03-28T01:33:10.435949+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:e94e073908c13e50",
-      "harmonized_at": "2026-03-28T00:21:31.306226+00:00",
+      "raw_data_hash": "sha256:c8b773c767500a0a",
+      "harmonized_at": "2026-03-28T01:33:15.850717+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -1897,10 +2031,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:27.859826+00:00",
+      "scraped_at": "2026-03-28T01:33:12.373198+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:d3bcd414b4601378",
-      "harmonized_at": "2026-03-28T00:21:31.306675+00:00",
+      "raw_data_hash": "sha256:e0616ad40db13e56",
+      "harmonized_at": "2026-03-28T01:33:15.851165+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
@@ -2070,10 +2204,10 @@
       ]
     },
     "pipeline": {
-      "scraped_at": "2026-03-28T00:21:29.793198+00:00",
+      "scraped_at": "2026-03-28T01:33:14.337204+00:00",
       "scraper_id": "tndm",
-      "raw_data_hash": "sha256:9ca5a2bcb50ca0ab",
-      "harmonized_at": "2026-03-28T00:21:31.306998+00:00",
+      "raw_data_hash": "sha256:d784e15d02a085f0",
+      "harmonized_at": "2026-03-28T01:33:15.851486+00:00",
       "validated": true,
       "validation_errors": [],
       "manually_edited": false,
