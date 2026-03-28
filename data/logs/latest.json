@@ -1,12 +1,12 @@
 {
-  "run_at": "2026-03-28T02:07:19.621219+00:00Z",
+  "run_at": "2026-03-28T07:59:35.690143+00:00Z",
   "duration_seconds": 0.3,
   "summary": {
     "venues_processed": 4,
-    "total_scraped": 1851,
-    "total_valid": 1795,
-    "total_invalid": 56,
-    "total_after_dedup": 1084,
+    "total_scraped": 1843,
+    "total_valid": 1745,
+    "total_invalid": 98,
+    "total_after_dedup": 1082,
     "total_errors": 0,
     "avg_credibility": 0.902
   },
@@ -49,7 +49,7 @@
         "subcategory": 6.8,
         "tags": 100.0,
         "price_display": 0.0,
-        "ticketing_url": 6.1,
+        "ticketing_url": 5.3,
         "credits_any": 0.0,
         "audience_age": 0.0,
         "duration_minutes": 0.0,
@@ -107,12 +107,19 @@
   "venues": [
     {
       "venue_id": "ccb",
-      "scraped": 819,
-      "valid": 819,
-      "invalid": 0,
+      "scraped": 811,
+      "valid": 769,
+      "invalid": 42,
       "errors": [],
-      "cache_hit": false,
-      "merge_stats": {},
+      "cache_hit": true,
+      "merge_stats": {
+        "substituted": 765,
+        "kept_existing": 1,
+        "new": 3,
+        "tombstoned": 2,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
       "venue_name": "Centro Cultural de Belém",
       "avg_credibility_score": 0.85
     },
@@ -122,8 +129,15 @@
       "valid": 896,
       "invalid": 56,
       "errors": [],
-      "cache_hit": false,
-      "merge_stats": {},
+      "cache_hit": true,
+      "merge_stats": {
+        "substituted": 896,
+        "kept_existing": 0,
+        "new": 0,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
       "venue_name": "Culturgest",
       "avg_credibility_score": 0.926
     },
@@ -133,8 +147,15 @@
       "valid": 68,
       "invalid": 0,
       "errors": [],
-      "cache_hit": false,
-      "merge_stats": {},
+      "cache_hit": true,
+      "merge_stats": {
+        "substituted": 0,
+        "kept_existing": 68,
+        "new": 0,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
       "venue_name": "Theatro Circo",
       "avg_credibility_score": 0.991
     },
@@ -144,8 +165,15 @@
       "valid": 12,
       "invalid": 0,
       "errors": [],
-      "cache_hit": false,
-      "merge_stats": {},
+      "cache_hit": true,
+      "merge_stats": {
+        "substituted": 12,
+        "kept_existing": 0,
+        "new": 0,
+        "tombstoned": 0,
+        "gaps_filled": 0,
+        "skipped_old": 0
+      },
       "venue_name": "Teatro Nacional D. Maria II",
       "avg_credibility_score": 0.917
     }

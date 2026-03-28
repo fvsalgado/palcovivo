@@ -123,10 +123,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.332985+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037812+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:2fdf0f10d28adcfb",
-        "harmonized_at": "2026-03-28T01:23:59.029102+00:00",
+        "raw_data_hash": "sha256:72cdf04ddb44e78b",
+        "harmonized_at": "2026-03-28T07:58:51.028760+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -261,10 +261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.333007+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037835+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:945c322a5860d3a7",
-        "harmonized_at": "2026-03-28T01:23:59.029514+00:00",
+        "raw_data_hash": "sha256:0fe28d06637d222a",
+        "harmonized_at": "2026-03-28T07:58:51.029199+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -399,10 +399,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.333032+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037858+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:08d1f59fb0ebae2b",
-        "harmonized_at": "2026-03-28T01:23:59.029867+00:00",
+        "raw_data_hash": "sha256:56b7bc51a4dae418",
+        "harmonized_at": "2026-03-28T07:58:51.029559+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -555,7 +555,9 @@
           "faixa etaria nao determinada",
           "duration_minutes nao preenchida"
         ],
-        "quality_score": 0.6
+        "quality_score": 0.6,
+        "last_seen_at": "2026-03-28T01:22:09.333055+00:00",
+        "not_seen_since": "2026-03-28T07:58:51.086601+00:00"
       }
     },
     {
@@ -676,10 +678,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-28T01:22:09.333082+00:00",
+        "scraped_at": "2026-03-27T10:57:30.037880+00:00",
         "scraper_id": "ccb",
-        "raw_data_hash": "sha256:ca68e3a9f37fc88e",
-        "harmonized_at": "2026-03-28T01:23:59.030623+00:00",
+        "raw_data_hash": "sha256:29261b9c62dc55cd",
+        "harmonized_at": "2026-03-28T07:58:51.029916+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
