@@ -1,7 +1,278 @@
 {
   "month": "2026-02",
-  "total": 3,
+  "total": 9,
   "events": [
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-pedra-a813",
+      "source_id": "pedra-projeto-educativo-em-danca-de-repertorio-para-adolescentes",
+      "source_url": "https://www.culturgest.pt/pt/programacao/pedra-projeto-educativo-em-danca-de-repertorio-para-adolescentes/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "P.E.D.R.A",
+      "title_raw": "P.E.D.R.A.",
+      "subtitle": "Projeto Educativo em Dança de Repertório para Adolescentes",
+      "description": "P.E.D.R.A. é uma iniciativa de participação artística promovida pela Culturgest, o Centro Cultural de Lagos e o Teatro-Cine de Torres Vedras, dirigida a jovens entre os 15 e os 18 anos, idealmente com experiência prévia em dança. Através da transmissão de repertório coreográfico, o projeto promove o contacto direto com nomes e obras emblemáticas da dança contemporânea portuguesa, estimulando a expressão artística juvenil e valorizando o património coreográfico nacional.\nAssente numa abordagem pedagógica que articula aprendizagem técnica, criação e interpretação, o P.E.D.R.A. propõe um espaço de encontro entre gerações, onde os participantes têm acesso a metodologias profissionais e a processos criativos reconhecidos, desenvolvendo competências artísticas, pensamento crítico e consciência do contexto cultural em que se inserem.\nA edição 2025–2026 será dedicada à obra de Rui Horta, figura incontornável da dança contemporânea, que orientará o projeto em articulação com diversos assistentes, todos profissionais com vasta experiência, em cada uma das cidades onde o projeto terá lugar: Teresa Alves da Silva, Bruno Duarte e Margarida Belo Costa.\nO processo criativo desenvolve-se em 3 cidades diferentes, Lisboa, Torres Vedras e Lagos, com 3 grupos de jovens que, de fevereiro a final de maio, vão recriar trechos de várias obras do coreógrafo, que serão organizadas numa só, no final do processo. Um mosaico criativo adaptado aos intérpretes locais e que representa uma descoberta do repertório de Rui Horta.\nA participação nestes workshops é aberta a quem tem interesse em participar no projeto, no entanto, esta participação não garante lugar no projeto, dada a sua lotação limitada.",
+      "description_short": "P.E.D.R.A. é uma iniciativa de participação artística promovida pela Culturgest, o Centro Cultural de Lagos e o Teatro-Cine de Torres Vedras, dirigida a jovens entre os 15 e os 18 anos, idealmente com experiência prévia em dança. Através da transmissão de repertório coreográfico, o projeto promove…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "participacao",
+      "subcategory": null,
+      "tags": [
+        "entrada-livre",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Participação"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-01",
+          "time_start": "14:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-01",
+      "date_last": "2026-02-01",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-01",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": true,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": true,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Entrada livre",
+        "price_raw": "Gratuito",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://docs.google.com/forms/d/e/1FAIpQLSc1V51dYL1ptdOC-nToiot8nvCSnbKMBnqKc9rbDS5F0JabDQ/viewform?usp=header"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coprogramação: Culturgest, Centro Cultural de Lagos, Teatro-Cine de Torres Vedras"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/38/26/38268a64-114c-4f39-898a-bc9599c8ef32/pedra_cred_patricia_blazquez_1-copia.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "pedra|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T14:58:08.242044+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:f452e654259447ce",
+        "harmonized_at": "2026-03-28T15:27:43.337448+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-urbs-o-corpo-da-cidade-139f",
+      "source_id": "mario-alves-salvador-rueda-urbs-o-corpo-da-cidade",
+      "source_url": "https://www.culturgest.pt/pt/programacao/mario-alves-salvador-rueda-urbs-o-corpo-da-cidade/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Urbs: O Corpo da Cidade",
+      "title_raw": "Urbs: O Corpo da Cidade",
+      "subtitle": "Mário Alves, Salvador Rueda",
+      "description": "Que corpo tem uma cidade? De que elementos se compõe, como evolui e se transforma? A forma como os espaços e sistemas urbanos se estruturam afeta a sociedade, a economia e os direitos de cada coletivo? Hoje enfrentamos uma complexidade urbana difícil de perceber e de gerir.  Décadas de crescimento urbano, concentração de empresas e grandes centros comerciais, especulação financeira e habitação precária estão a recompor a função e a mobilidade da cidade e os próprios direitos urbanos. A nova natureza da cidade surge como uma soma de espaços e experiências variadas, hiperconectadas, mas muitas vezes sem consistência. Diante destes desafios, como podemos reorganizar as estruturas urbanas para tornar o dia a dia mais vivido e partilhado? Abordamos estas questões com o urbanista Salvador Rueda, da Fundación de Ecologia Urbana y Territorial, Barcelona, e o especialista nas áreas dos transportes e mobilidade urbana Mário Alves.",
+      "description_short": "Que corpo tem uma cidade? De que elementos se compõe, como evolui e se transforma? A forma como os espaços e sistemas urbanos se estruturam afeta a sociedade, a economia e os direitos de cada coletivo? Hoje enfrentamos uma complexidade urbana difícil de perceber e de gerir.  Décadas de crescimento…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-04",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-04",
+      "date_last": "2026-02-04",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-04",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_w64p6"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "urbs-o-corpo-da-cidade|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:45.289597+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:53e67c2d2163ddd0",
+        "harmonized_at": "2026-03-28T15:27:43.375688+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
     {
       "schema_version": "1.0",
       "id": "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
@@ -133,10 +404,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:50.890214+00:00",
+        "scraped_at": "2026-03-28T15:27:43.307965+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-28T07:58:51.953625+00:00",
+        "raw_data_hash": "sha256:750adc7253f1ee99",
+        "harmonized_at": "2026-03-28T15:27:43.446122+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -151,6 +422,575 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-lander-patrick-6aee",
+      "source_id": "lander-patrick-wonderlandi",
+      "source_url": "https://www.culturgest.pt/pt/programacao/lander-patrick-wonderlandi/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Lander Patrick",
+      "title_raw": "Lander Patrick",
+      "subtitle": "WonderLandi",
+      "description": "A música é o epicentro de\nWonderLandi\n. Tudo se move à volta dela. O ritmo e a melodia formam a matriz coreográﬁca, que orquestra corpos, objetos, textos e movimentos.\nWonderLandi\né uma homenagem à música, este fenómeno misterioso que assombra seres humanos e animais. Haveria civilização sem ela? Ao longo dos tempos, os poderes políticos, as instituições religiosas e os movimentos culturais e ideológicos têm explorado a música como um poderoso vetor de difusão de mensagens e para despertar emoções. A música acompanha ritos religiosos, batalhas, festas e revoluções. Como cantou Madonna, “Music makes people come together”. Mas a música também tem esse efeito agregador na natureza e está presente nos rituais de acasalamento das aves, na comunicação das baleias, na memória dos elefantes, na coordenação das abelhas e na vida social dos primatas.\nA música é capaz de nos hipnotizar, de ativar estados de espírito e de incitar à ação.\nWonderLandi\npretende evocar o poder da música, a sua omnipresença na natureza e a forma como é percebida e celebrada em diferentes partes do mundo, ao longo da História.",
+      "description_short": "A música é o epicentro de\nWonderLandi\n. Tudo se move à volta dela. O ritmo e a melodia formam a matriz coreográﬁca, que orquestra corpos, objetos, textos e movimentos.\nWonderLandi\né uma homenagem à música, este fenómeno misterioso que assombra seres humanos e animais. Haveria civilização sem ela?…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "danca",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "descontos"
+      ],
+      "categories_raw": [
+        "Dança",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-05",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-06",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-07",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-05",
+      "date_last": "2026-02-07",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": "2026-02-05",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 16.0,
+        "price_max": 16.0,
+        "price_display": "16€",
+        "price_raw": "16€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/99234"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção artística, concepção, coreografia: Lander Patrick | Assistência à coreografia: Lewis Seivwright | Interpretação: Cacá Otto Reuss, João Calado, Lander Patrick, Lewis Seivwright, Marti Forcada, Melissa Sousa, Nara Gonçalves e Suevia Rojo | Figurinos: Fábio Rocha de Carvalho | Desenho de luz: Rui Daniel | Desenho de som: Mestre André | Assistência técnica e de produção: Fábio Rocha de Carvalho | Produção: Associação Cultural Sinistra | Gestão administrativa e financeira: Patrícia Duarte | Produção executiva: Sara Alexandra, André Filipe Neto | Difusão: Inês Le Gué | jardin&cour | Coprodução: Cineteatro Curvo Semedo, Culturgest, One Dance Festival (BG), Tandem Scène Nationale (FR), Theatro Circo, Teatro-Cine de Pombal, Teatro Municipal Baltazar Dias, Teatro Municipal do Porto | Residência de coprodução: O Espaço do Tempo | Apoio à criação: CAMPUS, Casa Varela, Estúdios Victor Córdon / Opart, Pro.dança | Agradecimento: Patrícia Soares"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/8d/ed/8ded7835-baf3-4948-90f6-0609e28cb46e/_jop7555_cred_joao_octavio_peixoto.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "lander-patrick|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:47.193619+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:7a5a9cf6d72d4d07",
+        "harmonized_at": "2026-03-28T15:27:43.376092+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-diamanda-galas-3a22",
+      "source_id": "diamanda-galas",
+      "source_url": "https://www.culturgest.pt/pt/programacao/diamanda-galas/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Diamanda Galás",
+      "title_raw": "Diamanda Galás",
+      "subtitle": "Cabeça, tronco e membros",
+      "description": "É uma tarefa impossível e infecunda tentar resumir a vida e obra de Diamanda Galás num pequeno texto sem recorrer a uma adjetivação hiperbólica e poderosa. Porque a sua voz, maior que todas as outras e que nos assombra continuamente há mais de quarenta anos, é tudo isso. Com um timbre inumano e as suas performances entre o ritual e o político, a artista grega-norte-americana tem sido um símbolo da inquietude e inconformismo, cruzando o experimental com o clássico, o grito e o silêncio, o sagrado e o profano. Uma arte de extremos que olha para a realidade de modo verdadeiro, cru e ensanguentado, enfrentando temas de sofrimento, exclusão e resistência.\nEm palco, Diamanda Galás é pura energia, voz e música sem concessões, numa explosão de emoções vestidas de protesto, mostrando-nos que a arte pode ser simultaneamente a ferida e o curativo. Depois de uma longa ausência dos nossos palcos, Diamanda Galás está de volta, com o estrondo e a urgência que necessitamos. Concerto absolutamente imperdível para quem quer olhar de frente a luz trémula da nossa humanidade.",
+      "description_short": "É uma tarefa impossível e infecunda tentar resumir a vida e obra de Diamanda Galás num pequeno texto sem recorrer a uma adjetivação hiperbólica e poderosa. Porque a sua voz, maior que todas as outras e que nos assombra continuamente há mais de quarenta anos, é tudo isso. Com um timbre inumano e as…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-11",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-11",
+      "date_last": "2026-02-11",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-11",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 45.0,
+        "price_max": 45.0,
+        "price_display": "45€",
+        "price_raw": "45€ (preço único)",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/pt/evento/diamanda-galas-98085"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Voz, piano: Diamanda Galás | Desenho de luz e cenário: Valentin Delaunay | Técnico de som: Daniel Neumann"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/c5/e3/c5e3bb59-9185-4cb5-b280-9de046220a98/img_0864-diamanda-by-austin-young-1.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "diamanda-galas|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:49.105830+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:cac5a7ec6024236b",
+        "harmonized_at": "2026-03-28T15:27:43.376592+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-bruno-pernadas-1069",
+      "source_id": "bruno-pernadas-unlikely-maybe",
+      "source_url": "https://www.culturgest.pt/pt/programacao/bruno-pernadas-unlikely-maybe/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Bruno Pernadas",
+      "title_raw": "Bruno Pernadas",
+      "subtitle": "unlikely, maybe",
+      "description": "Foi em plena pandemia que Bruno Pernadas nos entregou\nPrivate Reasons\n— o disco e a sua estreia no palco da Culturgest. Foi a última edição de originais do músico e compositor lisboeta, que assim encerrava uma longa jornada pop, feita em três discos, em modo trilogia, entre 2014 e 2021. Cinco anos depois, chegamos até\nunlikely, maybe\ne a um certo recomeço de algumas ideias continuamente transversais ao universo Pernadas. Primeiro, uma inquietude no mapeamento de géneros, onde se passeia ludicamente entre indie, pop ou jazz, passando pelo dub ou a space music. Depois, a inevitável fusão com que tudo se intersecciona, mostrando uma agilidade na composição que permanentemente nos surpreende e contagia. E ainda, uma arte suprema em dobrar o tempo, criando música que se inspira em mais de cinco décadas de história, recompondo novas memórias e, simultaneamente, criando um futurismo muito próprio. E porque há um novo futuro com novos sons, há também uma banda com novas caras que traz a música de Bruno Pernadas para mais uma noite de estreia e celebração na Culturgest.",
+      "description_short": "Foi em plena pandemia que Bruno Pernadas nos entregou\nPrivate Reasons\n— o disco e a sua estreia no palco da Culturgest. Foi a última edição de originais do músico e compositor lisboeta, que assim encerrava uma longa jornada pop, feita em três discos, em modo trilogia, entre 2014 e 2021. Cinco anos…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "descontos",
+        "estreia",
+        "música"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-19",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-20",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-19",
+      "date_last": "2026-02-20",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-02-19",
+      "date_close": null,
+      "event_status": "estreia",
+      "is_premiere": true,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 18.0,
+        "price_max": 18.0,
+        "price_display": "18€",
+        "price_raw": "18€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://www.ticketline.pt/evento/BRUNO-PERNADAS-unlikely-maybe-100107"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção musical, guitarras, sintetizadores, voz: Bruno Pernadas | Baixo elétrico, contrabaixo: António Quintino | Bateria: João Correia | Rhodes, sintetizadores: José Diogo Martins | Trompete, flugelhorn, voz: Jéssica Pina | Saxofone alto, voz: Maria João Leite | Flauta, voz: Teresa Costa | Voz, guitarras: Afonso Cabral | Voz (convidada): Leonor Arnaut"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/67/0b/670b8cf2-02b8-43c5-a23e-5f8309ec990b/bruno_pernadas_solo_creditos_fabiana_tavares_1.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "bruno-pernadas|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:50.989478+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:9dae6b1dea6de39e",
+        "harmonized_at": "2026-03-28T15:27:43.377051+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
+      "source_id": "fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade",
+      "source_url": "https://www.culturgest.pt/pt/programacao/fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Civitas: Os Fluxos da Cidade",
+      "title_raw": "Civitas: Os Fluxos da Cidade",
+      "subtitle": "Fátima Vieira, João Teixeira Lopes",
+      "description": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos que ocupam, mas sim por uma vasta trama de relações. A cidade é um forte conjunto de milhões de laços – laços frágeis, porque humanos.\nO que fortalece, ou por outro lado, o que enfraquece, os laços entre a população numa cidade? Que elementos e que condições permitem formar comunidades urbanas heterogéneas, dinâmicas e tolerantes, sobretudo, perante a atual crise do urbanismo e o desigual acesso à habitação e à própria cidade?\nConversam sobre este cruzamento Fátima Vieira, Vice-Reitora para a Cultura da Universidade do Porto e especialista em estudos sobre a utopia, e o sociólogo João Teixeira Lopes, coordenador do Observatório Social de Vila nova de Gaia e do Observatório da Arte e Cultura no Ensino Superior.",
+      "description_short": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-25",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-25",
+      "date_last": "2026-02-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_lp45n"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "civitas-os-fluxos-da-cidade|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:52.884116+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:7b6ae6ca998de201",
+        "harmonized_at": "2026-03-28T15:27:43.377339+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
       }
     },
     {
@@ -433,10 +1273,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:39.846466+00:00",
+        "scraped_at": "2026-03-28T15:20:54.741356+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-28T07:58:51.848471+00:00",
+        "raw_data_hash": "sha256:00bdd4db5a8cef7b",
+        "harmonized_at": "2026-03-28T15:27:43.377800+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,

@@ -1,6 +1,6 @@
 {
   "month": "2026-04",
-  "total": 64,
+  "total": 63,
   "events": [
     {
       "schema_version": "1.0",
@@ -3072,10 +3072,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:26.028234+00:00",
+        "scraped_at": "2026-03-28T14:57:25.293629+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6720610592e2b59e",
-        "harmonized_at": "2026-03-28T07:58:51.510250+00:00",
+        "raw_data_hash": "sha256:fe4db854d78f3c99",
+        "harmonized_at": "2026-03-28T15:27:43.327545+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -3218,10 +3218,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:27.964014+00:00",
+        "scraped_at": "2026-03-28T14:57:27.181445+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f709d38f1c126b5a",
-        "harmonized_at": "2026-03-28T07:58:51.510748+00:00",
+        "raw_data_hash": "sha256:5955d07218f41479",
+        "harmonized_at": "2026-03-28T15:27:43.328094+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -5259,10 +5259,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:29.925262+00:00",
+        "scraped_at": "2026-03-28T14:57:29.030664+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6e1bb0eace11c3e9",
-        "harmonized_at": "2026-03-28T07:58:51.511353+00:00",
+        "raw_data_hash": "sha256:eb408e51c031fda6",
+        "harmonized_at": "2026-03-28T15:27:43.328642+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6086,10 +6086,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:31.811523+00:00",
+        "scraped_at": "2026-03-28T14:57:30.897036+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:63ad437cf6cd87d6",
-        "harmonized_at": "2026-03-28T07:58:51.511765+00:00",
+        "raw_data_hash": "sha256:908fc4d0060a04c8",
+        "harmonized_at": "2026-03-28T15:27:43.329065+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6643,10 +6643,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:34.205364+00:00",
+        "scraped_at": "2026-03-28T14:57:32.739596+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:3d6c8a5fa736d9dd",
-        "harmonized_at": "2026-03-28T07:58:51.512271+00:00",
+        "raw_data_hash": "sha256:dae093f64fc57485",
+        "harmonized_at": "2026-03-28T15:27:43.329546+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -6778,10 +6778,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:36.696184+00:00",
+        "scraped_at": "2026-03-28T14:57:34.622396+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a534565ef4ebee30",
-        "harmonized_at": "2026-03-28T07:58:51.512675+00:00",
+        "raw_data_hash": "sha256:6e3cc07cdebadc90",
+        "harmonized_at": "2026-03-28T15:27:43.329964+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -7408,8 +7408,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -7473,15 +7473,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:39.117167+00:00",
+        "scraped_at": "2026-03-28T14:57:36.465515+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a7aa1bdfbe965ec9",
-        "harmonized_at": "2026-03-28T07:58:51.513033+00:00",
+        "raw_data_hash": "sha256:635c53f88f59542f",
+        "harmonized_at": "2026-03-28T15:27:43.330299+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8610,10 +8610,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:40.993888+00:00",
+        "scraped_at": "2026-03-28T14:57:38.318826+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:7421d4b7d14f65bc",
-        "harmonized_at": "2026-03-28T07:58:51.513453+00:00",
+        "raw_data_hash": "sha256:650eec6e66d88480",
+        "harmonized_at": "2026-03-28T15:27:43.330714+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -8770,10 +8770,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:42.917746+00:00",
+        "scraped_at": "2026-03-28T14:57:40.229344+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:32fc9aa67e30048b",
-        "harmonized_at": "2026-03-28T07:58:51.513916+00:00",
+        "raw_data_hash": "sha256:fd18d317989d904d",
+        "harmonized_at": "2026-03-28T15:27:43.331195+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10755,145 +10755,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "culturgest-2026-04-23-festival-internacional-de-cinema-efbd",
-      "source_id": "indielisboa-23-festival-internacional-de-cinema",
-      "source_url": "https://www.culturgest.pt/pt/programacao/indielisboa-23-festival-internacional-de-cinema/",
-      "venue_id": "culturgest",
-      "space_id": null,
-      "title": "23.º Festival Internacional de Cinema",
-      "title_raw": "23.º Festival Internacional de Cinema",
-      "subtitle": "IndieLisboa",
-      "description": "O IndieLisboa - Festival Internacional de Cinema avança para a sua 23.ª edição e regressa às principais salas de cinema da cidade. Há mais de duas décadas, o festival traz uma programação diversificada e inquieta, abrindo espaço para as mais recentes produções nacionais e internacionais, trabalhos emergentes e visionários, consolidando diferentes perspetivas culturais, estéticas, políticas e geográficas na tela. Um mundo infindável de cinema em onze dias de programação.\nPodemos esperar estreias memoráveis nas Competições Silvestre, nacional e Internacional, com destaque para a estreia do filme premiado\nBlue Heron\n, de Sophy Romvari; há também espaço para uma Retrospetiva inspiradora e novos filmes de culto na secção Boca do Inferno; ouviremos novas e velhas sonoridades impactantes na secção IndieMusic, onde se destaca a estreia de\nSun Ra: Do the Impossible\n, de Christine Turner\n;\nnão faltará um mergulho no Cinema na Piscina, nem as propostas do IndieJúnior.\nO IndieLisboa é mais que um festival de cinema, celebrando o cinema dentro e fora das salas, seja na pista de dança no IndieByNight, ou através de conversas temáticas como as LisbonTalks. Mais uma vez, o IndieLisboa será a casa onde o cinema se reinventa.",
-      "description_short": "O IndieLisboa - Festival Internacional de Cinema avança para a sua 23.ª edição e regressa às principais salas de cinema da cidade. Há mais de duas décadas, o festival traz uma programação diversificada e inquieta, abrindo espaço para as mais recentes produções nacionais e internacionais, trabalhos…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "descontos",
-        "estreia",
-        "festival"
-      ],
-      "categories_raw": [
-        "Cinema",
-        "Escolas"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-30",
-          "time_start": null,
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-30",
-      "date_last": "2026-04-30",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-04-30",
-      "date_close": null,
-      "event_status": "estreia",
-      "is_premiere": true,
-      "is_national_premiere": true,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": true,
-      "festival_name": "Festival Internacional De Cinema O Indielisboa",
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 5.0,
-        "price_max": 5.0,
-        "price_display": "5€",
-        "price_raw": "5€ (descontos)",
-        "has_discounts": true,
-        "discount_notes": null,
-        "ticketing_url": "https://www.culturgest.ptindielisboa.com"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/e1/c3/e1c33d2b-cb62-4774-baaf-8f3cf43250c1/large_sun_ra__do_the_impossible-clean-16x9-01.png__1200x630_q85_crop_subsampling-2_upscale.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "23-festival-internacional-de-cinema|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "culturgest"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T10:59:45.228628+00:00",
-        "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac26764986bb6683",
-        "harmonized_at": "2026-03-28T07:58:51.514290+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.75
       }
     }
   ]

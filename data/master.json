@@ -1,16 +1,1427 @@
 {
-  "generated_at": "2026-03-28T07:59:35.605225+00:00Z",
-  "total_events": 236,
+  "generated_at": "2026-03-28T15:28:19.334558+00:00Z",
+  "total_events": 249,
   "total_venues": 4,
+  "archive_cutoff_days": 90,
   "quality": {
-    "total": 236,
+    "total": 249,
     "with_image": 100.0,
-    "with_price": 32.2,
-    "with_description": 98.3,
-    "with_category": 94.9,
-    "avg_credibility": 0.902
+    "with_price": 34.1,
+    "with_description": 98.4,
+    "with_category": 95.2,
+    "avg_credibility": 0.903
   },
   "events": [
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-concerto-de-ano-novo-dance-dance-dance-95e9",
+      "source_id": "concerto-de-ano-novo-dance-dance-dance-caixa-na-culturgest",
+      "source_url": "https://www.culturgest.pt/pt/programacao/concerto-de-ano-novo-dance-dance-dance-caixa-na-culturgest/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Concerto de Ano Novo - Dance, dance, dance!",
+      "title_raw": "Concerto de Ano Novo - Dance, dance, dance!",
+      "subtitle": "Caixa na Culturgest",
+      "description": "A Orquestra do Algarve apresenta um concerto repleto de energia, brilho e entusiasmo. Sob a direção e apresentação de Martim Sousa Tavares, o programa celebra toda a vitalidade da orquestra através da música dos séculos XX e XXI, indo de velhas danças e melodias húngaras até às sonoridades mais inesperadas da dança, com uma partitura de Pedro Lima que já muito tem dado que falar.\nPrograma\nZOLTAN KODÁLY (1882-1967)\nRondó Húngaro\nLÉO WEINER (1885)\nSerenata em Fá menor, Op.3\nNANCY GALBRAITH (1951)\nMidnight Stirring\nPEDRO LIMA (1994)\nDance Suite\nMartim Sousa Tavares, Maestro\nOrquestra do Algarve",
+      "description_short": "A Orquestra do Algarve apresenta um concerto repleto de energia, brilho e entusiasmo. Sob a direção e apresentação de Martim Sousa Tavares, o programa celebra toda a vitalidade da orquestra através da música dos séculos XX e XXI, indo de velhas danças e melodias húngaras até às sonoridades mais…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-08",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-08",
+      "date_last": "2026-01-08",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-08",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 6.0,
+        "price_max": 6.0,
+        "price_display": "6€",
+        "price_raw": "6€ (preço único)",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.ticketline.pt/evento/concerto-de-ano-novo-dance-dance-dance-99873"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/3a/bf/3abfd602-a1c7-419a-83a4-68f0315a8035/09bf3eed-299f-4a0c-bd47-186524410803.jpeg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "concerto-de-ano-novo-dance-dance-dance|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:33.998924+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:36a744b8295da02b",
+        "harmonized_at": "2026-03-28T15:27:43.373449+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.75
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-tiago-rodrigues-2d37",
+      "source_id": "catarina-e-beleza-de-matar-fascistas-tiago-rodrigues",
+      "source_url": "https://www.culturgest.pt/pt/programacao/catarina-e-beleza-de-matar-fascistas-tiago-rodrigues/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Tiago Rodrigues",
+      "title_raw": "Tiago Rodrigues",
+      "subtitle": "Catarina e a Beleza de Matar Fascistas",
+      "description": "Esta família mata fascistas. É uma tradição antiga que cada membro da família sempre seguiu. Reúnem-se numa casa no campo, no sul de Portugal, perto da aldeia de Baleizão. Uma das jovens da família, Catarina, vai matar o seu primeiro fascista, raptado de propósito para o efeito. É um dia de festa, de beleza e de morte. No entanto, Catarina é incapaz de matar ou recusa-se a fazê-lo. Estala o conflito familiar, acompanhado de várias questões. O que é um fascista? Há lugar para a violência na luta por um mundo melhor? Podemos violar as regras da democracia para melhor a defender?",
+      "description_short": "Esta família mata fascistas. É uma tradição antiga que cada membro da família sempre seguiu. Reúnem-se numa casa no campo, no sul de Portugal, perto da aldeia de Baleizão. Uma das jovens da família, Catarina, vai matar o seu primeiro fascista, raptado de propósito para o efeito. É um dia de festa…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "audiodescricao",
+        "descontos",
+        "legendas"
+      ],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-12",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-13",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-14",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-15",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-16",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-17",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-12",
+      "date_last": "2026-01-17",
+      "total_sessions": 6,
+      "is_ongoing": false,
+      "date_open": "2026-01-12",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 25.0,
+        "price_max": 25.0,
+        "price_display": "25€",
+        "price_raw": "25€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/tiago-rodrigues-catarinabeleza-de-matar-fas-95374"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": true,
+        "has_subtitles": true,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Texto e encenação: Tiago Rodrigues | Com: António Parra, António Fonseca, Beatriz Maia, Carolina Passos Sousa, Isabel Abreu, João Vicente, Marco Mendonça, Romeu Costa | Colaboração artística: Magda Bizarro | Cenografia: F. Ribeiro | Figurinos: José António Tenente | Desenho de luz: Nuno Meira | Sonoplastia, desenho de som e música original: Pedro Costa | Coralidade e arranjos vocais: João Henriques | Voz off: Cláudio Castro, Nadezhda Bocharova, Paula Mora, Pedro Moldão | Apoio ao movimento: Sofia Dias, Vítor Roriz | Apoio em luta e armas: David Chan Cordeiro | Traduções para inglês: Daniel Hahn | Legendas: Patrícia Pimentel | Produção executiva: Festival d’Avignon | Produção: Teatro Nacional D. Maria II | Coprodução: Wiener Festwochen, Emilia Romagna Teatro Fondazione, ThéâtredelaCité – CDN Toulouse Occitanie & Théâtre Garonne Scène européenne Toulouse, Festival d’Automne à Paris & Théâtre des Bouffes du Nord, Teatro di Roma – Teatro Nazionale, Comédie de Caen, Théâtre de Liège, Maison de la Culture d’Amiens, BIT Teatergarasjen, Le Trident – Scène-nationale de Cherbourg-en-Cotentin, Teatre Lliure, Centro Cultural Vila Flor, O Espaço do Tempo | Apoio: Vinhos Almeida Garrett, Cano Amarelo, Culturgest | Agradecimentos: Mariana Gomes, Rui Pina Coelho, Margarida Bak Gordon, Rita Mendes e toda a equipa do Teatro Nacional D. Maria II. Agradecemos ainda a Sara Barros Leitão, Pedro Gil e Rui M. Silva que, mesmo não estando já connosco em palco, serão sempre Catarina. | Música: Hania Rani (BiesyeNow, Run), Joanna Brouk (The Nymph Rising,Calling the Sailor), Laurel Halo (Rome Theme IIIeHyphae) e Rosalía (De Plata)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/f8/29/f829e1a3-1897-4117-9f5a-e1a3ef0f563a/_joseph_banderet_-_festival_davignon_6.jpeg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "tiago-rodrigues|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:35.936131+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:016b29697817bc94",
+        "harmonized_at": "2026-03-28T15:27:43.373767+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-01-tres-tempos-08bd",
+      "source_id": "tres-tempos-2026",
+      "source_url": "https://theatrocirco.com/event/tres-tempos-2026/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Três Tempos",
+      "title_raw": "Três Tempos",
+      "subtitle": "Xullaji e Tiago Sampaio",
+      "description": "A várias mãos, com os diferentes tempos de cada cidade parceira, Três Tempos entra na sua segunda edição, agora com xullaji como guia sonoro e poético.\nTrês grupos com idades entre os 15 e os 18 anos, reunidos em Braga (Theatro Circo), Viseu (Teatro Viriato) e Lisboa (Culturgest), recebem o convite para embarcar numa experiência de cocriação deste projeto participativo, fora do ambiente escolar, pensado para que cada grupo viva o processo de forma igual. Assim, entre novembro de 2025 e abril de 2026, têm lugar encontros semanais de escrita e reflexão, intercalados por momentos intensivos de cocriação, usando a palavra e o som como ferramentas de transformação pessoal e social, com curadoria artística a cargo do rapper xullaji. Em Braga, a mediação do processo estará a cargo do músico local Tiago Sampaio.\nPor fim, em março decorrerá a apresentação em Braga e em abril de 2026, todas as rotas convergem para Lisboa, cidade anfitriã desta edição, onde cada grupo apresentará o resultado dos trabalhos desenvolvidos, refletindo a singularidade do seu percurso e mantendo a coesão de um projeto que celebra a criatividade coletiva.\n__\nApresentação em Braga\n21 de março · 15h\nApresentação em Lisboa\n18 de abril · horário a definir",
+      "description_short": "A várias mãos, com os diferentes tempos de cada cidade parceira, Três Tempos entra na sua segunda edição, agora com xullaji como guia sonoro e poético.\nTrês grupos com idades entre os 15 e os 18 anos, reunidos em Braga (Theatro Circo), Viseu (Teatro Viriato) e Lisboa (Culturgest), recebem o convite…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-12",
+          "time_start": "18:45",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-12",
+      "date_last": "2026-01-12",
+      "total_sessions": 1,
+      "is_ongoing": true,
+      "date_open": "2026-01-12",
+      "date_close": "2026-04-18",
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+        "price_raw": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coprodução\nTheatro Circo (Braga), Culturgest (Lisboa) e Teatro Viriato (Viseu)\nQueres fazer parte deste projeto? Escreve-nos para\nparticipacao@theatrocirco.com"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2025/11/251025_theatro_circo_tres_tempos_sessao_um_fotografia_lais_pereira-3.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "tres-tempos|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T01:29:44.080987+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:f0e8a5ac021a9498",
+        "harmonized_at": "2026-03-28T01:30:33.925089+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-rafael-toral-eb39",
+      "source_id": "rafael-toral-traveling-light",
+      "source_url": "https://www.culturgest.pt/pt/programacao/rafael-toral-traveling-light/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Rafael Toral",
+      "title_raw": "Rafael Toral",
+      "subtitle": "Traveling Light",
+      "description": "Motivo de orgulho de toda uma comunidade musical, Rafael Toral teve em 2024 um ano de apogeu, consequência do êxito e reconhecimento planetário do seu\nSpectral Evolution\n: um feito súmula para um percurso único, raro e desafiador, trinta anos exatos após o seu primeiro disco a solo,\nSound Mind Sound Body\n. Desde então, Toral traçou a sua trajetória, feita de curiosidade e pesquisa, com o cosmos como cenário propício para a dimensão da sua visão musical. A uma discografia imensa e idiossincrática que nos convida permanentemente a revisitações, eis mais uma jornada incandescente com\nTraveling Light\n. E também uma eloquente e perfeita ‘obra seguinte' para o seu estelar\nSpectral Evolution\n, assumindo a urgência do momento e da progressão decidida desta caminhada. Jazz nas estrelas, música eletrónica soprada na brisa ambiental que Toral tão bem tece com as suas guitarras, estamos de novo perante algo muitíssimo especial.",
+      "description_short": "Motivo de orgulho de toda uma comunidade musical, Rafael Toral teve em 2024 um ano de apogeu, consequência do êxito e reconhecimento planetário do seu\nSpectral Evolution\n: um feito súmula para um percurso único, raro e desafiador, trinta anos exatos após o seu primeiro disco a solo,\nSound Mind…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "descontos",
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-21",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-21",
+      "date_last": "2026-01-21",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-21",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 14.0,
+        "price_max": 14.0,
+        "price_display": "14€",
+        "price_raw": "14€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/rafael-toral-traveling-light-95511"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Guitarra elétrica, eletrónica, arranjos: Rafael Toral | Saxofone tenor: Rodrigo Amado | Clarinete: Bruno Parrinha | Flauta: Clara Saleiro | Fliscórnio: Yaw Tembe"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/72/8f/728f02a6-6349-4b57-a452-1057c2a7ae4d/rafael_toral_20250616_017_cred_veramarmelo.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "rafael-toral|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:37.802474+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:91527e8f1f0a5b13",
+        "harmonized_at": "2026-03-28T15:27:43.374116+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-por-que-contamos-historias-c759",
+      "source_id": "susana-moreira-marques-ines-brasao-ines-lampreia-porque-contamos-historias",
+      "source_url": "https://www.culturgest.pt/pt/programacao/susana-moreira-marques-ines-brasao-ines-lampreia-porque-contamos-historias/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Por que Contamos Histórias?",
+      "title_raw": "Por que Contamos Histórias?",
+      "subtitle": "Inês Brasão, Inês Lampreia, Susana Moreira Marques",
+      "description": "Por que contamos histórias? Este é o mote para uma conversa a três vozes com quem conta histórias, sejam ficcionais, reais, ou um cruzamento entre ambas. Refletimos sobre a necessidade humana de criar narrativas, não apenas para representar o mundo e o seu passado, mas para o revelar em todas as suas possibilidades, e fazendo-o viver da forma única que, por vezes, só a literatura consegue revelar. Contar histórias é como lançar sementes, ativa gestos quotidianos de memória, de cuidado, de persistência. Nesta conversa, exploramos também a importância pessoal e política da ficção, um lugar onde a palavra se torna resistência e o imaginário território de contágio. O encontro reúne três escritoras que exploram estes caminhos através da escrita - Susana Moreira Marques é autora dos livros de não-ficção literária, Inês Brasão, socióloga e historiadora, que tem recuperado a história esquecida do trabalho servil, e Inês Lampreia, autora de\nNo tempo dos Super Heróis\n(2024)\nque, a partir de memórias contadas pelos avós, evoca a vida e a resistência do campo alentejano em meados do século XX.",
+      "description_short": "Por que contamos histórias? Este é o mote para uma conversa a três vozes com quem conta histórias, sejam ficcionais, reais, ou um cruzamento entre ambas. Refletimos sobre a necessidade humana de criar narrativas, não apenas para representar o mundo e o seu passado, mas para o revelar em todas as…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-22",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-22",
+      "date_last": "2026-01-22",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-22",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_oo1pw"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/de/a2/dea23e2e-8e6e-41c4-8a1c-86848dcfa125/joana_linda.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "por-que-contamos-historias|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:39.651910+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:4badf175140cf701",
+        "harmonized_at": "2026-03-28T15:27:43.374538+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-joga-o-jogo-fugida-c968",
+      "source_id": "fugida-em-torno-da-colecao-da-cgd",
+      "source_url": "https://www.culturgest.pt/pt/programacao/fugida-em-torno-da-colecao-da-cgd/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Joga o Jogo: Fugida!",
+      "title_raw": "Joga o Jogo: Fugida!",
+      "subtitle": "Em Torno da Coleção da CGD",
+      "description": "Fugida!\né a terceira e derradeira parte do ciclo Joga o Jogo. Trata-se do momento que corresponde ao tiro de partida, ao início da corrida, onde se lançam os dados e se dão as cartas para o futuro. O projeto curatorial desenha-se caótico e as relações entre as obras apresentadas revelam-se, à primeira vista, aleatórias e sem sentido. Contudo, com uma experiência sensorial precisa, a exposição aponta para outros caminhos promissores.\nRui Horta Pereira foi convidado a desenvolver um programa educativo dirigido a estudantes do ensino secundário das escolas do concelho. Em colaboração com o Museu Ferroviário de Macinhata do Vouga é possível mostrar peças do seu acervo.\nO ciclo\nJoga o Jogo\ncomeça com\nPartida…\n, no Museu das Artes de Sintra, entre maio e agosto de 2025 e seguiu com\nLargada…\nno Forum Arte Braga, patente entre setembro de 2025 e janeiro de 2026.",
+      "description_short": "Fugida!\né a terceira e derradeira parte do ciclo Joga o Jogo. Trata-se do momento que corresponde ao tiro de partida, ao início da corrida, onde se lançam os dados e se dão as cartas para o futuro. O projeto curatorial desenha-se caótico e as relações entre as obras apresentadas revelam-se, à…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Artes Visuais",
+        "Fora de Portas"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-24",
+          "time_start": "18:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-24",
+      "date_last": "2026-01-24",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-24",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Artistas Coleção da Caixa Geral de Depósitos: Ana Jotta, Ana Vieira, Armanda Duarte, Bruno Pacheco, Bruno Zhu, Dayana Lucas, Eduardo Nery, Helena Almeida, Joana Vasconcelos, José Escada, José Pedro Croft, Leonor Antunes, Lourdes Castro, Luisa Correia Pereira, Luisa Cunha | Artista Convidado: Rui Horta Pereira | Colaboração: Escola Secundária Marques de Castilho | Obras da Coleção: Museu Ferroviário de Macinhata do Vouga | Parceria: Centro de Artes de Águeda | Apoio: República Portuguesa – Cultura | DGArtes – Direção Geral das Artes | RPAC – Rede Portuguesa de Arte Contemporânea"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/62/cb/62cbd106-243e-4e03-83d0-4e6f6dfdab42/_rui_horta_pereira_agueda_horizontal.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "joga-o-jogo-fugida|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T14:58:06.343355+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:46a27b8914b46a41",
+        "harmonized_at": "2026-03-28T15:27:43.337047+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-marlene-monteiro-freitas-ballet-de-loper-7b71",
+      "source_id": "marlene-monteiro-freitas-ballet-de-lopera-de-lyon-canine-jaunatre-3",
+      "source_url": "https://www.culturgest.pt/pt/programacao/marlene-monteiro-freitas-ballet-de-lopera-de-lyon-canine-jaunatre-3/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Marlene Monteiro Freitas / Ballet de l’Opéra de Lyon",
+      "title_raw": "Marlene Monteiro Freitas / Ballet de l’Opéra de Lyon",
+      "subtitle": "Canine Jaunâtre 3",
+      "description": "Há uma rede de ténis, um painel de avaliação e apitos. Está montado o palco para uma competição que nunca se realizará. Reivindicando a herança dos carnavais da sua infância em Cabo Verde, Marlene Monteiro Freitas subverte as regras.\nCanine Jaunâtre 3\ntorna-se um jogo indisciplinado, onde 17 jogadores-intérpretes, com dorsais com o mesmo número 3, corpos autómatos com rostos de desenhos animados, são sujeitos a regras contraditórias. Fazer, desfazer, avançar, recuar: estes virtuosos magníficos conduzem, sem propósito aparente, a humanidade a um território incerto onde as fronteiras entre humanos, animais e máquinas se esbatem. Um exercício para se aprender a questionar os nossos hábitos de perceção excessivamente confortáveis.",
+      "description_short": "Há uma rede de ténis, um painel de avaliação e apitos. Está montado o palco para uma competição que nunca se realizará. Reivindicando a herança dos carnavais da sua infância em Cabo Verde, Marlene Monteiro Freitas subverte as regras.\nCanine Jaunâtre 3\ntorna-se um jogo indisciplinado, onde 17…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "danca",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "descontos"
+      ],
+      "categories_raw": [
+        "Dança"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-24",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-25",
+          "time_start": "17:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-24",
+      "date_last": "2026-01-25",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-01-24",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 20.0,
+        "price_max": 20.0,
+        "price_display": "20€",
+        "price_raw": "20€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/marlene-monteiro-freitas-canine-jaunatre-3-95512"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coreografia, figurinos e música: Marlene Monteiro Freitas | Assistente coreográfico: Ben Green | Pesquisa artística: Marlene Monteiro Freitas, João Francisco Figueira | Cenografia: Yannick Fouassier e MMF | Luz: Yannick Fouassier | Som: Rui Antunes | Mestres de bailado do Ballet de l’Opéra de Lyon: Amandine François, Marco Merenda e Raúl Serrano Núñez | Intérpretes: Ballet de l’Opéra de Lyon | Em colaboração com: P.OR.K | Encomenda original por: Batsheva Dance Company | Em coprodução com: Julidans e Montpellier Danse, 2018. No repertório do Ballet de l’Opéra de Lyon desde 2024"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/d2/7f/d27f14ce-4897-4e9f-8f1f-678dff64ecf1/2024_caninejaunatre3__marc_domage_hd_003.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "marlene-monteiro-freitas-ballet-de-lopera-de-lyon|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:41.536350+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:d046fa4bf7a051f3",
+        "harmonized_at": "2026-03-28T15:27:43.375003+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-sara-graca-d50f",
+      "source_id": "sara-graca-boa-good-sorte-luck-variacao",
+      "source_url": "https://www.culturgest.pt/pt/programacao/sara-graca-boa-good-sorte-luck-variacao/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Sara Graça",
+      "title_raw": "Sara Graça",
+      "subtitle": "Boa Good Sorte Luck: variação",
+      "description": "As exposições são habitualmente situações estáticas: um conjunto de objetos em determinados lugares e formando uma dada sequência aguardam a nossa visita, dia sim, dia sim. No espírito da instabilidade e periclitância que perpassa\nBoa Good Sorte Luck\n, Sara Graça imaginou um momento em que alguns dos objetos da sua exposição mudavam de lugar ou eram transformados. Essa metamorfose terá lugar no dia 25 de janeiro, pelas 16h. Não é uma performance – se a artista estiver presente, é na qualidade de visitante.",
+      "description_short": "As exposições são habitualmente situações estáticas: um conjunto de objetos em determinados lugares e formando uma dada sequência aguardam a nossa visita, dia sim, dia sim. No espírito da instabilidade e periclitância que perpassa\nBoa Good Sorte Luck\n, Sara Graça imaginou um momento em que alguns…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Artes Visuais"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-25",
+          "time_start": "16:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-25",
+      "date_last": "2026-01-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Gratuito (domingo)",
+        "price_raw": "Gratuito (domingo)",
+        "has_discounts": false,
+        "discount_notes": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/24/a4/24a406eb-b3fd-4d31-90d1-3df9b70cd1a5/saragraca_inauguracao_02.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "sara-graca|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:43.377591+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:d4e3adb23ee522d3",
+        "harmonized_at": "2026-03-28T15:27:43.375409+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-pedra-a813",
+      "source_id": "pedra-projeto-educativo-em-danca-de-repertorio-para-adolescentes",
+      "source_url": "https://www.culturgest.pt/pt/programacao/pedra-projeto-educativo-em-danca-de-repertorio-para-adolescentes/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "P.E.D.R.A",
+      "title_raw": "P.E.D.R.A.",
+      "subtitle": "Projeto Educativo em Dança de Repertório para Adolescentes",
+      "description": "P.E.D.R.A. é uma iniciativa de participação artística promovida pela Culturgest, o Centro Cultural de Lagos e o Teatro-Cine de Torres Vedras, dirigida a jovens entre os 15 e os 18 anos, idealmente com experiência prévia em dança. Através da transmissão de repertório coreográfico, o projeto promove o contacto direto com nomes e obras emblemáticas da dança contemporânea portuguesa, estimulando a expressão artística juvenil e valorizando o património coreográfico nacional.\nAssente numa abordagem pedagógica que articula aprendizagem técnica, criação e interpretação, o P.E.D.R.A. propõe um espaço de encontro entre gerações, onde os participantes têm acesso a metodologias profissionais e a processos criativos reconhecidos, desenvolvendo competências artísticas, pensamento crítico e consciência do contexto cultural em que se inserem.\nA edição 2025–2026 será dedicada à obra de Rui Horta, figura incontornável da dança contemporânea, que orientará o projeto em articulação com diversos assistentes, todos profissionais com vasta experiência, em cada uma das cidades onde o projeto terá lugar: Teresa Alves da Silva, Bruno Duarte e Margarida Belo Costa.\nO processo criativo desenvolve-se em 3 cidades diferentes, Lisboa, Torres Vedras e Lagos, com 3 grupos de jovens que, de fevereiro a final de maio, vão recriar trechos de várias obras do coreógrafo, que serão organizadas numa só, no final do processo. Um mosaico criativo adaptado aos intérpretes locais e que representa uma descoberta do repertório de Rui Horta.\nA participação nestes workshops é aberta a quem tem interesse em participar no projeto, no entanto, esta participação não garante lugar no projeto, dada a sua lotação limitada.",
+      "description_short": "P.E.D.R.A. é uma iniciativa de participação artística promovida pela Culturgest, o Centro Cultural de Lagos e o Teatro-Cine de Torres Vedras, dirigida a jovens entre os 15 e os 18 anos, idealmente com experiência prévia em dança. Através da transmissão de repertório coreográfico, o projeto promove…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "formacao",
+      "category": "participacao",
+      "subcategory": null,
+      "tags": [
+        "entrada-livre",
+        "formação & participação",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Participação"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-01",
+          "time_start": "14:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-01",
+      "date_last": "2026-02-01",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-01",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": true,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": true,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Entrada livre",
+        "price_raw": "Gratuito",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://docs.google.com/forms/d/e/1FAIpQLSc1V51dYL1ptdOC-nToiot8nvCSnbKMBnqKc9rbDS5F0JabDQ/viewform?usp=header"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coprogramação: Culturgest, Centro Cultural de Lagos, Teatro-Cine de Torres Vedras"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/38/26/38268a64-114c-4f39-898a-bc9599c8ef32/pedra_cred_patricia_blazquez_1-copia.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "pedra|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T14:58:08.242044+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:f452e654259447ce",
+        "harmonized_at": "2026-03-28T15:27:43.337448+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-urbs-o-corpo-da-cidade-139f",
+      "source_id": "mario-alves-salvador-rueda-urbs-o-corpo-da-cidade",
+      "source_url": "https://www.culturgest.pt/pt/programacao/mario-alves-salvador-rueda-urbs-o-corpo-da-cidade/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Urbs: O Corpo da Cidade",
+      "title_raw": "Urbs: O Corpo da Cidade",
+      "subtitle": "Mário Alves, Salvador Rueda",
+      "description": "Que corpo tem uma cidade? De que elementos se compõe, como evolui e se transforma? A forma como os espaços e sistemas urbanos se estruturam afeta a sociedade, a economia e os direitos de cada coletivo? Hoje enfrentamos uma complexidade urbana difícil de perceber e de gerir.  Décadas de crescimento urbano, concentração de empresas e grandes centros comerciais, especulação financeira e habitação precária estão a recompor a função e a mobilidade da cidade e os próprios direitos urbanos. A nova natureza da cidade surge como uma soma de espaços e experiências variadas, hiperconectadas, mas muitas vezes sem consistência. Diante destes desafios, como podemos reorganizar as estruturas urbanas para tornar o dia a dia mais vivido e partilhado? Abordamos estas questões com o urbanista Salvador Rueda, da Fundación de Ecologia Urbana y Territorial, Barcelona, e o especialista nas áreas dos transportes e mobilidade urbana Mário Alves.",
+      "description_short": "Que corpo tem uma cidade? De que elementos se compõe, como evolui e se transforma? A forma como os espaços e sistemas urbanos se estruturam afeta a sociedade, a economia e os direitos de cada coletivo? Hoje enfrentamos uma complexidade urbana difícil de perceber e de gerir.  Décadas de crescimento…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-04",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-04",
+      "date_last": "2026-02-04",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-04",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_w64p6"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "urbs-o-corpo-da-cidade|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:45.289597+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:53e67c2d2163ddd0",
+        "harmonized_at": "2026-03-28T15:27:43.375688+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
     {
       "schema_version": "1.0",
       "id": "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
@@ -142,10 +1553,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:31:50.890214+00:00",
+        "scraped_at": "2026-03-28T15:27:43.307965+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac6bb8e2226b7700",
-        "harmonized_at": "2026-03-28T07:58:51.953625+00:00",
+        "raw_data_hash": "sha256:750adc7253f1ee99",
+        "harmonized_at": "2026-03-28T15:27:43.446122+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -160,6 +1571,575 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-lander-patrick-6aee",
+      "source_id": "lander-patrick-wonderlandi",
+      "source_url": "https://www.culturgest.pt/pt/programacao/lander-patrick-wonderlandi/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Lander Patrick",
+      "title_raw": "Lander Patrick",
+      "subtitle": "WonderLandi",
+      "description": "A música é o epicentro de\nWonderLandi\n. Tudo se move à volta dela. O ritmo e a melodia formam a matriz coreográﬁca, que orquestra corpos, objetos, textos e movimentos.\nWonderLandi\né uma homenagem à música, este fenómeno misterioso que assombra seres humanos e animais. Haveria civilização sem ela? Ao longo dos tempos, os poderes políticos, as instituições religiosas e os movimentos culturais e ideológicos têm explorado a música como um poderoso vetor de difusão de mensagens e para despertar emoções. A música acompanha ritos religiosos, batalhas, festas e revoluções. Como cantou Madonna, “Music makes people come together”. Mas a música também tem esse efeito agregador na natureza e está presente nos rituais de acasalamento das aves, na comunicação das baleias, na memória dos elefantes, na coordenação das abelhas e na vida social dos primatas.\nA música é capaz de nos hipnotizar, de ativar estados de espírito e de incitar à ação.\nWonderLandi\npretende evocar o poder da música, a sua omnipresença na natureza e a forma como é percebida e celebrada em diferentes partes do mundo, ao longo da História.",
+      "description_short": "A música é o epicentro de\nWonderLandi\n. Tudo se move à volta dela. O ritmo e a melodia formam a matriz coreográﬁca, que orquestra corpos, objetos, textos e movimentos.\nWonderLandi\né uma homenagem à música, este fenómeno misterioso que assombra seres humanos e animais. Haveria civilização sem ela?…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "danca",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "descontos"
+      ],
+      "categories_raw": [
+        "Dança",
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-05",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-06",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-07",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-05",
+      "date_last": "2026-02-07",
+      "total_sessions": 3,
+      "is_ongoing": false,
+      "date_open": "2026-02-05",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 16.0,
+        "price_max": 16.0,
+        "price_display": "16€",
+        "price_raw": "16€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/99234"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção artística, concepção, coreografia: Lander Patrick | Assistência à coreografia: Lewis Seivwright | Interpretação: Cacá Otto Reuss, João Calado, Lander Patrick, Lewis Seivwright, Marti Forcada, Melissa Sousa, Nara Gonçalves e Suevia Rojo | Figurinos: Fábio Rocha de Carvalho | Desenho de luz: Rui Daniel | Desenho de som: Mestre André | Assistência técnica e de produção: Fábio Rocha de Carvalho | Produção: Associação Cultural Sinistra | Gestão administrativa e financeira: Patrícia Duarte | Produção executiva: Sara Alexandra, André Filipe Neto | Difusão: Inês Le Gué | jardin&cour | Coprodução: Cineteatro Curvo Semedo, Culturgest, One Dance Festival (BG), Tandem Scène Nationale (FR), Theatro Circo, Teatro-Cine de Pombal, Teatro Municipal Baltazar Dias, Teatro Municipal do Porto | Residência de coprodução: O Espaço do Tempo | Apoio à criação: CAMPUS, Casa Varela, Estúdios Victor Córdon / Opart, Pro.dança | Agradecimento: Patrícia Soares"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/8d/ed/8ded7835-baf3-4948-90f6-0609e28cb46e/_jop7555_cred_joao_octavio_peixoto.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "lander-patrick|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:47.193619+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:7a5a9cf6d72d4d07",
+        "harmonized_at": "2026-03-28T15:27:43.376092+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-diamanda-galas-3a22",
+      "source_id": "diamanda-galas",
+      "source_url": "https://www.culturgest.pt/pt/programacao/diamanda-galas/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Diamanda Galás",
+      "title_raw": "Diamanda Galás",
+      "subtitle": "Cabeça, tronco e membros",
+      "description": "É uma tarefa impossível e infecunda tentar resumir a vida e obra de Diamanda Galás num pequeno texto sem recorrer a uma adjetivação hiperbólica e poderosa. Porque a sua voz, maior que todas as outras e que nos assombra continuamente há mais de quarenta anos, é tudo isso. Com um timbre inumano e as suas performances entre o ritual e o político, a artista grega-norte-americana tem sido um símbolo da inquietude e inconformismo, cruzando o experimental com o clássico, o grito e o silêncio, o sagrado e o profano. Uma arte de extremos que olha para a realidade de modo verdadeiro, cru e ensanguentado, enfrentando temas de sofrimento, exclusão e resistência.\nEm palco, Diamanda Galás é pura energia, voz e música sem concessões, numa explosão de emoções vestidas de protesto, mostrando-nos que a arte pode ser simultaneamente a ferida e o curativo. Depois de uma longa ausência dos nossos palcos, Diamanda Galás está de volta, com o estrondo e a urgência que necessitamos. Concerto absolutamente imperdível para quem quer olhar de frente a luz trémula da nossa humanidade.",
+      "description_short": "É uma tarefa impossível e infecunda tentar resumir a vida e obra de Diamanda Galás num pequeno texto sem recorrer a uma adjetivação hiperbólica e poderosa. Porque a sua voz, maior que todas as outras e que nos assombra continuamente há mais de quarenta anos, é tudo isso. Com um timbre inumano e as…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-11",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-11",
+      "date_last": "2026-02-11",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-11",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 45.0,
+        "price_max": 45.0,
+        "price_display": "45€",
+        "price_raw": "45€ (preço único)",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/pt/evento/diamanda-galas-98085"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Voz, piano: Diamanda Galás | Desenho de luz e cenário: Valentin Delaunay | Técnico de som: Daniel Neumann"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/c5/e3/c5e3bb59-9185-4cb5-b280-9de046220a98/img_0864-diamanda-by-austin-young-1.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "diamanda-galas|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:49.105830+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:cac5a7ec6024236b",
+        "harmonized_at": "2026-03-28T15:27:43.376592+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-bruno-pernadas-1069",
+      "source_id": "bruno-pernadas-unlikely-maybe",
+      "source_url": "https://www.culturgest.pt/pt/programacao/bruno-pernadas-unlikely-maybe/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Bruno Pernadas",
+      "title_raw": "Bruno Pernadas",
+      "subtitle": "unlikely, maybe",
+      "description": "Foi em plena pandemia que Bruno Pernadas nos entregou\nPrivate Reasons\n— o disco e a sua estreia no palco da Culturgest. Foi a última edição de originais do músico e compositor lisboeta, que assim encerrava uma longa jornada pop, feita em três discos, em modo trilogia, entre 2014 e 2021. Cinco anos depois, chegamos até\nunlikely, maybe\ne a um certo recomeço de algumas ideias continuamente transversais ao universo Pernadas. Primeiro, uma inquietude no mapeamento de géneros, onde se passeia ludicamente entre indie, pop ou jazz, passando pelo dub ou a space music. Depois, a inevitável fusão com que tudo se intersecciona, mostrando uma agilidade na composição que permanentemente nos surpreende e contagia. E ainda, uma arte suprema em dobrar o tempo, criando música que se inspira em mais de cinco décadas de história, recompondo novas memórias e, simultaneamente, criando um futurismo muito próprio. E porque há um novo futuro com novos sons, há também uma banda com novas caras que traz a música de Bruno Pernadas para mais uma noite de estreia e celebração na Culturgest.",
+      "description_short": "Foi em plena pandemia que Bruno Pernadas nos entregou\nPrivate Reasons\n— o disco e a sua estreia no palco da Culturgest. Foi a última edição de originais do músico e compositor lisboeta, que assim encerrava uma longa jornada pop, feita em três discos, em modo trilogia, entre 2014 e 2021. Cinco anos…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "descontos",
+        "estreia",
+        "música"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-19",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-02-20",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-19",
+      "date_last": "2026-02-20",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-02-19",
+      "date_close": null,
+      "event_status": "estreia",
+      "is_premiere": true,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 18.0,
+        "price_max": 18.0,
+        "price_display": "18€",
+        "price_raw": "18€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://www.ticketline.pt/evento/BRUNO-PERNADAS-unlikely-maybe-100107"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Direção musical, guitarras, sintetizadores, voz: Bruno Pernadas | Baixo elétrico, contrabaixo: António Quintino | Bateria: João Correia | Rhodes, sintetizadores: José Diogo Martins | Trompete, flugelhorn, voz: Jéssica Pina | Saxofone alto, voz: Maria João Leite | Flauta, voz: Teresa Costa | Voz, guitarras: Afonso Cabral | Voz (convidada): Leonor Arnaut"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/67/0b/670b8cf2-02b8-43c5-a23e-5f8309ec990b/bruno_pernadas_solo_creditos_fabiana_tavares_1.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "bruno-pernadas|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:50.989478+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:9dae6b1dea6de39e",
+        "harmonized_at": "2026-03-28T15:27:43.377051+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
+      "source_id": "fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade",
+      "source_url": "https://www.culturgest.pt/pt/programacao/fatima-vieira-joao-teixeira-lopes-civitas-os-fluxos-da-cidade/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Civitas: Os Fluxos da Cidade",
+      "title_raw": "Civitas: Os Fluxos da Cidade",
+      "subtitle": "Fátima Vieira, João Teixeira Lopes",
+      "description": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos que ocupam, mas sim por uma vasta trama de relações. A cidade é um forte conjunto de milhões de laços – laços frágeis, porque humanos.\nO que fortalece, ou por outro lado, o que enfraquece, os laços entre a população numa cidade? Que elementos e que condições permitem formar comunidades urbanas heterogéneas, dinâmicas e tolerantes, sobretudo, perante a atual crise do urbanismo e o desigual acesso à habitação e à própria cidade?\nConversam sobre este cruzamento Fátima Vieira, Vice-Reitora para a Cultura da Universidade do Porto e especialista em estudos sobre a utopia, e o sociólogo João Teixeira Lopes, coordenador do Observatório Social de Vila nova de Gaia e do Observatório da Arte e Cultura no Ensino Superior.",
+      "description_short": "Numa das belas cidades invisíveis de Italo Calvino, a população de Ersília estabelece entre si relações e intercâmbios da natureza mais diversa, tais como de afetos, de bens e serviços, de conhecimentos e de política. A cidade, não se define apenas pelos seus habitantes nem pelos espaços físicos…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-02-25",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-02-25",
+      "date_last": "2026-02-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-02-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_lp45n"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/64/11/641112a0-ab3f-4e98-8b92-b72470c923cc/genoma.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "civitas-os-fluxos-da-cidade|2026-02",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:52.884116+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:7b6ae6ca998de201",
+        "harmonized_at": "2026-03-28T15:27:43.377339+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
       }
     },
     {
@@ -442,10 +2422,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:39.846466+00:00",
+        "scraped_at": "2026-03-28T15:20:54.741356+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:e3a80007aee468c6",
-        "harmonized_at": "2026-03-28T07:58:51.848471+00:00",
+        "raw_data_hash": "sha256:00bdd4db5a8cef7b",
+        "harmonized_at": "2026-03-28T15:27:43.377800+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -750,10 +2730,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:41.900596+00:00",
+        "scraped_at": "2026-03-28T15:20:56.602303+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:b4e7501aed4fdc9e",
-        "harmonized_at": "2026-03-28T07:58:51.848913+00:00",
+        "raw_data_hash": "sha256:4f755bb95acda84d",
+        "harmonized_at": "2026-03-28T15:27:43.378257+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1045,10 +3025,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:20.758313+00:00",
+        "scraped_at": "2026-03-28T14:58:10.145593+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ce5b973b581a3559",
-        "harmonized_at": "2026-03-28T07:58:51.521411+00:00",
+        "raw_data_hash": "sha256:0271799150918770",
+        "harmonized_at": "2026-03-28T15:27:43.338131+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1180,10 +3160,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:43.876099+00:00",
+        "scraped_at": "2026-03-28T15:20:58.493692+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d1436c709f442f2d",
-        "harmonized_at": "2026-03-28T07:58:51.849350+00:00",
+        "raw_data_hash": "sha256:b9dbddd63d64cca2",
+        "harmonized_at": "2026-03-28T15:27:43.378670+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1318,10 +3298,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:45.788807+00:00",
+        "scraped_at": "2026-03-28T15:21:00.413777+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:97b1c1ec465a2995",
-        "harmonized_at": "2026-03-28T07:58:51.849750+00:00",
+        "raw_data_hash": "sha256:6e1dbfe1f7ee1e66",
+        "harmonized_at": "2026-03-28T15:27:43.379075+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1468,10 +3448,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:22.871279+00:00",
+        "scraped_at": "2026-03-28T14:58:12.141356+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:e3a8701821699fad",
-        "harmonized_at": "2026-03-28T07:58:51.522106+00:00",
+        "raw_data_hash": "sha256:850d7aa8275ad1fe",
+        "harmonized_at": "2026-03-28T15:27:43.338653+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1603,10 +3583,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:47.775521+00:00",
+        "scraped_at": "2026-03-28T15:21:04.606004+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:938386c6a7ddad32",
-        "harmonized_at": "2026-03-28T07:58:51.850198+00:00",
+        "raw_data_hash": "sha256:40364835b74f2f67",
+        "harmonized_at": "2026-03-28T15:27:43.379504+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1737,10 +3717,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:24:49.796669+00:00",
+        "scraped_at": "2026-03-28T15:21:06.495811+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:d5e24a644293511b",
-        "harmonized_at": "2026-03-28T07:58:51.850501+00:00",
+        "raw_data_hash": "sha256:17d66a51eaabdeda",
+        "harmonized_at": "2026-03-28T15:27:43.379796+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -1894,10 +3874,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:24.082104+00:00",
+        "scraped_at": "2026-03-28T14:57:23.401950+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:38188d39c9c512a9",
-        "harmonized_at": "2026-03-28T07:58:51.505702+00:00",
+        "raw_data_hash": "sha256:4855be41092db9a3",
+        "harmonized_at": "2026-03-28T15:27:43.323309+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10281,10 +12261,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:26.028234+00:00",
+        "scraped_at": "2026-03-28T14:57:25.293629+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6720610592e2b59e",
-        "harmonized_at": "2026-03-28T07:58:51.510250+00:00",
+        "raw_data_hash": "sha256:fe4db854d78f3c99",
+        "harmonized_at": "2026-03-28T15:27:43.327545+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -10427,10 +12407,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:27.964014+00:00",
+        "scraped_at": "2026-03-28T14:57:27.181445+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f709d38f1c126b5a",
-        "harmonized_at": "2026-03-28T07:58:51.510748+00:00",
+        "raw_data_hash": "sha256:5955d07218f41479",
+        "harmonized_at": "2026-03-28T15:27:43.328094+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -12468,10 +14448,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:29.925262+00:00",
+        "scraped_at": "2026-03-28T14:57:29.030664+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:6e1bb0eace11c3e9",
-        "harmonized_at": "2026-03-28T07:58:51.511353+00:00",
+        "raw_data_hash": "sha256:eb408e51c031fda6",
+        "harmonized_at": "2026-03-28T15:27:43.328642+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13295,10 +15275,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:31.811523+00:00",
+        "scraped_at": "2026-03-28T14:57:30.897036+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:63ad437cf6cd87d6",
-        "harmonized_at": "2026-03-28T07:58:51.511765+00:00",
+        "raw_data_hash": "sha256:908fc4d0060a04c8",
+        "harmonized_at": "2026-03-28T15:27:43.329065+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13852,10 +15832,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:34.205364+00:00",
+        "scraped_at": "2026-03-28T14:57:32.739596+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:3d6c8a5fa736d9dd",
-        "harmonized_at": "2026-03-28T07:58:51.512271+00:00",
+        "raw_data_hash": "sha256:dae093f64fc57485",
+        "harmonized_at": "2026-03-28T15:27:43.329546+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -13987,10 +15967,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:36.696184+00:00",
+        "scraped_at": "2026-03-28T14:57:34.622396+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a534565ef4ebee30",
-        "harmonized_at": "2026-03-28T07:58:51.512675+00:00",
+        "raw_data_hash": "sha256:6e3cc07cdebadc90",
+        "harmonized_at": "2026-03-28T15:27:43.329964+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -14617,8 +16597,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -14682,15 +16662,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:39.117167+00:00",
+        "scraped_at": "2026-03-28T14:57:36.465515+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a7aa1bdfbe965ec9",
-        "harmonized_at": "2026-03-28T07:58:51.513033+00:00",
+        "raw_data_hash": "sha256:635c53f88f59542f",
+        "harmonized_at": "2026-03-28T15:27:43.330299+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15819,10 +17799,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:40.993888+00:00",
+        "scraped_at": "2026-03-28T14:57:38.318826+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:7421d4b7d14f65bc",
-        "harmonized_at": "2026-03-28T07:58:51.513453+00:00",
+        "raw_data_hash": "sha256:650eec6e66d88480",
+        "harmonized_at": "2026-03-28T15:27:43.330714+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -15979,10 +17959,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:42.917746+00:00",
+        "scraped_at": "2026-03-28T14:57:40.229344+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:32fc9aa67e30048b",
-        "harmonized_at": "2026-03-28T07:58:51.513916+00:00",
+        "raw_data_hash": "sha256:fd18d317989d904d",
+        "harmonized_at": "2026-03-28T15:27:43.331195+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -17964,145 +19944,6 @@
           "duration_minutes nao preenchida"
         ],
         "quality_score": 0.6
-      }
-    },
-    {
-      "schema_version": "1.0",
-      "id": "culturgest-2026-04-23-festival-internacional-de-cinema-efbd",
-      "source_id": "indielisboa-23-festival-internacional-de-cinema",
-      "source_url": "https://www.culturgest.pt/pt/programacao/indielisboa-23-festival-internacional-de-cinema/",
-      "venue_id": "culturgest",
-      "space_id": null,
-      "title": "23.º Festival Internacional de Cinema",
-      "title_raw": "23.º Festival Internacional de Cinema",
-      "subtitle": "IndieLisboa",
-      "description": "O IndieLisboa - Festival Internacional de Cinema avança para a sua 23.ª edição e regressa às principais salas de cinema da cidade. Há mais de duas décadas, o festival traz uma programação diversificada e inquieta, abrindo espaço para as mais recentes produções nacionais e internacionais, trabalhos emergentes e visionários, consolidando diferentes perspetivas culturais, estéticas, políticas e geográficas na tela. Um mundo infindável de cinema em onze dias de programação.\nPodemos esperar estreias memoráveis nas Competições Silvestre, nacional e Internacional, com destaque para a estreia do filme premiado\nBlue Heron\n, de Sophy Romvari; há também espaço para uma Retrospetiva inspiradora e novos filmes de culto na secção Boca do Inferno; ouviremos novas e velhas sonoridades impactantes na secção IndieMusic, onde se destaca a estreia de\nSun Ra: Do the Impossible\n, de Christine Turner\n;\nnão faltará um mergulho no Cinema na Piscina, nem as propostas do IndieJúnior.\nO IndieLisboa é mais que um festival de cinema, celebrando o cinema dentro e fora das salas, seja na pista de dança no IndieByNight, ou através de conversas temáticas como as LisbonTalks. Mais uma vez, o IndieLisboa será a casa onde o cinema se reinventa.",
-      "description_short": "O IndieLisboa - Festival Internacional de Cinema avança para a sua 23.ª edição e regressa às principais salas de cinema da cidade. Há mais de duas décadas, o festival traz uma programação diversificada e inquieta, abrindo espaço para as mais recentes produções nacionais e internacionais, trabalhos…",
-      "language_of_performance": null,
-      "language_notes": null,
-      "domain": "cinema",
-      "category": "cinema-ficcao",
-      "subcategory": null,
-      "tags": [
-        "cinema",
-        "descontos",
-        "estreia",
-        "festival"
-      ],
-      "categories_raw": [
-        "Cinema",
-        "Escolas"
-      ],
-      "dates": [
-        {
-          "date": "2026-04-30",
-          "time_start": null,
-          "time_end": null,
-          "duration_minutes": null,
-          "is_cancelled": false,
-          "is_sold_out": false,
-          "notes": null
-        }
-      ],
-      "date_first": "2026-04-30",
-      "date_last": "2026-04-30",
-      "total_sessions": 1,
-      "is_ongoing": false,
-      "date_open": "2026-04-30",
-      "date_close": null,
-      "event_status": "estreia",
-      "is_premiere": true,
-      "is_national_premiere": true,
-      "is_reprise": false,
-      "production_origin": null,
-      "is_festival": true,
-      "festival_name": "Festival Internacional De Cinema O Indielisboa",
-      "festival_id": null,
-      "is_multi_venue": false,
-      "multi_venue_ids": [],
-      "series_name": null,
-      "series_edition": null,
-      "audience": {
-        "label": null,
-        "label_raw": "",
-        "age_min": null,
-        "age_max": null,
-        "is_family": false,
-        "is_educational": false,
-        "school_level": null,
-        "notes": null
-      },
-      "price": {
-        "is_free": false,
-        "price_min": 5.0,
-        "price_max": 5.0,
-        "price_display": "5€",
-        "price_raw": "5€ (descontos)",
-        "has_discounts": true,
-        "discount_notes": null,
-        "ticketing_url": "https://www.culturgest.ptindielisboa.com"
-      },
-      "accessibility": {
-        "has_sign_language": false,
-        "has_audio_description": false,
-        "has_subtitles": false,
-        "subtitle_language": null,
-        "is_relaxed_performance": false,
-        "wheelchair_accessible": true,
-        "notes": null
-      },
-      "credits": {
-        "company": null,
-        "director": null,
-        "conductor": null,
-        "choreographer": null,
-        "cast": [],
-        "creative_team": [],
-        "musicians": [],
-        "credits_raw": null
-      },
-      "work": {
-        "original_title": null,
-        "composer": null,
-        "playwright": null,
-        "choreographer": null,
-        "year_created": null,
-        "country_of_origin": null,
-        "genre_original": null
-      },
-      "media": {
-        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/e1/c3/e1c33d2b-cb62-4774-baaf-8f3cf43250c1/large_sun_ra__do_the_impossible-clean-16x9-01.png__1200x630_q85_crop_subsampling-2_upscale.png",
-        "cover_image_local": null,
-        "thumbnail": null,
-        "trailer_url": null,
-        "gallery": []
-      },
-      "dedup": {
-        "fingerprint": "23-festival-internacional-de-cinema|2026-04",
-        "duplicate_of": null,
-        "is_canonical": true,
-        "seen_at_venues": [
-          "culturgest"
-        ]
-      },
-      "pipeline": {
-        "scraped_at": "2026-03-27T10:59:45.228628+00:00",
-        "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ac26764986bb6683",
-        "harmonized_at": "2026-03-28T07:58:51.514290+00:00",
-        "validated": true,
-        "validation_errors": [],
-        "manually_edited": false,
-        "manually_edited_at": null,
-        "is_active": true,
-        "extra_flags": null,
-        "quality_warnings": [
-          "creditos ausentes (director, companhia ou texto raw)",
-          "subcategoria nao determinada",
-          "faixa etaria nao determinada",
-          "duration_minutes nao preenchida"
-        ],
-        "quality_score": 0.75
       }
     },
     {
@@ -23143,10 +24984,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:47.641160+00:00",
+        "scraped_at": "2026-03-28T14:57:42.123827+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:4fa1ba758c819286",
-        "harmonized_at": "2026-03-28T07:58:51.514603+00:00",
+        "raw_data_hash": "sha256:2bde139604568a7d",
+        "harmonized_at": "2026-03-28T15:27:43.331545+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -23555,10 +25396,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:50.058010+00:00",
+        "scraped_at": "2026-03-28T14:57:43.973746+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:ef8ac9352c8b5266",
-        "harmonized_at": "2026-03-28T07:58:51.515038+00:00",
+        "raw_data_hash": "sha256:1a8a1de188ced10f",
+        "harmonized_at": "2026-03-28T15:27:43.331987+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24520,10 +26361,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:51.964944+00:00",
+        "scraped_at": "2026-03-28T14:57:45.825256+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:400b7a61e5d577ca",
-        "harmonized_at": "2026-03-28T07:58:51.515550+00:00",
+        "raw_data_hash": "sha256:1737bb2794b3d274",
+        "harmonized_at": "2026-03-28T15:27:43.332498+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -24809,10 +26650,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:54.019571+00:00",
+        "scraped_at": "2026-03-28T14:57:47.677949+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:be2bb2a7a5e6b43b",
-        "harmonized_at": "2026-03-28T07:58:51.516033+00:00",
+        "raw_data_hash": "sha256:b98dae76225375c0",
+        "harmonized_at": "2026-03-28T15:27:43.332981+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -26490,10 +28331,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:55.928024+00:00",
+        "scraped_at": "2026-03-28T14:57:50.029932+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:a91adc616e25967e",
-        "harmonized_at": "2026-03-28T07:58:51.516435+00:00",
+        "raw_data_hash": "sha256:f319660b500468b7",
+        "harmonized_at": "2026-03-28T15:27:43.333458+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27066,8 +28907,8 @@
       "festival_id": null,
       "is_multi_venue": true,
       "multi_venue_ids": [
-        "culturgest",
-        "theatro-circo"
+        "theatro-circo",
+        "culturgest"
       ],
       "series_name": null,
       "series_edition": null,
@@ -27131,15 +28972,15 @@
         "duplicate_of": null,
         "is_canonical": true,
         "seen_at_venues": [
-          "culturgest",
-          "theatro-circo"
+          "theatro-circo",
+          "culturgest"
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:57.823097+00:00",
+        "scraped_at": "2026-03-28T14:57:51.876182+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:f7028f0cd0c8d353",
-        "harmonized_at": "2026-03-28T07:58:51.516816+00:00",
+        "raw_data_hash": "sha256:dc4daa74a958f792",
+        "harmonized_at": "2026-03-28T15:27:43.333849+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -27552,10 +29393,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T10:59:59.726844+00:00",
+        "scraped_at": "2026-03-28T14:57:53.719810+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:feb76cf41c4234e6",
-        "harmonized_at": "2026-03-28T07:58:51.517291+00:00",
+        "raw_data_hash": "sha256:960dae74113bc420",
+        "harmonized_at": "2026-03-28T15:27:43.334341+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -31634,10 +33475,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:01.591103+00:00",
+        "scraped_at": "2026-03-28T14:57:55.592177+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:02c86cbcd5e08ce7",
-        "harmonized_at": "2026-03-28T07:58:51.517683+00:00",
+        "raw_data_hash": "sha256:21e7a8f476b6011c",
+        "harmonized_at": "2026-03-28T15:27:43.334735+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -35576,10 +37417,10 @@
         ]
       },
       "pipeline": {
-        "scraped_at": "2026-03-27T11:00:10.875771+00:00",
+        "scraped_at": "2026-03-28T14:57:59.429588+00:00",
         "scraper_id": "culturgest",
-        "raw_data_hash": "sha256:acc169478d0650d5",
-        "harmonized_at": "2026-03-28T07:58:51.518542+00:00",
+        "raw_data_hash": "sha256:79a19a784cb35918",
+        "harmonized_at": "2026-03-28T15:27:43.335624+00:00",
         "validated": true,
         "validation_errors": [],
         "manually_edited": false,
@@ -39979,56 +41820,45 @@
   ],
   "index": {
     "by_domain": {
-      "pensamento": [
-        "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
-        "culturgest-2026-03-polis-a-politica-da-cidade-011d",
-        "culturgest-2026-03-formiga-atomica-fcf0",
-        "culturgest-2026-03-cha-tisana-e-kombucha-humor-e-diferencas-b592",
-        "culturgest-2026-03-falta-de-cha-humor-tabus-e-censura-887a",
-        "ccb-2026-03-museu-aberto-3d72",
-        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es-f093",
-        "culturgest-2026-04-do-cha-ao-iced-tea-humor-passado-e-prese-c999",
-        "ccb-2026-04-conferencia-a-sinfonia-em-finais-do-secu-b663",
-        "culturgest-2026-04-afetos-nacionais-d08a",
-        "ccb-2026-04-cidade-cultural-participativa-c215",
-        "ccb-2026-04-ciclo-de-conferencias-5184",
-        "ccb-2026-04-sobre-a-verdade-da-mentira-43fa",
-        "culturgest-2026-05-restaurar-o-futuro-34ef",
-        "ccb-2026-05-conferencia-o-belo-em-som-viagem-atraves-adae",
-        "tndm-2026-05-panos-palcos-novos-palavras-novas-ed42",
-        "ccb-2026-05-constituicao-estreia-3460",
-        "ccb-2026-05-ciclo-de-conferencias-c6b1",
-        "culturgest-2026-05-rui-agostinho-alex-cassal-f056",
-        "ccb-2026-05-sobre-a-verdade-da-mentira-5037",
-        "tndm-2026-05-terra-nullius-1722",
-        "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca-3b03",
-        "ccb-2026-06-ciclo-de-conferencias-71c6"
-      ],
-      "artes-visuais": [
-        "ccb-2026-02-may-i-help-you-posso-ajudar-d0ff",
-        "culturgest-2026-03-um-silabario-por-reconstruir-iv-f1cb",
-        "ccb-2026-03-uma-deriva-atlantica-9686",
-        "ccb-2026-04-uma-deriva-atlantica-3bbd",
-        "ccb-2026-04-may-i-help-you-posso-ajudar-df3e",
-        "culturgest-2026-04-mater-6eb7",
-        "culturgest-2026-04-joao-penalva-decf",
-        "ccb-2026-04-habitar-portugal-b887",
-        "ccb-2026-04-jose-pedro-croft-9fac",
-        "ccb-2026-05-uma-deriva-atlantica-401b",
-        "ccb-2026-05-jose-pedro-croft-b3c0",
-        "ccb-2026-05-may-i-help-you-posso-ajudar-267c",
-        "ccb-2026-05-olhos-multiplos-8282",
-        "ccb-2026-06-olhos-multiplos-dedd",
-        "ccb-2026-06-jose-pedro-croft-2823",
-        "ccb-2026-06-may-i-help-you-posso-ajudar-0044",
-        "ccb-2026-06-frida-orupabo-33da",
-        "ccb-2026-06-terra-crua-4092",
-        "ccb-2026-10-angela-ferreira-7538",
-        "ccb-2026-11-neil-beloufa-8baf",
-        "ccb-2026-11-francisca-carvalho-045f",
-        "ccb-2026-12-marisol-b2d3"
+      "musica": [
+        "culturgest-2026-01-concerto-de-ano-novo-dance-dance-dance-95e9",
+        "theatro-circo-2026-01-tres-tempos-08bd",
+        "culturgest-2026-01-rafael-toral-eb39",
+        "culturgest-2026-02-diamanda-galas-3a22",
+        "culturgest-2026-02-bruno-pernadas-1069",
+        "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
+        "culturgest-2026-03-cara-de-espelho-baab",
+        "culturgest-2026-03-lavoisier-06e3",
+        "theatro-circo-2026-03-dora-morelenbaum-eb40",
+        "theatro-circo-2026-04-contraponto-gorecki-e-adams-93c6",
+        "culturgest-2026-04-oneohtrix-point-never-73ad",
+        "culturgest-2026-04-tres-tempos-3380",
+        "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro--57cd",
+        "culturgest-2026-04-tortoise-df7f",
+        "theatro-circo-2026-04-a-garota-nao-0d08",
+        "theatro-circo-2026-04-111-aniversario-do-theatro-circo-8124",
+        "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u-b75c",
+        "theatro-circo-2026-04-dj-ahmet-7c74",
+        "theatro-circo-2026-04-miguel-araujo-5c00",
+        "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr-4f98",
+        "culturgest-2026-05-lucy-railton-com-charlie-hope-rebecca-sa-7ade",
+        "theatro-circo-2026-05-saber-ir-ao-fundo-2a31",
+        "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta-46a6",
+        "culturgest-2026-05-a-winged-victory-for-the-sullen-e4a8",
+        "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla-c528",
+        "theatro-circo-2026-06-oru-kami-garibambi-jun-2026-57da",
+        "theatro-circo-2026-06-laurie-anderson-com-sexmob-7d63",
+        "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202-87a4",
+        "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves-dadc",
+        "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go-c37f",
+        "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist-a1c9",
+        "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca-7fc8",
+        "theatro-circo-2026-06-indigo-quintet-965b"
       ],
       "artes-palco": [
+        "culturgest-2026-01-tiago-rodrigues-2d37",
+        "culturgest-2026-01-marlene-monteiro-freitas-ballet-de-loper-7b71",
+        "culturgest-2026-02-lander-patrick-6aee",
         "culturgest-2026-02-alexander-zeldin-735d",
         "culturgest-2026-03-diana-niepce-ddb0",
         "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
@@ -40112,37 +41942,62 @@
         "ccb-2026-11-al-di-meola-6679",
         "ccb-2026-12-glenn-miller-orchestra-edfe"
       ],
-      "musica": [
-        "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
-        "culturgest-2026-03-cara-de-espelho-baab",
-        "culturgest-2026-03-lavoisier-06e3",
-        "theatro-circo-2026-03-dora-morelenbaum-eb40",
-        "theatro-circo-2026-04-contraponto-gorecki-e-adams-93c6",
-        "culturgest-2026-04-oneohtrix-point-never-73ad",
-        "culturgest-2026-04-tres-tempos-3380",
-        "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro--57cd",
-        "culturgest-2026-04-tortoise-df7f",
-        "theatro-circo-2026-04-a-garota-nao-0d08",
-        "theatro-circo-2026-04-111-aniversario-do-theatro-circo-8124",
-        "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u-b75c",
-        "theatro-circo-2026-04-dj-ahmet-7c74",
-        "theatro-circo-2026-04-miguel-araujo-5c00",
-        "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr-4f98",
-        "culturgest-2026-05-lucy-railton-com-charlie-hope-rebecca-sa-7ade",
-        "theatro-circo-2026-05-saber-ir-ao-fundo-2a31",
-        "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta-46a6",
-        "culturgest-2026-05-a-winged-victory-for-the-sullen-e4a8",
-        "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla-c528",
-        "theatro-circo-2026-06-oru-kami-garibambi-jun-2026-57da",
-        "theatro-circo-2026-06-laurie-anderson-com-sexmob-7d63",
-        "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202-87a4",
-        "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves-dadc",
-        "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go-c37f",
-        "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist-a1c9",
-        "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca-7fc8",
-        "theatro-circo-2026-06-indigo-quintet-965b"
+      "pensamento": [
+        "culturgest-2026-01-por-que-contamos-historias-c759",
+        "culturgest-2026-02-urbs-o-corpo-da-cidade-139f",
+        "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
+        "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
+        "culturgest-2026-03-polis-a-politica-da-cidade-011d",
+        "culturgest-2026-03-formiga-atomica-fcf0",
+        "culturgest-2026-03-cha-tisana-e-kombucha-humor-e-diferencas-b592",
+        "culturgest-2026-03-falta-de-cha-humor-tabus-e-censura-887a",
+        "ccb-2026-03-museu-aberto-3d72",
+        "ccb-2026-03-lancamento-do-catalogo-avenida-211-um-es-f093",
+        "culturgest-2026-04-do-cha-ao-iced-tea-humor-passado-e-prese-c999",
+        "ccb-2026-04-conferencia-a-sinfonia-em-finais-do-secu-b663",
+        "culturgest-2026-04-afetos-nacionais-d08a",
+        "ccb-2026-04-cidade-cultural-participativa-c215",
+        "ccb-2026-04-ciclo-de-conferencias-5184",
+        "ccb-2026-04-sobre-a-verdade-da-mentira-43fa",
+        "culturgest-2026-05-restaurar-o-futuro-34ef",
+        "ccb-2026-05-conferencia-o-belo-em-som-viagem-atraves-adae",
+        "tndm-2026-05-panos-palcos-novos-palavras-novas-ed42",
+        "ccb-2026-05-constituicao-estreia-3460",
+        "ccb-2026-05-ciclo-de-conferencias-c6b1",
+        "culturgest-2026-05-rui-agostinho-alex-cassal-f056",
+        "ccb-2026-05-sobre-a-verdade-da-mentira-5037",
+        "tndm-2026-05-terra-nullius-1722",
+        "ccb-2026-06-conferencia-o-mesmo-nada-em-tudo-a-torca-3b03",
+        "ccb-2026-06-ciclo-de-conferencias-71c6"
+      ],
+      "artes-visuais": [
+        "culturgest-2026-01-joga-o-jogo-fugida-c968",
+        "culturgest-2026-01-sara-graca-d50f",
+        "ccb-2026-02-may-i-help-you-posso-ajudar-d0ff",
+        "culturgest-2026-03-um-silabario-por-reconstruir-iv-f1cb",
+        "ccb-2026-03-uma-deriva-atlantica-9686",
+        "ccb-2026-04-uma-deriva-atlantica-3bbd",
+        "ccb-2026-04-may-i-help-you-posso-ajudar-df3e",
+        "culturgest-2026-04-mater-6eb7",
+        "culturgest-2026-04-joao-penalva-decf",
+        "ccb-2026-04-habitar-portugal-b887",
+        "ccb-2026-04-jose-pedro-croft-9fac",
+        "ccb-2026-05-uma-deriva-atlantica-401b",
+        "ccb-2026-05-jose-pedro-croft-b3c0",
+        "ccb-2026-05-may-i-help-you-posso-ajudar-267c",
+        "ccb-2026-05-olhos-multiplos-8282",
+        "ccb-2026-06-olhos-multiplos-dedd",
+        "ccb-2026-06-jose-pedro-croft-2823",
+        "ccb-2026-06-may-i-help-you-posso-ajudar-0044",
+        "ccb-2026-06-frida-orupabo-33da",
+        "ccb-2026-06-terra-crua-4092",
+        "ccb-2026-10-angela-ferreira-7538",
+        "ccb-2026-11-neil-beloufa-8baf",
+        "ccb-2026-11-francisca-carvalho-045f",
+        "ccb-2026-12-marisol-b2d3"
       ],
       "formacao": [
+        "culturgest-2026-02-pedra-a813",
         "ccb-2026-03-revisitar-experimentar-e-aprender-9828",
         "ccb-2026-03-aprender-a-brincar-para-a-brincar-a-apre-b80b",
         "ccb-2026-03-avenida-ludica-c841",
@@ -40226,13 +42081,25 @@
         "theatro-circo-2026-04-entroncamento-1501",
         "theatro-circo-2026-04-o-barqueiro-d56e",
         "theatro-circo-2026-04-formas-de-fazer-na-sombra-dos-relatos-of-d748",
-        "culturgest-2026-04-23-festival-internacional-de-cinema-efbd",
         "culturgest-2026-05-meg-stuart-b68b"
       ]
     },
     "by_venue": {
       "culturgest": [
+        "culturgest-2026-01-concerto-de-ano-novo-dance-dance-dance-95e9",
+        "culturgest-2026-01-tiago-rodrigues-2d37",
+        "culturgest-2026-01-rafael-toral-eb39",
+        "culturgest-2026-01-por-que-contamos-historias-c759",
+        "culturgest-2026-01-joga-o-jogo-fugida-c968",
+        "culturgest-2026-01-marlene-monteiro-freitas-ballet-de-loper-7b71",
+        "culturgest-2026-01-sara-graca-d50f",
+        "culturgest-2026-02-pedra-a813",
+        "culturgest-2026-02-urbs-o-corpo-da-cidade-139f",
         "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
+        "culturgest-2026-02-lander-patrick-6aee",
+        "culturgest-2026-02-diamanda-galas-3a22",
+        "culturgest-2026-02-bruno-pernadas-1069",
+        "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
         "culturgest-2026-02-alexander-zeldin-735d",
         "culturgest-2026-03-cara-de-espelho-baab",
         "culturgest-2026-03-um-silabario-por-reconstruir-iv-f1cb",
@@ -40251,7 +42118,6 @@
         "culturgest-2026-04-tortoise-df7f",
         "culturgest-2026-04-afetos-nacionais-d08a",
         "culturgest-2026-04-catarina-rolo-salgueiro-e-isabel-costa-o-4b5f",
-        "culturgest-2026-04-23-festival-internacional-de-cinema-efbd",
         "culturgest-2026-05-meg-stuart-b68b",
         "culturgest-2026-05-lucy-railton-com-charlie-hope-rebecca-sa-7ade",
         "culturgest-2026-05-restaurar-o-futuro-34ef",
@@ -40261,6 +42127,73 @@
         "culturgest-2026-05-projeto-educativo-em-danca-de-repertorio-5cf1",
         "culturgest-2026-06-lia-rodrigues-2428",
         "culturgest-2026-06-mala-voadora-ab6a"
+      ],
+      "theatro-circo": [
+        "theatro-circo-2026-01-tres-tempos-08bd",
+        "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
+        "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
+        "theatro-circo-2026-03-popular-2c81",
+        "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au-c0cb",
+        "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026-5646",
+        "theatro-circo-2026-03-dora-morelenbaum-eb40",
+        "theatro-circo-2026-03-blue-moon-55e3",
+        "theatro-circo-2026-03-porta-do-ceu-ctb-2fb7",
+        "theatro-circo-2026-04-supracasa-open-call-laboratorio-assimetr-7d7b",
+        "theatro-circo-2026-04-companhia-de-espectadores-teatro-pos-dra-2d21",
+        "theatro-circo-2026-04-contraponto-gorecki-e-adams-93c6",
+        "theatro-circo-2026-04-entroncamento-1501",
+        "theatro-circo-2026-04-capra-or-how-to-say-hello-to-fear-c6cd",
+        "theatro-circo-2026-04-historias-de-sonho-0d83",
+        "theatro-circo-2026-04-visita-guiada-ao-theatro-circo-18042026-420e",
+        "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro--57cd",
+        "theatro-circo-2026-04-o-barqueiro-d56e",
+        "theatro-circo-2026-04-a-garota-nao-0d08",
+        "theatro-circo-2026-04-formas-de-fazer-na-sombra-dos-relatos-of-d748",
+        "theatro-circo-2026-04-111-aniversario-do-theatro-circo-8124",
+        "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u-b75c",
+        "theatro-circo-2026-04-dj-ahmet-7c74",
+        "theatro-circo-2026-04-miguel-araujo-5c00",
+        "theatro-circo-2026-05-os-transparentes-ctb-c29b",
+        "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr-4f98",
+        "theatro-circo-2026-05-index-2026-supersilent-lawrence-abu-hamd-404d",
+        "theatro-circo-2026-05-index-2026-arkadi-zaides-talos-8a65",
+        "theatro-circo-2026-05-american-blues-mai-2026-ctb-45bf",
+        "theatro-circo-2026-05-saber-ir-ao-fundo-2a31",
+        "theatro-circo-2026-05-index-2026-bienal-de-arte-e-tecnologia-e4a4",
+        "theatro-circo-2026-05-index-2026-fanfictional-politics-pedro-g-fd50",
+        "theatro-circo-2026-05-index-2026-ther-poor-objects-shuang-li-1caf",
+        "theatro-circo-2026-05-mulheres-estrangeiras-ctb-b262",
+        "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta-46a6",
+        "theatro-circo-2026-05-habitar-hotel-europa-eff4",
+        "theatro-circo-2026-05-visita-guiada-ao-theatro-circo-30052026-573a",
+        "theatro-circo-2026-05-contexto-antonio-brito-guterres-e-maria--38c1",
+        "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla-c528",
+        "theatro-circo-2026-06-oru-kami-garibambi-jun-2026-57da",
+        "theatro-circo-2026-06-chamada-aberta-ao-publico-do-theatro-cir-2cb9",
+        "theatro-circo-2026-06-laurie-anderson-com-sexmob-7d63",
+        "theatro-circo-2026-06-buluku-640c",
+        "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202-87a4",
+        "theatro-circo-2026-06-o-meu-astronauta-e-o-metaverso-djam-negu-fcf2",
+        "theatro-circo-2026-06-the-legendary-tigerman-curtas-metragens--2eee",
+        "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves-dadc",
+        "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go-c37f",
+        "theatro-circo-2026-06-american-blues-jun-2026-ctb-cf63",
+        "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist-a1c9",
+        "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca-7fc8",
+        "theatro-circo-2026-06-indigo-quintet-965b",
+        "theatro-circo-2026-06-visita-guiada-ao-theatro-circo-27062026-2112",
+        "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026-2295",
+        "theatro-circo-2026-07-cinema-play-possivel-e-impossivel-eec7",
+        "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem-aa48",
+        "theatro-circo-2026-07-hamlet-7dec",
+        "theatro-circo-2026-07-romeu-julieta-ctb-0baa",
+        "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce-2cf6",
+        "theatro-circo-2026-08-veredas-8d5c",
+        "theatro-circo-2026-08-silvestre-d7c7",
+        "theatro-circo-2026-08-a-flor-do-mar-653a",
+        "theatro-circo-2026-08-o-ultimo-mergulho-5c83",
+        "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708-8ea1",
+        "theatro-circo-2026-08-as-bodas-de-deus-745b"
       ],
       "ccb": [
         "ccb-2026-02-may-i-help-you-posso-ajudar-d0ff",
@@ -40396,72 +42329,6 @@
         "ccb-2026-12-marisol-b2d3",
         "ccb-2026-12-glenn-miller-orchestra-edfe"
       ],
-      "theatro-circo": [
-        "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
-        "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
-        "theatro-circo-2026-03-popular-2c81",
-        "theatro-circo-2026-03-companhia-de-espectadores-biografia-e-au-c0cb",
-        "theatro-circo-2026-03-visita-guiada-ao-theatro-circo-28032026-5646",
-        "theatro-circo-2026-03-dora-morelenbaum-eb40",
-        "theatro-circo-2026-03-blue-moon-55e3",
-        "theatro-circo-2026-03-porta-do-ceu-ctb-2fb7",
-        "theatro-circo-2026-04-supracasa-open-call-laboratorio-assimetr-7d7b",
-        "theatro-circo-2026-04-companhia-de-espectadores-teatro-pos-dra-2d21",
-        "theatro-circo-2026-04-contraponto-gorecki-e-adams-93c6",
-        "theatro-circo-2026-04-entroncamento-1501",
-        "theatro-circo-2026-04-capra-or-how-to-say-hello-to-fear-c6cd",
-        "theatro-circo-2026-04-historias-de-sonho-0d83",
-        "theatro-circo-2026-04-visita-guiada-ao-theatro-circo-18042026-420e",
-        "theatro-circo-2026-04-elisabete-matos-maciej-pikulski-e-pedro--57cd",
-        "theatro-circo-2026-04-o-barqueiro-d56e",
-        "theatro-circo-2026-04-a-garota-nao-0d08",
-        "theatro-circo-2026-04-formas-de-fazer-na-sombra-dos-relatos-of-d748",
-        "theatro-circo-2026-04-111-aniversario-do-theatro-circo-8124",
-        "theatro-circo-2026-04-nina-laisne-nestor-pola-pastorive-como-u-b75c",
-        "theatro-circo-2026-04-dj-ahmet-7c74",
-        "theatro-circo-2026-04-miguel-araujo-5c00",
-        "theatro-circo-2026-05-os-transparentes-ctb-c29b",
-        "theatro-circo-2026-05-index-2026-forensis-bill-kouligas-the-dr-4f98",
-        "theatro-circo-2026-05-index-2026-supersilent-lawrence-abu-hamd-404d",
-        "theatro-circo-2026-05-index-2026-arkadi-zaides-talos-8a65",
-        "theatro-circo-2026-05-american-blues-mai-2026-ctb-45bf",
-        "theatro-circo-2026-05-saber-ir-ao-fundo-2a31",
-        "theatro-circo-2026-05-index-2026-bienal-de-arte-e-tecnologia-e4a4",
-        "theatro-circo-2026-05-index-2026-fanfictional-politics-pedro-g-fd50",
-        "theatro-circo-2026-05-index-2026-ther-poor-objects-shuang-li-1caf",
-        "theatro-circo-2026-05-mulheres-estrangeiras-ctb-b262",
-        "theatro-circo-2026-05-xxxv-fitu-bracara-avgvsta-46a6",
-        "theatro-circo-2026-05-habitar-hotel-europa-eff4",
-        "theatro-circo-2026-05-visita-guiada-ao-theatro-circo-30052026-573a",
-        "theatro-circo-2026-05-contexto-antonio-brito-guterres-e-maria--38c1",
-        "theatro-circo-2026-05-contraponto-john-luther-adams-philip-gla-c528",
-        "theatro-circo-2026-06-oru-kami-garibambi-jun-2026-57da",
-        "theatro-circo-2026-06-chamada-aberta-ao-publico-do-theatro-cir-2cb9",
-        "theatro-circo-2026-06-laurie-anderson-com-sexmob-7d63",
-        "theatro-circo-2026-06-buluku-640c",
-        "theatro-circo-2026-06-oru-kami-garibambi-criancas-ao-poder-202-87a4",
-        "theatro-circo-2026-06-o-meu-astronauta-e-o-metaverso-djam-negu-fcf2",
-        "theatro-circo-2026-06-the-legendary-tigerman-curtas-metragens--2eee",
-        "theatro-circo-2026-06-lucrecia-dalt-a-danger-to-ourselves-dadc",
-        "theatro-circo-2026-06-jose-afonso-ao-vivo-nos-coliseus-1983-go-c37f",
-        "theatro-circo-2026-06-american-blues-jun-2026-ctb-cf63",
-        "theatro-circo-2026-06-carminho-eu-vou-morrer-de-amor-ou-resist-a1c9",
-        "theatro-circo-2026-06-formas-de-fazer-composicao-e-improvisaca-7fc8",
-        "theatro-circo-2026-06-indigo-quintet-965b",
-        "theatro-circo-2026-06-visita-guiada-ao-theatro-circo-27062026-2112",
-        "theatro-circo-2026-07-visita-guiada-ao-theatro-circo-11072026-2295",
-        "theatro-circo-2026-07-cinema-play-possivel-e-impossivel-eec7",
-        "theatro-circo-2026-07-v-mit-mostra-internacional-de-teatro-sem-aa48",
-        "theatro-circo-2026-07-hamlet-7dec",
-        "theatro-circo-2026-07-romeu-julieta-ctb-0baa",
-        "theatro-circo-2026-08-cinema-de-agosto-as-correntes-de-joao-ce-2cf6",
-        "theatro-circo-2026-08-veredas-8d5c",
-        "theatro-circo-2026-08-silvestre-d7c7",
-        "theatro-circo-2026-08-a-flor-do-mar-653a",
-        "theatro-circo-2026-08-o-ultimo-mergulho-5c83",
-        "theatro-circo-2026-08-visita-guiada-ao-theatro-circo-26-e-2708-8ea1",
-        "theatro-circo-2026-08-as-bodas-de-deus-745b"
-      ],
       "tndm": [
         "tndm-2026-03-filodemo-8869",
         "tndm-2026-03-nao-se-pode-nao-se-pode-c93a",
@@ -40477,8 +42344,24 @@
       ]
     },
     "by_month": {
+      "2026-01": [
+        "culturgest-2026-01-concerto-de-ano-novo-dance-dance-dance-95e9",
+        "culturgest-2026-01-tiago-rodrigues-2d37",
+        "theatro-circo-2026-01-tres-tempos-08bd",
+        "culturgest-2026-01-rafael-toral-eb39",
+        "culturgest-2026-01-por-que-contamos-historias-c759",
+        "culturgest-2026-01-joga-o-jogo-fugida-c968",
+        "culturgest-2026-01-marlene-monteiro-freitas-ballet-de-loper-7b71",
+        "culturgest-2026-01-sara-graca-d50f"
+      ],
       "2026-02": [
+        "culturgest-2026-02-pedra-a813",
+        "culturgest-2026-02-urbs-o-corpo-da-cidade-139f",
         "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
+        "culturgest-2026-02-lander-patrick-6aee",
+        "culturgest-2026-02-diamanda-galas-3a22",
+        "culturgest-2026-02-bruno-pernadas-1069",
+        "culturgest-2026-02-civitas-os-fluxos-da-cidade-d532",
         "ccb-2026-02-may-i-help-you-posso-ajudar-d0ff",
         "culturgest-2026-02-alexander-zeldin-735d"
       ],
@@ -40591,8 +42474,7 @@
         "ccb-2026-04-projetos-mediacao-3e54",
         "ccb-2026-04-programa-vincular-servico-de-educacao-e--418c",
         "ccb-2026-04-jose-pedro-croft-9fac",
-        "ccb-2026-04-sobre-a-verdade-da-mentira-43fa",
-        "culturgest-2026-04-23-festival-internacional-de-cinema-efbd"
+        "ccb-2026-04-sobre-a-verdade-da-mentira-43fa"
       ],
       "2026-05": [
         "ccb-2026-05-programa-missao-democracia-6230",
@@ -40755,6 +42637,7 @@
       "tndm-2026-03-cabe-mais-um-330c"
     ],
     "free": [
+      "culturgest-2026-02-pedra-a813",
       "theatro-circo-2026-03-ciclo-musica-de-camara-universidade-do-m-b4cb",
       "tndm-2026-03-filodemo-8869",
       "theatro-circo-2026-05-index-2026-fanfictional-politics-pedro-g-fd50",
@@ -40767,6 +42650,19 @@
       "tndm-2026-03-cabe-mais-um-330c",
       "ccb-2026-04-projetos-mediacao-3e54",
       "ccb-2026-07-e-se-fossemos-a-votos-4046"
+    ],
+    "recently_closed": [
+      "culturgest-2026-02-genoma-urbano-cidades-como-organismos-vi-1842",
+      "ccb-2026-02-may-i-help-you-posso-ajudar-d0ff",
+      "culturgest-2026-02-alexander-zeldin-735d",
+      "culturgest-2026-03-cara-de-espelho-baab",
+      "culturgest-2026-03-um-silabario-por-reconstruir-iv-f1cb",
+      "culturgest-2026-03-polis-a-politica-da-cidade-011d",
+      "culturgest-2026-03-lavoisier-06e3",
+      "culturgest-2026-03-cha-tisana-e-kombucha-humor-e-diferencas-b592",
+      "culturgest-2026-03-falta-de-cha-humor-tabus-e-censura-887a",
+      "theatro-circo-2026-03-conversa-jantar-com-sara-ines-gigante-7bab",
+      "theatro-circo-2026-03-popular-2c81"
     ]
   }
 }

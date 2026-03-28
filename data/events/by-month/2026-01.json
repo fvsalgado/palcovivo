@@ -1,0 +1,1145 @@
+{
+  "month": "2026-01",
+  "total": 8,
+  "events": [
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-concerto-de-ano-novo-dance-dance-dance-95e9",
+      "source_id": "concerto-de-ano-novo-dance-dance-dance-caixa-na-culturgest",
+      "source_url": "https://www.culturgest.pt/pt/programacao/concerto-de-ano-novo-dance-dance-dance-caixa-na-culturgest/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Concerto de Ano Novo - Dance, dance, dance!",
+      "title_raw": "Concerto de Ano Novo - Dance, dance, dance!",
+      "subtitle": "Caixa na Culturgest",
+      "description": "A Orquestra do Algarve apresenta um concerto repleto de energia, brilho e entusiasmo. Sob a direção e apresentação de Martim Sousa Tavares, o programa celebra toda a vitalidade da orquestra através da música dos séculos XX e XXI, indo de velhas danças e melodias húngaras até às sonoridades mais inesperadas da dança, com uma partitura de Pedro Lima que já muito tem dado que falar.\nPrograma\nZOLTAN KODÁLY (1882-1967)\nRondó Húngaro\nLÉO WEINER (1885)\nSerenata em Fá menor, Op.3\nNANCY GALBRAITH (1951)\nMidnight Stirring\nPEDRO LIMA (1994)\nDance Suite\nMartim Sousa Tavares, Maestro\nOrquestra do Algarve",
+      "description_short": "A Orquestra do Algarve apresenta um concerto repleto de energia, brilho e entusiasmo. Sob a direção e apresentação de Martim Sousa Tavares, o programa celebra toda a vitalidade da orquestra através da música dos séculos XX e XXI, indo de velhas danças e melodias húngaras até às sonoridades mais…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-08",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-08",
+      "date_last": "2026-01-08",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-08",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 6.0,
+        "price_max": 6.0,
+        "price_display": "6€",
+        "price_raw": "6€ (preço único)",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://www.ticketline.pt/evento/concerto-de-ano-novo-dance-dance-dance-99873"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/3a/bf/3abfd602-a1c7-419a-83a4-68f0315a8035/09bf3eed-299f-4a0c-bd47-186524410803.jpeg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "concerto-de-ano-novo-dance-dance-dance|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:33.998924+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:36a744b8295da02b",
+        "harmonized_at": "2026-03-28T15:27:43.373449+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.75
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-tiago-rodrigues-2d37",
+      "source_id": "catarina-e-beleza-de-matar-fascistas-tiago-rodrigues",
+      "source_url": "https://www.culturgest.pt/pt/programacao/catarina-e-beleza-de-matar-fascistas-tiago-rodrigues/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Tiago Rodrigues",
+      "title_raw": "Tiago Rodrigues",
+      "subtitle": "Catarina e a Beleza de Matar Fascistas",
+      "description": "Esta família mata fascistas. É uma tradição antiga que cada membro da família sempre seguiu. Reúnem-se numa casa no campo, no sul de Portugal, perto da aldeia de Baleizão. Uma das jovens da família, Catarina, vai matar o seu primeiro fascista, raptado de propósito para o efeito. É um dia de festa, de beleza e de morte. No entanto, Catarina é incapaz de matar ou recusa-se a fazê-lo. Estala o conflito familiar, acompanhado de várias questões. O que é um fascista? Há lugar para a violência na luta por um mundo melhor? Podemos violar as regras da democracia para melhor a defender?",
+      "description_short": "Esta família mata fascistas. É uma tradição antiga que cada membro da família sempre seguiu. Reúnem-se numa casa no campo, no sul de Portugal, perto da aldeia de Baleizão. Uma das jovens da família, Catarina, vai matar o seu primeiro fascista, raptado de propósito para o efeito. É um dia de festa…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "teatro",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "audiodescricao",
+        "descontos",
+        "legendas"
+      ],
+      "categories_raw": [
+        "Teatro"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-12",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-13",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-14",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-15",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-16",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-17",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-12",
+      "date_last": "2026-01-17",
+      "total_sessions": 6,
+      "is_ongoing": false,
+      "date_open": "2026-01-12",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 25.0,
+        "price_max": 25.0,
+        "price_display": "25€",
+        "price_raw": "25€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/tiago-rodrigues-catarinabeleza-de-matar-fas-95374"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": true,
+        "has_subtitles": true,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Texto e encenação: Tiago Rodrigues | Com: António Parra, António Fonseca, Beatriz Maia, Carolina Passos Sousa, Isabel Abreu, João Vicente, Marco Mendonça, Romeu Costa | Colaboração artística: Magda Bizarro | Cenografia: F. Ribeiro | Figurinos: José António Tenente | Desenho de luz: Nuno Meira | Sonoplastia, desenho de som e música original: Pedro Costa | Coralidade e arranjos vocais: João Henriques | Voz off: Cláudio Castro, Nadezhda Bocharova, Paula Mora, Pedro Moldão | Apoio ao movimento: Sofia Dias, Vítor Roriz | Apoio em luta e armas: David Chan Cordeiro | Traduções para inglês: Daniel Hahn | Legendas: Patrícia Pimentel | Produção executiva: Festival d’Avignon | Produção: Teatro Nacional D. Maria II | Coprodução: Wiener Festwochen, Emilia Romagna Teatro Fondazione, ThéâtredelaCité – CDN Toulouse Occitanie & Théâtre Garonne Scène européenne Toulouse, Festival d’Automne à Paris & Théâtre des Bouffes du Nord, Teatro di Roma – Teatro Nazionale, Comédie de Caen, Théâtre de Liège, Maison de la Culture d’Amiens, BIT Teatergarasjen, Le Trident – Scène-nationale de Cherbourg-en-Cotentin, Teatre Lliure, Centro Cultural Vila Flor, O Espaço do Tempo | Apoio: Vinhos Almeida Garrett, Cano Amarelo, Culturgest | Agradecimentos: Mariana Gomes, Rui Pina Coelho, Margarida Bak Gordon, Rita Mendes e toda a equipa do Teatro Nacional D. Maria II. Agradecemos ainda a Sara Barros Leitão, Pedro Gil e Rui M. Silva que, mesmo não estando já connosco em palco, serão sempre Catarina. | Música: Hania Rani (BiesyeNow, Run), Joanna Brouk (The Nymph Rising,Calling the Sailor), Laurel Halo (Rome Theme IIIeHyphae) e Rosalía (De Plata)"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/f8/29/f829e1a3-1897-4117-9f5a-e1a3ef0f563a/_joseph_banderet_-_festival_davignon_6.jpeg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "tiago-rodrigues|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:35.936131+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:016b29697817bc94",
+        "harmonized_at": "2026-03-28T15:27:43.373767+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "theatro-circo-2026-01-tres-tempos-08bd",
+      "source_id": "tres-tempos-2026",
+      "source_url": "https://theatrocirco.com/event/tres-tempos-2026/",
+      "venue_id": "theatro-circo",
+      "space_id": null,
+      "title": "Três Tempos",
+      "title_raw": "Três Tempos",
+      "subtitle": "Xullaji e Tiago Sampaio",
+      "description": "A várias mãos, com os diferentes tempos de cada cidade parceira, Três Tempos entra na sua segunda edição, agora com xullaji como guia sonoro e poético.\nTrês grupos com idades entre os 15 e os 18 anos, reunidos em Braga (Theatro Circo), Viseu (Teatro Viriato) e Lisboa (Culturgest), recebem o convite para embarcar numa experiência de cocriação deste projeto participativo, fora do ambiente escolar, pensado para que cada grupo viva o processo de forma igual. Assim, entre novembro de 2025 e abril de 2026, têm lugar encontros semanais de escrita e reflexão, intercalados por momentos intensivos de cocriação, usando a palavra e o som como ferramentas de transformação pessoal e social, com curadoria artística a cargo do rapper xullaji. Em Braga, a mediação do processo estará a cargo do músico local Tiago Sampaio.\nPor fim, em março decorrerá a apresentação em Braga e em abril de 2026, todas as rotas convergem para Lisboa, cidade anfitriã desta edição, onde cada grupo apresentará o resultado dos trabalhos desenvolvidos, refletindo a singularidade do seu percurso e mantendo a coesão de um projeto que celebra a criatividade coletiva.\n__\nApresentação em Braga\n21 de março · 15h\nApresentação em Lisboa\n18 de abril · horário a definir",
+      "description_short": "A várias mãos, com os diferentes tempos de cada cidade parceira, Três Tempos entra na sua segunda edição, agora com xullaji como guia sonoro e poético.\nTrês grupos com idades entre os 15 e os 18 anos, reunidos em Braga (Theatro Circo), Viseu (Teatro Viriato) e Lisboa (Culturgest), recebem o convite…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-12",
+          "time_start": "18:45",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-12",
+      "date_last": "2026-01-12",
+      "total_sessions": 1,
+      "is_ongoing": true,
+      "date_open": "2026-01-12",
+      "date_close": "2026-04-18",
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": null,
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+        "price_raw": "Gratuito mediante inscrição para participacao@theatrocirco.com",
+        "has_discounts": false,
+        "discount_notes": null,
+        "ticketing_url": "https://theatrocirco.com/informacoes/gerais/"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coprodução\nTheatro Circo (Braga), Culturgest (Lisboa) e Teatro Viriato (Viseu)\nQueres fazer parte deste projeto? Escreve-nos para\nparticipacao@theatrocirco.com"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://theatrocirco.com/wp-content/uploads/2025/11/251025_theatro_circo_tres_tempos_sessao_um_fotografia_lais_pereira-3.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "tres-tempos|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "theatro-circo"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T01:29:44.080987+00:00",
+        "scraper_id": "theatro-circo",
+        "raw_data_hash": "sha256:f0e8a5ac021a9498",
+        "harmonized_at": "2026-03-28T01:30:33.925089+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-rafael-toral-eb39",
+      "source_id": "rafael-toral-traveling-light",
+      "source_url": "https://www.culturgest.pt/pt/programacao/rafael-toral-traveling-light/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Rafael Toral",
+      "title_raw": "Rafael Toral",
+      "subtitle": "Traveling Light",
+      "description": "Motivo de orgulho de toda uma comunidade musical, Rafael Toral teve em 2024 um ano de apogeu, consequência do êxito e reconhecimento planetário do seu\nSpectral Evolution\n: um feito súmula para um percurso único, raro e desafiador, trinta anos exatos após o seu primeiro disco a solo,\nSound Mind Sound Body\n. Desde então, Toral traçou a sua trajetória, feita de curiosidade e pesquisa, com o cosmos como cenário propício para a dimensão da sua visão musical. A uma discografia imensa e idiossincrática que nos convida permanentemente a revisitações, eis mais uma jornada incandescente com\nTraveling Light\n. E também uma eloquente e perfeita ‘obra seguinte' para o seu estelar\nSpectral Evolution\n, assumindo a urgência do momento e da progressão decidida desta caminhada. Jazz nas estrelas, música eletrónica soprada na brisa ambiental que Toral tão bem tece com as suas guitarras, estamos de novo perante algo muitíssimo especial.",
+      "description_short": "Motivo de orgulho de toda uma comunidade musical, Rafael Toral teve em 2024 um ano de apogeu, consequência do êxito e reconhecimento planetário do seu\nSpectral Evolution\n: um feito súmula para um percurso único, raro e desafiador, trinta anos exatos após o seu primeiro disco a solo,\nSound Mind…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "musica",
+      "category": "musica-classica",
+      "subcategory": null,
+      "tags": [
+        "descontos",
+        "música",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Música"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-21",
+          "time_start": "21:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-21",
+      "date_last": "2026-01-21",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-21",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 14.0,
+        "price_max": 14.0,
+        "price_display": "14€",
+        "price_raw": "14€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/rafael-toral-traveling-light-95511"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Guitarra elétrica, eletrónica, arranjos: Rafael Toral | Saxofone tenor: Rodrigo Amado | Clarinete: Bruno Parrinha | Flauta: Clara Saleiro | Fliscórnio: Yaw Tembe"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/72/8f/728f02a6-6349-4b57-a452-1057c2a7ae4d/rafael_toral_20250616_017_cred_veramarmelo.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "rafael-toral|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:37.802474+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:91527e8f1f0a5b13",
+        "harmonized_at": "2026-03-28T15:27:43.374116+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-por-que-contamos-historias-c759",
+      "source_id": "susana-moreira-marques-ines-brasao-ines-lampreia-porque-contamos-historias",
+      "source_url": "https://www.culturgest.pt/pt/programacao/susana-moreira-marques-ines-brasao-ines-lampreia-porque-contamos-historias/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Por que Contamos Histórias?",
+      "title_raw": "Por que Contamos Histórias?",
+      "subtitle": "Inês Brasão, Inês Lampreia, Susana Moreira Marques",
+      "description": "Por que contamos histórias? Este é o mote para uma conversa a três vozes com quem conta histórias, sejam ficcionais, reais, ou um cruzamento entre ambas. Refletimos sobre a necessidade humana de criar narrativas, não apenas para representar o mundo e o seu passado, mas para o revelar em todas as suas possibilidades, e fazendo-o viver da forma única que, por vezes, só a literatura consegue revelar. Contar histórias é como lançar sementes, ativa gestos quotidianos de memória, de cuidado, de persistência. Nesta conversa, exploramos também a importância pessoal e política da ficção, um lugar onde a palavra se torna resistência e o imaginário território de contágio. O encontro reúne três escritoras que exploram estes caminhos através da escrita - Susana Moreira Marques é autora dos livros de não-ficção literária, Inês Brasão, socióloga e historiadora, que tem recuperado a história esquecida do trabalho servil, e Inês Lampreia, autora de\nNo tempo dos Super Heróis\n(2024)\nque, a partir de memórias contadas pelos avós, evoca a vida e a resistência do campo alentejano em meados do século XX.",
+      "description_short": "Por que contamos histórias? Este é o mote para uma conversa a três vozes com quem conta histórias, sejam ficcionais, reais, ou um cruzamento entre ambas. Refletimos sobre a necessidade humana de criar narrativas, não apenas para representar o mundo e o seu passado, mas para o revelar em todas as…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "pensamento",
+      "category": "conferencias-debates",
+      "subcategory": null,
+      "tags": [
+        "pensamento & palavra",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Conferências e Debates"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-22",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-22",
+      "date_last": "2026-01-22",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-22",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null,
+        "ticketing_url": "https://invtdu.to/_oo1pw"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/de/a2/dea23e2e-8e6e-41c4-8a1c-86848dcfa125/joana_linda.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "por-que-contamos-historias|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:39.651910+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:4badf175140cf701",
+        "harmonized_at": "2026-03-28T15:27:43.374538+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.65
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-joga-o-jogo-fugida-c968",
+      "source_id": "fugida-em-torno-da-colecao-da-cgd",
+      "source_url": "https://www.culturgest.pt/pt/programacao/fugida-em-torno-da-colecao-da-cgd/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Joga o Jogo: Fugida!",
+      "title_raw": "Joga o Jogo: Fugida!",
+      "subtitle": "Em Torno da Coleção da CGD",
+      "description": "Fugida!\né a terceira e derradeira parte do ciclo Joga o Jogo. Trata-se do momento que corresponde ao tiro de partida, ao início da corrida, onde se lançam os dados e se dão as cartas para o futuro. O projeto curatorial desenha-se caótico e as relações entre as obras apresentadas revelam-se, à primeira vista, aleatórias e sem sentido. Contudo, com uma experiência sensorial precisa, a exposição aponta para outros caminhos promissores.\nRui Horta Pereira foi convidado a desenvolver um programa educativo dirigido a estudantes do ensino secundário das escolas do concelho. Em colaboração com o Museu Ferroviário de Macinhata do Vouga é possível mostrar peças do seu acervo.\nO ciclo\nJoga o Jogo\ncomeça com\nPartida…\n, no Museu das Artes de Sintra, entre maio e agosto de 2025 e seguiu com\nLargada…\nno Forum Arte Braga, patente entre setembro de 2025 e janeiro de 2026.",
+      "description_short": "Fugida!\né a terceira e derradeira parte do ciclo Joga o Jogo. Trata-se do momento que corresponde ao tiro de partida, ao início da corrida, onde se lançam os dados e se dão as cartas para o futuro. O projeto curatorial desenha-se caótico e as relações entre as obras apresentadas revelam-se, à…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Artes Visuais",
+        "Fora de Portas"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-24",
+          "time_start": "18:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-24",
+      "date_last": "2026-01-24",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-24",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": null,
+        "price_raw": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Artistas Coleção da Caixa Geral de Depósitos: Ana Jotta, Ana Vieira, Armanda Duarte, Bruno Pacheco, Bruno Zhu, Dayana Lucas, Eduardo Nery, Helena Almeida, Joana Vasconcelos, José Escada, José Pedro Croft, Leonor Antunes, Lourdes Castro, Luisa Correia Pereira, Luisa Cunha | Artista Convidado: Rui Horta Pereira | Colaboração: Escola Secundária Marques de Castilho | Obras da Coleção: Museu Ferroviário de Macinhata do Vouga | Parceria: Centro de Artes de Águeda | Apoio: República Portuguesa – Cultura | DGArtes – Direção Geral das Artes | RPAC – Rede Portuguesa de Arte Contemporânea"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/62/cb/62cbd106-243e-4e03-83d0-4e6f6dfdab42/_rui_horta_pereira_agueda_horizontal.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "joga-o-jogo-fugida|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T14:58:06.343355+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:46a27b8914b46a41",
+        "harmonized_at": "2026-03-28T15:27:43.337047+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "preco nao determinado (nem entrada livre nem valor)",
+          "url de bilheteira ausente",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-marlene-monteiro-freitas-ballet-de-loper-7b71",
+      "source_id": "marlene-monteiro-freitas-ballet-de-lopera-de-lyon-canine-jaunatre-3",
+      "source_url": "https://www.culturgest.pt/pt/programacao/marlene-monteiro-freitas-ballet-de-lopera-de-lyon-canine-jaunatre-3/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Marlene Monteiro Freitas / Ballet de l’Opéra de Lyon",
+      "title_raw": "Marlene Monteiro Freitas / Ballet de l’Opéra de Lyon",
+      "subtitle": "Canine Jaunâtre 3",
+      "description": "Há uma rede de ténis, um painel de avaliação e apitos. Está montado o palco para uma competição que nunca se realizará. Reivindicando a herança dos carnavais da sua infância em Cabo Verde, Marlene Monteiro Freitas subverte as regras.\nCanine Jaunâtre 3\ntorna-se um jogo indisciplinado, onde 17 jogadores-intérpretes, com dorsais com o mesmo número 3, corpos autómatos com rostos de desenhos animados, são sujeitos a regras contraditórias. Fazer, desfazer, avançar, recuar: estes virtuosos magníficos conduzem, sem propósito aparente, a humanidade a um território incerto onde as fronteiras entre humanos, animais e máquinas se esbatem. Um exercício para se aprender a questionar os nossos hábitos de perceção excessivamente confortáveis.",
+      "description_short": "Há uma rede de ténis, um painel de avaliação e apitos. Está montado o palco para uma competição que nunca se realizará. Reivindicando a herança dos carnavais da sua infância em Cabo Verde, Marlene Monteiro Freitas subverte as regras.\nCanine Jaunâtre 3\ntorna-se um jogo indisciplinado, onde 17…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-palco",
+      "category": "danca",
+      "subcategory": null,
+      "tags": [
+        "artes de palco",
+        "descontos"
+      ],
+      "categories_raw": [
+        "Dança"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-24",
+          "time_start": "19:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        },
+        {
+          "date": "2026-01-25",
+          "time_start": "17:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-24",
+      "date_last": "2026-01-25",
+      "total_sessions": 2,
+      "is_ongoing": false,
+      "date_open": "2026-01-24",
+      "date_close": null,
+      "event_status": "em-cartaz",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": 20.0,
+        "price_max": 20.0,
+        "price_display": "20€",
+        "price_raw": "20€ (descontos)",
+        "has_discounts": true,
+        "discount_notes": null,
+        "ticketing_url": "https://ticketline.sapo.pt/evento/marlene-monteiro-freitas-canine-jaunatre-3-95512"
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": "Coreografia, figurinos e música: Marlene Monteiro Freitas | Assistente coreográfico: Ben Green | Pesquisa artística: Marlene Monteiro Freitas, João Francisco Figueira | Cenografia: Yannick Fouassier e MMF | Luz: Yannick Fouassier | Som: Rui Antunes | Mestres de bailado do Ballet de l’Opéra de Lyon: Amandine François, Marco Merenda e Raúl Serrano Núñez | Intérpretes: Ballet de l’Opéra de Lyon | Em colaboração com: P.OR.K | Encomenda original por: Batsheva Dance Company | Em coprodução com: Julidans e Montpellier Danse, 2018. No repertório do Ballet de l’Opéra de Lyon desde 2024"
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/d2/7f/d27f14ce-4897-4e9f-8f1f-678dff64ecf1/2024_caninejaunatre3__marc_domage_hd_003.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "marlene-monteiro-freitas-ballet-de-lopera-de-lyon|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:41.536350+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:d046fa4bf7a051f3",
+        "harmonized_at": "2026-03-28T15:27:43.375003+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.85
+      }
+    },
+    {
+      "schema_version": "1.0",
+      "id": "culturgest-2026-01-sara-graca-d50f",
+      "source_id": "sara-graca-boa-good-sorte-luck-variacao",
+      "source_url": "https://www.culturgest.pt/pt/programacao/sara-graca-boa-good-sorte-luck-variacao/",
+      "venue_id": "culturgest",
+      "space_id": null,
+      "title": "Sara Graça",
+      "title_raw": "Sara Graça",
+      "subtitle": "Boa Good Sorte Luck: variação",
+      "description": "As exposições são habitualmente situações estáticas: um conjunto de objetos em determinados lugares e formando uma dada sequência aguardam a nossa visita, dia sim, dia sim. No espírito da instabilidade e periclitância que perpassa\nBoa Good Sorte Luck\n, Sara Graça imaginou um momento em que alguns dos objetos da sua exposição mudavam de lugar ou eram transformados. Essa metamorfose terá lugar no dia 25 de janeiro, pelas 16h. Não é uma performance – se a artista estiver presente, é na qualidade de visitante.",
+      "description_short": "As exposições são habitualmente situações estáticas: um conjunto de objetos em determinados lugares e formando uma dada sequência aguardam a nossa visita, dia sim, dia sim. No espírito da instabilidade e periclitância que perpassa\nBoa Good Sorte Luck\n, Sara Graça imaginou um momento em que alguns…",
+      "language_of_performance": null,
+      "language_notes": null,
+      "domain": "artes-visuais",
+      "category": "exposicoes",
+      "subcategory": null,
+      "tags": [
+        "artes visuais",
+        "sessao-unica"
+      ],
+      "categories_raw": [
+        "Artes Visuais"
+      ],
+      "dates": [
+        {
+          "date": "2026-01-25",
+          "time_start": "16:00",
+          "time_end": null,
+          "duration_minutes": null,
+          "is_cancelled": false,
+          "is_sold_out": false,
+          "notes": null
+        }
+      ],
+      "date_first": "2026-01-25",
+      "date_last": "2026-01-25",
+      "total_sessions": 1,
+      "is_ongoing": false,
+      "date_open": "2026-01-25",
+      "date_close": null,
+      "event_status": "unica-sessao",
+      "is_premiere": false,
+      "is_national_premiere": false,
+      "is_reprise": false,
+      "production_origin": null,
+      "is_festival": false,
+      "festival_name": null,
+      "festival_id": null,
+      "is_multi_venue": false,
+      "multi_venue_ids": [],
+      "series_name": null,
+      "series_edition": null,
+      "audience": {
+        "label": null,
+        "label_raw": "",
+        "age_min": null,
+        "age_max": null,
+        "is_family": false,
+        "is_educational": false,
+        "school_level": null,
+        "notes": null
+      },
+      "price": {
+        "is_free": false,
+        "price_min": null,
+        "price_max": null,
+        "price_display": "Gratuito (domingo)",
+        "price_raw": "Gratuito (domingo)",
+        "has_discounts": false,
+        "discount_notes": null
+      },
+      "accessibility": {
+        "has_sign_language": false,
+        "has_audio_description": false,
+        "has_subtitles": false,
+        "subtitle_language": null,
+        "is_relaxed_performance": false,
+        "wheelchair_accessible": true,
+        "notes": null
+      },
+      "credits": {
+        "company": null,
+        "director": null,
+        "conductor": null,
+        "choreographer": null,
+        "cast": [],
+        "creative_team": [],
+        "musicians": [],
+        "credits_raw": null
+      },
+      "work": {
+        "original_title": null,
+        "composer": null,
+        "playwright": null,
+        "choreographer": null,
+        "year_created": null,
+        "country_of_origin": null,
+        "genre_original": null
+      },
+      "media": {
+        "cover_image": "https://www.culturgest.pt/media/filer_public_thumbnails/filer_public/24/a4/24a406eb-b3fd-4d31-90d1-3df9b70cd1a5/saragraca_inauguracao_02.jpg__1200x630_q85_crop_subsampling-2_upscale.jpg",
+        "cover_image_local": null,
+        "thumbnail": null,
+        "trailer_url": null,
+        "gallery": []
+      },
+      "dedup": {
+        "fingerprint": "sara-graca|2026-01",
+        "duplicate_of": null,
+        "is_canonical": true,
+        "seen_at_venues": [
+          "culturgest"
+        ]
+      },
+      "pipeline": {
+        "scraped_at": "2026-03-28T15:20:43.377591+00:00",
+        "scraper_id": "culturgest",
+        "raw_data_hash": "sha256:d4e3adb23ee522d3",
+        "harmonized_at": "2026-03-28T15:27:43.375409+00:00",
+        "validated": true,
+        "validation_errors": [],
+        "manually_edited": false,
+        "manually_edited_at": null,
+        "is_active": true,
+        "extra_flags": null,
+        "quality_warnings": [
+          "url de bilheteira ausente",
+          "creditos ausentes (director, companhia ou texto raw)",
+          "subcategoria nao determinada",
+          "faixa etaria nao determinada",
+          "duration_minutes nao preenchida"
+        ],
+        "quality_score": 0.7
+      }
+    }
+  ]
+}
