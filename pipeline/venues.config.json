@@ -1,8 +1,11 @@
 {
   "_comment": "Registry central de venues — fonte de verdade para frequência, timeout e flags de scraping",
+  "_last_updated": "2026-03-28",
+  "_total_venues": 8,
   "venues": {
     "ccb": {
       "name": "Centro Cultural de Belém",
+      "city": "Lisboa",
       "enabled": true,
       "scrape_frequency_hours": 12,
       "timeout_seconds": 60,
@@ -24,6 +27,7 @@
     },
     "culturgest": {
       "name": "Culturgest",
+      "city": "Lisboa",
       "enabled": true,
       "scrape_frequency_hours": 24,
       "timeout_seconds": 60,
@@ -36,7 +40,8 @@
       "flags": {
         "incremental": true,
         "two_pass": true,
-        "fetch_detail_html": true
+        "fetch_detail_html": true,
+        "filter_from_date_days": 90
       },
       "circuit_breaker": {
         "max_consecutive_failures": 5,
@@ -45,6 +50,7 @@
     },
     "theatro-circo": {
       "name": "Theatro Circo",
+      "city": "Braga",
       "enabled": true,
       "scrape_frequency_hours": 12,
       "timeout_seconds": 60,
@@ -66,6 +72,7 @@
     },
     "tndm": {
       "name": "Teatro Nacional D. Maria II",
+      "city": "Lisboa",
       "enabled": true,
       "scrape_frequency_hours": 24,
       "timeout_seconds": 90,
@@ -83,6 +90,103 @@
       "circuit_breaker": {
         "max_consecutive_failures": 5,
         "alert_after_failures": 3
+      }
+    },
+    "sao-luiz": {
+      "name": "Teatro São Luiz",
+      "city": "Lisboa",
+      "enabled": false,
+      "_note": "Scraper a desenvolver — WP Events Calendar REST API confirmada",
+      "_api_url": "https://www.saoluiz.pt/wp-json/tribe/events/v1/events",
+      "_website": "https://www.saoluiz.pt",
+      "scrape_frequency_hours": 24,
+      "timeout_seconds": 60,
+      "scraping_mode": "wp_api",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 500,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": true,
+        "two_pass": false,
+        "fetch_detail_html": false
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
+      }
+    },
+    "trindade": {
+      "name": "Teatro da Trindade",
+      "city": "Lisboa",
+      "enabled": false,
+      "_note": "Scraper a desenvolver — site institucional INATEL, HTML estático",
+      "_website": "https://www.teatrotrindade.pt",
+      "scrape_frequency_hours": 24,
+      "timeout_seconds": 60,
+      "scraping_mode": "html_static",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 800,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": false,
+        "two_pass": false,
+        "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
+      }
+    },
+    "coliseu-porto": {
+      "name": "Coliseu Porto Ageas",
+      "city": "Porto",
+      "enabled": false,
+      "_note": "Scraper a desenvolver — site com listagem HTML, sem API pública documentada",
+      "_website": "https://www.coliseu.pt",
+      "scrape_frequency_hours": 24,
+      "timeout_seconds": 60,
+      "scraping_mode": "html_static",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 1000,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": false,
+        "two_pass": false,
+        "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 5,
+        "alert_after_failures": 3
+      }
+    },
+    "dgartes": {
+      "name": "Rede de Teatros e Cineteatros",
+      "city": "Nacional",
+      "enabled": false,
+      "_note": "Scraper a desenvolver — agrega programação de ~20 cineteatros via DGArtes. Alta prioridade para scaling regional.",
+      "_website": "https://www.rede-teatros.pt",
+      "scrape_frequency_hours": 48,
+      "timeout_seconds": 90,
+      "scraping_mode": "html_static",
+      "use_playwright": false,
+      "rate_limit": {
+        "delay_between_requests_ms": 1500,
+        "max_concurrent": 1
+      },
+      "flags": {
+        "incremental": false,
+        "two_pass": false,
+        "fetch_detail_html": true
+      },
+      "circuit_breaker": {
+        "max_consecutive_failures": 3,
+        "alert_after_failures": 2
       }
     }
   },
